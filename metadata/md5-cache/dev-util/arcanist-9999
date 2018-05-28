@@ -1,0 +1,10 @@
+DEFINED_PHASES=install unpack
+DEPEND=>=dev-vcs/git-1.8.2.1
+DESCRIPTION=Command line interface for Phabricator
+EAPI=6
+HOMEPAGE=https://github.com/phacility/arcanist
+LICENSE=Apache-2.0
+RDEPEND=dev-lang/php[cli,curl] dev-libs/libphutil
+SLOT=0
+_eclasses_=git-r3	af51ccfceeb403ab80f1bf9209d372c8
+_md5_=372ba73b81317c6b5b41b527fc30b94e

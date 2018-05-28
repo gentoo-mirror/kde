@@ -1,0 +1,9 @@
+DEFINED_PHASES=install unpack
+DEPEND=>=dev-vcs/git-1.8.2.1
+DESCRIPTION=Unofficial GTK 2/3 Breeze Theme
+EAPI=6
+HOMEPAGE=https://github.com/dirruk1/gnome-breeze
+LICENSE=LGPL-2.1
+SLOT=0
+_eclasses_=git-r3	af51ccfceeb403ab80f1bf9209d372c8
+_md5_=179c1e62927e366cb7da76743c164089
