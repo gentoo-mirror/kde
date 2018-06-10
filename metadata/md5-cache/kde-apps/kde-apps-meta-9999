@@ -6,5 +6,5 @@ IUSE=accessibility pim sdk
 LICENSE=metapackage
 RDEPEND=>=kde-apps/kate-9999 >=kde-apps/kdeadmin-meta-9999 >=kde-apps/kdecore-meta-9999 >=kde-apps/kdeedu-meta-9999 >=kde-apps/kdegames-meta-9999 >=kde-apps/kdegraphics-meta-9999 >=kde-apps/kdemultimedia-meta-9999 >=kde-apps/kdenetwork-meta-9999 >=kde-apps/kdeutils-meta-9999 accessibility? ( >=kde-apps/kdeaccessibility-meta-9999 ) pim? ( >=kde-apps/kdepim-meta-9999 ) sdk? ( >=kde-apps/kdesdk-meta-9999 ) !kde-apps/kde-apps-meta:4
 SLOT=5
-_eclasses_=kde5-functions	28660acd31a319c47c5352b1da142b22	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	1e35303c63cd707f6c3422b4493d5607
+_eclasses_=kde5-functions	dcfd19ea993365c489b40fe09f29e9a6	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	1e35303c63cd707f6c3422b4493d5607
 _md5_=786edf7139c2802d45ab64cd1873d50d

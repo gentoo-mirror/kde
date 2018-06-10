@@ -6,5 +6,5 @@ IUSE=+handbook
 LICENSE=metapackage
 RDEPEND=>=kde-apps/dolphin-9999 >=kde-apps/kdialog-9999 >=kde-apps/keditbookmarks-9999 >=kde-apps/kfind-9999 || ( www-client/falkon >=kde-apps/konqueror-9999 ) >=kde-apps/konsole-9999 >=kde-apps/kwrite-9999 handbook? ( >=kde-apps/khelpcenter-9999 ) !kde-apps/kdecore-meta:4
 SLOT=5
-_eclasses_=kde5-functions	28660acd31a319c47c5352b1da142b22	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	1e35303c63cd707f6c3422b4493d5607
+_eclasses_=kde5-functions	dcfd19ea993365c489b40fe09f29e9a6	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	1e35303c63cd707f6c3422b4493d5607
 _md5_=9ff9343612942382ee2e01b76cbc7969

@@ -6,5 +6,5 @@ IUSE=scanner
 LICENSE=metapackage
 RDEPEND=>=kde-apps/gwenview-9999 >=kde-apps/kamera-9999 >=kde-apps/kcolorchooser-9999 >=kde-apps/kdegraphics-mobipocket-9999 >=kde-apps/kolourpaint-9999 >=kde-apps/kruler-9999 >=kde-apps/libkdcraw-9999 >=kde-apps/libkexiv2-9999 >=kde-apps/libkipi-9999 >=kde-apps/okular-9999 >=kde-apps/spectacle-9999 >=kde-apps/svgpart-9999 >=kde-apps/thumbnailers-9999 scanner? ( >=kde-apps/libksane-9999 ) !kde-apps/kdegraphics-meta:4
 SLOT=5
-_eclasses_=kde5-functions	28660acd31a319c47c5352b1da142b22	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	1e35303c63cd707f6c3422b4493d5607
+_eclasses_=kde5-functions	dcfd19ea993365c489b40fe09f29e9a6	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	1e35303c63cd707f6c3422b4493d5607
 _md5_=40393793dfba09c62e3bb3c962630ab0
