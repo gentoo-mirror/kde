@@ -1,9 +1,9 @@
 DEFINED_PHASES=-
 DESCRIPTION=Transitional package to pull in plasma-meta plus basic applications
-EAPI=6
+EAPI=7
 HOMEPAGE=https://www.kde.org/
 LICENSE=metapackage
 RDEPEND=>=kde-apps/kdecore-meta-9999 >=kde-plasma/plasma-meta-5.11.5 !kde-apps/kdebase-meta:4
 SLOT=5
-_eclasses_=eapi7-ver	d97a56a62c7df8614afddcb25f5ff00f	kde5-functions	28660acd31a319c47c5352b1da142b22	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	1e35303c63cd707f6c3422b4493d5607
-_md5_=3462da093c6561cec3f086664389b527
+_eclasses_=kde5-functions	28660acd31a319c47c5352b1da142b22	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	1e35303c63cd707f6c3422b4493d5607
+_md5_=8de62a6432f40eb412342971e1a6b573
