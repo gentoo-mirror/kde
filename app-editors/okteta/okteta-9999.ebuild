@@ -8,10 +8,14 @@ KDE_TEST="true"
 VIRTUALX_REQUIRED="test"
 inherit kde5
 
+if [[ ${KDE_BUILD_TYPE} = release ]]; then
+	SRC_URI="mirror://kde/stable/${PN}/${PV}/src/${P}.tar.xz"
+	KEYWORDS="~amd64 ~x86"
+fi
+
 DESCRIPTION="Hex editor by KDE"
 HOMEPAGE="https://www.kde.org/applications/utilities/okteta
 https://utils.kde.org/projects/okteta"
-KEYWORDS=""
 IUSE="crypt designer"
 
 DEPEND="
@@ -33,6 +37,7 @@ DEPEND="
 	$(add_frameworks_dep kservice)
 	$(add_frameworks_dep kwidgetsaddons)
 	$(add_frameworks_dep kxmlgui)
+	$(add_qt_dep qtdeclarative)
 	$(add_qt_dep qtgui)
 	$(add_qt_dep qtnetwork)
 	$(add_qt_dep qtprintsupport)
