@@ -47,6 +47,14 @@ fi
 
 EXPORT_FUNCTIONS pkg_setup pkg_nofetch src_unpack src_prepare src_configure src_compile src_test src_install pkg_preinst pkg_postinst pkg_postrm
 
+# @ECLASS-VARIABLE: ECM_KDEINSTALLDIRS
+# @DESCRIPTION:
+# If set to "false", do nothing.
+# For any other value, assume the package is using KDEInstallDirs macro and switch
+# KDE_INSTALL_USE_QT_SYS_PATHS to ON. For EAPI-7 and above, fix KDE_INSTALL_LIBEXECDIR
+# to use the correct location.
+: ${ECM_KDEINSTALLDIRS:=true}
+
 # @ECLASS-VARIABLE: KDE_AUTODEPS
 # @DESCRIPTION:
 # If set to "false", do nothing.
@@ -635,8 +643,18 @@ kde5_src_configure() {
 		cmakeargs+=( -DBUILD_QCH=$(usex doc) )
 	fi
 
-	# install mkspecs in the same directory as qt stuff
-	cmakeargs+=(-DKDE_INSTALL_USE_QT_SYS_PATHS=ON)
+	if [[ ${ECM_KDEINSTALLDIRS} != false ]] ; then
+		cmakeargs+=(
+			# install mkspecs in the same directory as qt stuff
+			-DKDE_INSTALL_USE_QT_SYS_PATHS=ON
+		)
+		if [[ ${EAPI} != 6 ]] ; then
+			cmakeargs+=(
+				# install to correct libexec location
+				-DKDE_INSTALL_LIBEXECDIR=${EPREFIX}/usr/libexec
+			)
+		fi
+	fi
 
 	# allow the ebuild to override what we set here
 	mycmakeargs=("${cmakeargs[@]}" "${mycmakeargs[@]}")
