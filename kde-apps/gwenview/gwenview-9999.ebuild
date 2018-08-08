@@ -7,7 +7,7 @@ KDE_HANDBOOK="true"
 KDE_TEST="true"
 inherit kde5
 
-DESCRIPTION="KDE image viewer"
+DESCRIPTION="Image viewer by KDE"
 HOMEPAGE="
 	https://www.kde.org/applications/graphics/gwenview/
 	https://userbase.kde.org/Gwenview
@@ -15,13 +15,12 @@ HOMEPAGE="
 
 LICENSE="GPL-2+ handbook? ( FDL-1.2 )"
 KEYWORDS=""
-IUSE="fits kipi raw semantic-desktop X"
+IUSE="activities fits kipi +mpris raw semantic-desktop X"
 
 # requires running environment
 RESTRICT+=" test"
 
 COMMON_DEPEND="
-	$(add_frameworks_dep kactivities)
 	$(add_frameworks_dep kcompletion)
 	$(add_frameworks_dep kconfig)
 	$(add_frameworks_dep kconfigwidgets)
@@ -48,8 +47,10 @@ COMMON_DEPEND="
 	media-libs/libpng:0=
 	media-libs/phonon[qt5(+)]
 	virtual/jpeg:0
+	activities? ( $(add_frameworks_dep kactivities) )
 	fits? ( sci-libs/cfitsio )
 	kipi? ( $(add_kdeapps_dep libkipi '' '' '5=') )
+	mpris? ( $(add_qt_dep qtdbus) )
 	raw? ( $(add_kdeapps_dep libkdcraw) )
 	semantic-desktop? (
 		$(add_frameworks_dep baloo)
@@ -71,16 +72,19 @@ RDEPEND="${COMMON_DEPEND}
 
 src_configure() {
 	local mycmakeargs=(
+		-DCCACHE_SUPPORT=OFF
+		$(cmake-utils_use_find_package activities KF5Activities)
 		$(cmake-utils_use_find_package fits CFitsio)
 		$(cmake-utils_use_find_package kipi KF5Kipi)
+		$(cmake-utils_use_find_package mpris Qt5DBus)
 		$(cmake-utils_use_find_package raw KF5KDcraw)
 		$(cmake-utils_use_find_package X X11)
 	)
 
 	if use semantic-desktop; then
-		mycmakeargs+=(-DGWENVIEW_SEMANTICINFO_BACKEND=Baloo)
+		mycmakeargs+=( -DGWENVIEW_SEMANTICINFO_BACKEND=Baloo )
 	else
-		mycmakeargs+=(-DGWENVIEW_SEMANTICINFO_BACKEND=None)
+		mycmakeargs+=( -DGWENVIEW_SEMANTICINFO_BACKEND=None )
 	fi
 
 	kde5_src_configure
