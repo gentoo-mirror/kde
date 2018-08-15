@@ -6,5 +6,5 @@ IUSE=cvs
 LICENSE=metapackage
 RDEPEND=>=kde-apps/dolphin-plugins-18.08.49 >=kde-apps/kapptemplate-18.08.49 >=kde-apps/kcachegrind-18.08.49 >=kde-apps/kde-dev-scripts-18.08.49 >=kde-apps/kde-dev-utils-18.08.49 >=kde-apps/kdesdk-kioslaves-18.08.49 >=kde-apps/kdesdk-thumbnailers-18.08.49 >=kde-apps/kompare-18.08.49 >=kde-apps/kross-interpreters-18.08.49 >=kde-apps/libkomparediff2-18.08.49 >=kde-apps/lokalize-18.08.49 >=kde-apps/poxml-18.08.49 >=kde-apps/umbrello-18.08.49 cvs? ( >=kde-apps/cervisia-18.08.49 ) !kde-apps/kdesdk-meta:4
 SLOT=5
-_eclasses_=kde5-functions	74992c9e021a5e5cda2171a9189e1c56	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	1e35303c63cd707f6c3422b4493d5607
+_eclasses_=kde5-functions	dc72f0718defa3205179327a52d1a22b	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	1e35303c63cd707f6c3422b4493d5607
 _md5_=fd8d40caf06722031eeea08515719347
