@@ -7,5 +7,5 @@ KEYWORDS=~amd64 ~x86
 LICENSE=metapackage
 RDEPEND=>=kde-apps/dolphin-plugins-18.08.0 >=kde-apps/kapptemplate-18.08.0 >=kde-apps/kcachegrind-18.08.0 >=kde-apps/kde-dev-scripts-18.08.0 >=kde-apps/kde-dev-utils-18.08.0 >=kde-apps/kdesdk-kioslaves-18.08.0 >=kde-apps/kdesdk-thumbnailers-18.08.0 >=kde-apps/kompare-18.08.0 >=kde-apps/kross-interpreters-18.08.0 >=kde-apps/libkomparediff2-18.08.0 >=kde-apps/lokalize-18.08.0 >=kde-apps/poxml-18.08.0 >=kde-apps/umbrello-18.08.0 cvs? ( >=kde-apps/cervisia-18.08.0 ) !kde-apps/kdesdk-meta:4
 SLOT=5
-_eclasses_=kde5-functions	dc72f0718defa3205179327a52d1a22b	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	1e35303c63cd707f6c3422b4493d5607
+_eclasses_=kde5-functions	dc72f0718defa3205179327a52d1a22b	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	e4a9360924c5ce9f52e61342cde58512
 _md5_=a714cb3ca97c07c92c10774b7d56e010

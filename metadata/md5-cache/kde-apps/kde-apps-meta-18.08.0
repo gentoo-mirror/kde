@@ -7,5 +7,5 @@ KEYWORDS=~amd64 ~x86
 LICENSE=metapackage
 RDEPEND=>=kde-apps/kate-18.08.0 >=kde-apps/kdeadmin-meta-18.08.0 >=kde-apps/kdecore-meta-18.08.0 >=kde-apps/kdeedu-meta-18.08.0 >=kde-apps/kdegames-meta-18.08.0 >=kde-apps/kdegraphics-meta-18.08.0 >=kde-apps/kdemultimedia-meta-18.08.0 >=kde-apps/kdenetwork-meta-18.08.0 >=kde-apps/kdeutils-meta-18.08.0 accessibility? ( >=kde-apps/kdeaccessibility-meta-18.08.0 ) pim? ( >=kde-apps/kdepim-meta-18.08.0 ) sdk? ( >=kde-apps/kdesdk-meta-18.08.0 ) !kde-apps/kde-apps-meta:4
 SLOT=5
-_eclasses_=kde5-functions	dc72f0718defa3205179327a52d1a22b	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	1e35303c63cd707f6c3422b4493d5607
+_eclasses_=kde5-functions	dc72f0718defa3205179327a52d1a22b	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	e4a9360924c5ce9f52e61342cde58512
 _md5_=fd47d2ae0f8520e74f5d1b32dc9d35da
