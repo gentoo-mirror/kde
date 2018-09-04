@@ -6,5 +6,5 @@ IUSE=+webengine
 LICENSE=metapackage
 RDEPEND=>=kde-apps/analitza-18.08.49 >=kde-apps/artikulate-18.08.49 >=kde-apps/blinken-18.08.49 >=kde-apps/cantor-18.08.49 >=kde-apps/kalzium-18.08.49 >=kde-apps/kanagram-18.08.49 >=kde-apps/kbruch-18.08.49 >=kde-apps/kdeedu-data-18.08.49 >=kde-apps/kgeography-18.08.49 >=kde-apps/khangman-18.08.49 >=kde-apps/kig-18.08.49 >=kde-apps/kiten-18.08.49 >=kde-apps/klettres-18.08.49 >=kde-apps/kmplot-18.08.49 >=kde-apps/kqtquickcharts-18.08.49 >=kde-apps/ktouch-18.08.49 >=kde-apps/kturtle-18.08.49 >=kde-apps/kwordquiz-18.08.49 >=kde-apps/libkeduvocdocument-18.08.49 >=kde-apps/marble-18.08.49 >=kde-apps/minuet-18.08.49 >=kde-apps/rocs-18.08.49 >=kde-apps/step-18.08.49 webengine? ( >=kde-apps/kalgebra-18.08.49 >=kde-apps/parley-18.08.49 ) !kde-apps/kdeedu-meta:4
 SLOT=5
-_eclasses_=kde5-functions	3ae7839e9d498f1ab04128d440f9d537	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	e4a9360924c5ce9f52e61342cde58512
+_eclasses_=kde5-functions	b7d1e277927bfde8713fff5dd50fd93c	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	e4a9360924c5ce9f52e61342cde58512
 _md5_=9b641ed9e9c30f7b545f951348867b53
