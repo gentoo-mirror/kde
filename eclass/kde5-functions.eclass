@@ -39,6 +39,7 @@ case ${CATEGORY} in
 		;;
 	kde-plasma)
 		[[ ${PV} = 5.12* ]] && : ${QT_MINIMAL:=5.9.4}
+		[[ ${PV} = 5.14* ]] && : ${FRAMEWORKS_MINIMAL:=5.50.0}
 		if [[ ${KDE_BUILD_TYPE} = live && ${PV} != 5.??.49* ]]; then
 			: ${FRAMEWORKS_MINIMAL:=9999}
 		fi
@@ -46,7 +47,7 @@ case ${CATEGORY} in
 		;;
 	kde-apps)
 		[[ ${PV} = 18.04.3 ]] && : ${FRAMEWORKS_MINIMAL:=5.46.0}
-		: ${FRAMEWORKS_MINIMAL:=5.49.0}
+		: ${FRAMEWORKS_MINIMAL:=5.50.0}
 		;;
 esac
 
