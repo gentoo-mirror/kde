@@ -6,5 +6,5 @@ IUSE=+cdrom +ffmpeg gstreamer
 LICENSE=metapackage
 RDEPEND=>=kde-apps/dragon-18.08.49 >=kde-apps/juk-18.08.49 >=kde-apps/kdenlive-18.08.49 >=kde-apps/kmix-18.08.49 >=kde-apps/kwave-18.08.49 >=kde-apps/libkcddb-18.08.49 cdrom? ( >=kde-apps/audiocd-kio-18.08.49 >=kde-apps/k3b-18.08.49 >=kde-apps/libkcompactdisc-18.08.49 ) ffmpeg? ( >=kde-apps/ffmpegthumbs-18.08.49 ) gstreamer? ( >=kde-apps/kamoso-18.08.49 ) !kde-apps/kdemultimedia-meta:4
 SLOT=5
-_eclasses_=kde5-functions	403ba84a37d1075157cdba746023c9da	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
+_eclasses_=kde5-functions	403ba84a37d1075157cdba746023c9da	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	b2f01ad412baf81650c23fcf0975fa33	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
 _md5_=6a2b051126ccf1d50a867310ba6ea4e1

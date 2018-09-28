@@ -5,5 +5,5 @@ HOMEPAGE=https://www.kde.org/
 LICENSE=metapackage
 RDEPEND=>=kde-apps/kmag-9999 >=kde-apps/kmousetool-9999 >=kde-apps/kmouth-9999 !kde-apps/kdeaccessibility-meta:4
 SLOT=5
-_eclasses_=kde5-functions	403ba84a37d1075157cdba746023c9da	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
+_eclasses_=kde5-functions	403ba84a37d1075157cdba746023c9da	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	b2f01ad412baf81650c23fcf0975fa33	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
 _md5_=55faf9fa1b117b467eb4478d3f66d98d
