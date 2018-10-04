@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -73,7 +73,6 @@ COMMON_DEPEND="
 		$(add_qt_dep qtnetwork)
 	)
 	mediaplayer? ( media-libs/qtav[opengl] )
-	mysql? ( virtual/mysql[server] )
 	opengl? (
 		$(add_qt_dep qtopengl)
 		virtual/opengl
@@ -97,6 +96,7 @@ DEPEND="${COMMON_DEPEND}
 "
 RDEPEND="${COMMON_DEPEND}
 	media-plugins/kipi-plugins:5
+	mysql? ( virtual/mysql[server] )
 	panorama? ( media-gfx/hugin )
 	!media-gfx/digikam:4
 "
@@ -146,6 +146,7 @@ src_configure() {
 		-DENABLE_AKONADICONTACTSUPPORT=$(usex addressbook)
 		-DENABLE_MEDIAPLAYER=$(usex mediaplayer)
 		-DENABLE_MYSQLSUPPORT=$(usex mysql)
+		-DENABLE_INTERNALMYSQL=$(usex mysql)
 		-DENABLE_OPENCV3=$(has_version ">=media-libs/opencv-3" && echo yes || echo no)
 		$(cmake-utils_use_find_package calendar KF5CalendarCore)
 		$(cmake-utils_use_find_package gphoto2 Gphoto2)
