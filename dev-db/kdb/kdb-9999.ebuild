@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -18,10 +18,11 @@ IUSE="debug mysql postgres sqlite"
 RDEPEND="
 	$(add_frameworks_dep kcoreaddons)
 	$(add_qt_dep qtgui)
+	$(add_qt_dep qtnetwork)
 	$(add_qt_dep qtwidgets)
 	$(add_qt_dep qtxml)
 	dev-libs/icu:=
-	mysql? ( virtual/mysql )
+	mysql? ( dev-db/mysql-connector-c:= )
 	postgres? (
 		$(add_qt_dep qtnetwork)
 		dev-db/postgresql:*
