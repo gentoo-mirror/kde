@@ -6,5 +6,5 @@ IUSE=gstreamer
 LICENSE=|| ( GPL-2 GPL-3 LGPL-2.1 )
 RDEPEND=>=kde-apps/ktp-accounts-kcm-9999 >=kde-apps/ktp-approver-9999 >=kde-apps/ktp-auth-handler-9999 >=kde-apps/ktp-common-internals-9999 >=kde-apps/ktp-contact-list-9999 >=kde-apps/ktp-contact-runner-9999 >=kde-apps/ktp-desktop-applets-9999 >=kde-apps/ktp-filetransfer-handler-9999 >=kde-apps/ktp-kded-module-9999 >=kde-apps/ktp-send-file-9999 >=kde-apps/ktp-text-ui-9999 gstreamer? ( >=kde-apps/ktp-call-ui-9999 ) !kde-apps/plasma-telepathy-meta:4
 SLOT=5
-_eclasses_=kde5-functions	403ba84a37d1075157cdba746023c9da	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	b2f01ad412baf81650c23fcf0975fa33	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
+_eclasses_=kde5-functions	d93a40cc49e7117aedf3a1befec86731	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	b2f01ad412baf81650c23fcf0975fa33	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
 _md5_=73c3193067b5623ecaa470f7e5436e61
