@@ -8,7 +8,7 @@ inherit kde5
 
 DESCRIPTION="KDE Plasma resources management GUI"
 HOMEPAGE="https://userbase.kde.org/Discover"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~x86"
 IUSE="firmware"
 
 DEPEND="
