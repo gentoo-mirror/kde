@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -42,8 +42,8 @@ COMMON_DEPEND="
 		$(add_qt_dep qtsql)
 	)
 	man? ( $(add_frameworks_dep khtml) )
-	mtp? ( media-libs/libmtp:= )
-	openexr? ( media-libs/openexr )
+	mtp? ( >=media-libs/libmtp-1.1.16:= )
+	openexr? ( media-libs/openexr:= )
 	phonon? ( media-libs/phonon[qt5(+)] )
 	samba? ( net-fs/samba[client] )
 	sftp? ( net-libs/libssh:=[sftp] )
