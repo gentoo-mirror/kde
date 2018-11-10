@@ -1,0 +1,10 @@
+DEFINED_PHASES=-
+DESCRIPTION=KDE educational apps - merge this to pull in all kdeedu-derived packages
+EAPI=7
+HOMEPAGE=https://edu.kde.org
+IUSE=+webengine +webkit
+LICENSE=metapackage
+RDEPEND=>=kde-apps/analitza-18.12.49 >=kde-apps/artikulate-18.12.49 >=kde-apps/blinken-18.12.49 >=kde-apps/cantor-18.12.49 >=kde-apps/kalzium-18.12.49 >=kde-apps/kanagram-18.12.49 >=kde-apps/kbruch-18.12.49 >=kde-apps/kdeedu-data-18.12.49 >=kde-apps/kgeography-18.12.49 >=kde-apps/khangman-18.12.49 >=kde-apps/kig-18.12.49 >=kde-apps/kiten-18.12.49 >=kde-apps/klettres-18.12.49 >=kde-apps/kmplot-18.12.49 >=kde-apps/kqtquickcharts-18.12.49 >=kde-apps/ktouch-18.12.49 >=kde-apps/kturtle-18.12.49 >=kde-apps/kwordquiz-18.12.49 >=kde-apps/libkeduvocdocument-18.12.49 >=kde-apps/marble-18.12.49 >=kde-apps/minuet-18.12.49 >=kde-apps/step-18.12.49 webengine? ( >=kde-apps/kalgebra-18.12.49 >=kde-apps/parley-18.12.49 ) webkit? ( >=kde-apps/rocs-18.12.49 ) !kde-apps/kdeedu-meta:4
+SLOT=5
+_eclasses_=kde5-functions	3087b8c1febb8412f00587b979b752f6	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	b2f01ad412baf81650c23fcf0975fa33	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
+_md5_=266bef3cf8e342efe5a090ecca053144
