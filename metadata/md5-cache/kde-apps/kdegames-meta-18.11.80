@@ -1,0 +1,11 @@
+DEFINED_PHASES=-
+DESCRIPTION=kdegames - merge this to pull in all kdegames-derived packages
+EAPI=7
+HOMEPAGE=https://games.kde.org/
+IUSE=opengl python
+KEYWORDS=~amd64 ~x86
+LICENSE=metapackage
+RDEPEND=>=kde-apps/bomber-18.11.80 >=kde-apps/bovo-18.11.80 >=kde-apps/granatier-18.11.80 >=kde-apps/kapman-18.11.80 >=kde-apps/katomic-18.11.80 >=kde-apps/kblackbox-18.11.80 >=kde-apps/kblocks-18.11.80 >=kde-apps/kbounce-18.11.80 >=kde-apps/kbreakout-18.11.80 >=kde-apps/kdiamond-18.11.80 >=kde-apps/kfourinline-18.11.80 >=kde-apps/kgoldrunner-18.11.80 >=kde-apps/kigo-18.11.80 >=kde-apps/killbots-18.11.80 >=kde-apps/kiriki-18.11.80 >=kde-apps/kjumpingcube-18.11.80 >=kde-apps/klickety-18.11.80 >=kde-apps/klines-18.11.80 >=kde-apps/kmahjongg-18.11.80 >=kde-apps/kmines-18.11.80 >=kde-apps/knavalbattle-18.11.80 >=kde-apps/knetwalk-18.11.80 >=kde-apps/knights-18.11.80 >=kde-apps/kolf-18.11.80 >=kde-apps/kollision-18.11.80 >=kde-apps/konquest-18.11.80 >=kde-apps/kpat-18.04.3 >=kde-apps/kreversi-18.11.80 >=kde-apps/kshisen-18.11.80 >=kde-apps/ksirk-18.11.80 >=kde-apps/ksnakeduel-18.11.80 >=kde-apps/kspaceduel-18.11.80 >=kde-apps/ksquares-18.11.80 >=kde-apps/ktuberling-18.11.80 >=kde-apps/libkdegames-18.11.80 >=kde-apps/libkmahjongg-18.11.80 >=kde-apps/lskat-18.11.80 >=kde-apps/palapeli-18.11.80 >=kde-apps/picmi-18.11.80 opengl? ( >=kde-apps/ksudoku-18.11.80 >=kde-apps/kubrick-18.11.80 ) python? ( >=kde-apps/kajongg-18.11.80 ) !kde-apps/kdegames-meta:4
+SLOT=5
+_eclasses_=kde5-functions	3087b8c1febb8412f00587b979b752f6	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	b2f01ad412baf81650c23fcf0975fa33	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
+_md5_=559e28e5e86425707b58afe1762ec74a

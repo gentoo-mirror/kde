@@ -1,0 +1,11 @@
+DEFINED_PHASES=-
+DESCRIPTION=kdenetwork - merge this to pull in all kdenetwork-derived packages
+EAPI=7
+HOMEPAGE=https://www.kde.org/
+IUSE=+telepathy
+KEYWORDS=~amd64 ~x86
+LICENSE=metapackage
+RDEPEND=>=kde-apps/kdenetwork-filesharing-18.11.80 >=kde-apps/kget-18.11.80 >=kde-apps/krdc-18.11.80 >=kde-apps/kopete-18.11.80 >=kde-apps/krfb-18.11.80 >=kde-apps/zeroconf-ioslave-18.11.80 telepathy? ( >=kde-apps/plasma-telepathy-meta-18.11.80 ) !kde-apps/kdenetwork-meta:4
+SLOT=5
+_eclasses_=kde5-functions	3087b8c1febb8412f00587b979b752f6	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	b2f01ad412baf81650c23fcf0975fa33	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
+_md5_=14f66064983480058222147fd970d41f
