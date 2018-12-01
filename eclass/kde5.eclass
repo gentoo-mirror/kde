@@ -165,7 +165,7 @@ fi
 # An array of $CATEGORY-$PV pairs of packages that are unreleased upstream.
 # Any package matching this will have fetch restriction enabled, and receive
 # a proper error message via pkg_nofetch.
-KDE_UNRELEASED=( )
+KDE_UNRELEASED=( kde-frameworks-5.53.0 )
 
 if [[ ${KDEBASE} = kdevelop ]]; then
 	HOMEPAGE="https://www.kdevelop.org/"
@@ -217,11 +217,6 @@ case ${KDE_AUTODEPS} in
 		if [[ ${CATEGORY} = kde-apps ]]; then
 			[[ ${KDE_BLOCK_SLOT4} = true ]] && RDEPEND+=" !kde-apps/${PN}:4"
 			RDEPEND+=" !kde-apps/kde-l10n" # TODO: drop after 18.08.3 removal
-			[[ ${PV} = 18.04.3* ]] && \
-				RDEPEND+="
-					!<kde-apps/kde4-l10n-16.12.0:4
-					!kde-apps/kdepim-l10n:5
-				"
 		fi
 		;;
 esac
