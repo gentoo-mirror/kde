@@ -6,5 +6,5 @@ IUSE=cups floppy
 LICENSE=metapackage
 RDEPEND=>=kde-apps/ark-18.12.49 >=kde-apps/filelight-18.12.49 >=kde-apps/kate-18.12.49 >=kde-apps/kbackup-18.12.49 >=kde-apps/kcalc-18.12.49 >=kde-apps/kcharselect-18.12.49 >=kde-apps/kdebugsettings-18.12.49 >=kde-apps/kdf-18.12.49 >=kde-apps/kgpg-18.12.49 >=kde-apps/kimagemapeditor-18.12.49 >=kde-apps/kteatime-18.12.49 >=kde-apps/ktimer-18.12.49 >=kde-apps/kwalletmanager-18.12.49 >=kde-apps/sweeper-18.12.49 cups? ( >=kde-apps/print-manager-18.12.49 ) floppy? ( >=kde-apps/kfloppy-18.12.49 ) !kde-apps/kdeutils-meta:4
 SLOT=5
-_eclasses_=kde5-functions	3087b8c1febb8412f00587b979b752f6	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	b2f01ad412baf81650c23fcf0975fa33	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
+_eclasses_=kde5-functions	b1985407462a45c0ad1ab5e724e11659	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	b2f01ad412baf81650c23fcf0975fa33	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
 _md5_=77d3a820e4e6b3854632fa85d6d188ae
