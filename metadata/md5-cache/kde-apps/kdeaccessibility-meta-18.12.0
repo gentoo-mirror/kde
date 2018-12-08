@@ -1,0 +1,10 @@
+DEFINED_PHASES=-
+DESCRIPTION=kdeaccessibility - merge this to pull in all kdeaccessiblity-derived packages
+EAPI=7
+HOMEPAGE=https://www.kde.org/
+KEYWORDS=~amd64 ~x86
+LICENSE=metapackage
+RDEPEND=>=kde-apps/kmag-18.12.0 >=kde-apps/kmousetool-18.12.0 >=kde-apps/kmouth-18.12.0 !kde-apps/kdeaccessibility-meta:4
+SLOT=5
+_eclasses_=kde5-functions	b1985407462a45c0ad1ab5e724e11659	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	b2f01ad412baf81650c23fcf0975fa33	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
+_md5_=7470824e7f1522c838ee696a32323043
