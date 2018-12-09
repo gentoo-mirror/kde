@@ -7,5 +7,5 @@ KEYWORDS=~amd64 ~x86
 LICENSE=metapackage
 RDEPEND=>=kde-apps/ark-18.11.90 >=kde-apps/filelight-18.11.90 >=kde-apps/kate-18.11.90 >=kde-apps/kbackup-18.11.90 >=kde-apps/kcalc-18.11.90 >=kde-apps/kcharselect-18.11.90 >=kde-apps/kdebugsettings-18.11.90 >=kde-apps/kdf-18.11.90 >=kde-apps/kgpg-18.11.90 >=kde-apps/kimagemapeditor-18.11.90 >=kde-apps/kteatime-18.11.90 >=kde-apps/ktimer-18.11.90 >=kde-apps/kwalletmanager-18.11.90 >=kde-apps/sweeper-18.11.90 cups? ( >=kde-apps/print-manager-18.11.90 ) floppy? ( >=kde-apps/kfloppy-18.11.90 ) !kde-apps/kdeutils-meta:4
 SLOT=5
-_eclasses_=kde5-functions	b1985407462a45c0ad1ab5e724e11659	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	b2f01ad412baf81650c23fcf0975fa33	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
+_eclasses_=kde5-functions	574d71bd8a0887e7ec19d34523b2c134	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	b2f01ad412baf81650c23fcf0975fa33	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
 _md5_=0d63e89f19ac12ddb16a798c24fb5292
