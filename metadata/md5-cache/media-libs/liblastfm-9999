@@ -1,6 +1,6 @@
-BDEPEND=dev-util/ninja >=dev-util/cmake-3.9.6 >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=test? ( dev-qt/qttest:5 ) dev-util/ninja >=dev-util/cmake-3.9.6 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtnetwork:5[ssl] dev-qt/qtxml:5 fingerprint? ( dev-qt/qtsql:5 media-libs/libsamplerate sci-libs/fftw:3.0 ) test? ( dev-qt/qttest:5 )
+DEPEND=dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtnetwork:5[ssl] dev-qt/qtxml:5 fingerprint? ( dev-qt/qtsql:5 media-libs/libsamplerate sci-libs/fftw:3.0 )
 DESCRIPTION=Collection of libraries to integrate Last.fm services
 EAPI=7
 HOMEPAGE=https://github.com/lastfm/liblastfm
@@ -10,4 +10,4 @@ RDEPEND=dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtnetwork:5[ssl] dev-qt/qtxml:5 f
 RESTRICT=test
 SLOT=0/0
 _eclasses_=cmake-utils	ab10bd85e5d38e2a32077bcd91faa1b6	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	flag-o-matic	55aaa148741116aa54ad0d80e361818e	git-r3	0d4635eeb5a96cd5315597a47eba25c9	multilib	b2f01ad412baf81650c23fcf0975fa33	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	f164325a2cdb5b3ea39311d483988861	xdg-utils	93b2dfbb00a09161e1e7f6360c0f7f6b
-_md5_=e57c6bad61258b3e317f28a67f08456c
+_md5_=2f3621bdd44be5e3d18acadb627b51e7
