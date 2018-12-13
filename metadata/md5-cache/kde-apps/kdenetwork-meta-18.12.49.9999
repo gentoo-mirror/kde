@@ -4,7 +4,6 @@ EAPI=7
 HOMEPAGE=https://www.kde.org/
 IUSE=+telepathy
 LICENSE=metapackage
-RDEPEND=>=kde-apps/kdenetwork-filesharing-18.12.49 >=kde-apps/kget-18.12.49 >=kde-apps/krdc-18.12.49 >=kde-apps/kopete-18.12.49 >=kde-apps/krfb-18.12.49 >=kde-apps/zeroconf-ioslave-18.12.49 telepathy? ( >=kde-apps/plasma-telepathy-meta-18.12.49 ) !kde-apps/kdenetwork-meta:4
+RDEPEND=>=kde-apps/kdenetwork-filesharing-18.12.49.9999:5 >=kde-apps/kget-18.12.49.9999:5 >=kde-apps/krdc-18.12.49.9999:5 >=kde-apps/kopete-18.12.49.9999:5 >=kde-apps/krfb-18.12.49.9999:5 >=kde-apps/zeroconf-ioslave-18.12.49.9999:5 telepathy? ( >=kde-apps/plasma-telepathy-meta-18.12.49.9999:5 )
 SLOT=5
-_eclasses_=kde5-functions	574d71bd8a0887e7ec19d34523b2c134	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	b2f01ad412baf81650c23fcf0975fa33	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
-_md5_=bff9f0105c69e77f283ed0b5f61d8a97
+_md5_=7b4f617e7bafcb7f2f6bd1a1b299f54c

@@ -4,7 +4,6 @@ EAPI=7
 HOMEPAGE=https://www.kde.org/applications/development
 IUSE=cvs +webkit
 LICENSE=metapackage
-RDEPEND=>=kde-apps/dolphin-plugins-9999 >=kde-apps/kapptemplate-9999 >=kde-apps/kcachegrind-9999 >=kde-apps/kde-dev-scripts-9999 >=kde-apps/kde-dev-utils-9999 >=kde-apps/kdesdk-kioslaves-9999 >=kde-apps/kdesdk-thumbnailers-9999 >=kde-apps/kompare-9999 >=kde-apps/kross-interpreters-9999 >=kde-apps/libkomparediff2-9999 >=kde-apps/lokalize-9999 >=kde-apps/poxml-9999 cvs? ( >=kde-apps/cervisia-9999 ) webkit? ( >=kde-apps/umbrello-9999 ) !kde-apps/kdesdk-meta:4
+RDEPEND=>=kde-apps/dolphin-plugins-9999:5 >=kde-apps/kapptemplate-9999:5 >=kde-apps/kcachegrind-9999:5 >=kde-apps/kde-dev-scripts-9999:5 >=kde-apps/kde-dev-utils-9999:5 >=kde-apps/kdesdk-kioslaves-9999:5 >=kde-apps/kdesdk-thumbnailers-9999:5 >=kde-apps/kompare-9999:5 >=kde-apps/kross-interpreters-9999:5 >=kde-apps/libkomparediff2-9999:5 >=kde-apps/lokalize-9999:5 >=kde-apps/poxml-9999:5 cvs? ( >=kde-apps/cervisia-9999:5 ) webkit? ( >=kde-apps/umbrello-9999:5 )
 SLOT=5
-_eclasses_=kde5-functions	574d71bd8a0887e7ec19d34523b2c134	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	b2f01ad412baf81650c23fcf0975fa33	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
-_md5_=a309fe076ba4ac1132b7dc5432516f5f
+_md5_=1f60bf94d5b416fc44f7db7fae0a9ab0

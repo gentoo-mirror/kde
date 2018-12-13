@@ -4,7 +4,6 @@ EAPI=7
 HOMEPAGE=https://www.kde.org/
 IUSE=+cron
 LICENSE=metapackage
-RDEPEND=>=kde-apps/ksystemlog-18.12.49 cron? ( >=kde-apps/kcron-18.12.49 ) !kde-apps/kdeadmin-meta:4
+RDEPEND=>=kde-apps/ksystemlog-18.12.49.9999:5 cron? ( >=kde-apps/kcron-18.12.49.9999:5 )
 SLOT=5
-_eclasses_=kde5-functions	574d71bd8a0887e7ec19d34523b2c134	kde5-meta-pkg	640f9c663959f7d9331b326acc574e34	multilib	b2f01ad412baf81650c23fcf0975fa33	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
-_md5_=c34d8672372eed07830fb7c113dd9aea
+_md5_=05f6149fa0f0c22fe260b291b011915d
