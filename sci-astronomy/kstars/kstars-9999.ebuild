@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -14,7 +14,7 @@ fi
 
 DESCRIPTION="Desktop Planetarium"
 HOMEPAGE="https://www.kde.org/applications/education/kstars https://edu.kde.org/kstars/"
-IUSE="fits indi raw wcs"
+IUSE="fits indi +password raw wcs"
 
 REQUIRED_USE="indi? ( fits ) ${PYTHON_REQUIRED_USE}"
 
@@ -40,10 +40,12 @@ COMMON_DEPEND="
 	$(add_qt_dep qtprintsupport)
 	$(add_qt_dep qtsql)
 	$(add_qt_dep qtsvg)
+	$(add_qt_dep qtwebsockets)
 	$(add_qt_dep qtwidgets)
 	sys-libs/zlib
 	fits? ( sci-libs/cfitsio )
 	indi? ( >=sci-libs/indilib-1.4.0 )
+	password? ( dev-libs/qtkeychain:= )
 	raw? ( media-libs/libraw:= )
 	wcs? ( sci-astronomy/wcslib )
 "
@@ -62,8 +64,10 @@ RDEPEND="${COMMON_DEPEND}
 
 src_configure() {
 	local mycmakeargs=(
+		-DFETCH_TRANSLATIONS=OFF
 		$(cmake-utils_use_find_package fits CFitsio)
 		$(cmake-utils_use_find_package indi INDI)
+		$(cmake-utils_use_find_package password Qt5Keychain)
 		$(cmake-utils_use_find_package raw LibRaw)
 		$(cmake-utils_use_find_package wcs WCSLIB)
 	)
@@ -74,7 +78,7 @@ src_configure() {
 pkg_postinst () {
 	kde5_pkg_postinst
 
-	if ! has_version "x11-misc/xplanet" ; then
+	if [[ -z "${REPLACING_VERSIONS}" ]] && ! has_version "x11-misc/xplanet" ; then
 		elog "${PN} has optional runtime support for x11-misc/xplanet"
 	fi
 	# same for AstrometryNet, which is not packaged.
