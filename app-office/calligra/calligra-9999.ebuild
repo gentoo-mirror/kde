@@ -1,12 +1,7 @@
-# Copyright 1999-2018 Gentoo Authors
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
-
-if [[ ${KDE_BUILD_TYPE} == release ]]; then
-	SRC_URI="mirror://kde/stable/${PN}/${P}.tar.xz"
-	KEYWORDS="~amd64 ~x86"
-fi
 
 CHECKREQS_DISK_BUILD="4G"
 KDE_HANDBOOK="forceoptional"
@@ -16,12 +11,16 @@ inherit check-reqs kde5
 DESCRIPTION="KDE Office Suite"
 HOMEPAGE="https://www.calligra.org/"
 
-CAL_FTS=( karbon sheets words )
+if [[ ${KDE_BUILD_TYPE} == release ]]; then
+	SRC_URI="mirror://kde/stable/${PN}/${P}.tar.xz"
+	KEYWORDS="~amd64 ~x86"
+fi
+
+CAL_FTS=( karbon sheets stage words )
 
 LICENSE="GPL-2"
 IUSE="activities +crypt +fontconfig gemini gsl import-filter +lcms okular openexr +pdf
-	phonon pim spacenav +truetype X $(printf 'calligra_features_%s ' ${CAL_FTS[@]})
-	calligra_experimental_features_stage"
+	phonon pim spacenav +truetype X $(printf 'calligra_features_%s ' ${CAL_FTS[@]})"
 
 # TODO: Not packaged: Cauchy (https://bitbucket.org/cyrille/cauchy)
 # Required for the matlab/octave formula tool
@@ -95,14 +94,11 @@ COMMON_DEPEND="
 		$(add_qt_dep qtx11extras)
 		x11-libs/libX11
 	)
-	calligra_experimental_features_stage? (
-		$(add_qt_dep qtwebkit)
-		okular? ( $(add_kdeapps_dep okular) )
-	)
 	calligra_features_sheets? (
 		dev-cpp/eigen:3
 		dev-libs/kdiagram:5
 	)
+	calligra_features_stage? ( okular? ( $(add_kdeapps_dep okular) ) )
 	calligra_features_words? (
 		dev-libs/libxslt
 		okular? ( $(add_kdeapps_dep okular) )
@@ -144,18 +140,13 @@ src_prepare() {
 	punt_bogus_dep Qt5 Declarative
 	punt_bogus_dep Qt5 OpenGL
 
-	if ! use calligra_experimental_features_stage; then
-		punt_bogus_dep Qt5 WebKitWidgets
-		punt_bogus_dep Qt5 WebKit
-	fi
-
 	# Hack around the excessive use of CMake macros
 	if use okular && ! use calligra_features_words; then
 		sed -i -e "/add_subdirectory( *okularodtgenerator *)/ s/^/#DONT/" \
 			extras/CMakeLists.txt || die "Failed to disable OKULAR_GENERATOR_ODT"
 	fi
 
-	if use okular && ! use calligra_experimental_features_stage; then
+	if use okular && ! use calligra_features_stage; then
 		sed -i -e "/add_subdirectory( *okularodpgenerator *)/ s/^/#DONT/" \
 			extras/CMakeLists.txt || die "Failed to disable OKULAR_GENERATOR_ODP"
 	fi
@@ -168,8 +159,6 @@ src_configure() {
 	for cal_ft in ${CAL_FTS[@]}; do
 		use calligra_features_${cal_ft} && myproducts+=( "${cal_ft^^}" )
 	done
-
-	use calligra_experimental_features_stage && myproducts+=( STAGE )
 
 	use lcms && myproducts+=( PLUGIN_COLORENGINES )
 	use spacenav && myproducts+=( PLUGIN_SPACENAVIGATOR )
@@ -199,7 +188,7 @@ src_configure() {
 		-DWITH_OpenEXR=$(usex openexr)
 		-DWITH_Poppler=$(usex pdf)
 		-DWITH_Eigen3=$(usex calligra_features_sheets)
-		-DBUILD_UNMAINTAINED=$(usex calligra_experimental_features_stage)
+		-DBUILD_UNMAINTAINED=$(usex calligra_features_stage)
 		-ENABLE_CSTESTER_TESTING=$(usex test)
 		-DWITH_Freetype=$(usex truetype)
 	)
