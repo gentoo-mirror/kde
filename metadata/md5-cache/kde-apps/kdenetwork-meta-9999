@@ -6,4 +6,4 @@ IUSE=dropbox +telepathy
 LICENSE=metapackage
 RDEPEND=>=kde-apps/kdenetwork-filesharing-9999:5 >=kde-apps/kget-9999:5 >=kde-apps/krdc-9999:5 >=kde-apps/kopete-9999:5 >=kde-apps/krfb-9999:5 >=kde-apps/zeroconf-ioslave-9999:5 dropbox? ( >=kde-apps/dolphin-plugins-dropbox-9999:5 ) telepathy? ( >=kde-apps/plasma-telepathy-meta-9999:5 )
 SLOT=5
-_md5_=e1acdeb848a2eb5a939be745803e7e5c
+_md5_=e1503130f21dc03450fca11b8c5daf92

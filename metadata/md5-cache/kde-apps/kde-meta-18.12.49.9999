@@ -5,4 +5,4 @@ HOMEPAGE=https://www.kde.org/
 LICENSE=metapackage
 RDEPEND=>=kde-apps/kde-apps-meta-18.12.49.9999:5 kde-plasma/plasma-meta:5
 SLOT=5
-_md5_=d33475fd7323a15376b5c2bff2c997e1
+_md5_=0bc4a5a1746782a305835082b7155c17

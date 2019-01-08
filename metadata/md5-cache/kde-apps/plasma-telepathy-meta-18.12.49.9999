@@ -6,4 +6,4 @@ IUSE=gstreamer
 LICENSE=metapackage
 RDEPEND=>=kde-apps/ktp-accounts-kcm-18.12.49.9999:5 >=kde-apps/ktp-approver-18.12.49.9999:5 >=kde-apps/ktp-auth-handler-18.12.49.9999:5 >=kde-apps/ktp-common-internals-18.12.49.9999:5 >=kde-apps/ktp-contact-list-18.12.49.9999:5 >=kde-apps/ktp-contact-runner-18.12.49.9999:5 >=kde-apps/ktp-desktop-applets-18.12.49.9999:5 >=kde-apps/ktp-filetransfer-handler-18.12.49.9999:5 >=kde-apps/ktp-kded-module-18.12.49.9999:5 >=kde-apps/ktp-send-file-18.12.49.9999:5 >=kde-apps/ktp-text-ui-18.12.49.9999:5 gstreamer? ( >=kde-apps/ktp-call-ui-18.12.49.9999:5 )
 SLOT=5
-_md5_=ad8de521f0612d66003a5d434df573f0
+_md5_=6e1a63fce7e2dc54a459364625f48907

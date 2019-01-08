@@ -6,4 +6,4 @@ IUSE=+handbook +webengine webkit
 LICENSE=metapackage
 RDEPEND=>=kde-apps/dolphin-9999:5 >=kde-apps/kdialog-9999:5 >=kde-apps/keditbookmarks-9999:5 >=kde-apps/kfind-9999:5 >=kde-apps/konsole-9999:5 >=kde-apps/kwrite-9999:5 handbook? ( >=kde-apps/khelpcenter-9999:5 ) webengine? ( www-client/falkon ) webkit? ( >=kde-apps/konqueror-9999:5[webengine?] kde-misc/kwebkitpart:5 )
 SLOT=5
-_md5_=3bb6ff9091d275e36f11d821569ec8d1
+_md5_=90e117bcfff39ceee7d525b8780fb445

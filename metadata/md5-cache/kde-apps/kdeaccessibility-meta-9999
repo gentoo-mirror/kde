@@ -5,4 +5,4 @@ HOMEPAGE=https://www.kde.org/
 LICENSE=metapackage
 RDEPEND=>=kde-apps/kmag-9999:5 >=kde-apps/kmousetool-9999:5 >=kde-apps/kmouth-9999:5
 SLOT=5
-_md5_=cbe62d7be694f19ec66d2a270b96f352
+_md5_=c7a68e8aa1bc291f10a86f2235267a96

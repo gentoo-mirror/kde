@@ -6,4 +6,4 @@ IUSE=+webengine +webkit
 LICENSE=metapackage
 RDEPEND=>=kde-apps/analitza-9999:5 >=kde-apps/artikulate-9999:5 >=kde-apps/blinken-9999:5 >=kde-apps/cantor-9999:5 >=kde-apps/kalzium-9999:5 >=kde-apps/kanagram-9999:5 >=kde-apps/kbruch-9999:5 >=kde-apps/kdeedu-data-9999:5 >=kde-apps/kgeography-9999:5 >=kde-apps/khangman-9999:5 >=kde-apps/kig-9999:5 >=kde-apps/kiten-9999:5 >=kde-apps/klettres-9999:5 >=kde-apps/kmplot-9999:5 >=kde-apps/kqtquickcharts-9999:5 >=kde-apps/ktouch-9999:5 >=kde-apps/kturtle-9999:5 >=kde-apps/kwordquiz-9999:5 >=kde-apps/libkeduvocdocument-9999:5 >=kde-apps/marble-9999:5 >=kde-apps/minuet-9999:5 >=kde-apps/step-9999:5 webengine? ( >=kde-apps/kalgebra-9999:5 >=kde-apps/parley-9999:5 ) webkit? ( >=kde-apps/rocs-9999:5 )
 SLOT=5
-_md5_=5512db5f5d2b582ef5de53d733d2f618
+_md5_=d0f436161f08594c390ded1626ea35cf

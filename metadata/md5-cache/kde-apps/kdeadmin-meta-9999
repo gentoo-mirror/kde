@@ -6,4 +6,4 @@ IUSE=+cron
 LICENSE=metapackage
 RDEPEND=>=kde-apps/ksystemlog-9999:5 cron? ( >=kde-apps/kcron-9999:5 )
 SLOT=5
-_md5_=05f6149fa0f0c22fe260b291b011915d
+_md5_=7d2447a441e480284781dad3f7e91a8b
