@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Authors
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -8,7 +8,7 @@ inherit kde5
 
 DESCRIPTION="Backend implementation for xdg-desktop-portal that is using Qt/KDE Frameworks"
 LICENSE="LGPL-2+"
-KEYWORDS=""
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 # TODO: Needed for screencast portal
@@ -33,5 +33,3 @@ DEPEND="${COMMON_DEPEND}
 RDEPEND="${COMMON_DEPEND}
 	x11-misc/xdg-desktop-portal
 "
-
-PATCHES=( "${FILESDIR}/${P}-current_name.patch" )
