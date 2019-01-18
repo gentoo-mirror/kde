@@ -9,7 +9,7 @@ inherit kde5 python-any-r1
 DESCRIPTION="Official GTK+ port of Plasma's Breeze widget style"
 HOMEPAGE="https://cgit.kde.org/breeze-gtk.git"
 LICENSE="LGPL-2.1+"
-KEYWORDS=""
+KEYWORDS="~amd64 ~arm ~x86"
 IUSE=""
 
 BDEPEND="${PYTHON_DEPS}
