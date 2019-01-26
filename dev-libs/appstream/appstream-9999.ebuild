@@ -1,7 +1,7 @@
 # Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
 inherit meson xdg-utils
 
@@ -23,7 +23,18 @@ LICENSE="LGPL-2.1+ GPL-2+"
 SLOT="0/4"
 IUSE="apt +introspection qt5 test"
 
-RDEPEND="
+BDEPEND="
+	app-text/docbook-xml-dtd:4.5
+	dev-libs/appstream-glib
+	dev-util/itstool
+	>=dev-util/meson-0.42.0
+	>=sys-devel/gettext-0.19.8
+	test? (
+		dev-qt/linguist-tools:5
+		qt5? ( dev-qt/qttest:5 )
+	)
+"
+DEPEND="
 	dev-libs/glib:2
 	dev-libs/libxml2:2
 	dev-libs/libyaml
@@ -31,16 +42,7 @@ RDEPEND="
 	introspection? ( >=dev-libs/gobject-introspection-1.56:= )
 	qt5? ( dev-qt/qtcore:5 )
 "
-DEPEND="${RDEPEND}
-	app-text/docbook-xml-dtd:4.5
-	dev-libs/appstream-glib
-	dev-util/itstool
-	>=dev-util/meson-0.42.0
-	>=sys-devel/gettext-0.19.8
-	test? (
-		qt5? ( dev-qt/qttest:5 )
-	)
-"
+RDEPEND="${DEPEND}"
 
 src_prepare() {
 	default

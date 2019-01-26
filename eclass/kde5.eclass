@@ -31,10 +31,10 @@ _KDE5_ECLASS=1
 # for tests you should proceed with setting VIRTUALX_REQUIRED=test.
 : ${VIRTUALX_REQUIRED:=manual}
 
-inherit cmake-utils flag-o-matic gnome2-utils kde5-functions virtualx xdg
+inherit cmake-utils flag-o-matic kde5-functions virtualx xdg
 
 case ${EAPI} in
-	6) inherit eapi7-ver eutils ;;
+	6) inherit eapi7-ver eutils gnome2-utils ;;
 esac
 
 if [[ ${KDE_BUILD_TYPE} = live ]]; then
@@ -51,8 +51,7 @@ EXPORT_FUNCTIONS pkg_setup pkg_nofetch src_unpack src_prepare src_configure src_
 # @DESCRIPTION:
 # If set to "false", do nothing.
 # For any other value, assume the package is using KDEInstallDirs macro and switch
-# KDE_INSTALL_USE_QT_SYS_PATHS to ON. For EAPI-7 and above, fix KDE_INSTALL_LIBEXECDIR
-# to use the correct location.
+# KDE_INSTALL_USE_QT_SYS_PATHS to ON.
 : ${ECM_KDEINSTALLDIRS:=true}
 
 # @ECLASS-VARIABLE: KDE_AUTODEPS
@@ -637,12 +636,6 @@ kde5_src_configure() {
 			# install mkspecs in the same directory as qt stuff
 			-DKDE_INSTALL_USE_QT_SYS_PATHS=ON
 		)
-		if [[ ${EAPI} != 6 ]] ; then
-			cmakeargs+=(
-				# install to correct libexec location
-				-DKDE_INSTALL_LIBEXECDIR=${EPREFIX}/usr/libexec
-			)
-		fi
 	fi
 
 	# allow the ebuild to override what we set here
@@ -707,14 +700,14 @@ kde5_src_install() {
 	# cmake can't find the tags and qthelp viewers can't find the docs
 	local p=$(best_version dev-qt/qtcore:5)
 	local pv=$(echo ${p/%-r[0-9]*/} | rev | cut -d - -f 1 | rev)
-	#todo: clean up trailing space check when EAPI <7 is removed
+	#todo: clean up trailing slash check when EAPI <7 is removed
 	if [[ -d ${ED%/}/usr/share/doc/qt-${pv} ]]; then
 		docompress -x /usr/share/doc/qt-${pv}
 	fi
 
 	# We don't want /usr/share/doc/HTML to be compressed,
 	# because then khelpcenter can't find the docs
-	#todo: clean up trailing space check when EAPI <7 is removed
+	#todo: clean up trailing slash check when EAPI <7 is removed
 	if [[ -d ${ED%/}/usr/share/doc/HTML ]]; then
 		docompress -x /usr/share/doc/HTML
 	fi
@@ -726,7 +719,7 @@ kde5_src_install() {
 kde5_pkg_preinst() {
 	debug-print-function ${FUNCNAME} "$@"
 
-	gnome2_icon_savelist
+	[[ ${EAPI} == 6 ]] && gnome2_icon_savelist
 	xdg_pkg_preinst
 }
 
@@ -736,7 +729,7 @@ kde5_pkg_preinst() {
 kde5_pkg_postinst() {
 	debug-print-function ${FUNCNAME} "$@"
 
-	if [[ -n ${GNOME2_ECLASS_ICONS} ]]; then
+	if [[ ${EAPI} == 6 && -n ${GNOME2_ECLASS_ICONS} ]]; then
 		gnome2_icon_cache_update
 	fi
 	xdg_pkg_postinst
@@ -757,7 +750,7 @@ kde5_pkg_postinst() {
 kde5_pkg_postrm() {
 	debug-print-function ${FUNCNAME} "$@"
 
-	if [[ -n ${GNOME2_ECLASS_ICONS} ]]; then
+	if [[ ${EAPI} == 6 && -n ${GNOME2_ECLASS_ICONS} ]]; then
 		gnome2_icon_cache_update
 	fi
 	xdg_pkg_postrm

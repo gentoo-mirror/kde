@@ -1,7 +1,7 @@
 # Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
 KDE_HANDBOOK="optional"
 KDE_TEST="forceoptional"
@@ -16,6 +16,10 @@ LICENSE="GPL-2"
 KEYWORDS=""
 IUSE="activities designer kde ofx webkit"
 
+BDEPEND="
+	dev-libs/libxslt
+	virtual/pkgconfig
+"
 COMMON_DEPEND="
 	$(add_frameworks_dep karchive)
 	$(add_frameworks_dep kcompletion)
@@ -60,16 +64,12 @@ DEPEND="${COMMON_DEPEND}
 	$(add_frameworks_dep kguiaddons)
 	$(add_frameworks_dep kjobwidgets)
 	$(add_frameworks_dep kwindowsystem)
-	dev-libs/libxslt
-	virtual/pkgconfig
-	x11-misc/shared-mime-info
 	designer? (
 		$(add_frameworks_dep kdesignerplugin)
 		$(add_qt_dep designer)
 	)
 "
 RDEPEND="${COMMON_DEPEND}
-	!app-office/skrooge:4
 	$(add_qt_dep qtquickcontrols)
 "
 

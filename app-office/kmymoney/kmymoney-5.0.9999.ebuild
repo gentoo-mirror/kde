@@ -1,7 +1,7 @@
 # Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
 EGIT_BRANCH="5.0"
 PYTHON_COMPAT=( python2_7 )
@@ -25,6 +25,7 @@ IUSE="activities addressbook calendar hbci holidays ofx quotes webkit weboob"
 
 REQUIRED_USE="weboob? ( ${PYTHON_REQUIRED_USE} )"
 
+BDEPEND="virtual/pkgconfig"
 COMMON_DEPEND="
 	$(add_frameworks_dep karchive)
 	$(add_frameworks_dep kcmutils)
@@ -59,7 +60,6 @@ COMMON_DEPEND="
 	dev-libs/gmp:0=
 	dev-libs/kdiagram:5
 	dev-libs/libgpg-error
-	x11-misc/shared-mime-info
 	activities? ( $(add_frameworks_dep kactivities) )
 	addressbook? (
 		$(add_kdeapps_dep akonadi)
@@ -86,7 +86,6 @@ COMMON_DEPEND="
 "
 DEPEND="${COMMON_DEPEND}
 	dev-libs/boost
-	virtual/pkgconfig
 "
 RDEPEND="${COMMON_DEPEND}
 	!app-office/kmymoney:4
