@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit systemd
+inherit autotools systemd
 
 DESCRIPTION="Desktop integration portal"
 HOMEPAGE="https://flatpak.org/ https://github.com/flatpak/xdg-desktop-portal"
@@ -12,13 +12,8 @@ SRC_URI="https://github.com/flatpak/${PN}/releases/download/${PV}/${P}.tar.xz"
 LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="doc"
+IUSE="doc geolocation"
 
-RDEPEND="
-	dev-libs/glib:2[dbus]
-	sys-fs/fuse
-"
-DEPEND="${RDEPEND}"
 BDEPEND="
 	dev-util/gdbus-codegen
 	sys-devel/gettext
@@ -28,12 +23,25 @@ BDEPEND="
 		app-text/docbook-xml-dtd:4.3
 	)
 "
+DEPEND="
+	dev-libs/glib:2[dbus]
+	sys-fs/fuse:0
+	geolocation? ( app-misc/geoclue:2.0 )
+"
+RDEPEND="${DEPEND}"
+
+src_prepare() {
+	default
+	sed -e "/^PKG_CHECK_MODULES(FLATPAK/s/^/# DONT /" -i configure.ac || die
+	eautoreconf
+}
 
 src_configure() {
 	local myeconfargs=(
 		--disable-pipewire
-		$(use_enable doc docbook-docs)
 		--with-systemduserunitdir="$(systemd_get_userunitdir)"
+		$(use_enable doc docbook-docs)
+		$(use_enable geolocation geoclue)
 	)
 	econf "${myeconfargs[@]}"
 }
