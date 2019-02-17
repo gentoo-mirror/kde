@@ -1,6 +1,6 @@
-BDEPEND=doc? ( app-doc/doxygen[dot] ) test? ( dev-qt/qttest:5 ) dev-util/ninja >=dev-util/cmake-3.9.6 test? ( !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost ) >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=doc? ( app-doc/doxygen[dot] ) dev-util/ninja >=dev-util/cmake-3.9.6 test? ( !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost ) >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtscript:5
+DEPEND=dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtscript:5 test? ( dev-qt/qttest:5 )
 DESCRIPTION=C++ string template engine based on the Django template system
 EAPI=7
 HOMEPAGE=https://github.com/steveire/grantlee
@@ -9,4 +9,4 @@ LICENSE=LGPL-2.1+
 RDEPEND=dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtscript:5
 SLOT=5
 _eclasses_=cmake-utils	3d9f830926d00ae9d4a3f56565a3e714	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	flag-o-matic	a09389deba2c0a7108b581e02c7cecbf	git-r3	0d4635eeb5a96cd5315597a47eba25c9	multilib	b2f01ad412baf81650c23fcf0975fa33	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	f164325a2cdb5b3ea39311d483988861	virtualx	401b718cc14d43a5a7fbe062c4851ba5	xdg-utils	14d00d009167652b1fa363e55effe213
-_md5_=37ff400b3d4e2528dfc37f8480d10ea3
+_md5_=1850649cfe66ac2ec68715f7b08d0cf9

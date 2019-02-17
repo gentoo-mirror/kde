@@ -1,6 +1,6 @@
-BDEPEND=dev-util/glib-utils test? ( dev-qt/qttest:5 ) >=dev-vcs/git-1.8.2.1[curl] dev-util/ninja >=dev-util/cmake-3.9.6
+BDEPEND=dev-util/glib-utils >=dev-vcs/git-1.8.2.1[curl] dev-util/ninja >=dev-util/cmake-3.9.6
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=dev-libs/boost:= dev-libs/glib:2 dev-qt/qtcore:5 dev-qt/qtdeclarative:5 dev-qt/qtgui:5 dev-qt/qtopengl:5 dev-qt/qtwidgets:5 media-libs/gstreamer:1.0 media-libs/gst-plugins-base:1.0
+DEPEND=dev-libs/boost:= dev-libs/glib:2 dev-qt/qtcore:5 dev-qt/qtdeclarative:5 dev-qt/qtgui:5 dev-qt/qtopengl:5 dev-qt/qtwidgets:5 media-libs/gstreamer:1.0 media-libs/gst-plugins-base:1.0 test? ( dev-qt/qttest:5 )
 DESCRIPTION=C++ bindings for GStreamer with a Qt-style API
 EAPI=7
 HOMEPAGE=https://gstreamer.freedesktop.org/modules/qt-gstreamer.html
@@ -10,4 +10,4 @@ RDEPEND=dev-libs/boost:= dev-libs/glib:2 dev-qt/qtcore:5 dev-qt/qtdeclarative:5 
 RESTRICT=test
 SLOT=0
 _eclasses_=cmake-utils	3d9f830926d00ae9d4a3f56565a3e714	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	flag-o-matic	a09389deba2c0a7108b581e02c7cecbf	git-r3	0d4635eeb5a96cd5315597a47eba25c9	multilib	b2f01ad412baf81650c23fcf0975fa33	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	f164325a2cdb5b3ea39311d483988861	xdg-utils	14d00d009167652b1fa363e55effe213
-_md5_=f21f21c35201bda49dc15a3c3b228d9a
+_md5_=f50c67cc3cd118878752fcf0e8768384
