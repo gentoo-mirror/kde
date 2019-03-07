@@ -11,5 +11,5 @@ RDEPEND=>=dev-qt/qtgui-5.11.1:5 >=dev-qt/qtwidgets-5.11.1:5 aspell? ( app-text/a
 RESTRICT=fetch
 SLOT=5/5.56
 SRC_URI=mirror://kde/stable/frameworks/5.56/sonnet-5.56.0.tar.xz
-_eclasses_=cmake-utils	dc3584b7281e9751d8b42f8ecce496a1	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	flag-o-matic	a09389deba2c0a7108b581e02c7cecbf	kde5	f868ac7ac7ba70bd049a978ccf2ace10	kde5-functions	6eaa563f4dedcecf2839bcbea4834032	multilib	b2f01ad412baf81650c23fcf0975fa33	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	f164325a2cdb5b3ea39311d483988861	virtualx	401b718cc14d43a5a7fbe062c4851ba5	xdg	c7ba313ea1eaf266f95cc6235f7d6a07	xdg-utils	14d00d009167652b1fa363e55effe213
+_eclasses_=cmake-utils	dc3584b7281e9751d8b42f8ecce496a1	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	flag-o-matic	a09389deba2c0a7108b581e02c7cecbf	kde5	0441e5e497689dffb41f521a9d84b67a	kde5-functions	6eaa563f4dedcecf2839bcbea4834032	multilib	b2f01ad412baf81650c23fcf0975fa33	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	f164325a2cdb5b3ea39311d483988861	virtualx	401b718cc14d43a5a7fbe062c4851ba5	xdg	c7ba313ea1eaf266f95cc6235f7d6a07	xdg-utils	14d00d009167652b1fa363e55effe213
 _md5_=7dd7e64c49e42907aec8859d879b5114

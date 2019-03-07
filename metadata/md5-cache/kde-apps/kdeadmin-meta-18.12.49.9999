@@ -1,9 +1,0 @@
-DEFINED_PHASES=-
-DESCRIPTION=KDE administration tools - merge this to pull in all kdeadmin-derived packages
-EAPI=7
-HOMEPAGE=https://www.kde.org/
-IUSE=+cron
-LICENSE=metapackage
-RDEPEND=>=kde-apps/ksystemlog-18.12.49.9999:5 cron? ( >=kde-apps/kcron-18.12.49.9999:5 )
-SLOT=5
-_md5_=7d2447a441e480284781dad3f7e91a8b

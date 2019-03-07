@@ -1,9 +1,0 @@
-DEFINED_PHASES=-
-DESCRIPTION=Meta package for the KDE Applications collection
-EAPI=7
-HOMEPAGE=https://www.kde.org/
-IUSE=accessibility pim sdk
-LICENSE=metapackage
-RDEPEND=>=kde-apps/kdeadmin-meta-18.12.49.9999:5 >=kde-apps/kdecore-meta-18.12.49.9999:5 >=kde-apps/kdeedu-meta-18.12.49.9999:5 >=kde-apps/kdegames-meta-18.12.49.9999:5 >=kde-apps/kdegraphics-meta-18.12.49.9999:5 >=kde-apps/kdemultimedia-meta-18.12.49.9999:5 >=kde-apps/kdenetwork-meta-18.12.49.9999:5 >=kde-apps/kdeutils-meta-18.12.49.9999:5 accessibility? ( >=kde-apps/kdeaccessibility-meta-18.12.49.9999:5 ) pim? ( >=kde-apps/kdepim-meta-18.12.49.9999:5 ) sdk? ( >=kde-apps/kdesdk-meta-18.12.49.9999:5 )
-SLOT=5
-_md5_=814c56a23de44e038ca5df484856c33b

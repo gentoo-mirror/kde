@@ -1,9 +1,0 @@
-DEFINED_PHASES=-
-DESCRIPTION=kdenetwork - merge this to pull in all kdenetwork-derived packages
-EAPI=7
-HOMEPAGE=https://www.kde.org/
-IUSE=dropbox +telepathy
-LICENSE=metapackage
-RDEPEND=>=kde-apps/kdenetwork-filesharing-18.12.49.9999:5 >=kde-apps/kget-18.12.49.9999:5 >=kde-apps/krdc-18.12.49.9999:5 >=kde-apps/kopete-18.12.49.9999:5 >=kde-apps/krfb-18.12.49.9999:5 >=kde-apps/zeroconf-ioslave-18.12.49.9999:5 dropbox? ( >=kde-apps/dolphin-plugins-dropbox-18.12.49.9999:5 ) telepathy? ( >=kde-apps/plasma-telepathy-meta-18.12.49.9999:5 )
-SLOT=5
-_md5_=e1503130f21dc03450fca11b8c5daf92
