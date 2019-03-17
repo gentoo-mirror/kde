@@ -159,14 +159,7 @@ fi
 # a proper error message via pkg_nofetch.
 KDE_UNRELEASED=( )
 
-if [[ ${KDEBASE} = kdevelop ]]; then
-	HOMEPAGE="https://www.kdevelop.org/"
-elif [[ ${KMNAME} = kdepim ]]; then
-	HOMEPAGE="https://kde.org/applications/office/kontact/"
-else
-	HOMEPAGE="https://kde.org/"
-fi
-
+HOMEPAGE="https://kde.org/"
 LICENSE="GPL-2"
 
 SLOT=5
@@ -282,14 +275,6 @@ if [[ -n ${KMNAME} && ${KMNAME} != ${PN} && ${KDE_BUILD_TYPE} = release ]]; then
 	S=${WORKDIR}/${KMNAME}-${PV}
 fi
 
-if [[ -n ${KDEBASE} && ${KDEBASE} = kdevelop && ${KDE_BUILD_TYPE} = release ]]; then
-	if [[ -n ${KMNAME} ]]; then
-		S=${WORKDIR}/${KMNAME}-${PV}
-	else
-		S=${WORKDIR}/${P}
-	fi
-fi
-
 _kde_is_unreleased() {
 	local pair
 	for pair in "${KDE_UNRELEASED[@]}" ; do
@@ -355,23 +340,15 @@ _calculate_src_uri() {
 			;;
 	esac
 
-	if [[ -z ${SRC_URI} && -n ${KDEBASE} ]] ; then
-		local _kdebase
-		case ${PN} in
-			kdevelop-pg-qt)
-				_kdebase=${PN} ;;
-			*)
-				_kdebase=${KDEBASE} ;;
-		esac
+	if [[ ${PN} = kdevelop* ]]; then
 		case ${PV} in
 			*.*.[6-9]? )
-				SRC_URI="mirror://kde/unstable/${_kdebase}/${PV}/src/${_kmname}-${PV}.tar.xz"
+				SRC_URI="mirror://kde/unstable/kdevelop/${PV}/src/${_kmname}-${PV}.tar.xz"
 				RESTRICT+=" mirror"
 				;;
 			*)
-				SRC_URI="mirror://kde/stable/${_kdebase}/${PV}/src/${_kmname}-${PV}.tar.xz" ;;
+				SRC_URI="mirror://kde/stable/kdevelop/${PV}/src/${_kmname}-${PV}.tar.xz" ;;
 		esac
-		unset _kdebase
 	fi
 
 	if _kde_is_unreleased ; then
@@ -412,6 +389,10 @@ _calculate_live_repo() {
 
 	if [[ ${PV} != 9999 && ${CATEGORY} = kde-plasma ]]; then
 		EGIT_BRANCH="Plasma/$(ver_cut 1-2)"
+	fi
+
+	if [[ ${PV} != 9999 && ${PN} = kdevelop* ]]; then
+		EGIT_BRANCH="$(ver_cut 1-2)"
 	fi
 
 	EGIT_REPO_URI="${EGIT_MIRROR}/${_kmname}"

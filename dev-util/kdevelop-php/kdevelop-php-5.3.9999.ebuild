@@ -3,8 +3,6 @@
 
 EAPI=7
 
-EGIT_BRANCH="5.3"
-KDEBASE="kdevelop"
 KDE_DOC_DIR="docs"
 KDE_HANDBOOK="forceoptional"
 KDE_TEST="true"
@@ -13,6 +11,7 @@ VIRTUALX_REQUIRED="test"
 inherit kde5
 
 DESCRIPTION="PHP plugin for KDevelop"
+HOMEPAGE="https://www.kdevelop.org/"
 LICENSE="GPL-2 LGPL-2"
 IUSE=""
 [[ ${KDE_BUILD_TYPE} = release ]] && KEYWORDS="~amd64 ~x86"

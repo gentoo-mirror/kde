@@ -4,12 +4,12 @@
 EAPI=7
 
 KDE_TEST="forceoptional"
-KDEBASE="kdevelop"
 KMNAME="kdev-python"
 PYTHON_COMPAT=( python3_{5,6,7} )
 inherit kde5 python-single-r1
 
 DESCRIPTION="Python plugin for KDevelop"
+HOMEPAGE="https://www.kdevelop.org/"
 IUSE=""
 [[ ${KDE_BUILD_TYPE} = release ]] && KEYWORDS="~amd64 ~x86"
 
