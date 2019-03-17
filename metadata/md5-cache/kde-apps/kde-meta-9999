@@ -1,8 +1,8 @@
 DEFINED_PHASES=-
 DESCRIPTION=Merge this to pull in all KDE Plasma and Applications packages
 EAPI=7
-HOMEPAGE=https://www.kde.org/
+HOMEPAGE=https://kde.org/
 LICENSE=metapackage
 RDEPEND=>=kde-apps/kde-apps-meta-9999:5 kde-plasma/plasma-meta:5
 SLOT=5
-_md5_=0bc4a5a1746782a305835082b7155c17
+_md5_=2461e3a9972c39d7155d943030627383
