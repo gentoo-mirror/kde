@@ -32,5 +32,3 @@ DEPEND="${RDEPEND}
 		$(add_qt_dep qtquickcontrols2)
 	)
 "
-
-PATCHES=( "${FILESDIR}/${P}-bogusdeps.patch" )
