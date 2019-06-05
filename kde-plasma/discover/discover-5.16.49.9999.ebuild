@@ -10,7 +10,7 @@ inherit kde5
 DESCRIPTION="KDE Plasma resources management GUI"
 HOMEPAGE="https://userbase.kde.org/Discover"
 KEYWORDS=""
-IUSE="firmware"
+IUSE="+firmware"
 
 # libmarkdown (app-text/discount) only used in PackageKitBackend
 DEPEND="
@@ -42,8 +42,6 @@ RDEPEND="${DEPEND}
 	$(add_frameworks_dep kirigami)
 "
 
-PATCHES=( "${FILESDIR}/${PN}-5.15.5-tests.patch" )
-
 src_prepare() {
 	kde5_src_prepare
 	# we don't need it with PackageKitBackend off
@@ -60,4 +58,13 @@ src_configure() {
 	)
 
 	kde5_src_configure
+}
+
+src_test() {
+	# bug 686392: needs network connection
+	local myctestargs=(
+		-E "(knsbackendtest)"
+	)
+
+	kde5_src_test
 }
