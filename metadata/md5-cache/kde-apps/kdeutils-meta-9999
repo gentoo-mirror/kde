@@ -2,8 +2,8 @@ DEFINED_PHASES=-
 DESCRIPTION=kdeutils - merge this to pull in all kdeutils-derived packages
 EAPI=7
 HOMEPAGE=https://kde.org/applications/utilities https://utils.kde.org
-IUSE=7zip cups floppy lrz rar
+IUSE=7zip cups floppy gpg lrz rar
 LICENSE=metapackage
-RDEPEND=>=kde-apps/ark-9999:5 >=kde-apps/filelight-9999:5 >=kde-apps/kate-9999:5 >=kde-apps/kbackup-9999:5 >=kde-apps/kcalc-9999:5 >=kde-apps/kcharselect-9999:5 >=kde-apps/kdebugsettings-9999:5 >=kde-apps/kdf-9999:5 >=kde-apps/kgpg-9999:5 >=kde-apps/kimagemapeditor-9999:5 >=kde-apps/kteatime-9999:5 >=kde-apps/ktimer-9999:5 >=kde-apps/kwalletmanager-9999:5 >=kde-apps/sweeper-9999:5 cups? ( >=kde-apps/print-manager-9999:5 ) floppy? ( >=kde-apps/kfloppy-9999:5 ) 7zip? ( app-arch/p7zip ) lrz? ( app-arch/lrzip ) rar? ( || ( app-arch/rar app-arch/unrar app-arch/unar ) )
+RDEPEND=>=kde-apps/ark-9999:5 >=kde-apps/filelight-9999:5 >=kde-apps/kate-9999:5 >=kde-apps/kbackup-9999:5 >=kde-apps/kcalc-9999:5 >=kde-apps/kcharselect-9999:5 >=kde-apps/kdebugsettings-9999:5 >=kde-apps/kdf-9999:5 >=kde-apps/kimagemapeditor-9999:5 >=kde-apps/kteatime-9999:5 >=kde-apps/ktimer-9999:5 >=kde-apps/kwalletmanager-9999:5 >=kde-apps/sweeper-9999:5 cups? ( >=kde-apps/print-manager-9999:5 ) floppy? ( >=kde-apps/kfloppy-9999:5 ) gpg? ( >=kde-apps/kgpg-9999:5 ) 7zip? ( app-arch/p7zip ) lrz? ( app-arch/lrzip ) rar? ( || ( app-arch/rar app-arch/unrar app-arch/unar ) )
 SLOT=5
-_md5_=aad458ec93412d1fdcff8d5cbf4a5136
+_md5_=f646d13a903501bec4c25d6ff20f0508
