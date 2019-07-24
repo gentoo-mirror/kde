@@ -36,8 +36,6 @@ COMMON_DEPEND="
 	$(add_frameworks_dep kitemmodels)
 	$(add_frameworks_dep kitemviews)
 	$(add_frameworks_dep kjobwidgets)
-	$(add_frameworks_dep kjs)
-	$(add_frameworks_dep kjsembed)
 	$(add_frameworks_dep knewstuff)
 	$(add_frameworks_dep knotifications)
 	$(add_frameworks_dep knotifyconfig)
@@ -119,6 +117,7 @@ PATCHES=(
 	"${FILESDIR}/${PN}-5.10-startplasmacompositor-script.patch"
 	"${FILESDIR}/${PN}-5.14.2-split-libkworkspace.patch"
 	"${FILESDIR}/${PN}-5.16.3-x11sessionrename.patch"
+	"${FILESDIR}/${PN}-5.16.4-no-share-dataengine.patch"
 )
 
 RESTRICT+=" test"
