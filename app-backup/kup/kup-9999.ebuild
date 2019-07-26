@@ -8,10 +8,9 @@ inherit kde5
 
 DESCRIPTION="Backup scheduler for KDE's Plasma desktop"
 HOMEPAGE="https://www.linux-apps.com/p/1127689"
-SRC_URI="https://github.com/spersson/${PN^}/archive/${P}.tar.gz"
 
 LICENSE="GPL-2"
-KEYWORDS="~amd64"
+KEYWORDS=""
 IUSE=""
 
 DEPEND="
@@ -43,8 +42,6 @@ RDEPEND="${DEPEND}
 	app-backup/bup
 	net-misc/rsync
 "
-
-S="${WORKDIR}/${PN^}-${P}"
 
 src_configure() {
 	local mycmakeargs=(
