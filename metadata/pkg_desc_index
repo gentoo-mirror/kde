@@ -10,7 +10,6 @@ app-office/kmymoney 5.0.9999 9999: Personal finance manager based on KDE Framewo
 app-office/kraft 9999: Software to manage quotes and invoices in small enterprises
 app-office/libalkimia 9999: Library with common classes and functionality used by KDE finance applications
 app-office/skrooge 9999: Personal finances manager, aiming at being simple and intuitive
-app-text/cutepaste 9999: Client application for paste.kde.org
 app-text/kbibtex 9999: BibTeX editor to edit bibliographies used with LaTeX
 dev-db/kdb 9999: Database connectivity and creation framework for various vendors
 dev-libs/appstream 9999: Cross-distro effort for providing metadata for software in the Linux ecosystem
