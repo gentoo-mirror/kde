@@ -19,8 +19,8 @@ fi
 CAL_FTS=( flow karbon sheets stage words )
 
 LICENSE="GPL-2"
-IUSE="activities +crypt +fontconfig gemini gsl import-filter +lcms okular openexr +pdf
-	phonon pim spacenav +truetype X $(printf 'calligra_features_%s ' ${CAL_FTS[@]})"
+IUSE="activities +charts +crypt +fontconfig gemini gsl import-filter +lcms okular openexr
+	+pdf phonon spacenav +truetype X $(printf 'calligra_features_%s ' ${CAL_FTS[@]})"
 
 # TODO: Not packaged: Cauchy (https://bitbucket.org/cyrille/cauchy)
 # Required for the matlab/octave formula tool
@@ -69,6 +69,7 @@ COMMON_DEPEND="
 	sys-libs/zlib
 	virtual/libiconv
 	activities? ( $(add_frameworks_dep kactivities) )
+	charts? ( dev-libs/kdiagram:5 )
 	crypt? ( app-crypt/qca:2[qt5(+)] )
 	fontconfig? ( media-libs/fontconfig )
 	gemini? ( $(add_qt_dep qtdeclarative 'widgets') )
@@ -90,17 +91,13 @@ COMMON_DEPEND="
 	openexr? ( media-libs/openexr )
 	pdf? ( app-text/poppler:=[qt5] )
 	phonon? ( media-libs/phonon[qt5(+)] )
-	pim? ( $(add_kdeapps_dep kcalcore) )
 	spacenav? ( dev-libs/libspnav )
 	truetype? ( media-libs/freetype:2 )
 	X? (
 		$(add_qt_dep qtx11extras)
 		x11-libs/libX11
 	)
-	calligra_features_sheets? (
-		dev-cpp/eigen:3
-		dev-libs/kdiagram:5
-	)
+	calligra_features_sheets? ( dev-cpp/eigen:3 )
 	calligra_features_stage? ( okular? ( $(add_kdeapps_dep okular) ) )
 	calligra_features_words? (
 		dev-libs/libxslt
@@ -170,6 +167,7 @@ src_configure() {
 		-DWITH_Iconv=ON
 		-DPRODUCTSET="${myproducts[*]}"
 		$(cmake-utils_use_find_package activities KF5Activities)
+		$(cmake-utils_use_find_package charts KChart)
 		-DWITH_Qca-qt5=$(usex crypt)
 		-DWITH_Fontconfig=$(usex fontconfig)
 		$(cmake-utils_use_find_package gemini Libgit2)
@@ -183,7 +181,7 @@ src_configure() {
 		-DWITH_LibWpg=$(usex import-filter)
 		-DWITH_LibWps=$(usex import-filter)
 		$(cmake-utils_use_find_package phonon Phonon4Qt5)
-		$(cmake-utils_use_find_package pim KF5CalendarCore)
+		-DCMAKE_DISABLE_FIND_PACKAGE_KF5CalendarCore=ON
 		-DWITH_LCMS2=$(usex lcms)
 		-DWITH_Okular5=$(usex okular)
 		-DWITH_OpenEXR=$(usex openexr)
