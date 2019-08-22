@@ -91,7 +91,7 @@ kde-apps/kamoso 19.08.49.9999 9999: Application to take pictures and videos from
 kde-apps/kanagram 19.08.49.9999 9999: Game based on anagrams of words
 kde-apps/kapman 19.08.49.9999 9999: Pac-Man clone by KDE
 kde-apps/kapptemplate 19.08.49.9999 9999: Shell script to create the necessary framework to develop KDE applications
-kde-apps/kate 19.08.49.9999 9999: Kate is an advanced text editor
+kde-apps/kate 19.08.49.9999 9999: Multi-document editor with network transparency, Plasma integration and more
 kde-apps/katomic 19.08.49.9999 9999: KDE Atomic Entertainment Game
 kde-apps/kbackup 19.08.49.9999 9999: Program that lets you back up any directories or files
 kde-apps/kblackbox 19.08.49.9999 9999: Game of hide and seek played on a grid of boxes
@@ -232,7 +232,7 @@ kde-apps/kubrick 19.08.49.9999 9999: Game based on the "Rubik's Cube" puzzle by 
 kde-apps/kwalletmanager 19.08.49.9999 9999: KDE Wallet management tool
 kde-apps/kwave 19.08.49.9999 9999: Sound editor built on KDE Frameworks 5 that can edit many types of audio files
 kde-apps/kwordquiz 19.08.49.9999 9999: Powerful flashcard and vocabulary learning program
-kde-apps/kwrite 19.08.49.9999 9999: KDE simple text editor
+kde-apps/kwrite 19.08.49.9999 9999: Simple text editor based on KDE Frameworks
 kde-apps/libgravatar 19.08.49.9999 9999: Library for gravatar integration
 kde-apps/libkcddb 19.08.49.9999 9999: KDE library for CDDB
 kde-apps/libkcompactdisc 19.08.49.9999 9999: Library for playing & ripping CDs
@@ -445,6 +445,9 @@ media-gfx/symboleditor 9999: Application to create libraries of QPainterPath obj
 media-gfx/synnefo 9999: Qt front end for the Oyranos Color Management System
 media-libs/liblastfm 9999: Collection of libraries to integrate Last.fm services
 media-libs/libqaccessibilityclient 9999: Library for writing accessibility clients such as screen readers
+media-libs/phonon 9999: KDE multimedia abstraction library
+media-libs/phonon-gstreamer 9999: GStreamer backend for the Phonon multimedia library
+media-libs/phonon-vlc 9999: VLC backend for the Phonon multimedia library
 media-libs/pulseaudio-qt 1.1.0 9999: Qt bindings for libpulse
 media-libs/qt-gstreamer 9999: C++ bindings for GStreamer with a Qt-style API
 media-sound/amarok 9999: Advanced audio player based on KDE frameworks
