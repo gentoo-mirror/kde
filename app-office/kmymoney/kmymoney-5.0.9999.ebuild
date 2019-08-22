@@ -6,7 +6,6 @@ EAPI=7
 EGIT_BRANCH="5.0"
 PYTHON_COMPAT=( python2_7 )
 
-KDE_GCC_MINIMAL="6.4"
 KDE_HANDBOOK="optional"
 KDE_TEST="forceoptional"
 VIRTUALX_REQUIRED="test"
@@ -21,10 +20,14 @@ fi
 
 LICENSE="GPL-2"
 KEYWORDS=""
-IUSE="activities addressbook calendar hbci holidays ofx quotes webkit weboob"
+IUSE="activities addressbook calendar holidays ofx quotes webkit weboob"
 
 REQUIRED_USE="weboob? ( ${PYTHON_REQUIRED_USE} )"
 
+# 	hbci? (
+# 		>=net-libs/aqbanking-5.8.1
+# 		>=sys-libs/gwenhywfar-4.20.0[qt5]
+# 	)
 BDEPEND="virtual/pkgconfig"
 COMMON_DEPEND="
 	$(add_frameworks_dep karchive)
@@ -56,7 +59,7 @@ COMMON_DEPEND="
 	$(add_qt_dep qtwidgets)
 	$(add_qt_dep qtxml)
 	>=app-crypt/gpgme-1.7.1-r1[cxx]
-	>=app-office/libalkimia-6.0.0
+	>=app-office/libalkimia-7.0.0:=
 	dev-libs/gmp:0=
 	dev-libs/kdiagram:5
 	dev-libs/libgpg-error
@@ -67,10 +70,6 @@ COMMON_DEPEND="
 		$(add_kdeapps_dep kidentitymanagement)
 	)
 	calendar? ( dev-libs/libical:= )
-	hbci? (
-		>=net-libs/aqbanking-5.6.5
-		>=sys-libs/gwenhywfar-4.15.3-r1[qt5]
-	)
 	holidays? ( $(add_frameworks_dep kholidays) )
 	ofx? ( dev-libs/libofx )
 	webkit? (
@@ -104,7 +103,7 @@ src_configure() {
 		$(cmake-utils_use_find_package addressbook KF5Akonadi)
 		$(cmake-utils_use_find_package addressbook KF5Contacts)
 		$(cmake-utils_use_find_package addressbook KF5IdentityManagement)
-		-DENABLE_KBANKING=$(usex hbci)
+		-DENABLE_KBANKING=OFF
 		-DENABLE_LIBICAL=$(usex calendar)
 		$(cmake-utils_use_find_package holidays KF5Holidays)
 		-DENABLE_OFXIMPORTER=$(usex ofx)
