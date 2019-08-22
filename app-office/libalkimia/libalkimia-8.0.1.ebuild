@@ -48,6 +48,12 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 
+PATCHES=(
+	"${FILESDIR}/${P}-cmake.patch"
+	"${FILESDIR}/${P}-plasma-optional.patch"
+	"${FILESDIR}/${P}-limit-knewstuff-profiles.patch"
+)
+
 src_configure() {
 	local mycmakeargs=(
 		-DBUILD_DOXYGEN_DOCS=$(usex doc)
