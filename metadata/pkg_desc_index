@@ -8,7 +8,7 @@ app-office/calligraplan 9999: Project management application
 app-office/kexi 9999: Visual database applications creator
 app-office/kmymoney 5.0.9999 9999: Personal finance manager based on KDE Frameworks
 app-office/kraft 9999: Software to manage quotes and invoices in small enterprises
-app-office/libalkimia 9999: Library with common classes and functionality used by KDE finance applications
+app-office/libalkimia 8.0.1 9999: Library with common classes and functionality used by KDE finance applications
 app-office/skrooge 9999: Personal finances manager, aiming at being simple and intuitive
 app-text/kbibtex 9999: BibTeX editor to edit bibliographies used with LaTeX
 dev-db/kdb 9999: Database connectivity and creation framework for various vendors
