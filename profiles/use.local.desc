@@ -285,7 +285,6 @@ media-gfx/krita:qtmedia - Enable sound support for animations via dev-qt/qtmulti
 media-gfx/krita:vc - Enable support for dev-libs/vc, could be a significant speed boost
 media-libs/liblastfm:fingerprint - Build the lastfm-fingerprint library
 media-libs/phonon:designer - Install plugin for dev-qt/designer
-media-libs/phonon:gui - Install device preferences and backend settings GUI
 media-libs/phonon:vlc - Install VLC Phonon backend
 media-libs/phonon-gstreamer:network - Enable network streaming support via libsoup
 media-sound/amarok:lastfm - Enable Last.fm streaming services support through media-libs/liblastfm
