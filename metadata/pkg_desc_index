@@ -173,7 +173,7 @@ kde-apps/kmailtransport 19.08.49.9999 9999: Mail transport service
 kde-apps/kmbox 19.08.49.9999 9999: Library for accessing MBox format mail storages
 kde-apps/kmime 19.08.49.9999 9999: Libary for handling mail messages and newsgroup articles
 kde-apps/kmines 19.08.49.9999 9999: Classic mine sweeper game
-kde-apps/kmix 19.08.49.9999 9999: Plasma mixer gui
+kde-apps/kmix 19.08.49.9999 9999: Volume control gui based on KDE Frameworks
 kde-apps/kmousetool 19.08.49.9999 9999: KDE program that clicks the mouse for you
 kde-apps/kmouth 19.08.49.9999 9999: Text-to-speech synthesizer front end
 kde-apps/kmplot 19.08.49.9999 9999: Mathematical function plotter
@@ -433,7 +433,7 @@ kde-plasma/plymouth-kcm 9999: KDE Plasma control module for Plymouth
 kde-plasma/polkit-kde-agent 9999: PolKit agent module for KDE Plasma
 kde-plasma/powerdevil 9999: Power management for KDE Plasma Shell
 kde-plasma/sddm-kcm 9999: KDE Plasma control module for SDDM
-kde-plasma/systemsettings 9999: System settings utility
+kde-plasma/systemsettings 9999: Control Center to configure KDE Plasma desktop
 kde-plasma/user-manager 9999: Simple system settings module to manage the users of your system
 kde-plasma/xdg-desktop-portal-kde 9999: Backend implementation for xdg-desktop-portal that is using Qt/KDE Frameworks
 kde-plasma/xembed-sni-proxy 9999: Legacy xembed tray icons support for SNI-only system trays
