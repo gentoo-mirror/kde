@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python{2_7,3_5} )
+PYTHON_COMPAT=( python2_7 python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Parser for CMakeLists.txt files"
@@ -16,6 +16,8 @@ KEYWORDS="~amd64"
 IUSE=""
 
 BDEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
+
+PATCHES=( "${FILESDIR}/${P}-python3-fix.patch" )
 
 src_prepare() {
 	distutils-r1_src_prepare
