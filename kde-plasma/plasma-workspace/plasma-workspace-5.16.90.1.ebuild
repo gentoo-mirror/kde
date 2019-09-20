@@ -9,6 +9,8 @@ VIRTUALX_REQUIRED="test"
 inherit kde5
 
 DESCRIPTION="KDE Plasma workspace"
+SRC_URI="mirror://kde/unstable/plasma/${PV/%.1}/${P}.tar.xz"
+
 KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 IUSE="appstream +calendar geolocation gps qalculate qrcode +semantic-desktop systemd"
 
