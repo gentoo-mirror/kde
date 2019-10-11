@@ -5,8 +5,4 @@
 		<email>kde@gentoo.org</email>
 		<name>Gentoo KDE Project</name>
 	</maintainer>
-	<use>
-		<flag name="feedback">Send anonymized usage information to KDE so they can better understand our users</flag>
-		<flag name="firmware">Enable support for firmware upgrades using <pkg>sys-apps/fwupd</pkg></flag>
-	</use>
 </pkgmetadata>
