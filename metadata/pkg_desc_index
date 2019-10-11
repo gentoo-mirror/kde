@@ -19,6 +19,7 @@ dev-libs/kdiagram 9999: Powerful libraries (KChart, KGantt) for creating busines
 dev-libs/kpeoplevcard 9999: Library to expose vcards to KPeople
 dev-libs/kproperty 9999: Property editing framework with editor widget similar to Qt Designer
 dev-libs/kreport 9999: Framework for creation and generation of reports in multiple formats
+dev-libs/kuserfeedback 9999: Framework to collect user feedback for applications via telemetry and surveys
 dev-libs/libphutil 9999: A collection of PHP utility classes
 dev-libs/mauikit 9999: Templated convergent controls and multiplatform utilities for Maui applications
 dev-python/parse_cmake 0.4.1-r1: Parser for CMakeLists.txt files
@@ -366,6 +367,7 @@ kde-misc/itinerary 9999: Data Model and Extraction System for Travel Reservation
 kde-misc/kdeconnect 9999: Adds communication between KDE Plasma and your smartphone
 kde-misc/kdiff3 9999: Frontend to diff3 based on KDE Frameworks
 kde-misc/kimtoy 9999: An input method frontend for Plasma
+kde-misc/kio-fuse 9999: FUSE interface for KIO
 kde-misc/kio-gdrive 9999: KIO Slave for Google Drive service
 kde-misc/kio-stash 9999: KIO Slave and daemon to stash discontinuous file selections
 kde-misc/kmarkdownwebview 9999: KPart for rendering Markdown content
