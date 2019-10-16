@@ -359,7 +359,6 @@ kde-frameworks/sonnet 9999: Framework for providing spell-checking through abstr
 kde-frameworks/syndication 9999: Library for parsing RSS and Atom feeds
 kde-frameworks/syntax-highlighting 9999: Framework for syntax highlighting
 kde-frameworks/threadweaver 9999: Framework for managing threads using job and queue-based interfaces
-kde-misc/akonadi-phabricator-resource 9999: Phabricator integration in Akonadi/KOrganizer
 kde-misc/akonadiclient 9999: Commandline interface for accessing Akonadi
 kde-misc/apper 9999: KDE Plasma PackageKit frontend
 kde-misc/colord-kde 9999: Provides interfaces and session daemon to colord
@@ -476,7 +475,6 @@ sci-astronomy/kstars 9999: Desktop Planetarium
 sci-calculators/keurocalc 9999: Universal currency converter and calculator
 sci-electronics/cirkuit 9999: Application to generate publication-ready figures
 sci-electronics/ktechlab 9999: IDE for microcontrollers and electronics
-sys-auth/loginkit 9999: Implementation of logind that does not depend on any specific init system
 sys-auth/polkit-qt 9999: PolicyKit Qt API wrapper library
 sys-block/partitionmanager 9999: Utility for management of disks, partitions and file systems
 sys-libs/kpmcore 9999: Library for managing partitions
