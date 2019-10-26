@@ -13,11 +13,15 @@ IUSE="screencast"
 
 COMMON_DEPEND="
 	$(add_frameworks_dep kcoreaddons)
+	$(add_frameworks_dep kdeclarative)
 	$(add_frameworks_dep ki18n)
 	$(add_frameworks_dep kio)
+	$(add_frameworks_dep kirigami)
 	$(add_frameworks_dep knotifications)
 	$(add_frameworks_dep kwidgetsaddons)
+	$(add_frameworks_dep plasma)
 	$(add_qt_dep qtdbus)
+	$(add_qt_dep qtdeclarative)
 	$(add_qt_dep qtgui)
 	$(add_qt_dep qtprintsupport 'cups')
 	$(add_qt_dep qtwidgets)
@@ -32,8 +36,7 @@ DEPEND="${COMMON_DEPEND}
 	$(add_qt_dep qtconcurrent)
 "
 RDEPEND="${COMMON_DEPEND}
-	screencast? ( sys-apps/xdg-desktop-portal[screencast] )
-	!screencast? ( sys-apps/xdg-desktop-portal )
+	sys-apps/xdg-desktop-portal[screencast?]
 "
 
 src_configure() {
