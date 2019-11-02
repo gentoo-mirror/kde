@@ -4,7 +4,7 @@ app-cdr/isoimagewriter 9999: Write hybrid ISO files onto a USB disk
 app-editors/kile 9999: Latex Editor and TeX shell based on KDE Frameworks
 app-editors/okteta 9999: Hex editor by KDE
 app-office/calligra 9999: KDE Office Suite
-app-office/calligraplan 9999: Project management application
+app-office/calligraplan 3.1.90 9999: Project management application
 app-office/kexi 9999: Visual database applications creator
 app-office/kmymoney 5.0.9999 9999: Personal finance manager based on KDE Frameworks
 app-office/kraft 9999: Software to manage quotes and invoices in small enterprises
