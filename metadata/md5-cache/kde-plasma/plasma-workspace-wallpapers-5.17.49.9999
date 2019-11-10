@@ -2,9 +2,9 @@ BDEPEND=dev-qt/qtcore:5 kde-frameworks/extra-cmake-modules:5 >=dev-vcs/git-1.8.2
 DEFINED_PHASES=nofetch unpack
 DESCRIPTION=Wallpapers for the Plasma workspace
 EAPI=7
-HOMEPAGE=https://kde.org/
+HOMEPAGE=https://kde.org/plasma-desktop
 LICENSE=GPL-2
 PROPERTIES=live
 SLOT=5
-_eclasses_=git-r3	562b380fc59ae6a8622171d0acb777d1	kde.org	f39e8f3bedf509a87a32654edf80a242
-_md5_=a4d4cf489d76dd9a64e885d08af16a1b
+_eclasses_=git-r3	562b380fc59ae6a8622171d0acb777d1	kde.org	10fb11177d867e8e282bd1bde484504e
+_md5_=20fdedecc535073f084e42ea8ce6b6b3

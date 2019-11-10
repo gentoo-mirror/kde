@@ -1,14 +1,14 @@
-BDEPEND=dev-util/ninja >=dev-util/cmake-3.9.6 >=dev-vcs/git-1.8.2.1[curl] >=kde-frameworks/extra-cmake-modules-9999:5 doc? ( >=dev-qt/qthelp-5.12.3:5 >=app-doc/doxygen-1.8.13-r1 )
+BDEPEND=dev-util/ninja >=dev-util/cmake-3.9.6 doc? ( dev-qt/qthelp:5 ) doc? ( >=app-doc/doxygen-1.8.13-r1 ) >=kde-frameworks/extra-cmake-modules-5.64.0:5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install nofetch postinst postrm preinst prepare setup test unpack
-DEPEND=>=dev-qt/qtgui-5.12.3:5 >=dev-qt/qtwidgets-5.12.3:5 X? ( >=dev-qt/qtx11extras-5.12.3:5 x11-libs/libX11 x11-libs/libxcb x11-libs/libXext ) xscreensaver? ( >=dev-qt/qtdbus-5.12.3:5 x11-libs/libXScrnSaver ) dev-util/desktop-file-utils x11-misc/shared-mime-info >=dev-qt/qtcore-5.12.3:5 doc? ( >=dev-qt/qt-docs-5.12.3:5 )
+DEPEND=>=dev-qt/qtgui-5.12.3:5 >=dev-qt/qtwidgets-5.12.3:5 X? ( >=dev-qt/qtx11extras-5.12.3:5 x11-libs/libX11 x11-libs/libxcb x11-libs/libXext ) xscreensaver? ( >=dev-qt/qtdbus-5.12.3:5 x11-libs/libXScrnSaver ) dev-util/desktop-file-utils x11-misc/shared-mime-info doc? ( dev-qt/qt-docs:5 ) dev-qt/qtcore:5
 DESCRIPTION=Framework for detection and notification of device idle time
 EAPI=7
-HOMEPAGE=https://kde.org/
+HOMEPAGE=https://kde.org/products/frameworks/
 IUSE=X xscreensaver debug doc
 LICENSE=LGPL-2+
 PROPERTIES=live
-RDEPEND=>=dev-qt/qtgui-5.12.3:5 >=dev-qt/qtwidgets-5.12.3:5 X? ( >=dev-qt/qtx11extras-5.12.3:5 x11-libs/libX11 x11-libs/libxcb x11-libs/libXext ) xscreensaver? ( >=dev-qt/qtdbus-5.12.3:5 x11-libs/libXScrnSaver ) >=kde-frameworks/kf-env-4 || ( >=kde-frameworks/breeze-icons-9999:5 kde-frameworks/oxygen-icons:* ) >=dev-qt/qtcore-5.12.3:5 doc? ( >=dev-qt/qt-docs-5.12.3:5 )
+RDEPEND=>=dev-qt/qtgui-5.12.3:5 >=dev-qt/qtwidgets-5.12.3:5 X? ( >=dev-qt/qtx11extras-5.12.3:5 x11-libs/libX11 x11-libs/libxcb x11-libs/libXext ) xscreensaver? ( >=dev-qt/qtdbus-5.12.3:5 x11-libs/libXScrnSaver ) >=kde-frameworks/kf-env-4 doc? ( dev-qt/qt-docs:5 ) dev-qt/qtcore:5
 REQUIRED_USE=xscreensaver? ( X )
 SLOT=5/9999
-_eclasses_=cmake-utils	a5d9146ee60641275d46a91aab93d02f	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	flag-o-matic	8a43b9830f1e64a7a5fc0a276afa0275	git-r3	562b380fc59ae6a8622171d0acb777d1	kde.org	f39e8f3bedf509a87a32654edf80a242	kde5	757a6da66809c0f0d787d86623462d3b	kde5-functions	6298c196799dfa7ba4cd47c72a980c21	multilib	1d91b03d42ab6308b5f4f6b598ed110e	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	512eb3367f507ebaa1d1d43ab7d66e6c	virtualx	53625127887b62eabb9ec61d3d943462	xdg	c7ba313ea1eaf266f95cc6235f7d6a07	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
-_md5_=f7112b312730e2661d94aebd46b09048
+_eclasses_=cmake-utils	a5d9146ee60641275d46a91aab93d02f	ecm	7e689530ab68528a4b1a7a9def573359	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	flag-o-matic	8a43b9830f1e64a7a5fc0a276afa0275	git-r3	562b380fc59ae6a8622171d0acb777d1	kde.org	10fb11177d867e8e282bd1bde484504e	multilib	1d91b03d42ab6308b5f4f6b598ed110e	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	512eb3367f507ebaa1d1d43ab7d66e6c	virtualx	53625127887b62eabb9ec61d3d943462	xdg	c7ba313ea1eaf266f95cc6235f7d6a07	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
+_md5_=06fb8705d978bff2263fdd44bdc28334
