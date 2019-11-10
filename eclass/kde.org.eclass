@@ -55,20 +55,27 @@ case ${KDE_SELINUX_MODULE} in
 		;;
 esac
 
-if [[ ${CATEGORY} = kde-frameworks ]]; then
-	SLOT=5/${PV}
-	[[ ${KDE_BUILD_TYPE} = release ]] && SLOT=$(ver_cut 1)/$(ver_cut 1-2)
-fi
-
 # @ECLASS-VARIABLE: KDE_UNRELEASED
 # @INTERNAL
 # @DESCRIPTION
 # An array of $CATEGORY-$PV pairs of packages that are unreleased upstream.
 # Any package matching this will have fetch restriction enabled, and receive
 # a proper error message via pkg_nofetch.
-KDE_UNRELEASED=( kde-frameworks-5.64.0 kde-apps-19.08.3 )
+KDE_UNRELEASED=( )
 
 HOMEPAGE="https://kde.org/"
+
+case ${CATEGORY} in
+	kde-plasma)
+		HOMEPAGE="https://kde.org/plasma-desktop"
+		;;
+	kde-frameworks)
+		HOMEPAGE="https://kde.org/products/frameworks/"
+		SLOT=5/${PV}
+		[[ ${KDE_BUILD_TYPE} = release ]] && SLOT=$(ver_cut 1)/$(ver_cut 1-2)
+		;;
+	*) ;;
+esac
 
 _kde_is_unreleased() {
 	local pair
@@ -155,7 +162,7 @@ _calculate_live_repo() {
 	EGIT_MIRROR=${EGIT_MIRROR:=https://anongit.kde.org}
 
 	if [[ ${PV} == ??.??.49.9999 && ${CATEGORY} = kde-apps ]]; then
-		EGIT_BRANCH="Applications/$(ver_cut 1-2)"
+		EGIT_BRANCH="release/$(ver_cut 1-2)"
 	fi
 
 	if [[ ${PV} != 9999 && ${CATEGORY} = kde-plasma ]]; then
