@@ -475,7 +475,7 @@ sci-astronomy/kstars 9999: Desktop Planetarium
 sci-calculators/keurocalc 9999: Universal currency converter and calculator
 sci-electronics/cirkuit 9999: Application to generate publication-ready figures
 sci-electronics/ktechlab 9999: IDE for microcontrollers and electronics
-sys-auth/polkit-qt 9999: PolicyKit Qt API wrapper library
+sys-auth/polkit-qt 9999: Qt wrapper around polkit-1 client libraries
 sys-block/partitionmanager 9999: Utility for management of disks, partitions and file systems
 sys-libs/kpmcore 9999: Library for managing partitions
 www-client/falkon 9999: Cross-platform web browser using QtWebEngine
