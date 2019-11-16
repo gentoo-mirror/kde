@@ -70,11 +70,12 @@ src_prepare() {
 		find po -type f -name "*po" -and -name "kwrite*" -delete || die
 		rm -rf po/*/docs/kwrite || die
 	fi
+	rm -r po || die # 700244
 }
 
 src_configure() {
 	local mycmakeargs=(
-		$(cmake-utils_use_find_package activities KF5Activities)
+		$(cmake_use_find_package activities KF5Activities)
 		-DBUILD_filebrowser=$(usex filebrowser)
 		-DBUILD_lspclient=$(usex lspclient)
 		-DBUILD_sessionapplet=$(usex plasma)

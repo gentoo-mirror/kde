@@ -27,8 +27,8 @@
 # - Rename vars and function names as needed, see kde5.eclass PORTING comments
 # - Instead of FRAMEWORKS_MINIMAL, define KFMIN in ebuilds and use it for deps
 
-if [[ -z ${_ECM_UTILS_ECLASS} ]]; then
-_ECM_UTILS_ECLASS=1
+if [[ -z ${_ECM_ECLASS} ]]; then
+_ECM_ECLASS=1
 
 # @ECLASS-VARIABLE: VIRTUALX_REQUIRED
 # @DESCRIPTION:
@@ -524,7 +524,7 @@ ecm_src_configure() {
 
 	# TODO: drop after KDE Applications 19.08.3 removal
 	if in_iuse designer && [[ ${KDE_DESIGNERPLUGIN} != false ]] ; then
-		cmakeargs+=( $(cmake-utils_use_find_package designer KF5DesignerPlugin) )
+		cmakeargs+=( $(cmake_use_find_package designer KF5DesignerPlugin) )
 	fi
 
 	if [[ ${ECM_QTHELP} = true ]]; then
