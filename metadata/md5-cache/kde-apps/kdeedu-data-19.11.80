@@ -1,0 +1,12 @@
+BDEPEND=dev-qt/qtcore:5 kde-frameworks/extra-cmake-modules:5
+DEFINED_PHASES=nofetch unpack
+DESCRIPTION=Shared icons, artwork and data files for educational applications
+EAPI=7
+HOMEPAGE=https://kde.org/
+KEYWORDS=~amd64 ~arm64 ~x86
+LICENSE=GPL-2
+RESTRICT=mirror
+SLOT=5
+SRC_URI=mirror://kde/unstable/applications/19.11.80/src/kdeedu-data-19.11.80.tar.xz
+_eclasses_=kde.org	10fb11177d867e8e282bd1bde484504e
+_md5_=3456ae0027822c432f3cf987c816a025
