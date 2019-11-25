@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{6,7} )
+PYTHON_COMPAT=( python3_{6,7,8} )
 PVCUT=$(ver_cut 1-3)
 inherit ecm kde.org python-any-r1
 
@@ -16,9 +16,9 @@ KEYWORDS=""
 IUSE=""
 
 BDEPEND="${PYTHON_DEPS}
-	>=kde-plasma/breeze-${PVCUT}:5
-	$(python_gen_any_dep 'dev-python/pycairo[${PYTHON_USEDEP}]')
 	dev-lang/sassc
+	$(python_gen_any_dep 'dev-python/pycairo[${PYTHON_USEDEP}]')
+	>=kde-plasma/breeze-${PVCUT}:5
 "
 
 python_check_deps() {
