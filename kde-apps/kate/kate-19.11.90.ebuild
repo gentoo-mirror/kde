@@ -70,7 +70,6 @@ src_prepare() {
 		find po -type f -name "*po" -and -name "kwrite*" -delete || die
 		rm -rf po/*/docs/kwrite || die
 	fi
-	rm -r po || die # 700244
 }
 
 src_configure() {

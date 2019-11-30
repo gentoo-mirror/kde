@@ -22,6 +22,16 @@ BDEPEND="
 	sys-devel/gettext
 "
 DEPEND="
+	dev-cpp/rttr
+	>=dev-qt/qtconcurrent-${QTMIN}:5
+	>=dev-qt/qtdbus-${QTMIN}:5
+	>=dev-qt/qtdeclarative-${QTMIN}:5
+	>=dev-qt/qtgui-${QTMIN}:5[gles2=]
+	>=dev-qt/qtmultimedia-${QTMIN}:5
+	>=dev-qt/qtnetwork-${QTMIN}:5
+	>=dev-qt/qtsvg-${QTMIN}:5
+	>=dev-qt/qtwidgets-${QTMIN}:5
+	>=dev-qt/qtxml-${QTMIN}:5
 	>=kde-frameworks/karchive-${KFMIN}:5
 	>=kde-frameworks/kbookmarks-${KFMIN}:5
 	>=kde-frameworks/kcompletion-${KFMIN}:5
@@ -45,16 +55,6 @@ DEPEND="
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
 	>=kde-frameworks/solid-${KFMIN}:5
-	>=dev-qt/qtconcurrent-${QTMIN}:5
-	>=dev-qt/qtdbus-${QTMIN}:5
-	>=dev-qt/qtdeclarative-${QTMIN}:5
-	>=dev-qt/qtgui-${QTMIN}:5[gles2=]
-	>=dev-qt/qtmultimedia-${QTMIN}:5
-	>=dev-qt/qtnetwork-${QTMIN}:5
-	>=dev-qt/qtsvg-${QTMIN}:5
-	>=dev-qt/qtwidgets-${QTMIN}:5
-	>=dev-qt/qtxml-${QTMIN}:5
-	dev-cpp/rttr
 	>=media-libs/mlt-6.18.0[ffmpeg,frei0r,kdenlive,melt,qt5,sdl,xml]
 	freesound? ( >=dev-qt/qtwebkit-5.212.0_pre20180120:5 )
 	semantic-desktop? ( >=kde-frameworks/kfilemetadata-${KFMIN}:5 )
@@ -65,8 +65,6 @@ RDEPEND="${DEPEND}
 	>=dev-qt/qtquickcontrols-${QTMIN}:5
 	virtual/ffmpeg[encode,sdl,X]
 "
-
-PATCHES=( "${FILESDIR}"/${PN}-19.08.3-qt-5.14-2.patch ) # not yet upstream
 
 src_configure() {
 	local mycmakeargs=(

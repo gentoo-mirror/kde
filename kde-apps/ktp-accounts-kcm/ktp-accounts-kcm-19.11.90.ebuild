@@ -49,11 +49,9 @@ RDEPEND="${COMMON_DEPEND}
 	net-im/telepathy-connection-managers
 "
 
-PATCHES=( "${FILESDIR}/${PN}-19.08.3-telepathy-qt-0.9.8.patch" )
-
 src_prepare() {
 	if use experimental; then
-		mv "${S}"/data/kaccounts/disabled/*.in "${S}"/data/kaccounts/ || \
+		mv data/kaccounts/disabled/*.in data/kaccounts/ || \
 			die "couldn't enable experimental services"
 	fi
 	ecm_src_prepare

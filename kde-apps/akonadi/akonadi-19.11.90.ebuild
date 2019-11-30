@@ -23,6 +23,12 @@ IUSE="+kaccounts +mysql postgres sqlite tools xml"
 REQUIRED_USE="|| ( mysql postgres sqlite ) test? ( tools )"
 
 COMMON_DEPEND="
+	>=dev-qt/qtdbus-${QTMIN}:5
+	>=dev-qt/qtgui-${QTMIN}:5
+	>=dev-qt/qtnetwork-${QTMIN}:5
+	>=dev-qt/qtsql-${QTMIN}:5[mysql?,postgres?]
+	>=dev-qt/qtwidgets-${QTMIN}:5
+	>=dev-qt/qtxml-${QTMIN}:5
 	>=kde-frameworks/kcompletion-${KFMIN}:5
 	>=kde-frameworks/kconfig-${KFMIN}:5
 	>=kde-frameworks/kconfigwidgets-${KFMIN}:5
@@ -37,13 +43,6 @@ COMMON_DEPEND="
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/kwindowsystem-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
-	>=dev-qt/qtcore-${QTMIN}:5=
-	>=dev-qt/qtdbus-${QTMIN}:5
-	>=dev-qt/qtgui-${QTMIN}:5
-	>=dev-qt/qtnetwork-${QTMIN}:5
-	>=dev-qt/qtsql-${QTMIN}:5[mysql?,postgres?]
-	>=dev-qt/qtwidgets-${QTMIN}:5
-	>=dev-qt/qtxml-${QTMIN}:5
 	kaccounts? (
 		>=kde-apps/kaccounts-integration-${PVCUT}:5
 		net-libs/accounts-qt
@@ -70,10 +69,7 @@ RDEPEND="${COMMON_DEPEND}
 # some akonadi tests time out, that probably needs more work as it's ~700 tests
 RESTRICT+=" test"
 
-PATCHES=(
-	"${FILESDIR}/${PN}-18.12.2-mysql56-crash.patch"
-	"${FILESDIR}/${P}-qt-5.14.patch"
-)
+PATCHES=( "${FILESDIR}/${PN}-18.12.2-mysql56-crash.patch" )
 
 pkg_setup() {
 	# Set default storage backend in order: MySQL, PostgreSQL, SQLite

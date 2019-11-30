@@ -43,5 +43,3 @@ RDEPEND="
 DEPEND="${RDEPEND}
 	>=kde-frameworks/kcmutils-${KFMIN}:5
 "
-
-PATCHES=( "${FILESDIR}/${PN}-19.08.3-telepathy-qt-0.9.8.patch" ) # bug 701096

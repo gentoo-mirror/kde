@@ -11,7 +11,7 @@ inherit ecm kde.org
 
 DESCRIPTION="Simple music player by KDE"
 HOMEPAGE="https://community.kde.org/Elisa"
-SRC_URI="mirror://kde/unstable/applications/19.11.80/src/${P}.tar.xz"
+SRC_URI="mirror://kde/unstable/applications/19.11.90/src/${P}.tar.xz"
 
 LICENSE="LGPL-3+"
 SLOT="5"
