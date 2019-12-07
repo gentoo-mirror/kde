@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RESTRICT=mirror
 SLOT=5
 SRC_URI=mirror://kde/unstable/applications/19.11.90/src/kdeedu-data-19.11.90.tar.xz
-_eclasses_=kde.org	a01838c52d2168944938835b4ddca1b4
+_eclasses_=kde.org	24813e5786ed189e08bdc86f9543a3f4
 _md5_=3456ae0027822c432f3cf987c816a025
