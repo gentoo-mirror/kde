@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RESTRICT=fetch
 SLOT=5
 SRC_URI=mirror://kde/stable/release-service/19.12.0/src/kdeedu-data-19.12.0.tar.xz
-_eclasses_=kde.org	24813e5786ed189e08bdc86f9543a3f4
+_eclasses_=kde.org	13c4fe775cfbc58ec54297ab85d2c3f3
 _md5_=3456ae0027822c432f3cf987c816a025
