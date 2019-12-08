@@ -37,7 +37,7 @@ dev-util/kdevelop-valgrind 9999: Plugin offering full integration of the valgrin
 dev-util/massif-visualizer 9999: Tool visualising massif data
 dev-vcs/kdesvn 9999: A frontend to the subversion vcs
 games-board/atlantik 9999: Atlantik board game
-games-kids/gcompris 0.97_beta 9999: Full featured educational application for children from 2 to 10
+games-kids/gcompris 9999: Full featured educational application for children from 2 to 10
 games-mud/kmuddy 9999: MUD client by KDE
 kde-apps/akonadi 19.11.90 19.12.0 19.12.49.9999 9999: Storage service for PIM data and libraries for PIM apps
 kde-apps/akonadi-calendar 19.11.90 19.12.0 19.12.49.9999 9999: Library for akonadi calendar integration
