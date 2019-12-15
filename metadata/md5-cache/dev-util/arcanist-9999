@@ -7,5 +7,5 @@ LICENSE=Apache-2.0
 PROPERTIES=live
 RDEPEND=dev-lang/php[cli,curl] dev-libs/libphutil
 SLOT=0
-_eclasses_=git-r3	6d22636df236df4cc8475f7b7668bdcd
+_eclasses_=git-r3	7d6c351ee8b1feb12ed8c8b0adae088b
 _md5_=379edf35f1aa9d7314fe058d9c1eac4e
