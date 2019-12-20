@@ -15,31 +15,25 @@ SLOT="5"
 KEYWORDS=""
 IUSE="debug doc test"
 
+BDEPEND="
+	doc? ( app-doc/doxygen[dot] )
+	test? ( dev-qt/linguist-tools:5 )
+"
 RDEPEND="
 	dev-qt/qtcore:5
+	dev-qt/qtdeclarative:5
 	dev-qt/qtgui:5
-	dev-qt/qtscript:5
 "
 DEPEND="${RDEPEND}
 	test? ( dev-qt/qttest:5 )
 "
-BDEPEND="
-	doc? ( app-doc/doxygen[dot] )
-"
 
-# bug 682258
-RESTRICT="test"
+RESTRICT+=" !test? ( test )"
 
 PATCHES=(
 	"${FILESDIR}/${PN}-0.3.0-nonfatal-warnings.patch"
 	"${FILESDIR}/${P}-slot.patch"
 )
-
-src_prepare() {
-	cmake-utils_src_prepare
-	sed -e '/testfilters/d' \
-		-i templates/tests/CMakeLists.txt || die # bug 661900
-}
 
 src_configure() {
 	local mycmakeargs=(
@@ -60,7 +54,7 @@ src_test() {
 }
 
 src_install() {
-	use doc && HTML_DOCS=("${BUILD_DIR}/apidox/")
+	use doc && local HTML_DOCS=("${BUILD_DIR}/apidox/")
 
 	cmake-utils_src_install
 }
