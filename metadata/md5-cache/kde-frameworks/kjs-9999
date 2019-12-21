@@ -1,0 +1,14 @@
+BDEPEND=dev-lang/perl dev-util/ninja dev-util/cmake handbook? ( >=kde-frameworks/kdoctools-9999:5 ) >=kde-frameworks/extra-cmake-modules-9999:5 >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install nofetch postinst postrm preinst prepare setup test unpack
+DEPEND=dev-libs/libpcre test? ( dev-qt/qttest:5 ) dev-qt/qtcore:5
+DESCRIPTION=ECMAScipt compatible parser and engine
+EAPI=7
+HOMEPAGE=https://kde.org/products/frameworks/
+IUSE=debug +handbook test
+LICENSE=BSD-2 LGPL-2+
+PROPERTIES=live
+RDEPEND=dev-libs/libpcre >=kde-frameworks/kf-env-4 dev-qt/qtcore:5
+RESTRICT=!test? ( test )
+SLOT=5/9999
+_eclasses_=cmake	3ae5ba21218c05343239f93f49a88188	ecm	879e666a2784e1ba491fdf89c982915d	eutils	fcb2aa98e1948b835b5ae66ca52868c5	flag-o-matic	8a43b9830f1e64a7a5fc0a276afa0275	git-r3	7d6c351ee8b1feb12ed8c8b0adae088b	kde.org	12c2d7da2a75330ff5de0154686dbf4b	multilib	1d91b03d42ab6308b5f4f6b598ed110e	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	512eb3367f507ebaa1d1d43ab7d66e6c	virtualx	e49dbce7ac14426e1155497476915307	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
+_md5_=1bddfd86ce8fc68df48eeeaf0ab28628
