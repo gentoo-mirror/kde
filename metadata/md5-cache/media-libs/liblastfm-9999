@@ -1,4 +1,4 @@
-BDEPEND=dev-util/ninja >=dev-util/cmake-3.9.6 >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=dev-util/ninja dev-util/cmake >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install prepare test unpack
 DEPEND=dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtnetwork:5[ssl] dev-qt/qtxml:5 fingerprint? ( dev-qt/qtsql:5 media-libs/libsamplerate sci-libs/fftw:3.0 ) test? ( dev-qt/qttest:5 )
 DESCRIPTION=Collection of libraries to integrate Last.fm services
@@ -10,5 +10,5 @@ PROPERTIES=live
 RDEPEND=dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtnetwork:5[ssl] dev-qt/qtxml:5 fingerprint? ( dev-qt/qtsql:5 media-libs/libsamplerate sci-libs/fftw:3.0 )
 RESTRICT=test
 SLOT=0/0
-_eclasses_=cmake-utils	be72eac95bd029ad1d81d5d656c3c83b	eutils	fcb2aa98e1948b835b5ae66ca52868c5	flag-o-matic	8a43b9830f1e64a7a5fc0a276afa0275	git-r3	7d6c351ee8b1feb12ed8c8b0adae088b	multilib	1d91b03d42ab6308b5f4f6b598ed110e	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	512eb3367f507ebaa1d1d43ab7d66e6c	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
-_md5_=dd568e255fcdc9858adc5a5282b6df89
+_eclasses_=cmake	3ae5ba21218c05343239f93f49a88188	eutils	fcb2aa98e1948b835b5ae66ca52868c5	flag-o-matic	8a43b9830f1e64a7a5fc0a276afa0275	git-r3	7d6c351ee8b1feb12ed8c8b0adae088b	multilib	1d91b03d42ab6308b5f4f6b598ed110e	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	512eb3367f507ebaa1d1d43ab7d66e6c	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
+_md5_=5248410367a855a95755e7061e6b62f3

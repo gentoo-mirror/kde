@@ -8,6 +8,7 @@ app-office/calligraplan 9999: Project management application
 app-office/kexi 9999: Visual database applications creator
 app-office/kmymoney 5.0.9999 9999: Personal finance manager based on KDE Frameworks
 app-office/kraft 9999: Software to manage quotes and invoices in small enterprises
+app-office/ktimetracker 9999: Todo management and time tracker
 app-office/libalkimia 8.0.2 9999: Library with common classes and functionality used by KDE finance applications
 app-office/skrooge 9999: Personal finances manager, aiming at being simple and intuitive
 app-text/kbibtex 9999: BibTeX editor to edit bibliographies used with LaTeX
@@ -377,7 +378,6 @@ kde-misc/kpublictransport 9999: Library for accessing public transport timetable
 kde-misc/kregexpeditor 9999: GUI for creating and editing regular expressions
 kde-misc/krename 9999: Powerful batch file renamer
 kde-misc/krusader 9999: Advanced twin-panel (commander-style) file-manager with many extras
-kde-misc/ktimetracker 9999: Todo management and time tracker
 kde-misc/ktrip 9999: Public transport assistant targeted towards mobile Linux and Android
 kde-misc/kwebkitpart 9999: WebKit KPart for Konqueror
 kde-misc/latte-dock 9999: Elegant dock, based on KDE Frameworks
