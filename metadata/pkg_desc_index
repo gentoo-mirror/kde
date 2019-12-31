@@ -468,7 +468,6 @@ net-libs/libkvkontakte 9999: Library for accessing the features of social networ
 net-libs/libmediawiki 9999: C++ interface for MediaWiki based web service as wikipedia.org
 net-libs/libtmdbqt 9999: Qt library to query the movie database API (themoviedb.org)
 net-libs/telepathy-logger-qt 9999: Qt bindings for the Telepathy logger
-net-libs/telepathy-qt 9999: Qt bindings for the Telepathy D-Bus protocol
 net-misc/smb4k 9999: Advanced network neighborhood browser
 net-nntp/kwooty 9999: Friendly nzb linux usenet binary client
 net-p2p/ktorrent 9999: Powerful BitTorrent client based on KDE Frameworks
