@@ -454,6 +454,7 @@ media-libs/qt-gstreamer 9999: C++ bindings for GStreamer with a Qt-style API
 media-sound/amarok 9999: Advanced audio player based on KDE frameworks
 media-sound/audex 9999: Tool for ripping compact discs
 media-sound/elisa 19.12.49.9999 9999: Simple music player by KDE
+media-sound/kid3 9999: Simple tag editor based on Qt
 media-sound/vvave 9999: Tiny Qt music player by KDE
 media-video/bangarang 9999: Media player based on KF5
 media-video/kaffeine 9999: Media player with digital TV support by KDE
