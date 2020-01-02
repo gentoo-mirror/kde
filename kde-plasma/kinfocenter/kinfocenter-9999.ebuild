@@ -3,7 +3,6 @@
 
 EAPI=7
 
-CMAKE_MIN_VERSION=3.14.3
 ECM_HANDBOOK="forceoptional"
 KFMIN=9999
 PVCUT=$(ver_cut 1-3)
@@ -21,7 +20,12 @@ IUSE="gles2 ieee1394 +opengl +pci wayland"
 
 REQUIRED_USE="wayland? ( || ( gles2 opengl ) )"
 
+BDEPEND=">=dev-util/cmake-3.14.3"
 COMMON_DEPEND="
+	>=dev-qt/qtdbus-${QTMIN}:5
+	>=dev-qt/qtdeclarative-${QTMIN}:5
+	>=dev-qt/qtgui-${QTMIN}:5
+	>=dev-qt/qtwidgets-${QTMIN}:5
 	>=kde-frameworks/kcmutils-${KFMIN}:5
 	>=kde-frameworks/kcompletion-${KFMIN}:5
 	>=kde-frameworks/kconfig-${KFMIN}:5
@@ -38,10 +42,6 @@ COMMON_DEPEND="
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
 	>=kde-frameworks/solid-${KFMIN}:5
-	>=dev-qt/qtdbus-${QTMIN}:5
-	>=dev-qt/qtdeclarative-${QTMIN}:5
-	>=dev-qt/qtgui-${QTMIN}:5
-	>=dev-qt/qtwidgets-${QTMIN}:5
 	x11-libs/libX11
 	ieee1394? ( sys-libs/libraw1394 )
 	opengl? (
@@ -59,8 +59,8 @@ DEPEND="${COMMON_DEPEND}
 	>=kde-frameworks/plasma-${KFMIN}:5
 "
 RDEPEND="${COMMON_DEPEND}
-	>=kde-plasma/kde-cli-tools-${PVCUT}:5
 	>=dev-qt/qtquickcontrols2-${QTMIN}:5
+	>=kde-plasma/kde-cli-tools-${PVCUT}:5
 "
 
 src_configure() {
