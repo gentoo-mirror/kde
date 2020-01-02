@@ -10,5 +10,5 @@ PROPERTIES=live
 RDEPEND==kde-frameworks/kcoreaddons-9999*:5 =kde-frameworks/ki18n-9999*:5 =kde-frameworks/kio-9999*:5 >=dev-qt/qtxml-5.12.3:5 >=kde-frameworks/kf-env-4 doc? ( dev-qt/qt-docs:5 ) dev-qt/qtcore:5
 RESTRICT=!test? ( test )
 SLOT=5/9999
-_eclasses_=cmake	da62bd47053e7ef2e8a7f49a4d0cfcd2	ecm	d6c6f78ca91cdaca00fe292437d49ec2	eutils	fcb2aa98e1948b835b5ae66ca52868c5	flag-o-matic	cabe101302b461f32ecbc3767dfb9e23	git-r3	7d6c351ee8b1feb12ed8c8b0adae088b	kde.org	40a4ce08a1b6c660dd7b6152667dc9cc	multilib	1d91b03d42ab6308b5f4f6b598ed110e	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	512eb3367f507ebaa1d1d43ab7d66e6c	virtualx	e49dbce7ac14426e1155497476915307	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
+_eclasses_=cmake	af5dbaf05ae3e0b8bc057a0908c83a4d	ecm	d6c6f78ca91cdaca00fe292437d49ec2	eutils	fcb2aa98e1948b835b5ae66ca52868c5	flag-o-matic	cabe101302b461f32ecbc3767dfb9e23	git-r3	7d6c351ee8b1feb12ed8c8b0adae088b	kde.org	40a4ce08a1b6c660dd7b6152667dc9cc	multilib	1d91b03d42ab6308b5f4f6b598ed110e	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	512eb3367f507ebaa1d1d43ab7d66e6c	virtualx	e49dbce7ac14426e1155497476915307	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
 _md5_=631cad5d5f78c6b445cd035019d0e8a7

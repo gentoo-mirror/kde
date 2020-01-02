@@ -11,5 +11,5 @@ RDEPEND=>=kde-frameworks/karchive-5.63.0:5 >=kde-frameworks/kbookmarks-5.63.0:5 
 REQUIRED_USE=flac? ( taglib ) mp3? ( encode taglib ) sox? ( encode taglib )
 RESTRICT=!test? ( test )
 SLOT=5
-_eclasses_=cmake	da62bd47053e7ef2e8a7f49a4d0cfcd2	ecm	d6c6f78ca91cdaca00fe292437d49ec2	eutils	fcb2aa98e1948b835b5ae66ca52868c5	flag-o-matic	cabe101302b461f32ecbc3767dfb9e23	git-r3	7d6c351ee8b1feb12ed8c8b0adae088b	kde.org	40a4ce08a1b6c660dd7b6152667dc9cc	multilib	1d91b03d42ab6308b5f4f6b598ed110e	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	512eb3367f507ebaa1d1d43ab7d66e6c	virtualx	e49dbce7ac14426e1155497476915307	xdg	c7ba313ea1eaf266f95cc6235f7d6a07	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
+_eclasses_=cmake	af5dbaf05ae3e0b8bc057a0908c83a4d	ecm	d6c6f78ca91cdaca00fe292437d49ec2	eutils	fcb2aa98e1948b835b5ae66ca52868c5	flag-o-matic	cabe101302b461f32ecbc3767dfb9e23	git-r3	7d6c351ee8b1feb12ed8c8b0adae088b	kde.org	40a4ce08a1b6c660dd7b6152667dc9cc	multilib	1d91b03d42ab6308b5f4f6b598ed110e	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	512eb3367f507ebaa1d1d43ab7d66e6c	virtualx	e49dbce7ac14426e1155497476915307	xdg	c7ba313ea1eaf266f95cc6235f7d6a07	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
 _md5_=7e86ff9a74eabeae44f78506ab0ec9d0
