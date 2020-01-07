@@ -229,7 +229,6 @@ kde-plasma/kdeplasma-addons:share - Enable applet for quickly sharing data to a 
 kde-plasma/kdeplasma-addons:webengine - Enable dictionary and web browser applets using dev-qt/qtwebengine
 kde-plasma/kinfocenter:gles2 - Show OpenGL ES information in kinfocenter
 kde-plasma/kinfocenter:pci - Show advanced PCI information
-kde-plasma/kmenuedit:hotkeys - Enable support for hotkey editing
 kde-plasma/kscreenlocker:consolekit - Support for killing the screenlocker when sys-auth/consolekit is the session tracker
 kde-plasma/ksysguard:caps - Enable capabilities support for per-process network usage stats
 kde-plasma/kwin:gles2 - Use OpenGL ES 2 instead of full GL
