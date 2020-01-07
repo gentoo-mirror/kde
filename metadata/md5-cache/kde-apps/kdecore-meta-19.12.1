@@ -2,9 +2,8 @@ DEFINED_PHASES=-
 DESCRIPTION=kdecore - merge this to pull in the most basic applications
 EAPI=7
 HOMEPAGE=https://kde.org/
-IUSE=+handbook +share +thumbnail +webengine webkit
-KEYWORDS=~amd64 ~arm64 ~x86
+IUSE=+handbook +share +thumbnail +webengine
 LICENSE=metapackage
-RDEPEND=>=kde-apps/dolphin-19.12.1:5 >=kde-apps/kdialog-19.12.1:5 >=kde-apps/keditbookmarks-19.12.1:5 >=kde-apps/kfind-19.12.1:5 >=kde-apps/konsole-19.12.1:5 >=kde-apps/kwrite-19.12.1:5 handbook? ( >=kde-apps/khelpcenter-19.12.1:5 ) webengine? ( www-client/falkon ) webkit? ( >=kde-apps/konqueror-19.12.1:5[webengine?] kde-misc/kwebkitpart:5 ) share? ( kde-frameworks/purpose:5 ) thumbnail? ( >=kde-apps/ffmpegthumbs-19.12.1:5 >=kde-apps/thumbnailers-19.12.1:5 )
+RDEPEND=>=kde-apps/dolphin-19.12.1:5 >=kde-apps/kdialog-19.12.1:5 >=kde-apps/keditbookmarks-19.12.1:5 >=kde-apps/kfind-19.12.1:5 >=kde-apps/konsole-19.12.1:5 >=kde-apps/kwrite-19.12.1:5 handbook? ( >=kde-apps/khelpcenter-19.12.1:5 ) webengine? ( || ( www-client/falkon >=kde-apps/konqueror-19.12.1:5 ) ) share? ( kde-frameworks/purpose:5 ) thumbnail? ( >=kde-apps/ffmpegthumbs-19.12.1:5 >=kde-apps/thumbnailers-19.12.1:5 )
 SLOT=5
-_md5_=0b4ad61f0508ef86c8146fe9c858779d
+_md5_=a52219904f729c4351bbc20770ae5c9c
