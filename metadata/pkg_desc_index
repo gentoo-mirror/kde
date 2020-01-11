@@ -399,7 +399,7 @@ kde-plasma/discover 9999: KDE Plasma resources management GUI
 kde-plasma/drkonqi 9999: Plasma crash handler, gives the user feedback if a program crashed
 kde-plasma/kactivitymanagerd 9999: System service to manage user's activities, track the usage patterns etc.
 kde-plasma/kde-cli-tools 9999: Tools based on KDE Frameworks 5 to better interact with the system
-kde-plasma/kde-gtk-config 9999: KDE Plasma systemsettings kcm to set GTK application look&feel
+kde-plasma/kde-gtk-config 9999: GTK2 and GTK3 configurator for KDE Plasma
 kde-plasma/kdecoration 9999: Plugin based library to create window decorations
 kde-plasma/kdeplasma-addons 9999: Extra Plasma applets and engines
 kde-plasma/kgamma 9999: Screen gamma values kcontrol module

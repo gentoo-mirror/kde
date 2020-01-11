@@ -1,14 +1,14 @@
 BDEPEND=dev-util/ninja dev-util/cmake >=kde-frameworks/extra-cmake-modules-5.66.0:5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install nofetch postinst postrm preinst prepare setup test unpack
-DEPEND=>=kde-frameworks/kcalendarcore-5.66.0:5 >=kde-frameworks/kconfig-5.66.0:5 >=kde-frameworks/kholidays-5.66.0:5 >=kde-frameworks/ki18n-5.66.0:5 >=kde-apps/akonadi-9999:5 >=kde-apps/kcalutils-9999:5 >=kde-apps/kidentitymanagement-9999:5 >=dev-qt/qtgui-5.12.3:5 test? ( >=dev-qt/qtdbus-5.12.3:5 ) dev-util/desktop-file-utils x11-misc/shared-mime-info test? ( dev-qt/qttest:5 ) dev-qt/qtcore:5
+DEPEND=>=dev-qt/qtgui-5.12.3:5 >=kde-apps/akonadi-9999:5 >=kde-apps/kcalutils-9999:5 >=kde-apps/kidentitymanagement-9999:5 >=kde-frameworks/kcalendarcore-5.66.0:5 >=kde-frameworks/kconfig-5.66.0:5 >=kde-frameworks/kholidays-5.66.0:5 >=kde-frameworks/ki18n-5.66.0:5 test? ( >=dev-qt/qtdbus-5.12.3:5 ) dev-util/desktop-file-utils x11-misc/shared-mime-info test? ( dev-qt/qttest:5 ) dev-qt/qtcore:5
 DESCRIPTION=Client library to access and handling of KAlarm calendar data
 EAPI=7
 HOMEPAGE=https://kde.org/
 IUSE=debug test
 LICENSE=GPL-2+ LGPL-2.1+
 PROPERTIES=live
-RDEPEND=>=kde-frameworks/kcalendarcore-5.66.0:5 >=kde-frameworks/kconfig-5.66.0:5 >=kde-frameworks/kholidays-5.66.0:5 >=kde-frameworks/ki18n-5.66.0:5 >=kde-apps/akonadi-9999:5 >=kde-apps/kcalutils-9999:5 >=kde-apps/kidentitymanagement-9999:5 >=dev-qt/qtgui-5.12.3:5 !kde-apps/kdepim-l10n !<kde-apps/kdepim-runtime-18.03.80 || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-4 dev-qt/qtcore:5
+RDEPEND=>=dev-qt/qtgui-5.12.3:5 >=kde-apps/akonadi-9999:5 >=kde-apps/kcalutils-9999:5 >=kde-apps/kidentitymanagement-9999:5 >=kde-frameworks/kcalendarcore-5.66.0:5 >=kde-frameworks/kconfig-5.66.0:5 >=kde-frameworks/kholidays-5.66.0:5 >=kde-frameworks/ki18n-5.66.0:5 !<kde-apps/kdepim-runtime-18.03.80 || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-4 dev-qt/qtcore:5
 RESTRICT=!test? ( test )
 SLOT=5
 _eclasses_=cmake	c6d2431342379e3f3bf0a96ad3da47e3	ecm	d6c6f78ca91cdaca00fe292437d49ec2	eutils	fcb2aa98e1948b835b5ae66ca52868c5	flag-o-matic	cabe101302b461f32ecbc3767dfb9e23	git-r3	809e27702c573cbba31c08ed00bbad33	kde.org	40a4ce08a1b6c660dd7b6152667dc9cc	multilib	1d91b03d42ab6308b5f4f6b598ed110e	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	512eb3367f507ebaa1d1d43ab7d66e6c	virtualx	e49dbce7ac14426e1155497476915307	xdg	c7ba313ea1eaf266f95cc6235f7d6a07	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
-_md5_=695d5539854d2c23418e27bb4ccaf3f3
+_md5_=e2dcabc1e1f29ac186d9e6fb4e3a9fe2
