@@ -1,0 +1,10 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install nofetch prepare unpack
+DESCRIPTION=Breeze theme for GRUB
+EAPI=7
+HOMEPAGE=https://kde.org/plasma-desktop
+LICENSE=GPL-3+
+PROPERTIES=live
+SLOT=5
+_eclasses_=git-r3	809e27702c573cbba31c08ed00bbad33	kde.org	40a4ce08a1b6c660dd7b6152667dc9cc
+_md5_=57be0dacd98f0f15b4dac94f6fe8c183
