@@ -414,7 +414,7 @@ kde-plasma/kwallet-pam 5.17.90 5.18.49.9999 9999: PAM module to not enter KWalle
 kde-plasma/kwayland-integration 5.17.90 5.18.49.9999 9999: Provides integration plugins for various KDE frameworks for Wayland
 kde-plasma/kwin 5.17.90 5.18.49.9999 9999: Flexible, composited Window Manager for windowing systems on Linux
 kde-plasma/kwrited 5.17.90 5.18.49.9999 9999: KDE Plasma daemon listening for wall and write messages
-kde-plasma/libkscreen 5.17.90 5.18.49.9999 9999: Plasma screen management library
+kde-plasma/libkscreen 5.17.90.1 5.18.49.9999 9999: Plasma screen management library
 kde-plasma/libksysguard 5.17.90 5.18.49.9999 9999: Task management and system monitoring library
 kde-plasma/libkworkspace 5.17.90 5.18.49.9999 9999: Workspace library to interact with the Plasma session manager
 kde-plasma/milou 5.17.90 5.18.49.9999 9999: Dedicated search application built on top of Baloo
@@ -423,7 +423,7 @@ kde-plasma/plasma-browser-integration 5.17.90 5.18.49.9999 9999: Integrate Chrom
 kde-plasma/plasma-desktop 5.17.90 5.18.49.9999 9999: KDE Plasma desktop
 kde-plasma/plasma-integration 5.17.90 5.18.49.9999 9999: Qt Platform Theme integration plugins for the Plasma workspaces
 kde-plasma/plasma-meta 5.17.90 5.18.49.9999 9999: Merge this to pull in all Plasma 5 packages
-kde-plasma/plasma-nm 5.17.90.2 5.18.49.9999 9999: KDE Plasma applet for NetworkManager
+kde-plasma/plasma-nm 5.17.90.4 5.18.49.9999 9999: KDE Plasma applet for NetworkManager
 kde-plasma/plasma-pa 5.17.90 5.18.49.9999 9999: Plasma applet for audio volume management using PulseAudio
 kde-plasma/plasma-sdk 5.17.90 5.18.49.9999 9999: Useful applications for Plasma development
 kde-plasma/plasma-thunderbolt 5.17.90 5.18.49.9999 9999: Plasma integration for controlling Thunderbolt devices
