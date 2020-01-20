@@ -17,7 +17,7 @@ dev-libs/appstream 9999: Cross-distro effort for providing metadata for software
 dev-libs/grantlee 9999: C++ string template engine based on the Django template system
 dev-libs/kasync 9999: C++ library for controlling asynchronous tasks
 dev-libs/kdiagram 9999: Powerful libraries (KChart, KGantt) for creating business diagrams
-dev-libs/kpeoplevcard 0.1 9999: Library to expose vcards to KPeople
+dev-libs/kpeoplevcard 9999: Library to expose vcards to KPeople
 dev-libs/kproperty 9999: Property editing framework with editor widget similar to Qt Designer
 dev-libs/kreport 9999: Framework for creation and generation of reports in multiple formats
 dev-libs/kuserfeedback 0.9.90 9999: Framework to collect user feedback for applications via telemetry and surveys
@@ -365,7 +365,7 @@ kde-misc/akonadiclient 9999: Commandline interface for accessing Akonadi
 kde-misc/apper 9999: KDE Plasma PackageKit frontend
 kde-misc/colord-kde 9999: Provides interfaces and session daemon to colord
 kde-misc/itinerary 9999: Data Model and Extraction System for Travel Reservation information
-kde-misc/kdeconnect 1.4 9999: Adds communication between KDE Plasma and your smartphone
+kde-misc/kdeconnect 9999: Adds communication between KDE Plasma and your smartphone
 kde-misc/kdiff3 9999: Frontend to diff3 based on KDE Frameworks
 kde-misc/kimtoy 9999: Input method frontend for Plasma
 kde-misc/kio-fuse 4.90.0 9999: FUSE interface for KIO
