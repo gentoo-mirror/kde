@@ -66,9 +66,9 @@ COMMON_DEPEND="
 	>=kde-frameworks/sonnet-${KFMIN}:5
 	activities? ( >=kde-frameworks/kactivities-${KFMIN}:5 )
 	addressbook? (
-		>=kde-frameworks/kcontacts-${KFMIN}:5
 		kde-apps/akonadi:5
 		kde-apps/kidentitymanagement:5
+		>=kde-frameworks/kcontacts-${KFMIN}:5
 	)
 	calendar? ( dev-libs/libical:= )
 	hbci? (
@@ -101,7 +101,7 @@ pkg_setup() {
 	ecm_pkg_setup
 
 	if [[ ${KDE_BUILD_TYPE} = live ]] && use experimental; then
-		ewarn "USE experimental set: Building infinished features."
+		ewarn "USE experimental set: Building unfinished features."
 		ewarn "This *will* chew up your data. You have been warned."
 	fi
 }
