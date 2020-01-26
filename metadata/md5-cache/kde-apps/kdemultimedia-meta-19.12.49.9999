@@ -4,6 +4,6 @@ EAPI=7
 HOMEPAGE=https://kde.org/applications/multimedia/ https://multimedia.kde.org/
 IUSE=+cdrom +ffmpeg gstreamer
 LICENSE=metapackage
-RDEPEND=>=kde-apps/dragon-19.12.49.9999:5 >=kde-apps/juk-19.12.49.9999:5 >=kde-apps/kdenlive-19.12.49.9999:5 >=kde-apps/kmix-19.12.49.9999:5 >=kde-apps/kwave-19.12.49.9999:5 cdrom? ( >=kde-apps/audiocd-kio-19.12.49.9999:5 >=kde-apps/k3b-19.12.49.9999:5 >=kde-apps/libkcddb-19.12.49.9999:5 >=kde-apps/libkcompactdisc-19.12.49.9999:5 ) ffmpeg? ( >=kde-apps/ffmpegthumbs-19.12.49.9999:5 ) gstreamer? ( >=kde-apps/kamoso-19.12.49.9999:5 )
+RDEPEND=>=kde-apps/dragon-19.12.49.9999:5 >=kde-apps/juk-19.12.49.9999:5 >=kde-apps/kdenlive-19.12.49.9999:5 >=kde-apps/kmix-19.12.49.9999:5 >=kde-apps/kwave-19.12.49.9999:5 >=media-sound/elisa-19.12.49.9999:5 cdrom? ( >=kde-apps/audiocd-kio-19.12.49.9999:5 >=kde-apps/k3b-19.12.49.9999:5 >=kde-apps/libkcddb-19.12.49.9999:5 >=kde-apps/libkcompactdisc-19.12.49.9999:5 ) ffmpeg? ( >=kde-apps/ffmpegthumbs-19.12.49.9999:5 ) gstreamer? ( >=kde-apps/kamoso-19.12.49.9999:5 )
 SLOT=5
-_md5_=01cc3723f8082b922e67ef5cd3adfd5b
+_md5_=e6016ef8473fb222ed976c61846527a9
