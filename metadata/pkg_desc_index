@@ -449,7 +449,7 @@ media-libs/libqaccessibilityclient 9999: Library for writing accessibility clien
 media-libs/phonon 9999: KDE multimedia abstraction library
 media-libs/phonon-gstreamer 9999: GStreamer backend for the Phonon multimedia library
 media-libs/phonon-vlc 9999: VLC backend for the Phonon multimedia library
-media-libs/pulseaudio-qt 1.2 9999: Qt bindings for libpulse
+media-libs/pulseaudio-qt 9999: Qt bindings for libpulse
 media-libs/qt-gstreamer 9999: C++ bindings for GStreamer with a Qt-style API
 media-sound/amarok 9999: Advanced audio player based on KDE frameworks
 media-sound/audex 9999: Tool for ripping compact discs
