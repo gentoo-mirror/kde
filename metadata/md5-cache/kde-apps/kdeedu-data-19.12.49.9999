@@ -6,5 +6,5 @@ HOMEPAGE=https://kde.org/
 LICENSE=GPL-2
 PROPERTIES=live
 SLOT=5
-_eclasses_=git-r3	809e27702c573cbba31c08ed00bbad33	kde.org	104cd698592fe00d01da44e1e6d056bd
+_eclasses_=git-r3	809e27702c573cbba31c08ed00bbad33	kde.org	2597013aa1cf90f56e6c0f971e6d2671
 _md5_=a3f29014df41bce4136abf008a03650c
