@@ -11,5 +11,5 @@ RDEPEND==kde-frameworks/kauth-5.67*:5 =kde-frameworks/kcodecs-5.67*:5 =kde-frame
 RESTRICT=!test? ( test ) !test? ( test ) fetch
 SLOT=5/5.67
 SRC_URI=mirror://kde/stable/frameworks/5.67/kconfigwidgets-5.67.0.tar.xz
-_eclasses_=cmake	c6d2431342379e3f3bf0a96ad3da47e3	ecm	d6c6f78ca91cdaca00fe292437d49ec2	eutils	fcb2aa98e1948b835b5ae66ca52868c5	flag-o-matic	dc34234e8c43343da45853da22dcf14b	kde.org	2597013aa1cf90f56e6c0f971e6d2671	multilib	1d91b03d42ab6308b5f4f6b598ed110e	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	512eb3367f507ebaa1d1d43ab7d66e6c	virtualx	e49dbce7ac14426e1155497476915307	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
+_eclasses_=cmake	c6d2431342379e3f3bf0a96ad3da47e3	ecm	d6c6f78ca91cdaca00fe292437d49ec2	eutils	fcb2aa98e1948b835b5ae66ca52868c5	flag-o-matic	dc34234e8c43343da45853da22dcf14b	kde.org	3c0fc9520a4378f3aa073dd783e9db18	multilib	1d91b03d42ab6308b5f4f6b598ed110e	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	512eb3367f507ebaa1d1d43ab7d66e6c	virtualx	e49dbce7ac14426e1155497476915307	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
 _md5_=ddeef12bc78edd2d123da07170b572cc
