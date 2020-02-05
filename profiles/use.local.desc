@@ -299,6 +299,7 @@ media-video/kmplayer:npp - Compile the npp backend that plays xembed style brows
 media-video/subtitlecomposer:mpv - Build mpv backend support
 net-im/choqok:attica - Build Open Collaboration Services plugin using kde-frameworks/attica
 net-im/choqok:konqueror - Build Konqueror Choqok plugin
+net-im/choqok:share - Enable support for a share menu using kde-frameworks/purpose
 net-im/choqok:telepathy - Enable support for the real-time communication framework telepathy
 net-p2p/ktorrent:bwscheduler - Schedule upload and download limits over a period of a week
 net-p2p/ktorrent:downloadorder - Specify the download order of a multi-file torrent
