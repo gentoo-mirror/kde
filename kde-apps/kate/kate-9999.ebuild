@@ -17,9 +17,14 @@ https://kde.org/applications/utilities/org.kde.kate"
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"
 KEYWORDS=""
-IUSE="activities +filebrowser lspclient +projects plasma +snippets sql"
+IUSE="activities feedback +filebrowser lspclient +projects plasma +snippets sql"
 
+# only addons/externaltools depends on kiconthemes, too small for USE
 DEPEND="
+	>=dev-qt/qtdbus-${QTMIN}:5
+	>=dev-qt/qtgui-${QTMIN}:5
+	>=dev-qt/qtwidgets-${QTMIN}:5
+	>=dev-qt/qtxml-${QTMIN}:5
 	>=kde-frameworks/kcodecs-${KFMIN}:5
 	>=kde-frameworks/kcompletion-${KFMIN}:5
 	>=kde-frameworks/kconfig-${KFMIN}:5
@@ -40,11 +45,8 @@ DEPEND="
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/kwindowsystem-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
-	>=dev-qt/qtdbus-${QTMIN}:5
-	>=dev-qt/qtgui-${QTMIN}:5
-	>=dev-qt/qtwidgets-${QTMIN}:5
-	>=dev-qt/qtxml-${QTMIN}:5
 	activities? ( >=kde-frameworks/kactivities-${KFMIN}:5 )
+	feedback? ( dev-libs/kuserfeedback:5 )
 	filebrowser? ( >=kde-frameworks/kbookmarks-${KFMIN}:5 )
 	lspclient? ( >=kde-frameworks/kitemmodels-${KFMIN}:5 )
 	plasma? ( >=kde-frameworks/plasma-${KFMIN}:5 )
@@ -54,8 +56,8 @@ DEPEND="
 	)
 	snippets? ( >=kde-frameworks/knewstuff-${KFMIN}:5 )
 	sql? (
-		>=kde-frameworks/kwallet-${KFMIN}:5
 		>=dev-qt/qtsql-${QTMIN}:5
+		>=kde-frameworks/kwallet-${KFMIN}:5
 	)
 "
 RDEPEND="${DEPEND}
@@ -75,6 +77,7 @@ src_prepare() {
 src_configure() {
 	local mycmakeargs=(
 		$(cmake_use_find_package activities KF5Activities)
+		$(cmake_use_find_package feedback KUserFeedback)
 		-DBUILD_filebrowser=$(usex filebrowser)
 		-DBUILD_lspclient=$(usex lspclient)
 		-DBUILD_sessionapplet=$(usex plasma)
