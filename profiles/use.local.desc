@@ -63,6 +63,7 @@ kde-apps/kalzium:editor - Enable the embedded molecule editor/viewer
 kde-apps/kalzium:solver - Enable the equation solver
 kde-apps/kanagram:speech - Enable text-to-speech support
 kde-apps/kate:activities - Enable Plasma Activities support via kde-frameworks/kactivities
+kde-apps/kate:feedback - Send anonymized usage information to KDE so they can better understand our users
 kde-apps/kate:filebrowser - Enable File System browser tool view
 kde-apps/kate:lspclient - Enable LSP (Language Server Protocol) client plugin
 kde-apps/kate:plasma - Enable Session Applet addon for KDE Plasma
