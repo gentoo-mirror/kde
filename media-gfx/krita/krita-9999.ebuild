@@ -4,7 +4,7 @@
 EAPI=7
 
 ECM_TEST="forceoptional-recursive"
-PYTHON_COMPAT=( python3_{6,7} )
+PYTHON_COMPAT=( python3_{6,7,8} )
 KFMIN=5.60.0
 QTMIN=5.12.3
 VIRTUALX_REQUIRED="test"
@@ -16,7 +16,7 @@ if [[ ${KDE_BUILD_TYPE} = release ]]; then
 fi
 
 DESCRIPTION="Free digital painting application. Digital Painting, Creative Freedom!"
-HOMEPAGE="https://kde.org/applications/graphics/krita/ https://krita.org/"
+HOMEPAGE="https://kde.org/applications/graphics/org.kde.krita https://krita.org/en/"
 
 LICENSE="GPL-3"
 SLOT="5"
