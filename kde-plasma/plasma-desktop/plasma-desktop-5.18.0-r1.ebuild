@@ -117,6 +117,11 @@ RDEPEND="${COMMON_DEPEND}
 	!<kde-plasma/kdeplasma-addons-5.15.80
 "
 
+PATCHES=(
+	"${FILESDIR}/${P}-kcm_fonts.patch" # KDE-Bug #416358
+	"${FILESDIR}/${P}-unlock-widgets.patch" # KDE-Bug #417424
+)
+
 src_configure() {
 	local mycmakeargs=(
 		$(cmake_use_find_package fontconfig Fontconfig)
