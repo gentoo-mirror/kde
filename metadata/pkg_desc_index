@@ -362,7 +362,6 @@ kde-frameworks/syndication 9999: Library for parsing RSS and Atom feeds
 kde-frameworks/syntax-highlighting 9999: Framework for syntax highlighting
 kde-frameworks/threadweaver 9999: Framework for managing threads using job and queue-based interfaces
 kde-misc/akonadiclient 9999: Commandline interface for accessing Akonadi
-kde-misc/apper 9999: KDE Plasma PackageKit frontend
 kde-misc/colord-kde 9999: Provides interfaces and session daemon to colord
 kde-misc/itinerary 9999: Data Model and Extraction System for Travel Reservation information
 kde-misc/kdeconnect 9999: Adds communication between KDE Plasma and your smartphone
