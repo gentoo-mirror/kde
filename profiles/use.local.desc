@@ -61,6 +61,7 @@ kde-apps/gwenview:kipi - Enable support for the KDE Image Plugin Interface
 kde-apps/gwenview:mpris - Enable support for MPRIS2 interface, requiring dev-qt/qtdbus as dependency.
 kde-apps/gwenview:share - Enable support for a share menu using kde-frameworks/purpose
 kde-apps/kaccounts-mobile:google - Enable support for Google Contacts Sync via kde-apps/libkgapi
+kde-apps/kaddressbook:feedback - Send anonymized usage information to KDE so they can better understand our users
 kde-apps/kalzium:editor - Enable the embedded molecule editor/viewer
 kde-apps/kalzium:solver - Enable the equation solver
 kde-apps/kanagram:speech - Enable text-to-speech support
