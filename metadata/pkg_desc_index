@@ -463,6 +463,8 @@ media-video/subtitlecomposer 9999: Text-based subtitles editor
 net-im/choqok 9999: Free/Open Source micro-blogging client by KDE
 net-irc/konversation 2.9999 9999: User friendly IRC Client
 net-libs/jreen 9999: Qt XMPP library
+net-libs/kdsoap 9999: Qt-based client-side and server-side SOAP component
+net-libs/kdsoap-ws-discovery-client 9999: WS-Discovery client library based on KDSoap
 net-libs/libktorrent 9999: BitTorrent library based on KDE Frameworks
 net-libs/libkvkontakte 9999: Library for accessing the features of social networking site vkontakte.ru
 net-libs/libmediawiki 9999: C++ interface for MediaWiki based web service as wikipedia.org
