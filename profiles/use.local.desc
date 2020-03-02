@@ -120,6 +120,7 @@ kde-apps/kipi-plugins:remotestorage - Build plugin for remote storage using netw
 kde-apps/kipi-plugins:vkontakte - Build plugin for vkontakte.ru
 kde-apps/kitinerary:barcode - Enable support for PDF417 and Aztec barcode decoding using media-libs/zxing-cpp
 kde-apps/kmag:keyboardfocus - Enable keyboard focus tracking
+kde-apps/kmail:feedback - Send anonymized usage information to KDE so they can better understand our users
 kde-apps/knights:speech - Enable text-to-speech support
 kde-apps/konqueror:activities - Enable kactivities support
 kde-apps/konqueror:speech - Build text-to-speech plugin
