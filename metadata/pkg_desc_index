@@ -362,6 +362,7 @@ kde-frameworks/syndication 5.68.0 9999: Library for parsing RSS and Atom feeds
 kde-frameworks/syntax-highlighting 5.68.0 9999: Framework for syntax highlighting
 kde-frameworks/threadweaver 5.68.0 9999: Framework for managing threads using job and queue-based interfaces
 kde-misc/akonadiclient 9999: Commandline interface for accessing Akonadi
+kde-misc/basket 9999: Multiple information organizer - a DropDrawers clone
 kde-misc/colord-kde 9999: Provides interfaces and session daemon to colord
 kde-misc/itinerary 9999: Data Model and Extraction System for Travel Reservation information
 kde-misc/kdeconnect 9999: Adds communication between KDE Plasma and your smartphone
@@ -471,7 +472,6 @@ net-libs/libmediawiki 9999: C++ interface for MediaWiki based web service as wik
 net-libs/libtmdbqt 9999: Qt library to query the movie database API (themoviedb.org)
 net-libs/telepathy-logger-qt 9999: Qt bindings for the Telepathy logger
 net-misc/smb4k 9999: Advanced network neighborhood browser
-net-nntp/kwooty 9999: Friendly nzb linux usenet binary client
 net-p2p/ktorrent 9999: Powerful BitTorrent client based on KDE Frameworks
 sci-astronomy/kstars 9999: Desktop Planetarium
 sci-calculators/keurocalc 9999: Universal currency converter and calculator
