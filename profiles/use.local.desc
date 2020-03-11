@@ -303,7 +303,6 @@ media-sound/elisa:vlc - Use media-video/vlc for output rather than dev-qt/qtmult
 media-sound/kid3:acoustid - Build acoustic fingerprinting plugin using media-libs/chromaprint
 media-sound/kid3:mpris - Enable support for MPRIS2 interface using dev-qt/qtdbus
 media-video/kmplayer:npp - Compile the npp backend that plays xembed style browser plugins.
-media-video/subtitlecomposer:mpv - Build mpv backend support
 net-im/choqok:attica - Build Open Collaboration Services plugin using kde-frameworks/attica
 net-im/choqok:konqueror - Build Konqueror Choqok plugin
 net-im/choqok:share - Enable support for a share menu using kde-frameworks/purpose
