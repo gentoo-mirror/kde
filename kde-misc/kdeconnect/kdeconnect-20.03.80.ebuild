@@ -6,6 +6,7 @@ EAPI=7
 ECM_HANDBOOK="optional"
 ECM_TEST="true"
 KDE_ORG_NAME="${PN}-kde"
+KDE_RELEASE_SERVICE="true"
 KDE_SELINUX_MODULE="${PN}"
 KFMIN=5.68.0
 QTMIN=5.12.3
@@ -17,7 +18,7 @@ https://kde.org/applications/internet/org.kde.kdeconnect.kcm"
 
 LICENSE="GPL-2+"
 SLOT="5"
-KEYWORDS=""
+KEYWORDS="~amd64 ~arm64 ~x86"
 IUSE="bluetooth pulseaudio wayland X"
 
 DEPEND="
