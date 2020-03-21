@@ -4,6 +4,7 @@
 EAPI=7
 
 ECM_HANDBOOK="forceoptional"
+ECM_QTHELP="false" # TODO: figure out install error
 ECM_TEST="forceoptional"
 KFMIN=5.68.0
 QTMIN=5.12.3
@@ -20,6 +21,14 @@ KEYWORDS="~amd64 ~arm64 ~x86"
 IUSE="php"
 
 RDEPEND="
+	dev-libs/libxml2
+	dev-libs/libxslt
+	>=dev-qt/qtgui-${QTMIN}:5
+	>=dev-qt/qtprintsupport-${QTMIN}:5
+	>=dev-qt/qtsvg-${QTMIN}:5
+	>=dev-qt/qtwebkit-5.212.0_pre20180120:5
+	>=dev-qt/qtwidgets-${QTMIN}:5
+	>=dev-qt/qtxml-${QTMIN}:5
 	>=kde-frameworks/karchive-${KFMIN}:5
 	>=kde-frameworks/kcompletion-${KFMIN}:5
 	>=kde-frameworks/kconfig-${KFMIN}:5
@@ -35,14 +44,6 @@ RDEPEND="
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/kwindowsystem-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
-	>=dev-qt/qtgui-${QTMIN}:5
-	>=dev-qt/qtprintsupport-${QTMIN}:5
-	>=dev-qt/qtsvg-${QTMIN}:5
-	>=dev-qt/qtwidgets-${QTMIN}:5
-	>=dev-qt/qtxml-${QTMIN}:5
-	dev-libs/libxml2
-	dev-libs/libxslt
-	>=dev-qt/qtwebkit-5.212.0_pre20180120:5
 	php? (
 		dev-util/kdevelop:5=
 		dev-util/kdevelop-pg-qt
@@ -52,8 +53,11 @@ DEPEND="${RDEPEND}
 	>=kde-frameworks/kdelibs4support-${KFMIN}:5
 "
 
+PATCHES=( "${FILESDIR}/${P}-build-qch.patch" )
+
 src_configure() {
 	local mycmakeargs=(
+		-DCMAKE_DISABLE_FIND_PACKAGE_Doxygen=ON # broken, re-enable w/ ECM_QTHELP
 		-DBUILD_KF5=ON
 		-DBUILD_PHP_IMPORT=$(usex php)
 		-DBUILD_unittests=$(usex test)
