@@ -10,9 +10,12 @@ inherit ecm kde.org toolchain-funcs
 if [[ ${KDE_BUILD_TYPE} != live ]]; then
 	MY_PV=${PV/_/-}
 	MY_P=${PN}-${MY_PV}
-	SRC_BRANCH=stable
-	[[ ${PV} =~ beta[0-9]$ ]] && SRC_BRANCH=unstable
-	SRC_URI="mirror://kde/${SRC_BRANCH}/digikam/${PV}/${MY_P}.tar.xz"
+	if [[ ${PV} =~ beta[0-9]$ ]]; then
+		SRC_URI="mirror://kde/unstable/${PN}/"
+	else
+		SRC_URI="mirror://kde/unstable/${PN}/${PV}/"
+	fi
+	SRC_URI+="${MY_P}.tar.xz"
 	KEYWORDS="~amd64 ~x86"
 	S="${WORKDIR}/${MY_P}"
 fi
@@ -22,7 +25,7 @@ HOMEPAGE="https://www.digikam.org/"
 
 LICENSE="GPL-2"
 SLOT="5"
-IUSE="addressbook calendar dnn heif +imagemagick gphoto2 +lensfun libav marble mediaplayer mysql opengl openmp +panorama scanner semantic-desktop vkontakte webkit X"
+IUSE="addressbook calendar gphoto2 heif +imagemagick +lensfun libav marble mediaplayer mysql opengl openmp +panorama scanner semantic-desktop vkontakte webkit X"
 
 BDEPEND="
 	>=dev-util/cmake-3.14.3
@@ -60,7 +63,7 @@ COMMON_DEPEND="
 	media-libs/lcms:2
 	media-libs/liblqr
 	media-libs/libpng:0=
-	>=media-libs/opencv-3.1.0:=
+	>=media-libs/opencv-3.3.0:=[contrib,contribdnn]
 	media-libs/tiff:0
 	virtual/jpeg:0
 	addressbook? (
@@ -68,7 +71,6 @@ COMMON_DEPEND="
 		>=kde-frameworks/kcontacts-${KFMIN}:5
 	)
 	calendar? ( >=kde-frameworks/kcalendarcore-${KFMIN}:5 )
-	dnn? ( >=media-libs/opencv-3.1.0:=[contrib,contribdnn] )
 	gphoto2? ( media-libs/libgphoto2:= )
 	heif? ( media-libs/x265:= )
 	imagemagick? ( media-gfx/imagemagick:= )
@@ -128,7 +130,6 @@ src_configure() {
 		-DCMAKE_DISABLE_FIND_PACKAGE_Jasper=ON
 		-DENABLE_AKONADICONTACTSUPPORT=$(usex addressbook)
 		$(cmake_use_find_package calendar KF5CalendarCore)
-		-DENABLE_FACESENGINE_DNN=$(usex dnn)
 		$(cmake_use_find_package gphoto2 Gphoto2)
 		$(cmake_use_find_package heif X265)
 		$(cmake_use_find_package imagemagick ImageMagick)
