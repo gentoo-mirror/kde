@@ -24,7 +24,7 @@ SRC_URI+="
 
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"
-KEYWORDS=""
+KEYWORDS="~amd64"
 IUSE="emoji +fontconfig ibus scim +semantic-desktop touchpad"
 
 COMMON_DEPEND="
