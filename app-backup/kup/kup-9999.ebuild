@@ -9,7 +9,7 @@ inherit ecm kde.org
 DESCRIPTION="Backup scheduler for KDE's Plasma desktop"
 HOMEPAGE="https://www.linux-apps.com/p/1127689"
 
-LICENSE="GPL-2"
+LICENSE="GPL-2+"
 SLOT="5"
 KEYWORDS=""
 IUSE=""
@@ -21,7 +21,6 @@ DEPEND="
 	kde-frameworks/kcoreaddons:5
 	kde-frameworks/kdbusaddons:5
 	kde-frameworks/ki18n:5
-	kde-frameworks/kiconthemes:5
 	kde-frameworks/kidletime:5
 	kde-frameworks/kinit:5
 	kde-frameworks/kio:5
