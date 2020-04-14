@@ -249,7 +249,6 @@ kde-plasma/plasma-meta:gtk - Enable Breeze widget style and system settings modu
 kde-plasma/plasma-meta:legacy-systray - Add support for legacy applications using kde-plasma/xembed-sni-proxy
 kde-plasma/plasma-meta:pam - Enable support for kwallet auto-unlocking
 kde-plasma/plasma-meta:plymouth - Pull in Breeze theme for sys-boot/plymouth
-kde-plasma/plasma-meta:pm-utils - Enable support for suspend/resume with sys-power/pm-utils when using sys-auth/consolekit
 kde-plasma/plasma-meta:pulseaudio - Install Plasma applet for PulseAudio volume management
 kde-plasma/plasma-meta:qrcode - Enable support for easy WiFi network sharing using QR codes with kde-plasma/plasma-nm
 kde-plasma/plasma-meta:sddm - Pull in the x11-misc/sddm display manager and system settings module
