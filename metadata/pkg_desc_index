@@ -459,7 +459,6 @@ media-video/bangarang 9999: Media player based on KF5
 media-video/kaffeine 9999: Media player with digital TV support by KDE
 media-video/kmplayer 9999: Video player plugin for Konqueror and basic MPlayer frontend
 media-video/plasma-mediacenter 9999: Unified media experience for any device capable of running KDE Plasma
-media-video/subtitlecomposer 9999: Text-based subtitles editor
 net-im/choqok 9999: Free/Open Source micro-blogging client by KDE
 net-irc/konversation 2.9999 9999: User friendly IRC Client
 net-libs/jreen 9999: Qt XMPP library
