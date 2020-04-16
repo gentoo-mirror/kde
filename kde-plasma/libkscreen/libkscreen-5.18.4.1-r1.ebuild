@@ -5,18 +5,18 @@ EAPI=7
 
 ECM_QTHELP="true"
 ECM_TEST="forceoptional"
-KFMIN=9999
+KFMIN=5.66.0
 PVCUT=$(ver_cut 1-3)
-QTMIN=5.14.1
+QTMIN=5.12.3
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
 
 DESCRIPTION="Plasma screen management library"
-SRC_URI+=" https://dev.gentoo.org/~asturm/distfiles/${PN}-wrapland-support-5.18.80.tar.xz"
+SRC_URI+=" https://dev.gentoo.org/~asturm/distfiles/${PN}-wrapland-support-5.18.4.tar.xz"
 
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5/7"
-KEYWORDS=""
+KEYWORDS="~amd64"
 IUSE="kwinft"
 
 DEPEND="

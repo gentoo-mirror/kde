@@ -6,9 +6,10 @@
 		<name>Gentoo KDE Project</name>
 	</maintainer>
 	<use>
-		<flag name="kwinft">Enable support for <pkg>gui-wm/kwinft</pkg> via <pkg>gui-libs/wrapland</pkg></flag>
+		<flag name="multimedia">Enable effect video button in desktop effects KCM</flag>
+		<flag name="tools">Build internal tools for performance analysis at runtime.</flag>
 	</use>
-	<slots>
-		<subslots>Reflects ABI compatibility of libKF5Screen.so</subslots>
-	</slots>
+	<upstream>
+		<remote-id type="gitlab">kwinft/kwinft</remote-id>
+	</upstream>
 </pkgmetadata>
