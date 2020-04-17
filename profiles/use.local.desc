@@ -47,7 +47,7 @@ gui-wm/kwinft:tools - Build internal tools for performance analysis at runtime.
 kde-apps/akonadi:designer - Install plugin for dev-qt/designer
 kde-apps/akonadi:kaccounts - Enable support for system-wide defined KAccounts
 kde-apps/akonadi:tools - Install tools for developers and testing
-kde-apps/akregator:feedback - Send anonymized usage information to KDE so they can better understand our users
+kde-apps/akregator:telemetry - Send anonymized usage information to upstream so they can better understand our users
 kde-apps/analitza:eigen - Enable dev-cpp/eigen mathematical templates support
 kde-apps/ark:zip - Enable ZIP archive support via dev-libs/libzip
 kde-apps/artikulate:qtmedia - Enable playback via Qt5Multimedia
@@ -62,18 +62,18 @@ kde-apps/gwenview:kipi - Enable support for the KDE Image Plugin Interface
 kde-apps/gwenview:mpris - Enable support for MPRIS2 interface, requiring dev-qt/qtdbus as dependency.
 kde-apps/gwenview:share - Enable support for a share menu using kde-frameworks/purpose
 kde-apps/kaccounts-mobile:google - Enable support for Google Contacts Sync via kde-apps/libkgapi
-kde-apps/kaddressbook:feedback - Send anonymized usage information to KDE so they can better understand our users
+kde-apps/kaddressbook:telemetry - Send anonymized usage information to upstream so they can better understand our users
 kde-apps/kalzium:editor - Enable the embedded molecule editor/viewer
 kde-apps/kalzium:solver - Enable the equation solver
 kde-apps/kanagram:speech - Enable text-to-speech support
 kde-apps/kate:activities - Enable Plasma Activities support via kde-frameworks/kactivities
-kde-apps/kate:feedback - Send anonymized usage information to KDE so they can better understand our users
 kde-apps/kate:filebrowser - Enable File System browser tool view
 kde-apps/kate:lspclient - Enable LSP (Language Server Protocol) client plugin
 kde-apps/kate:plasma - Enable Session Applet addon for KDE Plasma
 kde-apps/kate:projects - Enable Project plugin for executing queries on SQL DBs
 kde-apps/kate:snippets - Enable Snippets Tool View plugin to manage or download code snippets
 kde-apps/kate:sql - Enable SQL plugin for executing queries on SQL DBs
+kde-apps/kate:telemetry - Send anonymized usage information to upstream so they can better understand our users
 kde-apps/kde-apps-meta:pim - Pull in KDE PIM suite
 kde-apps/kde-apps-meta:sdk - Pull in developer-specific meta-packages
 kde-apps/kdeadmin-meta:cron - Installs KDE application for virtual/cron configuration
@@ -120,7 +120,7 @@ kde-apps/kipi-plugins:remotestorage - Build plugin for remote storage using netw
 kde-apps/kipi-plugins:vkontakte - Build plugin for vkontakte.ru
 kde-apps/kitinerary:barcode - Enable support for PDF417 and Aztec barcode decoding using media-libs/zxing-cpp
 kde-apps/kmag:keyboardfocus - Enable keyboard focus tracking
-kde-apps/kmail:feedback - Send anonymized usage information to KDE so they can better understand our users
+kde-apps/kmail:telemetry - Send anonymized usage information to upstream so they can better understand our users
 kde-apps/knights:speech - Enable text-to-speech support
 kde-apps/konqueror:activities - Enable kactivities support
 kde-apps/konqueror:speech - Build text-to-speech plugin
@@ -146,7 +146,7 @@ kde-apps/kopete:urlpicpreview - Enables in conversation pictures preview.
 kde-apps/kopete:webpresence - Show your status and some more information on web.
 kde-apps/kopete:winpopup - Enable pop-up messages sending on windows. (same as good old "net send" messages ;])
 kde-apps/kopete:zeroconf - Enable Link-Local Messaging via the bonjour protocol.
-kde-apps/korganizer:feedback - Send anonymized usage information to KDE so they can better understand our users
+kde-apps/korganizer:telemetry - Send anonymized usage information to upstream so they can better understand our users
 kde-apps/kpimtextedit:designer - Build plugins for dev-qt/designer
 kde-apps/ktp-accounts-kcm:experimental - Enables disabled telepathy services (currently only steam)
 kde-apps/ktp-common-internals:otr - Enable support for encrypted conversations using Off-The-Records messaging
@@ -173,8 +173,8 @@ kde-apps/okular:mobile - Enable Plasma mobile support
 kde-apps/okular:plucker - Enable Plucker E-Book for Palm OS devices support
 kde-apps/okular:share - Enable support for a share menu using kde-frameworks/purpose
 kde-apps/okular:speech - Enable text-to-speech support
-kde-apps/pim-data-exporter:feedback - Send anonymized usage information to KDE so they can better understand our users
-kde-apps/pim-sieve-editor:feedback - Send anonymized usage information to KDE so they can better understand our users
+kde-apps/pim-data-exporter:telemetry - Send anonymized usage information to upstream so they can better understand our users
+kde-apps/pim-sieve-editor:telemetry - Send anonymized usage information to upstream so they can better understand our users
 kde-apps/pimcommon:designer - Build plugins for dev-qt/designer
 kde-apps/spectacle:kipi - Enable support for the KDE Image Plugin Interface
 kde-apps/spectacle:share - Enable support for a share menu using kde-frameworks/purpose
@@ -225,8 +225,8 @@ kde-misc/kmarkdownwebview:webkit - Use dev-qt/qtwebkit instead of dev-qt/qtweben
 kde-misc/krename:office - Enable support for file naming based on ODF metadata
 kde-misc/tellico:discid - Add support for reading disc IDs from audio CDs
 kde-misc/tellico:yaz - Add support for searching Z39.50 databases
-kde-plasma/discover:feedback - Send anonymized usage information to KDE so they can better understand our users
 kde-plasma/discover:firmware - Enable support for firmware upgrades using sys-apps/fwupd
+kde-plasma/discover:telemetry - Send anonymized usage information to upstream so they can better understand our users
 kde-plasma/kde-cli-tools:kdesu - Build graphical frontend for kde-frameworks/kdesu
 kde-plasma/kdeplasma-addons:share - Enable applet for quickly sharing data to a variety of sources
 kde-plasma/kdeplasma-addons:webengine - Enable dictionary and web browser applets using dev-qt/qtwebengine
@@ -263,10 +263,10 @@ kde-plasma/plasma-nm:modemmanager - Enable support for mobile broadband devices
 kde-plasma/plasma-nm:openconnect - Build support for the OpenConnect VPN client
 kde-plasma/plasma-nm:teamd - Enable Teamd control support
 kde-plasma/plasma-workspace:appstream - Enable AppStream software metadata support
-kde-plasma/plasma-workspace:feedback - Enable User Feedback control module for kde-plasma/systemsettings
 kde-plasma/plasma-workspace:geolocation - Enables dataengine providing location information
 kde-plasma/plasma-workspace:qalculate - Enable Qalculate runner using sci-libs/libqalculate
 kde-plasma/plasma-workspace:qrcode - Enable support for creating QR codes from clipboard data using kde-frameworks/prison
+kde-plasma/plasma-workspace:telemetry - Enable User Feedback control module for kde-plasma/systemsettings
 kde-plasma/powerdevil:brightness-control - Enable screen brightness control using app-misc/ddcutil
 kde-plasma/powerdevil:wireless - Enable wireless energy saving actions via kde-frameworks/bluez-qt and kde-frameworks/networkmanager-qt
 kde-plasma/xdg-desktop-portal-kde:screencast - Enable screencast portal using media-video/pipewire
