@@ -5,7 +5,7 @@ EAPI=7
 
 ECM_HANDBOOK="optional"
 ECM_TEST="true"
-KFMIN=5.68.0
+KFMIN=5.69.0
 QTMIN=5.12.3
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
@@ -20,6 +20,12 @@ KEYWORDS=""
 IUSE="X"
 
 DEPEND="
+	>=dev-qt/qtdbus-${QTMIN}:5
+	>=dev-qt/qtgui-${QTMIN}:5
+	>=dev-qt/qtnetwork-${QTMIN}:5
+	>=dev-qt/qtprintsupport-${QTMIN}:5
+	>=dev-qt/qtwidgets-${QTMIN}:5
+	>=dev-qt/qtxml-${QTMIN}:5
 	>=kde-frameworks/kbookmarks-${KFMIN}:5
 	>=kde-frameworks/kcompletion-${KFMIN}:5
 	>=kde-frameworks/kconfig-${KFMIN}:5
@@ -43,12 +49,6 @@ DEPEND="
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/kwindowsystem-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
-	>=dev-qt/qtdbus-${QTMIN}:5
-	>=dev-qt/qtgui-${QTMIN}:5
-	>=dev-qt/qtnetwork-${QTMIN}:5
-	>=dev-qt/qtprintsupport-${QTMIN}:5
-	>=dev-qt/qtwidgets-${QTMIN}:5
-	>=dev-qt/qtxml-${QTMIN}:5
 	X? ( x11-libs/libX11 )
 "
 RDEPEND="${DEPEND}"
