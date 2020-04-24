@@ -239,7 +239,6 @@ kde-plasma/libksysguard:webengine - Enable display of detailed memory informatio
 kde-plasma/plasma-desktop:emoji - Build emojipicker applet using app-i18n/ibus and media-fonts/noto-emoji
 kde-plasma/plasma-desktop:ibus - Use ibus input method via app-i18n/ibus
 kde-plasma/plasma-desktop:scim - Enable applets that use app-i18n/scim
-kde-plasma/plasma-desktop:touchpad - Enable touchpad KCM
 kde-plasma/plasma-meta:browser-integration - Enable integration with Chrome/Firefox with browser extensions
 kde-plasma/plasma-meta:consolekit - Enable sys-auth/consolekit support instead of logind session tracking
 kde-plasma/plasma-meta:crypt - Pull in kde-plasma/plasma-vault for encrypted vaults integration
