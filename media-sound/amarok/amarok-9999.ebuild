@@ -78,9 +78,8 @@ DEPEND="
 	wikipedia? ( >=dev-qt/qtwebengine-${QTMIN}:5 )
 "
 RDEPEND="${DEPEND}
-	!media-sound/amarok:4
 	>=dev-qt/qtquickcontrols2-${QTMIN}:5
-	!ofa? ( virtual/ffmpeg )
+	!ofa? ( media-video/ffmpeg )
 "
 
 PATCHES=( "${FILESDIR}"/${PN}-2.8.90-mysqld-rpath.patch )
