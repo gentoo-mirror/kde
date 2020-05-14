@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile configure install nofetch prepare unpack
+DESCRIPTION=Breeze theme for GRUB
+EAPI=7
+HOMEPAGE=https://kde.org/plasma-desktop
+KEYWORDS=~amd64
+LICENSE=GPL-3+
+RESTRICT=mirror
+SLOT=5
+SRC_URI=mirror://kde/unstable/plasma/5.18.90/breeze-grub-5.18.90.tar.xz
+_eclasses_=kde.org	819b5a6ad7f44f516b382897e2244699
+_md5_=cab83c1dd3eb48b9e9b9da2f0d499ed0
