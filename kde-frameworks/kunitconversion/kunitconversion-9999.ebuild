@@ -4,7 +4,7 @@
 EAPI=7
 
 PVCUT=$(ver_cut 1-2)
-QTMIN=5.12.3
+QTMIN=5.14.1
 inherit ecm kde.org
 
 DESCRIPTION="Framework for converting units"
@@ -13,8 +13,8 @@ KEYWORDS=""
 IUSE=""
 
 DEPEND="
-	=kde-frameworks/ki18n-${PVCUT}*:5
 	>=dev-qt/qtnetwork-${QTMIN}:5
+	=kde-frameworks/ki18n-${PVCUT}*:5
 "
 RDEPEND="${DEPEND}"
 

@@ -5,7 +5,7 @@ EAPI=7
 
 ECM_TEST="true"
 PVCUT=$(ver_cut 1-2)
-QTMIN=5.12.3
+QTMIN=5.14.1
 inherit ecm kde.org
 
 DESCRIPTION="Framework providing client-side support for the XML-RPC protocol"
@@ -14,9 +14,9 @@ KEYWORDS=""
 IUSE=""
 
 DEPEND="
+	>=dev-qt/qtxml-${QTMIN}:5
 	=kde-frameworks/kcoreaddons-${PVCUT}*:5
 	=kde-frameworks/ki18n-${PVCUT}*:5
 	=kde-frameworks/kio-${PVCUT}*:5
-	>=dev-qt/qtxml-${QTMIN}:5
 "
 RDEPEND="${DEPEND}"

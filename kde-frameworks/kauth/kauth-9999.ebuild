@@ -4,7 +4,7 @@
 EAPI=7
 
 PVCUT=$(ver_cut 1-2)
-QTMIN=5.12.3
+QTMIN=5.14.1
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
 
@@ -17,10 +17,10 @@ BDEPEND="
 	nls? ( >=dev-qt/linguist-tools-${QTMIN}:5 )
 "
 DEPEND="
-	=kde-frameworks/kcoreaddons-${PVCUT}*:5
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
+	=kde-frameworks/kcoreaddons-${PVCUT}*:5
 	policykit? ( sys-auth/polkit-qt[qt5(+)] )
 "
 RDEPEND="${DEPEND}"

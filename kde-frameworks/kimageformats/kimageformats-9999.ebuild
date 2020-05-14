@@ -5,7 +5,7 @@ EAPI=7
 
 ECM_QTHELP="false"
 PVCUT=$(ver_cut 1-2)
-QTMIN=5.12.3
+QTMIN=5.14.1
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
 
@@ -15,8 +15,8 @@ KEYWORDS=""
 IUSE="eps openexr"
 
 DEPEND="
-	=kde-frameworks/karchive-${PVCUT}*:5
 	>=dev-qt/qtgui-${QTMIN}:5
+	=kde-frameworks/karchive-${PVCUT}*:5
 	eps? ( >=dev-qt/qtprintsupport-${QTMIN}:5 )
 	openexr? (
 		media-libs/ilmbase:=

@@ -5,7 +5,7 @@ EAPI=7
 
 ECM_QTHELP="false"
 PVCUT=$(ver_cut 1-2)
-QTMIN=5.12.3
+QTMIN=5.14.1
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
 
@@ -15,9 +15,9 @@ KEYWORDS=""
 IUSE=""
 
 DEPEND="
-	=kde-frameworks/kparts-${PVCUT}*:5
-	=kde-frameworks/kxmlgui-${PVCUT}*:5
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
+	=kde-frameworks/kparts-${PVCUT}*:5
+	=kde-frameworks/kxmlgui-${PVCUT}*:5
 "
 RDEPEND="${DEPEND}"

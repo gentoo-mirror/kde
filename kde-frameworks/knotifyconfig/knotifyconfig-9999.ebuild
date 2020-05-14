@@ -5,7 +5,7 @@ EAPI=7
 
 ECM_TEST="false"
 PVCUT=$(ver_cut 1-2)
-QTMIN=5.12.3
+QTMIN=5.14.1
 inherit ecm kde.org
 
 DESCRIPTION="Framework for configuring desktop notifications"
@@ -14,13 +14,13 @@ KEYWORDS=""
 IUSE="phonon"
 
 DEPEND="
+	>=dev-qt/qtdbus-${QTMIN}:5
+	>=dev-qt/qtgui-${QTMIN}:5
+	>=dev-qt/qtwidgets-${QTMIN}:5
 	=kde-frameworks/kcompletion-${PVCUT}*:5
 	=kde-frameworks/kconfig-${PVCUT}*:5
 	=kde-frameworks/ki18n-${PVCUT}*:5
 	=kde-frameworks/kio-${PVCUT}*:5
-	>=dev-qt/qtdbus-${QTMIN}:5
-	>=dev-qt/qtgui-${QTMIN}:5
-	>=dev-qt/qtwidgets-${QTMIN}:5
 	!phonon? ( media-libs/libcanberra )
 	phonon? ( media-libs/phonon[qt5(+)] )
 "
