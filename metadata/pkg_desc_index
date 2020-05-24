@@ -196,7 +196,7 @@ kde-apps/kontactinterface 20.04.49.9999 9999: Library for embedding KParts in a 
 kde-apps/kopete 20.04.49.9999 9999: Multi-protocol IM client based on KDE Frameworks
 kde-apps/korganizer 20.04.49.9999 9999: Organizational assistant, providing calendars and other similar functionality
 kde-apps/kpat 20.04.49.9999 9999: KDE patience game
-kde-apps/kpimtextedit 20.04.49.9999 9999: A textedit with PIM-specific features
+kde-apps/kpimtextedit 20.04.49.9999 9999: Extended text editor for PIM applications
 kde-apps/kpkpass 20.04.49.9999 9999: Library to deal with Apple Wallet pass files
 kde-apps/kqtquickcharts 20.04.49.9999 9999: Qt Quick plugin for beautiful and interactive charts
 kde-apps/krdc 20.04.49.9999 9999: Remote desktop connection (RDP and VNC) client
