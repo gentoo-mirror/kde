@@ -441,7 +441,7 @@ kde-plasma/systemsettings 5.18.90 5.19.49.9999 9999: Control Center to configure
 kde-plasma/user-manager 5.18.90 5.19.49.9999 9999: Simple system settings module to manage the users of your system
 kde-plasma/xdg-desktop-portal-kde 5.18.90 5.19.49.9999 9999: Backend implementation for xdg-desktop-portal that is using Qt/KDE Frameworks
 kde-plasma/xembed-sni-proxy 5.18.90 5.19.49.9999 9999: Legacy xembed tray icons support for SNI-only system trays
-media-gfx/digikam 7.0.0_beta3 9999: Digital photo management application
+media-gfx/digikam 9999: Digital photo management application
 media-gfx/kgraphviewer 9999: Graphviz dot graph file viewer
 media-gfx/kphotoalbum 9999: Tool for indexing, searching, and viewing images
 media-gfx/krita 9999: Free digital painting application. Digital Painting, Creative Freedom!
