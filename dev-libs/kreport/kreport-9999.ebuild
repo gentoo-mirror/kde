@@ -5,7 +5,7 @@ EAPI=7
 
 ECM_QTHELP="true"
 ECM_TEST="true"
-PYTHON_COMPAT=( python3_{7,8} )
+PYTHON_COMPAT=( python3_{7,8,9} )
 KFMIN=5.60.0
 QTMIN=5.12.3
 VIRTUALX_REQUIRED="test"
@@ -24,7 +24,7 @@ SLOT="5/4"
 IUSE="marble +scripting webkit"
 
 RDEPEND="
-	>=dev-libs/kproperty-3.1.0:5=
+	>=dev-libs/kproperty-${PV}:5=
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtprintsupport-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
