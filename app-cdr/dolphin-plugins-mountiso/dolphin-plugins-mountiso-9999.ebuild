@@ -4,14 +4,16 @@
 EAPI=7
 
 ECM_HANDBOOK="false"
+KDE_RELEASE_SERVICE="true"
+KDE_ORG_CATEGORY="sdk"
 KDE_ORG_NAME="dolphin-plugins"
-MY_PLUGIN_NAME="svn"
-PVCUT=$(ver_cut 1-3)
+MY_PLUGIN_NAME="mountiso"
+PVCUT=20.04.1 # TODO: back to $(ver_cut 1-3) after first release
 KFMIN=5.70.0
 QTMIN=5.14.1
 inherit ecm kde.org
 
-DESCRIPTION="Dolphin plugin for Subversion integration"
+DESCRIPTION="Dolphin plugin for ISO loopback device mounting"
 HOMEPAGE="https://kde.org/applications/system/org.kde.dolphin_plugins"
 
 LICENSE="GPL-2" # TODO: CHECK
@@ -20,25 +22,22 @@ KEYWORDS=""
 IUSE=""
 
 DEPEND="
+	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
 	>=kde-apps/dolphin-${PVCUT}:5
+	>=kde-frameworks/kcompletion-${KFMIN}:5
+	>=kde-frameworks/kconfig-${KFMIN}:5
 	>=kde-frameworks/kcoreaddons-${KFMIN}:5
 	>=kde-frameworks/ki18n-${KFMIN}:5
 	>=kde-frameworks/kio-${KFMIN}:5
 	>=kde-frameworks/ktextwidgets-${KFMIN}:5
+	>=kde-frameworks/solid-${KFMIN}:5
 "
-RDEPEND="${DEPEND}
-	!kde-apps/dolphin-plugins:5
-	dev-vcs/subversion
-	>=kde-apps/kompare-${PVCUT}:5
-"
+RDEPEND="${DEPEND}"
 
 src_prepare() {
 	ecm_src_prepare
-	# solid, qtdbus only required by mountiso
-	ecm_punt_bogus_dep Qt5 DBus
-	ecm_punt_bogus_dep KF5 Solid
 	# kxmlgui, qtnetwork only required by dropbox
 	ecm_punt_bogus_dep Qt5 Network
 	ecm_punt_bogus_dep KF5 XmlGui
@@ -55,7 +54,7 @@ src_configure() {
 		-DBUILD_dropbox=OFF
 		-DBUILD_git=OFF
 		-DBUILD_hg=OFF
-		-DBUILD_mountiso=OFF
+		-DBUILD_svn=OFF
 	)
 	ecm_src_configure
 }
