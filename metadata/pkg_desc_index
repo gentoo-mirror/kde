@@ -439,7 +439,7 @@ kde-plasma/polkit-kde-agent 5.18.90 5.19.49.9999 9999: PolKit agent module for K
 kde-plasma/powerdevil 5.18.90 5.19.49.9999 9999: Power management for KDE Plasma Shell
 kde-plasma/sddm-kcm 5.18.90 5.19.49.9999 9999: KDE Plasma control module for SDDM
 kde-plasma/systemsettings 5.18.90 5.19.49.9999 9999: Control Center to configure KDE Plasma desktop
-kde-plasma/user-manager 5.18.90 5.19.49.9999 9999: Simple system settings module to manage the users of your system
+kde-plasma/user-manager 5.18.90 5.19.49.9999: Simple system settings module to manage the users of your system
 kde-plasma/xdg-desktop-portal-kde 5.18.90 5.19.49.9999 9999: Backend implementation for xdg-desktop-portal that is using Qt/KDE Frameworks
 kde-plasma/xembed-sni-proxy 5.18.90 5.19.49.9999 9999: Legacy xembed tray icons support for SNI-only system trays
 media-gfx/digikam 9999: Digital photo management application
