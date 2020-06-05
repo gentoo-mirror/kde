@@ -3,16 +3,14 @@
 
 EAPI=7
 
-EGIT_BRANCH="5.0"
-PYTHON_COMPAT=( python2_7 )
-
+EGIT_BRANCH="5.1"
 ECM_HANDBOOK="optional"
 ECM_TEST="forceoptional"
 KFMIN=5.60.0
 QTMIN=5.12.3
 VIRTUALX_REQUIRED="test"
 VIRTUALDBUS_TEST="true"
-inherit ecm kde.org python-single-r1
+inherit ecm kde.org
 
 DESCRIPTION="Personal finance manager based on KDE Frameworks"
 HOMEPAGE="https://kmymoney.org"
@@ -24,10 +22,8 @@ fi
 
 LICENSE="GPL-2"
 SLOT="5"
-IUSE="activities addressbook calendar hbci holidays ofx quotes webkit weboob"
+IUSE="activities addressbook calendar hbci holidays ofx quotes webkit"
 [[ ${KDE_BUILD_TYPE} = live ]] && IUSE+=" experimental"
-
-REQUIRED_USE="weboob? ( ${PYTHON_REQUIRED_USE} )"
 
 BDEPEND="virtual/pkgconfig"
 COMMON_DEPEND="
@@ -82,13 +78,6 @@ COMMON_DEPEND="
 		>=kde-frameworks/kdewebkit-${KFMIN}:5
 	)
 	!webkit? ( >=dev-qt/qtwebengine-${QTMIN}:5[widgets] )
-	weboob? (
-		${PYTHON_DEPS}
-		>=dev-qt/qtconcurrent-${QTMIN}:5
-		$(python_gen_cond_dep '
-			www-client/weboob[${PYTHON_MULTI_USEDEP}]
-		')
-	)
 "
 DEPEND="${COMMON_DEPEND}
 	dev-libs/boost
@@ -99,7 +88,6 @@ RDEPEND="${COMMON_DEPEND}
 "
 
 pkg_setup() {
-	use weboob && python_setup
 	ecm_pkg_setup
 
 	if [[ ${KDE_BUILD_TYPE} = live ]] && use experimental; then
@@ -120,8 +108,7 @@ src_configure() {
 		$(cmake_use_find_package holidays KF5Holidays)
 		-DENABLE_OFXIMPORTER=$(usex ofx)
 		-DENABLE_WEBENGINE=$(usex !webkit)
-		-DENABLE_WEBOOB=$(usex weboob)
-		$(cmake_use_find_package weboob PythonLibs)
+		-DENABLE_WEBOOB=OFF
 	)
 	[[ ${KDE_BUILD_TYPE} = live ]] &&
 		mycmakeargs+=( -DENABLE_UNFINISHEDFEATURES=$(usex experimental) )
