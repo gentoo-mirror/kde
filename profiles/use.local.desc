@@ -234,6 +234,7 @@ kde-plasma/kscreenlocker:consolekit - Support for killing the screenlocker when 
 kde-plasma/ksysguard:pcap - Enable per-process network statistic collection using net-libs/libpcap
 kde-plasma/kwin:multimedia - Enable effect video button in desktop effects KCM
 kde-plasma/libkscreen:kwinft - Enable support for gui-wm/kwinft via gui-libs/wrapland
+kde-plasma/libksysguard:designer - Build plugins for dev-qt/designer
 kde-plasma/libksysguard:webengine - Enable display of detailed memory information using dev-qt/qtwebengine.
 kde-plasma/plasma-desktop:emoji - Build emojipicker applet using app-i18n/ibus and media-fonts/noto-emoji
 kde-plasma/plasma-desktop:ibus - Use ibus input method via app-i18n/ibus
