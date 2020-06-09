@@ -369,7 +369,7 @@ kde-misc/akonadiclient 9999: Commandline interface for accessing Akonadi
 kde-misc/basket 9999: Multiple information organizer - a DropDrawers clone
 kde-misc/colord-kde 9999: Provides interfaces and session daemon to colord
 kde-misc/itinerary 9999: Data Model and Extraction System for Travel Reservation information
-kde-misc/kdeconnect 20.04.49.9999 9999: Adds communication between KDE Plasma and your smartphone
+kde-misc/kdeconnect 20.04.2 20.04.49.9999 9999: Adds communication between KDE Plasma and your smartphone
 kde-misc/kdiff3 9999: Frontend to diff3 based on KDE Frameworks
 kde-misc/kimtoy 9999: Input method frontend for Plasma
 kde-misc/kio-fuse 9999: FUSE interface for KIO
@@ -458,7 +458,7 @@ media-libs/pulseaudio-qt 9999: Qt bindings for libpulse
 media-libs/qt-gstreamer 9999: C++ bindings for GStreamer with a Qt-style API
 media-sound/amarok 9999: Advanced audio player based on KDE frameworks
 media-sound/audex 9999: Tool for ripping compact discs
-media-sound/elisa 20.04.49.9999 9999: Simple music player by KDE
+media-sound/elisa 20.04.2 20.04.49.9999 9999: Simple music player by KDE
 media-sound/kid3 9999: Simple tag editor based on Qt
 media-sound/vvave 9999: Tiny Qt music player by KDE
 media-video/bangarang 9999: Media player based on KF5
