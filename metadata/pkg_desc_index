@@ -43,8 +43,8 @@ dev-vcs/kdesvn 9999: A frontend to the subversion vcs
 games-board/atlantik 9999: Atlantik board game
 games-kids/gcompris 9999: Full featured educational application for children from 2 to 10
 games-mud/kmuddy 9999: MUD client by KDE
-gui-libs/wrapland 0.518.0 5.18.49.9999 9999: Qt/C++ library wrapping libwayland
-gui-wm/kwinft 5.18.0 5.18.49.9999 9999: Wayland compositor and X11 window manager forked from KWin
+gui-libs/wrapland 9999: Qt/C++ library wrapping libwayland
+gui-wm/kwinft 9999: Wayland compositor and X11 window manager forked from KWin
 kde-apps/akonadi 20.04.49.9999 9999: Storage service for PIM data and libraries for PIM apps
 kde-apps/akonadi-calendar 20.04.49.9999 9999: Library for akonadi calendar integration
 kde-apps/akonadi-contacts 20.04.49.9999 9999: Library for akonadi contact integration
@@ -102,7 +102,6 @@ kde-apps/katomic 20.04.49.9999 9999: KDE Atomic Entertainment Game
 kde-apps/kbackup 20.04.49.9999 9999: Program that lets you back up any directories or files
 kde-apps/kblackbox 20.04.49.9999 9999: Game of hide and seek played on a grid of boxes
 kde-apps/kblocks 20.04.49.9999 9999: Single-player Tetris-like KDE game
-kde-apps/kblog 20.04.49.9999 9999: Library providing client-side support for web application remote blogging APIs
 kde-apps/kbounce 20.04.49.9999 9999: KDE Bounce Ball Game
 kde-apps/kbreakout 20.04.49.9999 9999: Breakout-like game by KDE
 kde-apps/kbruch 20.04.49.9999 9999: Educational application to learn calculating with fractions
