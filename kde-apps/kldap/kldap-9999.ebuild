@@ -3,7 +3,7 @@
 
 EAPI=7
 
-ECM_HANDBOOK="forceoptional"
+ECM_HANDBOOK="optional"
 ECM_TEST="true"
 KFMIN=5.71.0
 QTMIN=5.14.2
@@ -23,16 +23,8 @@ DEPEND="
 	>=dev-qt/qtwidgets-${QTMIN}:5
 	>=kde-frameworks/ki18n-${KFMIN}:5
 	>=kde-frameworks/kio-${KFMIN}:5
+	>=kde-frameworks/kwallet-${KFMIN}:5
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	net-nds/openldap
 "
 RDEPEND="${DEPEND}"
-
-src_prepare() {
-	ecm_src_prepare
-
-	if ! use handbook ; then
-		sed -e "/add_subdirectory(doc)/I s/^/#DONOTCOMPILE /" \
-			-i kioslave/CMakeLists.txt || die "failed to comment add_subdirectory(doc)"
-	fi
-}
