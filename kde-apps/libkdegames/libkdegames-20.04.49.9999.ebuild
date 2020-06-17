@@ -3,7 +3,7 @@
 
 EAPI=7
 
-ECM_TEST="forceoptional-recursive"
+ECM_TEST="forceoptional"
 KFMIN=5.70.0
 QTMIN=5.14.2
 VIRTUALX_REQUIRED="test"
@@ -17,6 +17,12 @@ KEYWORDS=""
 IUSE=""
 
 DEPEND="
+	>=dev-qt/qtdeclarative-${QTMIN}:5[widgets]
+	>=dev-qt/qtgui-${QTMIN}:5
+	>=dev-qt/qtnetwork-${QTMIN}:5
+	>=dev-qt/qtwidgets-${QTMIN}:5
+	>=dev-qt/qtsvg-${QTMIN}:5
+	>=dev-qt/qtxml-${QTMIN}:5
 	>=kde-frameworks/karchive-${KFMIN}:5
 	>=kde-frameworks/kbookmarks-${KFMIN}:5
 	>=kde-frameworks/kcodecs-${KFMIN}:5
@@ -39,13 +45,9 @@ DEPEND="
 	>=kde-frameworks/ktextwidgets-${KFMIN}:5
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
-	>=dev-qt/qtdeclarative-${QTMIN}:5[widgets]
-	>=dev-qt/qtgui-${QTMIN}:5
-	>=dev-qt/qtnetwork-${QTMIN}:5
-	>=dev-qt/qtwidgets-${QTMIN}:5
-	>=dev-qt/qtsvg-${QTMIN}:5
-	>=dev-qt/qtxml-${QTMIN}:5
 	media-libs/libsndfile
 	media-libs/openal
 "
 RDEPEND="${DEPEND}"
+
+PATCHES=( "${FILESDIR}/${PN}-20.04.2-optional-tests.patch" )
