@@ -3,7 +3,7 @@
 
 EAPI=7
 
-KFMIN=5.70.0
+KFMIN=5.71.0
 PVCUT=$(ver_cut 1-3)
 QTMIN=5.14.2
 inherit ecm kde.org
@@ -38,3 +38,7 @@ DEPEND="
 RDEPEND="${DEPEND}
 	>=kde-plasma/kde-cli-tools-${PVCUT}:5
 "
+
+PATCHES=(
+	"${FILESDIR}/${PN}-5.19.2-use-PlasmaExtras.PlaceholderMessage.patch" # KDE-Bug #422684
+)

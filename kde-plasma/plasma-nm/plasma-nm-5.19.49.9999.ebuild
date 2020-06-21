@@ -4,7 +4,7 @@
 EAPI=7
 
 ECM_TEST="true"
-KFMIN=5.70.0
+KFMIN=5.71.0
 PVCUT=$(ver_cut 1-3)
 QTMIN=5.14.2
 inherit ecm kde.org
@@ -60,6 +60,10 @@ RDEPEND="${DEPEND}
 	>=kde-frameworks/kirigami-${KFMIN}:5
 	>=kde-plasma/kde-cli-tools-${PVCUT}:5
 "
+
+PATCHES=(
+	"${FILESDIR}"/${PN}-5.19.2-fix-inline-password-field.patch # KDE-bug #423093
+)
 
 src_configure() {
 	local mycmakeargs=(

@@ -3,7 +3,7 @@
 
 EAPI=7
 
-KFMIN=5.70.0
+KFMIN=5.71.0
 PVCUT=$(ver_cut 1-3)
 QTMIN=5.14.2
 inherit ecm kde.org
@@ -37,6 +37,10 @@ DEPEND="
 RDEPEND="${DEPEND}
 	|| ( >=sys-fs/cryfs-0.9.9 >=sys-fs/encfs-1.9.2 )
 "
+
+PATCHES=(
+	"${FILESDIR}/${PN}-5.19.2-use-PlasmaExtras.PlaceholderMessage.patch" # KDE-Bug #422684
+)
 
 src_configure() {
 	local mycmakeargs=(

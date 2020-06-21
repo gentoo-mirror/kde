@@ -5,7 +5,7 @@ EAPI=7
 
 ECM_HANDBOOK="forceoptional"
 ECM_TEST="forceoptional"
-KFMIN=5.70.0
+KFMIN=5.71.0
 PVCUT=$(ver_cut 1-3)
 QTMIN=5.14.2
 VIRTUALX_REQUIRED="test"
@@ -123,7 +123,10 @@ PDEPEND="
 	>=kde-plasma/kde-cli-tools-${PVCUT}:5
 "
 
-PATCHES=( "${FILESDIR}/${PN}-5.14.2-split-libkworkspace.patch" )
+PATCHES=(
+	"${FILESDIR}/${PN}-5.14.2-split-libkworkspace.patch"
+	"${FILESDIR}/${PN}-5.19.2-use-PlasmaExtras.PlaceholderMessage.patch" # KDE-Bug #422684
+)
 
 RESTRICT+=" test"
 
