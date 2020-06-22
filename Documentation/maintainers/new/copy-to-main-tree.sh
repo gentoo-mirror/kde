@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Requires:
+# app-portage/repoman
+# Optional:
+# dev-vcs/git
+# app-portage/mgorny-dev-scripts
+# dev-util/pkgcheck
+
 . $(dirname "$0")/lib.sh
 
 : ${SOURCE_REPO:="$(realpath $(dirname $0)/../../../)"}
@@ -9,12 +16,13 @@ help() {
 	echo Simple set-based ebuild copier.
 	echo
 	echo Given a set in the source repository, copies all ebuilds with the specified
-	echo version into the target repository.
+	echo version into the target repository. Optionally, if target is a git repository,
+	echo each ebuild will be committed as \"cat/pn: TARGETVERSION version bump\"
 	echo
 	echo Reads TARGET_REPO from your enviroment, defaulting to the current directory.
 	echo
 	echo Usage: copy-to-main-tree.sh SETNAME TARGETVERSION
-	echo Example: copy-to-main-tree.sh kde-frameworks-5.15 5.15.0
+	echo Example: copy-to-main-tree.sh kde-frameworks-5.72 5.72.0
 	exit 0
 }
 
@@ -54,3 +62,20 @@ for cp in ${packages} ; do
 	popd > /dev/null
 
 done
+
+if [[ -d "${TARGET_REPO}/.git" ]] && hash git 2>/dev/null && hash pkgcommit 2>/dev/null; then
+	for cp in ${packages} ; do
+		pushd "${TARGET_REPO}/${cp}" > /dev/null
+
+		git add .
+		pkgcommit -sS . -m "${TARGETVERSION} version bump"
+
+		popd > /dev/null
+	done
+
+	if hash pkgcheck 2>/dev/null; then
+		pushd "${TARGET_REPO}" > /dev/null
+			pkgcheck scan --commits
+		popd > /dev/null
+	fi
+fi
