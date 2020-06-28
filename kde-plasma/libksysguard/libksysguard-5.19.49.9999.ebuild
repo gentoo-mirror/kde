@@ -14,7 +14,7 @@ DESCRIPTION="Task management and system monitoring library"
 LICENSE="LGPL-2+"
 SLOT="5/9"
 KEYWORDS=""
-IUSE="minimal webengine X"
+IUSE="webengine X"
 
 RDEPEND="
 	>=dev-qt/qtdbus-${QTMIN}:5
@@ -27,9 +27,11 @@ RDEPEND="
 	>=kde-frameworks/kconfig-${KFMIN}:5
 	>=kde-frameworks/kconfigwidgets-${KFMIN}:5
 	>=kde-frameworks/kcoreaddons-${KFMIN}:5
+	>=kde-frameworks/kdeclarative-${KFMIN}:5
 	>=kde-frameworks/ki18n-${KFMIN}:5
 	>=kde-frameworks/kjobwidgets-${KFMIN}:5
 	>=kde-frameworks/knewstuff-${KFMIN}:5
+	>=kde-frameworks/kpackage-${KFMIN}:5
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/kwindowsystem-${KFMIN}:5
 	sys-libs/zlib
