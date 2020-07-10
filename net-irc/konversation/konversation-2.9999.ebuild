@@ -5,7 +5,7 @@ EAPI=7
 
 EGIT_BRANCH="wip/qtquick"
 ECM_HANDBOOK="forceoptional"
-KFMIN=5.60.0
+KFMIN=5.70.0
 QTMIN=5.12.3
 inherit ecm kde.org
 
@@ -35,7 +35,6 @@ DEPEND="
 	>=kde-frameworks/kcoreaddons-${KFMIN}:5
 	>=kde-frameworks/kcrash-${KFMIN}:5
 	>=kde-frameworks/kdbusaddons-${KFMIN}:5
-	>=kde-frameworks/kemoticons-${KFMIN}:5
 	>=kde-frameworks/kglobalaccel-${KFMIN}:5
 	>=kde-frameworks/ki18n-${KFMIN}:5
 	>=kde-frameworks/kiconthemes-${KFMIN}:5
@@ -60,6 +59,11 @@ RDEPEND="${DEPEND}
 	>=kde-frameworks/qqc2-desktop-style-${KFMIN}:5
 	crypt? ( app-crypt/qca:2[ssl] )
 "
+
+PATCHES=(
+	# git master
+	"${FILESDIR}"/${P}-unused-kemoticons.patch
+)
 
 src_configure() {
 	local mycmakeargs=(
