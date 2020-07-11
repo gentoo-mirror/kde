@@ -49,7 +49,6 @@ kde-apps/akonadi:tools - Install tools for developers and testing
 kde-apps/akregator:telemetry - Send anonymized usage information to upstream so they can better understand our users
 kde-apps/analitza:eigen - Enable dev-cpp/eigen mathematical templates support
 kde-apps/ark:zip - Enable ZIP archive support via dev-libs/libzip
-kde-apps/artikulate:qtmedia - Enable playback via Qt5Multimedia
 kde-apps/cantor:R - Enable dev-lang/R backend support
 kde-apps/cantor:analitza - Enable kde-apps/analitza backend support
 kde-apps/cantor:julia - Enable dev-lang/julia backend support
@@ -301,6 +300,7 @@ net-im/choqok:attica - Build Open Collaboration Services plugin using kde-framew
 net-im/choqok:konqueror - Build Konqueror Choqok plugin
 net-im/choqok:share - Enable support for a share menu using kde-frameworks/purpose
 net-im/choqok:telepathy - Enable support for the real-time communication framework telepathy
+net-misc/smb4k:discovery - Build with net-libs/kdsoap-ws-discovery-client support to discover domains and workgroups
 net-p2p/ktorrent:bwscheduler - Schedule upload and download limits over a period of a week
 net-p2p/ktorrent:downloadorder - Specify the download order of a multi-file torrent
 net-p2p/ktorrent:infowidget - Displays general information about a torrent in several tabs
