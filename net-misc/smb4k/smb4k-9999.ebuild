@@ -19,7 +19,7 @@ fi
 
 LICENSE="GPL-2"
 SLOT="5"
-IUSE="plasma"
+IUSE="+discovery plasma"
 
 DEPEND="
 	>=dev-qt/qtdeclarative-${QTMIN}:5
@@ -35,6 +35,7 @@ DEPEND="
 	>=kde-frameworks/kcoreaddons-${KFMIN}:5
 	>=kde-frameworks/kcrash-${KFMIN}:5
 	>=kde-frameworks/kdbusaddons-${KFMIN}:5
+	>=kde-frameworks/kdnssd-${KFMIN}:5
 	>=kde-frameworks/ki18n-${KFMIN}:5
 	>=kde-frameworks/kiconthemes-${KFMIN}:5
 	>=kde-frameworks/kio-${KFMIN}:5
@@ -46,6 +47,10 @@ DEPEND="
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
 	>=kde-frameworks/solid-${KFMIN}:5
 	net-fs/samba[cups]
+	discovery? (
+		net-libs/kdsoap
+		net-libs/kdsoap-ws-discovery-client
+	)
 "
 RDEPEND="${DEPEND}
 	plasma? (
@@ -56,6 +61,7 @@ RDEPEND="${DEPEND}
 
 src_configure(){
 	local mycmakeargs=(
+		-DWITH_WS_DISCOVERY=$(usex discovery)
 		-DINSTALL_PLASMOID=$(usex plasma)
 	)
 	ecm_src_configure
