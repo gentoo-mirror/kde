@@ -3,7 +3,7 @@
 
 EAPI=7
 
-ECM_TEST="forceoptional-recursive"
+ECM_TEST="forceoptional"
 PYTHON_COMPAT=( python3_{7,8,9} )
 KFMIN=5.60.0
 QTMIN=5.12.3
@@ -86,6 +86,8 @@ DEPEND="${RDEPEND}
 
 # bug 630508
 RESTRICT+=" test"
+
+PATCHES=( "${FILESDIR}"/${PN}-4.3.1-tests-optional.patch )
 
 pkg_setup() {
 	python-single-r1_pkg_setup
