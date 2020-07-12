@@ -446,7 +446,7 @@ kde-plasma/xembed-sni-proxy 5.19.49.9999 9999: Legacy xembed tray icons support 
 media-gfx/digikam 9999: Digital photo management application
 media-gfx/kgraphviewer 9999: Graphviz dot graph file viewer
 media-gfx/kphotoalbum 9999: Tool for indexing, searching, and viewing images
-media-gfx/krita 4.3.0 9999: Free digital painting application. Digital Painting, Creative Freedom!
+media-gfx/krita 9999: Free digital painting application. Digital Painting, Creative Freedom!
 media-gfx/kxstitch 9999: Program to create cross stitch patterns
 media-gfx/symboleditor 9999: Application to create libraries of QPainterPath objects with rendering hints
 media-gfx/synnefo 9999: Qt front end for the Oyranos Color Management System
