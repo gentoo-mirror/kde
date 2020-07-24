@@ -233,6 +233,7 @@ kde-plasma/kinfocenter:pci - Show advanced PCI information
 kde-plasma/kscreenlocker:consolekit - Support for killing the screenlocker when sys-auth/consolekit is the session tracker
 kde-plasma/ksysguard:pcap - Enable per-process network statistic collection using net-libs/libpcap
 kde-plasma/kwin:multimedia - Enable effect video button in desktop effects KCM
+kde-plasma/kwin:screencast - Enable screencast portal using media-video/pipewire
 kde-plasma/libkscreen:kwinft - Enable support for gui-wm/kwinft via gui-libs/wrapland
 kde-plasma/libksysguard:designer - Build plugins for dev-qt/designer
 kde-plasma/libksysguard:webengine - Enable display of detailed memory information using dev-qt/qtwebengine.
