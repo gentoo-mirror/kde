@@ -21,11 +21,14 @@ IUSE="appstream +calendar geolocation gps qalculate +semantic-desktop systemd te
 REQUIRED_USE="gps? ( geolocation )"
 
 COMMON_DEPEND="
+	>=dev-libs/wayland-1.15
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtdeclarative-${QTMIN}:5[widgets]
-	>=dev-qt/qtgui-${QTMIN}:5[jpeg]
+	>=dev-qt/qtgui-${QTMIN}:5=[jpeg]
 	>=dev-qt/qtnetwork-${QTMIN}:5
 	>=dev-qt/qtsql-${QTMIN}:5
+	>=dev-qt/qtsvg-${QTMIN}:5
+	>=dev-qt/qtwayland-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
 	>=dev-qt/qtx11extras-${QTMIN}:5
 	>=dev-qt/qtxml-${QTMIN}:5
@@ -120,7 +123,7 @@ RDEPEND="${COMMON_DEPEND}
 	x11-apps/xsetroot
 	systemd? ( sys-apps/dbus[user-session] )
 	!systemd? ( sys-apps/dbus )
-	!<kde-plasma/plasma-desktop-5.16.80:5
+	!<kde-plasma/plasma-desktop-5.19.80:5
 "
 PDEPEND="
 	>=kde-plasma/kde-cli-tools-${PVCUT}:5
