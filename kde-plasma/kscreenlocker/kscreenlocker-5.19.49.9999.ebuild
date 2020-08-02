@@ -15,7 +15,7 @@ DESCRIPTION="Library and components for secure lock screen architecture"
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"
 KEYWORDS=""
-IUSE="consolekit +pam"
+IUSE="+pam"
 
 COMMON_DEPEND="
 	dev-libs/wayland
@@ -45,23 +45,20 @@ COMMON_DEPEND="
 	x11-libs/libXi
 	x11-libs/libxcb
 	x11-libs/xcb-util-keysyms
-	consolekit? ( sys-auth/consolekit )
 	pam? ( sys-libs/pam )
 "
 DEPEND="${COMMON_DEPEND}
 	x11-base/xorg-proto
 "
 RDEPEND="${COMMON_DEPEND}
-	>=dev-qt/qtquickcontrols2-${QTMIN}:5
-	>=kde-frameworks/kirigami-${KFMIN}:5
+	>=dev-qt/qtquickcontrols-${QTMIN}:5
+	>=kde-frameworks/plasma-${KFMIN}:5
 "
 PDEPEND="
 	>=kde-plasma/kde-cli-tools-${PVCUT}:5
 "
 
 RESTRICT+=" test"
-
-PATCHES=( "${FILESDIR}/${PN}-5.19.5-ck-unlock.patch" )
 
 src_prepare() {
 	ecm_src_prepare
@@ -83,7 +80,6 @@ src_test() {
 src_configure() {
 	local mycmakeargs=(
 		-DCMAKE_DISABLE_FIND_PACKAGE_Seccomp=ON
-		$(cmake_use_find_package consolekit ConsoleKit)
 		-DPAM_REQUIRED=$(usex pam)
 		$(cmake_use_find_package pam PAM)
 	)
@@ -93,10 +89,10 @@ src_configure() {
 src_install() {
 	ecm_src_install
 
-	use pam && newpamd "${FILESDIR}/kde.pam" kde
-	use pam && newpamd "${FILESDIR}/kde-np.pam" kde-np
-
-	if ! use pam; then
+	if use pam; then
+		newpamd "${FILESDIR}/kde.pam" kde
+		newpamd "${FILESDIR}/kde-np.pam" kde-np
+	else
 		chown root "${ED}"/usr/$(get_libdir)/libexec/kcheckpass || die
 		chmod +s "${ED}"/usr/$(get_libdir)/libexec/kcheckpass || die
 	fi
