@@ -6,5 +6,5 @@ HOMEPAGE=https://kde.org/plasma-desktop
 LICENSE=GPL-3+
 PROPERTIES=live
 SLOT=5
-_eclasses_=git-r3	8ec5b53812bce105ae7943930e4660f8	kde.org	19164095ece7e04b7d477d6f5143e45d
+_eclasses_=git-r3	8ec5b53812bce105ae7943930e4660f8	kde.org	52c031e6288694cba7a2db984ec51654
 _md5_=57be0dacd98f0f15b4dac94f6fe8c183
