@@ -8,8 +8,8 @@ IUSE=+man test debug designer doc test
 KEYWORDS=~amd64 ~arm ~arm64 ~ppc64 ~x86
 LICENSE=LGPL-2+
 RDEPEND=>=dev-qt/qtdbus-5.14.2:5 >=dev-qt/qtgui-5.14.2:5 >=dev-qt/qtwidgets-5.14.2:5 =kde-frameworks/kauth-5.73*:5 =kde-frameworks/kcodecs-5.73*:5 =kde-frameworks/kconfig-5.73*:5 =kde-frameworks/kcoreaddons-5.73*:5 =kde-frameworks/kguiaddons-5.73*:5 =kde-frameworks/ki18n-5.73*:5 =kde-frameworks/kwidgetsaddons-5.73*:5 >=kde-frameworks/kf-env-4 doc? ( dev-qt/qt-docs:5 ) dev-qt/qtcore:5
-RESTRICT=!test? ( test ) !test? ( test ) fetch
+RESTRICT=!test? ( test ) !test? ( test )
 SLOT=5/5.73
 SRC_URI=mirror://kde/stable/frameworks/5.73/kconfigwidgets-5.73.0.tar.xz
-_eclasses_=cmake	6fdf5e6b86670f64ca8223b4674038bd	ecm	f6ac7d31239fbaacf94ec10be0fb8066	eutils	fcb2aa98e1948b835b5ae66ca52868c5	flag-o-matic	f1194291b9a1baca337c1c89b5f7f365	kde.org	fc7e4609fbd630a756bd6e7799c5bfc1	multilib	2477ebe553d3e4d2c606191fe6c33602	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	605c126bed8d87e4378d5ff1645330cb	virtualx	e49dbce7ac14426e1155497476915307	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
+_eclasses_=cmake	6fdf5e6b86670f64ca8223b4674038bd	ecm	f6ac7d31239fbaacf94ec10be0fb8066	eutils	fcb2aa98e1948b835b5ae66ca52868c5	flag-o-matic	f1194291b9a1baca337c1c89b5f7f365	kde.org	678ef40f0a5b516df301eff094127474	multilib	2477ebe553d3e4d2c606191fe6c33602	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	605c126bed8d87e4378d5ff1645330cb	virtualx	e49dbce7ac14426e1155497476915307	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
 _md5_=bc7397a420d15f47d5fa431d7c23bb01

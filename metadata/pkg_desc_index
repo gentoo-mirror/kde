@@ -244,7 +244,7 @@ kde-apps/libkdepim 20.07.90 20.08.0 20.08.49.9999 9999: Common PIM libraries
 kde-apps/libkeduvocdocument 20.07.90 20.08.0 20.08.49.9999 9999: Library for reading/writing KVTML
 kde-apps/libkexiv2 20.07.90 20.08.0 20.08.49.9999 9999: Wrapper around exiv2 library
 kde-apps/libkgapi 20.07.90 20.08.0 20.08.49.9999 9999: Library for accessing Google calendar and contact resources
-kde-apps/libkgeomap 20.07.90 20.08.0 20.08.49.9999 9999: Wrapper library for world map components as marble, openstreetmap and googlemap
+kde-apps/libkgeomap 9999: Wrapper library for world map components as marble, openstreetmap and googlemap
 kde-apps/libkipi 20.07.90 20.08.0 20.08.49.9999 9999: A library for image plugins accross KDE applications
 kde-apps/libkleo 20.07.90 20.08.0 20.08.49.9999 9999: Library for encryption handling
 kde-apps/libkmahjongg 20.07.90 20.08.0 20.08.49.9999 9999: Mahjongg library based on Qt/KDE Frameworks
