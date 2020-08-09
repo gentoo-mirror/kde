@@ -265,6 +265,7 @@ kde-plasma/plasma-workspace:appstream - Enable AppStream software metadata suppo
 kde-plasma/plasma-workspace:geolocation - Enables dataengine providing location information
 kde-plasma/plasma-workspace:qalculate - Enable Qalculate runner using sci-libs/libqalculate
 kde-plasma/plasma-workspace:qrcode - Enable support for creating QR codes from clipboard data using kde-frameworks/prison
+kde-plasma/plasma-workspace:screencast - Enable screencast portal using media-video/pipewire
 kde-plasma/plasma-workspace:telemetry - Enable User Feedback control module for kde-plasma/systemsettings
 kde-plasma/powerdevil:brightness-control - Enable screen brightness control using app-misc/ddcutil
 kde-plasma/powerdevil:wireless - Enable wireless energy saving actions via kde-frameworks/bluez-qt and kde-frameworks/networkmanager-qt
@@ -298,7 +299,6 @@ media-sound/elisa:vlc - Use media-video/vlc for output rather than dev-qt/qtmult
 media-sound/kid3:acoustid - Build acoustic fingerprinting plugin using media-libs/chromaprint
 media-sound/kid3:mpris - Enable support for MPRIS2 interface using dev-qt/qtdbus
 net-im/choqok:attica - Build Open Collaboration Services plugin using kde-frameworks/attica
-net-im/choqok:konqueror - Build Konqueror Choqok plugin
 net-im/choqok:share - Enable support for a share menu using kde-frameworks/purpose
 net-im/choqok:telepathy - Enable support for the real-time communication framework telepathy
 net-misc/smb4k:discovery - Build with net-libs/kdsoap-ws-discovery-client support to discover domains and workgroups
