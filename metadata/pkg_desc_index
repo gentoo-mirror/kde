@@ -384,6 +384,7 @@ kde-misc/krusader 9999: Advanced twin-panel (commander-style) file-manager with 
 kde-misc/ktrip 9999: Public transport assistant targeted towards mobile Linux and Android
 kde-misc/kwebkitpart 9999: WebKit KPart for Konqueror
 kde-misc/latte-dock 9999: Elegant dock, based on KDE Frameworks
+kde-misc/markdownpart 9999: Markdown viewer KParts plugin based on QTextDocument
 kde-misc/plasma-applet-network-monitor 9999: Plasma 5 applet for monitoring active network connections
 kde-misc/plasma-applet-weather-widget 9999: Plasma 5 applet for weather forecasts
 kde-misc/plasma-pass 9999: Plasma applet to access password from pass
