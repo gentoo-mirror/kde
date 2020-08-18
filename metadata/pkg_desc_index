@@ -29,13 +29,13 @@ dev-libs/plasma-wayland-protocols 9999: Plasma Specific Protocols for Wayland
 dev-python/parse_cmake 0.4.1-r1: Parser for CMakeLists.txt files
 dev-util/arcanist 9999: Command line interface for Phabricator
 dev-util/kdbg 9999: Graphical debugger interface
-dev-util/kdevelop 5.5.9999 9999: Integrated Development Environment, supporting KF5/Qt, C/C++ and much more
+dev-util/kdevelop 5.5.80 5.6.9999 9999: Integrated Development Environment, supporting KF5/Qt, C/C++ and much more
 dev-util/kdevelop-css 9999: CSS Language Support plugin for KDevelop
 dev-util/kdevelop-embedded 9999: Plugin for KDevelop to support the development of embedded systems
 dev-util/kdevelop-krazy2 9999: Plugin for KDevelop to perform Krazy2 analysis
 dev-util/kdevelop-pg-qt 9999: LL(1) parser generator used mainly by KDevelop language plugins
-dev-util/kdevelop-php 5.5.9999 9999: PHP plugin for KDevelop
-dev-util/kdevelop-python 5.5.9999 9999: Python plugin for KDevelop
+dev-util/kdevelop-php 5.5.80 5.6.9999 9999: PHP plugin for KDevelop
+dev-util/kdevelop-python 5.5.80 5.6.9999 9999: Python plugin for KDevelop
 dev-util/kdevelop-upload 9999: Plugin for uploading files to a remote server
 dev-util/kdevelop-valgrind 9999: Plugin offering full integration of the valgrind suite to KDevelop
 dev-util/massif-visualizer 9999: Tool visualising massif data
