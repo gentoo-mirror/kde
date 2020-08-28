@@ -1,3 +1,4 @@
+app-accessibility/kontrast 9999: Tool to check contrast for colors to verify they are correctly accessible
 app-admin/systemdgenie 9999: Systemd managment utility
 app-backup/kup 9999: Backup scheduler for the Plasma desktop
 app-cdr/dolphin-plugins-mountiso 20.08.49.9999 9999: Dolphin plugin for ISO loopback device mounting
@@ -43,6 +44,7 @@ dev-vcs/kdesvn 9999: A frontend to the subversion vcs
 games-board/atlantik 9999: Atlantik board game
 games-kids/gcompris 9999: Full featured educational application for children from 2 to 10
 games-mud/kmuddy 9999: MUD client by KDE
+gui-apps/plasma-bigscreen 9999: Plasma shell for TVs
 gui-libs/wrapland 9999: Qt/C++ library wrapping libwayland
 gui-wm/kwinft 9999: Wayland compositor and X11 window manager forked from KWin
 kde-apps/akonadi 20.08.49.9999 9999: Storage service for PIM data and libraries for PIM apps
@@ -484,6 +486,7 @@ sci-electronics/ktechlab 9999: IDE for microcontrollers and electronics
 sci-mathematics/rkward 9999: IDE for the R-project
 sys-auth/polkit-qt 9999: Qt wrapper around polkit-1 client libraries
 sys-block/partitionmanager 9999: Utility for management of disks, partitions and file systems
+sys-block/plasma-disks 9999: Monitors S.M.A.R.T. capable devices for imminent failure
 sys-libs/kpmcore 9999: Library for managing partitions
 www-client/falkon 9999: Cross-platform web browser using QtWebEngine
 x11-themes/gnome-breeze 9999: Unofficial GTK 2/3 Breeze Theme
