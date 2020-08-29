@@ -22,7 +22,7 @@ SLOT="5"
 IUSE="attica share telepathy"
 
 DEPEND="
-	app-crypt/qca[qt5(+)]
+	>=app-crypt/qca-2.3.0:2
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtnetworkauth-${QTMIN}:5
@@ -48,7 +48,7 @@ DEPEND="
 	>=kde-frameworks/sonnet-${KFMIN}:5
 	attica? ( >=kde-frameworks/attica-${KFMIN}:5 )
 	share? ( >=kde-frameworks/purpose-${KFMIN}:5 )
-	telepathy? ( net-libs/telepathy-qt[qt5(+)] )
+	telepathy? ( >=net-libs/telepathy-qt-0.9.8 )
 "
 RDEPEND="${DEPEND}"
 

@@ -73,7 +73,7 @@ COMMON_DEPEND="
 	virtual/libiconv
 	activities? ( >=kde-frameworks/kactivities-${KFMIN}:5 )
 	charts? ( dev-libs/kdiagram:5 )
-	crypt? ( app-crypt/qca:2[qt5(+)] )
+	crypt? ( >=app-crypt/qca-2.3.0:2 )
 	fontconfig? ( media-libs/fontconfig )
 	gemini? ( >=dev-qt/qtdeclarative-${QTMIN}:5[widgets] )
 	gsl? ( sci-libs/gsl )
@@ -94,7 +94,7 @@ COMMON_DEPEND="
 	okular? ( kde-apps/okular:5 )
 	openexr? ( media-libs/openexr )
 	pdf? ( app-text/poppler:=[qt5] )
-	phonon? ( media-libs/phonon[qt5(+)] )
+	phonon? ( >=media-libs/phonon-4.11.0 )
 	spacenav? ( dev-libs/libspnav )
 	truetype? ( media-libs/freetype:2 )
 	X? (

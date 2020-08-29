@@ -40,13 +40,13 @@ DEPEND="
 	>=kde-frameworks/kwallet-${KFMIN}:5
 	>=kde-frameworks/threadweaver-${KFMIN}:5
 	media-libs/freetype
-	media-libs/phonon[qt5(+)]
+	>=media-libs/phonon-4.11.0
 	sys-libs/zlib
 	chm? (
 		dev-libs/chmlib
 		>=kde-frameworks/khtml-${KFMIN}:5
 	)
-	crypt? ( app-crypt/qca:2[qt5(+)] )
+	crypt? ( >=app-crypt/qca-2.3.0:2 )
 	djvu? ( app-text/djvu )
 	epub? ( app-text/ebook-tools )
 	image-backend? (
