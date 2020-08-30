@@ -1,13 +1,13 @@
-BDEPEND=dev-util/ninja dev-util/cmake handbook? ( >=kde-frameworks/kdoctools-5.70.0:5 ) >=kde-frameworks/extra-cmake-modules-5.70.0:5 >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=dev-util/ninja dev-util/cmake >=kde-frameworks/extra-cmake-modules-5.70.0:5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install nofetch postinst postrm preinst prepare setup test unpack
 DEPEND=>=dev-qt/qtdeclarative-5.14.2:5 >=dev-qt/qtgui-5.14.2:5 >=dev-qt/qtquickcontrols2-5.14.2:5 >=dev-qt/qtsql-5.14.2:5 >=dev-qt/qtsvg-5.14.2:5 >=dev-qt/qtwidgets-5.14.2:5 >=kde-frameworks/kcoreaddons-5.70.0:5 >=kde-frameworks/kdeclarative-5.70.0:5 >=kde-frameworks/ki18n-5.70.0:5 >=kde-frameworks/kirigami-5.70.0:5 dev-util/desktop-file-utils x11-misc/shared-mime-info dev-qt/qtcore:5
 DESCRIPTION=Tool to check contrast for colors to verify they are correctly accessible
 EAPI=7
 HOMEPAGE=https://invent.kde.org/accessibility/kontrast
-IUSE=debug +handbook
+IUSE=debug
 LICENSE=GPL-3+
 PROPERTIES=live
 RDEPEND=>=dev-qt/qtdeclarative-5.14.2:5 >=dev-qt/qtgui-5.14.2:5 >=dev-qt/qtquickcontrols2-5.14.2:5 >=dev-qt/qtsql-5.14.2:5 >=dev-qt/qtsvg-5.14.2:5 >=dev-qt/qtwidgets-5.14.2:5 >=kde-frameworks/kcoreaddons-5.70.0:5 >=kde-frameworks/kdeclarative-5.70.0:5 >=kde-frameworks/ki18n-5.70.0:5 >=kde-frameworks/kirigami-5.70.0:5 || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-4 dev-qt/qtcore:5
 SLOT=5
 _eclasses_=cmake	4503352badcb020cbc10ee9266ad52ee	ecm	f6ac7d31239fbaacf94ec10be0fb8066	eutils	fcb2aa98e1948b835b5ae66ca52868c5	flag-o-matic	09a8beb8e6a8e02dc1e1bd83ac353741	git-r3	8ec5b53812bce105ae7943930e4660f8	kde.org	60d38cfbb76f874c99afb6c39b11135a	multilib	2477ebe553d3e4d2c606191fe6c33602	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	605c126bed8d87e4378d5ff1645330cb	virtualx	e49dbce7ac14426e1155497476915307	xdg	c7ba313ea1eaf266f95cc6235f7d6a07	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
-_md5_=07892d450c98635b2f86bb8cd19e75d2
+_md5_=55fa5fab52100f1a3d398a832cb96b75
