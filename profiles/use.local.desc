@@ -28,7 +28,6 @@ app-office/kraft:pim - Enable support for KDE PIM resources integration
 app-office/libalkimia:webengine - Enable online quotes using dev-qt/qtwebengine
 app-office/skrooge:activities - Enable kactivities support
 app-office/skrooge:designer - Build plugins for dev-qt/designer
-app-office/skrooge:webkit - Build with dev-qt/qtwebkit instead of dev-qt/qtwebengine
 app-text/kbibtex:webengine - Use dev-qt/qtwebengine for HTML previews
 dev-libs/appstream:apt - Enables Debians APT support
 dev-libs/kreport:marble - Enable displaying of maps using kde-apps/marble
@@ -161,8 +160,8 @@ kde-apps/okular:epub - Enable E-Book support via app-text/ebook-tools
 kde-apps/okular:image-backend - Enable image viewing support
 kde-apps/okular:markdown - Enable Markdown support via app-text/discount
 kde-apps/okular:mobi - Enable mobipocket support
-kde-apps/okular:mobile - Enable Plasma mobile support
 kde-apps/okular:plucker - Enable Plucker E-Book for Palm OS devices support
+kde-apps/okular:qml - Install Okular Qml components
 kde-apps/okular:share - Enable support for a share menu using kde-frameworks/purpose
 kde-apps/okular:speech - Enable text-to-speech support
 kde-apps/pimcommon:designer - Build plugins for dev-qt/designer
@@ -211,7 +210,6 @@ kde-misc/kdeconnect:pulseaudio - Enable system volume control plugin using media
 kde-misc/kdeconnect:wayland - Enable remote input mousepad plugin using kde-frameworks/kwayland
 kde-misc/kimtoy:scim - Enable Smart Common Input Method support
 kde-misc/kio-gdrive:kaccounts - Use kde-apps/kaccounts-integration backend (default) instead of dev-libs/qtkeychain
-kde-misc/kmarkdownwebview:webkit - Use dev-qt/qtwebkit instead of dev-qt/qtwebengine
 kde-misc/krename:office - Enable support for file naming based on ODF metadata
 kde-misc/tellico:discid - Add support for reading disc IDs from audio CDs
 kde-misc/tellico:yaz - Add support for searching Z39.50 databases
