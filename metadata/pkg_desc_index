@@ -8,6 +8,7 @@ app-editors/okteta 9999: Hex editor by KDE
 app-i18n/pology 9999: A framework for custom processing of PO files
 app-misc/calindori 9999: Touch friendly calendar application
 app-misc/kookbook 9999: Simple recipe manager taking structured markdown for recipes
+app-misc/plasma-systemmonitor 9999: New version of KSysGuard built on top of the new KStats daemon and using QML
 app-office/calligra 9999: KDE Office Suite
 app-office/calligraplan 9999: Project management application
 app-office/kexi 9999: Visual database applications creator
