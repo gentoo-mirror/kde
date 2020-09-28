@@ -51,7 +51,6 @@ RDEPEND="${DEPEND}
 	$(python_gen_cond_dep '
 		dev-python/translate-toolkit[${PYTHON_MULTI_USEDEP}]
 	')
-	>=kde-apps/kross-interpreters-${PV}:${SLOT}[python]
 "
 
 pkg_setup() {
@@ -61,13 +60,15 @@ pkg_setup() {
 
 src_install() {
 	ecm_src_install
-	python_fix_shebang "${ED}/usr/share/${PN}"
+	rm "${ED}"/usr/share/lokalize/scripts/msgmerge.{py,rc} || die
+	python_fix_shebang "${ED}"/usr/share/${PN}
 }
 
 pkg_postinst() {
 	if [[ -z "${REPLACING_VERSIONS}" ]]; then
 		elog "Optional dependencies:"
 		optfeature "Autofetch kde.org translations in new project wizard" dev-vcs/subversion
+		optfeature "Spell and grammar checking" app-text/languagetool
 	fi
 	ecm_pkg_postinst
 }

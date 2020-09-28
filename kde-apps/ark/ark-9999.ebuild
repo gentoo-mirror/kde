@@ -10,8 +10,8 @@ QTMIN=5.14.2
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org optfeature
 
-DESCRIPTION="KDE Archiving tool"
-HOMEPAGE="https://kde.org/applications/utilities/org.kde.ark
+DESCRIPTION="File archiver by KDE"
+HOMEPAGE="https://kde.org/applications/en/ark
 https://utils.kde.org/projects/ark/"
 
 LICENSE="GPL-2" # TODO: CHECK
@@ -50,15 +50,20 @@ DEPEND="${RDEPEND}
 	>=dev-qt/qtconcurrent-${QTMIN}:5
 "
 
-# bug #560548, last checked with 16.04.1
-RESTRICT+=" test"
-
 src_configure() {
 	local mycmakeargs=(
 		$(cmake_use_find_package zip LibZip)
 	)
 
 	ecm_src_configure
+}
+
+src_test() {
+	local myctestargs=(
+		-E "(plugins-clirartest)"
+	)
+
+	ecm_src_test
 }
 
 pkg_postinst() {
