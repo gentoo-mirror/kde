@@ -13,7 +13,6 @@ app-office/calligra 9999: KDE Office Suite
 app-office/calligraplan 9999: Project management application
 app-office/kexi 9999: Visual database applications creator
 app-office/kmymoney 5.1.9999 9999: Personal finance manager based on KDE Frameworks
-app-office/kraft 9999: Software to manage quotes and invoices in small enterprises
 app-office/ktimetracker 9999: Todo management and time tracker
 app-office/libalkimia 8.9999: Library with common classes and functionality used by KDE finance applications
 app-office/skrooge 9999: Personal finances manager, aiming at being simple and intuitive
@@ -62,7 +61,7 @@ kde-apps/akonadiconsole 20.08.49.9999 9999: Application for debugging Akonadi Re
 kde-apps/akregator 20.08.49.9999 9999: News feed aggregator
 kde-apps/amor 9999: Amusing Misuse Of Resources - desktop-dwelling creature
 kde-apps/analitza 20.08.49.9999 9999: KDE library for mathematical features
-kde-apps/ark 20.08.49.9999 9999: KDE Archiving tool
+kde-apps/ark 20.08.49.9999 9999: File archiver by KDE
 kde-apps/artikulate 20.08.49.9999 9999: Language learning application that helps improving pronunciation skills
 kde-apps/audiocd-kio 20.08.49.9999 9999: kioslave for accessing audio CDs
 kde-apps/baloo-widgets 20.08.49.9999 9999: Widget library for baloo
