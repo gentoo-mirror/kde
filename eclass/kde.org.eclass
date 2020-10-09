@@ -114,7 +114,7 @@ esac
 # An array of $CATEGORY-$PV pairs of packages that are unreleased upstream.
 # Any package matching this will have fetch restriction enabled, and receive
 # a proper error message via pkg_nofetch.
-KDE_UNRELEASED=( kde-frameworks-5.75.0 kde-apps-20.08.2 kde-plasma-5.20.0 )
+KDE_UNRELEASED=( kde-frameworks-5.75.0 kde-plasma-5.20.0 )
 
 HOMEPAGE="https://kde.org/"
 
@@ -175,11 +175,9 @@ _kde.org_calculate_src_uri() {
 				kjs | \
 				kjsembed | \
 				kmediaplayer | \
-				kross)
-					_src_uri+="portingAids/"
-					;;
+				kross | \
 				kxmlrpcclient)
-					[[ ${PV} = 5.70.* ]] || _src_uri+="portingAids/"
+					_src_uri+="portingAids/"
 					;;
 			esac
 			;;
