@@ -7,5 +7,5 @@ LICENSE=GPL-3+
 RESTRICT=fetch
 SLOT=5
 SRC_URI=mirror://kde/stable/plasma/5.20.0/breeze-grub-5.20.0.tar.xz
-_eclasses_=kde.org	b7129f6955c40ea1c6a849abb3c03b0f
+_eclasses_=kde.org	3552a4edc58ee8ec02a351468d5b6204
 _md5_=a73f5cb98e14ec4847aedb636df01e5f
