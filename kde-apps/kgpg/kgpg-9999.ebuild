@@ -6,12 +6,12 @@ EAPI=7
 ECM_HANDBOOK="forceoptional"
 KDE_SELINUX_MODULE="gpg"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.74.0
+KFMIN=5.75.0
 QTMIN=5.14.2
 inherit ecm kde.org
 
 DESCRIPTION="Frontend for GnuPG, a powerful encryption utility by KDE"
-HOMEPAGE="https://kde.org/applications/utilities/org.kde.kgpg
+HOMEPAGE="https://kde.org/applications/en/kgpg
 https://utils.kde.org/projects/kgpg/"
 
 LICENSE="GPL-2" # TODO: CHECK
@@ -36,7 +36,6 @@ COMMON_DEPEND="
 	>=kde-frameworks/kcrash-${KFMIN}:5
 	>=kde-frameworks/kdbusaddons-${KFMIN}:5
 	>=kde-frameworks/ki18n-${KFMIN}:5
-	>=kde-frameworks/kiconthemes-${KFMIN}:5
 	>=kde-frameworks/kio-${KFMIN}:5
 	>=kde-frameworks/kjobwidgets-${KFMIN}:5
 	>=kde-frameworks/knotifications-${KFMIN}:5

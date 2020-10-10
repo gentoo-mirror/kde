@@ -6,7 +6,7 @@ EAPI=7
 ECM_DESIGNERPLUGIN="true"
 ECM_TEST="forceoptional"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.74.0
+KFMIN=5.75.0
 QTMIN=5.14.2
 VIRTUALDBUS_TEST="true"
 VIRTUALX_REQUIRED="test"
@@ -23,6 +23,7 @@ IUSE="+kaccounts +mysql postgres sqlite tools xml"
 REQUIRED_USE="|| ( mysql postgres sqlite ) test? ( tools )"
 
 COMMON_DEPEND="
+	app-arch/xz-utils
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtnetwork-${QTMIN}:5

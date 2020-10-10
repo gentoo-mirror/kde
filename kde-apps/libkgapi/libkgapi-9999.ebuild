@@ -4,7 +4,7 @@
 EAPI=7
 
 ECM_TEST="true"
-KFMIN=5.74.0
+KFMIN=5.75.0
 QTMIN=5.14.2
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
@@ -24,13 +24,10 @@ DEPEND="
 	dev-libs/cyrus-sasl:2
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtnetwork-${QTMIN}:5
-	>=dev-qt/qtwebengine-${QTMIN}:5[widgets]
 	>=dev-qt/qtwidgets-${QTMIN}:5
 	>=dev-qt/qtxml-${QTMIN}:5
 	>=kde-frameworks/kcalendarcore-${KFMIN}:5
 	>=kde-frameworks/kcontacts-${KFMIN}:5
-	>=kde-frameworks/kio-${KFMIN}:5
-	>=kde-frameworks/kwindowsystem-${KFMIN}:5
 "
 RDEPEND="${DEPEND}
 	!<kde-apps/kdepim-runtime-18.07.80:5

@@ -5,12 +5,12 @@ EAPI=7
 
 ECM_HANDBOOK="optional"
 ECM_TEST="forceoptional"
-KFMIN=5.74.0
+KFMIN=5.75.0
 QTMIN=5.14.2
 inherit ecm kde.org
 
 DESCRIPTION="Visualise disk usage with interactive map of concentric, segmented rings"
-HOMEPAGE="https://kde.org/applications/utilities/org.kde.filelight
+HOMEPAGE="https://kde.org/applications/en/filelight
 https://utils.kde.org/projects/filelight/"
 
 LICENSE="GPL-2" # TODO: CHECK
