@@ -7,7 +7,7 @@ ECM_HANDBOOK="forceoptional"
 ECM_TEST="true"
 PVCUT=$(ver_cut 1-3)
 KFMIN=5.75.0
-QTMIN=5.14.2
+QTMIN=5.15.1
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
 
@@ -18,12 +18,11 @@ SLOT="5"
 KEYWORDS=""
 IUSE=""
 
-# drop qtnetwork subslot operator when QT_MINIMAL >= 5.15.0
 RDEPEND="
 	dev-libs/cyrus-sasl
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
-	>=dev-qt/qtnetwork-${QTMIN}:5=
+	>=dev-qt/qtnetwork-${QTMIN}:5
 	>=dev-qt/qtprintsupport-${QTMIN}:5
 	>=dev-qt/qtwebengine-${QTMIN}:5[widgets]
 	>=dev-qt/qtwidgets-${QTMIN}:5

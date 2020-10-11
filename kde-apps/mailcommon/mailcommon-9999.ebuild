@@ -7,7 +7,7 @@ ECM_DESIGNERPLUGIN="true"
 ECM_TEST="forceoptional"
 PVCUT=$(ver_cut 1-3)
 KFMIN=5.75.0
-QTMIN=5.14.2
+QTMIN=5.15.1
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
 
@@ -18,12 +18,11 @@ SLOT="5"
 KEYWORDS=""
 IUSE=""
 
-# drop qtcore subslot operator when QT_MINIMAL >= 5.15.0
 BDEPEND="
 	dev-libs/libxslt
 "
 DEPEND="
-	>=dev-qt/qtcore-${QTMIN}:5=
+	>=dev-qt/qtcore-${QTMIN}:5
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtmultimedia-${QTMIN}:5

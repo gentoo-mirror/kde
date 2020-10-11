@@ -6,7 +6,7 @@ EAPI=7
 ECM_TEST="true"
 PVCUT=$(ver_cut 1-3)
 KFMIN=5.75.0
-QTMIN=5.14.2
+QTMIN=5.15.1
 inherit ecm kde.org
 
 DESCRIPTION="Calendar viewer for KDE PIM"
@@ -16,11 +16,10 @@ SLOT="5"
 KEYWORDS=""
 IUSE=""
 
-# drop qtcore subslot operator when QT_MINIMAL >= 5.15.0
 DEPEND="
 	dev-libs/kdiagram:5
 	dev-libs/libical
-	>=dev-qt/qtcore-${QTMIN}:5=
+	>=dev-qt/qtcore-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
 	>=kde-apps/akonadi-${PVCUT}:5

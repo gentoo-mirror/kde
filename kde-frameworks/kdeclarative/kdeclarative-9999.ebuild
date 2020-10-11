@@ -5,18 +5,18 @@ EAPI=7
 
 ECM_TEST="false"
 PVCUT=$(ver_cut 1-2)
-QTMIN=5.14.2
+QTMIN=5.15.1
 inherit ecm kde.org
 
 DESCRIPTION="Framework providing integration of QML and KDE work spaces"
+
 LICENSE="LGPL-2+"
 KEYWORDS=""
 IUSE=""
 
-# drop qtgui subslot operator when QT_MINIMAL >= 5.15.0
 DEPEND="
 	>=dev-qt/qtdeclarative-${QTMIN}:5
-	>=dev-qt/qtgui-${QTMIN}:5=
+	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtnetwork-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
 	=kde-frameworks/kconfig-${PVCUT}*:5
