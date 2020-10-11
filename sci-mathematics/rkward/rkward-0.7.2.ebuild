@@ -10,7 +10,7 @@ DESCRIPTION="IDE for the R-project"
 HOMEPAGE="https://rkward.kde.org/"
 
 if [[ ${KDE_BUILD_TYPE} = release ]]; then
-	SRC_URI="mirror://kde/stable/${PN}/${PV}/src/${P}.tar.gz"
+	SRC_URI="https://files.kde.org/rkward/testing/for_packaging/${P}.tar.gz"
 	KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 fi
 

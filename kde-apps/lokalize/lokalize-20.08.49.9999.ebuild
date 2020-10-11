@@ -9,9 +9,8 @@ KFMIN=5.72.0
 QTMIN=5.14.2
 inherit python-single-r1 ecm kde.org optfeature
 
-DESCRIPTION="KDE Applications 5 translation tool"
-HOMEPAGE="https://kde.org/applications/office/org.kde.lokalize
-https://l10n.kde.org/tools/"
+DESCRIPTION="Localization tool for KDE software and other free and open source software"
+HOMEPAGE="https://kde.org/applications/en/lokalize https://l10n.kde.org/tools/"
 
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"
@@ -60,14 +59,14 @@ pkg_setup() {
 
 src_install() {
 	ecm_src_install
-	python_fix_shebang "${ED}/usr/share/${PN}"
+	rm "${ED}"/usr/share/lokalize/scripts/msgmerge.{py,rc} || die
+	python_fix_shebang "${ED}"/usr/share/${PN}
 }
 
 pkg_postinst() {
 	if [[ -z "${REPLACING_VERSIONS}" ]]; then
 		elog "Optional dependencies:"
 		optfeature "Autofetch kde.org translations in new project wizard" dev-vcs/subversion
-		optfeature "msgmerge tool" "kde-apps/kross-interpreters:${SLOT}[python]"
 		optfeature "Spell and grammar checking" app-text/languagetool
 	fi
 	ecm_pkg_postinst
