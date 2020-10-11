@@ -255,7 +255,7 @@ kde-apps/libkomparediff2 20.08.49.9999 9999: KDE library to compare files and st
 kde-apps/libksane 20.08.49.9999 9999: SANE Library interface based on KDE Frameworks
 kde-apps/libksieve 20.08.49.9999 9999: Common PIM libraries
 kde-apps/libktnef 20.08.49.9999 9999: Library for handling TNEF data
-kde-apps/lokalize 20.08.49.9999 9999: KDE Applications 5 translation tool
+kde-apps/lokalize 20.08.49.9999 9999: Localization tool for KDE software and other free and open source software
 kde-apps/lskat 20.08.49.9999 9999: Skat game by KDE
 kde-apps/mailcommon 20.08.49.9999 9999: Common mail library
 kde-apps/mailimporter 20.08.49.9999 9999: Library to import mail from various sources
@@ -416,7 +416,7 @@ kde-plasma/kinfocenter 5.19.90 5.20.0 5.20.49.9999 9999: Utility providing infor
 kde-plasma/kmenuedit 5.19.90 5.20.0 5.20.49.9999 9999: KDE Plasma menu editor
 kde-plasma/kscreen 5.19.90 5.20.0 5.20.49.9999 9999: KDE Plasma screen management
 kde-plasma/kscreenlocker 5.19.90 5.20.0 5.20.49.9999 9999: Library and components for secure lock screen architecture
-kde-plasma/ksshaskpass 5.19.90 5.20.0 5.20.49.9999 9999: KDE implementation of ssh-askpass with Kwallet integration
+kde-plasma/ksshaskpass 5.19.90 5.20.0 5.20.49.9999 9999: Implementation of ssh-askpass with KDE Wallet integration
 kde-plasma/ksysguard 5.19.90 5.20.0 5.20.49.9999 9999: Network-enabled task manager and system monitor
 kde-plasma/kwallet-pam 5.19.90 5.20.0 5.20.49.9999 9999: PAM module to not enter KWallet password again after login
 kde-plasma/kwayland-integration 5.19.90 5.20.0 5.20.49.9999 9999: Provides integration plugins for various KDE frameworks for Wayland
@@ -487,7 +487,7 @@ sci-astronomy/kstars 9999: Desktop Planetarium
 sci-calculators/keurocalc 9999: Universal currency converter and calculator
 sci-electronics/cirkuit 9999: Application to generate publication-ready figures
 sci-electronics/ktechlab 9999: IDE for microcontrollers and electronics
-sci-mathematics/rkward 9999: IDE for the R-project
+sci-mathematics/rkward 0.7.2 9999: IDE for the R-project
 sys-auth/polkit-qt 9999: Qt wrapper around polkit-1 client libraries
 sys-block/partitionmanager 9999: Utility for management of disks, partitions and file systems
 sys-libs/kpmcore 9999: Library for managing partitions
