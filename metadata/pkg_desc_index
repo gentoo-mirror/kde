@@ -5,7 +5,6 @@ app-cdr/dolphin-plugins-mountiso 20.08.49.9999 9999: Dolphin plugin for ISO loop
 app-cdr/isoimagewriter 9999: Write hybrid ISO files onto a USB disk
 app-editors/kile 9999: Latex Editor and TeX shell based on KDE Frameworks
 app-editors/okteta 9999: Hex editor by KDE
-app-i18n/pology 9999: A framework for custom processing of PO files
 app-misc/calindori 9999: Touch friendly calendar application
 app-misc/kookbook 9999: Simple recipe manager taking structured markdown for recipes
 app-misc/plasma-systemmonitor 9999: New version of KSysGuard built on top of the new KStats daemon and using QML
