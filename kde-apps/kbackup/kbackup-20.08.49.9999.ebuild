@@ -4,12 +4,12 @@
 EAPI=7
 
 ECM_HANDBOOK="forceoptional"
-KFMIN=5.72.0
-QTMIN=5.14.2
+KFMIN=5.74.0
+QTMIN=5.15.1
 inherit ecm kde.org
 
 DESCRIPTION="Program that lets you back up any directories or files"
-HOMEPAGE="https://kde.org/applications/utilities/org.kde.kbackup"
+HOMEPAGE="https://kde.org/applications/en/kbackup"
 
 LICENSE="GPL-2"
 SLOT="5"

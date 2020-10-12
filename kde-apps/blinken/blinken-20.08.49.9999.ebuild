@@ -4,12 +4,12 @@
 EAPI=7
 
 ECM_HANDBOOK="forceoptional"
-KFMIN=5.72.0
-QTMIN=5.14.2
+KFMIN=5.74.0
+QTMIN=5.15.1
 inherit ecm kde.org
 
 DESCRIPTION="Memory enhancement game based on KDE Frameworks"
-HOMEPAGE="https://kde.org/applications/education/org.kde.blinken
+HOMEPAGE="https://kde.org/applications/en/blinken
 https://edu.kde.org/blinken/"
 
 LICENSE="GPL-2" # TODO: CHECK

@@ -6,13 +6,13 @@ EAPI=7
 ECM_HANDBOOK="optional"
 ECM_TEST="forceoptional"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.72.0
-QTMIN=5.14.2
+KFMIN=5.74.0
+QTMIN=5.15.1
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
 
 DESCRIPTION="Certificate manager and GUI for OpenPGP and CMS cryptography"
-HOMEPAGE="https://kde.org/applications/utilities/org.kde.kleopatra"
+HOMEPAGE="https://kde.org/applications/en/kleopatra"
 
 LICENSE="GPL-2+ handbook? ( FDL-1.2+ )"
 SLOT="5"

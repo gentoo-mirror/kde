@@ -5,13 +5,13 @@ EAPI=7
 
 ECM_TEST="true"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.72.0
-QTMIN=5.14.2
+KFMIN=5.74.0
+QTMIN=5.15.1
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
 
 DESCRIPTION="Data Model and Extraction System for Travel Reservation information"
-HOMEPAGE="https://kde.org/applications/office/org.kde.kontact"
+HOMEPAGE="https://kde.org/applications/en/kontact"
 
 LICENSE="LGPL-2.1+"
 SLOT="5"

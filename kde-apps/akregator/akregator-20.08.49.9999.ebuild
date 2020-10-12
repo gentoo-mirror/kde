@@ -6,12 +6,12 @@ EAPI=7
 ECM_HANDBOOK="forceoptional"
 ECM_TEST="forceoptional"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.72.0
-QTMIN=5.14.2
+KFMIN=5.74.0
+QTMIN=5.15.1
 inherit ecm kde.org
 
 DESCRIPTION="News feed aggregator"
-HOMEPAGE="https://kde.org/applications/internet/org.kde.akregator"
+HOMEPAGE="https://kde.org/applications/en/akregator"
 
 LICENSE="GPL-2+ handbook? ( FDL-1.2+ )"
 SLOT="5"

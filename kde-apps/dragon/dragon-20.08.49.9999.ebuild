@@ -4,12 +4,12 @@
 EAPI=7
 
 ECM_HANDBOOK="forceoptional"
-KFMIN=5.72.0
-QTMIN=5.14.2
+KFMIN=5.74.0
+QTMIN=5.15.1
 inherit ecm kde.org
 
 DESCRIPTION="Simple video player"
-HOMEPAGE="https://kde.org/applications/multimedia/org.kde.dragonplayer"
+HOMEPAGE="https://kde.org/applications/en/dragonplayer"
 
 LICENSE="GPL-2+ || ( GPL-2 GPL-3 ) handbook? ( FDL-1.2 )"
 SLOT="5"

@@ -4,12 +4,12 @@
 EAPI=7
 
 ECM_HANDBOOK="forceoptional"
-KFMIN=5.72.0
-QTMIN=5.14.2
+KFMIN=5.74.0
+QTMIN=5.15.1
 inherit ecm kde.org
 
 DESCRIPTION="Sound editor built on KDE Frameworks 5 that can edit many types of audio files"
-HOMEPAGE="https://kde.org/applications/multimedia/org.kde.kwave"
+HOMEPAGE="https://kde.org/applications/en/kwave"
 
 LICENSE="CC-BY-SA-3.0 CC0-1.0 GPL-2+ LGPL-2+ handbook? ( FDL-1.2 ) opus? ( BSD-2 )"
 SLOT="5"

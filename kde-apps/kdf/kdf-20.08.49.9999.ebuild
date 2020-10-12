@@ -4,12 +4,12 @@
 EAPI=7
 
 ECM_HANDBOOK="forceoptional"
-KFMIN=5.72.0
-QTMIN=5.14.2
+KFMIN=5.74.0
+QTMIN=5.15.1
 inherit ecm kde.org
 
 DESCRIPTION="KDE free disk space utility"
-HOMEPAGE="https://kde.org/applications/system/org.kde.kdf
+HOMEPAGE="https://kde.org/applications/en/kdf
 https://utils.kde.org/projects/kdf/"
 
 LICENSE="GPL-2" # TODO: CHECK

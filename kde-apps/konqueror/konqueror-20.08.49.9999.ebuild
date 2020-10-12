@@ -5,13 +5,13 @@ EAPI=7
 
 ECM_HANDBOOK="forceoptional" # not optional until !kdelibs4support
 ECM_TEST="true"
-KFMIN=5.72.0
-QTMIN=5.14.2
+KFMIN=5.74.0
+QTMIN=5.15.1
 VIRTUALX_REQUIRED="test"
 inherit flag-o-matic ecm kde.org optfeature
 
 DESCRIPTION="Web browser and file manager based on KDE Frameworks"
-HOMEPAGE="https://kde.org/applications/internet/org.kde.konqueror"
+HOMEPAGE="https://kde.org/applications/en/konqueror"
 
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"

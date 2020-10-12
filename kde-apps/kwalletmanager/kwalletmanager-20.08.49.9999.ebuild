@@ -4,12 +4,12 @@
 EAPI=7
 
 ECM_HANDBOOK="forceoptional"
-KFMIN=5.72.0
-QTMIN=5.14.2
+KFMIN=5.74.0
+QTMIN=5.15.1
 inherit ecm kde.org
 
 DESCRIPTION="Tool to manage the passwords on your system using KDE Wallet"
-HOMEAGE="https://kde.org/applications/system/org.kde.kwalletmanager5
+HOMEAGE="https://kde.org/applications/en/kwalletmanager5
 https://utils.kde.org/projects/kwalletmanager"
 
 LICENSE="GPL-2" # TODO: CHECK

@@ -5,12 +5,12 @@ EAPI=7
 
 ECM_HANDBOOK="forceoptional"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.72.0
-QTMIN=5.14.2
+KFMIN=5.74.0
+QTMIN=5.15.1
 inherit ecm kde.org
 
 DESCRIPTION="Container application to unify several major PIM applications within one"
-HOMEPAGE="https://kontact.kde.org/ https://kde.org/applications/en/office/org.kde.kontact"
+HOMEPAGE="https://kontact.kde.org/ https://kde.org/applications/en/en/kontact"
 
 LICENSE="GPL-2+ handbook? ( FDL-1.2+ )"
 SLOT="5"

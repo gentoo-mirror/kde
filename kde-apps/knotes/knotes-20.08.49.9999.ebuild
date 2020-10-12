@@ -6,13 +6,13 @@ EAPI=7
 ECM_HANDBOOK="forceoptional"
 ECM_TEST="forceoptional"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.72.0
-QTMIN=5.14.2
+KFMIN=5.74.0
+QTMIN=5.15.1
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
 
 DESCRIPTION="Note taking application"
-HOMEPAGE="https://kde.org/applications/utilities/org.kde.knotes
+HOMEPAGE="https://kde.org/applications/en/knotes
 https://kontact.kde.org/components/knotes.html"
 
 LICENSE="GPL-2+ handbook? ( FDL-1.2+ )"

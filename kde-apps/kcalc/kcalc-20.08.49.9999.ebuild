@@ -5,12 +5,12 @@ EAPI=7
 
 ECM_HANDBOOK="forceoptional"
 ECM_TEST="true"
-KFMIN=5.72.0
-QTMIN=5.14.2
+KFMIN=5.74.0
+QTMIN=5.15.1
 inherit ecm kde.org
 
 DESCRIPTION="KDE calculator"
-HOMEPAGE="https://kde.org/applications/utilities/org.kde.kcalc
+HOMEPAGE="https://kde.org/applications/en/kcalc
 https://utils.kde.org/projects/kcalc/"
 
 LICENSE="GPL-2" # TODO: CHECK

@@ -6,13 +6,13 @@ EAPI=7
 ECM_HANDBOOK="forceoptional"
 ECM_TEST="true"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.72.0
-QTMIN=5.14.2
+KFMIN=5.74.0
+QTMIN=5.15.1
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org optfeature
 
 DESCRIPTION="Plasma filemanager focusing on usability"
-HOMEPAGE="https://kde.org/applications/system/org.kde.dolphin
+HOMEPAGE="https://kde.org/applications/en/dolphin
 https://userbase.kde.org/Dolphin"
 
 LICENSE="GPL-2" # TODO: CHECK

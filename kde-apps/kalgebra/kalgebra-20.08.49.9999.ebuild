@@ -5,13 +5,12 @@ EAPI=7
 
 ECM_HANDBOOK="optional"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.72.0
-QTMIN=5.14.2
+KFMIN=5.74.0
+QTMIN=5.15.1
 inherit ecm kde.org
 
 DESCRIPTION="MathML-based 2D and 3D graph calculator by KDE"
-HOMEPAGE="https://kde.org/applications/education/org.kde.kalgebra
-https://edu.kde.org/kalgebra/"
+HOMEPAGE="https://kde.org/applications/en/kalgebra https://edu.kde.org/kalgebra/"
 
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"

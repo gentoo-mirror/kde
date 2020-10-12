@@ -6,13 +6,13 @@ EAPI=7
 ECM_HANDBOOK="forceoptional"
 ECM_TEST="forceoptional"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.72.0
-QTMIN=5.14.2
+KFMIN=5.74.0
+QTMIN=5.15.1
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
 
 DESCRIPTION="Assistant to backup and archive PIM data and configuration"
-HOMEPAGE="https://kde.org/applications/internet/org.kde.pimdataexporter
+HOMEPAGE="https://kde.org/applications/en/pimdataexporter
 https://userbase.kde.org/KMail/Backup_Options"
 
 LICENSE="GPL-2+ handbook? ( FDL-1.2+ )"

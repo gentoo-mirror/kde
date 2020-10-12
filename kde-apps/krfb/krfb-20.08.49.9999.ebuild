@@ -4,12 +4,12 @@
 EAPI=7
 
 ECM_HANDBOOK="forceoptional"
-KFMIN=5.72.0
-QTMIN=5.14.2
+KFMIN=5.74.0
+QTMIN=5.15.1
 inherit ecm kde.org
 
 DESCRIPTION="VNC-compatible server to share Plasma desktops"
-HOMEPAGE="https://kde.org/applications/internet/org.kde.krfb"
+HOMEPAGE="https://kde.org/applications/en/krfb"
 
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"

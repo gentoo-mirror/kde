@@ -4,13 +4,13 @@
 EAPI=7
 
 ECM_HANDBOOK="forceoptional"
-KFMIN=5.72.0
-QTMIN=5.14.2
+KFMIN=5.74.0
+QTMIN=5.15.1
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
 
 DESCRIPTION="Application to take pictures and videos from your webcam by KDE"
-HOMEPAGE="https://kde.org/applications/multimedia/org.kde.kamoso
+HOMEPAGE="https://kde.org/applications/en/kamoso
 https://userbase.kde.org/Kamoso"
 
 LICENSE="GPL-2+"

@@ -6,13 +6,13 @@ EAPI=7
 ECM_HANDBOOK="forceoptional"
 ECM_TEST="optional"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.72.0
-QTMIN=5.14.2
+KFMIN=5.74.0
+QTMIN=5.15.1
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
 
 DESCRIPTION="KDE version of the popular NetWalk game for system administrators"
-HOMEPAGE="https://kde.org/applications/games/org.kde.knetwalk
+HOMEPAGE="https://kde.org/applications/en/knetwalk
 https://games.kde.org/game.php?game=knetwalk"
 
 LICENSE="GPL-2" # TODO: CHECK

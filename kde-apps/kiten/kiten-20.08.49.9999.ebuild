@@ -4,12 +4,12 @@
 EAPI=7
 
 ECM_HANDBOOK="forceoptional"
-KFMIN=5.72.0
-QTMIN=5.14.2
+KFMIN=5.74.0
+QTMIN=5.15.1
 inherit ecm kde.org
 
 DESCRIPTION="KDE Japanese dictionary and reference"
-HOMEPAGE="https://kde.org/applications/education/org.kde.kiten
+HOMEPAGE="https://kde.org/applications/en/kiten
 https://edu.kde.org/kiten/"
 
 LICENSE="GPL-2" # TODO: CHECK

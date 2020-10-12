@@ -8,8 +8,8 @@ ECM_TEST="true"
 KDE_ORG_NAME="${PN}-kde"
 KDE_RELEASE_SERVICE="true"
 KDE_SELINUX_MODULE="${PN}"
-KFMIN=5.72.0
-QTMIN=5.14.2
+KFMIN=5.74.0
+QTMIN=5.15.1
 inherit ecm kde.org
 
 DESCRIPTION="Adds communication between KDE Plasma and your smartphone"
@@ -81,5 +81,5 @@ pkg_postinst(){
 	elog "The Android .apk file is available via"
 	elog "https://play.google.com/store/apps/details?id=org.kde.kdeconnect_tp"
 	elog "or via"
-	elog "https://f-droid.org/repository/browse/?fdid=org.kde.kdeconnect_tp"
+	elog "https://f-droid.org/packages/org.kde.kdeconnect_tp/"
 }

@@ -6,12 +6,12 @@ EAPI=7
 ECM_HANDBOOK="forceoptional"
 ECM_TEST="forceoptional"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.72.0
-QTMIN=5.14.2
+KFMIN=5.74.0
+QTMIN=5.15.1
 inherit ecm kde.org
 
 DESCRIPTION="Screenshot capture utility"
-HOMEPAGE="https://kde.org/applications/utilities/org.kde.spectacle"
+HOMEPAGE="https://kde.org/applications/en/spectacle"
 
 LICENSE="LGPL-2+ handbook? ( FDL-1.3 ) kipi? ( GPL-2+ )"
 SLOT="5"
