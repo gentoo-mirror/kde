@@ -471,7 +471,7 @@ media-video/kmplayer 9999: Video player plugin for Konqueror and basic MPlayer f
 media-video/subtitlecomposer 9999: Text-based subtitles editor
 net-firewall/plasma-firewall 9999: Plasma frontend for Firewalld or UFW
 net-im/choqok 9999: Free/Open Source micro-blogging client by KDE
-net-irc/konversation 2.9999 9999: User friendly IRC Client
+net-irc/konversation 1.7.9999 2.9999 9999: User friendly IRC Client
 net-libs/jreen 9999: Qt XMPP library
 net-libs/kdsoap 9999: Qt-based client-side and server-side SOAP component
 net-libs/kdsoap-ws-discovery-client 9999: WS-Discovery client library based on KDSoap
@@ -491,4 +491,3 @@ sys-auth/polkit-qt 9999: Qt wrapper around polkit-1 client libraries
 sys-block/partitionmanager 9999: Utility for management of disks, partitions and file systems
 sys-libs/kpmcore 9999: Library for managing partitions
 www-client/falkon 9999: Cross-platform web browser using QtWebEngine
-x11-themes/gnome-breeze 9999: Unofficial GTK 2/3 Breeze Theme
