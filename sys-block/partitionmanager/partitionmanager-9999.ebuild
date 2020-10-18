@@ -5,7 +5,7 @@ EAPI=7
 
 ECM_HANDBOOK="optional"
 KFMIN=5.74.0
-QTMIN=5.14.2
+QTMIN=5.15.1
 inherit ecm kde.org
 
 DESCRIPTION="Utility for management of disks, partitions and file systems"
@@ -33,6 +33,6 @@ DEPEND="
 	>=kde-frameworks/kjobwidgets-${KFMIN}:5
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
-	>=sys-libs/kpmcore-4.1.0:5=
+	>=sys-libs/kpmcore-4.2.0:5=
 "
 RDEPEND="${DEPEND}"
