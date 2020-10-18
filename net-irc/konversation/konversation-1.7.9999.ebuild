@@ -3,6 +3,7 @@
 
 EAPI=7
 
+EGIT_BRANCH="1.7"
 ECM_HANDBOOK="forceoptional"
 KFMIN=5.74.0
 QTMIN=5.14.2
@@ -11,9 +12,13 @@ inherit ecm kde.org
 DESCRIPTION="User friendly IRC Client"
 HOMEPAGE="https://konversation.kde.org"
 
+if [[ ${KDE_BUILD_TYPE} == release ]]; then
+	SRC_URI="mirror://kde/stable/${PN}/${PV/_/-}/src/${P/_/-}.tar.xz"
+	KEYWORDS="~amd64 ~arm64 ~ppc64 ~x86"
+fi
+
 LICENSE="GPL-2"
 SLOT="5"
-KEYWORDS=""
 IUSE="+crypt"
 
 BDEPEND="sys-devel/gettext"
@@ -37,7 +42,6 @@ DEPEND="
 	>=kde-frameworks/kidletime-${KFMIN}:5
 	>=kde-frameworks/kio-${KFMIN}:5
 	>=kde-frameworks/kitemviews-${KFMIN}:5
-	>=kde-frameworks/knewstuff-${KFMIN}:5
 	>=kde-frameworks/knotifications-${KFMIN}:5
 	>=kde-frameworks/knotifyconfig-${KFMIN}:5
 	>=kde-frameworks/kparts-${KFMIN}:5
@@ -54,6 +58,13 @@ RDEPEND="${DEPEND}
 	>=dev-qt/qtsvg-${QTMIN}:5
 	crypt? ( >=app-crypt/qca-2.3.0:2[ssl] )
 "
+
+PATCHES=(
+	# git master
+	"${FILESDIR}"/${PN}-1.7.5-kf5bookmarks-5.69.patch
+	"${FILESDIR}"/${PN}-1.7.5-unused-kemoticons.patch
+	"${FILESDIR}"/${PN}-1.7.6-no-kiconthemes.patch
+)
 
 src_configure() {
 	local mycmakeargs=(
