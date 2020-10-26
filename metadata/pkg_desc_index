@@ -115,7 +115,7 @@ kde-apps/kcalutils 20.08.49.9999 9999: Library providing utility functions for t
 kde-apps/kcharselect 20.08.49.9999 9999: KDE character selection utility
 kde-apps/kcolorchooser 20.08.49.9999 9999: KDE color selector/editor
 kde-apps/kcron 20.08.49.9999 9999: KDE Task Scheduler
-kde-apps/kde-apps-meta 20.08.49.9999 9999: Meta package for the KDE Applications collection
+kde-apps/kde-apps-meta 20.08.49.9999 9999: Meta package for the KDE Release Service collection
 kde-apps/kde-dev-scripts 20.08.49.9999 9999: KDE Development Scripts
 kde-apps/kde-dev-utils 20.08.49.9999 9999: KDE Development Utilities
 kde-apps/kde-meta 20.08.49.9999 9999: Merge this to pull in all KDE Plasma and Applications packages
