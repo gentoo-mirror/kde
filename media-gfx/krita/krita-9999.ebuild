@@ -45,7 +45,6 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-qt/qtwidgets-${QTMIN}:5
 	>=dev-qt/qtx11extras-${QTMIN}:5
 	>=dev-qt/qtxml-${QTMIN}:5
-	>=kde-frameworks/karchive-${KFMIN}:5
 	>=kde-frameworks/kcompletion-${KFMIN}:5
 	>=kde-frameworks/kconfig-${KFMIN}:5
 	>=kde-frameworks/kcoreaddons-${KFMIN}:5
@@ -101,6 +100,7 @@ src_configure() {
 
 	local mycmakeargs=(
 		-DENABLE_UPDATERS=OFF
+		-DCMAKE_DISABLE_FIND_PACKAGE_SeExpr2=ON # not packaged
 		$(cmake_use_find_package color-management OCIO)
 		$(cmake_use_find_package fftw FFTW3)
 		$(cmake_use_find_package gif GIF)
