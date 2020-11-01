@@ -82,6 +82,7 @@ kde-apps/kdecore-meta:webengine - Enable www-client/falkon which depends on dev-
 kde-apps/kdeedu-meta:webengine - Enable kde-apps/kalzium and kde-apps/parley, requiring dev-qt/qtwebengine
 kde-apps/kdegraphics-mobipocket:thumbnail - Enables thumbnail generation
 kde-apps/kdemultimedia-meta:cdrom - Include packages for optical discs
+kde-apps/kdenetwork-meta:bittorrent - Pull in net-p2p/ktorrent for BitTorrent protocol support
 kde-apps/kdenetwork-meta:dropbox - Enable support for Dropbox in kde-apps/dolphin via kde-apps/dolphin-plugins-dropbox
 kde-apps/kdenetwork-meta:webengine - Enable support for Plasma Telepathy (instant messaging) integration via kde-apps/plasma-telepathy-meta
 kde-apps/kdenlive:share - Enable support for a share menu using kde-frameworks/purpose
@@ -212,6 +213,7 @@ kde-frameworks/purpose:kaccounts - Enable support for system-wide defined KAccou
 kde-frameworks/sonnet:aspell - Enable the app-text/aspell spell-checking backend
 kde-frameworks/sonnet:designer - Build plugins for dev-qt/designer
 kde-frameworks/sonnet:hunspell - Enable the app-text/hunspell spell-checking backend
+kde-misc/itinerary:networkmanager - Defer map downloads based on network status using kde-frameworks/networkmanager-qt
 kde-misc/kdeconnect:X - Enable remote input mousepad plugin using x11-libs/libfakekey
 kde-misc/kdeconnect:pulseaudio - Enable system volume control plugin using media-sound/pulseaudio
 kde-misc/kdeconnect:wayland - Enable remote input mousepad plugin using kde-frameworks/kwayland
@@ -308,10 +310,10 @@ net-p2p/ktorrent:magnetgenerator - Generates magnet URI's
 net-p2p/ktorrent:mediaplayer - Phonon-based media player
 net-p2p/ktorrent:rss - Syndication plugin for KTorrent, supporting RSS and Atom feeds
 net-p2p/ktorrent:scanfolder - Scan folders for torrent files and load them
-net-p2p/ktorrent:search - Search for torrents
 net-p2p/ktorrent:shutdown - Shutdown when done
 net-p2p/ktorrent:stats - Shows statistics about torrents in several graphs
 net-p2p/ktorrent:upnp - Forward ports using UPnP
+net-p2p/ktorrent:webengine - Embedded search for torrents using dev-qt/qtwebengine
 net-p2p/ktorrent:zeroconf - Discover peers on the local network using the Zeroconf protocol
 sci-astronomy/kstars:fits - Enable support for NASA's sci-libs/cfitsio library
 sci-astronomy/kstars:indi - Enable support for Astronomical control library using libindi
