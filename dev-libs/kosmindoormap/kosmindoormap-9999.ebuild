@@ -4,28 +4,37 @@
 EAPI=7
 
 ECM_TEST="true"
+PVCUT=$(ver_cut 1-3)
 KFMIN=5.74.0
 QTMIN=5.15.1
 inherit ecm kde.org
 
-DESCRIPTION="Library for accessing public transport timetables and other information"
-HOMEPAGE="https://invent.kde.org/libraries/kpublictransport
-	https://www.volkerkrause.eu/2019/03/02/kpublictransport-introduction.html"
+DESCRIPTION="Data Model and Extraction System for Travel Reservation information"
+HOMEPAGE="https://invent.kde.org/libraries/kosmindoormap"
 
 LICENSE="LGPL-2+"
 SLOT="5"
 KEYWORDS=""
 IUSE=""
 
-RDEPEND="
+BDEPEND="
+	sys-devel/bison
+	sys-devel/flex
+"
+COMMON_DEPEND="
 	dev-libs/protobuf:=
 	>=dev-qt/qtdeclarative-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtnetwork-${QTMIN}:5
+	>=kde-frameworks/ki18n-${KFMIN}:5
+	>=kde-misc/kpublictransport-${PVCUT}:5
 	sys-libs/zlib
 "
-DEPEND="${RDEPEND}
+DEPEND="${COMMON_DEPEND}
 	test? ( >=dev-qt/qtwidgets-${QTMIN}:5 )
+"
+RDEPEND="${COMMON_DEPEND}
+	>=dev-qt/qtquickcontrols2-${QTMIN}:5
 "
 
 src_configure() {
