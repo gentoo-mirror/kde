@@ -71,6 +71,7 @@ COMMON_DEPEND="
 	>=kde-frameworks/sonnet-${KFMIN}:5
 	>=kde-plasma/kwin-${PVCUT}:5
 	>=kde-plasma/libksysguard-${PVCUT}:5
+	>=kde-plasma/libkworkspace-${PVCUT}:5
 	>=kde-plasma/plasma-workspace-${PVCUT}:5
 	>=media-libs/phonon-4.11.0
 	x11-libs/libX11
@@ -94,6 +95,7 @@ COMMON_DEPEND="
 		kde-apps/kaccounts-integration:5
 		net-libs/accounts-qt
 	)
+	policykit? ( >=kde-frameworks/kwallet-${KFMIN}:5 )
 	scim? ( app-i18n/scim )
 	semantic-desktop? ( >=kde-frameworks/baloo-${KFMIN}:5 )
 "
@@ -124,7 +126,10 @@ PATCHES=(
 src_prepare() {
 	ecm_src_prepare
 
-	use policykit || cmake_run_in kcms cmake_comment_add_subdirectory users
+	if ! use policykit; then
+		ecm_punt_bogus_dep KF5 Wallet
+		cmake_run_in kcms cmake_comment_add_subdirectory users
+	fi
 
 	if ! use ibus; then
 		sed -e "s/Qt5X11Extras_FOUND AND XCB_XCB_FOUND AND XCB_KEYSYMS_FOUND/false/" \
