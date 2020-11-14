@@ -3,6 +3,7 @@
 
 EAPI=7
 
+KDE_RELEASE_SERVICE="true"
 KFMIN=5.74.0
 QTMIN=5.15.1
 inherit ecm kde.org
@@ -12,7 +13,7 @@ HOMEPAGE="https://apps.kde.org/en/kontrast"
 
 LICENSE="GPL-3+"
 SLOT="5"
-KEYWORDS=""
+KEYWORDS="~amd64 ~arm64 ~x86"
 IUSE=""
 
 DEPEND="
