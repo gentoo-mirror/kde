@@ -4,6 +4,6 @@ EAPI=7
 HOMEPAGE=https://kde.org/
 KEYWORDS=~amd64 ~arm64 ~x86
 LICENSE=metapackage
-RDEPEND=>=kde-apps/kmag-20.11.80:5 >=kde-apps/kmousetool-20.11.80:5 >=kde-apps/kmouth-20.11.80:5
+RDEPEND=>=app-accessibility/kontrast-20.11.80:5 >=kde-apps/kmag-20.11.80:5 >=kde-apps/kmousetool-20.11.80:5 >=kde-apps/kmouth-20.11.80:5
 SLOT=5
-_md5_=763771959cbd518b51694c3518f6f1f9
+_md5_=be52b4b0d23c20d6f55d74537b19d1ca
