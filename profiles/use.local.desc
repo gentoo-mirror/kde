@@ -160,6 +160,7 @@ kde-apps/mailcommon:designer - Build plugins for dev-qt/designer
 kde-apps/marble:aprs - Enable support for APRS data sources
 kde-apps/marble:designer - Install plugin for dev-qt/designer
 kde-apps/marble:geolocation - Enable position information via dev-qt/qtpositioning
+kde-apps/marble:pbf - Enable OpenStreetMap PBF file support via dev-libs/protobuf
 kde-apps/marble:phonon - Enable sound support via media-libs/phonon
 kde-apps/marble:shapefile - Enable support for ESRI shapefiles
 kde-apps/marble:webengine - Use dev-qt/qtwebengine for embedded web browser
