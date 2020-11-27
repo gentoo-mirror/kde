@@ -7,6 +7,7 @@ ECM_HANDBOOK="forceoptional"
 ECM_TEST="forceoptional"
 KFMIN=5.75.0
 QTMIN=5.15.1
+VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
 
 DESCRIPTION="Advanced download manager by KDE"
@@ -66,4 +67,14 @@ src_configure() {
 	)
 
 	ecm_src_configure
+}
+
+src_test() {
+	# bug 756817: schedulertest fails, see also upstream commit 45735cfa
+	# filedeletertest hangs.
+	local myctestargs=(
+		-E "(schedulertest|filedeletertest)"
+	)
+
+	ecm_src_test
 }

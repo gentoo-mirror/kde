@@ -71,7 +71,7 @@ RDEPEND="${DEPEND}
 "
 
 PATCHES=(
-	"${FILESDIR}/${PN}-20.07.90-tests.patch" # bug 734138
+	"${FILESDIR}/${PN}-20.11.90-tests.patch" # bug 734138
 	"${FILESDIR}/${PN}-20.08.2-hide-mobile-app.patch" # avoid same-name entry
 )
 
@@ -98,9 +98,9 @@ src_configure() {
 
 src_test() {
 	# mainshelltest hangs, chmgeneratortest fails, bug #603116
-	# parttest hangs, bug #641728
+	# parttest hangs, bug #641728, annotationtoolbartest fails, KDE-Bug #429640
 	local myctestargs=(
-		-E "(mainshelltest|chmgeneratortest|parttest)"
+		-E "(mainshelltest|chmgeneratortest|parttest|annotationtoolbartest)"
 	)
 
 	ecm_src_test

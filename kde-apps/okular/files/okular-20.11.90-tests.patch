@@ -1,4 +1,4 @@
-From c675ba8bed1e792f351fabf3ba040a86138f9f84 Mon Sep 17 00:00:00 2001
+From d9cdea559ffa730fd3592b78f5f8530da3d4c803 Mon Sep 17 00:00:00 2001
 From: Andreas Sturmlechner <andreas.sturmlechner@gmail.com>
 Date: Thu, 12 Oct 2017 14:09:09 +0200
 Subject: [PATCH] Move tests into existing (auto)tests subdirectories
@@ -55,10 +55,10 @@ index 000000000..59753ca45
 +
 +target_compile_definitions(chmgeneratortest PRIVATE -DGENERATOR_PATH="$<TARGET_FILE:okularGenerator_chmlib>")
 diff --git a/generators/chm/autotests/chmgeneratortest.cpp b/generators/chm/autotests/chmgeneratortest.cpp
-index 9245a736f..5a2c487b4 100644
+index 18305913e..b28822d68 100644
 --- a/generators/chm/autotests/chmgeneratortest.cpp
 +++ b/generators/chm/autotests/chmgeneratortest.cpp
-@@ -34,7 +34,7 @@ void ChmGeneratorTest::initTestCase()
+@@ -32,7 +32,7 @@ void ChmGeneratorTest::initTestCase()
  {
      Okular::SettingsCore::instance(QStringLiteral("ChmGeneratorTest"));
      m_document = new Okular::Document(nullptr);
@@ -101,7 +101,7 @@ index 000000000..aaacb341a
 +    LINK_LIBRARIES Qt5::Test KF5::CoreAddons okularcore okular_comicbook
 +)
 diff --git a/generators/kimgio/CMakeLists.txt b/generators/kimgio/CMakeLists.txt
-index b8cac76df..49f893bc1 100644
+index db14d741f..49f893bc1 100644
 --- a/generators/kimgio/CMakeLists.txt
 +++ b/generators/kimgio/CMakeLists.txt
 @@ -13,13 +13,9 @@ okular_add_generator(okularGenerator_kimgio generator_kimgio.cpp)
@@ -109,7 +109,7 @@ index b8cac76df..49f893bc1 100644
  
  if(BUILD_TESTING)
 -    add_definitions( -DKDESRCDIR="${CMAKE_CURRENT_SOURCE_DIR}/" )
--    set( kimgiotest_SRCS tests/kimgiotest.cpp ${CMAKE_SOURCE_DIR}/ui/pagepainter.cpp ${CMAKE_SOURCE_DIR}/ui/guiutils.cpp ${CMAKE_SOURCE_DIR}/ui/debug_ui.cpp )
+-    set( kimgiotest_SRCS tests/kimgiotest.cpp ${CMAKE_SOURCE_DIR}/part/pagepainter.cpp ${CMAKE_SOURCE_DIR}/part/guiutils.cpp ${CMAKE_SOURCE_DIR}/part/debug_ui.cpp )
 -    ecm_add_test(${kimgiotest_SRCS} TEST_NAME "kimgiotest" LINK_LIBRARIES okularcore okularpart Qt5::Svg Qt5::Test)
 -    target_compile_definitions(kimgiotest PRIVATE -DGENERATOR_PATH="$<TARGET_FILE:okularGenerator_kimgio>")
 +   add_subdirectory(tests)
@@ -121,22 +121,22 @@ index b8cac76df..49f893bc1 100644
  install( PROGRAMS okularApplication_kimgio.desktop org.kde.mobile.okular_kimgio.desktop  DESTINATION  ${KDE_INSTALL_APPDIR} )
 diff --git a/generators/kimgio/tests/CMakeLists.txt b/generators/kimgio/tests/CMakeLists.txt
 new file mode 100644
-index 000000000..f31bf3fe8
+index 000000000..844c9096a
 --- /dev/null
 +++ b/generators/kimgio/tests/CMakeLists.txt
 @@ -0,0 +1,5 @@
 +add_definitions( -DKDESRCDIR="${CMAKE_CURRENT_SOURCE_DIR}/../" )
 +
-+set( kimgiotest_SRCS kimgiotest.cpp ${CMAKE_SOURCE_DIR}/ui/pagepainter.cpp ${CMAKE_SOURCE_DIR}/ui/guiutils.cpp ${CMAKE_SOURCE_DIR}/ui/debug_ui.cpp )
++set( kimgiotest_SRCS kimgiotest.cpp ${CMAKE_SOURCE_DIR}/part/pagepainter.cpp ${CMAKE_SOURCE_DIR}/part/guiutils.cpp ${CMAKE_SOURCE_DIR}/part/debug_ui.cpp )
 +ecm_add_test(${kimgiotest_SRCS} TEST_NAME "kimgiotest" LINK_LIBRARIES okularcore okularpart Qt5::Svg Qt5::Test)
 +target_compile_definitions(kimgiotest PRIVATE -DGENERATOR_PATH="$<TARGET_FILE:okularGenerator_kimgio>")
 diff --git a/generators/kimgio/tests/kimgiotest.cpp b/generators/kimgio/tests/kimgiotest.cpp
-index f2e50641d..a24f7af80 100644
+index 2b507ed79..acd70b168 100644
 --- a/generators/kimgio/tests/kimgiotest.cpp
 +++ b/generators/kimgio/tests/kimgiotest.cpp
-@@ -9,7 +9,7 @@
+@@ -7,7 +7,7 @@
+  *   (at your option) any later version.                                   *
   ***************************************************************************/
- 
  
 -#include "../../settings_core.h"
 +#include "../../../settings_core.h"
@@ -144,5 +144,5 @@ index f2e50641d..a24f7af80 100644
  
  #include <core/observer.h>
 -- 
-2.25.1
+2.29.2
 
