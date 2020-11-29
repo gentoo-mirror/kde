@@ -221,6 +221,7 @@ kde-plasma/kdeplasma-addons:webengine - Enable dictionary and web browser applet
 kde-plasma/kinfocenter:pci - Show advanced PCI information
 kde-plasma/ksysguard:network - Enable per-process network statistic collection using dev-libs/libnl
 kde-plasma/ksysguard:networkmanager - Enable improved backend for Network statistics using kde-frameworks/networkmanager-qt
+kde-plasma/kwin:color-management - Enable color management via media-libs/lcms and x11-misc/colord
 kde-plasma/kwin:multimedia - Enable effect video button in desktop effects KCM
 kde-plasma/kwin:screencast - Enable screencast portal using media-video/pipewire
 kde-plasma/libksysguard:designer - Build plugins for dev-qt/designer
