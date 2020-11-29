@@ -16,7 +16,7 @@ DESCRIPTION="Flexible, composited Window Manager for windowing systems on Linux"
 LICENSE="GPL-2+"
 SLOT="5"
 KEYWORDS=""
-IUSE="accessibility caps gles2-only multimedia plasma screencast"
+IUSE="accessibility caps color-management gles2-only multimedia plasma screencast"
 
 COMMON_DEPEND="
 	>=dev-libs/libinput-1.14
@@ -74,6 +74,7 @@ COMMON_DEPEND="
 	x11-libs/xcb-util-wm
 	accessibility? ( media-libs/libqaccessibilityclient:5 )
 	caps? ( sys-libs/libcap )
+	color-management? ( media-libs/lcms:2 )
 	gles2-only? ( media-libs/mesa[gles2] )
 	plasma? ( >=kde-frameworks/krunner-${KFMIN}:5 )
 	screencast? ( >=media-video/pipewire-0.3:= )
@@ -85,12 +86,14 @@ RDEPEND="${COMMON_DEPEND}
 	>=dev-qt/qtvirtualkeyboard-${QTMIN}:5
 	>=kde-frameworks/kirigami-${KFMIN}:5
 	>=kde-frameworks/kitemmodels-${KFMIN}:5[qml]
+	x11-misc/colord
 	multimedia? ( >=dev-qt/qtmultimedia-${QTMIN}:5[gstreamer,qml] )
 "
 DEPEND="${COMMON_DEPEND}
 	>=dev-qt/designer-${QTMIN}:5
 	>=dev-qt/qtconcurrent-${QTMIN}:5
 	x11-base/xorg-proto
+	test? ( >=dev-qt/qtwayland-${QTMIN}:5 )
 "
 PDEPEND="
 	>=kde-plasma/kde-cli-tools-${PVCUT}:5
@@ -113,6 +116,7 @@ src_configure() {
 	local mycmakeargs=(
 		$(cmake_use_find_package accessibility QAccessibilityClient)
 		$(cmake_use_find_package caps Libcap)
+		$(cmake_use_find_package color-management lcms2)
 		$(cmake_use_find_package plasma KF5Runner)
 	)
 
