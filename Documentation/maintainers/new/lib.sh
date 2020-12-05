@@ -3,9 +3,16 @@
 # Requires:
 # app-portage/portage-utils
 # app-portage/gentoolkit-dev
+# app-portage/mgorny-dev-scripts
 # app-portage/repoman
+# dev-util/pkgcheck
+# sys-apps/coreutils
+# Optional:
+# dev-vcs/git
 
 : ${SOURCE_REPO:="$(realpath $(dirname $0)/../../../)"}
+
+: ${TARGET_REPO:="${SOURCE_REPO}"}
 
 # @FUNCTION: bump_packages_from_set
 # @USAGE: <set name> <source version> <target version>
@@ -50,33 +57,81 @@ bump_set_from_live() {
 
 	cp sets/${target}-live sets/${target}-${destination}
 	sed -i -e "s/~/</" -e "s/9999/${VERSION}/" -e "s/0/50:5/" sets/${target}-${destination}
+	sed -i -e "/^@/s/live$/${destination}/" sets/${target}-${destination}
 
+	for entry in $(grep ^@ sets/${target}) ; do
+		bump_set_from_live ${entry/@/} ${destination}
+	done
 }
 
-# @FUNCTION: bump_set_from_live
-# @USAGE: <base set name> <new version>
+# @FUNCTION: commit_packages
+# @USAGE: <set name> <commit msg>
 # @DESCRIPTION:
-# Creates new set <base setname>-<new version> based on <base setname>-live.
-create_keywords_files() {
+# Commit set of packages iterating over <set name>.
+commit_packages() {
 	local setname="${1}"
-	local target="${2}"
+	local commitmsg="${2}"
+	local cp packages
+
+	if ! { [[ -d "${TARGET_REPO}/.git" ]] && hash git 2>/dev/null; } then
+		echo "${FUNCNAME[0]}: error: only commits to git repositories!"
+		return
+	fi
+
+	packages=$(get_package_list_from_set ${setname})
+	for cp in ${packages} ; do
+		pushd "${TARGET_REPO}/${cp}" > /dev/null
+
+		git add .
+		pkgcommit -sS . -m "${commitmsg}"
+
+		popd > /dev/null
+	done
+
+	if hash pkgcheck 2>/dev/null; then
+		pushd "${TARGET_REPO}" > /dev/null
+			pkgcheck scan --commits
+		popd > /dev/null
+	fi
+}
+
+# @FUNCTION: create_keywords_files
+# @USAGE: <set name>
+# @DESCRIPTION:
+# Creates new package.{accept_keywords,unmask,mask}/<set name> files based on
+# live dirs and referencing <set name> including any subsets.
+create_keywords_files() {
+	local target="${1}"
+	local base=${target/%-[0-9.]*/}
+	local x
+
+	if [[ $# -gt 1 ]]; then
+		echo "${FUNCNAME[0]}: error: must be passed exactly one argument!"
+		return
+	fi
 
 	pushd Documentation > /dev/null
 	pushd package.unmask > /dev/null
-	cp -r .${setname} .${target}
+	cp -r .${base}-live .${target}
 	pushd .${target} > /dev/null
-	rm ${setname}
+	rm ${base}*-live
 	ln -s  ../../../sets/${target} ${target}
+	for x in $(grep ^@ ../../../sets/${target}); do
+		ln -s ../../../sets/${x/@/} ${x/@/}
+	done
 	echo "# You can use this file to mask/unmask the $(pretty_setname ${target}) release." > _HEADER_
 	echo "# Edit Documentation/package.unmask/.${target}/ files instead." >> _HEADER_
 	popd > /dev/null
 	popd > /dev/null
 
 	pushd package.accept_keywords > /dev/null
-	cp -r .${setname}.base .${target}
+	cp -r .${base}-live.base .${target}
 	pushd .${target} > /dev/null
-	rm ${setname}
+	rm ${base}*-live
 	ln -s  ../../../sets/${target} ${target}
+	for x in $(grep ^@ ../../../sets/${target}); do
+		ln -s ../../../sets/${x/@/} ${x/@/}
+	done
 	echo "# You can use this file to keyword/unkeyword the $(pretty_setname ${target}) release." > _HEADER_
 	echo "# Edit Documentation/package.accept_keywords/.${target}/ files instead." >> _HEADER_
 	popd > /dev/null
@@ -92,7 +147,7 @@ get_main_tree_keyword() {
 	local portdir="$(portageq get_repo_path / gentoo)"
 	local cp="${1}"
 
-	echo $(sed -ne 's/^KEYWORDS="\(.*\)"/\1/p' "$(ls ${portdir}/${cp}/*.ebuild | sort | tail -n 1)")
+	echo $(sed -ne 's/^\s*KEYWORDS="\(.*\)"/\1/p' "$(ls ${portdir}/${cp}/*.ebuild | sort | tail -n 1)")
 }
 
 # @FUNCTION: get_package_list_from_set
@@ -129,12 +184,17 @@ mask_from_live_set() {
 	local set="${1}"
 	local version="${2}"
 	local filename="${3}"
+	local author
 
-	echo "#" >> profiles/package.mask/${filename}
+	if command -v git &> /dev/null; then
+		author="$(git config --get user.name) <$(git config --get user.email)>"
+	fi
+	echo "# ${author} ($(date "+%Y-%m-%d"))" >> profiles/package.mask/${filename}
+	echo "# $(pretty_setname ${set}-${version}) mask" >> profiles/package.mask/${filename}
 	echo "# UNRELEASED" >> profiles/package.mask/${filename}
 	echo "#" >> profiles/package.mask/${filename}
-	cat sets/${set}-live >> profiles/package.mask/${filename}
-	sed -i -e "s/9999/${version}/" profiles/package.mask/${filename}
+	get_package_list_from_set ${set}-live >> profiles/package.mask/${filename}
+	sed -i -e "/^#/!s/^/~/" -e "/^#/!s/$/-${version}/" profiles/package.mask/${filename}
 }
 
 # @FUNCTION: pretty_setname

@@ -42,11 +42,12 @@ pushd "${TARGET_REPO}" > /dev/null
 bump_set_from_live kde-frameworks ${major_version}
 mask_from_live_set kde-frameworks ${VERSION} ${kfv}
 mark_unreleased ${kfv}
-create_keywords_files kde-frameworks-live ${kfmv}
+create_keywords_files ${kfmv}
 
 sed -i -e "/KF_RELEASES/s/\"$/ ${major_version}\"/" Documentation/maintainers/regenerate-files
 Documentation/maintainers/regenerate-files
 
 bump_packages_from_set kde-frameworks-live 9999 ${VERSION}
+commit_packages ${kfmv} "${VERSION} version bump"
 
 popd > /dev/null
