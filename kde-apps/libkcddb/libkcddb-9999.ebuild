@@ -20,7 +20,6 @@ DEPEND="
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtnetwork-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
-	>=kde-frameworks/kcodecs-${KFMIN}:5
 	>=kde-frameworks/kconfig-${KFMIN}:5
 	>=kde-frameworks/kconfigwidgets-${KFMIN}:5
 	>=kde-frameworks/kcoreaddons-${KFMIN}:5
@@ -37,12 +36,7 @@ RESTRICT+=" test"
 
 src_prepare() {
 	ecm_src_prepare
-
-	if ! use handbook ; then
-		pushd kcmcddb > /dev/null
-		cmake_comment_add_subdirectory doc
-		popd > /dev/null
-	fi
+	use handbook || cmake_run_in kcmcddb cmake_comment_add_subdirectory doc
 }
 
 src_configure() {
