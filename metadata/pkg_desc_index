@@ -453,6 +453,7 @@ media-gfx/kxstitch 9999: Program to create cross stitch patterns
 media-gfx/peruse 9999: Comic book reader
 media-gfx/symboleditor 9999: Application to create libraries of QPainterPath objects with rendering hints
 media-gfx/synnefo 9999: Qt front end for the Oyranos Color Management System
+media-libs/kquickimageeditor 9999: QtQuick components providing basic image editing capabilities
 media-libs/liblastfm 9999: Collection of libraries to integrate Last.fm services
 media-libs/libqaccessibilityclient 9999: Library for writing accessibility clients such as screen readers
 media-libs/phonon 9999: KDE multimedia abstraction library
@@ -470,6 +471,7 @@ media-video/kmplayer 9999: Video player plugin for Konqueror and basic MPlayer f
 media-video/subtitlecomposer 9999: Text-based subtitles editor
 net-firewall/plasma-firewall 9999: Plasma frontend for Firewalld or UFW
 net-im/choqok 9999: Free/Open Source micro-blogging client by KDE
+net-im/neochat 9999: Client for Matrix, the decentralized communication protocol
 net-irc/konversation 2.9999 20.12.49.9999 9999: User friendly IRC Client
 net-libs/jreen 9999: Qt XMPP library
 net-libs/kdsoap 9999: Qt-based client-side and server-side SOAP component
