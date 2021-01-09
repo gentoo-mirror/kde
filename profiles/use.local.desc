@@ -27,6 +27,7 @@ app-office/libalkimia:webengine - Enable online quotes using dev-qt/qtwebengine
 app-office/skrooge:activities - Enable kactivities support
 app-text/kbibtex:webengine - Use dev-qt/qtwebengine for HTML previews
 dev-libs/appstream:apt - Enables Debians APT support
+dev-libs/atcore:gui - Build test GUI
 dev-libs/kreport:marble - Enable displaying of maps using kde-apps/marble
 dev-libs/kreport:scripting - Support Qml scripting using dev-qt/qtdeclarative
 dev-util/kdevelop:gdbui - Enable GUI for attaching GDB to a running process

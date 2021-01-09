@@ -19,6 +19,7 @@ app-text/kbibtex 9999: BibTeX editor to edit bibliographies used with LaTeX
 app-text/kjots 9999: Note taking utility by KDE
 dev-db/kdb 9999: Database connectivity and creation framework for various vendors
 dev-libs/appstream 9999: Cross-distro effort for providing metadata for software in the Linux ecosystem
+dev-libs/atcore 9999: API to manage the serial connection between the computer and 3D Printers
 dev-libs/grantlee 9999: C++ string template engine based on the Django template system
 dev-libs/kasync 9999: C++ library for controlling asynchronous tasks
 dev-libs/kdiagram 9999: Powerful libraries (KChart, KGantt) for creating business diagrams
