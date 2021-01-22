@@ -145,6 +145,7 @@ kde-apps/kopete:webpresence - Show your status and some more information on web.
 kde-apps/kopete:winpopup - Enable pop-up messages sending on windows. (same as good old "net send" messages ;])
 kde-apps/kopete:zeroconf - Enable Link-Local Messaging via the bonjour protocol.
 kde-apps/kpimtextedit:designer - Build plugins for dev-qt/designer
+kde-apps/ksystemlog:audit - Enable security audit support via sys-process/audit
 kde-apps/ksystemlog:kdesu - Run as root using kdesu from kde-plasma/kde-cli-tools
 kde-apps/ktp-accounts-kcm:experimental - Enables disabled telepathy services (currently only steam)
 kde-apps/ktp-common-internals:otr - Enable support for encrypted conversations using Off-The-Records messaging
@@ -232,7 +233,6 @@ kde-plasma/kdeplasma-addons:webengine - Enable dictionary and web browser applet
 kde-plasma/kinfocenter:pci - Show advanced PCI information
 kde-plasma/ksysguard:network - Enable per-process network statistic collection using dev-libs/libnl
 kde-plasma/ksysguard:networkmanager - Enable improved backend for Network statistics using kde-frameworks/networkmanager-qt
-kde-plasma/kwin:color-management - Enable color management via media-libs/lcms and x11-misc/colord
 kde-plasma/kwin:multimedia - Enable effect video button in desktop effects KCM
 kde-plasma/kwin:screencast - Enable screencast portal using media-video/pipewire
 kde-plasma/libksysguard:designer - Build plugins for dev-qt/designer
@@ -243,6 +243,7 @@ kde-plasma/plasma-desktop:kaccounts - Build the OpenDesktop integration plugin
 kde-plasma/plasma-desktop:policykit - Build the Users KCM using sys-apps/accountsservice and sys-auth/polkit
 kde-plasma/plasma-desktop:scim - Enable applets that use app-i18n/scim
 kde-plasma/plasma-meta:browser-integration - Enable integration with Chrome/Firefox with browser extensions
+kde-plasma/plasma-meta:colord - Enable kde-plasma/kwin color management via x11-misc/colord
 kde-plasma/plasma-meta:crypt - Pull in kde-plasma/plasma-vault for encrypted vaults integration
 kde-plasma/plasma-meta:desktop-portal - Enable sys-apps/xdg-desktop-portal backend implementation for Plasma
 kde-plasma/plasma-meta:discover - Pull in resources management GUI; a centralised GHNS alternative and optional sys-apps/fwupd frontend
