@@ -6,7 +6,7 @@ EAPI=7
 ECM_TEST="forceoptional"
 KFMIN=9999
 PVCUT=$(ver_cut 1-3)
-QTMIN=5.15.1
+QTMIN=5.15.2
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org pam
 
@@ -17,6 +17,8 @@ SLOT="5"
 KEYWORDS=""
 IUSE="+pam"
 
+RESTRICT+=" test"
+
 COMMON_DEPEND="
 	dev-libs/wayland
 	>=dev-qt/qtdbus-${QTMIN}:5
@@ -25,6 +27,7 @@ COMMON_DEPEND="
 	>=dev-qt/qtnetwork-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
 	>=dev-qt/qtx11extras-${QTMIN}:5
+	>=kde-frameworks/kcmutils-${KFMIN}:5
 	>=kde-frameworks/kconfig-${KFMIN}:5
 	>=kde-frameworks/kconfigwidgets-${KFMIN}:5
 	>=kde-frameworks/kcoreaddons-${KFMIN}:5
@@ -56,8 +59,6 @@ RDEPEND="${COMMON_DEPEND}
 PDEPEND="
 	>=kde-plasma/kde-cli-tools-${PVCUT}:5
 "
-
-RESTRICT+=" test"
 
 src_prepare() {
 	ecm_src_prepare

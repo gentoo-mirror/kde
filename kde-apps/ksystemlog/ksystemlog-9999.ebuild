@@ -6,7 +6,7 @@ EAPI=7
 ECM_HANDBOOK="forceoptional"
 ECM_TEST="forceoptional"
 KFMIN=5.75.0
-QTMIN=5.15.1
+QTMIN=5.15.2
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
 
@@ -16,7 +16,7 @@ HOMEPAGE="https://apps.kde.org/en/ksystemlog"
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"
 KEYWORDS=""
-IUSE="kdesu systemd"
+IUSE="audit kdesu systemd"
 
 DEPEND="
 	>=dev-qt/qtgui-${QTMIN}:5
@@ -34,6 +34,7 @@ DEPEND="
 	>=kde-frameworks/ktextwidgets-${KFMIN}:5
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
+	audit? ( sys-process/audit )
 	systemd? ( sys-apps/systemd )
 "
 RDEPEND="${DEPEND}

@@ -7,16 +7,18 @@ ECM_HANDBOOK="optional"
 ECM_TEST="optional"
 KFMIN=9999
 PVCUT=$(ver_cut 1-3)
-QTMIN=5.15.1
+QTMIN=5.15.2
 VIRTUALX_REQUIRED="test"
-inherit ecm kde.org
+inherit ecm kde.org optfeature
 
 DESCRIPTION="Flexible, composited Window Manager for windowing systems on Linux"
 
 LICENSE="GPL-2+"
 SLOT="5"
 KEYWORDS=""
-IUSE="accessibility caps color-management gles2-only multimedia plasma screencast"
+IUSE="accessibility caps gles2-only multimedia plasma screencast"
+
+RESTRICT+=" test"
 
 COMMON_DEPEND="
 	>=dev-libs/libinput-1.14
@@ -57,11 +59,10 @@ COMMON_DEPEND="
 	>=kde-plasma/kwayland-server-${PVCUT}:5
 	media-libs/fontconfig
 	media-libs/freetype
+	media-libs/lcms:2
 	media-libs/libepoxy
 	media-libs/mesa[egl,gbm,wayland,X(+)]
 	virtual/libudev:=
-	x11-libs/libICE
-	x11-libs/libSM
 	x11-libs/libX11
 	x11-libs/libXi
 	x11-libs/libdrm
@@ -73,7 +74,6 @@ COMMON_DEPEND="
 	x11-libs/xcb-util-wm
 	accessibility? ( media-libs/libqaccessibilityclient:5 )
 	caps? ( sys-libs/libcap )
-	color-management? ( media-libs/lcms:2 )
 	gles2-only? ( media-libs/mesa[gles2] )
 	plasma? ( >=kde-frameworks/krunner-${KFMIN}:5 )
 	screencast? ( >=media-video/pipewire-0.3:= )
@@ -85,7 +85,6 @@ RDEPEND="${COMMON_DEPEND}
 	>=dev-qt/qtvirtualkeyboard-${QTMIN}:5
 	>=kde-frameworks/kirigami-${KFMIN}:5
 	>=kde-frameworks/kitemmodels-${KFMIN}:5[qml]
-	color-management? ( x11-misc/colord )
 	multimedia? ( >=dev-qt/qtmultimedia-${QTMIN}:5[gstreamer,qml] )
 "
 DEPEND="${COMMON_DEPEND}
@@ -100,8 +99,6 @@ DEPEND="${COMMON_DEPEND}
 PDEPEND="
 	>=kde-plasma/kde-cli-tools-${PVCUT}:5
 "
-
-RESTRICT+=" test"
 
 src_prepare() {
 	ecm_src_prepare
@@ -123,4 +120,10 @@ src_configure() {
 	)
 
 	ecm_src_configure
+}
+
+pkg_postinst() {
+	ecm_pkg_postinst
+	elog "Optional dependency:"
+	optfeature "color management support" x11-misc/colord
 }

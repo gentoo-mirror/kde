@@ -5,7 +5,7 @@ EAPI=7
 
 ECM_TEST="forceoptional"
 KFMIN=9999
-QTMIN=5.15.1
+QTMIN=5.15.2
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
 
@@ -25,6 +25,7 @@ DEPEND="
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtnetwork-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
+	>=dev-qt/qtx11extras-${QTMIN}:5
 	>=dev-qt/qtxml-${QTMIN}:5
 	>=kde-frameworks/attica-${KFMIN}:5
 	>=kde-frameworks/kconfig-${KFMIN}:5
@@ -41,7 +42,7 @@ DEPEND="
 	>=kde-frameworks/knotifications-${KFMIN}:5
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
-	firmware? ( sys-apps/fwupd )
+	firmware? ( >=sys-apps/fwupd-1.5.0 )
 	flatpak? (
 		>=dev-libs/appstream-0.12.8:=
 		sys-apps/flatpak

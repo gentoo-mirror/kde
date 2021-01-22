@@ -6,7 +6,7 @@ EAPI=7
 ECM_TEST="true"
 KFMIN=9999
 PVCUT=$(ver_cut 1-3)
-QTMIN=5.15.1
+QTMIN=5.15.2
 inherit ecm kde.org
 
 DESCRIPTION="Provides integration plugins for various KDE frameworks for Wayland"
@@ -17,6 +17,8 @@ SLOT="5"
 KEYWORDS=""
 IUSE=""
 
+RESTRICT+=" test" # bug 668872
+
 DEPEND="
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
@@ -26,5 +28,3 @@ DEPEND="
 	>=kde-frameworks/kwindowsystem-${KFMIN}:5
 "
 RDEPEND="${DEPEND}"
-
-RESTRICT+=" test" # bug 668872

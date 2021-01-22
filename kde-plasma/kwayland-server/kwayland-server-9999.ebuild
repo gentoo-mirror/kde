@@ -7,7 +7,7 @@ ECM_QTHELP="true"
 ECM_TEST="true"
 KFMIN=9999
 PVCUT=$(ver_cut 1-2)
-QTMIN=5.15.1
+QTMIN=5.15.2
 inherit ecm kde.org
 
 DESCRIPTION="Wayland Server Components built on KDE Frameworks"
@@ -17,6 +17,9 @@ LICENSE="LGPL-2.1"
 SLOT="5"
 KEYWORDS=""
 IUSE=""
+
+# All failing, I guess we need a virtual wayland server
+RESTRICT+=" test"
 
 RDEPEND="
 	>=dev-libs/wayland-1.18.0
@@ -30,6 +33,3 @@ DEPEND="${RDEPEND}
 	>=dev-libs/plasma-wayland-protocols-1.1.1
 	>=dev-libs/wayland-protocols-1.18
 "
-
-# All failing, I guess we need a virtual wayland server
-RESTRICT+=" test"

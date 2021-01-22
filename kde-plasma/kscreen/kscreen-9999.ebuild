@@ -6,7 +6,7 @@ EAPI=7
 ECM_TEST="forceoptional"
 KFMIN=9999
 PVCUT=$(ver_cut 1-3)
-QTMIN=5.15.1
+QTMIN=5.15.2
 inherit ecm kde.org
 
 DESCRIPTION="KDE Plasma screen management"
@@ -16,6 +16,9 @@ LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"
 KEYWORDS=""
 IUSE=""
+
+# bug #580440, last checked 5.6.3
+RESTRICT+=" test"
 
 DEPEND="
 	>=dev-qt/qtdbus-${QTMIN}:5
@@ -41,6 +44,3 @@ RDEPEND="${DEPEND}
 	>=dev-qt/qtgraphicaleffects-${QTMIN}:5
 	>=kde-plasma/kde-cli-tools-${PVCUT}:5
 "
-
-# bug #580440, last checked 5.6.3
-RESTRICT+=" test"

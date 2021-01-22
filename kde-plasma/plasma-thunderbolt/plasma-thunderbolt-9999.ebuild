@@ -6,7 +6,7 @@ EAPI=7
 ECM_TEST="true"
 KFMIN=9999
 PVCUT=$(ver_cut 1-3)
-QTMIN=5.15.1
+QTMIN=5.15.2
 inherit ecm kde.org
 
 DESCRIPTION="Plasma integration for controlling Thunderbolt devices"
@@ -16,6 +16,9 @@ LICENSE="|| ( GPL-2 GPL-3+ )"
 SLOT="5"
 KEYWORDS=""
 IUSE=""
+
+# tests require DBus
+RESTRICT+=" test"
 
 DEPEND="
 	>=dev-qt/qtdeclarative-${QTMIN}:5
@@ -33,6 +36,3 @@ RDEPEND="${DEPEND}
 	>=kde-frameworks/kirigami-${KFMIN}:5
 	sys-apps/bolt
 "
-
-# tests require DBus
-RESTRICT+=" test"
