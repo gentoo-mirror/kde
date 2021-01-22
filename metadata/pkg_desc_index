@@ -429,6 +429,7 @@ kde-plasma/oxygen 9999: Oxygen visual style for the Plasma desktop
 kde-plasma/plasma-browser-integration 9999: Integrate Chrome/Firefox better into Plasma through browser extensions
 kde-plasma/plasma-desktop 9999: KDE Plasma desktop
 kde-plasma/plasma-disks 9999: Monitors S.M.A.R.T. capable devices for imminent failure
+kde-plasma/plasma-firewall 9999: Plasma frontend for Firewalld or UFW
 kde-plasma/plasma-integration 9999: Qt Platform Theme integration plugins for the Plasma workspaces
 kde-plasma/plasma-meta 9999: Merge this to pull in all Plasma 5 packages
 kde-plasma/plasma-nm 9999: KDE Plasma applet for NetworkManager
@@ -470,7 +471,6 @@ media-sound/vvave 9999: Tiny Qt music player by KDE
 media-video/kaffeine 9999: Media player with digital TV support by KDE
 media-video/kmplayer 9999: Video player plugin for Konqueror and basic MPlayer frontend
 media-video/subtitlecomposer 9999: Text-based subtitles editor
-net-firewall/plasma-firewall 9999: Plasma frontend for Firewalld or UFW
 net-im/choqok 9999: Free/Open Source micro-blogging client by KDE
 net-im/neochat 9999: Client for Matrix, the decentralized communication protocol
 net-irc/konversation 2.9999 20.12.49.9999 9999: User friendly IRC Client
