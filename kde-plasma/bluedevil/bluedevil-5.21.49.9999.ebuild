@@ -3,15 +3,15 @@
 
 EAPI=7
 
+KFMIN=5.78.0
 PVCUT=$(ver_cut 1-3)
-KFMIN=9999
 QTMIN=5.15.2
 inherit ecm kde.org
 
-DESCRIPTION="New version of KSysGuard built on top of the new KStats daemon and using QML"
-HOMEPAGE="https://invent.kde.org/plasma/plasma-systemmonitor"
+DESCRIPTION="Bluetooth stack for KDE Plasma"
+HOMEPAGE="https://invent.kde.org/plasma/bluedevil"
 
-LICENSE="|| ( GPL-3 GPL-2 )"
+LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"
 KEYWORDS=""
 IUSE=""
@@ -21,21 +21,23 @@ DEPEND="
 	>=dev-qt/qtdeclarative-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
+	>=kde-frameworks/bluez-qt-${KFMIN}:5
 	>=kde-frameworks/kconfig-${KFMIN}:5
+	>=kde-frameworks/kconfigwidgets-${KFMIN}:5
 	>=kde-frameworks/kcoreaddons-${KFMIN}:5
-	>=kde-frameworks/kdbusaddons-${KFMIN}:5
 	>=kde-frameworks/kdeclarative-${KFMIN}:5
-	>=kde-frameworks/kglobalaccel-${KFMIN}:5
+	>=kde-frameworks/kded-${KFMIN}:5
+	>=kde-frameworks/kdbusaddons-${KFMIN}:5
 	>=kde-frameworks/ki18n-${KFMIN}:5
+	>=kde-frameworks/kiconthemes-${KFMIN}:5
 	>=kde-frameworks/kio-${KFMIN}:5
-	>=kde-frameworks/knewstuff-${KFMIN}:5
-	>=kde-frameworks/kservice-${KFMIN}:5
-	>=kde-plasma/libksysguard-${PVCUT}:5
+	>=kde-frameworks/knotifications-${KFMIN}:5
+	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
+	>=kde-frameworks/kwindowsystem-${KFMIN}:5
+	>=kde-frameworks/plasma-${KFMIN}:5
 "
 RDEPEND="${DEPEND}
 	>=dev-qt/qtquickcontrols2-${QTMIN}:5
 	>=kde-frameworks/kirigami-${KFMIN}:5
-	>=kde-frameworks/kitemmodels-${KFMIN}:5[qml]
-	>=kde-frameworks/kquickcharts-${KFMIN}:5
-	>=kde-plasma/ksysguard-${PVCUT}:5
+	>=kde-plasma/kde-cli-tools-${PVCUT}:5
 "

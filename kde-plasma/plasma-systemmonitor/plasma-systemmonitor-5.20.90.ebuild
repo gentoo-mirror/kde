@@ -4,7 +4,7 @@
 EAPI=7
 
 PVCUT=$(ver_cut 1-3)
-KFMIN=9999
+KFMIN=5.78.0
 QTMIN=5.15.2
 inherit ecm kde.org
 
@@ -13,7 +13,7 @@ HOMEPAGE="https://invent.kde.org/plasma/plasma-systemmonitor"
 
 LICENSE="|| ( GPL-3 GPL-2 )"
 SLOT="5"
-KEYWORDS=""
+KEYWORDS="~amd64 ~ppc64"
 IUSE=""
 
 DEPEND="
