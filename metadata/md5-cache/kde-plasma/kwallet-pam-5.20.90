@@ -1,0 +1,15 @@
+BDEPEND=dev-util/ninja dev-util/cmake >=kde-frameworks/extra-cmake-modules-5.78.0:5
+DEFINED_PHASES=compile configure install nofetch postinst postrm preinst prepare setup test unpack
+DEPEND=dev-libs/libgcrypt:0= >=kde-frameworks/kwallet-5.78.0:5 sys-libs/pam dev-util/desktop-file-utils x11-misc/shared-mime-info dev-qt/qtcore:5
+DESCRIPTION=PAM module to not enter KWallet password again after login
+EAPI=7
+HOMEPAGE=https://kde.org/plasma-desktop
+IUSE=debug
+KEYWORDS=~amd64 ~arm ~arm64 ~ppc64 ~x86
+LICENSE=LGPL-2.1
+RDEPEND=dev-libs/libgcrypt:0= >=kde-frameworks/kwallet-5.78.0:5 sys-libs/pam net-misc/socat || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-4 dev-qt/qtcore:5
+RESTRICT=mirror
+SLOT=5
+SRC_URI=mirror://kde/unstable/plasma/5.20.90/kwallet-pam-5.20.90.tar.xz
+_eclasses_=cmake	dbf45672231628df6462591837a1746b	ecm	449691681795e880c1193a5c8487168a	edos2unix	33e347e171066657f91f8b0c72ec8773	eutils	2d5b3f4b315094768576b6799e4f926e	flag-o-matic	09a8beb8e6a8e02dc1e1bd83ac353741	kde.org	a7c57c6512f4324615b434b181852661	l10n	8cdd85e169b835d518bc2fd59f780d8e	multilib	d410501a125f99ffb560b0c523cd3d1e	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	1a94dc06d324bd0dab754e11abe6d27e	virtualx	7e60d3b10c791ab996f717bc1f30072f	wrapper	4251d4c84c25f59094fd557e0063a974	xdg	c7ba313ea1eaf266f95cc6235f7d6a07	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
+_md5_=b4f0c012ebb14d5ec963b8e7f3efe0d0
