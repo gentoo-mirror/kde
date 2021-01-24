@@ -2,8 +2,7 @@ DEFINED_PHASES=postinst
 DESCRIPTION=Plasma Telepathy client
 EAPI=7
 HOMEPAGE=https://community.kde.org/KTp
-IUSE=gstreamer
 LICENSE=metapackage
-RDEPEND=>=kde-apps/ktp-accounts-kcm-20.12.49.9999:5 >=kde-apps/ktp-approver-20.12.49.9999:5 >=kde-apps/ktp-auth-handler-20.12.49.9999:5 >=kde-apps/ktp-common-internals-20.12.49.9999:5 >=kde-apps/ktp-contact-list-20.12.49.9999:5 >=kde-apps/ktp-contact-runner-20.12.49.9999:5 >=kde-apps/ktp-desktop-applets-20.12.49.9999:5 >=kde-apps/ktp-filetransfer-handler-20.12.49.9999:5 >=kde-apps/ktp-kded-module-20.12.49.9999:5 >=kde-apps/ktp-send-file-20.12.49.9999:5 >=kde-apps/ktp-text-ui-20.12.49.9999:5 gstreamer? ( >=kde-apps/ktp-call-ui-20.12.49.9999:5 )
+RDEPEND=>=kde-apps/ktp-accounts-kcm-20.12.49.9999:5 >=kde-apps/ktp-approver-20.12.49.9999:5 >=kde-apps/ktp-auth-handler-20.12.49.9999:5 >=kde-apps/ktp-common-internals-20.12.49.9999:5 >=kde-apps/ktp-contact-list-20.12.49.9999:5 >=kde-apps/ktp-contact-runner-20.12.49.9999:5 >=kde-apps/ktp-desktop-applets-20.12.49.9999:5 >=kde-apps/ktp-filetransfer-handler-20.12.49.9999:5 >=kde-apps/ktp-kded-module-20.12.49.9999:5 >=kde-apps/ktp-send-file-20.12.49.9999:5 >=kde-apps/ktp-text-ui-20.12.49.9999:5
 SLOT=5
-_md5_=29b08bc4a84c28ced801ada485664a76
+_md5_=ac67905899500089a91a75572a6e098d
