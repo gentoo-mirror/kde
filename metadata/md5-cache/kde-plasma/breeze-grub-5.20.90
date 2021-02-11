@@ -7,5 +7,5 @@ LICENSE=GPL-3+
 RESTRICT=mirror
 SLOT=5
 SRC_URI=mirror://kde/unstable/plasma/5.20.90/breeze-grub-5.20.90.tar.xz
-_eclasses_=kde.org	f798e0425d1efc7763388ad6f47c720a
+_eclasses_=kde.org	f82bfc57e8d7c03a38a0ecff422c7691
 _md5_=0e3a4688990878e76dae032eb33e94ef
