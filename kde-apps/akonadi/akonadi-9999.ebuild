@@ -5,7 +5,6 @@ EAPI=7
 
 ECM_DESIGNERPLUGIN="true"
 ECM_TEST="forceoptional"
-PVCUT=$(ver_cut 1-3)
 KFMIN=5.75.0
 QTMIN=5.15.2
 VIRTUALDBUS_TEST="true"
@@ -43,7 +42,7 @@ COMMON_DEPEND="
 	>=kde-frameworks/kwindowsystem-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
 	kaccounts? (
-		>=kde-apps/kaccounts-integration-${PVCUT}:5
+		>=kde-apps/kaccounts-integration-20.08.3:5
 		net-libs/accounts-qt
 	)
 	mariadb? ( >=dev-qt/qtsql-${QTMIN}:5[mysql] )
@@ -66,7 +65,7 @@ RDEPEND="${COMMON_DEPEND}
 # some akonadi tests time out, that probably needs more work as it's ~700 tests
 RESTRICT+=" test"
 
-PATCHES=( "${FILESDIR}/${PN}-18.12.2-mysql56-crash.patch" )
+PATCHES=( "${FILESDIR}/${PN}-21.03.80-mysql56-crash.patch" )
 
 pkg_setup() {
 	# Set default storage backend in order: MariaDB, PostgreSQL, SQLite
