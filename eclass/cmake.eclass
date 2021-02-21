@@ -135,6 +135,9 @@ _cmake_banned_func() {
 	die "${FUNCNAME[1]} is banned. use -D$1<related_CMake_variable>=\"\$(usex $2)\" instead"
 }
 
+# @FUNCTION: _cmake_check_build_dir
+# @INTERNAL
+# @DESCRIPTION:
 # Determine using IN or OUT source build
 _cmake_check_build_dir() {
 	: ${CMAKE_USE_DIR:=${S}}
@@ -268,6 +271,9 @@ cmake-utils_use() { _cmake_banned_func "" "$@" ; }
 # Banned. Use -DNOFOO=$(usex !foo) instead.
 cmake-utils_useno() { _cmake_banned_func "" "$@" ; }
 
+# @FUNCTION: _cmake_modify-cmakelists
+# @INTERNAL
+# @DESCRIPTION:
 # Internal function for modifying hardcoded definitions.
 # Removes dangerous definitions that override Gentoo settings.
 _cmake_modify-cmakelists() {
@@ -307,7 +313,7 @@ _cmake_modify-cmakelists() {
 
 # @FUNCTION: cmake_src_prepare
 # @DESCRIPTION:
-# Apply ebuild and user patches.
+# Apply ebuild and user patches. *MUST* be run or cmake_src_configure will fail.
 cmake_src_prepare() {
 	debug-print-function ${FUNCNAME} "$@"
 
@@ -362,11 +368,11 @@ cmake_src_prepare() {
 # @DEFAULT_UNSET
 # @DESCRIPTION:
 # Optional cmake defines as a bash array. Should be defined before calling
-# src_configure.
+# cmake_src_configure.
 # @CODE
 # src_configure() {
 # 	local mycmakeargs=(
-# 		$(cmake_use_with openconnect)
+# 		$(cmake_use_find_package foo LibFoo)
 # 	)
 #
 # 	cmake_src_configure
@@ -561,8 +567,8 @@ cmake_src_configure() {
 
 # @FUNCTION: cmake_src_compile
 # @DESCRIPTION:
-# General function for compiling with cmake.
-# Automatically detects the build type. All arguments are passed to emake.
+# General function for compiling with cmake. All arguments are passed
+# to cmake_build.
 cmake_src_compile() {
 	debug-print-function ${FUNCNAME} "$@"
 
@@ -572,7 +578,8 @@ cmake_src_compile() {
 # @FUNCTION: cmake_build
 # @DESCRIPTION:
 # Function for building the package. Automatically detects the build type.
-# All arguments are passed to emake.
+# All arguments are passed to eninja (default) or emake depending on the value
+# of CMAKE_MAKEFILE_GENERATOR.
 cmake_build() {
 	debug-print-function ${FUNCNAME} "$@"
 
