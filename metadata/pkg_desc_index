@@ -371,7 +371,6 @@ kde-misc/colord-kde 9999: Provides interfaces and session daemon to colord
 kde-misc/itinerary 9999: Digital travel assistant with a priority on protecting your privacy
 kde-misc/kdeconnect 20.12.49.9999 9999: Adds communication between KDE Plasma and your smartphone
 kde-misc/kdiff3 9999: Frontend to diff3 based on KDE Frameworks
-kde-misc/kimtoy 9999: Input method frontend for Plasma
 kde-misc/kio-fuse 9999: FUSE interface for KIO
 kde-misc/kio-gdrive 20.12.49.9999 9999: KIO Slave for Google Drive service
 kde-misc/kio-stash 9999: KIO Slave and daemon to stash discontinuous file selections
