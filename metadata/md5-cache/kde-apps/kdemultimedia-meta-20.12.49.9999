@@ -1,9 +1,0 @@
-DEFINED_PHASES=-
-DESCRIPTION=kdemultimedia - merge this to pull in all kdemultimedia-derived packages
-EAPI=7
-HOMEPAGE=https://apps.kde.org/multimedia https://multimedia.kde.org/
-IUSE=+cdrom +ffmpeg gstreamer
-LICENSE=metapackage
-RDEPEND=>=kde-apps/dragon-20.12.49.9999:5 >=kde-apps/juk-20.12.49.9999:5 >=kde-apps/kdenlive-20.12.49.9999:5 >=kde-apps/kmix-20.12.49.9999:5 >=kde-apps/kwave-20.12.49.9999:5 >=media-sound/elisa-20.12.49.9999:5 cdrom? ( >=kde-apps/audiocd-kio-20.12.49.9999:5 >=kde-apps/k3b-20.12.49.9999:5 >=kde-apps/libkcddb-20.12.49.9999:5 >=kde-apps/libkcompactdisc-20.12.49.9999:5 ) ffmpeg? ( >=kde-apps/ffmpegthumbs-20.12.49.9999:5 ) gstreamer? ( >=kde-apps/kamoso-20.12.49.9999:5 )
-SLOT=5
-_md5_=d87c18995b45002145fec64e66cb8aa3
