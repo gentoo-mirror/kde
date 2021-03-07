@@ -189,6 +189,7 @@ kde-frameworks/kfilemetadata:office - Enable support for reading ODF and OOXML m
 kde-frameworks/kiconthemes:designer - Build plugins for dev-qt/designer
 kde-frameworks/kimageformats:avif - Support the AVIF image file format
 kde-frameworks/kimageformats:eps - Support the EPS graphics file format
+kde-frameworks/kimageformats:heif - Support for HEIF/HEIC images
 kde-frameworks/kinit:caps - Capabilities support for improved security and better OOM handling
 kde-frameworks/kinit:man - Build and install man pages
 kde-frameworks/kio:designer - Build plugins for dev-qt/designer
@@ -200,6 +201,7 @@ kde-frameworks/knotifications:speech - Enable text-to-speech notification suppor
 kde-frameworks/knotifyconfig:phonon - Add sound support via media-libs/phonon
 kde-frameworks/kpackage:man - Build and install man pages
 kde-frameworks/kplotting:designer - Build plugins for dev-qt/designer
+kde-frameworks/krunner:activities - Enable search runner for KDE Activities history
 kde-frameworks/kservice:man - Build and install man pages
 kde-frameworks/ktexteditor:editorconfig - Enable support for EditorConfig configuration files
 kde-frameworks/ktextwidgets:designer - Build plugins for dev-qt/designer
