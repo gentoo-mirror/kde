@@ -9,7 +9,7 @@ inherit ecm kde.org toolchain-funcs
 
 if [[ ${KDE_BUILD_TYPE} != live ]]; then
 	MY_P=${PN}-${PV/_/-}
-	if [[ ${PV} =~ beta[0-9]$ ]]; then
+	if [[ ${PV} =~ rc[0-9]*$ ]]; then
 		SRC_URI="mirror://kde/unstable/${PN}/"
 	else
 		SRC_URI="mirror://kde/stable/${PN}/${PV}/"
