@@ -445,10 +445,10 @@ kde-plasma/sddm-kcm 5.21.49.9999 9999: KDE Plasma control module for SDDM
 kde-plasma/systemsettings 5.21.49.9999 9999: Control Center to configure KDE Plasma desktop
 kde-plasma/xdg-desktop-portal-kde 5.21.49.9999 9999: Backend implementation for xdg-desktop-portal that is using Qt/KDE Frameworks
 kde-plasma/xembed-sni-proxy 5.21.49.9999 9999: Legacy xembed tray icons support for SNI-only system trays
-media-gfx/digikam 7.2.0_rc 9999: Digital photo management application
+media-gfx/digikam 9999: Digital photo management application
 media-gfx/kgraphviewer 9999: Graphviz dot graph file viewer
 media-gfx/kphotoalbum 9999: Tool for indexing, searching, and viewing images
-media-gfx/krita 4.4.3_beta2 9999: Free digital painting application. Digital Painting, Creative Freedom!
+media-gfx/krita 9999: Free digital painting application. Digital Painting, Creative Freedom!
 media-gfx/kxstitch 9999: Program to create cross stitch patterns
 media-gfx/peruse 9999: Comic book reader
 media-gfx/symboleditor 9999: Application to create libraries of QPainterPath objects with rendering hints
