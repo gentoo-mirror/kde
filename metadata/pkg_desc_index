@@ -130,7 +130,7 @@ kde-apps/kdegames-meta 9999: kdegames - merge this to pull in all kdegames-deriv
 kde-apps/kdegraphics-meta 9999: kdegraphics - merge this to pull in all kdegraphics-derived packages
 kde-apps/kdegraphics-mobipocket 9999: Library to support mobipocket ebooks
 kde-apps/kdemultimedia-meta 9999: kdemultimedia - merge this to pull in all kdemultimedia-derived packages
-kde-apps/kdenetwork-filesharing 9999: SMB filesharing config module for systemsettings
+kde-apps/kdenetwork-filesharing 9999: Samba filesharing plugin for file properties
 kde-apps/kdenetwork-meta 9999: kdenetwork - merge this to pull in all kdenetwork-derived packages
 kde-apps/kdenlive 9999: Non-linear video editing suite by KDE
 kde-apps/kdepim-addons 9999: Plugins for KDE Personal Information Management Suite
