@@ -3,7 +3,7 @@
 
 EAPI=7
 
-ECM_HANDBOOK="optional"
+ECM_HANDBOOK="forceoptional"
 PVCUT=$(ver_cut 1-3)
 KFMIN=5.75.0
 QTMIN=5.15.2
@@ -36,6 +36,4 @@ RDEPEND="
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
 "
-DEPEND="${RDEPEND}
-	>=dev-qt/qtconcurrent-${QTMIN}:5
-"
+DEPEND="${RDEPEND}"
