@@ -16,19 +16,21 @@ HOMEPAGE="https://kdenlive.org/en/"
 LICENSE="GPL-2"
 SLOT="5"
 KEYWORDS=""
-IUSE="gles2-only semantic-desktop share v4l webengine"
+IUSE="gles2-only semantic-desktop share v4l"
+
+RESTRICT+=" test" # segfaults, bug 684132
 
 BDEPEND="
 	sys-devel/gettext
 "
 DEPEND="
-	dev-cpp/rttr
 	>=dev-qt/qtconcurrent-${QTMIN}:5
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtdeclarative-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5[gles2-only=]
 	>=dev-qt/qtmultimedia-${QTMIN}:5
 	>=dev-qt/qtnetwork-${QTMIN}:5
+	>=dev-qt/qtnetworkauth-${QTMIN}:5
 	>=dev-qt/qtquickcontrols2-${QTMIN}:5
 	>=dev-qt/qtsvg-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
@@ -56,25 +58,21 @@ DEPEND="
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
 	>=kde-frameworks/solid-${KFMIN}:5
-	>=media-libs/mlt-6.20.0[ffmpeg,frei0r,kdenlive(+),melt(+),qt5,sdl,xml]
+	>=media-libs/mlt-6.26.0[ffmpeg,frei0r,kdenlive(+),melt(+),qt5,sdl,xml]
 	semantic-desktop? ( >=kde-frameworks/kfilemetadata-${KFMIN}:5 )
 	share? ( >=kde-frameworks/purpose-${KFMIN}:5 )
 	v4l? ( media-libs/libv4l )
-	webengine? ( >=dev-qt/qtwebengine-${QTMIN}:5 )
 "
 RDEPEND="${DEPEND}
 	>=dev-qt/qtquickcontrols-${QTMIN}:5
 	media-video/ffmpeg[encode,sdl,X]
 "
 
-RESTRICT+=" test" # segfaults, bug 684132
-
 src_configure() {
 	local mycmakeargs=(
 		$(cmake_use_find_package semantic-desktop KF5FileMetaData)
 		$(cmake_use_find_package share KF5Purpose)
 		$(cmake_use_find_package v4l LibV4L2)
-		$(cmake_use_find_package webengine Qt5WebEngineWidgets)
 	)
 
 	ecm_src_configure
