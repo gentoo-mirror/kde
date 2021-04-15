@@ -171,7 +171,7 @@ kde-apps/klickety 9999: An adaptation of the Clickomania game
 kde-apps/klines 9999: A little KDE game about balls and how to get rid of them
 kde-apps/kmag 9999: KDE screen magnifier
 kde-apps/kmahjongg 9999: A tile matching game for one or two players
-kde-apps/kmail 9999: Email client, supporting POP3 and IMAP mailboxes.
+kde-apps/kmail 9999: Email client, supporting POP3 and IMAP mailboxes
 kde-apps/kmail-account-wizard 9999: Assistant for KMail accounts configuration
 kde-apps/kmailtransport 9999: Mail transport service
 kde-apps/kmbox 9999: Library for accessing MBox format mail storages
