@@ -418,6 +418,7 @@ kde-plasma/kwayland-integration 5.21.49.9999 9999: Provides integration plugins 
 kde-plasma/kwayland-server 5.21.49.9999 9999: Wayland Server Components built on KDE Frameworks
 kde-plasma/kwin 5.21.49.9999 9999: Flexible, composited Window Manager for windowing systems on Linux
 kde-plasma/kwrited 5.21.49.9999 9999: KDE Plasma daemon listening for wall and write messages
+kde-plasma/layer-shell-qt 9999: Qt component to allow applications make use of Wayland wl-layer-shell protocol
 kde-plasma/libkscreen 5.21.49.9999 9999: Plasma screen management library
 kde-plasma/libksysguard 5.21.49.9999 9999: Task management and system monitoring library
 kde-plasma/libkworkspace 5.21.49.9999 9999: Workspace library to interact with the Plasma session manager
