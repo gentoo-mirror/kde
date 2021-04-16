@@ -5,7 +5,7 @@ EAPI=7
 
 ECM_HANDBOOK="forceoptional"
 ECM_TEST="true"
-KFMIN=5.75.0
+KFMIN=5.81.0
 QTMIN=5.15.2
 inherit ecm kde.org
 
@@ -17,9 +17,6 @@ SLOT="5"
 KEYWORDS=""
 IUSE=""
 
-BDEPEND="
-	sys-devel/gettext
-"
 DEPEND="
 	dev-libs/gmp:0=
 	dev-libs/mpfr:0=
@@ -32,9 +29,9 @@ DEPEND="
 	>=kde-frameworks/kcrash-${KFMIN}:5
 	>=kde-frameworks/kguiaddons-${KFMIN}:5
 	>=kde-frameworks/ki18n-${KFMIN}:5
-	>=kde-frameworks/kinit-${KFMIN}:5
 	>=kde-frameworks/knotifications-${KFMIN}:5
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
 "
 RDEPEND="${DEPEND}"
+BDEPEND="sys-devel/gettext"

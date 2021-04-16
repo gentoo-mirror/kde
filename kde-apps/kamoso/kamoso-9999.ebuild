@@ -4,7 +4,7 @@
 EAPI=7
 
 ECM_HANDBOOK="forceoptional"
-KFMIN=5.75.0
+KFMIN=5.81.0
 QTMIN=5.15.2
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
@@ -16,6 +16,8 @@ LICENSE="GPL-2+"
 SLOT="5"
 KEYWORDS=""
 IUSE=""
+
+RESTRICT+=" test" # bug 653674
 
 DEPEND="
 	dev-libs/glib:2
@@ -38,5 +40,4 @@ RDEPEND="${DEPEND}
 	media-plugins/gst-plugins-libpng:1.0
 	media-plugins/gst-plugins-meta:1.0[alsa,theora,vorbis,v4l]
 "
-
-RESTRICT+=" test" # bug 653674
+BDEPEND="virtual/pkgconfig"

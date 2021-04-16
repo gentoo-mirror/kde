@@ -42,6 +42,10 @@ bump_packages_from_set() {
 			ekeyword ~all ${destination} > /dev/null
 		fi
 
+		if [[ -n "${KFMIN}" ]] ; then
+			sed -e "/^KFMIN/s/=.*/=${KFMIN}/" -i ${destination}
+		fi
+
 		repoman manifest
 
 		popd > /dev/null
@@ -57,10 +61,11 @@ bump_set_from_live() {
 	local destination="${2}"
 
 	cp sets/${target}-live sets/${target}-${destination}
-	sed -i -e "s/~/</" -e "s/9999/${VERSION}/" -e "s/0/50:5/" sets/${target}-${destination}
+	sed -i -e "s/~/</" -e "s/9999/${destination}.50/" sets/${target}-${destination}
 	sed -i -e "/^@/s/live$/${destination}/" sets/${target}-${destination}
 
-	for entry in $(grep ^@ sets/${target}) ; do
+	for entry in $(grep ^@ sets/${target}-live) ; do
+		entry=${entry/-live/}
 		bump_set_from_live ${entry/@/} ${destination}
 	done
 }
@@ -115,7 +120,7 @@ create_keywords_files() {
 	pushd package.unmask > /dev/null
 	cp -r .${base}-live .${target}
 	pushd .${target} > /dev/null
-	rm ${base}*-live
+	rm *-live
 	ln -s  ../../../sets/${target} ${target}
 	for x in $(grep ^@ ../../../sets/${target}); do
 		ln -s ../../../sets/${x/@/} ${x/@/}
@@ -128,7 +133,7 @@ create_keywords_files() {
 	pushd package.accept_keywords > /dev/null
 	cp -r .${base}-live.base .${target}
 	pushd .${target} > /dev/null
-	rm ${base}*-live
+	rm *-live
 	ln -s  ../../../sets/${target} ${target}
 	for x in $(grep ^@ ../../../sets/${target}); do
 		ln -s ../../../sets/${x/@/} ${x/@/}
@@ -191,6 +196,9 @@ mask_from_live_set() {
 		author="$(git config --get user.name) <$(git config --get user.email)>"
 	fi
 	[[ -d profiles/package.mask ]] || mkdir profiles/package.mask
+	[[ -f profiles/package.mask/${filename} ]] && rm profiles/package.mask/${filename}
+
+	touch profiles/package.mask/${filename}
 	echo "# ${author} ($(date "+%Y-%m-%d"))" >> profiles/package.mask/${filename}
 	echo "# $(pretty_setname ${set}-${version}) mask" >> profiles/package.mask/${filename}
 	echo "# UNRELEASED" >> profiles/package.mask/${filename}

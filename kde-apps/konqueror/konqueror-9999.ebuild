@@ -5,7 +5,7 @@ EAPI=7
 
 ECM_HANDBOOK="optional"
 ECM_TEST="true"
-KFMIN=5.75.0
+KFMIN=5.81.0
 QTMIN=5.15.2
 VIRTUALX_REQUIRED="test"
 inherit flag-o-matic ecm kde.org optfeature
@@ -70,6 +70,7 @@ src_prepare() {
 
 src_configure() {
 	local mycmakeargs=(
+		-DCMAKE_DISABLE_FIND_PACKAGE_Hunspell=ON # requires fixing bug 634122
 		$(cmake_use_find_package activities KF5Activities)
 		$(cmake_use_find_package speech Qt5TextToSpeech)
 		$(cmake_use_find_package X X11)

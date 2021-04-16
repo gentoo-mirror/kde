@@ -6,7 +6,7 @@ EAPI=7
 ECM_HANDBOOK="forceoptional"
 ECM_TEST="true"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.75.0
+KFMIN=5.81.0
 QTMIN=5.15.2
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org optfeature
@@ -36,7 +36,6 @@ DEPEND="
 	>=kde-frameworks/kdbusaddons-${KFMIN}:5
 	>=kde-frameworks/ki18n-${KFMIN}:5
 	>=kde-frameworks/kiconthemes-${KFMIN}:5
-	>=kde-frameworks/kinit-${KFMIN}:5
 	>=kde-frameworks/kio-${KFMIN}:5=
 	>=kde-frameworks/kitemviews-${KFMIN}:5
 	>=kde-frameworks/kjobwidgets-${KFMIN}:5
