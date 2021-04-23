@@ -52,6 +52,7 @@ declare -A KDE_ORG_CATEGORIES=(
 	[app-office]=office
 	[app-text]=office
 	[dev-libs]=libraries
+	[dev-qt]=qt/qt
 	[dev-util]=sdk
 	[games-board]=games
 	[games-kids]=education
@@ -86,6 +87,13 @@ readonly KDE_ORG_CATEGORIES
 # category on invent.kde.org, with "kde" as fallback value.
 : ${KDE_ORG_CATEGORY:=${KDE_ORG_CATEGORIES[${CATEGORY}]:-kde}}
 
+# @ECLASS-VARIABLE: KDE_ORG_COMMIT
+# @DEFAULT_UNSET
+# @DESCRIPTION:
+# If set, instead of a regular release tarball, pull tar.gz snapshot from an
+# invent.kde.org repository identified by KDE_ORG_CATEGORY and KDE_ORG_NAME
+# at the desired COMMIT ID.
+
 # @ECLASS-VARIABLE: KDE_ORG_NAME
 # @DESCRIPTION:
 # If unset, default value is set to ${PN}.
@@ -119,11 +127,16 @@ esac
 # An array of $CATEGORY-$PV pairs of packages that are unreleased upstream.
 # Any package matching this will have fetch restriction enabled, and receive
 # a proper error message via pkg_nofetch.
-KDE_UNRELEASED=( kde-apps-21.04.0 )
+KDE_UNRELEASED=( )
 
 HOMEPAGE="https://kde.org/"
 
 case ${CATEGORY} in
+	dev-qt)
+		KDE_ORG_NAME=${QT5_MODULE:-${PN}}
+		HOMEPAGE="https://community.kde.org/Qt5PatchCollection
+			https://invent.kde.org/qt/qt/ https://www.qt.io/"
+		;;
 	kde-apps)
 		KDE_GEAR=true
 		;;
@@ -214,7 +227,13 @@ _kde.org_calculate_src_uri() {
 		esac
 	fi
 
-	SRC_URI="${_src_uri}${KDE_ORG_NAME}-${PV}.tar.xz"
+	if [[ -n ${KDE_ORG_COMMIT} ]]; then
+		SRC_URI="https://invent.kde.org/${KDE_ORG_CATEGORY}/${KDE_ORG_NAME}/-/"
+		SRC_URI+="archive/${KDE_ORG_COMMIT}/${KDE_ORG_NAME}-${KDE_ORG_COMMIT}.tar.gz"
+		SRC_URI+=" -> ${KDE_ORG_NAME}-${PV}-${KDE_ORG_COMMIT:0:8}.tar.gz"
+	else
+		SRC_URI="${_src_uri}${KDE_ORG_NAME}-${PV}.tar.xz"
+	fi
 
 	if _kde.org_is_unreleased ; then
 		RESTRICT+=" fetch"
@@ -235,6 +254,10 @@ _kde.org_calculate_live_repo() {
 	# This variable allows easy overriding of default kde mirror service
 	# (anongit) with anything else you might want to use.
 	EGIT_MIRROR=${EGIT_MIRROR:=https://invent.kde.org/${KDE_ORG_CATEGORY}}
+
+	if [[ ${PV} == ?.??.9999 && ${CATEGORY} = dev-qt ]]; then
+		EGIT_BRANCH="kde/$(ver_cut 1-2)"
+	fi
 
 	if [[ ${PV} == ??.??.49.9999 && ${KDE_GEAR} = true ]]; then
 		EGIT_BRANCH="release/$(ver_cut 1-2)"
@@ -260,13 +283,14 @@ case ${KDE_BUILD_TYPE} in
 	*)
 		_kde.org_calculate_src_uri
 		debug-print "${LINENO} ${ECLASS} ${FUNCNAME}: SRC_URI is ${SRC_URI}"
+		if [[ -n ${KDE_ORG_COMMIT} ]]; then
+			S=${WORKDIR}/${KDE_ORG_NAME}-${KDE_ORG_COMMIT}
+			[[ ${CATEGORY} == dev-qt ]] && QT5_BUILD_DIR="${S}_build"
+		else
+			S=${WORKDIR}/${KDE_ORG_NAME}-${PV}
+		fi
 		;;
 esac
-
-
-if [[ ${KDE_BUILD_TYPE} = release ]]; then
-	S=${WORKDIR}/${KDE_ORG_NAME}-${PV}
-fi
 
 # @FUNCTION: kde.org_pkg_nofetch
 # @DESCRIPTION:
