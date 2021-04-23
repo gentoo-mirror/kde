@@ -492,3 +492,4 @@ sys-auth/polkit-qt 9999: Qt wrapper around polkit-1 client libraries
 sys-block/partitionmanager 21.04.0 21.04.49.9999 9999: Utility for management of disks, partitions and file systems
 sys-libs/kpmcore 21.04.0 21.04.49.9999 9999: Library for managing partitions
 www-client/falkon 9999: Cross-platform web browser using QtWebEngine
+x11-themes/qtcurve 1.9.0_p20210412: Widget styles for Qt and GTK2
