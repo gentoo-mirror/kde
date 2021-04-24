@@ -27,6 +27,7 @@ dev-libs/kopeninghours 21.04.0 21.04.49.9999 9999: Library for parsing and evalu
 dev-libs/kosmindoormap 21.04.0 21.04.49.9999 9999: Data Model and Extraction System for Travel Reservation information
 dev-libs/kpeoplevcard 9999: Library to expose vcards to KPeople
 dev-libs/kproperty 9999: Property editing framework with editor widget similar to Qt Designer
+dev-libs/kpublictransport 21.04.0 21.04.49.9999 9999: Library for accessing public transport timetables and other information
 dev-libs/kreport 9999: Framework for creation and generation of reports in multiple formats
 dev-libs/kuserfeedback 9999: Framework to collect user feedback for applications via telemetry and surveys
 dev-libs/libphutil 9999: A collection of PHP utility classes
@@ -375,7 +376,6 @@ kde-misc/kio-gdrive 21.04.0 21.04.49.9999 9999: KIO Slave for Google Drive servi
 kde-misc/kio-stash 9999: KIO Slave and daemon to stash discontinuous file selections
 kde-misc/kolor-manager 9999: KControl module for Oyranos CMS cross desktop settings
 kde-misc/kooka 9999: Scanning application by KDE
-kde-misc/kpublictransport 21.04.0 21.04.49.9999 9999: Library for accessing public transport timetables and other information
 kde-misc/kregexpeditor 9999: GUI for creating and editing regular expressions
 kde-misc/krename 9999: Powerful batch file renamer
 kde-misc/krusader 9999: Advanced twin-panel (commander-style) file-manager with many extras
