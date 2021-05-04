@@ -6,7 +6,7 @@ EAPI=7
 ECM_HANDBOOK="forceoptional"
 KFMIN=5.74.0
 QTMIN=5.15.2
-inherit ecm kde.org
+inherit ecm kde.org optfeature
 
 DESCRIPTION="Advanced audio player based on KDE frameworks"
 HOMEPAGE="https://amarok.kde.org/"
@@ -111,11 +111,42 @@ pkg_postinst() {
 		echo "${1} ($(has_version ${1} || echo "not ")installed)"
 	}
 
-	if [[ -z "${REPLACING_VERSIONS}" ]]; then
-		elog "You'll have to configure amarok to use an external db server:"
-		use mariadb && elog "    $(pkg_is_installed dev-db/mariadb)" ||
-			elog "    $(pkg_is_installed dev-db/mysql)"
-		elog "Please read https://community.kde.org/Amarok/Community/MySQL for details on how"
-		elog "to configure the external db and migrate your data from the embedded database."
+	db_name() {
+		use mariadb && echo "MariaDB" || echo "MySQL"
+	}
+
+	optfeature "Audio CD support" kde-apps/audiocd-kio
+
+	if [[ -z ${REPLACING_VERSIONS} ]]; then
+		elog "You must configure ${PN} to use an external database server."
+		elog " 1. Make sure either MySQL or MariaDB is installed and configured"
+		elog "    Checking local system:"
+		elog "      $(pkg_is_installed dev-db/mariadb)"
+		elog "      $(pkg_is_installed dev-db/mysql)"
+		elog "    For preliminary configuration of $(db_name) Server refer to"
+		elog "    https://wiki.gentoo.org/wiki/$(db_name)#Configuration"
+		elog " 2. Ensure 'mysql' service is started and run:"
+		elog "    # emerge --config amarok"
+		elog " 3. Run ${PN} and go to 'Configure Amarok - Database' menu page"
+		elog "    Check 'Use external MySQL database' and press OK"
+		elog
+		elog "For more information please read:"
+		elog "  https://community.kde.org/Amarok/Community/MySQL"
 	fi
+}
+
+pkg_config() {
+	# Create external mysql database with amarok default user/password
+	local AMAROK_DB_NAME="amarokdb"
+	local AMAROK_DB_USER_NAME="amarokuser"
+	local AMAROK_DB_USER_PWD="password"
+
+	einfo "Initializing ${PN} MySQL database 'amarokdb':"
+	einfo "If prompted for a password, please enter your MySQL root password."
+	einfo
+
+	if [[ -e "${EROOT}"/usr/bin/mysql ]]; then
+		"${EROOT}"/usr/bin/mysql -u root -p -e "CREATE DATABASE IF NOT EXISTS ${AMAROK_DB_NAME}; GRANT ALL PRIVILEGES ON ${AMAROK_DB_NAME}.* TO '${AMAROK_DB_USER_NAME}' IDENTIFIED BY '${AMAROK_DB_USER_PWD}'; FLUSH PRIVILEGES;"
+	fi
+	einfo "${PN} MySQL database 'amarokdb' successfully initialized!"
 }
