@@ -9,7 +9,7 @@ KFMIN=9999
 PVCUT=$(ver_cut 1-3)
 QTMIN=5.15.2
 VIRTUALX_REQUIRED="test"
-inherit ecm kde.org
+inherit ecm kde.org optfeature
 
 DESCRIPTION="KDE Plasma desktop"
 XORGHDRS="${PN}-override-include-dirs-0"
@@ -136,6 +136,9 @@ src_prepare() {
 		sed -e "s/Qt5X11Extras_FOUND AND XCB_XCB_FOUND AND XCB_KEYSYMS_FOUND/false/" \
 			-i applets/kimpanel/backend/ibus/CMakeLists.txt || die
 	fi
+
+	use emoji || cmake_run_in applets/kimpanel/backend/ibus \
+		cmake_comment_add_subdirectory emojier
 }
 
 src_configure() {
@@ -167,4 +170,11 @@ src_test() {
 	)
 
 	ecm_src_test
+}
+
+pkg_postinst() {
+	if [[ -z "${REPLACING_VERSIONS}" ]]; then
+		optfeature "screen reader support" app-accessibility/orca
+	fi
+	ecm_pkg_postinst
 }
