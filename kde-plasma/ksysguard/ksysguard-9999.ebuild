@@ -11,15 +11,15 @@ QTMIN=5.15.2
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
 
-DESCRIPTION="Network-enabled task manager and system monitor"
+DESCRIPTION="Network-enabled resource usage monitor"
+HOMEPAGE="https://apps.kde.org/ksysguard/ https://userbase.kde.org/KSysGuard"
 
 LICENSE="GPL-2+"
 SLOT="5"
 KEYWORDS=""
-IUSE="lm-sensors networkmanager"
+IUSE="lm-sensors"
 
 DEPEND="
-	dev-libs/libnl:3
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
@@ -38,21 +38,15 @@ DEPEND="
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/kwindowsystem-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
-	>=kde-frameworks/solid-${KFMIN}:5
+	>=kde-plasma/ksystemstats-${PVCUT}:5
 	>=kde-plasma/libksysguard-${PVCUT}:5
-	net-libs/libpcap
-	sys-libs/libcap
-	virtual/libudev:=
 	lm-sensors? ( sys-apps/lm-sensors:= )
-	networkmanager? ( >=kde-frameworks/networkmanager-qt-${KFMIN}:5 )
 "
 RDEPEND="${DEPEND}"
 
 src_configure() {
 	local mycmakeargs=(
 		$(cmake_use_find_package lm-sensors Sensors)
-		$(cmake_use_find_package networkmanager KF5NetworkManagerQt)
 	)
-
 	ecm_src_configure
 }
