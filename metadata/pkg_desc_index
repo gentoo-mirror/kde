@@ -374,7 +374,6 @@ kde-misc/kdiff3 9999: Frontend to diff3 based on KDE Frameworks
 kde-misc/kio-fuse 9999: FUSE interface for KIO
 kde-misc/kio-gdrive 21.04.49.9999 9999: KIO Slave for Google Drive service
 kde-misc/kio-stash 9999: KIO Slave and daemon to stash discontinuous file selections
-kde-misc/kolor-manager 9999: KControl module for Oyranos CMS cross desktop settings
 kde-misc/kooka 9999: Scanning application by KDE
 kde-misc/kregexpeditor 9999: GUI for creating and editing regular expressions
 kde-misc/krename 9999: Powerful batch file renamer
@@ -454,7 +453,6 @@ media-gfx/krita 9999: Free digital painting application. Digital Painting, Creat
 media-gfx/kxstitch 9999: Program to create cross stitch patterns
 media-gfx/peruse 9999: Comic book reader
 media-gfx/symboleditor 9999: Application to create libraries of QPainterPath objects with rendering hints
-media-gfx/synnefo 9999: Qt front end for the Oyranos Color Management System
 media-libs/kquickimageeditor 9999: QtQuick components providing basic image editing capabilities
 media-libs/liblastfm 9999: Collection of libraries to integrate Last.fm services
 media-libs/libqaccessibilityclient 9999: Library for writing accessibility clients such as screen readers
