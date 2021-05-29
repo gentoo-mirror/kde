@@ -3,7 +3,6 @@
 
 EAPI=7
 
-BOGUS=1
 KFMIN=9999
 PVCUT=$(ver_cut 1-3)
 QTMIN=5.15.2
@@ -36,5 +35,3 @@ DEPEND="
 RDEPEND="${DEPEND}
 	>=kde-plasma/kde-cli-tools-${PVCUT}:5
 "
-
-DOCS=( CONTRIBUTORS )
