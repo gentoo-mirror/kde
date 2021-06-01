@@ -33,7 +33,6 @@ dev-libs/kuserfeedback 9999: Framework to collect user feedback for applications
 dev-libs/libphutil 9999: A collection of PHP utility classes
 dev-libs/mauikit 9999: Templated convergent controls and multiplatform utilities for Maui applications
 dev-libs/plasma-wayland-protocols 9999: Plasma Specific Protocols for Wayland
-dev-python/parse_cmake 0.4.1-r1: Parser for CMakeLists.txt files
 dev-util/arcanist 9999: Command line interface for Phabricator
 dev-util/kdbg 9999: Graphical debugger interface
 dev-util/kdevelop 5.6.9999 9999: Integrated Development Environment, supporting KF5/Qt, C/C++ and much more
