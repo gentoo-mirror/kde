@@ -8,5 +8,5 @@ LICENSE=Apache-2.0
 PROPERTIES=live
 RDEPEND=dev-lang/php
 SLOT=0
-_eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52
+_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
 _md5_=7942693effa2761c96a93dd5b0ebf833
