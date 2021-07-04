@@ -68,17 +68,11 @@ DEPEND="${RDEPEND}
 		x11-libs/libXrender
 	)
 "
-PDEPEND="
-	>=kde-frameworks/kded-${PVCUT}:5
-"
-
-PATCHES=(
-	# pending https://invent.kde.org/frameworks/kio/-/merge_requests/426
-	"${FILESDIR}"/${PN}-5.84.0-fix-qtconcurrent-private-link.patch # bug 784971
-)
+PDEPEND=">=kde-frameworks/kded-${PVCUT}:5"
 
 src_configure() {
 	local mycmakeargs=(
+		-DKIO_NO_PUBLIC_QTCONCURRENT=ON
 		$(cmake_use_find_package acl ACL)
 		$(cmake_use_find_package handbook KF5DocTools)
 		$(cmake_use_find_package kerberos GSSAPI)
