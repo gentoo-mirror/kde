@@ -6,7 +6,7 @@ EAPI=7
 ECM_HANDBOOK="forceoptional"
 ECM_TEST="forceoptional"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.81.0
+KFMIN=5.85.0
 QTMIN=5.15.2
 inherit ecm kde.org
 
@@ -46,7 +46,7 @@ DEPEND="
 	x11-libs/xcb-util
 	x11-libs/xcb-util-cursor
 	x11-libs/xcb-util-image
-	annotate? ( >=media-libs/kimageannotator-0.4.1 )
+	annotate? ( >=media-libs/kimageannotator-0.5.0 )
 	kipi? ( >=kde-apps/libkipi-${PVCUT}:5= )
 	share? ( >=kde-frameworks/purpose-${KFMIN}:5 )
 "

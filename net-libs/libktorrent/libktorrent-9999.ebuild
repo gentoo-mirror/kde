@@ -6,7 +6,7 @@ EAPI=7
 ECM_TEST="forceoptional"
 KDE_GEAR="true"
 KDE_ORG_CATEGORY="network"
-KFMIN=5.81.0
+KFMIN=5.85.0
 QTMIN=5.15.2
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
@@ -19,7 +19,6 @@ SLOT="5"
 KEYWORDS=""
 IUSE=""
 
-BDEPEND="sys-devel/gettext"
 COMMON_DEPEND="
 	>=app-crypt/qca-2.3.0:2
 	>=dev-libs/gmp-6.0.0a:0=
@@ -35,11 +34,12 @@ COMMON_DEPEND="
 	>=kde-frameworks/solid-${KFMIN}:5
 "
 DEPEND="${COMMON_DEPEND}
-	dev-libs/boost
+	>=dev-libs/boost-1.71
 "
 RDEPEND="${COMMON_DEPEND}
 	!dev-libs/botan[gmp(-)]
 "
+BDEPEND="sys-devel/gettext"
 
 src_prepare() {
 	ecm_src_prepare

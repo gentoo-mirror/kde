@@ -5,7 +5,7 @@ EAPI=7
 
 ECM_HANDBOOK="forceoptional"
 PYTHON_COMPAT=( python3_{8,9} )
-KFMIN=5.81.0
+KFMIN=5.85.0
 QTMIN=5.15.2
 inherit python-single-r1 ecm kde.org optfeature
 
@@ -25,7 +25,6 @@ DEPEND="${PYTHON_DEPS}
 	>=app-text/hunspell-1.2.8:=
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
-	>=dev-qt/qtscript-${QTMIN}:5
 	>=dev-qt/qtsql-${QTMIN}:5[sqlite]
 	>=dev-qt/qtwidgets-${QTMIN}:5
 	>=dev-qt/qtxml-${QTMIN}:5

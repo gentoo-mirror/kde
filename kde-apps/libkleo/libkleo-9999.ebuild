@@ -3,9 +3,9 @@
 
 EAPI=7
 
-ECM_TEST="false"
+ECM_TEST="true"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.81.0
+KFMIN=5.85.0
 QTMIN=5.15.2
 inherit ecm kde.org
 
@@ -17,7 +17,7 @@ KEYWORDS=""
 IUSE="+fancyviewer"
 
 RDEPEND="
-	>=app-crypt/gpgme-1.13.1[cxx,qt5]
+	>=app-crypt/gpgme-1.16.0[cxx,qt5]
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
 	>=kde-frameworks/kcodecs-${KFMIN}:5

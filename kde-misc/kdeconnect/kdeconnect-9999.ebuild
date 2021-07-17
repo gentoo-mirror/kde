@@ -8,7 +8,7 @@ ECM_TEST="true"
 KDE_GEAR="true"
 KDE_ORG_NAME="${PN}-kde"
 KDE_SELINUX_MODULE="${PN}"
-KFMIN=5.81.0
+KFMIN=5.85.0
 QTMIN=5.15.2
 inherit ecm kde.org
 
@@ -48,6 +48,7 @@ DEPEND="
 	>=kde-frameworks/kservice-${KFMIN}:5
 	>=kde-frameworks/kwayland-${KFMIN}:5
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
+	>=kde-frameworks/kwindowsystem-${KFMIN}:5
 	>=kde-frameworks/plasma-${KFMIN}:5
 	>=kde-frameworks/solid-${KFMIN}:5
 	bluetooth? ( >=dev-qt/qtbluetooth-${QTMIN}:5 )
@@ -65,6 +66,8 @@ RDEPEND="${DEPEND}
 	>=kde-frameworks/kdeclarative-${KFMIN}:5
 	net-fs/sshfs
 "
+
+PATCHES=( "${FILESDIR}/${PN}-21.07.80-revert-disable-kpeople.patch" )
 
 src_configure() {
 	local mycmakeargs=(

@@ -9,7 +9,7 @@ ECM_TEST="forceoptional"
 LUA_COMPAT=( luajit )
 PYTHON_COMPAT=( python3_{8,9} )
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.81.0
+KFMIN=5.85.0
 QTMIN=5.15.2
 inherit ecm kde.org lua-single optfeature python-single-r1
 
@@ -22,13 +22,16 @@ KEYWORDS=""
 IUSE="+analitza julia lua postscript python qalculate R"
 
 REQUIRED_USE="lua? ( ${LUA_REQUIRED_USE} ) python? ( ${PYTHON_REQUIRED_USE} )"
+RESTRICT+=" test"
 
 # TODO Add Sage Mathematics Software backend (https://www.sagemath.org)
 DEPEND="
 	app-text/poppler[qt5]
 	>=dev-qt/qtgui-${QTMIN}:5
+	>=dev-qt/qthelp-${QTMIN}:5
 	>=dev-qt/qtprintsupport-${QTMIN}:5
 	>=dev-qt/qtsvg-${QTMIN}:5
+	>=dev-qt/qtwebengine-${QTMIN}:5[widgets]
 	>=dev-qt/qtwidgets-${QTMIN}:5
 	>=dev-qt/qtxml-${QTMIN}:5
 	>=dev-qt/qtxmlpatterns-${QTMIN}:5
@@ -71,8 +74,7 @@ RDEPEND="${DEPEND}
 		)
 	) ) ) ) ) )
 "
-
-RESTRICT+=" test"
+BDEPEND="x11-misc/shared-mime-info"
 
 pkg_setup() {
 	use lua && lua-single_pkg_setup

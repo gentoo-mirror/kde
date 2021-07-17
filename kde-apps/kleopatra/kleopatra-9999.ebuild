@@ -6,7 +6,7 @@ EAPI=7
 ECM_HANDBOOK="optional"
 ECM_TEST="forceoptional"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.81.0
+KFMIN=5.85.0
 QTMIN=5.15.2
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
@@ -20,7 +20,7 @@ KEYWORDS=""
 IUSE=""
 
 DEPEND="
-	>=app-crypt/gpgme-1.13.1[cxx,qt5]
+	>=app-crypt/gpgme-1.16.0[cxx,qt5]
 	dev-libs/boost:=
 	dev-libs/libassuan
 	dev-libs/libgpg-error

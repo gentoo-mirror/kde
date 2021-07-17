@@ -5,7 +5,7 @@ EAPI=7
 
 ECM_HANDBOOK="forceoptional"
 ECM_TEST="forceoptional"
-KFMIN=5.81.0
+KFMIN=5.85.0
 QTMIN=5.15.2
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
@@ -47,7 +47,7 @@ RDEPEND="
 	>=kde-frameworks/kwindowsystem-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
 	>=kde-frameworks/solid-${KFMIN}:5
-	bittorrent? ( net-libs/libktorrent:5 )
+	bittorrent? ( >=net-libs/libktorrent-21.07.80:5 )
 	gpg? ( app-crypt/gpgme[qt5] )
 	kde? ( kde-plasma/libkworkspace:5 )
 	mms? ( media-libs/libmms )
