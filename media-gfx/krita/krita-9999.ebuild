@@ -35,8 +35,8 @@ RDEPEND="${PYTHON_DEPS}
 	dev-libs/boost:=
 	dev-libs/quazip:0=
 	$(python_gen_cond_dep '
-		dev-python/PyQt5[${PYTHON_MULTI_USEDEP}]
-		dev-python/sip[${PYTHON_MULTI_USEDEP}]
+		dev-python/PyQt5[${PYTHON_USEDEP}]
+		dev-python/sip:=[${PYTHON_USEDEP}]
 	')
 	>=dev-qt/qtconcurrent-${QTMIN}:5
 	>=dev-qt/qtdbus-${QTMIN}:5
@@ -76,7 +76,7 @@ RDEPEND="${PYTHON_DEPS}
 	mypaint-brush-engine? ( media-libs/libmypaint:= )
 	openexr? (
 		media-libs/ilmbase:=
-		media-libs/openexr
+		<media-libs/openexr-3.0.0:0=
 	)
 	pdf? ( app-text/poppler[qt5] )
 	qtmedia? ( >=dev-qt/qtmultimedia-${QTMIN}:5 )
