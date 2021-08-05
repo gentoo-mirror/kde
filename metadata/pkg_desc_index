@@ -132,7 +132,7 @@ kde-apps/kdegraphics-mobipocket 21.07.90 21.08.49.9999 9999: Library to support 
 kde-apps/kdemultimedia-meta 21.07.90 21.08.49.9999 9999: kdemultimedia - merge this to pull in all kdemultimedia-derived packages
 kde-apps/kdenetwork-filesharing 21.07.90 21.08.49.9999 9999: Samba filesharing plugin for file properties
 kde-apps/kdenetwork-meta 21.07.90 21.08.49.9999 9999: kdenetwork - merge this to pull in all kdenetwork-derived packages
-kde-apps/kdenlive 21.08.49.9999 9999: Non-linear video editing suite by KDE
+kde-apps/kdenlive 21.07.90 21.08.49.9999 9999: Non-linear video editing suite by KDE
 kde-apps/kdepim-addons 21.07.90 21.08.49.9999 9999: Plugins for KDE Personal Information Management Suite
 kde-apps/kdepim-meta 21.07.90 21.08.49.9999 9999: KDE PIM - merge this to pull in all kdepim-derived packages
 kde-apps/kdepim-runtime 21.07.90 21.08.49.9999 9999: Runtime plugin collection to extend the functionality of KDE PIM
