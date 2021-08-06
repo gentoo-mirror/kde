@@ -3,34 +3,35 @@
 
 EAPI=7
 
-ECM_DESIGNERPLUGIN="true"
-ECM_TEST="forceoptional"
+ECM_HANDBOOK="true"
+ECM_QTHELP="false"
 PVCUT=$(ver_cut 1-2)
 QTMIN=5.15.2
 VIRTUALX_REQUIRED="test"
-inherit ecm kde.org xdg-utils
+inherit ecm kde.org
 
-DESCRIPTION="Framework providing transparent file and data management"
-
+DESCRIPTION="Framework easing the development transition from KDELibs 4 to KF 5"
 LICENSE="LGPL-2+"
-KEYWORDS=""
-IUSE="acl +handbook kerberos +kwallet X"
+KEYWORDS="~amd64 ~arm ~arm64 ~ppc64 ~x86"
+IUSE="X"
 
-# tests hang
 RESTRICT+=" test"
 
-RDEPEND="
-	dev-libs/libxml2
-	dev-libs/libxslt
+BDEPEND="
+	dev-lang/perl
+	dev-perl/URI
+"
+COMMON_DEPEND="
+	app-text/docbook-xml-dtd:4.2
+	dev-libs/openssl:0
 	>=dev-qt/qtdbus-${QTMIN}:5
-	>=dev-qt/qtdeclarative-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtnetwork-${QTMIN}:5[ssl]
+	>=dev-qt/qtprintsupport-${QTMIN}:5
+	>=dev-qt/qtsvg-${QTMIN}:5
+	>=dev-qt/qttest-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
-	>=dev-qt/qtxml-${QTMIN}:5
 	=kde-frameworks/kauth-${PVCUT}*:5
-	=kde-frameworks/karchive-${PVCUT}*:5
-	=kde-frameworks/kbookmarks-${PVCUT}*:5
 	=kde-frameworks/kcodecs-${PVCUT}*:5
 	=kde-frameworks/kcompletion-${PVCUT}*:5
 	=kde-frameworks/kconfig-${PVCUT}*:5
@@ -38,58 +39,60 @@ RDEPEND="
 	=kde-frameworks/kcoreaddons-${PVCUT}*:5
 	=kde-frameworks/kcrash-${PVCUT}*:5
 	=kde-frameworks/kdbusaddons-${PVCUT}*:5
+	>=kde-frameworks/kded-${PVCUT}:5
+	=kde-frameworks/kdoctools-${PVCUT}*:5
+	=kde-frameworks/kemoticons-${PVCUT}*:5
+	=kde-frameworks/kglobalaccel-${PVCUT}*:5
 	=kde-frameworks/kguiaddons-${PVCUT}*:5
 	=kde-frameworks/ki18n-${PVCUT}*:5
 	=kde-frameworks/kiconthemes-${PVCUT}*:5
+	=kde-frameworks/kio-${PVCUT}*:5
 	=kde-frameworks/kitemviews-${PVCUT}*:5
 	=kde-frameworks/kjobwidgets-${PVCUT}*:5
 	=kde-frameworks/knotifications-${PVCUT}*:5
+	=kde-frameworks/kparts-${PVCUT}*:5
 	=kde-frameworks/kservice-${PVCUT}*:5
 	=kde-frameworks/ktextwidgets-${PVCUT}*:5
+	=kde-frameworks/kunitconversion-${PVCUT}*:5
 	=kde-frameworks/kwidgetsaddons-${PVCUT}*:5
 	=kde-frameworks/kwindowsystem-${PVCUT}*:5
 	=kde-frameworks/kxmlgui-${PVCUT}*:5
 	=kde-frameworks/solid-${PVCUT}*:5
-	sys-apps/util-linux
-	acl? (
-		sys-apps/attr
-		virtual/acl
-	)
-	handbook? ( =kde-frameworks/kdoctools-${PVCUT}*:5 )
-	kerberos? ( virtual/krb5 )
-	kwallet? ( =kde-frameworks/kwallet-${PVCUT}*:5 )
-	X? ( >=dev-qt/qtx11extras-${QTMIN}:5 )
-"
-DEPEND="${RDEPEND}
-	>=dev-qt/qtconcurrent-${QTMIN}:5
-	test? ( sys-libs/zlib )
+	virtual/libintl
 	X? (
-		x11-base/xorg-proto
+		>=dev-qt/qtx11extras-${QTMIN}:5
+		x11-libs/libICE
+		x11-libs/libSM
 		x11-libs/libX11
-		x11-libs/libXrender
+		x11-libs/libxcb
 	)
 "
-PDEPEND=">=kde-frameworks/kded-${PVCUT}:5"
+DEPEND="${COMMON_DEPEND}
+	test? ( >=dev-qt/qtconcurrent-${QTMIN}:5 )
+	X? ( x11-base/xorg-proto )
+"
+RDEPEND="${COMMON_DEPEND}
+	>=dev-qt/qtxml-${QTMIN}:5
+	=kde-frameworks/kinit-${PVCUT}*:5
+	=kde-frameworks/kitemmodels-${PVCUT}*:5
+"
+
+PATCHES=(
+	"${FILESDIR}/${PN}-5.80.0-no-kdesignerplugin.patch"
+	"${FILESDIR}/${PN}-5.82.0-unused-dep.patch"
+)
+
+src_prepare() {
+	ecm_src_prepare
+	if ! use handbook; then
+		sed -e "/kdoctools_install/ s/^/#DONT/" -i CMakeLists.txt || die
+	fi
+}
 
 src_configure() {
 	local mycmakeargs=(
-		-DKIO_NO_PUBLIC_QTCONCURRENT=ON
-		$(cmake_use_find_package acl ACL)
-		$(cmake_use_find_package handbook KF5DocTools)
-		$(cmake_use_find_package kerberos GSSAPI)
-		$(cmake_use_find_package kwallet KF5Wallet)
 		$(cmake_use_find_package X X11)
 	)
 
 	ecm_src_configure
-}
-
-pkg_postinst() {
-	ecm_pkg_postinst
-	xdg_desktop_database_update
-}
-
-pkg_postrm() {
-	ecm_pkg_postrm
-	xdg_desktop_database_update
 }
