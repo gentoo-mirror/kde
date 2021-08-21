@@ -5,7 +5,7 @@ EAPI=8
 
 ECM_HANDBOOK="optional"
 ECM_TEST="optional"
-KFMIN=5.74.0
+KFMIN=5.82.0
 QTMIN=5.15.2
 inherit ecm kde.org optfeature
 
@@ -22,7 +22,7 @@ LICENSE="GPL-2"
 SLOT="5"
 IUSE="webengine"
 
-RESTRICT+=" test"
+RESTRICT="test"
 
 DEPEND="
 	app-text/poppler[qt5]

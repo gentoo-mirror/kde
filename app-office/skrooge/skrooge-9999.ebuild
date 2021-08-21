@@ -5,7 +5,7 @@ EAPI=8
 
 ECM_HANDBOOK="optional"
 ECM_TEST="forceoptional"
-KFMIN=5.74.0
+KFMIN=5.82.0
 QTMIN=5.15.2
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
@@ -23,7 +23,7 @@ SLOT="5"
 IUSE="activities kde ofx"
 
 # hangs + installs files (also requires KF5DesignerPlugin)
-RESTRICT+=" test"
+RESTRICT="test"
 
 COMMON_DEPEND="
 	>=app-crypt/qca-2.3.0:2

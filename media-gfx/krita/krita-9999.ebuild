@@ -5,7 +5,7 @@ EAPI=8
 
 ECM_TEST="forceoptional"
 PYTHON_COMPAT=( python3_{8,9} )
-KFMIN=5.74.0
+KFMIN=5.82.0
 QTMIN=5.15.2
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org python-single-r1
@@ -24,7 +24,7 @@ IUSE="color-management fftw gif +gsl heif +jpeg +mypaint-brush-engine openexr pd
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 # bug 630508
-RESTRICT+=" test"
+RESTRICT="test"
 
 BDEPEND="
 	dev-cpp/eigen:3

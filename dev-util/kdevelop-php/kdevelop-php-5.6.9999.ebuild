@@ -8,7 +8,7 @@ ECM_HANDBOOK_DIR="docs"
 ECM_TEST="true"
 KDE_ORG_CATEGORY="kdevelop"
 KDE_ORG_NAME="kdev-php"
-KFMIN=5.77.0
+KFMIN=5.82.0
 QTMIN=5.15.2
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
@@ -25,7 +25,7 @@ SLOT="5"
 IUSE=""
 
 # remaining tests fail for some, bug 668530
-RESTRICT+=" test"
+RESTRICT="test"
 
 BDEPEND="
 	test? ( dev-util/kdevelop:5[test] )

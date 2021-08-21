@@ -5,7 +5,7 @@ EAPI=8
 
 ECM_HANDBOOK="forceoptional"
 ECM_TEST="forceoptional"
-KFMIN=5.74.0
+KFMIN=5.82.0
 QTMIN=5.15.2
 inherit ecm kde.org
 
@@ -74,7 +74,7 @@ RDEPEND="${DEPEND}
 	>=dev-qt/qtsvg-${QTMIN}:5
 "
 
-RESTRICT+=" test"
+RESTRICT="test"
 
 src_configure() {
 	local mycmakeargs=(

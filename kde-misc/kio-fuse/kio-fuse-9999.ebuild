@@ -4,7 +4,7 @@
 EAPI=8
 
 ECM_TEST="true"
-KFMIN=5.74.0
+KFMIN=5.82.0
 QTMIN=5.15.2
 inherit ecm kde.org linux-info
 
@@ -20,7 +20,7 @@ LICENSE="GPL-3+"
 SLOT="5"
 IUSE=""
 
-RESTRICT+=" test" # depend on fuse kernel module
+RESTRICT="test" # depend on fuse kernel module
 
 DEPEND="
 	>=dev-qt/qtdbus-${QTMIN}:5

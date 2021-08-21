@@ -6,7 +6,7 @@ EAPI=8
 CHECKREQS_DISK_BUILD="4G"
 ECM_HANDBOOK="forceoptional"
 ECM_TEST="forceoptional"
-KFMIN=5.74.0
+KFMIN=5.82.0
 QTMIN=5.15.2
 inherit check-reqs ecm kde.org
 
@@ -26,7 +26,7 @@ IUSE="activities +charts +crypt +fontconfig gemini gsl +import-filter +lcms
 	okular openexr +pdf phonon spacenav +truetype X
 	$(printf 'calligra_features_%s ' ${CAL_FTS[@]})"
 
-RESTRICT+=" test"
+RESTRICT="test"
 
 # TODO: Not packaged: Cauchy (https://bitbucket.org/cyrille/cauchy)
 # Required for the matlab/octave formula tool

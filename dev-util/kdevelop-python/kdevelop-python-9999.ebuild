@@ -7,7 +7,7 @@ ECM_TEST="forceoptional"
 KDE_ORG_CATEGORY="kdevelop"
 KDE_ORG_NAME="kdev-python"
 PYTHON_COMPAT=( python3_{8,9} )
-KFMIN=5.77.0
+KFMIN=5.82.0
 QTMIN=5.15.2
 inherit ecm kde.org python-single-r1
 
@@ -23,7 +23,7 @@ SLOT="5"
 IUSE=""
 
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
-RESTRICT+=" test"
+RESTRICT="test"
 
 DEPEND="${PYTHON_DEPS}
 	>=dev-qt/qtgui-${QTMIN}:5

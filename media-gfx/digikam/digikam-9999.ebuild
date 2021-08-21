@@ -3,7 +3,7 @@
 
 EAPI=8
 
-KFMIN=5.74.0
+KFMIN=5.82.0
 QTMIN=5.15.2
 inherit ecm kde.org toolchain-funcs
 
@@ -27,7 +27,7 @@ SLOT="5"
 IUSE="addressbook calendar gphoto2 heif +imagemagick +lensfun marble mediaplayer mysql opengl openmp +panorama scanner semantic-desktop X"
 
 # bug 366505
-RESTRICT+=" test"
+RESTRICT="test"
 
 COMMON_DEPEND="
 	dev-libs/expat
