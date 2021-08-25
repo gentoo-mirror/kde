@@ -1,17 +1,17 @@
 BDEPEND=sys-devel/bison sys-devel/flex dev-util/ninja >=dev-util/cmake-3.20 >=kde-frameworks/extra-cmake-modules-5.85.0:5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install nofetch postinst postrm preinst prepare setup test unpack
-DEPEND=>=dev-libs/kpublictransport-9999:5 >=dev-qt/qtdeclarative-5.15.2:5 >=kde-frameworks/kholidays-5.85.0:5 >=kde-frameworks/ki18n-5.85.0:5 sys-libs/zlib python? ( python_single_target_python3_8? ( >=dev-libs/boost-1.70:=[python,python_targets_python3_8(-)] ) python_single_target_python3_9? ( >=dev-libs/boost-1.70:=[python,python_targets_python3_9(-)] ) ) test? ( dev-qt/qttest:5 ) dev-qt/qtcore:5
+DEPEND=>=dev-libs/kpublictransport-9999:5 >=dev-qt/qtdeclarative-5.15.2:5 >=kde-frameworks/kholidays-5.85.0:5 >=kde-frameworks/ki18n-5.85.0:5 sys-libs/zlib python? ( python_single_target_python3_8? ( >=dev-libs/boost-1.70:=[python,python_targets_python3_8(-)] ) python_single_target_python3_9? ( >=dev-libs/boost-1.70:=[python,python_targets_python3_9(-)] ) python_single_target_python3_10? ( >=dev-libs/boost-1.70:=[python,python_targets_python3_10(-)] ) ) test? ( dev-qt/qttest:5 ) dev-qt/qtcore:5
 DESCRIPTION=Library for parsing and evaluating OSM opening hours expressions
 EAPI=8
 HOMEPAGE=https://api.kde.org/kopeninghours/html/index.html https://invent.kde.org/libraries/kopeninghours
 IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
 INHERIT=ecm kde.org python-single-r1
-IUSE=python debug test python_single_target_python3_8 python_single_target_python3_9
+IUSE=python debug test python_single_target_python3_8 python_single_target_python3_9 python_single_target_python3_10
 LICENSE=LGPL-2+
 PROPERTIES=live
-RDEPEND=>=dev-libs/kpublictransport-9999:5 >=dev-qt/qtdeclarative-5.15.2:5 >=kde-frameworks/kholidays-5.85.0:5 >=kde-frameworks/ki18n-5.85.0:5 sys-libs/zlib python? ( python_single_target_python3_8? ( >=dev-libs/boost-1.70:=[python,python_targets_python3_8(-)] ) python_single_target_python3_9? ( >=dev-libs/boost-1.70:=[python,python_targets_python3_9(-)] ) ) python_single_target_python3_8? ( dev-lang/python:3.8 >=dev-lang/python-exec-2:=[python_targets_python3_8] ) python_single_target_python3_9? ( dev-lang/python:3.9 >=dev-lang/python-exec-2:=[python_targets_python3_9] ) >=dev-qt/qtquickcontrols2-5.15.2:5 || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-4 dev-qt/qtcore:5
-REQUIRED_USE=python? ( ^^ ( python_single_target_python3_8 python_single_target_python3_9 ) )
+RDEPEND=>=dev-libs/kpublictransport-9999:5 >=dev-qt/qtdeclarative-5.15.2:5 >=kde-frameworks/kholidays-5.85.0:5 >=kde-frameworks/ki18n-5.85.0:5 sys-libs/zlib python? ( python_single_target_python3_8? ( >=dev-libs/boost-1.70:=[python,python_targets_python3_8(-)] ) python_single_target_python3_9? ( >=dev-libs/boost-1.70:=[python,python_targets_python3_9(-)] ) python_single_target_python3_10? ( >=dev-libs/boost-1.70:=[python,python_targets_python3_10(-)] ) ) python_single_target_python3_8? ( dev-lang/python:3.8 >=dev-lang/python-exec-2:=[python_targets_python3_8] ) python_single_target_python3_9? ( dev-lang/python:3.9 >=dev-lang/python-exec-2:=[python_targets_python3_9] ) python_single_target_python3_10? ( dev-lang/python:3.10 >=dev-lang/python-exec-2:=[python_targets_python3_10] ) >=dev-qt/qtquickcontrols2-5.15.2:5 || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-4 dev-qt/qtcore:5
+REQUIRED_USE=python? ( ^^ ( python_single_target_python3_8 python_single_target_python3_9 python_single_target_python3_10 ) )
 RESTRICT=!test? ( test )
 SLOT=5
 _eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	xdg-utils	27f9a2f19502b925ac117bd657aa2979	cmake	fbb78cac193a78a95feeb78842b39cfa	virtualx	fa024aa649b6bd544144bf94893d402c	xdg	e73b9df80596ab8f9c542c01196dec23	ecm	ec0f980a773c39597c49dd5f593c937c	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	kde.org	ae7bc95c18d3cb7a5fe3643a8f630c64	python-utils-r1	08d890890f70fe0096093016e55438d5	python-single-r1	73f113f91928e0d16bceb65ecbcd8e75
-_md5_=d7e47caf8d7979f0b683e90b246b8398
+_md5_=0c85db30994644d0f8f085f5091f8388
