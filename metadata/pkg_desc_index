@@ -401,7 +401,7 @@ kde-plasma/discover 5.22.49.9999 9999: KDE Plasma resources management GUI
 kde-plasma/drkonqi 5.22.49.9999 9999: Plasma crash handler, gives the user feedback if a program crashed
 kde-plasma/kactivitymanagerd 5.22.49.9999 9999: System service to manage user's activities, track the usage patterns etc.
 kde-plasma/kde-cli-tools 5.22.49.9999 9999: Tools based on KDE Frameworks 5 to better interact with the system
-kde-plasma/kde-gtk-config 5.22.49.9999 9999: GTK2 and GTK3 configurator for KDE Plasma
+kde-plasma/kde-gtk-config 5.22.49.9999 9999: Syncs KDE Plasma theme settings to GTK applications
 kde-plasma/kdecoration 5.22.49.9999 9999: Plugin based library to create window decorations
 kde-plasma/kdeplasma-addons 5.22.49.9999 9999: Extra Plasma applets and engines
 kde-plasma/kgamma 5.22.49.9999 9999: Screen gamma values kcontrol module
@@ -411,7 +411,7 @@ kde-plasma/kmenuedit 5.22.49.9999 9999: KDE Plasma menu editor
 kde-plasma/kscreen 5.22.49.9999 9999: KDE Plasma screen management
 kde-plasma/kscreenlocker 5.22.49.9999 9999: Library and components for secure lock screen architecture
 kde-plasma/ksshaskpass 5.22.49.9999 9999: Implementation of ssh-askpass with KDE Wallet integration
-kde-plasma/ksysguard 5.21.90 9999: Network-enabled resource usage monitor
+kde-plasma/ksysguard 9999: Network-enabled resource usage monitor
 kde-plasma/ksystemstats 5.22.49.9999 9999: Plugin-based system monitoring daemon
 kde-plasma/kwallet-pam 5.22.49.9999 9999: PAM module to not enter KWallet password again after login
 kde-plasma/kwayland-integration 5.22.49.9999 9999: Provides integration plugins for various KDE frameworks for Wayland

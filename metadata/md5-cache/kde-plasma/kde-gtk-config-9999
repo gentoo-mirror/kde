@@ -1,7 +1,7 @@
 BDEPEND=dev-lang/sassc dev-util/ninja >=dev-util/cmake-3.20 test? ( x11-base/xorg-server[xvfb] x11-apps/xhost ) >=kde-frameworks/extra-cmake-modules-9999:5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install nofetch postinst postrm preinst prepare setup test unpack
-DEPEND=dev-cpp/glibmm:2 dev-libs/glib:2 >=dev-qt/qtdbus-5.15.2:5 >=dev-qt/qtgui-5.15.2:5 >=dev-qt/qtsvg-5.15.2:5 gnome-base/gsettings-desktop-schemas >=kde-frameworks/kconfig-9999:5 >=kde-frameworks/kconfigwidgets-9999:5 >=kde-frameworks/kcoreaddons-9999:5 >=kde-frameworks/kdbusaddons-9999:5 >=kde-frameworks/kguiaddons-9999:5 >=kde-plasma/kdecoration-9999:5 x11-libs/gtk+:2 x11-libs/gtk+:3 dev-qt/qtcore:5
-DESCRIPTION=GTK2 and GTK3 configurator for KDE Plasma
+DEPEND=dev-cpp/glibmm:2 dev-libs/glib:2 >=dev-qt/qtdbus-5.15.2:5 >=dev-qt/qtgui-5.15.2:5 >=dev-qt/qtsvg-5.15.2:5 gnome-base/gsettings-desktop-schemas >=kde-frameworks/kconfig-9999:5 >=kde-frameworks/kconfigwidgets-9999:5 >=kde-frameworks/kcoreaddons-9999:5 >=kde-frameworks/kdbusaddons-9999:5 >=kde-frameworks/kguiaddons-9999:5 >=kde-plasma/kdecoration-9999:5 x11-libs/gtk+:3 dev-qt/qtcore:5
+DESCRIPTION=Syncs KDE Plasma theme settings to GTK applications
 EAPI=8
 HOMEPAGE=https://invent.kde.org/plasma/kde-gtk-config
 IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
@@ -9,8 +9,8 @@ INHERIT=ecm kde.org
 IUSE=test debug
 LICENSE=GPL-3
 PROPERTIES=live
-RDEPEND=dev-cpp/glibmm:2 dev-libs/glib:2 >=dev-qt/qtdbus-5.15.2:5 >=dev-qt/qtgui-5.15.2:5 >=dev-qt/qtsvg-5.15.2:5 gnome-base/gsettings-desktop-schemas >=kde-frameworks/kconfig-9999:5 >=kde-frameworks/kconfigwidgets-9999:5 >=kde-frameworks/kcoreaddons-9999:5 >=kde-frameworks/kdbusaddons-9999:5 >=kde-frameworks/kguiaddons-9999:5 >=kde-plasma/kdecoration-9999:5 x11-libs/gtk+:2 x11-libs/gtk+:3 >=kde-plasma/kde-cli-tools-9999:5 x11-misc/xsettingsd || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-4 dev-qt/qtcore:5
+RDEPEND=dev-cpp/glibmm:2 dev-libs/glib:2 >=dev-qt/qtdbus-5.15.2:5 >=dev-qt/qtgui-5.15.2:5 >=dev-qt/qtsvg-5.15.2:5 gnome-base/gsettings-desktop-schemas >=kde-frameworks/kconfig-9999:5 >=kde-frameworks/kconfigwidgets-9999:5 >=kde-frameworks/kcoreaddons-9999:5 >=kde-frameworks/kdbusaddons-9999:5 >=kde-frameworks/kguiaddons-9999:5 >=kde-plasma/kdecoration-9999:5 x11-libs/gtk+:3 >=kde-plasma/kde-cli-tools-9999:5 x11-misc/xsettingsd || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-4 dev-qt/qtcore:5
 RESTRICT=!test? ( test )
 SLOT=5
 _eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	xdg-utils	27f9a2f19502b925ac117bd657aa2979	cmake	fbb78cac193a78a95feeb78842b39cfa	virtualx	fa024aa649b6bd544144bf94893d402c	xdg	e73b9df80596ab8f9c542c01196dec23	ecm	ec0f980a773c39597c49dd5f593c937c	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	kde.org	ae7bc95c18d3cb7a5fe3643a8f630c64
-_md5_=922a01e6a94325490a8997e4aa990170
+_md5_=5f88c9bd82868d4d7e61451567a8ce1f
