@@ -13,17 +13,14 @@ DESCRIPTION="Plasma framework"
 
 LICENSE="LGPL-2+"
 KEYWORDS=""
-IUSE="gles2-only wayland X"
+IUSE="gles2-only man wayland X"
 
 RESTRICT="test"
 
-BDEPEND="
-	>=kde-frameworks/kdoctools-${PVCUT}:5
-"
 RDEPEND="
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtdeclarative-${QTMIN}:5
-	>=dev-qt/qtgui-${QTMIN}:5[gles2-only=]
+	>=dev-qt/qtgui-${QTMIN}:5[gles2-only=,X=]
 	>=dev-qt/qtquickcontrols-${QTMIN}:5
 	>=dev-qt/qtsql-${QTMIN}:5
 	>=dev-qt/qtsvg-${QTMIN}:5
@@ -46,10 +43,10 @@ RDEPEND="
 	=kde-frameworks/kwidgetsaddons-${PVCUT}*:5
 	=kde-frameworks/kwindowsystem-${PVCUT}*:5
 	=kde-frameworks/kxmlgui-${PVCUT}*:5
-	!gles2-only? ( virtual/opengl )
+	!gles2-only? ( media-libs/libglvnd[X?] )
 	wayland? (
 		=kde-frameworks/kwayland-${PVCUT}*:5
-		media-libs/mesa[egl(+)]
+		media-libs/libglvnd
 	)
 	X? (
 		>=dev-qt/qtx11extras-${QTMIN}:5
@@ -60,10 +57,12 @@ RDEPEND="
 DEPEND="${RDEPEND}
 	X? ( x11-base/xorg-proto )
 "
+BDEPEND="man? ( >=kde-frameworks/kdoctools-${PVCUT}:5 )"
 
 src_configure() {
 	local mycmakeargs=(
 		$(cmake_use_find_package !gles2-only OpenGL)
+		$(cmake_use_find_package man KF5DocTools)
 		$(cmake_use_find_package wayland EGL)
 		$(cmake_use_find_package wayland KF5Wayland)
 		$(cmake_use_find_package X X11)
