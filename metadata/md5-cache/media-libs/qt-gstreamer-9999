@@ -1,4 +1,4 @@
-BDEPEND=dev-util/glib-utils >=dev-vcs/git-1.8.2.1[curl] dev-util/ninja >=dev-util/cmake-3.20
+BDEPEND=dev-util/glib-utils >=dev-vcs/git-1.8.2.1[curl] dev-util/ninja >=dev-util/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare test unpack
 DEPEND=dev-libs/boost:= dev-libs/glib:2 dev-qt/qtcore:5 dev-qt/qtdeclarative:5 dev-qt/qtgui:5 dev-qt/qtopengl:5 dev-qt/qtwidgets:5 media-libs/gstreamer:1.0 media-libs/gst-plugins-base:1.0 test? ( dev-qt/qttest:5 )
 DESCRIPTION=C++ bindings for GStreamer with a Qt-style API
@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=dev-libs/boost:= dev-libs/glib:2 dev-qt/qtcore:5 dev-qt/qtdeclarative:5 dev-qt/qtgui:5 dev-qt/qtopengl:5 dev-qt/qtwidgets:5 media-libs/gstreamer:1.0 media-libs/gst-plugins-base:1.0
 RESTRICT=test
 SLOT=0
-_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	xdg-utils	27f9a2f19502b925ac117bd657aa2979	cmake	fbb78cac193a78a95feeb78842b39cfa
+_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	xdg-utils	27f9a2f19502b925ac117bd657aa2979	cmake	11fee991ab428a3370e5c20fa8231fb6
 _md5_=fa765ddf2cee15935365e4d44e5424a9
