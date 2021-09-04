@@ -18,10 +18,9 @@ if [[ ${KDE_BUILD_TYPE} = release ]]; then
 fi
 
 LICENSE="LGPL-2.1"
-SLOT="0"
+SLOT="0/3"
 
 RDEPEND="
-	dev-libs/glib:2
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
 	media-sound/pulseaudio
@@ -32,3 +31,4 @@ DEPEND="${RDEPEND}
 		>=dev-qt/qtquickcontrols2-${QTMIN}:5
 	)
 "
+BDEPEND="virtual/pkgconfig"
