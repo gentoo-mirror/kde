@@ -7,5 +7,5 @@ INHERIT=kde.org
 LICENSE=GPL-3+
 PROPERTIES=live
 SLOT=5
-_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	kde.org	52a0b0bf658ad5ab07a5ee5190b8a8de
+_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	kde.org	5689498ef0807ff08db8f4a2b1420009
 _md5_=7c912671801c7c7c75825ec6dc1e1c35
