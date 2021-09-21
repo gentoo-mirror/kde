@@ -3,61 +3,48 @@
 
 EAPI=8
 
-ECM_HANDBOOK="forceoptional"
-KFMIN=5.84.0
+ECM_HANDBOOK="forceoptional" # not optional until !kdelibs4support
+KFMIN=5.86.0
+PVCUT=$(ver_cut 1-3)
 QTMIN=5.15.2
 inherit ecm kde.org
 
-DESCRIPTION="VNC-compatible server to share Plasma desktops"
-HOMEPAGE="https://apps.kde.org/krfb/"
+DESCRIPTION="KDE Plasma workspace hotkey module"
 
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"
 KEYWORDS=""
-IUSE="wayland"
+IUSE=""
 
 COMMON_DEPEND="
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
-	>=dev-qt/qtnetwork-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
 	>=dev-qt/qtx11extras-${QTMIN}:5
 	>=kde-frameworks/kcompletion-${KFMIN}:5
 	>=kde-frameworks/kconfig-${KFMIN}:5
 	>=kde-frameworks/kconfigwidgets-${KFMIN}:5
 	>=kde-frameworks/kcoreaddons-${KFMIN}:5
-	>=kde-frameworks/kcrash-${KFMIN}:5
 	>=kde-frameworks/kdbusaddons-${KFMIN}:5
-	>=kde-frameworks/kdnssd-${KFMIN}:5
+	>=kde-frameworks/kdelibs4support-${KFMIN}:5[X]
+	>=kde-frameworks/kglobalaccel-${KFMIN}:5
 	>=kde-frameworks/ki18n-${KFMIN}:5
-	>=kde-frameworks/knotifications-${KFMIN}:5
-	>=kde-frameworks/kwallet-${KFMIN}:5
+	>=kde-frameworks/kio-${KFMIN}:5
+	>=kde-frameworks/kservice-${KFMIN}:5
+	>=kde-frameworks/ktextwidgets-${KFMIN}:5
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/kwindowsystem-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
-	>=net-libs/libvncserver-0.9.9
+	>=kde-plasma/libkworkspace-${PVCUT}:5
 	x11-libs/libX11
-	x11-libs/libxcb
 	x11-libs/libXtst
-	x11-libs/xcb-util-image
-	wayland? (
-		media-libs/libepoxy
-		media-libs/mesa[gbm(+)]
-		>=media-video/pipewire-0.3:=
-	)
 "
 DEPEND="${COMMON_DEPEND}
-	wayland? ( media-libs/libglvnd )
+	x11-base/xorg-proto
+	x11-libs/libxcb
+	x11-libs/libXtst
 "
 RDEPEND="${COMMON_DEPEND}
-	wayland? ( sys-apps/xdg-desktop-portal[screencast] )
+	>=kde-frameworks/kded-${KFMIN}:5
+	>=kde-plasma/kde-cli-tools-${PVCUT}:5
 "
-
-src_prepare() {
-	ecm_src_prepare
-
-	# TODO: try to get a build switch upstreamed
-	if ! use wayland; then
-		sed -e "s/^pkg_check_modules.*PipeWire/#&/" -i CMakeLists.txt || die
-	fi
-}
