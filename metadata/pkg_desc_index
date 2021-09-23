@@ -427,7 +427,7 @@ kde-plasma/oxygen 5.22.90 5.23.49.9999 9999: Oxygen visual style for the Plasma 
 kde-plasma/plasma-browser-integration 5.22.90 5.23.49.9999 9999: Integrate Chrome/Firefox better into Plasma through browser extensions
 kde-plasma/plasma-desktop 5.22.90 5.23.49.9999 9999: KDE Plasma desktop
 kde-plasma/plasma-disks 5.22.90 5.23.49.9999 9999: Monitors S.M.A.R.T. capable devices for imminent failure
-kde-plasma/plasma-firewall 5.22.90 5.23.49.9999 9999: Plasma frontend for Firewalld or UFW
+kde-plasma/plasma-firewall 5.22.90-r1 5.23.49.9999 9999: Plasma frontend for Firewalld or UFW
 kde-plasma/plasma-integration 5.22.90 5.23.49.9999 9999: Qt Platform Theme integration plugins for the Plasma workspaces
 kde-plasma/plasma-meta 5.22.90 5.23.49.9999 9999: Merge this to pull in all Plasma 5 packages
 kde-plasma/plasma-nm 5.22.90 5.23.49.9999 9999: KDE Plasma applet for NetworkManager
