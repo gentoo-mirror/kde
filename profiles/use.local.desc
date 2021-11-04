@@ -162,7 +162,6 @@ kde-apps/marble:pbf - Enable OpenStreetMap PBF file support via dev-libs/protobu
 kde-apps/marble:phonon - Enable sound support via media-libs/phonon
 kde-apps/marble:shapefile - Enable support for ESRI shapefiles
 kde-apps/marble:webengine - Use dev-qt/qtwebengine for embedded web browser
-kde-apps/okular:chm - Enable support for Microsoft Compiled HTML Help files
 kde-apps/okular:epub - Enable E-Book support via app-text/ebook-tools
 kde-apps/okular:image-backend - Enable image viewing support
 kde-apps/okular:kwallet - Enable encrypted storage of passwords with kde-frameworks/kwallet
