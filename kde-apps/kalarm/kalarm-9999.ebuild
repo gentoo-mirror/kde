@@ -25,7 +25,6 @@ DEPEND="
 	>=kde-apps/akonadi-${PVCUT}:5
 	>=kde-apps/akonadi-contacts-${PVCUT}:5
 	>=kde-apps/akonadi-mime-${PVCUT}:5
-	>=kde-apps/grantleetheme-${PVCUT}:5
 	>=kde-apps/kalarmcal-${PVCUT}:5
 	>=kde-apps/kcalutils-${PVCUT}:5
 	>=kde-apps/kidentitymanagement-${PVCUT}:5
@@ -70,7 +69,6 @@ DEPEND="
 RDEPEND="${DEPEND}
 	>=kde-apps/kdepim-runtime-${PVCUT}:5
 "
-BDEPEND="dev-libs/libxslt"
 
 src_configure() {
 	local mycmakeargs=(
