@@ -17,7 +17,7 @@ HOMEPAGE="https://apps.kde.org/kontact/"
 LICENSE="GPL-2+ LGPL-2.1+"
 SLOT="5"
 KEYWORDS=""
-IUSE=""
+IUSE="speech"
 
 RESTRICT="test"
 
@@ -31,7 +31,6 @@ RDEPEND="
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtnetwork-${QTMIN}:5
 	>=dev-qt/qtnetworkauth-${QTMIN}:5
-	>=dev-qt/qtspeech-${QTMIN}:5
 	>=dev-qt/qtwebengine-${QTMIN}:5[widgets]
 	>=dev-qt/qtwidgets-${QTMIN}:5
 	>=dev-qt/qtxml-${QTMIN}:5
@@ -40,7 +39,6 @@ RDEPEND="
 	>=kde-apps/akonadi-contacts-${PVCUT}:5
 	>=kde-apps/akonadi-mime-${PVCUT}:5
 	>=kde-apps/akonadi-notes-${PVCUT}:5
-	>=kde-apps/grantleetheme-${PVCUT}:5
 	>=kde-apps/kalarmcal-${PVCUT}:5
 	>=kde-apps/kcalutils-${PVCUT}:5
 	>=kde-apps/kidentitymanagement-${PVCUT}:5
@@ -51,7 +49,6 @@ RDEPEND="
 	>=kde-apps/kmime-${PVCUT}:5
 	>=kde-apps/libkdepim-${PVCUT}:5
 	>=kde-apps/libkgapi-${PVCUT}:5
-	>=kde-apps/pimcommon-${PVCUT}:5
 	>=kde-frameworks/kcalendarcore-${KFMIN}:5
 	>=kde-frameworks/kcmutils-${KFMIN}:5
 	>=kde-frameworks/kcodecs-${KFMIN}:5
@@ -73,16 +70,17 @@ RDEPEND="
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/kwindowsystem-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
+	speech? ( >=dev-qt/qtspeech-${QTMIN}:5 )
 "
 DEPEND="${RDEPEND}
 	>=dev-qt/qtxmlpatterns-${QTMIN}:5
 	test? ( >=kde-apps/kimap-${PVCUT}:5[test] )
 "
-BDEPEND="dev-libs/libxslt"
 
 src_configure() {
 	local mycmakeargs=(
 		-DCMAKE_DISABLE_FIND_PACKAGE_Libkolabxml=ON
+		$(cmake-utils_use_find_package speech Qt5TextToSpeech)
 	)
 	ecm_src_configure
 }

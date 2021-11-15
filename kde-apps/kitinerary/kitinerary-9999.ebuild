@@ -3,6 +3,7 @@
 
 EAPI=8
 
+ECM_QTHELP="true"
 ECM_TEST="true"
 PVCUT=$(ver_cut 1-3)
 KFMIN=5.85.0
@@ -21,6 +22,9 @@ IUSE="+barcode pdf"
 REQUIRED_USE="test? ( pdf )"
 
 DEPEND="
+	dev-libs/libphonenumber
+	dev-libs/libxml2:2
+	dev-libs/openssl:=
 	>=dev-qt/qtdeclarative-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=kde-apps/kmime-${PVCUT}:5
@@ -34,9 +38,12 @@ DEPEND="
 	pdf? ( app-text/poppler:=[qt5] )
 "
 RDEPEND="${DEPEND}"
+BDEPEND="x11-misc/shared-mime-info"
 
 src_configure() {
 	local mycmakeargs=(
+		# sci-geosciences/osmctools; TODO: useful at all?
+		-DDISABLE_CMAKE_FIND_PACKAGE_OsmTools=ON
 		$(cmake_use_find_package barcode ZXing)
 		$(cmake_use_find_package pdf Poppler)
 	)
