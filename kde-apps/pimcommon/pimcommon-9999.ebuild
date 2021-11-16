@@ -4,6 +4,7 @@
 EAPI=8
 
 ECM_DESIGNERPLUGIN="true"
+ECM_QTHELP="true"
 ECM_TEST="forceoptional"
 PVCUT=$(ver_cut 1-3)
 KFMIN=5.85.0
@@ -18,10 +19,7 @@ SLOT="5"
 KEYWORDS=""
 IUSE=""
 
-BDEPEND="
-	dev-libs/libxslt
-"
-COMMON_DEPEND="
+DEPEND="
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtnetwork-${QTMIN}:5
@@ -52,10 +50,7 @@ COMMON_DEPEND="
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
 	>=kde-frameworks/purpose-${KFMIN}:5
 "
-DEPEND="${COMMON_DEPEND}
-	test? ( >=kde-apps/kmime-${PVCUT}:5 )
-"
-RDEPEND="${COMMON_DEPEND}
+RDEPEND="${DEPEND}
 	!<kde-apps/libkdepim-20.07.80:5
 "
 
