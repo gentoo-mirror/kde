@@ -310,7 +310,6 @@ kde-frameworks/kded 9999: Central daemon of KDE workspaces
 kde-frameworks/kdelibs4support 9999: Framework easing the development transition from KDELibs 4 to KF 5
 kde-frameworks/kdesignerplugin 9999: Framework providing plugins to use KDE frameworks widgets in QtDesigner
 kde-frameworks/kdesu 9999: Framework to handle super user actions
-kde-frameworks/kdewebkit 9999: Framework providing KDE integration of QtWebKit
 kde-frameworks/kdnssd 9999: Framework for network service discovery using Zeroconf
 kde-frameworks/kdoctools 9999: Tools to generate documentation in various formats from DocBook files
 kde-frameworks/kemoticons 9999: Framework for converting text emoticons to graphical representations
