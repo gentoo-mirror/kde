@@ -160,7 +160,7 @@ kde-apps/killbots 21.12.0 21.12.49.9999 9999: Kill the bots or they kill you!
 kde-apps/kimagemapeditor 21.12.0 21.12.49.9999 9999: Generator of HTML image maps
 kde-apps/kimap 21.11.90 21.12.0 21.12.49.9999 9999: Library for interacting with IMAP servers
 kde-apps/kio-extras 21.12.0 21.12.49.9999 9999: KIO plugins present a filesystem-like view of arbitrary data
-kde-apps/kipi-plugins 21.12.0 21.12.49.9999 9999: Plugins for the KDE Image Plugin Interface
+kde-apps/kipi-plugins 9999: Plugins for the KDE Image Plugin Interface
 kde-apps/kiriki 21.12.0 21.12.49.9999 9999: An addictive and fun dice game
 kde-apps/kiten 21.12.0 21.12.49.9999 9999: KDE Japanese dictionary and reference
 kde-apps/kitinerary 21.11.90 21.12.0 21.12.49.9999 9999: Data Model and Extraction System for Travel Reservation information
@@ -246,7 +246,7 @@ kde-apps/libkdepim 21.11.90 21.12.0 21.12.49.9999 9999: Common PIM libraries
 kde-apps/libkeduvocdocument 21.12.0 21.12.49.9999 9999: Library for reading/writing KVTML
 kde-apps/libkexiv2 21.12.0 21.12.49.9999 9999: Wrapper around exiv2 library
 kde-apps/libkgapi 21.11.90 21.12.0 21.12.49.9999 9999: Library for accessing Google calendar and contact resources
-kde-apps/libkipi 21.12.0 21.12.49.9999 9999: A library for image plugins accross KDE applications
+kde-apps/libkipi 9999: A library for image plugins accross KDE applications
 kde-apps/libkleo 21.11.90 21.12.0 21.12.49.9999 9999: Library for encryption handling
 kde-apps/libkmahjongg 21.12.0 21.12.49.9999 9999: Mahjongg library based on Qt/KDE Frameworks
 kde-apps/libkomparediff2 21.12.0 21.12.49.9999 9999: KDE library to compare files and strings
