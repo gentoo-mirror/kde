@@ -12,5 +12,5 @@ REQUIRED_USE=^^ ( python_single_target_python3_8 python_single_target_python3_9 
 RESTRICT=fetch
 SLOT=5/5.89
 SRC_URI=mirror://kde/stable/frameworks/5.89/kapidox-5.89.0.tar.xz
-_eclasses_=kde.org	30f9c4c55a4482b661ed0a4de8519fc1	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	4b66d835ec72e021e359bb81eacfe988	python-utils-r1	a8b7938ade305f087865de7e52d079b5	python-single-r1	d46c125afba8be02eb1cd7104bac6e9c	distutils-r1	8041037f74e1f9d149c038c2fe2c97cf
+_eclasses_=kde.org	94c9999f1c316099e0458f3c3c275e0a	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	4b66d835ec72e021e359bb81eacfe988	python-utils-r1	a8b7938ade305f087865de7e52d079b5	python-single-r1	d46c125afba8be02eb1cd7104bac6e9c	distutils-r1	8041037f74e1f9d149c038c2fe2c97cf
 _md5_=baeb8a08e37dafc4ee57a08690a749f2
