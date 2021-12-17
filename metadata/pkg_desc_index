@@ -277,7 +277,7 @@ kde-apps/spectacle 21.12.49.9999 9999: Screenshot capture utility
 kde-apps/step 21.12.49.9999 9999: Interactive physics simulator
 kde-apps/svgpart 21.12.49.9999 9999: Kpart for viewing SVGs
 kde-apps/sweeper 21.12.49.9999 9999: Privacy settings widget to clean unwanted traces on the system
-kde-apps/thumbnailers 21.12.49.9999 9999: Thumbnail generators for PDF/PS and RAW files
+kde-apps/thumbnailers 21.12.49.9999 9999: Thumbnail generators for Mobipocket, PDF/PS and RAW files
 kde-apps/umbrello 21.12.49.9999 9999: KDE UML Modeller
 kde-apps/yakuake 21.12.49.9999 9999: Quake-style terminal emulator based on konsole
 kde-apps/zeroconf-ioslave 21.12.49.9999 9999: DNSSD (DNS Service Discovery - part of Rendezvous) ioslave and kded module
