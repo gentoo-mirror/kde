@@ -1,6 +1,6 @@
 BDEPEND=dev-util/ninja >=dev-util/cmake-3.20.5 test? ( x11-base/xorg-server[xvfb] x11-apps/xhost ) doc? ( >=app-doc/doxygen-1.8.13-r1 dev-qt/qthelp:5 ) >=kde-frameworks/extra-cmake-modules-9999:5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install nofetch postinst postrm preinst prepare setup test unpack
-DEPEND=>=dev-qt/qtdbus-5.15.2:5 >=dev-qt/qtdeclarative-5.15.2:5 >=dev-qt/qtgui-5.15.2:5 >=dev-qt/qtwidgets-5.15.2:5 =kde-frameworks/kconfig-9999*:5 =kde-frameworks/kcoreaddons-9999*:5 =kde-frameworks/ki18n-9999*:5 =kde-frameworks/kio-9999*:5 =kde-frameworks/kservice-9999*:5 =kde-frameworks/plasma-9999*:5 =kde-frameworks/solid-9999*:5 =kde-frameworks/threadweaver-9999*:5 activities? ( =kde-frameworks/kactivities-9999*:5 ) test? ( dev-qt/qttest:5 ) doc? ( dev-qt/qt-docs:5 ) dev-qt/qtcore:5
+DEPEND=>=dev-qt/qtdbus-5.15.2:5 >=dev-qt/qtdeclarative-5.15.2:5 >=dev-qt/qtgui-5.15.2:5 >=dev-qt/qtwidgets-5.15.2:5 =kde-frameworks/kconfig-9999*:5 =kde-frameworks/kcoreaddons-9999*:5 =kde-frameworks/ki18n-9999*:5 =kde-frameworks/kio-9999*:5 =kde-frameworks/kservice-9999*:5 =kde-frameworks/solid-9999*:5 =kde-frameworks/threadweaver-9999*:5 activities? ( =kde-frameworks/kactivities-9999*:5 ) test? ( dev-qt/qttest:5 ) doc? ( dev-qt/qt-docs:5 ) dev-qt/qtcore:5
 DESCRIPTION=Framework for providing different actions given a string query
 EAPI=8
 HOMEPAGE=https://kde.org/products/frameworks/
@@ -8,8 +8,8 @@ INHERIT=ecm kde.org
 IUSE=activities test debug doc test
 LICENSE=LGPL-2+
 PROPERTIES=live
-RDEPEND=>=dev-qt/qtdbus-5.15.2:5 >=dev-qt/qtdeclarative-5.15.2:5 >=dev-qt/qtgui-5.15.2:5 >=dev-qt/qtwidgets-5.15.2:5 =kde-frameworks/kconfig-9999*:5 =kde-frameworks/kcoreaddons-9999*:5 =kde-frameworks/ki18n-9999*:5 =kde-frameworks/kio-9999*:5 =kde-frameworks/kservice-9999*:5 =kde-frameworks/plasma-9999*:5 =kde-frameworks/solid-9999*:5 =kde-frameworks/threadweaver-9999*:5 activities? ( =kde-frameworks/kactivities-9999*:5 ) >=kde-frameworks/kf-env-4 doc? ( dev-qt/qt-docs:5 ) dev-qt/qtcore:5
+RDEPEND=>=dev-qt/qtdbus-5.15.2:5 >=dev-qt/qtdeclarative-5.15.2:5 >=dev-qt/qtgui-5.15.2:5 >=dev-qt/qtwidgets-5.15.2:5 =kde-frameworks/kconfig-9999*:5 =kde-frameworks/kcoreaddons-9999*:5 =kde-frameworks/ki18n-9999*:5 =kde-frameworks/kio-9999*:5 =kde-frameworks/kservice-9999*:5 =kde-frameworks/solid-9999*:5 =kde-frameworks/threadweaver-9999*:5 activities? ( =kde-frameworks/kactivities-9999*:5 ) >=kde-frameworks/kf-env-4 doc? ( dev-qt/qt-docs:5 ) dev-qt/qtcore:5
 RESTRICT=!test? ( test ) !test? ( test )
 SLOT=5/9999
-_eclasses_=toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	8a0248f83ae77f945d376ff4a7953257	flag-o-matic	d5e1306543bc457213f68bb18f830d14	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	xdg-utils	4f29a8b760a594a212abe9c2ba957c31	cmake	11fee991ab428a3370e5c20fa8231fb6	virtualx	fa024aa649b6bd544144bf94893d402c	ecm	511301fca3f75f1499267de0bf0d3214	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	kde.org	10ca734e4845124395fc126944c8d053
-_md5_=52689a04db78f4dd78d585b557d976d5
+_eclasses_=toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	8a0248f83ae77f945d376ff4a7953257	flag-o-matic	d5e1306543bc457213f68bb18f830d14	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	xdg-utils	4f29a8b760a594a212abe9c2ba957c31	cmake	11fee991ab428a3370e5c20fa8231fb6	virtualx	fa024aa649b6bd544144bf94893d402c	ecm	511301fca3f75f1499267de0bf0d3214	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	kde.org	508e2cb8013234b97ad57cdf018715a0
+_md5_=6433cd9ded86786417731032d7cdaeeb
