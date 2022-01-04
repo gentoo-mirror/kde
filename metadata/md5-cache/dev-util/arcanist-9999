@@ -9,4 +9,4 @@ PROPERTIES=live
 RDEPEND=dev-lang/php[cli,curl] dev-libs/libphutil
 SLOT=0
 _eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
-_md5_=e09902c57e0cfdf6765587dde51a9839
+_md5_=7befe8e9b1fb435135247a1043b16846
