@@ -16,9 +16,7 @@ SRC_URI+=" https://www.gentoo.org/assets/img/logo/gentoo-3d-small.png -> glogo-s
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"
 KEYWORDS=""
-IUSE="gles2-only ieee1394 +opengl +pci usb wayland +X"
-
-REQUIRED_USE="opengl? ( X ) wayland? ( || ( opengl gles2-only ) )"
+IUSE="gles2-only usb"
 
 DEPEND="
 	>=dev-qt/qtdbus-${QTMIN}:5
@@ -31,25 +29,13 @@ DEPEND="
 	>=kde-frameworks/kcoreaddons-${KFMIN}:5
 	>=kde-frameworks/kdeclarative-${KFMIN}:5
 	>=kde-frameworks/ki18n-${KFMIN}:5
-	>=kde-frameworks/kiconthemes-${KFMIN}:5
 	>=kde-frameworks/kio-${KFMIN}:5
 	>=kde-frameworks/kpackage-${KFMIN}:5
 	>=kde-frameworks/kservice-${KFMIN}:5
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/solid-${KFMIN}:5
 	gles2-only? ( media-libs/mesa[gles2] )
-	ieee1394? ( sys-libs/libraw1394 )
-	opengl? (
-		media-libs/libglvnd[X?]
-		!gles2-only? ( media-libs/glu )
-	)
-	pci? ( sys-apps/pciutils )
 	usb? ( virtual/libusb:1 )
-	wayland? (
-		>=kde-frameworks/kwayland-${KFMIN}:5
-		media-libs/mesa[egl(+)]
-	)
-	X? ( x11-libs/libX11 )
 "
 RDEPEND="${DEPEND}
 	>=dev-qt/qtquickcontrols2-${QTMIN}:5
@@ -60,19 +46,8 @@ RDEPEND="${DEPEND}
 
 src_configure() {
 	local mycmakeargs=(
-		$(cmake_use_find_package ieee1394 RAW1394)
-		$(cmake_use_find_package pci PCIUTILS)
 		$(cmake_use_find_package usb USB1)
-		$(cmake_use_find_package wayland EGL)
-		$(cmake_use_find_package wayland KF5Wayland)
-		$(cmake_use_find_package X X11)
 	)
-
-	if has_version "dev-qt/qtgui[gles2-only]"; then
-		mycmakeargs+=( $(cmake_use_find_package gles2-only OpenGLES) )
-	else
-		mycmakeargs+=( $(cmake_use_find_package opengl OpenGL) )
-	fi
 
 	ecm_src_configure
 }
@@ -95,5 +70,9 @@ pkg_postinst() {
 		optfeature "Vulkan graphics API information module" dev-util/vulkan-tools
 		optfeature "advanced CPU information module" sys-apps/util-linux
 	fi
+	optfeature "Wayland information module" app-misc/wayland-utils
+	optfeature "OpenGL information module" x11-apps/mesa-progs
+	optfeature "PCI devices information module" sys-apps/pciutil
+	optfeature "X Server information module" x11-apps/xdpyinfo
 	ecm_pkg_postinst
 }
