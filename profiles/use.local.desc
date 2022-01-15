@@ -232,7 +232,6 @@ kde-plasma/discover:flatpak - Enable support for flatpak repositories using sys-
 kde-plasma/kde-cli-tools:kdesu - Build graphical frontend for kde-frameworks/kdesu
 kde-plasma/kdeplasma-addons:share - Enable applet for quickly sharing data to a variety of sources
 kde-plasma/kdeplasma-addons:webengine - Enable dictionary and web browser applets using dev-qt/qtwebengine
-kde-plasma/kinfocenter:pci - Show advanced PCI information
 kde-plasma/kinfocenter:usb - Show USB device information
 kde-plasma/ksystemstats:networkmanager - Enable improved backend for Network statistics using kde-frameworks/networkmanager-qt
 kde-plasma/kwin:multimedia - Enable effect video button in desktop effects KCM
