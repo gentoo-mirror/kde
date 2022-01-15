@@ -21,7 +21,7 @@ IUSE="accessibility caps gles2-only multimedia plasma screencast"
 RESTRICT="test"
 
 COMMON_DEPEND="
-	>=dev-libs/libinput-1.14
+	>=dev-libs/libinput-1.19
 	>=dev-libs/wayland-1.2
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtdeclarative-${QTMIN}:5
@@ -36,6 +36,7 @@ COMMON_DEPEND="
 	>=kde-frameworks/kconfigwidgets-${KFMIN}:5
 	>=kde-frameworks/kcoreaddons-${KFMIN}:5
 	>=kde-frameworks/kcrash-${KFMIN}:5
+	>=kde-frameworks/kdbusaddons-${KFMIN}:5
 	>=kde-frameworks/kdeclarative-${KFMIN}:5
 	>=kde-frameworks/kglobalaccel-${KFMIN}:5=
 	>=kde-frameworks/ki18n-${KFMIN}:5

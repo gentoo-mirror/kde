@@ -21,8 +21,8 @@ IUSE=""
 # requires running session
 RESTRICT="test"
 
-DEPEND="
-	>=dev-libs/plasma-wayland-protocols-1.6.0
+RDEPEND="
+	dev-libs/wayland
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtwayland-${QTMIN}:5
@@ -31,5 +31,7 @@ DEPEND="
 	>=kde-frameworks/kwayland-${KFMIN}:5
 	x11-libs/libxcb
 "
-RDEPEND="${DEPEND}"
+DEPEND="${RDEPEND}
+	>=dev-libs/plasma-wayland-protocols-1.6.0
+"
 BDEPEND="dev-util/wayland-scanner"
