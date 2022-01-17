@@ -16,8 +16,8 @@ DESCRIPTION="KDE Plasma workspace"
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"
 KEYWORDS=""
-IUSE="appstream +calendar +fontconfig geolocation gps screencast
-+semantic-desktop telemetry"
+IUSE="appstream +calendar +fontconfig geolocation gps +policykit
+screencast +semantic-desktop telemetry"
 
 REQUIRED_USE="gps? ( geolocation )"
 RESTRICT="test"
@@ -117,7 +117,7 @@ COMMON_DEPEND="
 	telemetry? ( dev-libs/kuserfeedback:5 )
 "
 DEPEND="${COMMON_DEPEND}
-	>=dev-libs/plasma-wayland-protocols-1.1.1
+	>=dev-libs/plasma-wayland-protocols-1.6.0
 	>=dev-qt/qtconcurrent-${QTMIN}:5
 	>=dev-util/wayland-scanner-1.19.0
 	x11-base/xorg-proto
@@ -142,7 +142,8 @@ RDEPEND="${COMMON_DEPEND}
 	x11-apps/xrdb
 	x11-apps/xsetroot
 	!<kde-plasma/breeze-5.22.90:5
-	!<kde-plasma/plasma-desktop-5.21.90:5
+	!<kde-plasma/plasma-desktop-5.23.90:5
+	policykit? ( sys-apps/accountsservice )
 "
 BDEPEND="virtual/pkgconfig"
 PDEPEND=">=kde-plasma/kde-cli-tools-${PVCUT}:5"
@@ -164,6 +165,10 @@ src_prepare() {
 	# TODO: try to get a build switch upstreamed
 	if ! use screencast; then
 		sed -e "s/^pkg_check_modules.*PipeWire/#&/" -i CMakeLists.txt || die
+	fi
+
+	if ! use policykit; then
+		cmake_run_in kcms cmake_comment_add_subdirectory users
 	fi
 }
 
