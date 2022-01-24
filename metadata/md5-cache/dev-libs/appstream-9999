@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=dev-libs/glib:2 dev-libs/libxml2:2 dev-libs/libyaml dev-libs/snowball-stemmer introspection? ( >=dev-libs/gobject-introspection-1.56:= ) qt5? ( dev-qt/qtcore:5 test? ( dev-qt/qttest:5 ) )
 RESTRICT=!test? ( test )
 SLOT=0/4
-_eclasses_=multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	de4beb52bfa93c4c5d96792a6b5e1784	python-utils-r1	54423f1e035828362c248fad528ebbba	meson	9f3e84959ae1d60e19bc91f212774dcc	xdg-utils	4f29a8b760a594a212abe9c2ba957c31	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_eclasses_=multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	de4beb52bfa93c4c5d96792a6b5e1784	python-utils-r1	25287947a5a70b86268775aaf87e3467	meson	9f3e84959ae1d60e19bc91f212774dcc	xdg-utils	4f29a8b760a594a212abe9c2ba957c31	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
 _md5_=eeaed2f5c8c396d51e7a5f97d3bab390
