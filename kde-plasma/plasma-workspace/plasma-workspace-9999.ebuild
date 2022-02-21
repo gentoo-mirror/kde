@@ -3,7 +3,7 @@
 
 EAPI=8
 
-ECM_HANDBOOK="forceoptional"
+ECM_HANDBOOK="optional"
 ECM_TEST="forceoptional"
 KFMIN=9999
 PVCUT=$(ver_cut 1-3)
@@ -132,7 +132,6 @@ RDEPEND="${COMMON_DEPEND}
 	>=dev-qt/qtquickcontrols-${QTMIN}:5[widgets]
 	>=dev-qt/qtquickcontrols2-${QTMIN}:5
 	kde-apps/kio-extras:5
-	>=kde-frameworks/kdesu-${KFMIN}:5
 	>=kde-frameworks/kirigami-${KFMIN}:5
 	>=kde-frameworks/kquickcharts-${KFMIN}:5
 	>=kde-plasma/milou-${PVCUT}:5
@@ -150,7 +149,7 @@ BDEPEND="virtual/pkgconfig"
 PDEPEND=">=kde-plasma/kde-cli-tools-${PVCUT}:5"
 
 PATCHES=(
-	"${FILESDIR}/${PN}-5.21.5-split-libkworkspace.patch" # downstream
+	"${FILESDIR}/${PN}-5.24.80-split-libkworkspace.patch" # downstream
 	"${FILESDIR}/${PN}-5.22.5-krunner-cwd-at-home.patch" # TODO upstream: KDE-bug 432975, bug 767478
 )
 
@@ -166,6 +165,12 @@ src_prepare() {
 	# TODO: try to get a build switch upstreamed
 	if ! use screencast; then
 		sed -e "s/^pkg_check_modules.*PipeWire/#&/" -i CMakeLists.txt || die
+	fi
+
+	# TODO: try to get a build switch upstreamed
+	if use geolocation; then
+		use gps || sed -e "s/^pkg_check_modules.*LIBGPS/#&/" \
+			-i dataengines/geolocation/CMakeLists.txt || die
 	fi
 
 	if ! use policykit; then
@@ -184,8 +189,6 @@ src_configure() {
 		$(cmake_use_find_package semantic-desktop KF5Baloo)
 		$(cmake_use_find_package telemetry KUserFeedback)
 	)
-
-	use geolocation && mycmakeargs+=( $(cmake_use_find_package gps libgps) )
 
 	ecm_src_configure
 }
