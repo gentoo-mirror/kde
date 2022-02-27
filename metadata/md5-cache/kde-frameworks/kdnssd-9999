@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=>=dev-qt/qtnetwork-5.15.2:5 zeroconf? ( >=dev-qt/qtdbus-5.15.2:5 net-dns/avahi[mdnsresponder-compat] ) >=kde-frameworks/kf-env-4 doc? ( dev-qt/qt-docs:5 ) dev-qt/qtcore:5
 RESTRICT=!test? ( test )
 SLOT=5/9999
-_eclasses_=toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	de4beb52bfa93c4c5d96792a6b5e1784	flag-o-matic	a500d7cc40da3de38c361e889153bdf7	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	xdg-utils	4f29a8b760a594a212abe9c2ba957c31	cmake	e4e38e367a4c9de0999ffd6f225eadfa	virtualx	fa024aa649b6bd544144bf94893d402c	ecm	7c787f99e174db747373e3ebe58034c3	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	kde.org	22baf0a00f6217926cadc2e6cc96714c
+_eclasses_=toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	de4beb52bfa93c4c5d96792a6b5e1784	flag-o-matic	a500d7cc40da3de38c361e889153bdf7	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	xdg-utils	4f29a8b760a594a212abe9c2ba957c31	cmake	e4e38e367a4c9de0999ffd6f225eadfa	virtualx	fa024aa649b6bd544144bf94893d402c	ecm	7c787f99e174db747373e3ebe58034c3	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	kde.org	4eb5562eb52b5c4cd4fb10ad3c719ee4
 _md5_=5edc6a571a23debd7d14e8e4afd56ff3
