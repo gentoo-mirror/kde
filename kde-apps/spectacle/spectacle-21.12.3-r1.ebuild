@@ -15,7 +15,7 @@ HOMEPAGE="https://apps.kde.org/spectacle/"
 
 LICENSE="LGPL-2+ handbook? ( FDL-1.3 )"
 SLOT="5"
-KEYWORDS=""
+KEYWORDS="~amd64 ~arm64 ~ppc64 ~riscv ~x86"
 IUSE="+annotate share"
 
 # TODO: Qt5Svg leaking from media-libs/kimageannotator
@@ -49,7 +49,10 @@ DEPEND="
 	share? ( >=kde-frameworks/purpose-${KFMIN}:5 )
 "
 RDEPEND="${DEPEND}
-	>=dev-qt/qdbus-${QTMIN}:5
+	|| (
+		>=dev-qt/qdbus-${QTMIN}:0
+		>=dev-qt/qdbus-${QTMIN}:5
+	)
 "
 
 src_prepare() {
@@ -61,6 +64,7 @@ src_prepare() {
 
 src_configure() {
 	local mycmakeargs=(
+		-DCMAKE_DISABLE_FIND_PACKAGE_KF5Kipi=ON
 		$(cmake_use_find_package annotate kImageAnnotator)
 		$(cmake_use_find_package share KF5Purpose)
 	)
