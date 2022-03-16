@@ -1,6 +1,6 @@
-BDEPEND=dev-util/ninja >=dev-util/cmake-3.20.5 handbook? ( >=kde-frameworks/kdoctools-5.88.0:5 ) >=kde-frameworks/extra-cmake-modules-5.88.0:5 >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=dev-util/ninja >=dev-util/cmake-3.20.5 handbook? ( >=kde-frameworks/kdoctools-5.92.0:5 ) >=kde-frameworks/extra-cmake-modules-5.92.0:5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install nofetch postinst postrm preinst prepare setup test unpack
-DEPEND=>=kde-frameworks/kdelibs4support-5.88.0:5 >=kde-frameworks/kdoctools-5.88.0:5 dev-qt/qtcore:5
+DEPEND=>=kde-frameworks/kdelibs4support-5.92.0:5 >=kde-frameworks/kdoctools-5.92.0:5 dev-qt/qtcore:5
 DESCRIPTION=KDE Development Scripts
 EAPI=8
 HOMEPAGE=https://kde.org/
@@ -12,4 +12,4 @@ PROPERTIES=live
 RDEPEND=app-arch/advancecomp media-gfx/optipng dev-perl/XML-DOM || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-4 dev-qt/qtcore:5
 SLOT=5
 _eclasses_=toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	de4beb52bfa93c4c5d96792a6b5e1784	flag-o-matic	a500d7cc40da3de38c361e889153bdf7	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	xdg-utils	4f29a8b760a594a212abe9c2ba957c31	cmake	e4e38e367a4c9de0999ffd6f225eadfa	virtualx	fa024aa649b6bd544144bf94893d402c	xdg	6024fbc93167fad782e2032933654857	ecm	7c787f99e174db747373e3ebe58034c3	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	kde.org	4eb5562eb52b5c4cd4fb10ad3c719ee4
-_md5_=24ad94eb72257e8a0604047cbc44172e
+_md5_=88d635ea598c1a01e0d8070e706bbfdd
