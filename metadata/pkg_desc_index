@@ -37,7 +37,7 @@ dev-libs/plasma-wayland-protocols 9999: Plasma Specific Protocols for Wayland
 dev-python/parse_cmake 0.4.1-r1: Parser for CMakeLists.txt files
 dev-util/arcanist 9999: Command line interface for Phabricator
 dev-util/kdbg 9999: Graphical debugger interface
-dev-util/kdevelop 21.12.3-r1 9999: Integrated Development Environment, supporting KF5/Qt, C/C++ and much more
+dev-util/kdevelop 9999: Integrated Development Environment, supporting KF5/Qt, C/C++ and much more
 dev-util/kdevelop-css 9999: CSS Language Support plugin for KDevelop
 dev-util/kdevelop-embedded 9999: Plugin for KDevelop to support the development of embedded systems
 dev-util/kdevelop-krazy2 9999: Plugin for KDevelop to perform Krazy2 analysis
@@ -274,7 +274,7 @@ kde-apps/poxml 9999: KDE utility to translate DocBook XML files using gettext po
 kde-apps/print-manager 9999: Manage print jobs and printers in Plasma
 kde-apps/rocs 9999: Interface to work with Graph Theory
 kde-apps/signon-kwallet-extension 9999: KWallet extension for signond
-kde-apps/spectacle 21.12.3-r1 9999: Screenshot capture utility
+kde-apps/spectacle 9999: Screenshot capture utility
 kde-apps/step 9999: Interactive physics simulator
 kde-apps/svgpart 9999: Kpart for viewing SVGs
 kde-apps/sweeper 9999: Privacy settings widget to clean unwanted traces on the system
@@ -438,7 +438,7 @@ kde-plasma/plasma-sdk 5.24.49.9999 9999: Useful applications for Plasma developm
 kde-plasma/plasma-systemmonitor 5.24.49.9999 9999: Monitor system sensors, process information and other system resources
 kde-plasma/plasma-thunderbolt 5.24.49.9999 9999: Plasma integration for controlling Thunderbolt devices
 kde-plasma/plasma-vault 5.24.49.9999 9999: Plasma applet and services for creating encrypted vaults
-kde-plasma/plasma-workspace 5.24.3-r1 5.24.49.9999 9999: KDE Plasma workspace
+kde-plasma/plasma-workspace 5.24.49.9999 9999: KDE Plasma workspace
 kde-plasma/plasma-workspace-wallpapers 5.24.49.9999 9999: Wallpapers for the Plasma workspace
 kde-plasma/plymouth-kcm 5.24.49.9999 9999: KDE Plasma control module for Plymouth
 kde-plasma/polkit-kde-agent 5.24.49.9999 9999: PolKit agent module for KDE Plasma
