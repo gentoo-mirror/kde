@@ -96,7 +96,6 @@ kde-apps/kaccounts-providers 9999: KDE accounts providers
 kde-apps/kaddressbook 9999: Address book application based on KDE Frameworks
 kde-apps/kajongg 9999: Classical Mah Jongg for four players
 kde-apps/kalarm 9999: Application to manage alarms and other timer based alerts for the desktop
-kde-apps/kalarmcal 9999: Client library to access and handling of KAlarm calendar data
 kde-apps/kalgebra 9999: MathML-based 2D and 3D graph calculator by KDE
 kde-apps/kalzium 9999: Periodic table of the elements
 kde-apps/kamera 9999: Plasma integration for gphoto2 cameras
