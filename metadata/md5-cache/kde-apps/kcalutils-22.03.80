@@ -13,5 +13,5 @@ RDEPEND=>=dev-libs/grantlee-5.2.0:5 >=dev-qt/qtgui-5.15.2:5 >=dev-qt/qtwidgets-5
 RESTRICT=test !test? ( test ) !test? ( test ) mirror
 SLOT=5
 SRC_URI=mirror://kde/unstable/release-service/22.03.80/src/kcalutils-22.03.80.tar.xz
-_eclasses_=toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	de4beb52bfa93c4c5d96792a6b5e1784	flag-o-matic	a500d7cc40da3de38c361e889153bdf7	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	fef481272d4a8e136a7d8a0fb1329384	xdg-utils	fffb53a53cf17c9c0c998a3c0a590c7e	cmake	e4e38e367a4c9de0999ffd6f225eadfa	virtualx	975d49ff3b3f451efe7a95f230532135	xdg	6024fbc93167fad782e2032933654857	ecm	7c787f99e174db747373e3ebe58034c3	kde.org	4eb5562eb52b5c4cd4fb10ad3c719ee4
+_eclasses_=toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	de4beb52bfa93c4c5d96792a6b5e1784	flag-o-matic	a500d7cc40da3de38c361e889153bdf7	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	fef481272d4a8e136a7d8a0fb1329384	xdg-utils	fffb53a53cf17c9c0c998a3c0a590c7e	cmake	815c18d239eac9da8e4e8672d8a0345f	virtualx	975d49ff3b3f451efe7a95f230532135	xdg	6024fbc93167fad782e2032933654857	ecm	27f5d3d29fb1ea21bff8fbcf643c68a4	kde.org	d9ba6a0d7727160788f5881623883014
 _md5_=24bc4f3aa25546de63495d6226f61a35
