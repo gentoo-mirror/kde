@@ -11,5 +11,5 @@ RDEPEND=app-arch/libarchive[bzip2]
 RESTRICT=!test? ( test ) fetch
 SLOT=5/5.93
 SRC_URI=mirror://kde/stable/frameworks/5.93/extra-cmake-modules-5.93.0.tar.xz
-_eclasses_=toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	4a33c9008e5ee30cb8840a3fdc24df2b	flag-o-matic	a500d7cc40da3de38c361e889153bdf7	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	fef481272d4a8e136a7d8a0fb1329384	xdg-utils	fffb53a53cf17c9c0c998a3c0a590c7e	cmake	815c18d239eac9da8e4e8672d8a0345f	kde.org	73eb66e36a4e0cbf04550e92dddb15aa	python-utils-r1	dfa3a38467793e97fcf791b156510654	python-any-r1	9006edf4b9c90f9ba1dc9ea9fee1b0bd
+_eclasses_=toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	4a33c9008e5ee30cb8840a3fdc24df2b	flag-o-matic	a500d7cc40da3de38c361e889153bdf7	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	fef481272d4a8e136a7d8a0fb1329384	xdg-utils	fffb53a53cf17c9c0c998a3c0a590c7e	cmake	815c18d239eac9da8e4e8672d8a0345f	kde.org	73eb66e36a4e0cbf04550e92dddb15aa	python-utils-r1	59dddabd6a41ab69723654916142f63b	python-any-r1	9006edf4b9c90f9ba1dc9ea9fee1b0bd
 _md5_=07be3bb2477eaa254e4a1ddb0c158f0c
