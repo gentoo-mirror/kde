@@ -9,7 +9,7 @@ app-misc/calindori 9999: Touch friendly calendar application
 app-misc/kookbook 9999: Simple recipe manager taking structured markdown for recipes
 app-office/calligra 9999: KDE Office Suite
 app-office/calligraplan 9999: Project management application
-app-office/kalendar 22.04.49.9999 9999: Multi-page scanning application supporting image and pdf files
+app-office/kalendar 22.04.49.9999 9999: A calendar application using Akonadi
 app-office/kexi 9999: Visual database applications creator
 app-office/kmymoney 5.1.9999 9999: Personal finance manager based on KDE Frameworks
 app-office/ktimetracker 9999: Todo management and time tracker
