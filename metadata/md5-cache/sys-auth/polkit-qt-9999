@@ -9,5 +9,5 @@ LICENSE=LGPL-2
 PROPERTIES=live
 RDEPEND=dev-libs/glib:2 dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 >=sys-auth/polkit-0.103
 SLOT=0
-_eclasses_=toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	4a33c9008e5ee30cb8840a3fdc24df2b	flag-o-matic	a500d7cc40da3de38c361e889153bdf7	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	fef481272d4a8e136a7d8a0fb1329384	xdg-utils	fffb53a53cf17c9c0c998a3c0a590c7e	cmake	815c18d239eac9da8e4e8672d8a0345f	git-r3	b9ac6f96d2a88edb5b351df634dc5e53	kde.org	1397f5b8ae288060c1c55273b53c39d4
+_eclasses_=toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	4a33c9008e5ee30cb8840a3fdc24df2b	flag-o-matic	a500d7cc40da3de38c361e889153bdf7	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	fef481272d4a8e136a7d8a0fb1329384	xdg-utils	fffb53a53cf17c9c0c998a3c0a590c7e	cmake	815c18d239eac9da8e4e8672d8a0345f	git-r3	b9ac6f96d2a88edb5b351df634dc5e53	kde.org	d9ba6a0d7727160788f5881623883014
 _md5_=f30890de2e3f4c4836a14d9e98aac72d
