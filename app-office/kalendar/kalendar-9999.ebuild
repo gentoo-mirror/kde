@@ -4,6 +4,7 @@
 EAPI=8
 
 KDE_ORG_CATEGORY="pim"
+KDE_GEAR="true"
 ECM_TEST="forceoptional"
 PVCUT=$(ver_cut 1-3)
 KFMIN=5.91
@@ -27,10 +28,10 @@ DEPEND="
 	>=dev-qt/qtquickcontrols2-${QTMIN}:5
 	>=dev-qt/qtsvg-${QTMIN}:5
 	>=dev-qt/qtdbus-${QTMIN}:5
-	>=kde-apps/akonadi-${KFMIN}:5
-	>=kde-apps/akonadi-contacts-${KFMIN}:5
-	>=kde-apps/calendarsupport-${KFMIN}:5
-	>=kde-apps/eventviews-${KFMIN}:5
+	>=kde-apps/akonadi-${PVCUT}:5
+	>=kde-apps/akonadi-contacts-${PVCUT}:5
+	>=kde-apps/calendarsupport-${PVCUT}:5
+	>=kde-apps/eventviews-${PVCUT}:5
 	>=kde-frameworks/kcalendarcore-${KFMIN}:5
 	>=kde-frameworks/kconfigwidgets-${KFMIN}:5
 	>=kde-frameworks/kcoreaddons-${KFMIN}:5
