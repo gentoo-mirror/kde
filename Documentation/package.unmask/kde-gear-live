@@ -98,6 +98,7 @@
 ~kde-apps/svgpart-9999
 ~kde-apps/thumbnailers-9999
 ~kde-misc/skanlite-9999
+~media-gfx/skanpage-9999
 ~kde-apps/audiocd-kio-9999
 ~kde-apps/dragon-9999
 ~kde-apps/ffmpegthumbs-9999
@@ -140,6 +141,7 @@
 ~net-irc/konversation-9999
 ~net-libs/libktorrent-9999
 ~net-p2p/ktorrent-9999
+~app-office/kalendar-9999
 ~dev-libs/kopeninghours-9999
 ~dev-libs/kosmindoormap-9999
 ~dev-libs/kpublictransport-9999
