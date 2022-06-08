@@ -3,15 +3,14 @@
 
 EAPI=8
 
-ECM_HANDBOOK="forceoptional"
 KFMIN=9999
+PVCUT=$(ver_cut 1-3)
 QTMIN=5.15.3
 inherit ecm kde.org
 
-DESCRIPTION="KDE Plasma menu editor"
-HOMEPAGE="https://invent.kde.org/plasma/kmenuedit"
+DESCRIPTION="System service to manage user's activities, track the usage patterns etc."
 
-LICENSE="GPL-2" # TODO: CHECK
+LICENSE="|| ( GPL-2 GPL-3 )"
 SLOT="5"
 KEYWORDS=""
 IUSE=""
@@ -19,22 +18,19 @@ IUSE=""
 RDEPEND="
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
+	>=dev-qt/qtsql-${QTMIN}:5[sqlite]
 	>=dev-qt/qtwidgets-${QTMIN}:5
-	>=dev-qt/qtxml-${QTMIN}:5
-	>=kde-frameworks/kcompletion-${KFMIN}:5
 	>=kde-frameworks/kconfig-${KFMIN}:5
-	>=kde-frameworks/kconfigwidgets-${KFMIN}:5
 	>=kde-frameworks/kcoreaddons-${KFMIN}:5
+	>=kde-frameworks/kcrash-${KFMIN}:5
 	>=kde-frameworks/kdbusaddons-${KFMIN}:5
 	>=kde-frameworks/kglobalaccel-${KFMIN}:5
 	>=kde-frameworks/ki18n-${KFMIN}:5
-	>=kde-frameworks/kiconthemes-${KFMIN}:5
-	>=kde-frameworks/kitemviews-${KFMIN}:5
 	>=kde-frameworks/kio-${KFMIN}:5
 	>=kde-frameworks/kservice-${KFMIN}:5
-	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/kwindowsystem-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
-	>=kde-frameworks/sonnet-${KFMIN}:5
 "
-DEPEND="${RDEPEND}"
+DEPEND="${RDEPEND}
+	dev-libs/boost
+"

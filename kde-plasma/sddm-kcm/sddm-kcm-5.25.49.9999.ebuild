@@ -3,45 +3,41 @@
 
 EAPI=8
 
-ECM_TEST="forceoptional"
 KFMIN=9999
 PVCUT=$(ver_cut 1-3)
 QTMIN=5.15.3
 inherit ecm kde.org
 
-DESCRIPTION="KDE Plasma screen management"
-HOMEPAGE="https://invent.kde.org/plasma/kscreen"
+DESCRIPTION="KDE Plasma control module for SDDM"
+HOMEPAGE="https://invent.kde.org/plasma/sddm-kcm"
 
-LICENSE="GPL-2" # TODO: CHECK
+LICENSE="GPL-2+"
 SLOT="5"
 KEYWORDS=""
 IUSE=""
 
-# bug #580440, last checked 5.6.3
-RESTRICT="test"
-
 DEPEND="
-	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtdeclarative-${QTMIN}:5[widgets]
 	>=dev-qt/qtgui-${QTMIN}:5
-	>=dev-qt/qtsensors-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
+	>=kde-frameworks/karchive-${KFMIN}:5
+	>=kde-frameworks/kauth-${KFMIN}:5
 	>=kde-frameworks/kcmutils-${KFMIN}:5
 	>=kde-frameworks/kconfig-${KFMIN}:5
 	>=kde-frameworks/kconfigwidgets-${KFMIN}:5
 	>=kde-frameworks/kcoreaddons-${KFMIN}:5
 	>=kde-frameworks/kdeclarative-${KFMIN}:5
-	>=kde-frameworks/kdbusaddons-${KFMIN}:5
-	>=kde-frameworks/kglobalaccel-${KFMIN}:5
 	>=kde-frameworks/ki18n-${KFMIN}:5
-	>=kde-frameworks/kiconthemes-${KFMIN}:5
+	>=kde-frameworks/kio-${KFMIN}:5
+	>=kde-frameworks/knewstuff-${KFMIN}:5
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
-	>=kde-frameworks/kxmlgui-${KFMIN}:5
-	>=kde-frameworks/plasma-${KFMIN}:5
-	>=kde-plasma/libkscreen-${PVCUT}:5
-	x11-libs/libX11
 "
 RDEPEND="${DEPEND}
-	>=dev-qt/qtgraphicaleffects-${QTMIN}:5
+	>=dev-qt/qtquickcontrols2-${QTMIN}:5
+	>=kde-frameworks/kirigami-${KFMIN}:5
+	>=kde-frameworks/kitemmodels-${KFMIN}:5[qml]
 	>=kde-plasma/kde-cli-tools-${PVCUT}:5
+	x11-misc/sddm
 "
+
+DOCS=( CONTRIBUTORS )

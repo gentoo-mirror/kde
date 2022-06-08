@@ -3,57 +3,69 @@
 
 EAPI=8
 
-ECM_HANDBOOK="optional"
+ECM_HANDBOOK="forceoptional"
 KFMIN=9999
 PVCUT=$(ver_cut 1-3)
 QTMIN=5.15.3
+VIRTUALX_REQUIRED="test"
 inherit ecm kde.org optfeature
 
-DESCRIPTION="Control Center to configure KDE Plasma desktop"
+DESCRIPTION="Extra Plasma applets and engines"
 
-LICENSE="GPL-2" # TODO: CHECK
+LICENSE="GPL-2 LGPL-2"
 SLOT="5"
 KEYWORDS=""
-IUSE=""
+IUSE="share webengine"
+
+RESTRICT="test" # bug 727846
 
 DEPEND="
 	>=dev-qt/qtdbus-${QTMIN}:5
-	>=dev-qt/qtdeclarative-${QTMIN}:5[widgets]
+	>=dev-qt/qtdeclarative-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
-	>=kde-frameworks/kactivities-${KFMIN}:5
-	>=kde-frameworks/kactivities-stats-${KFMIN}:5
-	>=kde-frameworks/kauth-${KFMIN}:5
+	>=kde-frameworks/karchive-${KFMIN}:5
 	>=kde-frameworks/kcmutils-${KFMIN}:5
 	>=kde-frameworks/kcompletion-${KFMIN}:5
 	>=kde-frameworks/kconfig-${KFMIN}:5
 	>=kde-frameworks/kconfigwidgets-${KFMIN}:5
 	>=kde-frameworks/kcoreaddons-${KFMIN}:5
-	>=kde-frameworks/kcrash-${KFMIN}:5
-	>=kde-frameworks/kdbusaddons-${KFMIN}:5
-	>=kde-frameworks/kguiaddons-${KFMIN}:5
+	>=kde-frameworks/kdeclarative-${KFMIN}:5
+	>=kde-frameworks/kholidays-${KFMIN}:5
 	>=kde-frameworks/ki18n-${KFMIN}:5
-	>=kde-frameworks/kiconthemes-${KFMIN}:5
 	>=kde-frameworks/kio-${KFMIN}:5
-	>=kde-frameworks/kirigami-${KFMIN}:5
-	>=kde-frameworks/kitemmodels-${KFMIN}:5
-	>=kde-frameworks/kitemviews-${KFMIN}:5
+	>=kde-frameworks/knewstuff-${KFMIN}:5
 	>=kde-frameworks/knotifications-${KFMIN}:5
 	>=kde-frameworks/kpackage-${KFMIN}:5
 	>=kde-frameworks/krunner-${KFMIN}:5
 	>=kde-frameworks/kservice-${KFMIN}:5
+	>=kde-frameworks/kunitconversion-${KFMIN}:5
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/kwindowsystem-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
-	>=kde-plasma/libkworkspace-${PVCUT}:5
+	>=kde-frameworks/plasma-${KFMIN}:5
+	>=kde-frameworks/sonnet-${KFMIN}:5
+	share? ( >=kde-frameworks/purpose-${KFMIN}:5 )
+	webengine? ( >=dev-qt/qtwebengine-${QTMIN}:5 )
 "
 RDEPEND="${DEPEND}
+	>=dev-qt/qtquickcontrols-${QTMIN}:5
 	>=dev-qt/qtquickcontrols2-${QTMIN}:5
+	>=kde-plasma/plasma-workspace-${PVCUT}:5
 "
+
+src_configure() {
+	local mycmakeargs=(
+		$(cmake_use_find_package share KF5Purpose)
+		$(cmake_use_find_package webengine Qt5WebEngine)
+	)
+
+	ecm_src_configure
+}
 
 pkg_postinst() {
 	if [[ -z "${REPLACING_VERSIONS}" ]]; then
-		optfeature "Configure looks for GTK+" kde-plasma/kde-gtk-config
+		optfeature "Disk quota applet" sys-fs/quota
 	fi
 	ecm_pkg_postinst
 }

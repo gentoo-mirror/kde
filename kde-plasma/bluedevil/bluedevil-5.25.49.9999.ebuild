@@ -8,52 +8,34 @@ PVCUT=$(ver_cut 1-3)
 QTMIN=5.15.3
 inherit ecm kde.org
 
-DESCRIPTION="Plasma crash handler, gives the user feedback if a program crashed"
+DESCRIPTION="Bluetooth stack for KDE Plasma"
+HOMEPAGE="https://invent.kde.org/plasma/bluedevil"
 
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"
 KEYWORDS=""
 IUSE=""
 
-COMMON_DEPEND="
+DEPEND="
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtdeclarative-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
-	>=dev-qt/qtxml-${QTMIN}:5
-	>=kde-frameworks/kcompletion-${KFMIN}:5
+	>=kde-frameworks/bluez-qt-${KFMIN}:5
 	>=kde-frameworks/kconfig-${KFMIN}:5
 	>=kde-frameworks/kconfigwidgets-${KFMIN}:5
 	>=kde-frameworks/kcoreaddons-${KFMIN}:5
-	>=kde-frameworks/kcrash-${KFMIN}:5
 	>=kde-frameworks/kdeclarative-${KFMIN}:5
+	>=kde-frameworks/kdbusaddons-${KFMIN}:5
 	>=kde-frameworks/ki18n-${KFMIN}:5
-	>=kde-frameworks/kidletime-${KFMIN}:5
 	>=kde-frameworks/kio-${KFMIN}:5
-	>=kde-frameworks/kjobwidgets-${KFMIN}:5
 	>=kde-frameworks/knotifications-${KFMIN}:5
-	>=kde-frameworks/kwallet-${KFMIN}:5
-	>=kde-frameworks/kwayland-${KFMIN}:5
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/kwindowsystem-${KFMIN}:5
-	>=kde-frameworks/syntax-highlighting-${KFMIN}:5
+	>=kde-frameworks/plasma-${KFMIN}:5
 "
-DEPEND="${COMMON_DEPEND}
-	>=dev-qt/qtconcurrent-${QTMIN}:5
-"
-RDEPEND="${COMMON_DEPEND}
+RDEPEND="${DEPEND}
+	>=dev-qt/qtquickcontrols2-${QTMIN}:5
 	>=kde-frameworks/kirigami-${KFMIN}:5
-	>=kde-frameworks/kitemmodels-${KFMIN}:5[qml]
-	|| (
-		sys-devel/gdb
-		dev-util/lldb
-	)
+	>=kde-plasma/kde-cli-tools-${PVCUT}:5
 "
-
-src_test() {
-	# needs network access, bug #698510
-	local myctestargs=(
-		-E "(connectiontest)"
-	)
-	ecm_src_test
-}
