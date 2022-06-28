@@ -406,6 +406,7 @@ kde-plasma/kgamma 5.24.49.9999 5.25.49.9999 9999: Screen gamma values kcontrol m
 kde-plasma/khotkeys 5.24.49.9999 5.25.49.9999 9999: KDE Plasma workspace hotkey module
 kde-plasma/kinfocenter 5.24.49.9999 5.25.49.9999 9999: Utility providing information about the computer hardware
 kde-plasma/kmenuedit 5.24.49.9999 5.25.49.9999 9999: KDE Plasma menu editor
+kde-plasma/kpipewire 9999: Components relating to Flatpak pipewire use in Plasma
 kde-plasma/kscreen 5.24.49.9999 5.25.49.9999 9999: KDE Plasma screen management
 kde-plasma/kscreenlocker 5.24.49.9999 5.25.49.9999 9999: Library and components for secure lock screen architecture
 kde-plasma/ksshaskpass 5.24.49.9999 5.25.49.9999 9999: Implementation of ssh-askpass with KDE Wallet integration
