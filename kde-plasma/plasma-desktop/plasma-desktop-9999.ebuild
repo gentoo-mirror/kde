@@ -12,7 +12,7 @@ VIRTUALX_REQUIRED="test"
 inherit ecm kde.org optfeature
 
 DESCRIPTION="KDE Plasma desktop"
-XORGHDRS="${PN}-override-include-dirs-1"
+XORGHDRS="${PN}-override-include-dirs-2"
 SRC_URI+=" https://dev.gentoo.org/~asturm/distfiles/${XORGHDRS}.tar.xz"
 
 LICENSE="GPL-2" # TODO: CHECK
@@ -110,6 +110,7 @@ RDEPEND="${COMMON_DEPEND}
 	>=kde-frameworks/kirigami-${KFMIN}:5
 	>=kde-frameworks/qqc2-desktop-style-${KFMIN}:5
 	>=kde-plasma/kde-cli-tools-${PVCUT}:5
+	>=kde-plasma/kpipewire-${PVCUT}:5
 	>=kde-plasma/oxygen-${PVCUT}:5
 	sys-apps/util-linux
 	x11-apps/setxkbmap
