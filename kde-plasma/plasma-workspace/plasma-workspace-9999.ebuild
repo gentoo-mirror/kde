@@ -24,6 +24,7 @@ RESTRICT="test"
 
 # slot op: various private QtWaylandClient headers
 COMMON_DEPEND="
+	dev-libs/icu:=
 	>=dev-libs/wayland-1.15
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtdeclarative-${QTMIN}:5[widgets]
@@ -110,6 +111,7 @@ COMMON_DEPEND="
 	policykit? ( virtual/libcrypt:= )
 	screencast? (
 		>=dev-qt/qtgui-${QTMIN}:5=[egl]
+		>=kde-plasma/kpipewire-${PVCUT}:5
 		media-libs/libglvnd
 		>=media-video/pipewire-0.3:=
 		x11-libs/libdrm
@@ -168,6 +170,7 @@ src_prepare() {
 
 	# TODO: try to get a build switch upstreamed
 	if ! use screencast; then
+		ecm_punt_bogus_dep K PipeWire
 		sed -e "s/^pkg_check_modules.*PipeWire/#&/" -i CMakeLists.txt || die
 	fi
 
@@ -185,7 +188,7 @@ src_prepare() {
 src_configure() {
 	local mycmakeargs=(
 		-DBUILD_xembed-sni-proxy=OFF
-		-DCMAKE_DISABLE_FIND_PACKAGE_PackageKitQt5=ON
+		-DGLIBC_LOCALE_GEN=$(usex policykit)
 		$(cmake_use_find_package appstream AppStreamQt)
 		$(cmake_use_find_package calendar KF5Holidays)
 		$(cmake_use_find_package fontconfig Fontconfig)
