@@ -6,8 +6,8 @@ EAPI=8
 ECM_HANDBOOK="optional"
 ECM_TEST="forceoptional"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.92.0
-QTMIN=5.15.4
+KFMIN=5.96.0
+QTMIN=5.15.5
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
 
@@ -17,7 +17,10 @@ HOMEPAGE="https://apps.kde.org/kleopatra/"
 LICENSE="GPL-2+ handbook? ( FDL-1.2+ )"
 SLOT="5"
 KEYWORDS=""
-IUSE=""
+IUSE="pim"
+
+# tests completely broken, bug #641720
+RESTRICT="test"
 
 DEPEND="
 	>=app-crypt/gpgme-1.16.0:=[cxx,qt5]
@@ -44,11 +47,21 @@ DEPEND="
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/kwindowsystem-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
+	pim? (
+		>=kde-apps/kidentitymanagement-${PVCUT}:5
+		>=kde-apps/kmailtransport-${PVCUT}:5
+	)
 "
 RDEPEND="${DEPEND}
 	>=app-crypt/gnupg-2.1
 	app-crypt/paperkey
 "
 
-# tests completely broken, bug #641720
-RESTRICT="test"
+src_configure() {
+	local mycmakeargs=(
+		$(cmake_use_find_package pim KF5IdentityManagement)
+		$(cmake_use_find_package pim KF5MailTransport)
+		$(cmake_use_find_package pim KF5MailTransportAkonadi)
+	)
+	ecm_src_configure
+}

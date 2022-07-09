@@ -5,7 +5,7 @@ EAPI=8
 
 ECM_TEST="forceoptional"
 KFMIN=5.82.0
-QTMIN=5.15.4
+QTMIN=5.15.5
 inherit ecm kde.org
 
 DESCRIPTION="Tool visualising massif data"
@@ -34,9 +34,7 @@ RDEPEND="
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
 	callgraph? ( media-gfx/kgraphviewer:5 )
 "
-DEPEND="${RDEPEND}
-	>=dev-qt/qtxmlpatterns-${QTMIN}:5
-"
+DEPEND="${RDEPEND}"
 
 src_configure() {
 	local mycmakeargs=(

@@ -6,8 +6,8 @@ EAPI=8
 ECM_HANDBOOK="optional"
 ECM_TEST="true"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.92.0
-QTMIN=5.15.4
+KFMIN=5.96.0
+QTMIN=5.15.5
 inherit ecm kde.org optfeature
 
 DESCRIPTION="Image viewer by KDE"
@@ -16,7 +16,7 @@ HOMEPAGE="https://apps.kde.org/gwenview/ https://userbase.kde.org/Gwenview"
 LICENSE="GPL-2+ handbook? ( FDL-1.2 )"
 SLOT="5"
 KEYWORDS=""
-IUSE="activities fits +mpris raw semantic-desktop share X"
+IUSE="activities +annotate fits +mpris raw semantic-desktop share X"
 
 # requires running environment
 RESTRICT="test"
@@ -50,6 +50,7 @@ COMMON_DEPEND="
 	>=media-libs/phonon-4.11.0
 	media-libs/tiff
 	activities? ( >=kde-frameworks/kactivities-${KFMIN}:5 )
+	annotate? ( >=media-libs/kimageannotator-0.5.0 )
 	fits? ( sci-libs/cfitsio )
 	mpris? ( >=dev-qt/qtdbus-${QTMIN}:5 )
 	raw? ( >=kde-apps/libkdcraw-${PVCUT}:5 )
@@ -83,6 +84,7 @@ src_prepare() {
 src_configure() {
 	local mycmakeargs=(
 		$(cmake_use_find_package activities KF5Activities)
+		$(cmake_use_find_package annotate kImageAnnotator)
 		$(cmake_use_find_package fits CFitsio)
 		$(cmake_use_find_package raw KF5KDcraw)
 		-DGWENVIEW_SEMANTICINFO_BACKEND=$(usex semantic-desktop Baloo None)

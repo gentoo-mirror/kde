@@ -6,8 +6,8 @@ EAPI=8
 ECM_HANDBOOK="optional"
 ECM_TEST="forceoptional"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.92.0
-QTMIN=5.15.4
+KFMIN=5.96.0
+QTMIN=5.15.5
 inherit ecm kde.org
 
 DESCRIPTION="News feed aggregator"
@@ -52,6 +52,11 @@ RDEPEND="
 	telemetry? ( >=dev-libs/kuserfeedback-1.2.0:5 )
 "
 DEPEND="${RDEPEND}"
+
+src_prepare() {
+	ecm_punt_bogus_dep QGpgme
+	ecm_src_prepare
+}
 
 src_configure() {
 	local mycmakeargs=(

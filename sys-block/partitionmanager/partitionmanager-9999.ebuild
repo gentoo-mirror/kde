@@ -5,9 +5,9 @@ EAPI=8
 
 ECM_HANDBOOK="optional"
 KDE_GEAR="true"
-KFMIN=5.92.0
+KFMIN=5.96.0
 PVCUT=$(ver_cut 1-3)
-QTMIN=5.15.4
+QTMIN=5.15.5
 inherit ecm kde.org
 
 DESCRIPTION="Utility for management of disks, partitions and file systems"
@@ -30,6 +30,7 @@ DEPEND="
 	>=kde-frameworks/kio-${KFMIN}:5
 	>=kde-frameworks/kjobwidgets-${KFMIN}:5
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
+	>=kde-frameworks/kwindowsystem-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
 	sys-auth/polkit-qt
 	>=sys-libs/kpmcore-${PVCUT}:5=

@@ -5,7 +5,7 @@ EAPI=8
 
 ECM_HANDBOOK="optional"
 KFMIN=5.82.0
-QTMIN=5.15.4
+QTMIN=5.15.5
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
 
@@ -38,3 +38,10 @@ DEPEND="${COMMON_DEPEND}
 RDEPEND="${COMMON_DEPEND}
 	sys-apps/diffutils
 "
+
+src_configure() {
+	local mycmakeargs=(
+		-DBUILD_WITH_QT6=OFF
+	)
+	ecm_src_configure
+}

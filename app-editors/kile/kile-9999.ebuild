@@ -6,7 +6,7 @@ EAPI=8
 ECM_HANDBOOK="forceoptional"
 KDE_ORG_CATEGORY="office"
 KFMIN=5.82.0
-QTMIN=5.15.4
+QTMIN=5.15.5
 MY_P=${P/_beta/b}
 inherit ecm kde.org
 
@@ -36,7 +36,6 @@ DEPEND="
 	>=kde-frameworks/kguiaddons-${KFMIN}:5
 	>=kde-frameworks/ki18n-${KFMIN}:5
 	>=kde-frameworks/kiconthemes-${KFMIN}:5
-	>=kde-frameworks/kinit-${KFMIN}:5
 	>=kde-frameworks/kio-${KFMIN}:5
 	>=kde-frameworks/kparts-${KFMIN}:5
 	>=kde-frameworks/ktexteditor-${KFMIN}:5

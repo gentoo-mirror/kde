@@ -4,8 +4,8 @@
 EAPI=8
 
 KDE_ORG_CATEGORY="pim"
-KFMIN=5.82.0
-QTMIN=5.15.4
+KFMIN=5.92.0
+QTMIN=5.15.5
 inherit ecm kde.org
 
 DESCRIPTION="Library to expose vcards to KPeople"

@@ -9,8 +9,8 @@ ECM_TEST="forceoptional"
 LUA_COMPAT=( luajit )
 PYTHON_COMPAT=( python3_{8..11} )
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.92.0
-QTMIN=5.15.4
+KFMIN=5.96.0
+QTMIN=5.15.5
 inherit ecm kde.org lua-single optfeature python-single-r1
 
 DESCRIPTION="Interface for doing mathematics and scientific computing"

@@ -3,8 +3,9 @@
 
 EAPI=8
 
-KFMIN=5.92.0
-QTMIN=5.15.4
+KFMIN=5.96.0
+PVCUT=$(ver_cut 1-3)
+QTMIN=5.15.5
 inherit ecm kde.org
 
 DESCRIPTION="SANE Library interface based on KDE Frameworks"
@@ -20,7 +21,7 @@ DEPEND="
 	>=kde-frameworks/ki18n-${KFMIN}:5
 	>=kde-frameworks/ktextwidgets-${KFMIN}:5
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
-	media-gfx/sane-backends
+	>=media-libs/ksanecore-${PVCUT}:5
 	kwallet? ( >=kde-frameworks/kwallet-${KFMIN}:5 )
 "
 RDEPEND="${DEPEND}"

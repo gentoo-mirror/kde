@@ -4,9 +4,9 @@
 EAPI=8
 
 ECM_TEST="forceoptional"
-KFMIN=5.92.0
+KFMIN=5.96.0
 PLASMA_MINIMAL=5.16.5
-QTMIN=5.15.4
+QTMIN=5.15.5
 VIRTUALDBUS_TEST="true"
 inherit ecm kde.org
 

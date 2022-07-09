@@ -5,8 +5,8 @@ EAPI=8
 
 ECM_TEST="forceoptional"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.82.0
-QTMIN=5.15.4
+KFMIN=5.96.0
+QTMIN=5.15.5
 inherit ecm kde.org optfeature
 
 DESCRIPTION="Digital travel assistant with a priority on protecting your privacy"
@@ -31,20 +31,24 @@ DEPEND="
 	>=dev-qt/qtwidgets-${QTMIN}:5
 	>=kde-apps/kitinerary-${PVCUT}:5
 	>=kde-apps/kpkpass-${PVCUT}:5
+	>=kde-frameworks/kcalendarcore-${KFMIN}:5
 	>=kde-frameworks/kcontacts-${KFMIN}:5
 	>=kde-frameworks/kcoreaddons-${KFMIN}:5
 	>=kde-frameworks/kdbusaddons-${KFMIN}:5
+	>=kde-frameworks/kfilemetadata-${KFMIN}:5
 	>=kde-frameworks/kholidays-${KFMIN}:5
 	>=kde-frameworks/ki18n-${KFMIN}:5
 	>=kde-frameworks/kitemmodels-${KFMIN}:5[qml]
 	>=kde-frameworks/knotifications-${KFMIN}:5
 	>=kde-frameworks/kunitconversion-${KFMIN}:5
+	>=kde-frameworks/kwindowsystem-${KFMIN}:5
 	sys-libs/zlib
 	networkmanager? ( >=kde-frameworks/networkmanager-qt-${KFMIN}:5 )
 "
 RDEPEND="${DEPEND}
+	>=dev-qt/qtmultimedia-${QTMIN}:5[qml]
 	>=kde-frameworks/kirigami-${KFMIN}:5
-	>=kde-frameworks/prison-${KFMIN}:5
+	>=kde-frameworks/prison-${KFMIN}:5[qml]
 "
 
 src_configure() {

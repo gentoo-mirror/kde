@@ -6,8 +6,8 @@ EAPI=8
 ECM_HANDBOOK="optional"
 ECM_TEST="forceoptional"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.92.0
-QTMIN=5.15.4
+KFMIN=5.96.0
+QTMIN=5.15.5
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
 
@@ -72,8 +72,10 @@ RDEPEND="
 	speech? ( >=dev-qt/qtspeech-${QTMIN}:5 )
 "
 DEPEND="${RDEPEND}
-	>=dev-qt/qtxmlpatterns-${QTMIN}:5
-	test? ( >=kde-apps/kimap-${PVCUT}:5[test] )
+	test? (
+		>=dev-qt/qtxmlpatterns-${QTMIN}:5
+		>=kde-apps/kimap-${PVCUT}:5[test]
+	)
 "
 
 src_configure() {

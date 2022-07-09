@@ -6,14 +6,14 @@ EAPI=8
 ECM_HANDBOOK="optional"
 ECM_TEST="forceoptional"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.92.0
-QTMIN=5.15.4
+KFMIN=5.96.0
+QTMIN=5.15.5
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org optfeature
 
 DESCRIPTION="Email client, supporting POP3 and IMAP mailboxes"
 HOMEPAGE="https://apps.kde.org/kmail2/
-https://kontact.kde.org/components/kmail.html"
+https://kontact.kde.org/components/kmail/"
 
 LICENSE="GPL-2+ handbook? ( FDL-1.2+ )"
 SLOT="5"
@@ -23,7 +23,7 @@ IUSE="pch speech telemetry"
 RESTRICT="test" # bug 616878
 
 COMMON_DEPEND="
-	>=app-crypt/gpgme-1.11.1:=[cxx,qt5]
+	>=app-crypt/gpgme-1.16.0:=[cxx,qt5]
 	>=dev-qt/qtcore-${QTMIN}:5
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5

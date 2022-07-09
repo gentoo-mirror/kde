@@ -6,8 +6,8 @@ EAPI=8
 ECM_QTHELP="true"
 ECM_TEST="forceoptional"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.92.0
-QTMIN=5.15.4
+KFMIN=5.96.0
+QTMIN=5.15.5
 VIRTUALX_REQUIRED="test"
 inherit ecm kde.org
 
@@ -22,7 +22,7 @@ IUSE="speech"
 RESTRICT="test"
 
 DEPEND="
-	>=app-crypt/gpgme-1.8.0-r1:=[cxx,qt5]
+	>=app-crypt/gpgme-1.16.0:=[cxx,qt5]
 	>=app-crypt/qca-2.3.0:2
 	>=dev-libs/grantlee-5.2.0:5
 	>=dev-qt/qtgui-${QTMIN}:5
