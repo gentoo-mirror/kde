@@ -455,6 +455,7 @@ media-gfx/peruse 9999: Comic book reader
 media-gfx/skanpage 9999: Multi-page scanning application supporting image and pdf files
 media-gfx/symboleditor 9999: Application to create libraries of QPainterPath objects with rendering hints
 media-libs/kquickimageeditor 9999: QtQuick components providing basic image editing capabilities
+media-libs/ksanecore 9999: Qt-based interface for SANE library to control scanner hardware
 media-libs/liblastfm 9999: Collection of libraries to integrate Last.fm services
 media-libs/libqaccessibilityclient 9999: Library for writing accessibility clients such as screen readers
 media-libs/phonon 9999: KDE multimedia abstraction library
