@@ -67,7 +67,7 @@ kde-apps/amor 9999: Amusing Misuse Of Resources - desktop-dwelling creature
 kde-apps/analitza 22.08.49.9999 9999: KDE library for mathematical features
 kde-apps/ark 22.08.49.9999 9999: File archiver by KDE
 kde-apps/artikulate 22.08.49.9999 9999: Language learning application that helps improving pronunciation skills
-kde-apps/audiocd-kio 22.08.49.9999 9999: kioslave for accessing audio CDs
+kde-apps/audiocd-kio 22.08.49.9999 9999: KIO worker for accessing audio CDs
 kde-apps/baloo-widgets 22.08.49.9999 9999: Widget library for baloo
 kde-apps/blinken 22.08.49.9999 9999: Memory enhancement game based on KDE Frameworks
 kde-apps/bomber 22.08.49.9999 9999: Single player arcade bombing game
@@ -137,7 +137,7 @@ kde-apps/kdenlive 22.08.49.9999 9999: Non-linear video editing suite by KDE
 kde-apps/kdepim-addons 22.08.49.9999 9999: Plugins for KDE Personal Information Management Suite
 kde-apps/kdepim-meta 22.08.49.9999 9999: KDE PIM - merge this to pull in all kdepim-derived packages
 kde-apps/kdepim-runtime 22.08.49.9999 9999: Runtime plugin collection to extend the functionality of KDE PIM
-kde-apps/kdesdk-kioslaves 22.08.49.9999 9999: kioslaves from kdesdk package
+kde-apps/kdesdk-kioslaves 22.08.49.9999 9999: KIO worker interface to browse Perl documentation
 kde-apps/kdesdk-meta 22.08.49.9999 9999: KDE SDK - merge this to pull in all kdesdk-derived packages
 kde-apps/kdesdk-thumbnailers 22.08.49.9999 9999: Thumbnail generator for PO files
 kde-apps/kdeutils-meta 22.08.49.9999 9999: kdeutils - merge this to pull in all kdeutils-derived packages
