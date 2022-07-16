@@ -279,7 +279,7 @@ kde-apps/sweeper 22.08.49.9999 9999: Privacy settings widget to clean unwanted t
 kde-apps/thumbnailers 22.08.49.9999 9999: Thumbnail generators for Mobipocket, PDF/PS and RAW files
 kde-apps/umbrello 22.08.49.9999 9999: KDE UML Modeller
 kde-apps/yakuake 22.08.49.9999 9999: Quake-style terminal emulator based on konsole
-kde-apps/zeroconf-ioslave 22.08.49.9999 9999: DNSSD (DNS Service Discovery - part of Rendezvous) ioslave and kded module
+kde-apps/zeroconf-ioslave 22.08.49.9999 9999: KIO worker to discover file systems by DNS-SD (DNS Service Discovery)
 kde-frameworks/attica 9999: Framework providing access to Open Collaboration Services
 kde-frameworks/baloo 9999: Framework for searching and managing metadata
 kde-frameworks/bluez-qt 9999: Qt wrapper for Bluez 5 DBus API
