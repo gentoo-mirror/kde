@@ -141,11 +141,11 @@
 ~kde-apps/ktp-text-ui-21.12.49.9999 **
 ~kde-apps/plasma-telepathy-meta-21.12.49.9999 **
 ~kde-apps/signon-kwallet-extension-21.12.49.9999 **
-~kde-apps/zeroconf-ioslave-21.12.49.9999 **
 ~kde-misc/kdeconnect-21.12.49.9999 **
 ~kde-misc/kio-gdrive-21.12.49.9999 **
 ~net-irc/konversation-21.12.49.9999 **
 ~net-libs/libktorrent-21.12.49.9999 **
+~net-misc/kio-zeroconf-21.12.49.9999 **
 <net-p2p/ktorrent-21.12.50
 ~dev-libs/kopeninghours-21.12.49.9999 **
 ~dev-libs/kosmindoormap-21.12.49.9999 **
@@ -207,6 +207,7 @@
 ~dev-util/kdevelop-21.12.49.9999 **
 ~dev-util/kdevelop-php-21.12.49.9999 **
 ~dev-util/kdevelop-python-21.12.49.9999 **
+~dev-util/kio-perldoc-21.12.49.9999 **
 ~kde-apps/cervisia-21.12.49.9999 **
 ~kde-apps/dolphin-plugins-git-21.12.49.9999 **
 ~kde-apps/dolphin-plugins-mercurial-21.12.49.9999 **
@@ -216,7 +217,6 @@
 ~kde-apps/kde-dev-scripts-21.12.49.9999 **
 ~kde-apps/kde-dev-utils-21.12.49.9999 **
 ~kde-apps/kdesdk-meta-21.12.49.9999 **
-~kde-apps/kdesdk-kioslaves-21.12.49.9999 **
 ~kde-apps/kdesdk-thumbnailers-21.12.49.9999 **
 ~kde-apps/kompare-21.12.49.9999 **
 ~kde-apps/kross-interpreters-21.12.49.9999 **

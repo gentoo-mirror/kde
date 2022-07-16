@@ -144,11 +144,11 @@
 <kde-apps/ktp-text-ui-22.08.50:5
 <kde-apps/plasma-telepathy-meta-22.08.50:5
 <kde-apps/signon-kwallet-extension-22.08.50:5
-<kde-apps/zeroconf-ioslave-22.08.50:5
 <kde-misc/kdeconnect-22.08.50:5
 <kde-misc/kio-gdrive-22.08.50:5
 <net-irc/konversation-22.08.50:5
 <net-libs/libktorrent-22.08.50:5
+<net-misc/kio-zeroconf-22.08.50:5
 <net-p2p/ktorrent-22.08.50:5
 <app-office/kalendar-22.08.50:5
 <dev-libs/kopeninghours-22.08.50:5
@@ -210,6 +210,7 @@
 <dev-util/kdevelop-22.08.50:5
 <dev-util/kdevelop-php-22.08.50:5
 <dev-util/kdevelop-python-22.08.50:5
+<dev-util/kio-perldoc-22.08.50:5
 <kde-apps/cervisia-22.08.50:5
 <kde-apps/dolphin-plugins-git-22.08.50:5
 <kde-apps/dolphin-plugins-mercurial-22.08.50:5
@@ -219,7 +220,6 @@
 <kde-apps/kde-dev-scripts-22.08.50:5
 <kde-apps/kde-dev-utils-22.08.50:5
 <kde-apps/kdesdk-meta-22.08.50:5
-<kde-apps/kdesdk-kioslaves-22.08.50:5
 <kde-apps/kdesdk-thumbnailers-22.08.50:5
 <kde-apps/kompare-22.08.50:5
 <kde-apps/kross-interpreters-22.08.50:5
