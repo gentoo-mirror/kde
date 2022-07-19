@@ -377,11 +377,10 @@ kde-misc/kregexpeditor 9999: GUI for creating and editing regular expressions
 kde-misc/krename 9999: Powerful batch file renamer
 kde-misc/krusader 9999: Advanced twin-panel (commander-style) file-manager with many extras
 kde-misc/ktrip 9999: Public transport assistant targeted towards mobile Linux and Android
-kde-misc/kweather 9999: Library for retrieval of weather information including forecasts and alerts
+kde-misc/kweather 9999: Weather forecast application for Plasma with flat and dynamic/animated views
 kde-misc/latte-dock 9999: Elegant dock, based on KDE Frameworks
 kde-misc/markdownpart 22.07.80 22.08.49.9999 9999: Markdown viewer KParts plugin based on QTextDocument
 kde-misc/plasma-applet-network-monitor 9999: Plasma 5 applet for monitoring active network connections
-kde-misc/plasma-applet-weather-widget 9999: Plasma 5 applet for weather forecasts
 kde-misc/plasma-pass 9999: Plasma applet to access password from pass
 kde-misc/plasma-redshift-control 9999: Plasma 5 applet for controlling redshift
 kde-misc/polkit-kde-kcmodules 9999: Set of configuration modules to change polkit settings
