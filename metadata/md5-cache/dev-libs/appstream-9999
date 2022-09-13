@@ -1,15 +1,15 @@
-BDEPEND=app-text/docbook-xml-dtd:4.5 dev-libs/appstream-glib dev-util/itstool >=dev-util/meson-0.42.0 >=sys-devel/gettext-0.19.8 test? ( dev-qt/linguist-tools:5 ) >=dev-util/meson-0.62.2 >=dev-util/ninja-1.8.2 dev-util/meson-format-array >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=dev-libs/appstream-glib dev-libs/libxslt dev-util/itstool >=sys-devel/gettext-0.19.8 doc? ( app-text/docbook-xml-dtd:4.5 ) test? ( dev-qt/linguist-tools:5 ) >=dev-util/meson-0.62.2 >=dev-util/ninja-1.8.2 dev-util/meson-format-array >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=dev-libs/glib:2 dev-libs/libxml2:2 dev-libs/libyaml dev-libs/snowball-stemmer introspection? ( >=dev-libs/gobject-introspection-1.56:= ) qt5? ( dev-qt/qtcore:5 test? ( dev-qt/qttest:5 ) )
+DEPEND=dev-db/lmdb:= >=dev-libs/glib-2.58:2 dev-libs/libxml2:2 dev-libs/libyaml dev-libs/snowball-stemmer:= net-misc/curl introspection? ( >=dev-libs/gobject-introspection-1.56:= ) qt5? ( dev-qt/qtcore:5 ) test? ( qt5? ( dev-qt/qttest:5 ) )
 DESCRIPTION=Cross-distro effort for providing metadata for software in the Linux ecosystem
 EAPI=8
 HOMEPAGE=https://www.freedesktop.org/wiki/Distributions/AppStream/
 INHERIT=meson xdg-utils git-r3
-IUSE=apt +introspection qt5 test
+IUSE=apt doc +introspection qt5 test
 LICENSE=LGPL-2.1+ GPL-2+
 PROPERTIES=live
-RDEPEND=dev-libs/glib:2 dev-libs/libxml2:2 dev-libs/libyaml dev-libs/snowball-stemmer introspection? ( >=dev-libs/gobject-introspection-1.56:= ) qt5? ( dev-qt/qtcore:5 test? ( dev-qt/qttest:5 ) )
-RESTRICT=!test? ( test )
+RDEPEND=dev-db/lmdb:= >=dev-libs/glib-2.58:2 dev-libs/libxml2:2 dev-libs/libyaml dev-libs/snowball-stemmer:= net-misc/curl introspection? ( >=dev-libs/gobject-introspection-1.56:= ) qt5? ( dev-qt/qtcore:5 )
+RESTRICT=test
 SLOT=0/4
 _eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	58ec4e54962bf45d065fb95030701514	toolchain-funcs	1542e649be915f43f6908a9e93909961	multilib	5ca4e49abed8e3a2f7b56920eadee157	python-utils-r1	b9fc5e97e886514e5132f50465185401	meson	1994a5aef5d4f5798b92f64d6f9a6003	xdg-utils	fffb53a53cf17c9c0c998a3c0a590c7e	git-r3	b9ac6f96d2a88edb5b351df634dc5e53
-_md5_=eeaed2f5c8c396d51e7a5f97d3bab390
+_md5_=c23923b8a3cf59d1da8ac0e7e747f3d2
