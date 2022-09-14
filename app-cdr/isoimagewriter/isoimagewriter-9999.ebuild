@@ -3,7 +3,7 @@
 
 EAPI=8
 
-KFMIN=5.82.0
+KFMIN=5.90.0
 QTMIN=5.15.5
 inherit ecm kde.org
 
@@ -29,6 +29,7 @@ DEPEND="
 	>=kde-frameworks/kcrash-${KFMIN}:5
 	>=kde-frameworks/kcoreaddons-${KFMIN}:5
 	>=kde-frameworks/ki18n-${KFMIN}:5
+	>=kde-frameworks/kiconthemes-${KFMIN}:5
 	>=kde-frameworks/solid-${KFMIN}:5
 "
 RDEPEND="${DEPEND}"
