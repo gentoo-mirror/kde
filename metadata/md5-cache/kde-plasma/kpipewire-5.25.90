@@ -1,0 +1,16 @@
+BDEPEND=>=dev-qt/qtwaylandscanner-5.15.5:5 dev-util/ninja >=dev-util/cmake-3.20.5 >=kde-frameworks/extra-cmake-modules-5.98.0:5
+DEFINED_PHASES=compile configure install nofetch postinst postrm preinst prepare setup test unpack
+DEPEND=dev-libs/wayland >=dev-qt/qtdbus-5.15.5:5 >=dev-qt/qtdeclarative-5.15.5:5 >=dev-qt/qtgui-5.15.5:5 >=dev-qt/qtwayland-5.15.5:5 >=kde-frameworks/kcoreaddons-5.98.0:5 >=kde-frameworks/ki18n-5.98.0:5 >=kde-frameworks/kwayland-5.98.0:5 media-libs/libepoxy media-libs/libglvnd media-video/ffmpeg:= >=media-video/pipewire-0.3:= x11-libs/libdrm dev-libs/plasma-wayland-protocols test? ( dev-qt/qttest:5 ) dev-qt/qtcore:5
+DESCRIPTION=Components relating to Flatpak pipewire use in Plasma
+EAPI=8
+HOMEPAGE=https://kde.org/
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=ecm kde.org
+IUSE=debug test
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2.1+
+RDEPEND=dev-libs/wayland >=dev-qt/qtdbus-5.15.5:5 >=dev-qt/qtdeclarative-5.15.5:5 >=dev-qt/qtgui-5.15.5:5 >=dev-qt/qtwayland-5.15.5:5 >=kde-frameworks/kcoreaddons-5.98.0:5 >=kde-frameworks/ki18n-5.98.0:5 >=kde-frameworks/kwayland-5.98.0:5 media-libs/libepoxy media-libs/libglvnd media-video/ffmpeg:= >=media-video/pipewire-0.3:= x11-libs/libdrm >=dev-qt/qtquickcontrols2-5.15.5:5 >=kde-frameworks/kirigami-5.98.0:5 x11-themes/sound-theme-freedesktop || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-4 dev-qt/qtcore:5
+RESTRICT=!test? ( test )
+SLOT=5
+_eclasses_=toolchain-funcs	1542e649be915f43f6908a9e93909961	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	29a755b1291d64133634d80b0328f153	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	58ec4e54962bf45d065fb95030701514	xdg-utils	fffb53a53cf17c9c0c998a3c0a590c7e	cmake	90e2b29417d53718328f3a95227137a0	virtualx	644887c82aefdf12001489391fca4f02	xdg	6024fbc93167fad782e2032933654857	ecm	7565c1b5168ddcf82d25d1fc352a7ebe	kde.org	087d21100477ce987a8de6c1d613a176
+_md5_=7a95c6d2f8b38a4e59514257afa52794
