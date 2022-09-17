@@ -3,22 +3,16 @@
 
 EAPI=8
 
-KDE_ORG_CATEGORY="plasma"
 KFMIN=5.98.0
 QTMIN=5.15.5
-inherit ecm kde.org
-
-if [[ ${KDE_BUILD_TYPE} = release ]]; then
-	SRC_URI="mirror://kde/stable/${PN}/${P}.tar.xz"
-	KEYWORDS="~amd64"
-fi
+inherit ecm plasma.kde.org
 
 DESCRIPTION="Plasma shell for TVs"
 HOMEPAGE="https://plasma-bigscreen.org/"
 
 LICENSE="Apache-2.0 GPL-2"
 SLOT="5"
-IUSE=""
+IUSE="~amd64"
 
 DEPEND="
 	>=dev-qt/qtdbus-${QTMIN}:5
