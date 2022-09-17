@@ -54,7 +54,6 @@ games-board/atlantik 9999: Atlantik board game
 games-kids/gcompris 9999: Full featured educational application for children from 2 to 10
 games-mud/kmuddy 9999: MUD client by KDE
 gui-apps/liquidshell 1.8.1 9999: Basic desktop shell using QtWidgets
-gui-apps/plasma-bigscreen 9999: Plasma shell for TVs
 kde-apps/akonadi 22.08.49.9999 9999: Storage service for PIM data and libraries for PIM apps
 kde-apps/akonadi-calendar 22.08.49.9999 9999: Library for akonadi calendar integration
 kde-apps/akonadi-contacts 22.08.49.9999 9999: Library for akonadi contact integration
@@ -424,6 +423,7 @@ kde-plasma/libkworkspace 5.25.90 5.26.49.9999 9999: Workspace library to interac
 kde-plasma/milou 5.25.90 5.26.49.9999 9999: Dedicated search application built on top of Baloo
 kde-plasma/oxygen 5.25.90 5.26.49.9999 9999: Oxygen visual style for the Plasma desktop
 kde-plasma/oxygen-sounds 5.25.90 5.26.49.9999 9999: Oxygen sound theme for the Plasma desktop
+kde-plasma/plasma-bigscreen 5.25.90 5.26.49.9999 9999: Plasma shell for TVs
 kde-plasma/plasma-browser-integration 5.25.90 5.26.49.9999 9999: Integrate Chrome/Firefox better into Plasma through browser extensions
 kde-plasma/plasma-desktop 5.25.90 5.26.49.9999 9999: KDE Plasma desktop
 kde-plasma/plasma-disks 5.25.90 5.26.49.9999 9999: Monitors S.M.A.R.T. capable devices for imminent failure

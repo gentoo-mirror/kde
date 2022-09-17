@@ -259,6 +259,7 @@ kde-plasma/plasma-desktop:scim - Enable applets that use app-i18n/scim
 kde-plasma/plasma-desktop:screencast - Enable screencast portal thumbnails using kde-plasma/kpipewire
 kde-plasma/plasma-firewall:firewalld - Build net-firewall/firewalld backend
 kde-plasma/plasma-firewall:ufw - Build net-firewall/ufw backend
+kde-plasma/plasma-meta:bigscreen - Pull in kde-plasma/plasma-bigscreen shell for TVs
 kde-plasma/plasma-meta:browser-integration - Enable integration with Chrome/Firefox with browser extensions
 kde-plasma/plasma-meta:colord - Enable kde-plasma/kwin color management via x11-misc/colord
 kde-plasma/plasma-meta:crash-handler - Pull in kde-plasma/drkonqi for assisted upstream crash reports
