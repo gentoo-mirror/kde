@@ -474,7 +474,6 @@ media-video/subtitlecomposer 9999: Text-based subtitles editor
 net-im/choqok 9999: Free/Open Source micro-blogging client by KDE
 net-im/neochat 9999: Client for Matrix, the decentralized communication protocol
 net-irc/konversation 22.08.2 22.08.49.9999 9999: User friendly IRC Client
-net-libs/jreen 9999: Qt XMPP library
 net-libs/kdsoap 9999: Qt-based client-side and server-side SOAP component
 net-libs/kdsoap-ws-discovery-client 9999: WS-Discovery client library based on KDSoap
 net-libs/libktorrent 22.08.2 22.08.49.9999 9999: BitTorrent library based on KDE Frameworks
