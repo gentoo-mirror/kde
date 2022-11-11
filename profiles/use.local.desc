@@ -149,6 +149,7 @@ kde-apps/kopete:winpopup - Enable pop-up messages sending on windows. (same as g
 kde-apps/kopete:zeroconf - Enable Link-Local Messaging via the bonjour protocol.
 kde-apps/kpimtextedit:designer - Build plugins for dev-qt/designer
 kde-apps/kpimtextedit:speech - Enable text-to-speech support
+kde-apps/krdc:activities - Enable Plasma Activities support via kde-frameworks/kactivities
 kde-apps/ksystemlog:audit - Enable security audit support via sys-process/audit
 kde-apps/ksystemlog:kdesu - Run as root using kdesu from kde-plasma/kde-cli-tools
 kde-apps/ktouch:X - Enable support for X11 Keyboard Layout Detection
