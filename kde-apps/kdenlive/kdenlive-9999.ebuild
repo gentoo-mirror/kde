@@ -3,6 +3,7 @@
 
 EAPI=8
 
+ECM_DESIGNERPLUGIN="true"
 ECM_HANDBOOK="optional"
 ECM_QTHELP="true"
 ECM_TEST="true"
@@ -35,6 +36,7 @@ DEPEND="
 	>=dev-qt/qtxml-${QTMIN}:5
 	>=kde-frameworks/karchive-${KFMIN}:5
 	>=kde-frameworks/kbookmarks-${KFMIN}:5
+	>=kde-frameworks/kcodecs-${KFMIN}:5
 	>=kde-frameworks/kcompletion-${KFMIN}:5
 	>=kde-frameworks/kconfig-${KFMIN}:5
 	>=kde-frameworks/kconfigwidgets-${KFMIN}:5
@@ -42,6 +44,7 @@ DEPEND="
 	>=kde-frameworks/kcrash-${KFMIN}:5
 	>=kde-frameworks/kdbusaddons-${KFMIN}:5
 	>=kde-frameworks/kdeclarative-${KFMIN}:5
+	>=kde-frameworks/kfilemetadata-${KFMIN}:5
 	>=kde-frameworks/kguiaddons-${KFMIN}:5
 	>=kde-frameworks/ki18n-${KFMIN}:5
 	>=kde-frameworks/kiconthemes-${KFMIN}:5
@@ -56,8 +59,7 @@ DEPEND="
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
 	>=kde-frameworks/solid-${KFMIN}:5
-	>=media-libs/mlt-7.8.0[ffmpeg,frei0r,qt5,sdl,xml]
-	semantic-desktop? ( >=kde-frameworks/kfilemetadata-${KFMIN}:5 )
+	>=media-libs/mlt-7.10.0[ffmpeg,frei0r,qt5,sdl,xml]
 	share? ( >=kde-frameworks/purpose-${KFMIN}:5 )
 	v4l? ( media-libs/libv4l )
 "
@@ -70,7 +72,6 @@ BDEPEND="sys-devel/gettext"
 
 src_configure() {
 	local mycmakeargs=(
-		$(cmake_use_find_package semantic-desktop KF5FileMetaData)
 		$(cmake_use_find_package share KF5Purpose)
 		$(cmake_use_find_package v4l LibV4L2)
 	)
