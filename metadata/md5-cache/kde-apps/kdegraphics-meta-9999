@@ -2,8 +2,8 @@ DEFINED_PHASES=-
 DESCRIPTION=kdegraphics - merge this to pull in all kdegraphics-derived packages
 EAPI=8
 HOMEPAGE=https://apps.kde.org/graphics/
-IUSE=scanner
+IUSE=color-management scanner
 LICENSE=metapackage
-RDEPEND=>=kde-apps/gwenview-9999:5 >=kde-apps/kamera-9999:5 >=kde-apps/kcolorchooser-9999:5 >=kde-apps/kdegraphics-mobipocket-9999:5 >=kde-apps/kolourpaint-9999:5 >=kde-apps/kruler-9999:5 >=kde-apps/libkdcraw-9999:5 >=kde-apps/libkexiv2-9999:5 >=kde-apps/okular-9999:5 >=kde-apps/spectacle-9999:5 >=kde-apps/svgpart-9999:5 >=kde-apps/thumbnailers-9999:5 scanner? ( >=kde-apps/libksane-9999:5 >=kde-misc/skanlite-9999:5 >=media-gfx/skanpage-9999:5 )
+RDEPEND=>=kde-apps/gwenview-9999:5 >=kde-apps/kamera-9999:5 >=kde-apps/kcolorchooser-9999:5 >=kde-apps/kdegraphics-mobipocket-9999:5 >=kde-apps/kolourpaint-9999:5 >=kde-apps/kruler-9999:5 >=kde-apps/libkdcraw-9999:5 >=kde-apps/libkexiv2-9999:5 >=kde-apps/okular-9999:5 >=kde-apps/spectacle-9999:5 >=kde-apps/svgpart-9999:5 >=kde-apps/thumbnailers-9999:5 color-management? ( >=kde-misc/colord-kde-9999:5 ) scanner? ( >=kde-apps/libksane-9999:5 >=kde-misc/skanlite-9999:5 >=media-gfx/skanpage-9999:5 )
 SLOT=5
-_md5_=b3229fec7d263271ba1f978660101f3f
+_md5_=aef6c921aa31d9669ba9d085c45e723b
