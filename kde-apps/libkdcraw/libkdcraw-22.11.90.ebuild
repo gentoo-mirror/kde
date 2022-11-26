@@ -6,15 +6,15 @@ EAPI=8
 QTMIN=5.15.5
 inherit ecm gear.kde.org
 
-DESCRIPTION="Wrapper around exiv2 library"
+DESCRIPTION="Digital camera raw image library wrapper"
 
 LICENSE="GPL-2+"
 SLOT="5"
-KEYWORDS="~amd64 ~arm ~arm64 ~ppc64 ~riscv ~x86"
-IUSE="+xmp"
+KEYWORDS="~amd64 ~arm64 ~loong ~ppc64 ~riscv ~x86"
+IUSE=""
 
 DEPEND="
 	>=dev-qt/qtgui-${QTMIN}:5
-	>=media-gfx/exiv2-0.25:=[xmp=]
+	>=media-libs/libraw-0.16:=
 "
 RDEPEND="${DEPEND}"
