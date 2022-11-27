@@ -414,7 +414,7 @@ kde-plasma/ksshaskpass 5.26.49.9999 9999: Implementation of ssh-askpass with KDE
 kde-plasma/ksysguard 9999: Network-enabled resource usage monitor
 kde-plasma/ksystemstats 5.26.49.9999 9999: Plugin-based system monitoring daemon
 kde-plasma/kwallet-pam 5.26.49.9999 9999: PAM module to not enter KWallet password again after login
-kde-plasma/kwayland-integration 5.26.49.9999 9999: Provides integration plugins for various KDE frameworks for Wayland
+kde-plasma/kwayland-integration 5.26.49.9999 9999: Provides KWindowSystem integration plugin for Wayland
 kde-plasma/kwin 5.26.49.9999 9999: Flexible, composited Window Manager for windowing systems on Linux
 kde-plasma/kwrited 5.26.49.9999 9999: KDE Plasma daemon listening for wall and write messages
 kde-plasma/layer-shell-qt 5.26.49.9999 9999: Qt component to allow applications make use of Wayland wl-layer-shell protocol
