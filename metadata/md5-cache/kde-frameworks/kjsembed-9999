@@ -10,5 +10,5 @@ LICENSE=LGPL-2+
 PROPERTIES=live
 RDEPEND=>=dev-qt/qtgui-5.15.5:5 >=dev-qt/qtsvg-5.15.5:5 >=dev-qt/qtwidgets-5.15.5:5 >=dev-qt/qtxml-5.15.5:5 =kde-frameworks/ki18n-9999*:5 =kde-frameworks/kjs-9999*:5 >=kde-frameworks/kf-env-4 dev-qt/qtcore:5
 SLOT=5/9999
-_eclasses_=toolchain-funcs	441f754fd75cd4fd1fa06fbc17da6144	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	29a755b1291d64133634d80b0328f153	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	8ed38f92fe095be374d6c4c8d4c0dda7	xdg-utils	ac0e315a3688929e34ac75b139e7349a	cmake	4e5ac2025c3d8afb852ebb79bfeb2409	virtualx	644887c82aefdf12001489391fca4f02	ecm	47ec07d705ddf354a30ccc2975621ea4	git-r3	2347f8fe2d392b2a091191f94be37e6f	kde.org	f4e23ee9fed407c2ceb93f819e8d9263	frameworks.kde.org	c2fd5a72d3ab78b02072d048e723db69
+_eclasses_=toolchain-funcs	959e1d99122907eb98a3a660297a967e	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	69394e25812406faa1f90edaf4969395	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	8ed38f92fe095be374d6c4c8d4c0dda7	xdg-utils	ac0e315a3688929e34ac75b139e7349a	cmake	4e5ac2025c3d8afb852ebb79bfeb2409	virtualx	644887c82aefdf12001489391fca4f02	ecm	47ec07d705ddf354a30ccc2975621ea4	git-r3	2347f8fe2d392b2a091191f94be37e6f	kde.org	f4e23ee9fed407c2ceb93f819e8d9263	frameworks.kde.org	c2fd5a72d3ab78b02072d048e723db69
 _md5_=b6807fbe401536cdb40258f300c9819a
