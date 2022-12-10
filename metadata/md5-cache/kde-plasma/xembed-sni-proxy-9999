@@ -1,13 +1,13 @@
-BDEPEND=>=kde-frameworks/extra-cmake-modules-9999:5 dev-util/ninja >=dev-util/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=>=kde-frameworks/extra-cmake-modules-5.101.0:5 dev-util/ninja >=dev-util/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install nofetch prepare test unpack
-DEPEND=>=dev-qt/qtcore-5.15.5:5 >=dev-qt/qtdbus-5.15.5:5 >=dev-qt/qtgui-5.15.5:5 >=dev-qt/qtx11extras-5.15.5:5 >=kde-frameworks/kwindowsystem-9999:5[X] x11-libs/libxcb x11-libs/libXtst x11-libs/xcb-util-image
+DEPEND=>=dev-qt/qtcore-5.15.5:5 >=dev-qt/qtdbus-5.15.5:5 >=dev-qt/qtgui-5.15.5:5 >=dev-qt/qtx11extras-5.15.5:5 >=kde-frameworks/kwindowsystem-5.101.0:5[X] x11-libs/libxcb x11-libs/libXtst x11-libs/xcb-util-image
 DESCRIPTION=Legacy xembed tray icons support for SNI-only system trays
 EAPI=8
 HOMEPAGE=https://invent.kde.org/plasma/plasma-workspace/-/blob/master/xembed-sni-proxy/Readme.md
 INHERIT=cmake plasma.kde.org
 LICENSE=GPL-2
 PROPERTIES=live
-RDEPEND=>=dev-qt/qtcore-5.15.5:5 >=dev-qt/qtdbus-5.15.5:5 >=dev-qt/qtgui-5.15.5:5 >=dev-qt/qtx11extras-5.15.5:5 >=kde-frameworks/kwindowsystem-9999:5[X] x11-libs/libxcb x11-libs/libXtst x11-libs/xcb-util-image !kde-plasma/xembed-sni-proxy:0
+RDEPEND=>=dev-qt/qtcore-5.15.5:5 >=dev-qt/qtdbus-5.15.5:5 >=dev-qt/qtgui-5.15.5:5 >=dev-qt/qtx11extras-5.15.5:5 >=kde-frameworks/kwindowsystem-5.101.0:5[X] x11-libs/libxcb x11-libs/libXtst x11-libs/xcb-util-image !kde-plasma/xembed-sni-proxy:0
 SLOT=5
 _eclasses_=toolchain-funcs	37a4612ce5522df5a100359a8dbc8491	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	69394e25812406faa1f90edaf4969395	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	8ed38f92fe095be374d6c4c8d4c0dda7	xdg-utils	ac0e315a3688929e34ac75b139e7349a	cmake	4e5ac2025c3d8afb852ebb79bfeb2409	git-r3	2347f8fe2d392b2a091191f94be37e6f	kde.org	f4e23ee9fed407c2ceb93f819e8d9263	plasma.kde.org	9622322dda51d66780cf4cfd2b3351b8
-_md5_=e18571ccdb195fdece855a54451375a2
+_md5_=ee04a9cff34fdec6e8165adcac23c5c7
