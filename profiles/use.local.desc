@@ -31,6 +31,7 @@ dev-libs/kosmindoormap:openinghours - Enable support for highlighting currently 
 dev-libs/kreport:marble - Enable displaying of maps using kde-apps/marble
 dev-libs/kreport:scripting - Support Qml scripting using dev-qt/qtdeclarative
 dev-libs/qcoro5:network - Build dev-qt/qtnetwork support
+dev-libs/qcoro5:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
 dev-libs/qcoro5:websockets - Build dev-qt/qtwebsockets support
 dev-util/kdevelop:gdbui - Enable GUI for attaching GDB to a running process
 dev-util/kdevelop:hex - Enable hex editor plugin via app-editors/okteta

@@ -25,6 +25,7 @@ dev-libs/atcore 9999: API to manage the serial connection between the computer a
 dev-libs/grantlee 9999: C++ string template engine based on the Django template system
 dev-libs/kasync 9999: C++ library for controlling asynchronous tasks
 dev-libs/kdiagram 9999: Powerful libraries (KChart, KGantt) for creating business diagrams
+dev-libs/kirigami-addons 9999: Visual end user components for Kirigami-based applications
 dev-libs/kopeninghours 22.12.49.9999 9999: Library for parsing and evaluating OSM opening hours expressions
 dev-libs/kosmindoormap 22.12.49.9999 9999: Data Model and Extraction System for Travel Reservation information
 dev-libs/kpeoplevcard 9999: Library to expose vcards to KPeople
