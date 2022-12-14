@@ -1,6 +1,6 @@
-BDEPEND=dev-util/ninja >=dev-util/cmake-3.20.5 >=kde-frameworks/extra-cmake-modules-5.99.0:5 dev-libs/libpcre2:* >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=dev-util/ninja >=dev-util/cmake-3.20.5 >=kde-frameworks/extra-cmake-modules-5.101.0:5 dev-libs/libpcre2:* >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install nofetch postinst postrm preinst prepare setup test unpack
-DEPEND=>=kde-frameworks/kwallet-5.99.0:5 net-libs/signond dev-qt/qtcore:5
+DEPEND=>=kde-frameworks/kwallet-5.101.0:5 net-libs/signond dev-qt/qtcore:5
 DESCRIPTION=KWallet extension for signond
 EAPI=8
 HOMEPAGE=https://accounts-sso.gitlab.io/
@@ -9,7 +9,7 @@ INHERIT=ecm gear.kde.org
 IUSE=debug
 LICENSE=GPL-2+
 PROPERTIES=live
-RDEPEND=>=kde-frameworks/kwallet-5.99.0:5 net-libs/signond || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-4 dev-qt/qtcore:5
+RDEPEND=>=kde-frameworks/kwallet-5.101.0:5 net-libs/signond || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-4 dev-qt/qtcore:5
 SLOT=5
 _eclasses_=toolchain-funcs	37a4612ce5522df5a100359a8dbc8491	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	69394e25812406faa1f90edaf4969395	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	8ed38f92fe095be374d6c4c8d4c0dda7	xdg-utils	ac0e315a3688929e34ac75b139e7349a	cmake	dcd38bd0b6ed7ad5added32e49716988	virtualx	644887c82aefdf12001489391fca4f02	xdg	6024fbc93167fad782e2032933654857	ecm	be9bbbfda28ef749efe33d23d406982a	git-r3	2347f8fe2d392b2a091191f94be37e6f	kde.org	f4e23ee9fed407c2ceb93f819e8d9263	gear.kde.org	aebcdbce229877667716707f608f9cc3
-_md5_=8c687f1c6df997cb8b7da7990e9ad538
+_md5_=5631f47e32dc65d8ce68b48ed648a599
