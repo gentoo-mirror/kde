@@ -4,9 +4,9 @@
 EAPI=8
 
 ECM_TEST="forceoptional"
-KFMIN=5.101.0
+KFMIN=5.102.0
 PVCUT=$(ver_cut 1-3)
-QTMIN=5.15.5
+QTMIN=5.15.7
 inherit ecm plasma.kde.org
 
 DESCRIPTION="KDE Plasma screen management"

@@ -4,8 +4,8 @@
 EAPI=8
 
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.101.0
-QTMIN=5.15.5
+KFMIN=5.102.0
+QTMIN=5.15.7
 inherit ecm plasma.kde.org
 
 DESCRIPTION="Monitor system sensors, process information and other system resources"
