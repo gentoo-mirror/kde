@@ -14,5 +14,5 @@ RDEPEND=dev-libs/icu:= >=dev-libs/wayland-1.15 >=dev-qt/qtdbus-5.15.7:5 >=dev-qt
 REQUIRED_USE=gps? ( geolocation )
 RESTRICT=test !test? ( test ) !test? ( test )
 SLOT=5
-_eclasses_=toolchain-funcs	37a4612ce5522df5a100359a8dbc8491	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	69394e25812406faa1f90edaf4969395	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	38c85b725d0467e51954ea921b6c104b	xdg-utils	ac0e315a3688929e34ac75b139e7349a	cmake	dcd38bd0b6ed7ad5added32e49716988	virtualx	644887c82aefdf12001489391fca4f02	xdg	6024fbc93167fad782e2032933654857	ecm	759316ed4292f85ad71e60da7300ac78	git-r3	2347f8fe2d392b2a091191f94be37e6f	kde.org	5dd311d12cdba33b446368fad288784d	plasma.kde.org	9622322dda51d66780cf4cfd2b3351b8
-_md5_=2c7440f4b08aadd4c7a22ca32f938cb2
+_eclasses_=toolchain-funcs	37a4612ce5522df5a100359a8dbc8491	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	69394e25812406faa1f90edaf4969395	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	38c85b725d0467e51954ea921b6c104b	xdg-utils	ac0e315a3688929e34ac75b139e7349a	cmake	0613cc4e7fd05eaf4faa4393d38d125a	virtualx	644887c82aefdf12001489391fca4f02	xdg	6024fbc93167fad782e2032933654857	ecm	a216c81db845082ab326df14b9452543	git-r3	2347f8fe2d392b2a091191f94be37e6f	kde.org	82da80b3bba78006c1bcd050832b98fb	plasma.kde.org	24a4ccac663d71c1f1a6016c93007666
+_md5_=f1c1a5ba9141d8273be5ea5c5d9e7096

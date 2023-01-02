@@ -6,4 +6,4 @@ IUSE=+bittorrent dropbox samba telepathy +webengine
 LICENSE=metapackage
 RDEPEND=>=kde-apps/kget-9999:5 >=kde-apps/kopete-9999:5 >=kde-apps/krdc-9999:5 >=kde-apps/krfb-9999:5 >=kde-misc/kdeconnect-9999:5 >=net-irc/konversation-9999:5 >=net-misc/kio-zeroconf-9999:5 bittorrent? ( >=net-libs/libktorrent-9999:5 >=net-p2p/ktorrent-9999:5 ) dropbox? ( >=kde-apps/dolphin-plugins-dropbox-9999:5 ) samba? ( >=kde-apps/kdenetwork-filesharing-9999:5 ) telepathy? ( kde-apps/plasma-telepathy-meta:5 ) webengine? ( >=kde-misc/kio-gdrive-9999:5 )
 SLOT=5
-_md5_=9d37e0d19861a0525dbae5876815bc6a
+_md5_=73bd33a65918f9211d53075417b968f4

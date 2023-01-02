@@ -6,4 +6,4 @@ IUSE=+cdrom +ffmpeg gstreamer
 LICENSE=metapackage
 RDEPEND=>=kde-apps/dragon-22.12.49.9999:5 >=kde-apps/juk-22.12.49.9999:5 >=kde-apps/kdenlive-22.12.49.9999:5 >=kde-apps/kmix-22.12.49.9999:5 >=kde-apps/kwave-22.12.49.9999:5 >=media-sound/elisa-22.12.49.9999:5 cdrom? ( >=kde-apps/audiocd-kio-22.12.49.9999:5 >=kde-apps/k3b-22.12.49.9999:5 >=kde-apps/libkcddb-22.12.49.9999:5 >=kde-apps/libkcompactdisc-22.12.49.9999:5 ) ffmpeg? ( >=kde-apps/ffmpegthumbs-22.12.49.9999:5 ) gstreamer? ( >=kde-apps/kamoso-22.12.49.9999:5 )
 SLOT=5
-_md5_=bb87eb666e486f23f0937274f600637e
+_md5_=11dd1a3704b64c807f2f83a250ee81a8

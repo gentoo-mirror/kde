@@ -6,4 +6,4 @@ IUSE=cvs git mercurial perl php python ruby subversion webengine
 LICENSE=metapackage
 RDEPEND=>=kde-apps/kapptemplate-9999:5 >=kde-apps/kcachegrind-9999:5 >=kde-apps/kde-dev-scripts-9999:5 >=kde-apps/kde-dev-utils-9999:5 >=kde-apps/kdesdk-thumbnailers-9999:5 >=kde-apps/kompare-9999:5 >=kde-apps/libkomparediff2-9999:5 >=kde-apps/poxml-9999:5 >=kde-apps/umbrello-9999:5 cvs? ( >=kde-apps/cervisia-9999:5 ) git? ( >=kde-apps/dolphin-plugins-git-9999:5 ) mercurial? ( >=kde-apps/dolphin-plugins-mercurial-9999:5 ) perl? ( >=dev-util/kio-perldoc-9999:5 ) python? ( >=kde-apps/lokalize-9999:5 ) ruby? ( >=kde-apps/kross-interpreters-9999:5 ) subversion? ( >=kde-apps/dolphin-plugins-subversion-9999:5 ) webengine? ( >=dev-util/kdevelop-9999:5 php? ( >=dev-util/kdevelop-php-9999:5 ) python? ( >=dev-util/kdevelop-python-9999:5 ) )
 SLOT=5
-_md5_=0081f50fd855ea39955e0259f784cd21
+_md5_=742070e851d5954a14ae9c57c9457a8b

@@ -5,4 +5,4 @@ HOMEPAGE=https://community.kde.org/KTp
 LICENSE=metapackage
 RDEPEND=>=kde-apps/ktp-accounts-kcm-9999:5 >=kde-apps/ktp-approver-9999:5 >=kde-apps/ktp-auth-handler-9999:5 >=kde-apps/ktp-common-internals-9999:5 >=kde-apps/ktp-contact-list-9999:5 >=kde-apps/ktp-contact-runner-9999:5 >=kde-apps/ktp-desktop-applets-9999:5 >=kde-apps/ktp-filetransfer-handler-9999:5 >=kde-apps/ktp-kded-module-9999:5 >=kde-apps/ktp-send-file-9999:5 >=kde-apps/ktp-text-ui-9999:5
 SLOT=5
-_md5_=e8c61658be9db8fe9c293c185df238a0
+_md5_=3da0d0ca9522440f2405a2c00afeb274

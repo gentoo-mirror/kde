@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=dev-libs/glib:2 >=dev-qt/qtdbus-5.15.5:5 >=dev-qt/qtnetwork-5.15.5:5 >=net-misc/networkmanager-1.4.0-r1[teamd=] || ( >=net-misc/networkmanager-1.4.0-r1[elogind] >=net-misc/networkmanager-1.4.0-r1[systemd] ) >=kde-frameworks/kf-env-4 doc? ( dev-qt/qt-docs:5 ) dev-qt/qtcore:5
 RESTRICT=!test? ( test )
 SLOT=5/9999
-_eclasses_=toolchain-funcs	37a4612ce5522df5a100359a8dbc8491	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	69394e25812406faa1f90edaf4969395	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	38c85b725d0467e51954ea921b6c104b	xdg-utils	ac0e315a3688929e34ac75b139e7349a	cmake	dcd38bd0b6ed7ad5added32e49716988	virtualx	644887c82aefdf12001489391fca4f02	ecm	759316ed4292f85ad71e60da7300ac78	git-r3	2347f8fe2d392b2a091191f94be37e6f	kde.org	5dd311d12cdba33b446368fad288784d	frameworks.kde.org	ee4bfa0ef99d8c581f6250a08a8087c6
-_md5_=5e335095c5d8256f5d87f0fad8854697
+_eclasses_=toolchain-funcs	37a4612ce5522df5a100359a8dbc8491	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	69394e25812406faa1f90edaf4969395	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	38c85b725d0467e51954ea921b6c104b	xdg-utils	ac0e315a3688929e34ac75b139e7349a	cmake	0613cc4e7fd05eaf4faa4393d38d125a	virtualx	644887c82aefdf12001489391fca4f02	ecm	a216c81db845082ab326df14b9452543	git-r3	2347f8fe2d392b2a091191f94be37e6f	kde.org	82da80b3bba78006c1bcd050832b98fb	frameworks.kde.org	d692e053cee65741142f8c71f3cc310d
+_md5_=a9c05bf5503957efec8eb9dd491de0cd
