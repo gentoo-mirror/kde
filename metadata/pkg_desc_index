@@ -392,61 +392,61 @@ kde-misc/skanlite 22.12.1 22.12.49.9999 9999: Simple image scanning application 
 kde-misc/tellico 9999: Collection manager based on KDE Frameworks
 kde-misc/wacomtablet 9999: System settings module for Wacom tablets
 kde-misc/zanshin 22.12.1 22.12.49.9999 9999: Getting things done application by KDE
-kde-plasma/bluedevil 5.26.49.9999 9999: Bluetooth stack for KDE Plasma
-kde-plasma/breeze 5.26.49.9999 9999: Breeze visual style for the Plasma desktop
-kde-plasma/breeze-grub 5.26.49.9999 9999: Breeze theme for GRUB
-kde-plasma/breeze-gtk 5.26.49.9999 9999: Official GTK+ port of Plasma's Breeze widget style
-kde-plasma/breeze-plymouth 5.26.49.9999 9999: Breeze theme for Plymouth
-kde-plasma/discover 5.26.49.9999 9999: KDE Plasma resources management GUI
-kde-plasma/drkonqi 5.26.49.9999 9999: Plasma crash handler, gives the user feedback if a program crashed
-kde-plasma/kactivitymanagerd 5.26.49.9999 9999: System service to manage user's activities, track the usage patterns etc.
-kde-plasma/kde-cli-tools 5.26.49.9999 9999: Tools based on KDE Frameworks 5 to better interact with the system
-kde-plasma/kde-gtk-config 5.26.49.9999 9999: Syncs KDE Plasma theme settings to GTK applications
-kde-plasma/kdecoration 5.26.49.9999 9999: Plugin based library to create window decorations
-kde-plasma/kdeplasma-addons 5.26.49.9999 9999: Extra Plasma applets and engines
-kde-plasma/kgamma 5.26.49.9999 9999: Screen gamma values kcontrol module
-kde-plasma/khotkeys 5.26.49.9999 9999: KDE Plasma workspace hotkey module
-kde-plasma/kinfocenter 5.26.49.9999 9999: Utility providing information about the computer hardware
-kde-plasma/kmenuedit 5.26.49.9999 9999: KDE Plasma menu editor
-kde-plasma/kpipewire 5.26.49.9999 9999: Components relating to Flatpak pipewire use in Plasma
-kde-plasma/kscreen 5.26.49.9999 9999: KDE Plasma screen management
-kde-plasma/kscreenlocker 5.26.49.9999 9999: Library and components for secure lock screen architecture
-kde-plasma/ksshaskpass 5.26.49.9999 9999: Implementation of ssh-askpass with KDE Wallet integration
+kde-plasma/bluedevil 9999: Bluetooth stack for KDE Plasma
+kde-plasma/breeze 9999: Breeze visual style for the Plasma desktop
+kde-plasma/breeze-grub 9999: Breeze theme for GRUB
+kde-plasma/breeze-gtk 9999: Official GTK+ port of Plasma's Breeze widget style
+kde-plasma/breeze-plymouth 9999: Breeze theme for Plymouth
+kde-plasma/discover 9999: KDE Plasma resources management GUI
+kde-plasma/drkonqi 9999: Plasma crash handler, gives the user feedback if a program crashed
+kde-plasma/kactivitymanagerd 9999: System service to manage user's activities, track the usage patterns etc.
+kde-plasma/kde-cli-tools 9999: Tools based on KDE Frameworks 5 to better interact with the system
+kde-plasma/kde-gtk-config 9999: Syncs KDE Plasma theme settings to GTK applications
+kde-plasma/kdecoration 9999: Plugin based library to create window decorations
+kde-plasma/kdeplasma-addons 9999: Extra Plasma applets and engines
+kde-plasma/kgamma 9999: Screen gamma values kcontrol module
+kde-plasma/khotkeys 9999: KDE Plasma workspace hotkey module
+kde-plasma/kinfocenter 9999: Utility providing information about the computer hardware
+kde-plasma/kmenuedit 9999: KDE Plasma menu editor
+kde-plasma/kpipewire 9999: Components relating to Flatpak pipewire use in Plasma
+kde-plasma/kscreen 9999: KDE Plasma screen management
+kde-plasma/kscreenlocker 9999: Library and components for secure lock screen architecture
+kde-plasma/ksshaskpass 9999: Implementation of ssh-askpass with KDE Wallet integration
 kde-plasma/ksysguard 9999: Network-enabled resource usage monitor
-kde-plasma/ksystemstats 5.26.49.9999 9999: Plugin-based system monitoring daemon
-kde-plasma/kwallet-pam 5.26.49.9999 9999: PAM module to not enter KWallet password again after login
-kde-plasma/kwayland-integration 5.26.49.9999 9999: Provides KWindowSystem integration plugin for Wayland
-kde-plasma/kwin 5.26.49.9999 9999: Flexible, composited Window Manager for windowing systems on Linux
-kde-plasma/kwrited 5.26.49.9999 9999: KDE Plasma daemon listening for wall and write messages
-kde-plasma/layer-shell-qt 5.26.49.9999 9999: Qt component to allow applications make use of Wayland wl-layer-shell protocol
-kde-plasma/libkscreen 5.26.49.9999 9999: Plasma screen management library
-kde-plasma/libksysguard 5.26.49.9999 9999: Task management and system monitoring library
-kde-plasma/libkworkspace 5.26.49.9999 9999: Workspace library to interact with the Plasma session manager
-kde-plasma/milou 5.26.49.9999 9999: Dedicated search application built on top of Baloo
-kde-plasma/oxygen 5.26.49.9999 9999: Oxygen visual style for the Plasma desktop
-kde-plasma/oxygen-sounds 5.26.49.9999 9999: Oxygen sound theme for the Plasma desktop
-kde-plasma/plasma-bigscreen 5.26.49.9999 9999: Plasma shell for TVs
-kde-plasma/plasma-browser-integration 5.26.49.9999 9999: Integrate Chrome/Firefox better into Plasma through browser extensions
-kde-plasma/plasma-desktop 5.26.49.9999 9999: KDE Plasma desktop
-kde-plasma/plasma-disks 5.26.49.9999 9999: Monitors S.M.A.R.T. capable devices for imminent failure
-kde-plasma/plasma-firewall 5.26.49.9999 9999: Plasma frontend for Firewalld or UFW
-kde-plasma/plasma-integration 5.26.49.9999 9999: Qt Platform Theme integration plugins for the Plasma workspaces
-kde-plasma/plasma-meta 5.26.49.9999 9999: Merge this to pull in all Plasma 5 packages
-kde-plasma/plasma-nm 5.26.49.9999 9999: KDE Plasma applet for NetworkManager
-kde-plasma/plasma-pa 5.26.49.9999 9999: Plasma applet for audio volume management using PulseAudio
-kde-plasma/plasma-sdk 5.26.49.9999 9999: Useful applications for Plasma development
-kde-plasma/plasma-systemmonitor 5.26.49.9999 9999: Monitor system sensors, process information and other system resources
-kde-plasma/plasma-thunderbolt 5.26.49.9999 9999: Plasma integration for controlling Thunderbolt devices
-kde-plasma/plasma-vault 5.26.49.9999 9999: Plasma applet and services for creating encrypted vaults
-kde-plasma/plasma-workspace 5.26.49.9999 9999: KDE Plasma workspace
-kde-plasma/plasma-workspace-wallpapers 5.26.49.9999 9999: Wallpapers for the Plasma workspace
-kde-plasma/plymouth-kcm 5.26.49.9999 9999: KDE Plasma control module for Plymouth
-kde-plasma/polkit-kde-agent 5.26.49.9999 9999: PolKit agent module for KDE Plasma
-kde-plasma/powerdevil 5.26.49.9999 9999: Power management for KDE Plasma Shell
-kde-plasma/sddm-kcm 5.26.49.9999 9999: KDE Plasma control module for SDDM
-kde-plasma/systemsettings 5.26.49.9999 9999: Control Center to configure KDE Plasma desktop
-kde-plasma/xdg-desktop-portal-kde 5.26.49.9999 9999: Backend implementation for xdg-desktop-portal that is using Qt/KDE Frameworks
-kde-plasma/xembed-sni-proxy 5.26.49.9999 9999: Legacy xembed tray icons support for SNI-only system trays
+kde-plasma/ksystemstats 9999: Plugin-based system monitoring daemon
+kde-plasma/kwallet-pam 9999: PAM module to not enter KWallet password again after login
+kde-plasma/kwayland-integration 9999: Provides KWindowSystem integration plugin for Wayland
+kde-plasma/kwin 9999: Flexible, composited Window Manager for windowing systems on Linux
+kde-plasma/kwrited 9999: KDE Plasma daemon listening for wall and write messages
+kde-plasma/layer-shell-qt 9999: Qt component to allow applications make use of Wayland wl-layer-shell protocol
+kde-plasma/libkscreen 9999: Plasma screen management library
+kde-plasma/libksysguard 9999: Task management and system monitoring library
+kde-plasma/libkworkspace 9999: Workspace library to interact with the Plasma session manager
+kde-plasma/milou 9999: Dedicated search application built on top of Baloo
+kde-plasma/oxygen 9999: Oxygen visual style for the Plasma desktop
+kde-plasma/oxygen-sounds 9999: Oxygen sound theme for the Plasma desktop
+kde-plasma/plasma-bigscreen 9999: Plasma shell for TVs
+kde-plasma/plasma-browser-integration 9999: Integrate Chrome/Firefox better into Plasma through browser extensions
+kde-plasma/plasma-desktop 9999: KDE Plasma desktop
+kde-plasma/plasma-disks 9999: Monitors S.M.A.R.T. capable devices for imminent failure
+kde-plasma/plasma-firewall 9999: Plasma frontend for Firewalld or UFW
+kde-plasma/plasma-integration 9999: Qt Platform Theme integration plugins for the Plasma workspaces
+kde-plasma/plasma-meta 9999: Merge this to pull in all Plasma 5 packages
+kde-plasma/plasma-nm 9999: KDE Plasma applet for NetworkManager
+kde-plasma/plasma-pa 9999: Plasma applet for audio volume management using PulseAudio
+kde-plasma/plasma-sdk 9999: Useful applications for Plasma development
+kde-plasma/plasma-systemmonitor 9999: Monitor system sensors, process information and other system resources
+kde-plasma/plasma-thunderbolt 9999: Plasma integration for controlling Thunderbolt devices
+kde-plasma/plasma-vault 9999: Plasma applet and services for creating encrypted vaults
+kde-plasma/plasma-workspace 9999: KDE Plasma workspace
+kde-plasma/plasma-workspace-wallpapers 9999: Wallpapers for the Plasma workspace
+kde-plasma/plymouth-kcm 9999: KDE Plasma control module for Plymouth
+kde-plasma/polkit-kde-agent 9999: PolKit agent module for KDE Plasma
+kde-plasma/powerdevil 9999: Power management for KDE Plasma Shell
+kde-plasma/sddm-kcm 9999: KDE Plasma control module for SDDM
+kde-plasma/systemsettings 9999: Control Center to configure KDE Plasma desktop
+kde-plasma/xdg-desktop-portal-kde 9999: Backend implementation for xdg-desktop-portal that is using Qt/KDE Frameworks
+kde-plasma/xembed-sni-proxy 9999: Legacy xembed tray icons support for SNI-only system trays
 media-gfx/digikam 9999: Digital photo management application
 media-gfx/kgeotag 9999: Photo geotagging program
 media-gfx/kgraphviewer 9999: Graphviz dot graph file viewer
