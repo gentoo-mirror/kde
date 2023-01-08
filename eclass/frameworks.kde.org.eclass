@@ -29,7 +29,7 @@ _FRAMEWORKS_KDE_ORG_ECLASS=1
 # @INTERNAL
 # @DESCRIPTION:
 # For proper description see kde.org.eclass manpage.
-KDE_PV_UNRELEASED=( )
+KDE_PV_UNRELEASED=( 5.102.0 )
 
 inherit kde.org
 
@@ -57,23 +57,30 @@ KDE_ORG_SCHEDULE_URI+="/Frameworks"
 # Helper variable to construct release group specific SRC_URI.
 _KDE_SRC_URI="mirror://kde/"
 
-if [[ ${KDE_BUILD_TYPE} != live && -z ${KDE_ORG_COMMIT} ]]; then
-	_KDE_SRC_URI+="stable/frameworks/$(ver_cut 1-2)/"
-	case ${KDE_ORG_NAME} in
-		kdelibs4support | \
-		kdesignerplugin | \
-		kdewebkit | \
-		khtml | \
-		kjs | \
-		kjsembed | \
-		kmediaplayer | \
-		kross | \
-		kxmlrpcclient)
-			_KDE_SRC_URI+="portingAids/"
-			;;
-	esac
+case ${KDE_BUILD_TYPE} in
+	live)
+		[[ ${PV} == 5.9999 ]] && EGIT_BRANCH="kf5"
+		;;
+	*)
+		if [[ -z ${KDE_ORG_COMMIT} ]]; then
+			_KDE_SRC_URI+="stable/frameworks/$(ver_cut 1-2)/"
+			case ${KDE_ORG_NAME} in
+				kdelibs4support | \
+				kdesignerplugin | \
+				kdewebkit | \
+				khtml | \
+				kjs | \
+				kjsembed | \
+				kmediaplayer | \
+				kross | \
+				kxmlrpcclient)
+					_KDE_SRC_URI+="portingAids/"
+					;;
+			esac
 
-	SRC_URI="${_KDE_SRC_URI}${KDE_ORG_NAME}-${PV}.tar.xz"
-fi
+			SRC_URI="${_KDE_SRC_URI}${KDE_ORG_NAME}-${PV}.tar.xz"
+		fi
+		;;
+esac
 
 fi
