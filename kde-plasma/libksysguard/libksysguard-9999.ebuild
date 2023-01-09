@@ -57,13 +57,8 @@ RDEPEND="${COMMON_DEPEND}
 	!<kde-plasma/ksysguard-5.21.90:5
 "
 
-PATCHES=(
-	# downstream patch
-	"${FILESDIR}/${PN}-5.22.80-no-detailed-mem-message.patch"
-	# pending upstream:
-	# https://invent.kde.org/plasma/libksysguard/-/merge_requests/238
-	"${FILESDIR}/${PN}-5.26.0-with_x11.patch"
-)
+# downstream patch
+PATCHES=( "${FILESDIR}/${PN}-5.22.80-no-detailed-mem-message.patch" )
 
 src_configure() {
 	local mycmakeargs=(
@@ -76,5 +71,9 @@ src_configure() {
 }
 
 src_test() {
+	# bugs 797898, 889942: flaky test
+	local myctestargs=(
+		-E "(sensortreemodeltest)"
+	)
 	LC_NUMERIC="C" ecm_src_test # bug 695514
 }
