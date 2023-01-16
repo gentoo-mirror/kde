@@ -59,14 +59,14 @@ COMMON_DEPEND="
 	media-libs/lcms:2
 	media-libs/libepoxy
 	media-libs/libglvnd
-	>=media-libs/mesa-21.1[egl(+),gbm(+),wayland,X]
+	>=media-libs/mesa-21.3[egl(+),gbm(+),wayland,X]
 	virtual/libudev:=
 	x11-libs/libX11
 	x11-libs/libXi
 	>=x11-libs/libdrm-2.4.112
 	>=x11-libs/libxcb-1.10
 	>=x11-libs/libxcvt-0.1.1
-	>=x11-libs/libxkbcommon-0.7.0
+	>=x11-libs/libxkbcommon-1.5.0
 	x11-libs/xcb-util-cursor
 	x11-libs/xcb-util-image
 	x11-libs/xcb-util-keysyms
