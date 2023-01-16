@@ -32,6 +32,7 @@ dev-libs/kpeoplevcard 9999: Library to expose vcards to KPeople
 dev-libs/kproperty 9999: Property editing framework with editor widget similar to Qt Designer
 dev-libs/kpublictransport 22.12.49.9999 9999: Library for accessing public transport timetables and other information
 dev-libs/kreport 9999: Framework for creation and generation of reports in multiple formats
+dev-libs/ktextaddons 9999: Various text handling addons
 dev-libs/kuserfeedback 9999: Framework to collect user feedback for applications via telemetry and surveys
 dev-libs/kweathercore 9999: Library for retrieval of weather information including forecasts and alerts
 dev-libs/libphutil 9999: A collection of PHP utility classes

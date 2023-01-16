@@ -30,6 +30,7 @@ dev-libs/atcore:gui - Build test GUI
 dev-libs/kosmindoormap:openinghours - Enable support for highlighting currently open amenities/shops/etc.
 dev-libs/kreport:marble - Enable displaying of maps using kde-apps/marble
 dev-libs/kreport:scripting - Support Qml scripting using dev-qt/qtdeclarative
+dev-libs/ktextaddons:speech - Enable text-to-speech support
 dev-libs/qcoro5:network - Build dev-qt/qtnetwork support
 dev-libs/qcoro5:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
 dev-libs/qcoro5:websockets - Build dev-qt/qtwebsockets support
