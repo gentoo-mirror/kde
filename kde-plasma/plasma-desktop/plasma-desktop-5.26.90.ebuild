@@ -17,7 +17,7 @@ SRC_URI+=" https://dev.gentoo.org/~asturm/distfiles/${XORGHDRS}.tar.xz"
 
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"
-KEYWORDS=""
+KEYWORDS="~amd64"
 IUSE="ibus +kaccounts scim screencast +semantic-desktop"
 
 # kde-frameworks/kwindowsystem[X]: Uses KX11Extras
