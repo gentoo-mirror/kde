@@ -1,0 +1,16 @@
+BDEPEND=dev-lang/perl dev-perl/URI nls? ( >=kde-frameworks/ki18n-5.103:5 ) dev-util/ninja >=dev-util/cmake-3.20.5 >=kde-frameworks/extra-cmake-modules-5.103:5 dev-libs/libpcre2:*
+DEFINED_PHASES=compile configure install nofetch postinst postrm preinst prepare setup test unpack
+DEPEND=app-text/docbook-xml-dtd:4.5 app-text/docbook-xsl-stylesheets app-text/sgml-common dev-libs/libxml2:2 dev-libs/libxslt =kde-frameworks/karchive-5.103*:5 test? ( dev-qt/qttest:5 ) dev-qt/qtcore:5
+DESCRIPTION=Tools to generate documentation in various formats from DocBook files
+EAPI=8
+HOMEPAGE=https://develop.kde.org/products/frameworks/
+INHERIT=ecm frameworks.kde.org
+IUSE=nls debug test
+KEYWORDS=~amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv ~x86
+LICENSE=MIT
+RDEPEND=app-text/docbook-xml-dtd:4.5 app-text/docbook-xsl-stylesheets app-text/sgml-common dev-libs/libxml2:2 dev-libs/libxslt =kde-frameworks/karchive-5.103*:5 >=kde-frameworks/kf-env-4 dev-qt/qtcore:5
+RESTRICT=!test? ( test ) fetch fetch
+SLOT=5/5.103
+SRC_URI=mirror://kde/stable/frameworks/5.103/kdoctools-5.103.0.tar.xz
+_eclasses_=toolchain-funcs	9a610728b9bcca1919234cceb35a1027	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	69394e25812406faa1f90edaf4969395	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	38c85b725d0467e51954ea921b6c104b	xdg-utils	ac0e315a3688929e34ac75b139e7349a	cmake	0613cc4e7fd05eaf4faa4393d38d125a	virtualx	644887c82aefdf12001489391fca4f02	ecm	5434f6b2c0ec3ac863830821395e17c3	kde.org	82da80b3bba78006c1bcd050832b98fb	frameworks.kde.org	7619085d9e2379a9ebabc4064885515e
+_md5_=ab32571ca06229dcc96b95a553c4c6a9
