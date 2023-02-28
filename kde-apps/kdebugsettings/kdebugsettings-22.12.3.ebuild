@@ -3,38 +3,31 @@
 
 EAPI=8
 
+ECM_TEST="true"
 KFMIN=5.101.0
 QTMIN=5.15.5
+VIRTUALX_REQUIRED="test"
 inherit ecm gear.kde.org
 
-DESCRIPTION="Samba filesharing plugin for file properties"
-HOMEPAGE="https://apps.kde.org/kdenetwork_filesharing/"
+DESCRIPTION="Application to enable/disable qCDebug"
+HOMEPAGE="https://apps.kde.org/kdebugsettings/"
 
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"
-KEYWORDS=""
+KEYWORDS="~amd64 ~arm64 ~loong ~ppc64 ~riscv ~x86"
 IUSE=""
 
+RESTRICT="test"
+
 DEPEND="
-	>=dev-qt/qtdeclarative-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
 	>=kde-frameworks/kcompletion-${KFMIN}:5
+	>=kde-frameworks/kconfig-${KFMIN}:5
 	>=kde-frameworks/kcoreaddons-${KFMIN}:5
+	>=kde-frameworks/kdbusaddons-${KFMIN}:5
 	>=kde-frameworks/ki18n-${KFMIN}:5
-	>=kde-frameworks/kio-${KFMIN}:5
+	>=kde-frameworks/kitemviews-${KFMIN}:5
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 "
-RDEPEND="${DEPEND}
-	>=dev-qt/qtquickcontrols2-${QTMIN}:5
-	>=kde-frameworks/kirigami-${KFMIN}:5
-	net-fs/samba
-"
-
-src_configure() {
-	local mycmakeargs=(
-		-DCMAKE_DISABLE_FIND_PACKAGE_PackageKitQt5=ON
-	)
-
-	ecm_src_configure
-}
+RDEPEND="${DEPEND}"

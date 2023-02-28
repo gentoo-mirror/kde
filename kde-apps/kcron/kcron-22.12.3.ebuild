@@ -3,38 +3,30 @@
 
 EAPI=8
 
+ECM_HANDBOOK="optional"
 KFMIN=5.101.0
 QTMIN=5.15.5
 inherit ecm gear.kde.org
 
-DESCRIPTION="Samba filesharing plugin for file properties"
-HOMEPAGE="https://apps.kde.org/kdenetwork_filesharing/"
+DESCRIPTION="KDE Task Scheduler"
+HOMEPAGE="https://apps.kde.org/kcron/"
 
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"
-KEYWORDS=""
+KEYWORDS="~amd64 ~arm64 ~ppc64 ~riscv ~x86"
 IUSE=""
 
 DEPEND="
-	>=dev-qt/qtdeclarative-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
+	>=dev-qt/qtprintsupport-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
-	>=kde-frameworks/kcompletion-${KFMIN}:5
+	>=kde-frameworks/kauth-${KFMIN}:5
+	>=kde-frameworks/kconfigwidgets-${KFMIN}:5
 	>=kde-frameworks/kcoreaddons-${KFMIN}:5
 	>=kde-frameworks/ki18n-${KFMIN}:5
 	>=kde-frameworks/kio-${KFMIN}:5
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 "
 RDEPEND="${DEPEND}
-	>=dev-qt/qtquickcontrols2-${QTMIN}:5
-	>=kde-frameworks/kirigami-${KFMIN}:5
-	net-fs/samba
+	virtual/cron
 "
-
-src_configure() {
-	local mycmakeargs=(
-		-DCMAKE_DISABLE_FIND_PACKAGE_PackageKitQt5=ON
-	)
-
-	ecm_src_configure
-}
