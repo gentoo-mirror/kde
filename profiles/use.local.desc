@@ -184,7 +184,6 @@ kde-apps/okular:qml - Install Okular Qml components
 kde-apps/okular:share - Enable support for a share menu using kde-frameworks/purpose
 kde-apps/okular:speech - Enable text-to-speech support
 kde-apps/pimcommon:designer - Build plugins for dev-qt/designer
-kde-apps/spectacle:annotate - Enable support for screenshot annotations using media-libs/kimageannotator
 kde-apps/spectacle:share - Enable support for a share menu using kde-frameworks/purpose
 kde-apps/step:qalculate - Enable the libqalculate library for unit conversion
 kde-apps/thumbnailers:mobi - Enable mobipocket thumbnail generation using kde-apps/kdegraphics-mobipocket
