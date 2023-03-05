@@ -4,7 +4,7 @@
 EAPI=8
 
 KDE_ORG_CATEGORY="pim"
-KFMIN=5.82.0
+KFMIN=5.102.0
 QTMIN=5.15.5
 inherit ecm kde.org
 
@@ -22,15 +22,16 @@ IUSE=""
 
 DEPEND="
 	dev-libs/grantlee:5
+	dev-libs/ktextaddons:5
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtprintsupport-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
-	>=kde-apps/akonadi-20.12.2:5
-	>=kde-apps/akonadi-notes-20.12.2:5
-	>=kde-apps/kmime-20.12.2:5
-	>=kde-apps/kontactinterface-20.12.2:5
-	>=kde-apps/kpimtextedit-20.12.2:5
+	>=kde-apps/akonadi-22.08.3:5
+	>=kde-apps/akonadi-notes-22.08.3:5
+	>=kde-apps/kmime-22.08.3:5
+	>=kde-apps/kontactinterface-22.08.3:5
+	>=kde-apps/kpimtextedit-22.08.3:5
 	>=kde-frameworks/kbookmarks-${KFMIN}:5
 	>=kde-frameworks/kcmutils-${KFMIN}:5
 	>=kde-frameworks/kconfig-${KFMIN}:5
@@ -43,4 +44,6 @@ DEPEND="
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
 "
-RDEPEND="${DEPEND}"
+RDEPEND="${DEPEND}
+	>=kde-apps/kdepim-runtime-22.08.3:5
+"
