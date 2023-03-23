@@ -1,4 +1,4 @@
-BDEPEND=>=dev-vcs/git-1.8.2.1[curl] dev-util/ninja >=dev-util/cmake-3.20.5
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl] >=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare test unpack
 DEPEND=dev-qt/qtcore:5 dev-qt/qtnetwork:5 dev-qt/qtxml:5 dev-libs/boost
 DESCRIPTION=Qt-based client-side and server-side SOAP component
@@ -9,5 +9,5 @@ LICENSE=GPL-3 AGPL-3
 PROPERTIES=live
 RDEPEND=dev-qt/qtcore:5 dev-qt/qtnetwork:5 dev-qt/qtxml:5
 SLOT=0/2
-_eclasses_=git-r3	c57c50c922e121043788de0b40ada60a	toolchain-funcs	6001248ef162a5fa2a21ce132a212f6b	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	514815b1cc0dd4aeac177c2e812b3b1a	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	38c85b725d0467e51954ea921b6c104b	xdg-utils	ac0e315a3688929e34ac75b139e7349a	cmake	f7aa4d29be9606e4a9263d8003ec2d28
+_eclasses_=git-r3	c57c50c922e121043788de0b40ada60a	toolchain-funcs	6001248ef162a5fa2a21ce132a212f6b	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	514815b1cc0dd4aeac177c2e812b3b1a	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	38c85b725d0467e51954ea921b6c104b	xdg-utils	ac0e315a3688929e34ac75b139e7349a	cmake	29401189d5bb9e8fc4d7a78579ec3d66
 _md5_=6b03d3760292a8a1d363da2ff0f83d04

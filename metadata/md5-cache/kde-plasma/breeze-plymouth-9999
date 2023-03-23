@@ -1,4 +1,4 @@
-BDEPEND=>=kde-frameworks/extra-cmake-modules-5.102.0:5 dev-util/ninja >=dev-util/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=>=kde-frameworks/extra-cmake-modules-5.102.0:5 >=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install nofetch prepare test unpack
 DEPEND=sys-boot/plymouth
 DESCRIPTION=Breeze theme for Plymouth
@@ -9,5 +9,5 @@ LICENSE=GPL-2+ GPL-3+
 PROPERTIES=live
 RDEPEND=sys-boot/plymouth
 SLOT=5
-_eclasses_=toolchain-funcs	6001248ef162a5fa2a21ce132a212f6b	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	514815b1cc0dd4aeac177c2e812b3b1a	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	38c85b725d0467e51954ea921b6c104b	xdg-utils	ac0e315a3688929e34ac75b139e7349a	cmake	f7aa4d29be9606e4a9263d8003ec2d28	git-r3	c57c50c922e121043788de0b40ada60a	kde.org	82da80b3bba78006c1bcd050832b98fb	plasma.kde.org	24a4ccac663d71c1f1a6016c93007666
+_eclasses_=toolchain-funcs	6001248ef162a5fa2a21ce132a212f6b	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	514815b1cc0dd4aeac177c2e812b3b1a	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	38c85b725d0467e51954ea921b6c104b	xdg-utils	ac0e315a3688929e34ac75b139e7349a	cmake	29401189d5bb9e8fc4d7a78579ec3d66	git-r3	c57c50c922e121043788de0b40ada60a	kde.org	dc88b76f82ae1a1d2892cc7e0f3020db	plasma.kde.org	53d92c8467317e55e197227d2ddef69a
 _md5_=6cf2c5c941b18914c57ad85c79919340
