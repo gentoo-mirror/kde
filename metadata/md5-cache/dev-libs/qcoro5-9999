@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=dev-qt/qtcore:5 dbus? ( dev-qt/qtdbus:5 ) network? ( dev-qt/qtnetwork:5 ) qml? ( dev-qt/qtdeclarative:5= )
 RESTRICT=!test? ( test )
 SLOT=0
-_eclasses_=toolchain-funcs	14a8ae365191b518fad51caad7a08f3e	multilib	d1408425c7c4a7669b9b17735404b693	flag-o-matic	514815b1cc0dd4aeac177c2e812b3b1a	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	76050953ad5b70d7e09a6ca55558db92	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	29401189d5bb9e8fc4d7a78579ec3d66	git-r3	27e13c09a4c7e4c78ac812f74727e676
+_eclasses_=toolchain-funcs	14a8ae365191b518fad51caad7a08f3e	multilib	d1408425c7c4a7669b9b17735404b693	flag-o-matic	514815b1cc0dd4aeac177c2e812b3b1a	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	76050953ad5b70d7e09a6ca55558db92	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	94d7a3c4cf18e87eaaddb502a0e82f37	git-r3	27e13c09a4c7e4c78ac812f74727e676
 _md5_=770b03a6257fb2bca5be7c68373b3508
