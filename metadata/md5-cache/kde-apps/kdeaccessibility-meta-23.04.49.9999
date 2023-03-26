@@ -1,0 +1,8 @@
+DEFINED_PHASES=-
+DESCRIPTION=kdeaccessibility - merge this to pull in all kdeaccessiblity-derived packages
+EAPI=8
+HOMEPAGE=https://apps.kde.org/
+LICENSE=metapackage
+RDEPEND=>=app-accessibility/kontrast-23.04.49.9999:5 >=kde-apps/kmag-23.04.49.9999:5 >=kde-apps/kmousetool-23.04.49.9999:5 >=kde-apps/kmouth-23.04.49.9999:5
+SLOT=5
+_md5_=ab56febf21ae65329abc93971f411d38
