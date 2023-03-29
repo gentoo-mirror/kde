@@ -3,7 +3,7 @@ app-admin/systemdgenie 9999: Systemd managment utility
 app-backup/kup 9999: Backup scheduler for the Plasma desktop
 app-cdr/dolphin-plugins-mountiso 23.03.80 23.04.49.9999 9999: Dolphin plugin for ISO loopback device mounting
 app-cdr/isoimagewriter 9999: Write hybrid ISO files onto a USB disk
-app-editors/ghostwriter 9999: Cross-platform, aesthetic, distraction-free markdown editor
+app-editors/ghostwriter 23.04.49.9999 9999: Cross-platform, aesthetic, distraction-free markdown editor
 app-editors/kile 9999: Latex Editor and TeX shell based on KDE Frameworks
 app-editors/okteta 9999: Hex editor by KDE
 app-i18n/pology 9999: A framework for custom processing of PO files
@@ -477,7 +477,8 @@ media-video/kaffeine 9999: Media player with digital TV support by KDE
 media-video/kmplayer 9999: Video player plugin for Konqueror and basic MPlayer frontend
 media-video/subtitlecomposer 9999: Text-based subtitles editor
 net-im/choqok 9999: Free/Open Source micro-blogging client by KDE
-net-im/neochat 9999: Client for Matrix, the decentralized communication protocol
+net-im/neochat 23.04.49.9999 9999: Client for Matrix, the decentralized communication protocol
+net-im/tokodon 23.04.49.9999 9999: Mastodon client for Plasma and Plasma Mobile
 net-irc/konversation 23.03.80 23.04.49.9999 9999: User friendly IRC Client
 net-libs/kdsoap 9999: Qt-based client-side and server-side SOAP component
 net-libs/kdsoap-ws-discovery-client 9999: WS-Discovery client library based on KDSoap

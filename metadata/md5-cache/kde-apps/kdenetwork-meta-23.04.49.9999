@@ -4,6 +4,6 @@ EAPI=8
 HOMEPAGE=https://apps.kde.org/
 IUSE=+bittorrent dropbox samba telepathy +webengine
 LICENSE=metapackage
-RDEPEND=>=kde-apps/kget-23.04.49.9999:5 >=kde-apps/kopete-23.04.49.9999:5 >=kde-apps/krdc-23.04.49.9999:5 >=kde-apps/krfb-23.04.49.9999:5 >=kde-misc/kdeconnect-23.04.49.9999:5 >=net-irc/konversation-23.04.49.9999:5 >=net-misc/kio-zeroconf-23.04.49.9999:5 bittorrent? ( >=net-libs/libktorrent-23.04.49.9999:5 >=net-p2p/ktorrent-23.04.49.9999:5 ) dropbox? ( >=kde-apps/dolphin-plugins-dropbox-23.04.49.9999:5 ) samba? ( >=kde-apps/kdenetwork-filesharing-23.04.49.9999:5 ) telepathy? ( kde-apps/plasma-telepathy-meta:5 ) webengine? ( >=kde-misc/kio-gdrive-23.04.49.9999:5 )
+RDEPEND=>=kde-apps/kget-23.04.49.9999:5 >=kde-apps/kopete-23.04.49.9999:5 >=kde-apps/krdc-23.04.49.9999:5 >=kde-apps/krfb-23.04.49.9999:5 >=kde-misc/kdeconnect-23.04.49.9999:5 >=net-im/neochat-23.04.49.9999 >=net-im/tokodon-23.04.49.9999 >=net-irc/konversation-23.04.49.9999:5 >=net-misc/kio-zeroconf-23.04.49.9999:5 bittorrent? ( >=net-libs/libktorrent-23.04.49.9999:5 >=net-p2p/ktorrent-23.04.49.9999:5 ) dropbox? ( >=kde-apps/dolphin-plugins-dropbox-23.04.49.9999:5 ) samba? ( >=kde-apps/kdenetwork-filesharing-23.04.49.9999:5 ) telepathy? ( kde-apps/plasma-telepathy-meta:5 ) webengine? ( >=kde-misc/kio-gdrive-23.04.49.9999:5 )
 SLOT=5
-_md5_=332c961fd8b1ddde2f6007f73d1fff45
+_md5_=51f10703ffeeebbd83737ecfd375db71
