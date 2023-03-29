@@ -209,7 +209,6 @@ kde-apps/kqtquickcharts 23.03.80 23.04.49.9999 9999: Qt Quick plugin for beautif
 kde-apps/krdc 23.03.80 23.04.49.9999 9999: Remote desktop connection (RDP and VNC) client
 kde-apps/kreversi 23.03.80 23.04.49.9999 9999: Board game by KDE
 kde-apps/krfb 23.03.80 23.04.49.9999 9999: VNC-compatible server to share Plasma desktops
-kde-apps/kross-interpreters 23.03.80 23.04.49.9999 9999: Kross interpreter plugins for programming languages
 kde-apps/kruler 23.03.80 23.04.49.9999 9999: Screen ruler for Plasma
 kde-apps/kscd 9999: CDDB enabled audio CD player based on KDE Frameworks
 kde-apps/kshisen 23.03.80 23.04.49.9999 9999: Solitaire-like game played using the standard set of Mahjong tiles
