@@ -1,25 +1,22 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 2022-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-ECM_HANDBOOK="optional"
-ECM_TEST="true"
+ECM_TEST="forceoptional"
 KFMIN=5.104.0
 QTMIN=5.15.5
 inherit ecm gear.kde.org
 
-DESCRIPTION="Client for Matrix, the decentralized communication protocol"
-HOMEPAGE="https://apps.kde.org/neochat/"
+DESCRIPTION="Mastodon client for Plasma and Plasma Mobile"
+HOMEPAGE="https://apps.kde.org/tokodon/"
 
-LICENSE="GPL-3+ handbook? ( CC-BY-SA-4.0 )"
+LICENSE="CC-BY-SA-4.0 GPL-2+ GPL-3+ || ( LGPL-2.1+ LGPL-3+ ) MIT"
 SLOT="0"
 KEYWORDS=""
 
 DEPEND="
-	app-text/cmark:=
 	>=dev-libs/kirigami-addons-0.7.2:5
-	dev-libs/qcoro5
 	dev-libs/qtkeychain:=[qt5(+)]
 	>=dev-qt/qtdeclarative-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
@@ -27,6 +24,7 @@ DEPEND="
 	>=dev-qt/qtnetwork-${QTMIN}:5
 	>=dev-qt/qtquickcontrols2-${QTMIN}:5
 	>=dev-qt/qtsvg-${QTMIN}:5
+	>=dev-qt/qtwebsockets-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
 	>=kde-frameworks/kconfig-${KFMIN}:5
 	>=kde-frameworks/kconfigwidgets-${KFMIN}:5
@@ -36,17 +34,15 @@ DEPEND="
 	>=kde-frameworks/kio-${KFMIN}:5
 	>=kde-frameworks/kirigami-${KFMIN}:5
 	>=kde-frameworks/kitemmodels-${KFMIN}:5[qml]
-	>=kde-frameworks/knotifications-${KFMIN}:5[qml]
+	>=kde-frameworks/knotifications-${KFMIN}:5
 	>=kde-frameworks/kwindowsystem-${KFMIN}:5
 	>=kde-frameworks/qqc2-desktop-style-${KFMIN}:5
 	>=kde-frameworks/sonnet-${KFMIN}:5[qml]
-	media-libs/kquickimageeditor:5
-	>=net-libs/libquotient-0.6:=
 "
-RDEPEND="${DEPEND}
-	>=dev-qt/qtgraphicaleffects-${QTMIN}:5
-	>=dev-qt/qtmultimedia-${QTMIN}:5[qml]
-	>=kde-frameworks/kquickcharts-${KFMIN}:5
-	>=kde-frameworks/purpose-${KFMIN}:5
-"
+RDEPEND="${DEPEND}"
 BDEPEND="virtual/pkgconfig"
+
+src_test() {
+	local -x QT_QPA_PLATFORM=offscreen
+	ecm_src_test
+}
