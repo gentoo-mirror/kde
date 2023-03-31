@@ -41,7 +41,6 @@ COMMON_DEPEND="
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtnetwork-${QTMIN}:5
 	>=dev-qt/qtprintsupport-${QTMIN}:5
-	>=dev-qt/qtscript-${QTMIN}:5
 	>=dev-qt/qtsvg-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
 	>=dev-qt/qtxml-${QTMIN}:5
@@ -116,10 +115,7 @@ RDEPEND="${COMMON_DEPEND}
 "
 BDEPEND="sys-devel/gettext"
 
-PATCHES=(
-	"${WORKDIR}"/${PATCHSET}/${PN}-3.1.89-no-arch-detection.patch # downstream
-	"${WORKDIR}"/${PATCHSET}/${PN}-3.2.1-kross-optional.patch # bug 903532
-)
+PATCHES=( "${WORKDIR}"/${PATCHSET}/${PN}-3.1.89-no-arch-detection.patch ) # downstream
 
 pkg_pretend() {
 	check-reqs_pkg_pretend
