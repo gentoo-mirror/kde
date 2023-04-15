@@ -56,6 +56,8 @@ RDEPEND="${DEPEND}
 	>=kde-apps/kdepim-runtime-${PVCUT}:5
 "
 
+PATCHES=( "${FILESDIR}/${P}-unused-dep.patch" )
+
 src_configure() {
 	local mycmakeargs=(
 		$(cmake_use_find_package telemetry KUserFeedback)
