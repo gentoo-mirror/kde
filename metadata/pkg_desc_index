@@ -19,7 +19,7 @@ app-office/libalkimia 8.9999 9999: Library with common classes and functionality
 app-office/skrooge 9999: Personal finances manager, aiming at being simple and intuitive
 app-text/chmk 9999: CHM file viewer based on KDE Frameworks and QtWebEngine
 app-text/kbibtex 9999: BibTeX editor to edit bibliographies used with LaTeX
-app-text/kjots 9999: Note taking utility by KDE
+app-text/kjots 5.1.1 9999: Note taking utility by KDE
 dev-db/kdb 9999: Database connectivity and creation framework for various vendors
 dev-libs/appstream 9999: Cross-distro effort for providing metadata for software in the Linux ecosystem
 dev-libs/atcore 9999: API to manage the serial connection between the computer and 3D Printers
