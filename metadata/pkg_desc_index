@@ -3,6 +3,7 @@ app-admin/systemdgenie 9999: Systemd managment utility
 app-backup/kup 9999: Backup scheduler for the Plasma desktop
 app-cdr/dolphin-plugins-mountiso 23.04.49.9999 9999: Dolphin plugin for ISO loopback device mounting
 app-cdr/isoimagewriter 9999: Write hybrid ISO files onto a USB disk
+app-crypt/keysmith 23.04.49.9999 9999: OTP client for Plasma Mobile and Desktop
 app-editors/ghostwriter 23.04.49.9999 9999: Cross-platform, aesthetic, distraction-free markdown editor
 app-editors/kile 9999: Latex Editor and TeX shell based on KDE Frameworks
 app-editors/okteta 9999: Hex editor by KDE
