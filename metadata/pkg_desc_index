@@ -59,6 +59,7 @@ games-board/atlantik 9999: Atlantik board game
 games-kids/gcompris 9999: Full featured educational application for children from 2 to 10
 games-mud/kmuddy 9999: MUD client by KDE
 gui-apps/liquidshell 1.8.1 9999: Basic desktop shell using QtWidgets
+gui-apps/xwaylandvideobridge 0_pre20230421 9999: Screenshare Wayland windows to XWayland apps
 kde-apps/akonadi 23.04.49.9999 9999: Storage service for PIM data and libraries for PIM apps
 kde-apps/akonadi-calendar 23.04.49.9999 9999: Library for akonadi calendar integration
 kde-apps/akonadi-contacts 23.04.49.9999 9999: Library for akonadi contact integration
