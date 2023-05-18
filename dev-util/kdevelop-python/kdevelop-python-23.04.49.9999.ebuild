@@ -6,9 +6,9 @@ EAPI=8
 ECM_TEST="forceoptional"
 KDE_ORG_CATEGORY="kdevelop"
 KDE_ORG_NAME="kdev-python"
-PYTHON_COMPAT=( python3_{9..11} )
-KFMIN=5.104.0
-QTMIN=5.15.5
+PYTHON_COMPAT=( python3_{10..11} )
+KFMIN=5.106.0
+QTMIN=5.15.9
 inherit ecm gear.kde.org python-single-r1
 
 DESCRIPTION="Python plugin for KDevelop"

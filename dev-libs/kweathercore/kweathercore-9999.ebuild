@@ -6,8 +6,8 @@ EAPI=8
 ECM_NONGUI="true"
 ECM_QTHELP="true"
 ECM_TEST="true"
-KFMIN=5.88.0
-QTMIN=5.15.5
+KFMIN=5.106.0
+QTMIN=5.15.9
 inherit ecm kde.org
 
 DESCRIPTION="Library for retrieval of weather information including forecasts and alerts"

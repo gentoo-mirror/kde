@@ -4,8 +4,8 @@
 EAPI=8
 
 ECM_HANDBOOK="optional"
-KFMIN=5.104.0
-QTMIN=5.15.5
+KFMIN=5.106.0
+QTMIN=5.15.9
 inherit ecm gear.kde.org
 
 DESCRIPTION="KDE character selection utility"

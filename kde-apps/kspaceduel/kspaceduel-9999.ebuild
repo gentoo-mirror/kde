@@ -6,8 +6,8 @@ EAPI=8
 ECM_HANDBOOK="forceoptional"
 KDE_SELINUX_MODULE="games"
 PVCUT=$(ver_cut 1-3)
-KFMIN=5.104.0
-QTMIN=5.15.5
+KFMIN=5.106.0
+QTMIN=5.15.9
 inherit ecm gear.kde.org
 
 DESCRIPTION="Space Game by KDE"

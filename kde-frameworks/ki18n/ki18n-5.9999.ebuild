@@ -3,8 +3,8 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
-QTMIN=5.15.5
+PYTHON_COMPAT=( python3_{10..11} )
+QTMIN=5.15.9
 inherit ecm frameworks.kde.org python-single-r1
 
 DESCRIPTION="Framework based on Gettext for internationalizing user interface text"

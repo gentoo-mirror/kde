@@ -4,8 +4,8 @@
 EAPI=8
 
 KDE_ORG_NAME="plasma-workspace"
-KFMIN=5.102.0
-QTMIN=5.15.7
+KFMIN=5.106.0
+QTMIN=5.15.9
 inherit cmake plasma.kde.org
 
 DESCRIPTION="Legacy xembed tray icons support for SNI-only system trays"

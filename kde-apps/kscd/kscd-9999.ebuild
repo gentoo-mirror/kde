@@ -5,8 +5,8 @@ EAPI=8
 
 EGIT_BRANCH="kf5"
 ECM_TEST="true"
-KFMIN=5.82.0
-QTMIN=5.15.5
+KFMIN=5.106.0
+QTMIN=5.15.9
 inherit ecm kde.org
 
 DESCRIPTION="CDDB enabled audio CD player based on KDE Frameworks"

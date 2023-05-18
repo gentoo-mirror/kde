@@ -6,8 +6,8 @@ EAPI=8
 EGIT_BRANCH="5.1"
 ECM_HANDBOOK="optional"
 ECM_TEST="forceoptional"
-KFMIN=5.82.0
-QTMIN=5.15.5
+KFMIN=5.106.0
+QTMIN=5.15.9
 VIRTUALX_REQUIRED="test"
 VIRTUALDBUS_TEST="true"
 inherit ecm kde.org optfeature
