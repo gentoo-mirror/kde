@@ -492,6 +492,7 @@ net-libs/telepathy-logger-qt 9999: Qt bindings for the Telepathy logger
 net-misc/kio-zeroconf 23.04.49.9999 9999: KIO worker to discover file systems by DNS-SD (DNS Service Discovery)
 net-misc/samba-mounter 9999: Samba Share Mounter
 net-misc/smb4k 9999: Advanced network neighborhood browser
+net-news/alligator 23.04.49.9999 9999: Convergent RSS/Atom feed reader for Plasma
 net-p2p/ktorrent 23.04.49.9999 9999: Powerful BitTorrent client based on KDE Frameworks
 sci-astronomy/kstars 9999: Desktop Planetarium
 sci-calculators/keurocalc 9999: Universal currency converter and calculator
