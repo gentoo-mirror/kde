@@ -476,6 +476,7 @@ media-sound/audex 9999: Tool for ripping compact discs
 media-sound/elisa 23.04.49.9999 9999: Simple music player by KDE
 media-sound/kasts 23.04.49.9999 9999: Convergent podcast application for desktop and mobile
 media-sound/kid3 9999: Simple tag editor based on Qt
+media-sound/krecorder 23.04.49.9999 9999: Convergent audio recording application for Plasma
 media-sound/vvave 9999: Tiny Qt music player by KDE
 media-video/kaffeine 9999: Media player with digital TV support by KDE
 media-video/kmplayer 9999: Video player plugin for Konqueror and basic MPlayer frontend
