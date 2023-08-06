@@ -7,8 +7,6 @@
 	</maintainer>
 	<upstream>
 		<bugs-to>https://bugs.kde.org/</bugs-to>
+		<remote-id type="invent">libraries/futuresql</remote-id>
 	</upstream>
-	<use>
-		<flag name="designer">Build plugins for <pkg>dev-qt/designer</pkg></flag>
-	</use>
 </pkgmetadata>
