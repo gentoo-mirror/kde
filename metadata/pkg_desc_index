@@ -24,6 +24,7 @@ app-text/kjots 9999: Note taking utility by KDE
 dev-db/kdb 9999: Database connectivity and creation framework for various vendors
 dev-libs/appstream 9999: Cross-distro effort for providing metadata for software in the Linux ecosystem
 dev-libs/atcore 9999: API to manage the serial connection between the computer and 3D Printers
+dev-libs/futuresql 0.1.1 9999: Non-blocking Qt database framework
 dev-libs/grantlee 9999: C++ string template engine based on the Django template system
 dev-libs/kasync 9999: C++ library for controlling asynchronous tasks
 dev-libs/kdiagram 9999: Powerful libraries (KChart, KGantt) for creating business diagrams
@@ -95,7 +96,7 @@ kde-apps/granatier 9999: KDE Bomberman game
 kde-apps/grantlee-editor 9999: Utilities and tools to manage themes in KDE PIM applications
 kde-apps/grantleetheme 9999: Library for Grantlee plugins
 kde-apps/gwenview 9999: Image viewer by KDE
-kde-apps/incidenceeditor 9999: Incidence editor for korganizer
+kde-apps/incidenceeditor 9999: Incidence editor for KOrganizer
 kde-apps/juk 9999: Jukebox and music manager by KDE
 kde-apps/k3b 9999: Full-featured burning and ripping application based on KDE Frameworks
 kde-apps/kaccounts-integration 9999: Administer web accounts for the sites and services across the Plasma desktop
