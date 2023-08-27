@@ -49,6 +49,8 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 
+PATCHES=( "${FILESDIR}/${PN}-0.26.13-doctools-optional.patch" ) # downstream
+
 src_configure() {
 	local mycmakeargs=(
 		-DOMIT_EXAMPLES=ON
