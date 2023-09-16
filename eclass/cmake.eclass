@@ -126,7 +126,6 @@ fi
 # the ebuild. Helps in improving QA of build systems that write to source tree.
 
 # @ECLASS_VARIABLE: CMAKE_SKIP_TESTS
-# @USER_VARIABLE
 # @DEFAULT_UNSET
 # @DESCRIPTION:
 # Array of tests that should be skipped when running CTest.
@@ -216,6 +215,15 @@ _cmake_check_build_dir() {
 		BUILD_DIR="${CMAKE_USE_DIR}"
 	else
 		: "${BUILD_DIR:=${CMAKE_USE_DIR}_build}"
+
+		# Avoid creating ${WORKDIR}_build (which is above WORKDIR).
+		# TODO: For EAPI > 8, we should ban S=WORKDIR for CMake.
+		# See bug #889420.
+		if [[ ${S} == "${WORKDIR}" && ${BUILD_DIR} == "${WORKDIR}_build" ]] ; then
+			eqawarn "QA notice: S=WORKDIR is deprecated for cmake.eclass."
+			eqawarn "Please relocate the sources in src_unpack."
+			BUILD_DIR="${WORKDIR}"/${P}_build
+		fi
 	fi
 
 	einfo "Source directory (CMAKE_USE_DIR): \"${CMAKE_USE_DIR}\""
@@ -407,17 +415,17 @@ cmake_src_configure() {
 		cat >> "${toolchain_file}" <<- _EOF_ || die
 			set(CMAKE_SYSTEM_NAME "${sysname}")
 		_EOF_
+	fi
 
-		if [ "${SYSROOT:-/}" != "/" ] ; then
-			# When cross-compiling with a sysroot (e.g. with crossdev's emerge wrappers)
-			# we need to tell cmake to use libs/headers from the sysroot but programs from / only.
-			cat >> "${toolchain_file}" <<- _EOF_ || die
-				set(CMAKE_SYSROOT "${ESYSROOT}")
-				set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
-				set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
-				set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
-			_EOF_
-		fi
+	if [[ ${SYSROOT:-/} != / ]] ; then
+		# When building with a sysroot (e.g. with crossdev's emerge wrappers)
+		# we need to tell cmake to use libs/headers from the sysroot but programs from / only.
+		cat >> "${toolchain_file}" <<- _EOF_ || die
+			set(CMAKE_SYSROOT "${ESYSROOT}")
+			set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
+			set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+			set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+		_EOF_
 	fi
 
 	if use prefix-guest; then
@@ -565,7 +573,10 @@ cmake_build() {
 			;;
 		ninja)
 			[[ -e build.ninja ]] || die "build.ninja not found. Error during configure stage."
-			eninja "$@"
+			case ${CMAKE_VERBOSE} in
+				OFF) NINJA_VERBOSE=OFF eninja "$@" ;;
+				*) eninja "$@" ;;
+			esac
 			;;
 	esac
 
