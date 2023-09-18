@@ -25,7 +25,6 @@ COMMON_DEPEND="
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtdeclarative-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5=[egl,gles2-only=,libinput]
-	>=dev-qt/qtnetwork-${QTMIN}:5
 	>=dev-qt/qtwayland-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
 	>=dev-qt/qtx11extras-${QTMIN}:5
@@ -63,15 +62,13 @@ COMMON_DEPEND="
 	x11-libs/libX11
 	x11-libs/libXi
 	>=x11-libs/libdrm-2.4.112
-	>=x11-libs/libxcb-1.10
+	>=x11-libs/libxcb-1.10:=
 	>=x11-libs/libxcvt-0.1.1
 	>=x11-libs/libxkbcommon-1.5.0
 	x11-libs/xcb-util-cursor
-	x11-libs/xcb-util-image
 	x11-libs/xcb-util-keysyms
 	x11-libs/xcb-util-wm
 	accessibility? ( media-libs/libqaccessibilityclient:5 )
-	caps? ( sys-libs/libcap )
 	gles2-only? ( media-libs/mesa[gles2] )
 	lock? ( >=kde-plasma/kscreenlocker-${PVCUT}:5 )
 	plasma? ( >=kde-frameworks/krunner-${KFMIN}:5 )
@@ -94,6 +91,8 @@ DEPEND="${COMMON_DEPEND}
 	>=dev-qt/designer-${QTMIN}:5
 	>=dev-qt/qtconcurrent-${QTMIN}:5
 	x11-base/xorg-proto
+	x11-libs/xcb-util-image
+	caps? ( sys-libs/libcap )
 "
 BDEPEND="
 	>=dev-qt/qtwaylandscanner-${QTMIN}:5
