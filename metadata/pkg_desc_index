@@ -12,11 +12,11 @@ app-misc/calindori 9999: Touch friendly calendar application
 app-misc/kookbook 9999: Simple recipe manager taking structured markdown for recipes
 app-office/calligra 9999: KDE Office Suite
 app-office/calligraplan 9999: Project management application
-app-office/kalendar 23.08.3 23.08.49.9999 9999: Calendar application using Akonadi
 app-office/kexi 9999: Visual database applications creator
 app-office/kmymoney 5.1.9999 9999: Personal finance manager based on KDE Frameworks
 app-office/ktimetracker 9999: Todo management and time tracker
 app-office/libalkimia 8.9999 9999: Library with common classes and functionality used by KDE finance applications
+app-office/merkuro 23.08.3 23.08.49.9999 9999: Calendar application using Akonadi
 app-office/skrooge 9999: Personal finances manager, aiming at being simple and intuitive
 app-text/chmk 9999: CHM file viewer based on KDE Frameworks and QtWebEngine
 app-text/kbibtex 9999: BibTeX editor to edit bibliographies used with LaTeX
