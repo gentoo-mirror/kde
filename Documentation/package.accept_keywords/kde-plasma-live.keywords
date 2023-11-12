@@ -52,9 +52,10 @@
 ~kde-plasma/plymouth-kcm-9999 **
 ~kde-plasma/polkit-kde-agent-9999 **
 ~kde-plasma/powerdevil-9999 **
+~kde-plasma/print-manager-9999 **
 ~kde-plasma/sddm-kcm-9999 **
 ~kde-plasma/systemsettings-9999 **
+~kde-plasma/wacomtablet-9999 **
 ~kde-plasma/xdg-desktop-portal-kde-9999 **
 ~kde-plasma/xembed-sni-proxy-9999 **
 ~dev-libs/plasma-wayland-protocols-9999 **
-~x11-libs/libxkbcommon-1.5.0
