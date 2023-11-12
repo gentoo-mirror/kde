@@ -9,8 +9,8 @@ IUSE=debug test
 KEYWORDS=~amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv ~x86
 LICENSE=LGPL-2+
 RDEPEND=>=dev-qt/qtgui-5.15.9:5 >=dev-qt/qtwidgets-5.15.9:5 =kde-frameworks/kconfig-5.112*:5 =kde-frameworks/kconfigwidgets-5.112*:5 =kde-frameworks/ki18n-5.112*:5 =kde-frameworks/kiconthemes-5.112*:5 =kde-frameworks/knewstuff-5.112*:5 =kde-frameworks/knotifications-5.112*:5 >=kde-frameworks/kf-env-4 dev-qt/qtcore:5
-RESTRICT=test !test? ( test ) fetch fetch
+RESTRICT=test !test? ( test )
 SLOT=5/5.112
 SRC_URI=mirror://kde/stable/frameworks/5.112/frameworkintegration-5.112.0.tar.xz
-_eclasses_=toolchain-funcs	edeef89edaf21d30225d31702ab117ac	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	baa4d385108ac87993edac956a916a36	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	39e7a84b06eff4efd9f2e0c3d1668b98	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	4ce0f0b7e0180ebf80c14bf1ba01990e	virtualx	817571665ee28575da44ee08135089e5	ecm	0172a84ecdf99787fb0493df2e06b187	kde.org	411cb92019a6e2aa174d06896084bf57	frameworks.kde.org	bcfe8fcabbc9916755dea7d60835aaef
+_eclasses_=toolchain-funcs	edeef89edaf21d30225d31702ab117ac	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	baa4d385108ac87993edac956a916a36	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	39e7a84b06eff4efd9f2e0c3d1668b98	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	4ce0f0b7e0180ebf80c14bf1ba01990e	virtualx	817571665ee28575da44ee08135089e5	ecm	0172a84ecdf99787fb0493df2e06b187	kde.org	411cb92019a6e2aa174d06896084bf57	frameworks.kde.org	88f18ad412774c5cf158ffc59fe0e1e9
 _md5_=e5eeced97e050781a17592c03e9590ca
