@@ -36,7 +36,6 @@ dev-libs/kproperty 9999: Property editing framework with editor widget similar t
 dev-libs/kpublictransport 23.08.49.9999 9999: Library for accessing public transport timetables and other information
 dev-libs/kreport 9999: Framework for creation and generation of reports in multiple formats
 dev-libs/ktextaddons 9999: Various text handling addons
-dev-libs/kuserfeedback 9999: Framework to collect user feedback for applications via telemetry and surveys
 dev-libs/kweathercore 9999: Library for retrieval of weather information including forecasts and alerts
 dev-libs/libphutil 9999: A collection of PHP utility classes
 dev-libs/mauikit 9999: Templated convergent controls and multiplatform utilities for Maui applications
@@ -276,7 +275,6 @@ kde-apps/pim-sieve-editor 23.08.49.9999 9999: Assistant for editing IMAP Sieve f
 kde-apps/pimcommon 23.08.49.9999 9999: Common PIM libraries
 kde-apps/plasma-telepathy-meta 9999: Plasma Telepathy client
 kde-apps/poxml 23.08.49.9999 9999: KDE utility to translate DocBook XML files using gettext po files
-kde-apps/print-manager 23.08.49.9999 9999: Manage print jobs and printers in Plasma
 kde-apps/rocs 23.08.49.9999 9999: Interface to work with Graph Theory
 kde-apps/signon-kwallet-extension 23.08.49.9999 9999: KWallet extension for signond
 kde-apps/spectacle 23.08.49.9999 9999: Screenshot capture utility
@@ -352,6 +350,7 @@ kde-frameworks/kservice 5.9999: Advanced plugin and service introspection
 kde-frameworks/ktexteditor 5.9999: Framework providing a full text editor component
 kde-frameworks/ktextwidgets 5.9999: Framework providing an assortment of widgets for displaying and editing text
 kde-frameworks/kunitconversion 5.9999: Framework for converting units
+kde-frameworks/kuserfeedback 5.9999: Framework to collect user feedback for applications via telemetry and surveys
 kde-frameworks/kwallet 5.9999: Framework providing desktop-wide storage for passwords
 kde-frameworks/kwayland 5.9999: Qt-style client and server library wrapper for Wayland libraries
 kde-frameworks/kwidgetsaddons 5.9999: An assortment of high-level widgets for common tasks
@@ -396,7 +395,6 @@ kde-misc/polkit-kde-kcmodules 9999: Set of configuration modules to change polki
 kde-misc/rsibreak 9999: Small utility which bothers you at certain intervals
 kde-misc/skanlite 23.08.49.9999 9999: Simple image scanning application based on libksane and KDE Frameworks
 kde-misc/tellico 9999: Collection manager based on KDE Frameworks
-kde-misc/wacomtablet 9999: System settings module for Wacom tablets
 kde-misc/zanshin 23.08.49.9999 9999: Getting things done application by KDE
 kde-plasma/bluedevil 5.27.49.9999 9999: Bluetooth stack for KDE Plasma
 kde-plasma/breeze 5.27.49.9999 9999: Breeze visual style for the Plasma desktop
@@ -451,8 +449,10 @@ kde-plasma/plasma-workspace-wallpapers 5.27.49.9999 9999: Wallpapers for the Pla
 kde-plasma/plymouth-kcm 5.27.49.9999 9999: KDE Plasma control module for Plymouth
 kde-plasma/polkit-kde-agent 5.27.49.9999 9999: PolKit agent module for KDE Plasma
 kde-plasma/powerdevil 5.27.49.9999 9999: Power management for KDE Plasma Shell
+kde-plasma/print-manager 23.08.49.9999 9999: Manage CUPS print jobs and printers in Plasma
 kde-plasma/sddm-kcm 5.27.49.9999 9999: KDE Plasma control module for SDDM
 kde-plasma/systemsettings 5.27.49.9999 9999: Control Center to configure KDE Plasma desktop
+kde-plasma/wacomtablet 9999: Wacom system settings module that supports different button/pen layout profiles
 kde-plasma/xdg-desktop-portal-kde 5.27.49.9999 9999: Backend implementation for xdg-desktop-portal that is using Qt/KDE Frameworks
 kde-plasma/xembed-sni-proxy 5.27.49.9999 9999: Legacy xembed tray icons support for SNI-only system trays
 media-gfx/digikam 9999: Digital photo management application
