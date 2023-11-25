@@ -292,8 +292,6 @@ kde-frameworks/breeze-icons-rcc 5.9999: Breeze SVG icon theme binary resource
 kde-frameworks/countryflags 5.9999: Icons of flags for various countries
 kde-frameworks/extra-cmake-modules 5.9999: Extra modules and scripts for CMake
 kde-frameworks/frameworkintegration 5.9999: Framework for integrating Qt applications with KDE Plasma workspaces
-kde-frameworks/kactivities 5.9999: Framework for working with KDE activities
-kde-frameworks/kactivities-stats 5.9999: Framework for getting the usage statistics collected by the activities service
 kde-frameworks/kapidox 5.9999: Framework for building KDE API documentation in a standard format and style
 kde-frameworks/karchive 5.9999: Framework for reading, creation, and manipulation of various archive formats
 kde-frameworks/kauth 5.9999: Framework to let applications perform actions as a privileged user
@@ -360,7 +358,6 @@ kde-frameworks/kxmlrpcclient 5.9999: Framework providing client-side support for
 kde-frameworks/modemmanager-qt 5.9999: ModemManager bindings for Qt
 kde-frameworks/networkmanager-qt 5.9999: NetworkManager bindings for Qt
 kde-frameworks/oxygen-icons 5.9999: Oxygen SVG icon theme
-kde-frameworks/plasma 5.9999: Plasma library and runtime components based upon KF5 and Qt5
 kde-frameworks/prison 5.9999: QRCode and data matrix barcode library
 kde-frameworks/purpose 5.9999: Library for providing abstractions to get the developer's purposes fulfilled
 kde-frameworks/qqc2-desktop-style 5.9999: Style for QtQuickControls 2 that uses QWidget's QStyle for painting
@@ -427,9 +424,12 @@ kde-plasma/layer-shell-qt 5.27.49.9999 9999: Qt component to allow applications 
 kde-plasma/libkscreen 5.27.49.9999 9999: Plasma screen management library
 kde-plasma/libksysguard 5.27.49.9999 9999: Task management and system monitoring library
 kde-plasma/libkworkspace 5.27.49.9999 9999: Workspace library to interact with the Plasma session manager
+kde-plasma/libplasma 5.9999: Plasma library and runtime components based upon KF5 and Qt5
 kde-plasma/milou 5.27.49.9999 9999: Dedicated search application built on top of Baloo
 kde-plasma/oxygen 5.27.49.9999 9999: Oxygen visual style for the Plasma desktop
 kde-plasma/oxygen-sounds 5.27.49.9999 9999: Oxygen sound theme for the Plasma desktop
+kde-plasma/plasma-activities 5.9999: Core components for KDE's Activities System
+kde-plasma/plasma-activities-stats 5.9999: Library for accessing usage data collected by the activities system
 kde-plasma/plasma-bigscreen 9999: Plasma shell for TVs
 kde-plasma/plasma-browser-integration 5.27.49.9999 9999: Integrate Chrome/Firefox better into Plasma through browser extensions
 kde-plasma/plasma-desktop 5.27.49.9999 9999: KDE Plasma desktop

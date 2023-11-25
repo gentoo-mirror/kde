@@ -17,7 +17,7 @@ app-office/calligraplan:kwallet - Enable access to encrypted OpenDocument files 
 app-office/kexi:experimental - Enable features deemed experimental by upstream
 app-office/kexi:marble - Enable displaying of maps using kde-apps/marble
 app-office/kexi:mdb - Enable support for Microsoft Access database
-app-office/kmymoney:activities - Enable kde-frameworks/kactivities integration
+app-office/kmymoney:activities - Enable kde-plasma/plasma-activities integration
 app-office/kmymoney:addressbook - Enable kde-apps/akonadi contact integration
 app-office/kmymoney:experimental - Build unfinished features. DANGEROUS to set - this *will* chew up data
 app-office/kmymoney:hbci - Enable HBCI support using net-libs/aqbanking
@@ -72,7 +72,7 @@ kde-apps/kate-addons:lspclient - Enable LSP (Language Server Protocol) client pl
 kde-apps/kate-addons:projects - Enable Project plugin for executing queries on SQL DBs
 kde-apps/kate-addons:snippets - Enable Snippets Tool View plugin to manage or download code snippets
 kde-apps/kate-addons:sql - Enable SQL plugin for executing queries on SQL DBs
-kde-apps/kate-lib:activities - Enable Plasma Activities support via kde-frameworks/kactivities
+kde-apps/kate-lib:activities - Enable Plasma Activities support via kde-plasma/plasma-activities
 kde-apps/kde-apps-meta:accessibility - Pull in kde-apps/kdeaccessibility-meta packages
 kde-apps/kde-apps-meta:admin - Pull in kde-apps/kdeadmin-meta packages
 kde-apps/kde-apps-meta:education - Pull in kde-apps/kdeedu-meta packages
@@ -155,7 +155,7 @@ kde-apps/kopete:winpopup - Enable pop-up messages sending on windows. (same as g
 kde-apps/kopete:zeroconf - Enable Link-Local Messaging via the bonjour protocol.
 kde-apps/kpimtextedit:designer - Build plugins for dev-qt/designer
 kde-apps/kpimtextedit:speech - Enable text-to-speech support
-kde-apps/krdc:activities - Enable Plasma Activities support via kde-frameworks/kactivities
+kde-apps/krdc:activities - Enable Plasma Activities support via kde-plasma/plasma-activities
 kde-apps/ksystemlog:audit - Enable security audit support via sys-process/audit
 kde-apps/ksystemlog:kdesu - Run as root using kdesu from kde-plasma/kde-cli-tools
 kde-apps/ktouch:X - Enable support for X11 Keyboard Layout Detection
