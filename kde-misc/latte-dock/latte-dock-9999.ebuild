@@ -28,7 +28,7 @@ COMMON_DEPEND="
 	>=dev-qt/qtwayland-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
 	>=dev-qt/qtx11extras-${QTMIN}:5
-	>=kde-frameworks/kactivities-${KFMIN}:5
+	>=kde-plasma/plasma-activities-${KFMIN}:5
 	>=kde-frameworks/karchive-${KFMIN}:5
 	>=kde-frameworks/kconfig-${KFMIN}:5
 	>=kde-frameworks/kcoreaddons-${KFMIN}:5
@@ -47,7 +47,7 @@ COMMON_DEPEND="
 	>=kde-frameworks/kwayland-${KFMIN}:5
 	>=kde-frameworks/kwindowsystem-${KFMIN}:5
 	>=kde-frameworks/kxmlgui-${KFMIN}:5
-	>=kde-frameworks/plasma-${KFMIN}:5[X(+)]
+	>=kde-plasma/libplasma-${KFMIN}:5[X(+)]
 	x11-libs/libSM
 	x11-libs/libX11
 	x11-libs/libxcb
