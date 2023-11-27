@@ -85,7 +85,7 @@ COMMON_DEPEND="
 	>=kde-plasma/libplasma-${PVCUT}:5
 	>=kde-plasma/plasma-activities-${PVCUT}:5
 	>=kde-plasma/plasma-activities-stats-${PVCUT}:5
-	>=media-libs/phonon-4.11.0
+	>=media-libs/phonon-4.11.0[qt5(+)]
 	sci-libs/libqalculate:=
 	sys-libs/zlib
 	x11-libs/libICE
@@ -157,7 +157,7 @@ BDEPEND="
 	>=kde-frameworks/kcmutils-${KFMIN}:5
 	virtual/pkgconfig
 "
-PDEPEND=">=kde-plasma/kde-cli-tools-${PVCUT}:5"
+PDEPEND=">=kde-plasma/kde-cli-tools-${PVCUT}:*"
 
 PATCHES=(
 	"${FILESDIR}/${PN}-5.24.80-split-libkworkspace.patch" # downstream

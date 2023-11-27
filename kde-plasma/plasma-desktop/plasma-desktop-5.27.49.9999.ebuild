@@ -76,7 +76,7 @@ COMMON_DEPEND="
 	>=kde-plasma/plasma-activities-${KFMIN}:5
 	>=kde-plasma/plasma-activities-stats-${KFMIN}:5
 	>=kde-plasma/plasma-workspace-${PVCUT}:5[screencast?]
-	>=media-libs/phonon-4.11.0
+	>=media-libs/phonon-4.11.0[qt5(+)]
 	x11-libs/libX11
 	x11-libs/libXcursor
 	x11-libs/libXfixes
@@ -110,7 +110,7 @@ RDEPEND="${COMMON_DEPEND}
 	>=dev-qt/qtwaylandscanner-${QTMIN}:5
 	>=kde-frameworks/kirigami-${KFMIN}:5
 	>=kde-frameworks/qqc2-desktop-style-${KFMIN}:5
-	>=kde-plasma/kde-cli-tools-${PVCUT}:5
+	>=kde-plasma/kde-cli-tools-${PVCUT}:*
 	>=kde-plasma/oxygen-${PVCUT}:5
 	media-fonts/noto-emoji
 	sys-apps/util-linux
