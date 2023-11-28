@@ -291,7 +291,7 @@ kde-frameworks/breeze-icons 5.239.9999 9999: Breeze SVG icon theme
 kde-frameworks/breeze-icons-rcc 5.239.9999 9999: Breeze SVG icon theme binary resource
 kde-frameworks/countryflags 5.239.9999: Icons of flags for various countries
 kde-frameworks/extra-cmake-modules 5.239.9999 9999: Extra modules and scripts for CMake
-kde-frameworks/frameworkintegration 5.239.9999: Framework for integrating Qt applications with KDE Plasma workspaces
+kde-frameworks/frameworkintegration 5.239.9999 9999: Framework for integrating Qt applications with KDE Plasma workspaces
 kde-frameworks/kapidox 5.239.9999: Framework for building KDE API documentation in a standard format and style
 kde-frameworks/karchive 5.239.9999 9999: Framework for reading, creation, and manipulation of various archive formats
 kde-frameworks/kauth 5.239.9999 9999: Framework to let applications perform actions as a privileged user
@@ -433,7 +433,7 @@ kde-plasma/oxygen 5.27.49.9999 9999: Oxygen visual style for the Plasma desktop
 kde-plasma/oxygen-sounds 5.27.49.9999 9999: Oxygen sound theme for the Plasma desktop
 kde-plasma/plasma-activities 5.239.9999 9999: Core components for KDE's Activities System
 kde-plasma/plasma-activities-stats 5.239.9999 9999: Library for accessing usage data collected by the activities system
-kde-plasma/plasma-bigscreen 9999: Plasma shell for TVs
+kde-plasma/plasma-bigscreen 5.27.49.9999: Plasma shell for TVs
 kde-plasma/plasma-browser-integration 5.27.49.9999 9999: Integrate Chrome/Firefox better into Plasma through browser extensions
 kde-plasma/plasma-desktop 5.27.49.9999 9999: KDE Plasma desktop
 kde-plasma/plasma-disks 5.27.49.9999 9999: Monitors S.M.A.R.T. capable devices for imminent failure
