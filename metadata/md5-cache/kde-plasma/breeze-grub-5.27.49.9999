@@ -7,5 +7,5 @@ INHERIT=plasma.kde.org
 LICENSE=GPL-3+
 PROPERTIES=live
 SLOT=5
-_eclasses_=git-r3	5133e393e8717a3a093660f990801dc1	kde.org	411cb92019a6e2aa174d06896084bf57	plasma.kde.org	3af4e73854ef6a9ab4fa39400978fb17
+_eclasses_=git-r3	5133e393e8717a3a093660f990801dc1	kde.org	411cb92019a6e2aa174d06896084bf57	plasma.kde.org	5f89326dd3e4138494a0e35a2afcddcf
 _md5_=9e3f513774367270d9c04daee9a17386
