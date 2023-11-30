@@ -346,6 +346,7 @@ kde-frameworks/kquickcharts 5.239.9999 9999: QtQuick plugin providing high-perfo
 kde-frameworks/kross 5.239.9999: Framework for embedding scripting into applications
 kde-frameworks/krunner 5.239.9999 9999: Framework for providing different actions given a string query
 kde-frameworks/kservice 5.239.9999 9999: Advanced plugin and service introspection
+kde-frameworks/kstatusnotifieritem 9999: Implementation of Status Notifier Items
 kde-frameworks/ksvg 9999: Framework for common completion tasks such as filename or URL completion
 kde-frameworks/ktexteditor 5.239.9999 9999: Framework providing a full text editor component
 kde-frameworks/ktextwidgets 5.239.9999 9999: Framework providing an assortment of widgets for displaying and editing text
@@ -420,7 +421,7 @@ kde-plasma/ksysguard 9999: Network-enabled resource usage monitor
 kde-plasma/ksystemstats 5.27.49.9999 9999: Plugin-based system monitoring daemon
 kde-plasma/kwallet-pam 5.27.49.9999 9999: PAM module to not enter KWallet password again after login
 kde-plasma/kwayland 5.239.9999 9999: Qt-style client and server library wrapper for Wayland libraries
-kde-plasma/kwayland-integration 5.27.49.9999 9999: Provides KWindowSystem integration plugin for Wayland
+kde-plasma/kwayland-integration 5.27.49.9999: Provides KWindowSystem integration plugin for Wayland
 kde-plasma/kwin 5.27.49.9999 9999: Flexible, composited Window Manager for windowing systems on Linux
 kde-plasma/kwrited 5.27.49.9999 9999: KDE Plasma daemon listening for wall and write messages
 kde-plasma/layer-shell-qt 5.27.49.9999 9999: Qt component to allow applications make use of Wayland wl-layer-shell protocol
@@ -429,6 +430,7 @@ kde-plasma/libksysguard 5.27.49.9999 9999: Task management and system monitoring
 kde-plasma/libkworkspace 5.27.49.9999 9999: Workspace library to interact with the Plasma session manager
 kde-plasma/libplasma 5.239.9999 9999: Plasma library and runtime components based upon KF6 and Qt6
 kde-plasma/milou 5.27.49.9999 9999: Dedicated search application built on top of Baloo
+kde-plasma/ocean-sound-theme 9999: Ocean Sound Theme for Plasma
 kde-plasma/oxygen 5.27.49.9999 9999: Oxygen visual style for the Plasma desktop
 kde-plasma/oxygen-sounds 5.27.49.9999 9999: Oxygen sound theme for the Plasma desktop
 kde-plasma/plasma-activities 5.239.9999 9999: Core components for KDE's Activities System
@@ -449,6 +451,7 @@ kde-plasma/plasma-vault 5.27.49.9999 9999: Plasma applet and services for creati
 kde-plasma/plasma-welcome 5.27.49.9999 9999: A friendly onboarding wizard for Plasma
 kde-plasma/plasma-workspace 5.27.49.9999 9999: KDE Plasma workspace
 kde-plasma/plasma-workspace-wallpapers 5.27.49.9999 9999: Wallpapers for the Plasma workspace
+kde-plasma/plasma5support 9999: Support components for porting from KF5/Qt5 to KF6/Qt6
 kde-plasma/plymouth-kcm 5.27.49.9999 9999: KDE Plasma control module for Plymouth
 kde-plasma/polkit-kde-agent 5.27.49.9999 9999: PolKit agent module for KDE Plasma
 kde-plasma/powerdevil 5.27.49.9999 9999: Power management for KDE Plasma Shell
