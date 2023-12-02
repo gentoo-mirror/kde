@@ -34,6 +34,10 @@ dev-libs/kreport:marble - Enable displaying of maps using kde-apps/marble
 dev-libs/kreport:scripting - Support Qml scripting using dev-qt/qtdeclarative
 dev-libs/ktextaddons:designer - Build plugins for dev-qt/designer
 dev-libs/ktextaddons:speech - Enable text-to-speech support
+dev-libs/qcoro:network - Build dev-qt/qtbase network support
+dev-libs/qcoro:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
+dev-libs/qcoro:testlib - Install coroutine-friendly versions of dev-qt/qtbase test macros
+dev-libs/qcoro:websockets - Build dev-qt/qtwebsockets support
 dev-libs/qcoro5:network - Build dev-qt/qtnetwork support
 dev-libs/qcoro5:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
 dev-libs/qcoro5:testlib - Install coroutine-friendly versions of dev-qt/qttest macros
@@ -237,6 +241,7 @@ kde-frameworks/kxmlgui:designer - Build plugins for dev-qt/designer
 kde-frameworks/networkmanager-qt:teamd - Enable Teamd control support
 kde-frameworks/prison:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
 kde-frameworks/purpose:kaccounts - Enable support for system-wide defined KAccounts
+kde-frameworks/purpose:kf6compat - Disable components colliding with KF6, depend on KF6 components instead
 kde-frameworks/sonnet:aspell - Enable the app-text/aspell spell-checking backend
 kde-frameworks/sonnet:designer - Build plugins for dev-qt/designer
 kde-frameworks/sonnet:hunspell - Enable the app-text/hunspell spell-checking backend

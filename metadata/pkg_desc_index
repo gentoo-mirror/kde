@@ -21,6 +21,7 @@ app-office/skrooge 9999: Personal finances manager, aiming at being simple and i
 app-text/chmk 9999: CHM file viewer based on KDE Frameworks and QtWebEngine
 app-text/kbibtex 9999: BibTeX editor to edit bibliographies used with LaTeX
 app-text/kjots 9999: Note taking utility by KDE
+dev-db/futuresql 9999: Non-blocking Qt database framework
 dev-db/futuresql5 0.1.1 9999: Non-blocking Qt database framework
 dev-db/kdb 9999: Database connectivity and creation framework for various vendors
 dev-libs/appstream 9999: Cross-distro effort for providing metadata for software in the Linux ecosystem
@@ -40,6 +41,7 @@ dev-libs/kweathercore 9999: Library for retrieval of weather information includi
 dev-libs/libphutil 9999: A collection of PHP utility classes
 dev-libs/mauikit 9999: Templated convergent controls and multiplatform utilities for Maui applications
 dev-libs/plasma-wayland-protocols 9999: Plasma Specific Protocols for Wayland
+dev-libs/qcoro 9999: C++ Coroutine Library for Qt5
 dev-libs/qcoro5 9999: C++ Coroutine Library for Qt5
 dev-python/parse_cmake 0.4.1-r1: Parser for CMakeLists.txt files
 dev-util/kdbg 9999: Graphical debugger interface
