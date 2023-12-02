@@ -13,7 +13,7 @@ DESCRIPTION="A friendly onboarding wizard for Plasma"
 LICENSE="GPL-2+"
 SLOT="6"
 KEYWORDS=""
-IUSE="discover +kaccounts telemetry"
+IUSE="discover telemetry" # +kaccounts
 
 DEPEND="
 	>=dev-qt/qtbase-${QTMIN}:6[gui,network,widgets]
@@ -38,14 +38,12 @@ RDEPEND="${DEPEND}
 	discover? ( kde-plasma/discover:6 )
 "
 
-PATCHES=( "${FILESDIR}/${PN}-5.27.4-kaccounts-optional.patch" )
-
 src_prepare() {
 	ecm_src_prepare
 
 	if ! use discover; then
 		sed -e "s:pageStack.push(discover);:// & disabled by IUSE=discover:" \
-			-i src/contents/ui/main.qml || die
+			-i src/contents/ui/Main.qml || die
 	fi
 }
 
