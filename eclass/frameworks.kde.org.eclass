@@ -29,7 +29,7 @@ _FRAMEWORKS_KDE_ORG_ECLASS=1
 # @INTERNAL
 # @DESCRIPTION:
 # For proper description see kde.org.eclass manpage.
-KDE_PV_UNRELEASED=( )
+KDE_PV_UNRELEASED=( 5.113.0 )
 
 inherit kde.org
 
@@ -84,7 +84,7 @@ case ${KDE_BUILD_TYPE} in
 					;;
 			esac
 
-			SRC_URI="${_KDE_SRC_URI}${KDE_ORG_NAME}-${PV}.tar.xz"
+			SRC_URI="${_KDE_SRC_URI}${KDE_ORG_TAR_PN}-${PV}.tar.xz"
 		fi
 		;;
 esac
