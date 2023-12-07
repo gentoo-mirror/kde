@@ -229,7 +229,6 @@ kde-frameworks/kplotting:designer - Build plugins for dev-qt/designer
 kde-frameworks/krunner:activities - Enable search runner for KDE Activities history
 kde-frameworks/kservice:man - Build and install man pages
 kde-frameworks/ktexteditor:editorconfig - Enable support for EditorConfig configuration files
-kde-frameworks/ktexteditor:kf6compat - Disable components colliding with KF6, depend on KF6 components instead
 kde-frameworks/ktextwidgets:designer - Build plugins for dev-qt/designer
 kde-frameworks/ktextwidgets:speech - Enable text-to-speech support
 kde-frameworks/kuserfeedback:kf6compat - Disable components colliding with KF6, depend on KF6 components instead

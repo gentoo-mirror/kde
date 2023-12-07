@@ -500,6 +500,7 @@ net-libs/kdsoap 9999: Qt-based client-side and server-side SOAP component
 net-libs/kdsoap-ws-discovery-client 9999: WS-Discovery client library based on KDSoap
 net-libs/libktorrent 23.08.4 23.08.49.9999 9999: BitTorrent library based on KDE Frameworks
 net-libs/libmediawiki 9999: C++ interface for MediaWiki based web service as wikipedia.org
+net-libs/libquotient 0.8.1.2-r1: Qt-based SDK to develop applications for Matrix
 net-libs/libtmdbqt 9999: Qt library to query the movie database API (themoviedb.org)
 net-libs/telepathy-logger-qt 9999: Qt bindings for the Telepathy logger
 net-misc/kio-zeroconf 23.08.4 23.08.49.9999 9999: KIO worker to discover file systems by DNS-SD (DNS Service Discovery)
