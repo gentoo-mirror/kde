@@ -430,7 +430,7 @@ kde-plasma/kwrited 5.27.49.9999 9999: KDE Plasma daemon listening for wall and w
 kde-plasma/layer-shell-qt 5.27.49.9999 9999: Qt component to allow applications make use of Wayland wl-layer-shell protocol
 kde-plasma/libkscreen 5.27.49.9999 9999: Plasma screen management library
 kde-plasma/libksysguard 5.27.49.9999 9999: Task management and system monitoring library
-kde-plasma/libkworkspace 5.27.49.9999 9999: Workspace library to interact with the Plasma session manager
+kde-plasma/libkworkspace 5.27.49.9999: Workspace library to interact with the Plasma session manager
 kde-plasma/libplasma 5.113.0 5.239.9999 9999: Plasma library and runtime components based upon KF6 and Qt6
 kde-plasma/milou 5.27.49.9999 9999: Dedicated search application built on top of Baloo
 kde-plasma/ocean-sound-theme 9999: Ocean Sound Theme for Plasma
