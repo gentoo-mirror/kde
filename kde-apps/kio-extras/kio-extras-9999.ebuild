@@ -5,6 +5,7 @@ EAPI=8
 
 ECM_HANDBOOK="forceoptional"
 ECM_TEST="optional"
+KDE_BLOCK_SLOT5="false"
 KFMIN=5.245.0
 QTMIN=6.6.0
 inherit ecm gear.kde.org
@@ -55,8 +56,8 @@ DEPEND="
 	phonon? ( >=media-libs/phonon-4.12.0[qt6] )
 	samba? (
 		net-fs/samba[client]
-		net-libs/kdsoap:=
-		net-libs/kdsoap-ws-discovery-client
+		>=net-libs/kdsoap-2.1.1-r1:=
+		>=net-libs/kdsoap-ws-discovery-client-0.3.0
 	)
 	sftp? ( net-libs/libssh:=[sftp] )
 	taglib? ( >=media-libs/taglib-1.11.1 )
