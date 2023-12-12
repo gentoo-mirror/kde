@@ -216,6 +216,7 @@ kde-frameworks/kimageformats:jpegxl - Support for JPEG XL image format
 kde-frameworks/kinit:caps - Capabilities support for improved security and better OOM handling
 kde-frameworks/kinit:man - Build and install man pages
 kde-frameworks/kio:designer - Build plugins for dev-qt/designer
+kde-frameworks/kio:kf6compat - Disable components colliding with KF6, depend on KF6 components instead
 kde-frameworks/kio:kwallet - Enable permanent storage of passwords for kpasswdserver with kde-frameworks/kwallet
 kde-frameworks/kitemmodels:qml - Enable QML support via dev-qt/qtdeclarative
 kde-frameworks/kitemviews:designer - Build plugins for dev-qt/designer
@@ -278,6 +279,7 @@ kde-plasma/plasma-desktop:ibus - Use ibus input method via app-i18n/ibus
 kde-plasma/plasma-desktop:kaccounts - Build the OpenDesktop integration plugin
 kde-plasma/plasma-desktop:scim - Enable applets that use app-i18n/scim
 kde-plasma/plasma-desktop:screencast - Enable screencast portal thumbnails using kde-plasma/kpipewire
+kde-plasma/plasma-desktop:sdl - Enable gamepad support using media-libs/libsdl2
 kde-plasma/plasma-firewall:firewalld - Build net-firewall/firewalld backend
 kde-plasma/plasma-firewall:ufw - Build net-firewall/ufw backend
 kde-plasma/plasma-meta:browser-integration - Enable integration with Chrome/Firefox with browser extensions
