@@ -1,4 +1,4 @@
-BDEPEND=dev-libs/appstream-glib dev-libs/libxslt dev-util/itstool >=sys-devel/gettext-0.19.8 doc? ( app-text/docbook-xml-dtd:4.5 ) test? ( dev-qt/qttools:6[linguist] ) >=dev-util/meson-1.2.1 >=dev-util/ninja-1.8.2 dev-util/meson-format-array >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=dev-libs/appstream-glib dev-libs/libxslt dev-util/itstool >=sys-devel/gettext-0.19.8 doc? ( app-text/docbook-xml-dtd:4.5 ) test? ( dev-qt/qttools:6[linguist] ) >=dev-util/meson-1.2.1 app-alternatives/ninja dev-util/meson-format-array >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install prepare test unpack
 DEPEND=app-arch/zstd:= >=dev-libs/glib-2.62:2 dev-libs/libxml2:2 >=dev-libs/libxmlb-0.3.14:= dev-libs/libyaml dev-libs/snowball-stemmer:= >=net-misc/curl-7.62 introspection? ( >=dev-libs/gobject-introspection-1.56:= ) qt6? ( dev-qt/qtbase:6 ) systemd? ( sys-apps/systemd:= ) test? ( qt6? ( dev-qt/qtbase:6[test] ) )
 DESCRIPTION=Cross-distro effort for providing metadata for software in the Linux ecosystem
@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=app-arch/zstd:= >=dev-libs/glib-2.62:2 dev-libs/libxml2:2 >=dev-libs/libxmlb-0.3.14:= dev-libs/libyaml dev-libs/snowball-stemmer:= >=net-misc/curl-7.62 introspection? ( >=dev-libs/gobject-introspection-1.56:= ) qt6? ( dev-qt/qtbase:6 ) systemd? ( sys-apps/systemd:= )
 RESTRICT=test
 SLOT=0/5
-_eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	39e7a84b06eff4efd9f2e0c3d1668b98	toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	474cb53a7d1b62721a91809a1d702661	meson	576e6bbef90e9753368f8b4ad0bd5383	xdg-utils	baea6080dd821f5562d715887954c9d3	git-r3	5133e393e8717a3a093660f990801dc1
+_eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	c8951c1dfcc1d43e3f967f61fd0ec59c	toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	474cb53a7d1b62721a91809a1d702661	meson	576e6bbef90e9753368f8b4ad0bd5383	xdg-utils	baea6080dd821f5562d715887954c9d3	git-r3	5133e393e8717a3a093660f990801dc1
 _md5_=4326a4f92ad34b71e9b14fd31ac117a2
