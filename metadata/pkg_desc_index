@@ -22,7 +22,7 @@ app-text/chmk 9999: CHM file viewer based on KDE Frameworks and QtWebEngine
 app-text/kbibtex 9999: BibTeX editor to edit bibliographies used with LaTeX
 app-text/kjots 9999: Note taking utility by KDE
 dev-db/futuresql 9999: Non-blocking Qt database framework
-dev-db/futuresql5 0.1.1 9999: Non-blocking Qt database framework
+dev-db/futuresql5 9999: Non-blocking Qt database framework
 dev-db/kdb 9999: Database connectivity and creation framework for various vendors
 dev-libs/appstream 9999: Cross-distro effort for providing metadata for software in the Linux ecosystem
 dev-libs/atcore 9999: API to manage the serial connection between the computer and 3D Printers
@@ -501,7 +501,6 @@ net-libs/kdsoap 9999: Qt-based client-side and server-side SOAP component
 net-libs/kdsoap-ws-discovery-client 9999: WS-Discovery client library based on KDSoap
 net-libs/libktorrent 23.08.49.9999 9999: BitTorrent library based on KDE Frameworks
 net-libs/libmediawiki 9999: C++ interface for MediaWiki based web service as wikipedia.org
-net-libs/libquotient 0.8.1.2-r1: Qt-based SDK to develop applications for Matrix
 net-libs/libtmdbqt 9999: Qt library to query the movie database API (themoviedb.org)
 net-libs/telepathy-logger-qt 9999: Qt bindings for the Telepathy logger
 net-misc/kio-zeroconf 23.08.49.9999 9999: KIO worker to discover file systems by DNS-SD (DNS Service Discovery)
