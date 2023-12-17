@@ -1,0 +1,15 @@
+BDEPEND=doc? ( app-doc/doxygen || ( ( dev-qt/qttools:6[assistant,qdoc] ) ( dev-qt/qdoc:5 dev-qt/qthelp:5 ) ) ) >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install prepare setup unpack
+DEPEND=qt5? ( dev-qt/qtcore:5 dev-qt/qtdeclarative:5 ) qt6? ( dev-qt/qtbase:6 dev-qt/qtdeclarative:6 ) >=net-libs/accounts-qt-1.16-r1[qt5?,qt6?] >=net-libs/signond-8.61-r1[qt5?,qt6?] test? ( qt5? ( dev-qt/qtgui:5 dev-qt/qttest:5 ) qt6? ( dev-qt/qtbase:6[gui,test] ) )
+DESCRIPTION=QML bindings for accounts-qt and signond
+EAPI=8
+HOMEPAGE=https://accounts-sso.gitlab.io/
+INHERIT=qmake-utils multibuild git-r3
+IUSE=doc +qt5 qt6 test
+LICENSE=LGPL-2.1
+PROPERTIES=live
+RDEPEND=qt5? ( dev-qt/qtcore:5 dev-qt/qtdeclarative:5 ) qt6? ( dev-qt/qtbase:6 dev-qt/qtdeclarative:6 ) >=net-libs/accounts-qt-1.16-r1[qt5?,qt6?] >=net-libs/signond-8.61-r1[qt5?,qt6?]
+RESTRICT=test
+SLOT=0
+_eclasses_=toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	qmake-utils	a8dd17b1d94586164f5e3fc12b1c6b81	out-of-source-utils	1a9007554652a6e627edbccb3c25a439	multibuild	d67e78a235f541871c7dfe4cf7931489	git-r3	5133e393e8717a3a093660f990801dc1
+_md5_=e0a478d65a01b72b4df7e471afbfb9a0

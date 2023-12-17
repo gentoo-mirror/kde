@@ -497,11 +497,16 @@ net-im/choqok 9999: Free/Open Source micro-blogging client by KDE
 net-im/neochat 23.08.49.9999 9999: Client for Matrix, the decentralized communication protocol
 net-im/tokodon 23.08.49.9999 9999: Mastodon client for Plasma and Plasma Mobile
 net-irc/konversation 23.08.49.9999 9999: User friendly IRC Client
+net-libs/accounts-qml 9999: QML bindings for accounts-qt and signond
+net-libs/accounts-qt 9999: Qt bindings for libaccounts-glib
 net-libs/kdsoap 9999: Qt-based client-side and server-side SOAP component
 net-libs/kdsoap-ws-discovery-client 9999: WS-Discovery client library based on KDSoap
 net-libs/libktorrent 23.08.49.9999 9999: BitTorrent library based on KDE Frameworks
 net-libs/libmediawiki 9999: C++ interface for MediaWiki based web service as wikipedia.org
 net-libs/libtmdbqt 9999: Qt library to query the movie database API (themoviedb.org)
+net-libs/signon-oauth2 9999: OAuth2 plugin for Signon daemon
+net-libs/signon-ui 9999: Online accounts signon UI
+net-libs/signond 9999: Signon daemon for libaccounts-glib
 net-libs/telepathy-logger-qt 9999: Qt bindings for the Telepathy logger
 net-misc/kio-zeroconf 23.08.49.9999 9999: KIO worker to discover file systems by DNS-SD (DNS Service Discovery)
 net-misc/samba-mounter 9999: Samba Share Mounter
