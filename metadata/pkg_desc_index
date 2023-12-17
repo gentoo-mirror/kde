@@ -18,6 +18,7 @@ app-office/ktimetracker 9999: Todo management and time tracker
 app-office/libalkimia 8.9999 9999: Library with common classes and functionality used by KDE finance applications
 app-office/merkuro 23.08.49.9999 9999: Calendar application using Akonadi
 app-office/skrooge 9999: Personal finances manager, aiming at being simple and intuitive
+app-text/arianna 23.08.49.9999 9999: EPub Reader for mobile devices
 app-text/chmk 9999: CHM file viewer based on KDE Frameworks and QtWebEngine
 app-text/kbibtex 9999: BibTeX editor to edit bibliographies used with LaTeX
 app-text/kjots 9999: Note taking utility by KDE
@@ -478,6 +479,7 @@ media-libs/kquickimageeditor 9999: QtQuick components providing basic image edit
 media-libs/ksanecore 23.08.49.9999 9999: Qt-based interface for SANE library to control scanner hardware
 media-libs/liblastfm 9999: Collection of libraries to integrate Last.fm services
 media-libs/libqaccessibilityclient 9999: Library for writing accessibility clients such as screen readers
+media-libs/mpvqt 1.0.0 9999: libmpv wrapper for QtQuick2 and QML
 media-libs/phonon 4.12.0 9999: KDE multimedia abstraction library
 media-libs/phonon-gstreamer 9999: GStreamer backend for the Phonon multimedia library
 media-libs/phonon-vlc 0.12.0 9999: VLC backend for the Phonon multimedia library
@@ -492,6 +494,7 @@ media-sound/krecorder 23.08.49.9999 9999: Convergent audio recording application
 media-sound/vvave 9999: Tiny Qt music player by KDE
 media-video/kaffeine 9999: Media player with digital TV support by KDE
 media-video/kmplayer 9999: Video player plugin for Konqueror and basic MPlayer frontend
+media-video/plasmatube 23.08.49.9999 9999: YouTube video player based on mpv, yt-dlp, and Invidious
 media-video/subtitlecomposer 9999: Text-based subtitles editor
 net-im/choqok 9999: Free/Open Source micro-blogging client by KDE
 net-im/neochat 23.08.49.9999 9999: Client for Matrix, the decentralized communication protocol
