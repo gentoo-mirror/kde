@@ -352,7 +352,7 @@ kde-frameworks/kservice 5.239.9999 9999: Advanced plugin and service introspecti
 kde-frameworks/kstatusnotifieritem 9999: Implementation of Status Notifier Items
 kde-frameworks/ksvg 9999: Framework for common completion tasks such as filename or URL completion
 kde-frameworks/ktexteditor 5.239.9999 9999: Framework providing a full text editor component
-kde-frameworks/ktexttemplate 9999: Library to allow separating the structure of documents from the data they contain
+kde-frameworks/ktexttemplate 9999: Library to allow separating the structure of documents from data they contain
 kde-frameworks/ktextwidgets 5.239.9999 9999: Framework providing an assortment of widgets for displaying and editing text
 kde-frameworks/kunitconversion 5.239.9999 9999: Framework for converting units
 kde-frameworks/kuserfeedback 9999: Framework to collect user feedback for applications via telemetry and surveys
