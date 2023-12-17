@@ -210,7 +210,6 @@ kde-frameworks/baloo:kf6compat - Disable components colliding with KF6, depend o
 kde-frameworks/kcompletion:designer - Build plugins for dev-qt/designer
 kde-frameworks/kconfig:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
 kde-frameworks/kconfigwidgets:designer - Build plugins for dev-qt/designer
-kde-frameworks/kcoreaddons:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
 kde-frameworks/kded:man - Build and install man pages
 kde-frameworks/kfilemetadata:epub - Enable support for reading EPUB ebook metadata
 kde-frameworks/kfilemetadata:mobi - Enable mobipocket support via kde-apps/kdegraphics-mobipocket
