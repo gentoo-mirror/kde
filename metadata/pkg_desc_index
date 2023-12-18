@@ -44,7 +44,7 @@ dev-libs/mauikit 9999: Templated convergent controls and multiplatform utilities
 dev-libs/plasma-wayland-protocols 9999: Plasma Specific Protocols for Wayland
 dev-libs/qcoro 9999: C++ Coroutine Library for Qt
 dev-libs/qcoro5 9999: C++ Coroutine Library for Qt5
-dev-python/parse_cmake 0.4.1-r1: Parser for CMakeLists.txt files
+dev-python/parse_cmake 0.4.1-r2: Parser for CMakeLists.txt files
 dev-util/kdbg 9999: Graphical debugger interface
 dev-util/kdevelop 23.08.49.9999 9999: Integrated Development Environment, supporting KF5/Qt, C/C++ and much more
 dev-util/kdevelop-css 9999: CSS Language Support plugin for KDevelop
