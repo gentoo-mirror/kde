@@ -351,7 +351,7 @@ kde-frameworks/kross 5.239.9999: Framework for embedding scripting into applicat
 kde-frameworks/krunner 5.239.9999 9999: Framework for providing different actions given a string query
 kde-frameworks/kservice 5.239.9999 9999: Advanced plugin and service introspection
 kde-frameworks/kstatusnotifieritem 9999: Implementation of Status Notifier Items
-kde-frameworks/ksvg 9999: Framework for common completion tasks such as filename or URL completion
+kde-frameworks/ksvg 9999: Components for handling SVGs
 kde-frameworks/ktexteditor 5.239.9999 9999: Framework providing a full text editor component
 kde-frameworks/ktexttemplate 9999: Library to allow separating the structure of documents from data they contain
 kde-frameworks/ktextwidgets 5.239.9999 9999: Framework providing an assortment of widgets for displaying and editing text
