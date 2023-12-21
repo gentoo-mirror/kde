@@ -1,6 +1,6 @@
 BDEPEND=>=kde-frameworks/kcmutils-9999:6 app-alternatives/ninja >=dev-util/cmake-3.20.5 dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-9999:* >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install nofetch postinst postrm preinst prepare setup test unpack
-DEPEND=>=dev-qt/qtbase-6.6.0:6[dbus,gui,network,xml] >=dev-qt/qtdeclarative-6.6.0:6 >=kde-frameworks/kauth-9999:6 >=kde-frameworks/kcmutils-9999:6 >=kde-frameworks/kconfig-9999:6 >=kde-frameworks/kcoreaddons-9999:6 >=kde-frameworks/ki18n-9999:6 test? ( dev-qt/qtbase:6[test] ) dev-qt/qtbase:6
+DEPEND=>=dev-qt/qtbase-6.6.0:6[dbus,gui,network,xml] >=dev-qt/qtdeclarative-6.6.0:6 >=kde-frameworks/kauth-9999:6 >=kde-frameworks/kcmutils-9999:6 >=kde-frameworks/kconfig-9999:6 >=kde-frameworks/kcoreaddons-9999:6 >=kde-frameworks/ki18n-9999:6 dev-qt/qtbase:6
 DESCRIPTION=Plasma frontend for Firewalld or UFW
 EAPI=8
 HOMEPAGE=https://invent.kde.org/network/plasma-firewall
@@ -13,5 +13,5 @@ RDEPEND=>=dev-qt/qtbase-6.6.0:6[dbus,gui,network,xml] >=dev-qt/qtdeclarative-6.6
 REQUIRED_USE=^^ ( python_single_target_python3_10 python_single_target_python3_11 python_single_target_python3_12 ) || ( firewalld ufw )
 RESTRICT=!test? ( test )
 SLOT=6
-_eclasses_=toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	c816c598969cbaf38cc02d2496ad2e98	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	c8951c1dfcc1d43e3f967f61fd0ec59c	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	4ce0f0b7e0180ebf80c14bf1ba01990e	virtualx	817571665ee28575da44ee08135089e5	xdg	4a14c5c24f121e7da66e5aab4a168c6e	ecm	44460ab07a10e59c38925a9fc7954918	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	kde.org	60fcb935e4206806bf9f38e3537521a2	plasma.kde.org	7de9b749965a8565f1ef463e213360c3	python-utils-r1	474cb53a7d1b62721a91809a1d702661	python-single-r1	75118e916668a74c660a13b0ecb22562
+_eclasses_=toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	c816c598969cbaf38cc02d2496ad2e98	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	c8951c1dfcc1d43e3f967f61fd0ec59c	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	4ce0f0b7e0180ebf80c14bf1ba01990e	virtualx	817571665ee28575da44ee08135089e5	xdg	4a14c5c24f121e7da66e5aab4a168c6e	ecm	07a8bc302d805024e52ca54432302406	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	kde.org	60fcb935e4206806bf9f38e3537521a2	plasma.kde.org	7de9b749965a8565f1ef463e213360c3	python-utils-r1	474cb53a7d1b62721a91809a1d702661	python-single-r1	75118e916668a74c660a13b0ecb22562
 _md5_=3b66dc9a785a14289d5efe44e275a7c8
