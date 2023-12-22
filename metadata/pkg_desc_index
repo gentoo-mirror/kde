@@ -481,9 +481,9 @@ media-libs/ksanecore 23.08.49.9999 9999: Qt-based interface for SANE library to 
 media-libs/liblastfm 9999: Collection of libraries to integrate Last.fm services
 media-libs/libqaccessibilityclient 9999: Library for writing accessibility clients such as screen readers
 media-libs/mpvqt 1.0.0 9999: libmpv wrapper for QtQuick2 and QML
-media-libs/phonon 4.12.0 9999: KDE multimedia abstraction library
+media-libs/phonon 9999: KDE multimedia abstraction library
 media-libs/phonon-gstreamer 9999: GStreamer backend for the Phonon multimedia library
-media-libs/phonon-vlc 0.12.0 9999: VLC backend for the Phonon multimedia library
+media-libs/phonon-vlc 9999: VLC backend for the Phonon multimedia library
 media-libs/pulseaudio-qt 9999: Qt bindings for libpulse
 media-libs/qt-gstreamer 9999: C++ bindings for GStreamer with a Qt-style API
 media-sound/amarok 9999: Advanced audio player based on KDE frameworks
