@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=>=dev-libs/libical-3.0.5:= >=dev-qt/qtgui-5.15.9:5 >=kde-frameworks/kf-env-4 doc? ( dev-qt/qt-docs:5 ) dev-qt/qtcore:5
 RESTRICT=test !test? ( test )
 SLOT=5/9999
-_eclasses_=toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	c816c598969cbaf38cc02d2496ad2e98	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	c8951c1dfcc1d43e3f967f61fd0ec59c	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	4ce0f0b7e0180ebf80c14bf1ba01990e	virtualx	817571665ee28575da44ee08135089e5	ecm	07a8bc302d805024e52ca54432302406	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	kde.org	60fcb935e4206806bf9f38e3537521a2	frameworks.kde.org	50e5e124e8a083f031e4122130830388
+_eclasses_=toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	c8951c1dfcc1d43e3f967f61fd0ec59c	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	4ce0f0b7e0180ebf80c14bf1ba01990e	virtualx	817571665ee28575da44ee08135089e5	ecm	07a8bc302d805024e52ca54432302406	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	kde.org	60fcb935e4206806bf9f38e3537521a2	frameworks.kde.org	50e5e124e8a083f031e4122130830388
 _md5_=55b74d7c05362ee6655f1c86ca74ad66
