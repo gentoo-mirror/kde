@@ -10,5 +10,5 @@ LICENSE=LGPL-2+
 PROPERTIES=live
 RDEPEND=>=dev-qt/qtbase-6.6.0:6[dbus,gui,widgets] =kde-frameworks/kconfig-9999*:6[dbus] =kde-frameworks/kcoreaddons-9999*:6 =kde-frameworks/kcrash-9999*:6 =kde-frameworks/kdbusaddons-9999*:6 =kde-frameworks/kservice-9999*:6 >=kde-frameworks/kf-env-4 dev-qt/qtbase:6
 SLOT=6/9999
-_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	c8951c1dfcc1d43e3f967f61fd0ec59c	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	4ce0f0b7e0180ebf80c14bf1ba01990e	virtualx	817571665ee28575da44ee08135089e5	ecm	07a8bc302d805024e52ca54432302406	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	kde.org	60fcb935e4206806bf9f38e3537521a2	frameworks.kde.org	50e5e124e8a083f031e4122130830388
-_md5_=73de3a94c5707358eb644a933ffe4eee
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	c8951c1dfcc1d43e3f967f61fd0ec59c	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	62bb8d342c85d102093f58640ac88efe	virtualx	817571665ee28575da44ee08135089e5	ecm	024f844dce2e095000b8b2cb1d9dc386	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	kde.org	639b8be73fa3fb9f4f2701362383842e	frameworks.kde.org	de8dcb21ee024de880c7e84096d2852e
+_md5_=669e0c23662722b7dd55394877621177

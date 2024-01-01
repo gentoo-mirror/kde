@@ -6,4 +6,4 @@ IUSE=accessibility +admin +education +games +graphics +multimedia +network pim s
 LICENSE=metapackage
 RDEPEND=>=kde-apps/kdecore-meta-9999:* accessibility? ( >=kde-apps/kdeaccessibility-meta-9999:* ) admin? ( >=kde-apps/kdeadmin-meta-9999:* ) education? ( >=kde-apps/kdeedu-meta-9999:* ) games? ( >=kde-apps/kdegames-meta-9999:* ) graphics? ( >=kde-apps/kdegraphics-meta-9999:* ) multimedia? ( >=kde-apps/kdemultimedia-meta-9999:* ) network? ( >=kde-apps/kdenetwork-meta-9999:* ) pim? ( >=kde-apps/kdepim-meta-9999:* ) sdk? ( >=kde-apps/kdesdk-meta-9999:* ) utils? ( >=kde-apps/kdeutils-meta-9999:* )
 SLOT=5
-_md5_=7e68ede993f8bad49185b671d4a247b6
+_md5_=12ddcecfd1c0819e8f9145890908f47c

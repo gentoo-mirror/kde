@@ -6,4 +6,4 @@ IUSE=+handbook +share +thumbnail +webengine
 LICENSE=metapackage
 RDEPEND=>=kde-apps/dolphin-9999:* >=kde-apps/kdialog-9999:* >=kde-apps/keditbookmarks-9999:* >=kde-apps/kfind-9999:* >=kde-apps/konsole-9999:* >=kde-apps/kwrite-9999:* handbook? ( >=kde-apps/khelpcenter-9999:* ) webengine? ( || ( >=www-client/falkon-9999 >=kde-apps/konqueror-9999:* ) ) share? ( kde-frameworks/purpose:5 ) thumbnail? ( >=kde-apps/ffmpegthumbs-9999:* >=kde-apps/thumbnailers-9999:* )
 SLOT=5
-_md5_=6c321ffdd4d75cf719174153ca986409
+_md5_=41ac235e17936042e91535394bfc8375
