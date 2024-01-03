@@ -9,7 +9,8 @@ IUSE=doc +qt5 qt6 test
 LICENSE=LGPL-2.1
 PROPERTIES=live
 RDEPEND=qt5? ( dev-qt/qtcore:5 dev-qt/qtdeclarative:5 ) qt6? ( dev-qt/qtbase:6 dev-qt/qtdeclarative:6 ) >=net-libs/accounts-qt-1.16-r1[qt5?,qt6?] >=net-libs/signond-8.61-r1[qt5?,qt6?]
+REQUIRED_USE=|| ( qt5 qt6 )
 RESTRICT=test
 SLOT=0
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	qmake-utils	a8dd17b1d94586164f5e3fc12b1c6b81	out-of-source-utils	1a9007554652a6e627edbccb3c25a439	multibuild	d67e78a235f541871c7dfe4cf7931489	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b
-_md5_=7384a0c4728a2dbd766e32d0004d31a5
+_md5_=ad7ae375a48fe4962094bca9dc26b911
