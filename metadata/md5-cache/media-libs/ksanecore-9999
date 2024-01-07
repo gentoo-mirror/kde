@@ -1,6 +1,6 @@
-BDEPEND=app-alternatives/ninja >=dev-util/cmake-3.20.5 dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-5.106.0:* >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=app-alternatives/ninja >=dev-util/cmake-3.20.5 dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-5.245.0:* >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install nofetch postinst postrm preinst prepare setup test unpack
-DEPEND=>=dev-qt/qtgui-5.15.9:5 >=kde-frameworks/ki18n-5.106.0:5 media-gfx/sane-backends dev-qt/qtcore:5
+DEPEND=>=dev-qt/qtbase-6.6.0:6[gui] >=kde-frameworks/ki18n-5.245.0:6 media-gfx/sane-backends dev-qt/qtbase:6
 DESCRIPTION=Qt-based interface for SANE library to control scanner hardware
 EAPI=8
 HOMEPAGE=https://invent.kde.org/libraries/ksanecore https://api.kde.org/ksanecore/html/index.html
@@ -9,7 +9,7 @@ INHERIT=ecm gear.kde.org
 IUSE=debug
 LICENSE=|| ( LGPL-2.1 LGPL-3 )
 PROPERTIES=live
-RDEPEND=>=dev-qt/qtgui-5.15.9:5 >=kde-frameworks/ki18n-5.106.0:5 media-gfx/sane-backends || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-4 dev-qt/qtcore:5
-SLOT=5
-_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	c8951c1dfcc1d43e3f967f61fd0ec59c	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	6837d7bc6f1fab2c2116e350e08d67bc	virtualx	817571665ee28575da44ee08135089e5	xdg	4a14c5c24f121e7da66e5aab4a168c6e	ecm	024f844dce2e095000b8b2cb1d9dc386	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	kde.org	639b8be73fa3fb9f4f2701362383842e	gear.kde.org	b4f5a2d63ebd405cfbf41a0d6b34abb6
-_md5_=14decfca3645d0582f9f9f85adef367e
+RDEPEND=>=dev-qt/qtbase-6.6.0:6[gui] >=kde-frameworks/ki18n-5.245.0:6 media-gfx/sane-backends || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-4 dev-qt/qtbase:6 !media-libs/ksanecore:5
+SLOT=6
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	c8951c1dfcc1d43e3f967f61fd0ec59c	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	6837d7bc6f1fab2c2116e350e08d67bc	virtualx	817571665ee28575da44ee08135089e5	xdg	4a14c5c24f121e7da66e5aab4a168c6e	ecm	024f844dce2e095000b8b2cb1d9dc386	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	kde.org	639b8be73fa3fb9f4f2701362383842e	gear.kde.org	f6de590ec70223d23c35f989d75d8e28
+_md5_=38cc64eb0ee789bab7154f47489b1769
