@@ -267,6 +267,7 @@ kde-apps/mailimporter 23.08.49.9999 24.02.49.9999 9999: Library to import mail f
 kde-apps/marble 23.08.49.9999 24.02.49.9999 9999: Virtual Globe and World Atlas to learn more about Earth
 kde-apps/mbox-importer 23.08.49.9999 24.02.49.9999 9999: Import mbox email archives from various sources into Akonadi
 kde-apps/messagelib 23.08.49.9999 24.02.49.9999 9999: Libraries for messaging functions
+kde-apps/mimetreeparser 24.02.49.9999 9999: Libraries for messaging functions
 kde-apps/minuet 23.08.49.9999 24.02.49.9999 9999: Music Education software by KDE
 kde-apps/okular 23.08.49.9999 24.02.49.9999 9999: Universal document viewer based on KDE Frameworks
 kde-apps/palapeli 23.08.49.9999 24.02.49.9999 9999: Jigsaw puzzle game by KDE
