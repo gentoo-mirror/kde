@@ -48,7 +48,9 @@ KDE_ORG_SCHEDULE_URI+="/KDE_Gear_${PV:0:5}_Schedule"
 _KDE_SRC_URI="mirror://kde/"
 
 if [[ ${KDE_BUILD_TYPE} == live ]]; then
-	if [[ ${PV} == ??.??.49.9999 ]]; then
+	if [[ ${PV} == 24.02.49.9999 ]]; then
+		EGIT_BRANCH="master" # drop after 24.02 branching
+	elif [[ ${PV} == ??.??.49.9999 ]]; then
 		EGIT_BRANCH="release/$(ver_cut 1-2)"
 	fi
 elif [[ -z ${KDE_ORG_COMMIT} ]]; then
@@ -124,6 +126,7 @@ if $(ver_test -gt 24.01.75); then
 		kcharselect | \
 		kcolorchooser | \
 		kcron | \
+		kde-dev-utils | \
 		kdebugsettings | \
 		kdeconnect | \
 		kdegraphics-mobipocket | \
@@ -233,6 +236,37 @@ if $(ver_test -gt 24.01.75); then
 		thumbnailers | \
 		yakuake | \
 		zanshin)
+			RDEPEND+=" !${CATEGORY}/${PN}:5" ;;
+		*) ;;
+	esac
+fi
+
+# list of applications ported to KF6 post-24.02 in SLOT=6 having to block SLOT=5
+if $(ver_test -gt 24.03.75); then
+	case ${PN} in
+		ffmpegthumbs | \
+		gwenview | \
+		itinerary | \
+		k3b | \
+		kdeedu-data | \
+		kimagemapeditor | \
+		kio-gdrive | \
+		kmplot | \
+		kolourpaint | \
+		kompare | \
+		kopeninghours | \
+		kosmindoormap | \
+		kpublictransport | \
+		krdc | \
+		ksanecore | \
+		libkeduvocdocument | \
+		libkomparediff2 | \
+		libksane | \
+		minuet | \
+		signon-kwallet-extension | \
+		skanlite | \
+		skanpage | \
+		step)
 			RDEPEND+=" !${CATEGORY}/${PN}:5" ;;
 		*) ;;
 	esac
