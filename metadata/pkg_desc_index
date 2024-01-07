@@ -35,7 +35,7 @@ dev-libs/kosmindoormap 23.08.49.9999 24.02.49.9999 9999: Data Model and Extracti
 dev-libs/kproperty 9999: Property editing framework with editor widget similar to Qt Designer
 dev-libs/kpublictransport 23.08.49.9999 24.02.49.9999 9999: Library for accessing public transport timetables and other information
 dev-libs/kreport 9999: Framework for creation and generation of reports in multiple formats
-dev-libs/ktextaddons 9999: Various text handling addons
+dev-libs/ktextaddons 1.5.2_p20240107 9999: Various text handling addons
 dev-libs/kweathercore 9999: Library for retrieval of weather information including forecasts and alerts
 dev-libs/libphutil 9999: A collection of PHP utility classes
 dev-libs/mauikit 9999: Templated convergent controls and multiplatform utilities for Maui applications
