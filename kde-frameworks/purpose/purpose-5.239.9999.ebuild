@@ -47,6 +47,7 @@ RDEPEND="${DEPEND}
 	bluetooth? ( =kde-frameworks/bluez-qt-${PVCUT}*:5 )
 	kaccounts? ( >=net-libs/accounts-qml-0.7-r3[qt5(-)] )
 "
+BDEPEND="kaccounts? ( dev-util/intltool )"
 
 src_prepare() {
 	ecm_src_prepare
@@ -70,6 +71,10 @@ src_install() {
 		rm "${D}"/usr/share/icons/hicolor/128x128/apps/{reviewboard,phabricator}-purpose.png \
 			"${D}"/usr/share/icons/hicolor/16x16/apps/{reviewboard,phabricator}-purpose.png \
 			|| die
+		if use kaccounts; then
+			rm "${D}"/usr/share/accounts/services/kde/{google-youtube,nextcloud-upload}.service \
+			|| die
+		fi
 	fi
 }
 
