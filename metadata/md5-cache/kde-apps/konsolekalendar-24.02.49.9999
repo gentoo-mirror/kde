@@ -1,6 +1,6 @@
-BDEPEND=app-alternatives/ninja >=dev-util/cmake-3.20.5 handbook? ( >=kde-frameworks/kdoctools-5.246.0:6 ) dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-5.246.0:* >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=app-alternatives/ninja >=dev-util/cmake-3.20.5 handbook? ( >=kde-frameworks/kdoctools-5.248.0:6 ) dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-5.248.0:* >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install nofetch postinst postrm preinst prepare setup test unpack
-DEPEND=>=kde-apps/akonadi-24.02.49:6 >=kde-apps/akonadi-calendar-24.02.49:6 >=kde-apps/calendarsupport-24.02.49:6 >=kde-frameworks/kcalendarcore-5.246.0:6 >=kde-frameworks/kconfig-5.246.0:6 >=kde-frameworks/kcoreaddons-5.246.0:6 >=kde-frameworks/ki18n-5.246.0:6 dev-qt/qtbase:6
+DEPEND=>=kde-apps/akonadi-24.02.49:6 >=kde-apps/akonadi-calendar-24.02.49:6 >=kde-apps/calendarsupport-24.02.49:6 >=kde-frameworks/kcalendarcore-5.248.0:6 >=kde-frameworks/kconfig-5.248.0:6 >=kde-frameworks/kcoreaddons-5.248.0:6 >=kde-frameworks/ki18n-5.248.0:6 dev-qt/qtbase:6
 DESCRIPTION=Command line interface to KDE calendars
 EAPI=8
 HOMEPAGE=https://apps.kde.org/ https://userbase.kde.org/KonsoleKalendar
@@ -9,7 +9,7 @@ INHERIT=ecm gear.kde.org
 IUSE=debug +handbook
 LICENSE=GPL-2+ handbook? ( FDL-1.2+ )
 PROPERTIES=live
-RDEPEND=>=kde-apps/akonadi-24.02.49:6 >=kde-apps/akonadi-calendar-24.02.49:6 >=kde-apps/calendarsupport-24.02.49:6 >=kde-frameworks/kcalendarcore-5.246.0:6 >=kde-frameworks/kconfig-5.246.0:6 >=kde-frameworks/kcoreaddons-5.246.0:6 >=kde-frameworks/ki18n-5.246.0:6 || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-4 dev-qt/qtbase:6 !kde-apps/konsolekalendar:5
+RDEPEND=>=kde-apps/akonadi-24.02.49:6 >=kde-apps/akonadi-calendar-24.02.49:6 >=kde-apps/calendarsupport-24.02.49:6 >=kde-frameworks/kcalendarcore-5.248.0:6 >=kde-frameworks/kconfig-5.248.0:6 >=kde-frameworks/kcoreaddons-5.248.0:6 >=kde-frameworks/ki18n-5.248.0:6 || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-4 dev-qt/qtbase:6 !kde-apps/konsolekalendar:5
 SLOT=6
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	6837d7bc6f1fab2c2116e350e08d67bc	virtualx	817571665ee28575da44ee08135089e5	xdg	4a14c5c24f121e7da66e5aab4a168c6e	ecm	024f844dce2e095000b8b2cb1d9dc386	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	kde.org	639b8be73fa3fb9f4f2701362383842e	gear.kde.org	12bcdb2e847ff3e73842ef44d690a4bc
-_md5_=3c898cd78c0b35a01b07412fc72eb145
+_md5_=2a9c5228eb312be554f19ff4e5d1f324
