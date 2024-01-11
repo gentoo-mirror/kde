@@ -169,7 +169,7 @@ kde-apps/killbots 23.08.49.9999 24.01.90 24.02.49.9999 9999: Kill the bots or th
 kde-apps/kimagemapeditor 23.08.49.9999 24.01.90 24.02.49.9999 9999: Generator of HTML image maps
 kde-apps/kimap 23.08.49.9999 24.01.90 24.02.49.9999 9999: Library for interacting with IMAP servers
 kde-apps/kio-extras 23.08.49.9999 24.01.90 24.02.49.9999 9999: KIO plugins present a filesystem-like view of arbitrary data
-kde-apps/kio-extras-kf5 9999: KIO plugins present a filesystem-like view of arbitrary data
+kde-apps/kio-extras-kf5 24.01.90 24.02.49.9999 9999: KIO plugins present a filesystem-like view of arbitrary data
 kde-apps/kiriki 23.08.49.9999 24.01.90 24.02.49.9999 9999: An addictive and fun dice game
 kde-apps/kiten 23.08.49.9999 24.01.90 24.02.49.9999 9999: KDE Japanese dictionary and reference
 kde-apps/kitinerary 23.08.49.9999 24.01.90 24.02.49.9999 9999: Data Model and Extraction System for Travel Reservation information
