@@ -21,6 +21,6 @@ SLOT="5"
 IUSE=""
 
 BDEPEND="
-	sys-devel/bison
-	sys-devel/flex
+	app-alternatives/lex
+	app-alternatives/yacc
 "

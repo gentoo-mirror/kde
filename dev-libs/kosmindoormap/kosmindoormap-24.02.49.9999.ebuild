@@ -34,8 +34,8 @@ RDEPEND="${COMMON_DEPEND}
 	>=dev-qt/qtquickcontrols2-${QTMIN}:5
 "
 BDEPEND="
-	sys-devel/bison
-	sys-devel/flex
+	app-alternatives/lex
+	app-alternatives/yacc
 "
 
 src_configure() {
