@@ -13,4 +13,4 @@ REQUIRED_USE=|| ( qt5 qt6 )
 RESTRICT=test !test? ( test )
 SLOT=0
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	qmake-utils	a8dd17b1d94586164f5e3fc12b1c6b81	out-of-source-utils	1a9007554652a6e627edbccb3c25a439	multibuild	d67e78a235f541871c7dfe4cf7931489	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b
-_md5_=e4b45d78f2101fadd7a2c7e92d89b763
+_md5_=0ef26b6680a2eef882b2651d078b67f0
