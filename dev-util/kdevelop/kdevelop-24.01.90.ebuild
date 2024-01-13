@@ -88,13 +88,13 @@ RDEPEND="${COMMON_DEPEND}
 	>=dev-qt/qdbus-${QTMIN}:*
 	>=dev-qt/qtquickcontrols-${QTMIN}:5
 	>=dev-qt/qtquickcontrols2-${QTMIN}:5
-	dev-util/ninja
+	dev-build/ninja
 	kde-apps/kapptemplate:*
 	|| (
 		kde-apps/kio-extras-kf5:5
 		kde-apps/kio-extras:5
 	)
-	>=sys-devel/gdb-7.0[python]
+	>=dev-debug/gdb-7.0[python]
 	reviewboard? ( kde-apps/ktp-accounts-kcm:5 )
 "
 
