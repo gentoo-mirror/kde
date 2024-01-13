@@ -1,4 +1,4 @@
-BDEPEND=>=dev-qt/linguist-tools-5.15.9:5 app-alternatives/ninja >=dev-util/cmake-3.20.5 designer? ( dev-qt/designer:5 ) doc? ( >=app-doc/doxygen-1.8.13-r1 ) doc? ( dev-qt/qthelp:5 ) dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-5.239:* >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=>=dev-qt/linguist-tools-5.15.9:5 app-alternatives/ninja >=dev-util/cmake-3.20.5 designer? ( dev-qt/designer:5 ) doc? ( >=app-text/doxygen-1.8.13-r1 ) doc? ( dev-qt/qthelp:5 ) dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-5.239:* >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install nofetch postinst postrm preinst prepare setup test unpack
 DEPEND=>=dev-qt/qtgui-5.15.9:5 >=dev-qt/qtwidgets-5.15.9:5 aspell? ( app-text/aspell ) hunspell? ( app-text/hunspell:= ) qml? ( >=dev-qt/qtdeclarative-5.15.9:5 ) test? ( dev-qt/qttest:5 ) doc? ( dev-qt/qt-docs:5 ) dev-qt/qtcore:5
 DESCRIPTION=Framework for providing spell-checking through abstraction of popular backends
@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=>=dev-qt/qtgui-5.15.9:5 >=dev-qt/qtwidgets-5.15.9:5 aspell? ( app-text/aspell ) hunspell? ( app-text/hunspell:= ) qml? ( >=dev-qt/qtdeclarative-5.15.9:5 ) >=kde-frameworks/kf-env-4 doc? ( dev-qt/qt-docs:5 ) dev-qt/qtcore:5
 RESTRICT=!test? ( test )
 SLOT=5/9999
-_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	6837d7bc6f1fab2c2116e350e08d67bc	virtualx	817571665ee28575da44ee08135089e5	ecm	024f844dce2e095000b8b2cb1d9dc386	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	kde.org	639b8be73fa3fb9f4f2701362383842e	frameworks.kde.org	360f515b053f0045db174c1a97f3b1b8
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	6837d7bc6f1fab2c2116e350e08d67bc	virtualx	817571665ee28575da44ee08135089e5	ecm	cb4ebd0f18d329d1ae27a316d75c9d79	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	kde.org	639b8be73fa3fb9f4f2701362383842e	frameworks.kde.org	360f515b053f0045db174c1a97f3b1b8
 _md5_=80eba37616c59fac78a2841d6eb08ad1
