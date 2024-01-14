@@ -1,4 +1,4 @@
-BDEPEND=app-alternatives/ninja >=dev-util/cmake-3.20.5 test? ( x11-base/xorg-server[xvfb] x11-apps/xhost ) dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-5.239:* >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5 test? ( x11-base/xorg-server[xvfb] x11-apps/xhost ) dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-5.239:* >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install nofetch postinst postrm preinst prepare setup test unpack
 DEPEND=>=dev-qt/qtgui-5.15.9:5 >=dev-qt/qtdeclarative-5.15.9:5 >=dev-qt/qtquickcontrols2-5.15.9:5 examples? ( >=dev-qt/qtwidgets-5.15.9:5 =kde-frameworks/kdeclarative-5.239*:5 =kde-frameworks/kirigami-5.239*:5 ) test? ( dev-qt/qttest:5 ) dev-qt/qtcore:5
 DESCRIPTION=QtQuick plugin providing high-performance charts
@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=>=dev-qt/qtgui-5.15.9:5 >=dev-qt/qtdeclarative-5.15.9:5 >=dev-qt/qtquickcontrols2-5.15.9:5 examples? ( >=dev-qt/qtwidgets-5.15.9:5 =kde-frameworks/kdeclarative-5.239*:5 =kde-frameworks/kirigami-5.239*:5 ) >=kde-frameworks/kf-env-4 dev-qt/qtcore:5
 RESTRICT=!test? ( test ) !test? ( test )
 SLOT=5/9999
-_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	627dd861ceaf9a2fd8418731f185328e	virtualx	817571665ee28575da44ee08135089e5	ecm	cb4ebd0f18d329d1ae27a316d75c9d79	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	kde.org	639b8be73fa3fb9f4f2701362383842e	frameworks.kde.org	360f515b053f0045db174c1a97f3b1b8
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	9e6e6cdd0d465dfff15db2d0e466493b	virtualx	817571665ee28575da44ee08135089e5	ecm	cb4ebd0f18d329d1ae27a316d75c9d79	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	kde.org	639b8be73fa3fb9f4f2701362383842e	frameworks.kde.org	360f515b053f0045db174c1a97f3b1b8
 _md5_=4cf7b9ee59055e6d87cd157c00744536
