@@ -31,14 +31,14 @@ DEPEND="
 	=kde-frameworks/prison-${PVCUT}*:6
 	kaccounts? (
 		kde-apps/kaccounts-integration:6
-		>=net-libs/accounts-qt-1.16-r1[qt6]
+		>=net-libs/accounts-qt-1.16_p20220803[qt6]
 	)
 "
 RDEPEND="${DEPEND}
 	!${CATEGORY}/${PN}:5[-kf6compat(-)]
 	>=kde-frameworks/kdeclarative-${PVCUT}:6
 	bluetooth? ( =kde-frameworks/bluez-qt-${PVCUT}*:6 )
-	kaccounts? ( >=net-libs/accounts-qml-0.7-r3[qt6] )
+	kaccounts? ( >=net-libs/accounts-qml-0.7_p20231028[qt6] )
 "
 BDEPEND="kaccounts? ( dev-util/intltool )"
 
