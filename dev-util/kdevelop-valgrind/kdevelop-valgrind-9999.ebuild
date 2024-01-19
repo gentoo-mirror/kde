@@ -21,7 +21,7 @@ COMMON_DEPEND="
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtnetwork-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
-	dev-debug/kdevelop:5=
+	dev-util/kdevelop:5=
 	>=kde-frameworks/kconfig-${KFMIN}:5
 	>=kde-frameworks/kcoreaddons-${KFMIN}:5
 	>=kde-frameworks/ki18n-${KFMIN}:5
@@ -37,5 +37,5 @@ DEPEND="${COMMON_DEPEND}
 	>=kde-frameworks/kitemmodels-${KFMIN}:5
 "
 RDEPEND="${COMMON_DEPEND}
-	dev-util/valgrind
+	dev-debug/valgrind
 "
