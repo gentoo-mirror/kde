@@ -25,6 +25,7 @@ app-text/kjots 9999: Note taking utility by KDE
 dev-db/futuresql 9999: Non-blocking Qt database framework
 dev-db/futuresql5 9999: Non-blocking Qt database framework
 dev-db/kdb 9999: Database connectivity and creation framework for various vendors
+dev-debug/kdbg 9999: Graphical debugger interface
 dev-libs/appstream 9999: Cross-distro effort for providing metadata for software in the Linux ecosystem
 dev-libs/atcore 9999: API to manage the serial connection between the computer and 3D Printers
 dev-libs/kasync 9999: C++ library for controlling asynchronous tasks
@@ -43,7 +44,6 @@ dev-libs/plasma-wayland-protocols 9999: Plasma Specific Protocols for Wayland
 dev-libs/qcoro 9999: C++ Coroutine Library for Qt
 dev-libs/qcoro5 9999: C++ Coroutine Library for Qt5
 dev-python/parse_cmake 0.4.1-r2: Parser for CMakeLists.txt files
-dev-util/kdbg 9999: Graphical debugger interface
 dev-util/kdevelop 23.08.49.9999 24.01.90 24.02.49.9999 9999: Integrated Development Environment, supporting KF5/Qt, C/C++ and much more
 dev-util/kdevelop-css 9999: CSS Language Support plugin for KDevelop
 dev-util/kdevelop-embedded 9999: Plugin for KDevelop to support the development of embedded systems
