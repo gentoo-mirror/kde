@@ -75,7 +75,6 @@ kde-apps/kate-addons:lspclient - Enable LSP (Language Server Protocol) client pl
 kde-apps/kate-addons:projects - Enable Project plugin for executing queries on SQL DBs
 kde-apps/kate-addons:snippets - Enable Snippets Tool View plugin to manage or download code snippets
 kde-apps/kate-addons:sql - Enable SQL plugin for executing queries on SQL DBs
-kde-apps/kate-lib:activities - Enable Plasma Activities support via kde-plasma/plasma-activities
 kde-apps/kde-apps-meta:accessibility - Pull in kde-apps/kdeaccessibility-meta packages
 kde-apps/kde-apps-meta:admin - Pull in kde-apps/kdeadmin-meta packages
 kde-apps/kde-apps-meta:education - Pull in kde-apps/kdeedu-meta packages
@@ -176,8 +175,6 @@ kde-apps/ktp-common-internals:otr - Enable support for encrypted conversations u
 kde-apps/ktp-common-internals:sso - Enable support for Single sign-on through KAccounts
 kde-apps/ktp-text-ui:speech - Enable incoming messages to be read out using text-to-speech
 kde-apps/kwave:qtmedia - Enable playback via Qt5Multimedia
-kde-apps/libkcddb:kf6compat - Disable components colliding with KF6, depend on KF6 components instead
-kde-apps/libkcompactdisc:kf6compat - Disable components colliding with KF6, depend on KF6 components instead
 kde-apps/libkdepim:designer - Build plugins for dev-qt/designer
 kde-apps/libkleo:fancyviewer - Use kde-apps/kpimtextedit for an improved audit log viewer
 kde-apps/libksane:kwallet - Enable encrypted storage of passwords with kde-frameworks/kwallet
@@ -193,11 +190,9 @@ kde-apps/marble:webengine - Use dev-qt/qtwebengine for embedded web browser
 kde-apps/messagelib:speech - Enable text-to-speech support
 kde-apps/okular:crypt - Enable support for password-encrypted documents via kde-frameworks/kwallet
 kde-apps/okular:epub - Enable E-Book support via app-text/ebook-tools
-kde-apps/okular:image-backend - Enable image viewing support
 kde-apps/okular:markdown - Enable Markdown support via app-text/discount
 kde-apps/okular:mobi - Enable mobipocket support via kde-apps/kdegraphics-mobipocket
 kde-apps/okular:phonon - Enable sound support via media-libs/phonon
-kde-apps/okular:plucker - Enable Plucker E-Book for Palm OS devices support
 kde-apps/okular:qml - Install Okular Qml components
 kde-apps/okular:share - Enable support for a share menu using kde-frameworks/purpose
 kde-apps/okular:speech - Enable text-to-speech support
@@ -352,7 +347,6 @@ media-sound/kid3:mpris - Enable support for MPRIS2 interface using dev-qt/qtdbus
 net-im/choqok:attica - Build Open Collaboration Services plugin using kde-frameworks/attica
 net-im/choqok:share - Enable support for a share menu using kde-frameworks/purpose
 net-im/choqok:telepathy - Enable support for the real-time communication framework telepathy
-net-misc/kio-zeroconf:kf6compat - Disable components colliding with KF6, depend on KF6 components instead
 net-misc/smb4k:discovery - Build with net-libs/kdsoap-ws-discovery-client support to discover domains and workgroups
 net-p2p/ktorrent:bwscheduler - Schedule upload and download limits over a period of a week
 net-p2p/ktorrent:downloadorder - Specify the download order of a multi-file torrent
