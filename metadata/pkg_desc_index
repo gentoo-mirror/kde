@@ -472,6 +472,8 @@ media-gfx/kxstitch 9999: Program to create cross stitch patterns
 media-gfx/peruse 9999: Comic book reader
 media-gfx/skanpage 24.01.95 24.02.0 24.02.49.9999 9999: Multi-page scanning application supporting image and pdf files
 media-gfx/symboleditor 9999: Application to create libraries of QPainterPath objects with rendering hints
+media-libs/kcolorpicker 0.3.0: Qt based color picker with popup menu
+media-libs/kimageannotator 0.7.0: Tool for annotating images
 media-libs/kquickimageeditor 9999: QtQuick components providing basic image editing capabilities
 media-libs/ksanecore 24.01.95 24.02.0 24.02.49.9999 9999: Qt-based interface for SANE library to control scanner hardware
 media-libs/liblastfm 9999: Collection of libraries to integrate Last.fm services
