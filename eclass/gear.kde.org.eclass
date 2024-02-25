@@ -185,10 +185,13 @@ if $(ver_test -gt 24.01.75); then
 		kontrast | \
 		konversation | \
 		korganizer | \
+		kopeninghours | \
+		kosmindoormap | \
 		kpat | \
 		kpimtextedit | \
 		kpkpass | \
 		kpmcore | \
+		kpublictransport | \
 		kreversi | \
 		krfb | \
 		kruler | \
@@ -257,9 +260,6 @@ if $(ver_test -gt 24.03.75); then
 		kmplot | \
 		kolourpaint | \
 		kompare | \
-		kopeninghours | \
-		kosmindoormap | \
-		kpublictransport | \
 		krdc | \
 		ksanecore | \
 		libkeduvocdocument | \
