@@ -291,7 +291,7 @@ kde-frameworks/attica 5.239.9999 6.0.0 9999: Framework providing access to Open 
 kde-frameworks/baloo 5.239.9999 6.0.0 9999: Framework for searching and managing metadata
 kde-frameworks/bluez-qt 5.239.9999 6.0.0 9999: Qt wrapper for Bluez 5 DBus API
 kde-frameworks/breeze-icons 5.239.9999 6.0.0 9999: Breeze SVG icon theme
-kde-frameworks/breeze-icons-rcc 5.239.9999 9999: Breeze SVG icon theme binary resource
+kde-frameworks/breeze-icons-rcc 5.239.9999: Breeze SVG icon theme binary resource
 kde-frameworks/countryflags 5.239.9999: Icons of flags for various countries
 kde-frameworks/extra-cmake-modules 5.239.9999 6.0.0 9999: Extra modules and scripts for CMake
 kde-frameworks/frameworkintegration 5.239.9999 6.0.0 9999: Framework for integrating Qt applications with KDE Plasma workspaces
@@ -363,7 +363,7 @@ kde-frameworks/kxmlgui 5.239.9999 6.0.0 9999: Framework for managing menu and to
 kde-frameworks/kxmlrpcclient 5.239.9999: Framework providing client-side support for the XML-RPC protocol
 kde-frameworks/modemmanager-qt 5.239.9999 6.0.0 9999: ModemManager bindings for Qt
 kde-frameworks/networkmanager-qt 5.239.9999 6.0.0 9999: NetworkManager bindings for Qt
-kde-frameworks/oxygen-icons 5.239.9999 9999: Oxygen SVG icon theme
+kde-frameworks/oxygen-icons 5.239.9999 6.0.0 9999: Oxygen SVG icon theme
 kde-frameworks/prison 5.239.9999 6.0.0 9999: QRCode and data matrix barcode library
 kde-frameworks/purpose 5.239.9999 6.0.0 9999: Library for providing abstractions to get the developer's purposes fulfilled
 kde-frameworks/qqc2-desktop-style 5.239.9999 6.0.0 9999: Style for QtQuickControls 2 that uses QWidget's QStyle for painting

@@ -1,5 +1,6 @@
-BDEPEND=|| ( dev-lang/python:3.12 dev-lang/python:3.11 dev-lang/python:3.10 ) || ( ( dev-lang/python:3.12 dev-python/lxml[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/lxml[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 dev-python/lxml[python_targets_python3_10(-)] ) ) dev-qt/qtbase:6 >=kde-frameworks/extra-cmake-modules-6.0:* test? ( app-misc/fdupes ) app-alternatives/ninja >=dev-build/cmake-3.20.5
+BDEPEND=|| ( dev-lang/python:3.12 dev-lang/python:3.11 dev-lang/python:3.10 ) || ( ( dev-lang/python:3.12 dev-python/lxml[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/lxml[python_targets_python3_11(-)] ) ( dev-lang/python:3.10 dev-python/lxml[python_targets_python3_10(-)] ) ) >=kde-frameworks/extra-cmake-modules-6.0:* test? ( app-misc/fdupes ) app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install nofetch postinst postrm preinst prepare setup test unpack
+DEPEND=test? ( dev-qt/qtbase:6 )
 DESCRIPTION=Breeze SVG icon theme
 EAPI=8
 HOMEPAGE=https://develop.kde.org/products/frameworks/
@@ -13,4 +14,4 @@ RESTRICT=!test? ( test ) fetch fetch
 SLOT=6/6.0
 SRC_URI=mirror://kde/stable/frameworks/6.0/breeze-icons-6.0.0.tar.xz
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	24c947ff5f858625cf0b33c15eed4425	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	9e6e6cdd0d465dfff15db2d0e466493b	kde.org	639b8be73fa3fb9f4f2701362383842e	frameworks.kde.org	b1415d3b2d85839da00958f5c9921b9d	python-utils-r1	042f4cc53680245bf99a84669b94155a	python-any-r1	f5169813d1619761b459800587005fd2	xdg	4a14c5c24f121e7da66e5aab4a168c6e
-_md5_=70a5dfb17e5db9148cb986d9bf2c19c2
+_md5_=93a424c6a4c7d7d099182209031677f3
