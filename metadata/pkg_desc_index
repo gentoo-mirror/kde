@@ -31,10 +31,10 @@ dev-libs/atcore 9999: API to manage the serial connection between the computer a
 dev-libs/kasync 9999: C++ library for controlling asynchronous tasks
 dev-libs/kdiagram 9999: Powerful libraries (KChart, KGantt) for creating business diagrams
 dev-libs/kirigami-addons 9999: Visual end user components for Kirigami-based applications
-dev-libs/kopeninghours 24.01.95 24.02.0 24.02.49.9999 9999: Library for parsing and evaluating OSM opening hours expressions
-dev-libs/kosmindoormap 24.01.95 24.02.0 24.02.49.9999 9999: Data Model and Extraction System for Travel Reservation information
+dev-libs/kopeninghours 24.02.0 24.02.49.9999 9999: Library for parsing and evaluating OSM opening hours expressions
+dev-libs/kosmindoormap 24.02.0 24.02.49.9999 9999: Data Model and Extraction System for Travel Reservation information
 dev-libs/kproperty 9999: Property editing framework with editor widget similar to Qt Designer
-dev-libs/kpublictransport 24.01.95 24.02.0 24.02.49.9999 9999: Library for accessing public transport timetables and other information
+dev-libs/kpublictransport 24.02.0 24.02.49.9999 9999: Library for accessing public transport timetables and other information
 dev-libs/kreport 9999: Framework for creation and generation of reports in multiple formats
 dev-libs/ktextaddons 9999: Various text handling addons
 dev-libs/kweathercore 9999: Library for retrieval of weather information including forecasts and alerts

@@ -28,7 +28,6 @@ app-text/kbibtex:webengine - Use dev-qt/qtwebengine for HTML previews
 app-text/kjots:speech - Enable text-to-speech support
 dev-libs/appstream:apt - Enables Debians APT support
 dev-libs/atcore:gui - Build test GUI
-dev-libs/kosmindoormap:openinghours - Enable support for highlighting currently open amenities/shops/etc.
 dev-libs/kpublictransport:networkmanager - Enable onboard status detection using kde-frameworks/networkmanager-qt
 dev-libs/kreport:marble - Enable displaying of maps using kde-apps/marble
 dev-libs/kreport:scripting - Support Qml scripting using dev-qt/qtdeclarative
