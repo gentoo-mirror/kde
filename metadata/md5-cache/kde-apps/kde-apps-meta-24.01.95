@@ -3,8 +3,8 @@ DESCRIPTION=Meta package for the KDE Release Service collection
 EAPI=8
 HOMEPAGE=https://apps.kde.org/
 IUSE=accessibility +admin +education +games +graphics +multimedia +network pim sdk +utils
-KEYWORDS=~amd64 ~arm64 ~x86
+KEYWORDS=~amd64
 LICENSE=metapackage
 RDEPEND=>=kde-apps/kdecore-meta-24.01.95:* accessibility? ( >=kde-apps/kdeaccessibility-meta-24.01.95:* ) admin? ( >=kde-apps/kdeadmin-meta-24.01.95:* ) education? ( >=kde-apps/kdeedu-meta-24.01.95:* ) games? ( >=kde-apps/kdegames-meta-24.01.95:* ) graphics? ( >=kde-apps/kdegraphics-meta-24.01.95:* ) multimedia? ( >=kde-apps/kdemultimedia-meta-24.01.95:* ) network? ( >=kde-apps/kdenetwork-meta-24.01.95:* ) pim? ( >=kde-apps/kdepim-meta-24.01.95:* ) sdk? ( >=kde-apps/kdesdk-meta-24.01.95:* ) utils? ( >=kde-apps/kdeutils-meta-24.01.95:* )
 SLOT=5
-_md5_=5342d2a258eb09c8ba41a65999b569cf
+_md5_=d751b0e106b6b08d01872c6359182e77

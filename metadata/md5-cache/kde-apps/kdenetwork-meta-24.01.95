@@ -3,8 +3,8 @@ DESCRIPTION=kdenetwork - merge this to pull in all kdenetwork-derived packages
 EAPI=8
 HOMEPAGE=https://apps.kde.org/
 IUSE=+bittorrent dropbox samba +screencast +webengine
-KEYWORDS=~amd64 ~arm64 ~ppc64 ~x86
+KEYWORDS=~amd64
 LICENSE=metapackage
 RDEPEND=>=kde-apps/kget-24.01.95:* >=kde-apps/krdc-24.01.95:* >=kde-misc/kdeconnect-24.01.95:* >=net-im/neochat-24.01.95 >=net-im/tokodon-24.01.95 >=net-irc/konversation-24.01.95:* >=net-misc/kio-zeroconf-24.01.95:* >=net-news/alligator-24.01.95 bittorrent? ( >=net-libs/libktorrent-24.01.95:* >=net-p2p/ktorrent-24.01.95:* ) dropbox? ( >=kde-apps/dolphin-plugins-dropbox-24.01.95:* ) samba? ( >=kde-apps/kdenetwork-filesharing-24.01.95:* ) screencast? ( >=kde-apps/krfb-24.01.95:* ) webengine? ( >=kde-misc/kio-gdrive-24.01.95:* )
 SLOT=5
-_md5_=42c9aea49fd206902e7dea14b05d68a8
+_md5_=44684694e442b401ac06e8cf0d849e9d

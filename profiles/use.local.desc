@@ -124,7 +124,6 @@ kde-apps/kio-extras:X - Enable support for XCursor thumbnails via x11-libs/libX1
 kde-apps/kio-extras:activities - Enable activities KIO worker and fileitem plugin
 kde-apps/kio-extras:ios - Enable AFC (Apple File Conduit) KIO worker for iOS devices support
 kde-apps/kio-extras:man - Enable manpages KIO worker
-kde-apps/kio-extras:nfs - Enable NFS support using net-libs/libtirpc
 kde-apps/kio-extras:phonon - Enable file audio preview plugin using media-libs/phonon
 kde-apps/kio-extras:sftp - Enable SFTP protocol support using net-libs/libssh
 kde-apps/kio-extras:taglib - Enable audio thumbnails via media-libs/taglib
@@ -262,6 +261,7 @@ kde-misc/tellico:discid - Add support for reading disc IDs from audio CDs
 kde-misc/tellico:yaz - Add support for searching Z39.50 databases
 kde-plasma/discover:firmware - Enable support for firmware upgrades using sys-apps/fwupd
 kde-plasma/discover:flatpak - Enable support for flatpak repositories using sys-apps/flatpak
+kde-plasma/discover:snap - Enable support for snap packages using app-containers/snapd
 kde-plasma/discover:webengine - Enable webflow support using dev-qt/qtwebview and dev-qt/qtwebengine instead of default URL handler
 kde-plasma/drkonqi:systemd - Enable Coredumpd integration
 kde-plasma/kde-cli-tools:kdesu - Build graphical frontend for kde-frameworks/kdesu
