@@ -81,7 +81,7 @@ kde-apps/bomber 24.01.95 24.02.0 24.02.49.9999 9999: Single player arcade bombin
 kde-apps/bovo 24.01.95 24.02.0 24.02.49.9999 9999: Five-in-a-row Board Game
 kde-apps/calendarjanitor 24.01.95 24.02.0 24.02.49.9999 9999: Tool to scan calendar data for buggy instances
 kde-apps/calendarsupport 24.01.95 24.02.0 24.02.49.9999 9999: Calendar support library
-kde-apps/cantor 24.01.95 24.02.0 24.02.49.9999 9999: Interface for doing mathematics and scientific computing
+kde-apps/cantor 24.02.0 24.02.49.9999 9999: Interface for doing mathematics and scientific computing
 kde-apps/cervisia 24.01.95 24.02.0 24.02.49.9999 9999: CVS frontend by KDE
 kde-apps/dolphin 24.01.95 24.02.0 24.02.49.9999 9999: Plasma filemanager focusing on usability
 kde-apps/dolphin-plugins-dropbox 24.01.95 24.02.0 24.02.49.9999 9999: Dolphin plugin for Dropbox service integration
