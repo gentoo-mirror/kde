@@ -6,5 +6,5 @@ IUSE=+cron
 KEYWORDS=~amd64
 LICENSE=metapackage
 RDEPEND=>=kde-apps/ksystemlog-24.02.0:* cron? ( >=kde-apps/kcron-24.02.0:* )
-SLOT=5
-_md5_=449ad4297e339813aa0a84ac97c5f03a
+SLOT=0
+_md5_=7ca3679a83dceea4386613bd6a19cdbb

@@ -5,5 +5,5 @@ HOMEPAGE=https://apps.kde.org/
 IUSE=+cron
 LICENSE=metapackage
 RDEPEND=>=kde-apps/ksystemlog-9999:* cron? ( >=kde-apps/kcron-9999:* )
-SLOT=5
-_md5_=1465813c4b549bb830d41a78154a6e32
+SLOT=0
+_md5_=ade47df4a46abf1b57fa41a75b431011

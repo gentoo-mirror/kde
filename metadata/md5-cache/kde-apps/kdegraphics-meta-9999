@@ -5,5 +5,5 @@ HOMEPAGE=https://apps.kde.org/graphics/
 IUSE=color-management scanner +screencast
 LICENSE=metapackage
 RDEPEND=>=kde-apps/gwenview-9999:* >=kde-apps/kamera-9999:* >=kde-apps/kcolorchooser-9999:* >=kde-apps/kdegraphics-mobipocket-9999:* >=kde-apps/kolourpaint-9999:* >=kde-apps/kruler-9999:* >=kde-apps/libkdcraw-9999:* >=kde-apps/libkexiv2-9999:* >=kde-apps/okular-9999:* >=kde-apps/svgpart-9999:* >=kde-apps/thumbnailers-9999:* color-management? ( >=kde-misc/colord-kde-9999:* ) scanner? ( >=kde-apps/libksane-9999:* >=kde-misc/skanlite-9999:* >=media-gfx/skanpage-9999:* ) screencast? ( >=kde-apps/spectacle-9999:* )
-SLOT=5
-_md5_=82d7bad942eddf2da9229b9188472fc9
+SLOT=0
+_md5_=2c64ca9989d117d22620bb20d1fc22e1

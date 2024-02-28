@@ -4,5 +4,5 @@ EAPI=8
 HOMEPAGE=https://apps.kde.org/
 LICENSE=metapackage
 RDEPEND=>=app-accessibility/kontrast-9999:* >=kde-apps/kmag-9999:* >=kde-apps/kmousetool-9999:* >=kde-apps/kmouth-9999:*
-SLOT=5
-_md5_=ed5c6b0fcababed03b3e06725562d268
+SLOT=0
+_md5_=1533c0eb589c723cb8c0c5f78d7e59b6
