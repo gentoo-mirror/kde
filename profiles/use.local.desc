@@ -25,7 +25,6 @@ app-office/kmymoney:holidays - Enable kde-frameworks/kholidays integration
 app-office/libalkimia:webengine - Enable online quotes using dev-qt/qtwebengine
 app-office/skrooge:activities - Enable kactivities support
 app-text/kbibtex:webengine - Use dev-qt/qtwebengine for HTML previews
-app-text/kjots:speech - Enable text-to-speech support
 dev-libs/appstream:apt - Enables Debians APT support
 dev-libs/atcore:gui - Build test GUI
 dev-libs/kpublictransport:networkmanager - Enable onboard status detection using kde-frameworks/networkmanager-qt
@@ -333,7 +332,6 @@ media-gfx/skanpage:ocr - Enable support for Optical Character Recognition via ap
 media-libs/liblastfm:fingerprint - Build the lastfm-fingerprint library
 media-libs/phonon:designer - Install plugin for dev-qt/designer
 media-libs/phonon:vlc - Install VLC Phonon backend
-media-libs/phonon-gstreamer:network - Enable network streaming support via libsoup
 media-sound/amarok:lastfm - Enable Last.fm streaming services support through media-libs/liblastfm
 media-sound/amarok:mariadb - Prefer dev-db/mariadb-connector-c over dev-db/mysql-connector-c
 media-sound/amarok:mtp - Enable support for libMTP (Plays4Sure) devices access through libmtp

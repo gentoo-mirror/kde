@@ -18,7 +18,7 @@ app-office/ktimetracker 9999: Todo management and time tracker
 app-office/libalkimia 8.9999 9999: Library with common classes and functionality used by KDE finance applications
 app-office/merkuro 24.02.49.9999 9999: Calendar application using Akonadi
 app-office/skrooge 9999: Personal finances manager, aiming at being simple and intuitive
-app-text/arianna 23.08.49.9999 9999: EPub Reader for mobile devices
+app-text/arianna 9999: EPub Reader for mobile devices
 app-text/chmk 9999: CHM file viewer based on KDE Frameworks and QtWebEngine
 app-text/kbibtex 9999: BibTeX editor to edit bibliographies used with LaTeX
 app-text/kjots 9999: Note taking utility by KDE
@@ -38,7 +38,6 @@ dev-libs/kpublictransport 24.02.49.9999 9999: Library for accessing public trans
 dev-libs/kreport 9999: Framework for creation and generation of reports in multiple formats
 dev-libs/ktextaddons 9999: Various text handling addons
 dev-libs/kweathercore 9999: Library for retrieval of weather information including forecasts and alerts
-dev-libs/libphutil 9999: A collection of PHP utility classes
 dev-libs/mauikit 9999: Templated convergent controls and multiplatform utilities for Maui applications
 dev-libs/plasma-wayland-protocols 9999: Plasma Specific Protocols for Wayland
 dev-libs/qcoro 9999: C++ Coroutine Library for Qt
@@ -478,10 +477,8 @@ media-libs/liblastfm 9999: Collection of libraries to integrate Last.fm services
 media-libs/libqaccessibilityclient 9999: Library for writing accessibility clients such as screen readers
 media-libs/mpvqt 9999: libmpv wrapper for QtQuick2 and QML
 media-libs/phonon 9999: KDE multimedia abstraction library
-media-libs/phonon-gstreamer 9999: GStreamer backend for the Phonon multimedia library
 media-libs/phonon-vlc 9999: VLC backend for the Phonon multimedia library
 media-libs/pulseaudio-qt 9999: Qt bindings for libpulse
-media-libs/qt-gstreamer 9999: C++ bindings for GStreamer with a Qt-style API
 media-sound/amarok 9999: Advanced audio player based on KDE frameworks
 media-sound/audex 9999: Tool for ripping compact discs
 media-sound/elisa 24.02.49.9999 9999: Simple music player by KDE
@@ -490,8 +487,7 @@ media-sound/kid3 9999: Simple tag editor based on Qt
 media-sound/krecorder 24.02.49.9999 9999: Convergent audio recording application for Plasma
 media-sound/vvave 9999: Tiny Qt music player by KDE
 media-video/kaffeine 9999: Media player with digital TV support by KDE
-media-video/kmplayer 9999: Video player plugin for Konqueror and basic MPlayer frontend
-media-video/plasmatube 23.08.49.9999 9999: YouTube video player based on mpv, yt-dlp, and Invidious
+media-video/plasmatube 9999: YouTube video player based on mpv, yt-dlp, and Invidious
 media-video/subtitlecomposer 9999: Text-based subtitles editor
 net-im/choqok 9999: Free/Open Source micro-blogging client by KDE
 net-im/neochat 24.02.49.9999 9999: Client for Matrix, the decentralized communication protocol
@@ -515,7 +511,6 @@ net-news/alligator 24.02.49.9999 9999: Convergent RSS/Atom feed reader for Plasm
 net-p2p/ktorrent 24.02.49.9999 9999: Powerful BitTorrent client based on KDE Frameworks
 sci-astronomy/kstars 9999: Desktop Planetarium
 sci-calculators/keurocalc 9999: Universal currency converter and calculator
-sci-electronics/cirkuit 9999: Application to generate publication-ready figures
 sci-electronics/ktechlab 9999: IDE for microcontrollers and electronics
 sci-mathematics/rkward 9999: IDE for the R-project
 sys-auth/polkit-qt 9999: Qt wrapper around polkit-1 client libraries
