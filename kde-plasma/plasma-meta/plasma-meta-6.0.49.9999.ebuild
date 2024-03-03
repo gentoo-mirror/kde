@@ -11,8 +11,8 @@ SLOT="6"
 KEYWORDS=""
 IUSE="accessibility bluetooth +browser-integration colord +crash-handler crypt
 cups discover +display-manager +elogind +firewall flatpak grub gtk +handbook
-+kwallet +networkmanager plymouth pulseaudio +sddm sdk +smart systemd
-thunderbolt wacom +wallpapers"
++kwallet +networkmanager oxygen-theme plymouth pulseaudio +sddm sdk +smart
+systemd thunderbolt unsupported wacom +wallpapers"
 
 REQUIRED_USE="^^ ( elogind systemd )"
 
@@ -41,8 +41,6 @@ RDEPEND="
 	>=kde-plasma/libplasma-${PV}:${SLOT}
 	>=kde-plasma/milou-${PV}:${SLOT}
 	>=kde-plasma/ocean-sound-theme-${PV}:${SLOT}
-	>=kde-plasma/oxygen-${PV}:${SLOT}
-	>=kde-plasma/oxygen-sounds-${PV}:${SLOT}
 	>=kde-plasma/plasma-activities-${PV}:${SLOT}
 	>=kde-plasma/plasma-activities-stats-${PV}:${SLOT}
 	>=kde-plasma/plasma-desktop-${PV}:${SLOT}
@@ -86,6 +84,11 @@ RDEPEND="
 		>=kde-plasma/plasma-nm-${PV}:${SLOT}
 		net-misc/networkmanager[elogind?,systemd?]
 	)
+	oxygen-theme? (
+		>=kde-frameworks/oxygen-icons-6.0.0:*
+		>=kde-plasma/oxygen-${PV}:${SLOT}
+		>=kde-plasma/oxygen-sounds-${PV}:${SLOT}
+	)
 	plymouth? (
 		>=kde-plasma/breeze-plymouth-${PV}:${SLOT}
 		>=kde-plasma/plymouth-kcm-${PV}:${SLOT}
@@ -98,6 +101,10 @@ RDEPEND="
 		firewall? ( >=kde-plasma/plasma-firewall-${PV}:${SLOT} )
 	)
 	thunderbolt? ( >=kde-plasma/plasma-thunderbolt-${PV}:${SLOT} )
+	!unsupported? (
+		!gui-apps/qt6ct
+		!sys-apps/xdg-desktop-portal-gnome
+	)
 	wacom? ( >=kde-plasma/wacomtablet-${PV}:${SLOT} )
 	wallpapers? ( >=kde-plasma/plasma-workspace-wallpapers-${PV}:${SLOT} )
 "
