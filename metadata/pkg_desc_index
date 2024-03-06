@@ -457,7 +457,7 @@ kde-plasma/plymouth-kcm 6.0.49.9999 9999: KDE Plasma control module for Plymouth
 kde-plasma/polkit-kde-agent 6.0.49.9999 9999: PolKit agent module for KDE Plasma
 kde-plasma/powerdevil 6.0.49.9999 9999: Power management for KDE Plasma Shell
 kde-plasma/print-manager 6.0.49.9999 9999: Manage CUPS print jobs and printers in Plasma
-kde-plasma/qqc2-breeze-style 9999: Breeze inspired QQC2 Style
+kde-plasma/qqc2-breeze-style 6.0.49.9999 9999: Breeze inspired QQC2 Style
 kde-plasma/sddm-kcm 6.0.49.9999 9999: KDE Plasma control module for SDDM
 kde-plasma/systemsettings 6.0.49.9999 9999: Control Center to configure KDE Plasma desktop
 kde-plasma/wacomtablet 6.0.49.9999 9999: Wacom system settings module that supports different button/pen layout profiles
