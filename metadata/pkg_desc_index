@@ -214,7 +214,6 @@ kde-apps/krdc 24.02.49.9999 9999: Remote desktop connection (RDP and VNC) client
 kde-apps/kreversi 24.02.49.9999 9999: Board game by KDE
 kde-apps/krfb 24.02.49.9999 9999: VNC-compatible server to share Plasma desktops
 kde-apps/kruler 24.02.49.9999 9999: Screen ruler for Plasma
-kde-apps/kscd 9999: CDDB enabled audio CD player based on KDE Frameworks
 kde-apps/kshisen 24.02.49.9999 9999: Solitaire-like game played using the standard set of Mahjong tiles
 kde-apps/ksirk 24.02.49.9999 9999: Port of the board game risk
 kde-apps/ksmtp 24.02.49.9999 9999: Job-based library to send email through an SMTP server
@@ -226,17 +225,6 @@ kde-apps/ksystemlog 24.02.49.9999 9999: System log viewer by KDE
 kde-apps/kteatime 24.02.49.9999 9999: KDE timer for making a fine cup of tea
 kde-apps/ktimer 24.02.49.9999 9999: Little tool to execute programs after some time
 kde-apps/ktouch 24.02.49.9999 9999: Program that helps to learn and practice touch typing
-kde-apps/ktp-accounts-kcm 9999: KDE Telepathy account management kcm
-kde-apps/ktp-approver 9999: KDE Telepathy notification handler
-kde-apps/ktp-auth-handler 9999: KDE Telepathy authentication handler
-kde-apps/ktp-common-internals 9999: KDE Telepathy common library
-kde-apps/ktp-contact-list 9999: KDE Telepathy contact list
-kde-apps/ktp-contact-runner 9999: KDE Telepathy krunner plugin
-kde-apps/ktp-desktop-applets 9999: KDE Telepathy contact, presence and chat Plasma applets
-kde-apps/ktp-filetransfer-handler 9999: KDE Telepathy file transfer handler
-kde-apps/ktp-kded-module 9999: KDE Telepathy workspace integration
-kde-apps/ktp-send-file 9999: KDE Telepathy file manager plugin to send files to contacts
-kde-apps/ktp-text-ui 9999: KDE Telepathy text chat window
 kde-apps/ktuberling 24.02.49.9999 9999: Potato game for kids by KDE
 kde-apps/kturtle 24.02.49.9999 9999: Educational programming environment using the Logo programming language
 kde-apps/kubrick 24.02.49.9999 9999: Game based on the "Rubik's Cube" puzzle by KDE
@@ -275,7 +263,6 @@ kde-apps/picmi 24.02.49.9999 9999: Nonogram logic game by KDE
 kde-apps/pim-data-exporter 24.02.49.9999 9999: Assistant to backup and archive PIM data and configuration
 kde-apps/pim-sieve-editor 24.02.49.9999 9999: Assistant for editing IMAP Sieve filters
 kde-apps/pimcommon 24.02.49.9999 9999: Common PIM libraries
-kde-apps/plasma-telepathy-meta 9999: Plasma Telepathy client
 kde-apps/poxml 24.02.49.9999 9999: KDE utility to translate DocBook XML files using gettext po files
 kde-apps/rocs 24.02.49.9999 9999: Interface to work with Graph Theory
 kde-apps/signon-kwallet-extension 24.02.49.9999 9999: KWallet extension for signond

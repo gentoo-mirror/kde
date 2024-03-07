@@ -166,10 +166,6 @@ kde-apps/krdc:activities - Enable Plasma Activities support via kde-plasma/plasm
 kde-apps/ksystemlog:audit - Enable security audit support via sys-process/audit
 kde-apps/ksystemlog:kdesu - Run as root using kdesu from kde-plasma/kde-cli-tools
 kde-apps/ktouch:X - Enable support for X11 Keyboard Layout Detection
-kde-apps/ktp-accounts-kcm:experimental - Enables disabled telepathy services (currently only steam)
-kde-apps/ktp-common-internals:otr - Enable support for encrypted conversations using Off-The-Records messaging
-kde-apps/ktp-common-internals:sso - Enable support for Single sign-on through KAccounts
-kde-apps/ktp-text-ui:speech - Enable incoming messages to be read out using text-to-speech
 kde-apps/kwave:qtmedia - Enable playback via Qt5Multimedia
 kde-apps/libkdepim:designer - Build plugins for dev-qt/designer
 kde-apps/libkleo:fancyviewer - Use kde-apps/kpimtextedit for an improved audit log viewer
