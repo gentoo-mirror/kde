@@ -490,7 +490,6 @@ net-libs/libtmdbqt 9999: Qt library to query the movie database API (themoviedb.
 net-libs/signon-oauth2 9999: OAuth2 plugin for Signon daemon
 net-libs/signon-ui 9999: Online accounts signon UI
 net-libs/signond 9999: Signon daemon for libaccounts-glib
-net-libs/telepathy-logger-qt 9999: Qt bindings for the Telepathy logger
 net-misc/kio-zeroconf 24.02.49.9999 9999: KIO worker to discover file systems by DNS-SD (DNS Service Discovery)
 net-misc/samba-mounter 9999: Samba Share Mounter
 net-misc/smb4k 9999: Advanced network neighborhood browser
