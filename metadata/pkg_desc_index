@@ -153,7 +153,7 @@ kde-apps/kdialog 24.02.49.9999 9999: Can be used to show nice dialog boxes from 
 kde-apps/kdiamond 24.02.49.9999 9999: Single player three-in-a-row game
 kde-apps/keditbookmarks 24.02.49.9999 9999: Bookmarks editor based on KDE Frameworks
 kde-apps/kfind 24.02.49.9999 9999: File finder utility based on KDE Frameworks
-kde-apps/kfloppy 23.08.49.9999 9999: Straightforward graphical means to format 3.5" and 5.25" floppy disks
+kde-apps/kfloppy 9999: Straightforward graphical means to format 3.5" and 5.25" floppy disks
 kde-apps/kfourinline 24.02.49.9999 9999: KDE four-in-a-row game
 kde-apps/kgeography 24.02.49.9999 9999: Geography learning tool
 kde-apps/kget 24.02.49.9999 9999: Advanced download manager by KDE
