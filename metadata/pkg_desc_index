@@ -58,6 +58,7 @@ dev-vcs/kdesvn 9999: Frontend to the subversion vcs
 games-board/atlantik 9999: Atlantik board game
 games-kids/gcompris 9999: Full featured educational application for children from 2 to 10
 games-mud/kmuddy 9999: MUD client by KDE
+games-puzzle/skladnik 9999: The Japanese warehouse keeper sokoban game
 gui-apps/liquidshell 9999: Basic desktop shell using QtWidgets
 gui-apps/xwaylandvideobridge 9999: Screenshare Wayland windows to XWayland apps
 kde-apps/akonadi 24.02.49.9999 9999: Storage service for PIM data and libraries for PIM apps
