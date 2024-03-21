@@ -45,8 +45,8 @@ COMMON_DEPEND="
 	>=kde-frameworks/kxmlgui-${KFMIN}:6
 	>=kde-frameworks/solid-${KFMIN}:6
 	media-gfx/exiv2:=
-	>=media-libs/kcolorpicker-0.3.0
-	>=media-libs/kimageannotator-0.7.0
+	>=media-libs/kcolorpicker-0.3.1
+	>=media-libs/kimageannotator-0.7.1
 	media-libs/lcms:2
 	media-libs/libjpeg-turbo:=
 	media-libs/libpng:0=
@@ -92,7 +92,7 @@ src_configure() {
 	local mycmakeargs=(
 		$(cmake_use_find_package activities PlasmaActivities)
 		$(cmake_use_find_package fits CFitsio)
-		$(cmake_use_find_package raw KF6KDcraw)
+		$(cmake_use_find_package raw KDcrawQt6)
 		-DGWENVIEW_SEMANTICINFO_BACKEND=$(usex semantic-desktop Baloo None)
 		$(cmake_use_find_package share KF6Purpose)
 		-DWITHOUT_X11=$(usex !X)
