@@ -31,7 +31,6 @@ dev-libs/kpublictransport:networkmanager - Enable onboard status detection using
 dev-libs/kreport:marble - Enable displaying of maps using kde-apps/marble
 dev-libs/kreport:scripting - Support Qml scripting using dev-qt/qtdeclarative
 dev-libs/ktextaddons:designer - Build plugins for dev-qt/designer
-dev-libs/ktextaddons:speech - Enable text-to-speech support
 dev-libs/qcoro:network - Build dev-qt/qtbase network support
 dev-libs/qcoro:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
 dev-libs/qcoro:websockets - Build dev-qt/qtwebsockets support
@@ -44,12 +43,10 @@ dev-util/kdevelop:hex - Enable hex editor plugin via app-editors/okteta
 dev-util/kdevelop:qmake - Enable support for QMake build system
 dev-util/kdevelop:reviewboard - Enable reviewboard support
 dev-util/massif-visualizer:callgraph - Enable detailed snapshot analysis using media-gfx/kgraphviewer
-dev-vcs/kdesvn:man - Build and install man pages
 games-kids/gcompris:kiosk - Enable kiosk mode by default (for use by small children or on a self-service host machine)
 kde-apps/akonadi:designer - Install plugin for dev-qt/designer
 kde-apps/akonadi:kaccounts - Enable support for system-wide defined KAccounts
 kde-apps/akonadi:tools - Install tools for developers and testing
-kde-apps/akregator:speech - Enable text-to-speech support
 kde-apps/analitza:eigen - Enable dev-cpp/eigen mathematical templates support
 kde-apps/ark:zip - Enable ZIP archive support via dev-libs/libzip
 kde-apps/cantor:R - Enable dev-lang/R backend support
@@ -63,10 +60,8 @@ kde-apps/gwenview:share - Enable support for a share menu using kde-frameworks/p
 kde-apps/k3b:webengine - Use dev-qt/qtwebengine for fancy k3bdiskinfoview
 kde-apps/kaccounts-providers:webengine - Enable Nextcloud KAccounts plugin using dev-qt/qtwebengine
 kde-apps/kalarm:pim - Enable birthday import, email functions etc. using kde-apps/akonadi
-kde-apps/kalarm:speech - Enable text-to-speech support
 kde-apps/kalzium:editor - Enable the embedded molecule editor/viewer
 kde-apps/kalzium:solver - Enable the equation solver
-kde-apps/kanagram:speech - Enable text-to-speech support
 kde-apps/kate-addons:filebrowser - Enable File System browser tool view
 kde-apps/kate-addons:lspclient - Enable LSP (Language Server Protocol) client plugin
 kde-apps/kate-addons:projects - Enable Project plugin for executing queries on SQL DBs
@@ -101,7 +96,6 @@ kde-apps/kdepim-addons:markdown - Enable Markdown support via app-text/discount
 kde-apps/kdepim-meta:bogofilter - Install mail-filter/bogofilter for spam filter support in kde-apps/kmail
 kde-apps/kdepim-meta:clamav - Install app-antivirus/clamav for virus detection support in kde-apps/kmail
 kde-apps/kdepim-meta:spamassassin - Install mail-filter/spamassassin for spam filter support in kde-apps/kmail
-kde-apps/kdepim-runtime:speech - Enable text-to-speech support
 kde-apps/kdesdk-meta:git - Enable support for Git VCS in kde-apps/dolphin via kde-apps/dolphin-plugins-git
 kde-apps/kdesdk-meta:mercurial - Enable support for Mercurial VCS in kde-apps/dolphin via kde-apps/dolphin-plugins-mercurial
 kde-apps/kdesdk-meta:subversion - Enable support for Apache Subversion VCS in kde-apps/dolphin via kde-apps/dolphin-plugins-subversion
@@ -111,7 +105,6 @@ kde-apps/kdeutils-meta:gpg - Install kde-apps/kgpg which depends on kde-apps/ako
 kde-apps/kdeutils-meta:lrz - Install app-arch/lrzip for LRZ archive support in kde-apps/ark
 kde-apps/kdeutils-meta:rar - Install one of app-arch/rar, app-arch/unrar or app-arch/unar for RAR archive support in kde-apps/ark
 kde-apps/kdeutils-meta:webengine - Install app-editors/ghostwriter and kde-apps/kimagemapeditor, requiring dev-qt/qtwebengine
-kde-apps/keditbookmarks:man - Build and install man pages
 kde-apps/kget:bittorrent - Enable bittorrent transfer plugin through net-libs/libktorrent
 kde-apps/kget:gpg - Enable signature verification by GpgME++ via app-crypt/gpgme
 kde-apps/kget:mms - Enable MMS (Microsoft Media Server) plugin through media-libs/libmms
@@ -135,10 +128,7 @@ kde-apps/kio-extras-kf5:sftp - Enable SFTP protocol support using net-libs/libss
 kde-apps/kio-extras-kf5:taglib - Enable audio thumbnails via media-libs/taglib
 kde-apps/kleopatra:pim - Enable WKS publishing support using kde-apps/kmail
 kde-apps/kmag:keyboardfocus - Enable keyboard focus tracking
-kde-apps/kmail:speech - Enable text-to-speech support
-kde-apps/knights:speech - Enable text-to-speech support
 kde-apps/konqueror:activities - Enable kactivities support
-kde-apps/konqueror:speech - Build text-to-speech plugin
 kde-apps/kopete:addbookmarks - Automatically add incoming urls to bookmarks.
 kde-apps/kopete:autoreplace - Automatically replace selected text
 kde-apps/kopete:contactnotes - Enables writing personal notes for contacts.
@@ -161,16 +151,13 @@ kde-apps/kopete:webpresence - Show your status and some more information on web.
 kde-apps/kopete:winpopup - Enable pop-up messages sending on windows. (same as good old "net send" messages ;])
 kde-apps/kopete:zeroconf - Enable Link-Local Messaging via the bonjour protocol.
 kde-apps/kpimtextedit:designer - Build plugins for dev-qt/designer
-kde-apps/kpimtextedit:speech - Enable text-to-speech support
 kde-apps/krdc:activities - Enable Plasma Activities support via kde-plasma/plasma-activities
-kde-apps/ksystemlog:audit - Enable security audit support via sys-process/audit
 kde-apps/ksystemlog:kdesu - Run as root using kdesu from kde-plasma/kde-cli-tools
 kde-apps/ktouch:X - Enable support for X11 Keyboard Layout Detection
 kde-apps/kwave:qtmedia - Enable playback via Qt5Multimedia
 kde-apps/libkdepim:designer - Build plugins for dev-qt/designer
 kde-apps/libkleo:fancyviewer - Use kde-apps/kpimtextedit for an improved audit log viewer
 kde-apps/libksane:kwallet - Enable encrypted storage of passwords with kde-frameworks/kwallet
-kde-apps/libksieve:speech - Enable text-to-speech support
 kde-apps/mailcommon:designer - Build plugins for dev-qt/designer
 kde-apps/marble:aprs - Enable support for APRS data sources
 kde-apps/marble:designer - Install plugin for dev-qt/designer
@@ -179,7 +166,6 @@ kde-apps/marble:pbf - Enable OpenStreetMap PBF file support via dev-libs/protobu
 kde-apps/marble:phonon - Enable sound support via media-libs/phonon
 kde-apps/marble:shapefile - Enable support for ESRI shapefiles
 kde-apps/marble:webengine - Use dev-qt/qtwebengine for embedded web browser
-kde-apps/messagelib:speech - Enable text-to-speech support
 kde-apps/okular:crypt - Enable support for password-encrypted documents via kde-frameworks/kwallet
 kde-apps/okular:epub - Enable E-Book support via app-text/ebook-tools
 kde-apps/okular:markdown - Enable Markdown support via app-text/discount
@@ -187,7 +173,6 @@ kde-apps/okular:mobi - Enable mobipocket support via kde-apps/kdegraphics-mobipo
 kde-apps/okular:phonon - Enable sound support via media-libs/phonon
 kde-apps/okular:qml - Install Okular Qml components
 kde-apps/okular:share - Enable support for a share menu using kde-frameworks/purpose
-kde-apps/okular:speech - Enable text-to-speech support
 kde-apps/parley:webengine - Build browser integration for the editor, requires dev-qt/qtwebengine
 kde-apps/pimcommon:designer - Build plugins for dev-qt/designer
 kde-apps/spectacle:share - Enable support for a share menu using kde-frameworks/purpose
@@ -199,17 +184,13 @@ kde-frameworks/baloo:kf6compat - Disable components colliding with KF6, depend o
 kde-frameworks/kcompletion:designer - Build plugins for dev-qt/designer
 kde-frameworks/kconfig:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
 kde-frameworks/kconfigwidgets:designer - Build plugins for dev-qt/designer
-kde-frameworks/kded:man - Build and install man pages
 kde-frameworks/kfilemetadata:epub - Enable support for reading EPUB ebook metadata
 kde-frameworks/kfilemetadata:mobi - Enable mobipocket support via kde-apps/kdegraphics-mobipocket
 kde-frameworks/kglobalaccel:kf6compat - Disable components colliding with KF6, depend on KF6 components instead
 kde-frameworks/kguiaddons:kf6compat - Disable components colliding with KF6, depend on KF6 components instead
 kde-frameworks/kiconthemes:designer - Build plugins for dev-qt/designer
-kde-frameworks/kimageformats:avif - Support the AVIF image file format
 kde-frameworks/kimageformats:eps - Support the EPS graphics file format
-kde-frameworks/kimageformats:jpegxl - Support for JPEG XL image format
 kde-frameworks/kinit:caps - Capabilities support for improved security and better OOM handling
-kde-frameworks/kinit:man - Build and install man pages
 kde-frameworks/kio:designer - Build plugins for dev-qt/designer
 kde-frameworks/kio:kf6compat - Disable components colliding with KF6, depend on KF6 components instead
 kde-frameworks/kio:kwallet - Enable permanent storage of passwords for kpasswdserver with kde-frameworks/kwallet
@@ -221,16 +202,12 @@ kde-frameworks/knotifications:phonon - Play notification sounds via media-libs/p
 kde-frameworks/knotifications:qml - Enable QML support via dev-qt/qtdeclarative
 kde-frameworks/knotifications:speech - Enable text-to-speech notification support
 kde-frameworks/knotifyconfig:phonon - Play notification sounds via media-libs/phonon instead of media-libs/libcanberra
-kde-frameworks/kpackage:man - Build and install man pages
 kde-frameworks/kplotting:designer - Build plugins for dev-qt/designer
 kde-frameworks/krunner:activities - Enable search runner for KDE Activities history
-kde-frameworks/kservice:man - Build and install man pages
 kde-frameworks/ktexteditor:editorconfig - Enable support for EditorConfig configuration files
 kde-frameworks/ktextwidgets:designer - Build plugins for dev-qt/designer
-kde-frameworks/ktextwidgets:speech - Enable text-to-speech support
 kde-frameworks/kwallet:gpg - Support wallets with GnuPG encryption in addition to the default blowfish-encrypted file
 kde-frameworks/kwallet:kf6compat - Disable components colliding with KF6, depend on KF6 components instead
-kde-frameworks/kwallet:man - Build and install man pages
 kde-frameworks/kwidgetsaddons:designer - Build plugins for dev-qt/designer
 kde-frameworks/kxmlgui:designer - Build plugins for dev-qt/designer
 kde-frameworks/networkmanager-qt:teamd - Enable Teamd control support
@@ -320,7 +297,6 @@ media-gfx/kphotoalbum:phonon - Enable media-libs/phonon video backend (known to 
 media-gfx/kphotoalbum:share - Enable support for a share menu using kde-frameworks/purpose
 media-gfx/kphotoalbum:vlc - Enable media-video/vlc video backend (recommended for X11)
 media-gfx/krita:color-management - Enable color management via media-libs/opencolorio
-media-gfx/krita:jpegxl - Support for JPEG XL image format
 media-gfx/krita:mypaint-brush-engine - Enable MyPaint brush engine support media-libs/libmypaint
 media-gfx/krita:qtmedia - Enable sound support for animations via dev-qt/qtmultimedia
 media-gfx/skanpage:ocr - Enable support for Optical Character Recognition via app-text/tesseract
