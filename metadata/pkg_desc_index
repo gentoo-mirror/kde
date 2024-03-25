@@ -377,7 +377,6 @@ kde-misc/ktrip 9999: Public transport assistant targeted towards mobile Linux an
 kde-misc/kweather 24.02.49.9999 9999: Weather forecast application for Plasma with flat and dynamic/animated views
 kde-misc/latte-dock 9999: Elegant dock, based on KDE Frameworks
 kde-misc/markdownpart 24.02.49.9999 9999: Markdown viewer KParts plugin based on QTextDocument
-kde-misc/plasma-applet-network-monitor 9999: Plasma 5 applet for monitoring active network connections
 kde-misc/plasma-pass 9999: Plasma applet to access password from pass
 kde-misc/polkit-kde-kcmodules 9999: Set of configuration modules to change polkit settings
 kde-misc/rsibreak 9999: Small utility which bothers you at certain intervals
