@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtnetwork:5[ssl] dev-qt/qtxml:5 fingerprint? ( dev-qt/qtsql:5 media-libs/libsamplerate sci-libs/fftw:3.0 )
 RESTRICT=test
 SLOT=0/0
-_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	288c54efeb5e2aa70775e39032695ad4	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	59370de2dd40d07f322ecac53070ae58	git-r3	fbb2889c81f3a05910c1524db69425c1
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	d309b9713dfc18e754cba88d3ba69653	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	59370de2dd40d07f322ecac53070ae58	git-r3	fbb2889c81f3a05910c1524db69425c1
 _md5_=67281fe424c03e43e6a86f6628aab1c7
