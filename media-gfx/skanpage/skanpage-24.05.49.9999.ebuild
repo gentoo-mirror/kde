@@ -20,6 +20,7 @@ IUSE="ocr"
 DEPEND="
 	>=dev-qt/qtbase-${QTMIN}:6[concurrent,gui,network,widgets]
 	>=dev-qt/qtdeclarative-${QTMIN}:6
+	>=dev-qt/qtwebengine-${QTMIN}:6[pdfium]
 	>=kde-frameworks/kconfig-${KFMIN}:6
 	>=kde-frameworks/kcoreaddons-${KFMIN}:6
 	>=kde-frameworks/kcrash-${KFMIN}:6
@@ -33,7 +34,7 @@ DEPEND="
 	media-libs/kquickimageeditor:6
 	>=media-libs/ksanecore-${PVCUT}:6
 	ocr? (
-		app-text/tesseract:=
+		>=app-text/tesseract-5:=
 		media-libs/leptonica:=
 	)
 "
