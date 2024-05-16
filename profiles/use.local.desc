@@ -84,6 +84,7 @@ kde-apps/kdecore-meta:webengine - Enable www-client/falkon which depends on dev-
 kde-apps/kdeedu-meta:webengine - Enable packages requiring dev-qt/qtwebengine
 kde-apps/kdegraphics-meta:color-management - Enable color management via media-libs/opencolorio
 kde-apps/kdegraphics-meta:screencast - Pull in kde-apps/spectacle for screenshot/screenrecording support
+kde-apps/kdegraphics-meta:webengine - Enable page scanning support via media-gfx/skanpage
 kde-apps/kdemultimedia-meta:cdrom - Include packages for optical discs
 kde-apps/kdenetwork-meta:bittorrent - Pull in net-p2p/ktorrent for BitTorrent protocol support
 kde-apps/kdenetwork-meta:dropbox - Enable support for Dropbox in kde-apps/dolphin via kde-apps/dolphin-plugins-dropbox

@@ -2,8 +2,8 @@ DEFINED_PHASES=-
 DESCRIPTION=kdegraphics - merge this to pull in all kdegraphics-derived packages
 EAPI=8
 HOMEPAGE=https://apps.kde.org/graphics/
-IUSE=color-management scanner +screencast
+IUSE=color-management scanner +screencast +webengine
 LICENSE=metapackage
-RDEPEND=>=kde-apps/gwenview-9999:* >=kde-apps/kamera-9999:* >=kde-apps/kcolorchooser-9999:* >=kde-apps/kdegraphics-mobipocket-9999:* >=kde-apps/kolourpaint-9999:* >=kde-apps/kruler-9999:* >=kde-apps/libkdcraw-9999:* >=kde-apps/libkexiv2-9999:* >=kde-apps/okular-9999:* >=kde-apps/svgpart-9999:* >=kde-apps/thumbnailers-9999:* color-management? ( >=kde-misc/colord-kde-9999:* ) scanner? ( >=kde-apps/libksane-9999:* >=kde-misc/skanlite-9999:* >=media-gfx/skanpage-9999:* ) screencast? ( >=kde-apps/spectacle-9999:* )
+RDEPEND=>=kde-apps/gwenview-9999:* >=kde-apps/kamera-9999:* >=kde-apps/kcolorchooser-9999:* >=kde-apps/kdegraphics-mobipocket-9999:* >=kde-apps/kolourpaint-9999:* >=kde-apps/kruler-9999:* >=kde-apps/libkdcraw-9999:* >=kde-apps/libkexiv2-9999:* >=kde-apps/okular-9999:* >=kde-apps/svgpart-9999:* >=kde-apps/thumbnailers-9999:* color-management? ( >=kde-misc/colord-kde-9999:* ) scanner? ( >=kde-apps/libksane-9999:* >=kde-misc/skanlite-9999:* webengine? ( >=media-gfx/skanpage-9999:* ) ) screencast? ( >=kde-apps/spectacle-9999:* )
 SLOT=0
-_md5_=2c64ca9989d117d22620bb20d1fc22e1
+_md5_=897a39be72a81949bca189cefa6b8b92
