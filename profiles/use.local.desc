@@ -41,7 +41,6 @@ dev-libs/qcoro5:websockets - Build dev-qt/qtwebsockets support
 dev-util/kdevelop:gdbui - Enable GUI for attaching GDB to a running process
 dev-util/kdevelop:hex - Enable hex editor plugin via app-editors/okteta
 dev-util/kdevelop:qmake - Enable support for QMake build system
-dev-util/kdevelop:reviewboard - Enable reviewboard support
 dev-util/massif-visualizer:callgraph - Enable detailed snapshot analysis using media-gfx/kgraphviewer
 games-kids/gcompris:kiosk - Enable kiosk mode by default (for use by small children or on a self-service host machine)
 kde-apps/akonadi:designer - Install plugin for dev-qt/designer
