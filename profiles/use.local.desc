@@ -307,7 +307,6 @@ media-sound/kid3:acoustid - Build acoustic fingerprinting plugin using media-lib
 media-sound/kid3:mpris - Enable support for MPRIS2 interface using dev-qt/qtdbus
 net-im/choqok:attica - Build Open Collaboration Services plugin using kde-frameworks/attica
 net-im/choqok:share - Enable support for a share menu using kde-frameworks/purpose
-net-im/choqok:telepathy - Enable support for the real-time communication framework telepathy
 net-im/tokodon:mpv - Use media-libs/mpvqt instead of dev-qt/qtmultimedia for video playback (default)
 net-im/tokodon:webengine - Use dev-qt/qtwebengine for built-in authentication page (default is external browser)
 net-misc/smb4k:discovery - Build with net-libs/kdsoap-ws-discovery-client support to discover domains and workgroups
