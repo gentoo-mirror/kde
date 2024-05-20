@@ -29,7 +29,7 @@ _GEAR_KDE_ORG_ECLASS=1
 # @INTERNAL
 # @DESCRIPTION:
 # For proper description see kde.org.eclass manpage.
-KDE_PV_UNRELEASED=( )
+KDE_PV_UNRELEASED=( 24.05.0 )
 
 inherit kde.org
 
@@ -284,7 +284,6 @@ if $(ver_test -gt 24.10.75); then
 		kdesdk-thumbnailers | \
 		kompare | \
 		krdc | \
-		libksane | \
 		minuet | \
 		skanlite | \
 		step)
