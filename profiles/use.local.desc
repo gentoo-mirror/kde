@@ -120,7 +120,6 @@ kde-apps/kio-extras:taglib - Enable audio thumbnails via media-libs/taglib
 kde-apps/kleopatra:pim - Enable WKS publishing support using kde-apps/kmail
 kde-apps/kmag:keyboardfocus - Enable keyboard focus tracking
 kde-apps/konqueror:activities - Enable kactivities support
-kde-apps/kpimtextedit:designer - Build plugins for dev-qt/designer
 kde-apps/krdc:activities - Enable Plasma Activities support via kde-plasma/plasma-activities
 kde-apps/ksystemlog:kdesu - Run as root using kdesu from kde-plasma/kde-cli-tools
 kde-apps/ktouch:X - Enable support for X11 Keyboard Layout Detection
