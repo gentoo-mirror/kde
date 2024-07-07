@@ -43,15 +43,10 @@ RDEPEND="${DEPEND}
 "
 BDEPEND="
 	dev-libs/libpcre2:*
+	>=kde-frameworks/extra-cmake-modules-5.115.0:*
 	virtual/pkgconfig
-	qt5? (
-		dev-qt/linguist-tools:5
-		>=kde-frameworks/extra-cmake-modules-5.115.0:*
-	)
-	qt6? (
-		dev-qt/qttools:6[linguist]
-		>=kde-frameworks/extra-cmake-modules-6.0.0:*
-	)
+	qt5? ( dev-qt/linguist-tools:5 )
+	qt6? ( dev-qt/qttools:6[linguist] )
 "
 PDEPEND="
 	!minimal? ( >=media-libs/phonon-vlc-0.12.0[qt5?,qt6?] )
@@ -78,12 +73,12 @@ src_configure() {
 		if [[ ${MULTIBUILD_VARIANT} == qt6 ]]; then
 			mycmakeargs+=(
 				-DPHONON_BUILD_QT5=OFF
-				-DPHONON_BUILD_SETTINGS=ON
+				-DPHONON_BUILD_SETTINGS=$(usex !minimal)
 			)
 		else
 			mycmakeargs+=(
 				-DPHONON_BUILD_QT6=OFF
-				-DPHONON_BUILD_SETTINGS=$(usex !qt6)
+				-DPHONON_BUILD_SETTINGS=$(usex !qt6 $(usex !minimal ON OFF) OFF)
 			)
 		fi
 
