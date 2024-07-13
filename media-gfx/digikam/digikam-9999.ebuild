@@ -14,6 +14,7 @@ if [[ ${KDE_BUILD_TYPE} != live ]]; then
 	else
 		SRC_URI="mirror://kde/stable/${PN}/${PV}/${TARNAME}.tar.xz"
 	fi
+	KEYWORDS="~amd64 ~arm64 ~x86"
 fi
 
 DESCRIPTION="Digital photo management application"
@@ -21,7 +22,7 @@ HOMEPAGE="https://www.digikam.org/"
 
 LICENSE="GPL-2"
 SLOT="5"
-IUSE="addressbook calendar geolocation gphoto2 heif +imagemagick +lensfun mysql opengl openmp +panorama scanner semantic-desktop spell"
+IUSE="addressbook calendar geolocation gphoto2 heif +imagemagick jpegxl +lensfun mysql opengl openmp +panorama scanner semantic-desktop spell"
 
 # bug 366505
 RESTRICT="test"
@@ -72,6 +73,7 @@ COMMON_DEPEND="
 		media-libs/x265:=
 	)
 	imagemagick? ( media-gfx/imagemagick:= )
+	jpegxl? ( media-libs/libjxl:= )
 	lensfun? ( media-libs/lensfun )
 	opengl? (
 		>=dev-qt/qtopengl-${QTMIN}:5
@@ -100,7 +102,10 @@ BDEPEND="
 	)
 "
 
-PATCHES=( "${FILESDIR}/${PN}-8.3.0-cmake.patch" )
+PATCHES=(
+	"${FILESDIR}/${PN}-8.4.0-cmake.patch"
+	"${FILESDIR}/${PN}-8.3.0-cmake-addressbook.patch"
+)
 
 pkg_pretend() {
 	[[ ${MERGE_TYPE} != binary ]] && use openmp && tc-check-openmp
@@ -121,13 +126,13 @@ src_configure() {
 		-DCMAKE_DISABLE_FIND_PACKAGE_Jasper=ON
 		-DENABLE_MEDIAPLAYER=OFF # bug 758641; bundled as of 8.0, KDE-bug 448681
 		-DENABLE_SHOWFOTO=ON # built unconditionally so far, new option since 8.0
-		-DENABLE_QWEBENGINE=ON
 		-DENABLE_AKONADICONTACTSUPPORT=$(usex addressbook)
 		$(cmake_use_find_package calendar KF5CalendarCore)
 		-DENABLE_GEOLOCATION=$(usex geolocation)
 		$(cmake_use_find_package gphoto2 Gphoto2)
 		$(cmake_use_find_package heif Libheif)
 		$(cmake_use_find_package imagemagick ImageMagick)
+		$(cmake_use_find_package jpegxl Libjxl)
 		$(cmake_use_find_package lensfun LensFun)
 		-DENABLE_MYSQLSUPPORT=$(usex mysql)
 		-DENABLE_INTERNALMYSQL=$(usex mysql)
