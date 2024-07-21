@@ -43,7 +43,7 @@ dev-libs/plasma-wayland-protocols 9999: Plasma Specific Protocols for Wayland
 dev-libs/qcoro 9999: C++ Coroutine Library for Qt
 dev-libs/qcoro5 9999: C++ Coroutine Library for Qt5
 dev-python/parse_cmake 0.4.1-r2: Parser for CMakeLists.txt files
-dev-util/kdevelop 9999: Integrated Development Environment, supporting KF5/Qt, C/C++ and much more
+dev-util/kdevelop 9999: Integrated Development Environment, supporting KF6/Qt, C/C++ and much more
 dev-util/kdevelop-css 9999: CSS Language Support plugin for KDevelop
 dev-util/kdevelop-embedded 9999: Plugin for KDevelop to support the development of embedded systems
 dev-util/kdevelop-krazy2 9999: Plugin for KDevelop to perform Krazy2 analysis
@@ -242,7 +242,7 @@ kde-apps/libkexiv2 9999: Wrapper around exiv2 library
 kde-apps/libkgapi 9999: Library for accessing Google calendar and contact resources
 kde-apps/libkleo 9999: Library for encryption handling
 kde-apps/libkmahjongg 9999: Mahjongg library based on Qt/KDE Frameworks
-kde-apps/libkomparediff2 9999: KDE library to compare files and strings
+kde-apps/libkomparediff2 9999: Library to compare files and strings
 kde-apps/libksane 9999: SANE Library interface based on KDE Frameworks
 kde-apps/libksieve 9999: Common PIM libraries
 kde-apps/libktnef 9999: Library for handling TNEF data
