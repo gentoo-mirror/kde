@@ -12,5 +12,5 @@ RDEPEND=>=kde-frameworks/kf-env-6 doc? ( dev-qt/qt-docs:6 ) dev-qt/qtbase:6
 RESTRICT=!test? ( test ) fetch fetch
 SLOT=6/6.5
 SRC_URI=mirror://kde/stable/frameworks/6.5/threadweaver-6.5.0.tar.xz
-_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	d96cf3013151d6c3b7058703ca181e30	virtualx	817571665ee28575da44ee08135089e5	ecm	e1582d26d6932de64754d8308fb31caf	kde.org	5b717883256e9841ce52e6cad2fca427	frameworks.kde.org	7d5527fdcf188f019ea292d0f36cf2da
+_eclasses_=toolchain-funcs	e7e7331166166e7a516d19e264b098c2	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	d96cf3013151d6c3b7058703ca181e30	virtualx	817571665ee28575da44ee08135089e5	ecm	e1582d26d6932de64754d8308fb31caf	kde.org	5b717883256e9841ce52e6cad2fca427	frameworks.kde.org	7d5527fdcf188f019ea292d0f36cf2da
 _md5_=6a31f42343efa4bbe3707f48b731dc28
