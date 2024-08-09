@@ -3,27 +3,21 @@
 
 EAPI=8
 
-ECM_HANDBOOK="true"
-KFMIN=5.115.0
+ECM_HANDBOOK="optional"
+KFMIN=6.6.2
 inherit ecm gear.kde.org
 
 DESCRIPTION="KDE Development Scripts"
 
 LICENSE="GPL-2" # TODO: CHECK
-SLOT="5"
+SLOT="6"
 KEYWORDS=""
 IUSE=""
 
-# kdelibs4support - required for kdex.dtd
-# kdoctools - to use ECM instead of kdelibs4
-DEPEND="
-	>=kde-frameworks/kdelibs4support-${KFMIN}:5
-	>=kde-frameworks/kdoctools-${KFMIN}:5
-"
 RDEPEND="
 	app-arch/advancecomp
-	media-gfx/optipng
 	dev-perl/XML-DOM
+	media-gfx/optipng
 "
 
 src_prepare() {
