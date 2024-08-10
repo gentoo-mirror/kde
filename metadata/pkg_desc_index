@@ -168,7 +168,7 @@ kde-apps/kigo 9999: Go game by KDE
 kde-apps/killbots 9999: Kill the bots or they kill you!
 kde-apps/kimagemapeditor 9999: Generator of HTML image maps
 kde-apps/kimap 9999: Library for interacting with IMAP servers
-kde-apps/kio-extras 5.9999 9999: KIO plugins present a filesystem-like view of arbitrary data
+kde-apps/kio-extras 9999: KIO plugins present a filesystem-like view of arbitrary data
 kde-apps/kiriki 9999: An addictive and fun dice game
 kde-apps/kiten 9999: KDE Japanese dictionary and reference
 kde-apps/kitinerary 9999: Data Model and Extraction System for Travel Reservation information
