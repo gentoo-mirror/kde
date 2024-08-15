@@ -450,10 +450,10 @@ kde-plasma/xdg-desktop-portal-kde 6.1.49.9999 9999: Backend implementation for x
 media-gfx/digikam 9999: Digital photo management application
 media-gfx/kgeotag 9999: Photo geotagging program
 media-gfx/kgraphviewer 24.07.90 24.08.49.9999 9999: Graphviz dot graph file viewer
-media-gfx/kio-blender-thumbnailer 9999: KIO thumbnail generator for Blender files
-media-gfx/kio-mobi-thumbnailer 9999: KIO thumbnail generator for Mobipocket files
-media-gfx/kio-ps-thumbnailer 9999: KIO thumbnail generator for DVI, EPS, PDF and PS files
-media-gfx/kio-raw-thumbnailer 9999: KIO thumbnail generator for RAW files
+media-gfx/kio-blender-thumbnailer 24.07.90 24.08.49.9999 9999: KIO thumbnail generator for Blender files
+media-gfx/kio-mobi-thumbnailer 24.07.90 24.08.49.9999 9999: KIO thumbnail generator for Mobipocket files
+media-gfx/kio-ps-thumbnailer 24.07.90 24.08.49.9999 9999: KIO thumbnail generator for DVI, EPS, PDF and PS files
+media-gfx/kio-raw-thumbnailer 24.07.90 24.08.49.9999 9999: KIO thumbnail generator for RAW files
 media-gfx/kphotoalbum 9999: Tool for indexing, searching, and viewing images
 media-gfx/krita 9999: Free digital painting application. Digital Painting, Creative Freedom!
 media-gfx/kxstitch 9999: Program to create cross stitch patterns
