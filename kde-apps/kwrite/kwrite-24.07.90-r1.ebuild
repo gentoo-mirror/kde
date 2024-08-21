@@ -3,49 +3,44 @@
 
 EAPI=8
 
-ECM_HANDBOOK="optional"
+KDE_ORG_NAME="kate"
+ECM_HANDBOOK="forceoff"
 KFMIN=6.5.0
 QTMIN=6.7.2
 inherit ecm flag-o-matic gear.kde.org
 
-DESCRIPTION="Multi-document editor with network transparency, Plasma integration and more"
-HOMEPAGE="https://kate-editor.org/ https://apps.kde.org/kate/"
+DESCRIPTION="Simple text editor based on KDE Frameworks"
+HOMEPAGE="https://apps.kde.org/kwrite/"
 
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="6"
 KEYWORDS="~amd64 ~arm64 ~ppc64 ~riscv ~x86"
 IUSE=""
 
-# slot op: Uses Qt6::GuiPrivate for qtx11extras_p.h
-# kde-frameworks/kwindowsystem[X]: Unconditional use of KX11Extras
 DEPEND="
-	>=dev-qt/qtbase-${QTMIN}:6=[dbus,gui,network,widgets]
+	>=dev-qt/qtbase-${QTMIN}:6[gui,widgets]
 	~kde-apps/kate-lib-${PV}:6
 	>=kde-frameworks/kcoreaddons-${KFMIN}:6
 	>=kde-frameworks/kdbusaddons-${KFMIN}:6
 	>=kde-frameworks/ki18n-${KFMIN}:6
-	>=kde-frameworks/kwindowsystem-${KFMIN}:6[X]
 	virtual/libintl
 "
 RDEPEND="${DEPEND}
-	~kde-apps/kate-addons-${PV}:6
+	>=kde-apps/kate-common-${PV}
 "
 
 src_prepare() {
 	ecm_src_prepare
+	ecm_punt_po_install
 
 	# these tests are run in kde-apps/kate-lib
 	cmake_run_in apps/lib cmake_comment_add_subdirectory autotests
-
-	# delete colliding kwrite translations
-	rm -f po/*/*.po || die # installed by kde-apps/kate-lib
-	rm -rf po/*/docs/kwrite || die
 }
 
 src_configure() {
 	local mycmakeargs=(
 		-DBUILD_addons=FALSE
-		-DBUILD_kwrite=FALSE
+		-DBUILD_kate=FALSE
 	)
 
 	# provided by kde-apps/kate-lib

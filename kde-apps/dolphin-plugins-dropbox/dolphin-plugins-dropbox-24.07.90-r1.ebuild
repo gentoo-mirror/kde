@@ -3,55 +3,53 @@
 
 EAPI=8
 
-ECM_HANDBOOK="false"
-KDE_ORG_CATEGORY="sdk"
 KDE_ORG_NAME="dolphin-plugins"
-MY_PLUGIN_NAME="mountiso"
-KFMIN=6.5.0
+MY_PLUGIN_NAME="dropbox"
 PVCUT=$(ver_cut 1-3)
+KFMIN=6.5.0
 QTMIN=6.7.2
 inherit ecm gear.kde.org
 
-DESCRIPTION="Dolphin plugin for ISO loopback device mounting"
+DESCRIPTION="Dolphin plugin for Dropbox service integration"
 HOMEPAGE="https://apps.kde.org/dolphin_plugins/"
 
-LICENSE="GPL-2+"
+LICENSE="GPL-2" # TODO: CHECK
 SLOT="6"
-KEYWORDS="~amd64 ~arm64 ~ppc64 ~x86"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND="
-	>=dev-qt/qtbase-${QTMIN}:6[dbus,gui,widgets]
+	>=dev-qt/qtbase-${QTMIN}:6[gui,network,widgets]
 	>=kde-apps/dolphin-${PVCUT}:6
-	>=kde-frameworks/kcompletion-${KFMIN}:6
-	>=kde-frameworks/kconfig-${KFMIN}:6
 	>=kde-frameworks/kcoreaddons-${KFMIN}:6
 	>=kde-frameworks/ki18n-${KFMIN}:6
 	>=kde-frameworks/kio-${KFMIN}:6
 	>=kde-frameworks/ktextwidgets-${KFMIN}:6
-	>=kde-frameworks/solid-${KFMIN}:6
+	>=kde-frameworks/kxmlgui-${KFMIN}:6
 "
-RDEPEND="${DEPEND}"
+RDEPEND="${DEPEND}
+	>=kde-apps/dolphin-plugins-common-${PV}
+	net-misc/dropbox-cli
+"
 
 src_prepare() {
 	ecm_src_prepare
+	ecm_punt_po_install
 	# qtconcurrent only required by git
 	ecm_punt_qt_module Concurrent
-	# kxmlgui, qtnetwork only required by dropbox
-	ecm_punt_qt_module Network
-	ecm_punt_kf_module XmlGui
-	# delete non-${PN} translations
-	find po -type f -name "*po" -and -not -name "*${MY_PLUGIN_NAME}plugin" -delete || die
+	# solid, qtdbus only required by mountiso
+	ecm_punt_qt_module DBus
+	ecm_punt_kf_module Solid
 }
 
 src_configure() {
 	local mycmakeargs=(
 		-DBUILD_${MY_PLUGIN_NAME}=ON
 		-DBUILD_bazaar=OFF
-		-DBUILD_dropbox=OFF
 		-DBUILD_git=OFF
 		-DBUILD_hg=OFF
 		-DBUILD_makefileactions=OFF
+		-DBUILD_mountiso=OFF
 		-DBUILD_svn=OFF
 	)
 	ecm_src_configure
