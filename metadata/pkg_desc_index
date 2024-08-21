@@ -1,7 +1,7 @@
 app-accessibility/kontrast 24.07.90 24.08.0 24.08.49.9999 9999: Tool to check contrast for colors to verify they are correctly accessible
 app-admin/systemdgenie 9999: Systemd managment utility
 app-backup/kup 9999: Backup scheduler for the Plasma desktop
-app-cdr/dolphin-plugins-mountiso 24.07.90 24.08.0 24.08.49.9999 9999: Dolphin plugin for ISO loopback device mounting
+app-cdr/dolphin-plugins-mountiso 24.07.90-r1 24.08.0 24.08.49.9999 9999: Dolphin plugin for ISO loopback device mounting
 app-cdr/isoimagewriter 24.07.90 24.08.0 24.08.49.9999 9999: Write hybrid ISO files onto a USB disk
 app-crypt/keysmith 24.07.90 24.08.0 24.08.49.9999 9999: OTP client for Plasma Mobile and Desktop
 app-editors/ghostwriter 24.07.90 24.08.0 24.08.49.9999 9999: Cross-platform, aesthetic, distraction-free markdown editor
@@ -63,6 +63,7 @@ gui-apps/liquidshell 9999: Basic desktop shell using QtWidgets
 gui-apps/xwaylandvideobridge 9999: Screenshare Wayland windows to XWayland apps
 kde-apps/akonadi 24.07.90 24.08.0 24.08.49.9999 9999: Storage service for PIM data and libraries for PIM apps
 kde-apps/akonadi-calendar 24.07.90 24.08.0 24.08.49.9999 9999: Library for akonadi calendar integration
+kde-apps/akonadi-calendar-tools-common 24.07.90 24.08.0 24.08.49.9999 9999: Common files for akonadi-calendar-tools
 kde-apps/akonadi-contacts 24.07.90 24.08.0 24.08.49.9999 9999: Library for akonadi contact integration
 kde-apps/akonadi-import-wizard 24.07.90 24.08.0 24.08.49.9999 9999: Assistant to import PIM data from other applications into Akonadi
 kde-apps/akonadi-mime 24.07.90 24.08.0 24.08.49.9999 9999: Library for akonadi mime types
@@ -79,18 +80,20 @@ kde-apps/baloo-widgets 24.07.90 24.08.0 24.08.49.9999 9999: Widget library for b
 kde-apps/blinken 24.07.90 24.08.0 24.08.49.9999 9999: Memory enhancement game based on KDE Frameworks
 kde-apps/bomber 24.07.90 24.08.0 24.08.49.9999 9999: Single player arcade bombing game
 kde-apps/bovo 24.07.90 24.08.0 24.08.49.9999 9999: Five-in-a-row Board Game
-kde-apps/calendarjanitor 24.07.90 24.08.0 24.08.49.9999 9999: Tool to scan calendar data for buggy instances
+kde-apps/calendarjanitor 24.07.90-r1 24.08.0 24.08.49.9999 9999: Tool to scan calendar data for buggy instances
 kde-apps/calendarsupport 24.07.90 24.08.0 24.08.49.9999 9999: Calendar support library
 kde-apps/cantor 24.07.90 24.08.0 24.08.49.9999 9999: Interface for doing mathematics and scientific computing
 kde-apps/cervisia 24.07.90 24.08.0 24.08.49.9999 9999: CVS frontend by KDE
 kde-apps/dolphin 24.07.90 24.08.0 24.08.49.9999 9999: Plasma filemanager focusing on usability
-kde-apps/dolphin-plugins-dropbox 24.07.90 24.08.0 24.08.49.9999 9999: Dolphin plugin for Dropbox service integration
-kde-apps/dolphin-plugins-git 24.07.90 24.08.0 24.08.49.9999 9999: Dolphin plugin for Git integration
-kde-apps/dolphin-plugins-mercurial 24.07.90 24.08.0 24.08.49.9999 9999: Dolphin plugin for Mercurial integration
-kde-apps/dolphin-plugins-subversion 24.07.90 24.08.0 24.08.49.9999 9999: Dolphin plugin for Subversion integration
+kde-apps/dolphin-plugins-common 24.07.90 24.08.0 24.08.49.9999 9999: Common files for dolphin-plugins
+kde-apps/dolphin-plugins-dropbox 24.07.90-r1 24.08.0 24.08.49.9999 9999: Dolphin plugin for Dropbox service integration
+kde-apps/dolphin-plugins-git 24.07.90-r1 24.08.0 24.08.49.9999 9999: Dolphin plugin for Git integration
+kde-apps/dolphin-plugins-mercurial 24.07.90-r1 24.08.0 24.08.49.9999 9999: Dolphin plugin for Mercurial integration
+kde-apps/dolphin-plugins-subversion 24.07.90-r1 24.08.0 24.08.49.9999 9999: Dolphin plugin for Subversion integration
 kde-apps/dragon 24.07.90 24.08.0 24.08.49.9999 9999: Simple video player
 kde-apps/eventviews 24.07.90 24.08.0 24.08.49.9999 9999: Calendar viewer for KDE PIM
 kde-apps/ffmpegthumbs 24.07.90 24.08.0 24.08.49.9999 9999: FFmpeg based thumbnail generator for video files
+kde-apps/ffmpegthumbs-common 24.07.90 24.08.0 24.08.49.9999 9999: Common files for ffmpegthumbs
 kde-apps/filelight 24.07.90 24.08.0 24.08.49.9999 9999: Visualise disk usage with interactive map of concentric, segmented rings
 kde-apps/granatier 24.07.90 24.08.0 24.08.49.9999 9999: KDE Bomberman game
 kde-apps/grantlee-editor 24.07.90 24.08.0 24.08.49.9999 9999: Utilities and tools to manage themes in KDE PIM applications
@@ -111,9 +114,10 @@ kde-apps/kamoso 24.07.90 24.08.0 24.08.49.9999 9999: Application to take picture
 kde-apps/kanagram 24.07.90 24.08.0 24.08.49.9999 9999: Game based on anagrams of words
 kde-apps/kapman 24.07.90 24.08.0 24.08.49.9999 9999: Pac-Man clone by KDE
 kde-apps/kapptemplate 24.07.90 24.08.0 24.08.49.9999 9999: Shell script to create the necessary framework to develop KDE applications
-kde-apps/kate 24.07.90 24.08.0 24.08.49.9999 9999: Multi-document editor with network transparency, Plasma integration and more
-kde-apps/kate-addons 24.07.90 24.08.0 24.08.49.9999 9999: Addons used by Kate
-kde-apps/kate-lib 24.07.90 24.08.0 24.08.49.9999 9999: Shared library used by Kate/Kwrite and Kate-Addons
+kde-apps/kate 24.07.90-r1 24.08.0 24.08.49.9999 9999: Multi-document editor with network transparency, Plasma integration and more
+kde-apps/kate-addons 24.07.90-r1 24.08.0 24.08.49.9999 9999: Addons used by Kate
+kde-apps/kate-common 24.07.90 24.08.0 24.08.49.9999 9999: Common files for kate
+kde-apps/kate-lib 24.07.90-r1 24.08.0 24.08.49.9999 9999: Shared library used by Kate/Kwrite and Kate-Addons
 kde-apps/katomic 24.07.90 24.08.0 24.08.49.9999 9999: KDE Atomic Entertainment Game
 kde-apps/kbackup 24.07.90 24.08.0 24.08.49.9999 9999: Program that lets you back up any directories or files
 kde-apps/kblackbox 24.07.90 24.08.0 24.08.49.9999 9999: Game of hide and seek played on a grid of boxes
@@ -148,6 +152,7 @@ kde-apps/kdepim-meta 24.07.90 24.08.0 24.08.49.9999 9999: KDE PIM - merge this t
 kde-apps/kdepim-runtime 24.07.90 24.08.0 24.08.49.9999 9999: Runtime plugin collection to extend the functionality of KDE PIM
 kde-apps/kdesdk-meta 24.07.90 24.08.0 24.08.49.9999 9999: KDE SDK - merge this to pull in all kdesdk-derived packages
 kde-apps/kdesdk-thumbnailers 24.07.90 24.08.0 24.08.49.9999 9999: Thumbnail generator for PO files
+kde-apps/kdesdk-thumbnailers-common 24.07.90 24.08.0 24.08.49.9999 9999: Common files for kdesdk-thumbnailers
 kde-apps/kdeutils-meta 24.07.90 24.08.0 24.08.49.9999 9999: kdeutils - merge this to pull in all kdeutils-derived packages
 kde-apps/kdf 24.07.90 24.08.0 24.08.49.9999 9999: KDE free disk space utility
 kde-apps/kdialog 24.07.90 24.08.0 24.08.49.9999 9999: Can be used to show nice dialog boxes from shell scripts
@@ -201,7 +206,7 @@ kde-apps/kompare 24.07.90 24.08.0 24.08.49.9999 9999: Graphical File Differences
 kde-apps/konqueror 24.07.90 24.08.0 24.08.49.9999 9999: Web browser and file manager based on KDE Frameworks
 kde-apps/konquest 24.07.90 24.08.0 24.08.49.9999 9999: Galactic Strategy KDE Game
 kde-apps/konsole 24.07.90 24.08.0 24.08.49.9999 9999: KDE's terminal emulator
-kde-apps/konsolekalendar 24.07.90 24.08.0 24.08.49.9999 9999: Command line interface to KDE calendars
+kde-apps/konsolekalendar 24.07.90-r1 24.08.0 24.08.49.9999 9999: Command line interface to KDE calendars
 kde-apps/kontact 24.07.90 24.08.0 24.08.49.9999 9999: Container application to unify several major PIM applications within one
 kde-apps/kontactinterface 24.07.90 24.08.0 24.08.49.9999 9999: Library for embedding KParts in a Kontact component
 kde-apps/korganizer 24.07.90 24.08.0 24.08.49.9999 9999: Organizational assistant, providing calendars and other similar functionality
@@ -230,9 +235,10 @@ kde-apps/kubrick 24.07.90 24.08.0 24.08.49.9999 9999: Game based on the "Rubik's
 kde-apps/kwalletmanager 24.07.90 24.08.0 24.08.49.9999 9999: Tool to manage the passwords on your system using KDE Wallet
 kde-apps/kwave 24.07.90 24.08.0 24.08.49.9999 9999: Sound editor built on KDE Frameworks 5 that can edit many types of audio files
 kde-apps/kwordquiz 24.07.90 24.08.0 24.08.49.9999 9999: Powerful flashcard and vocabulary learning program
-kde-apps/kwrite 24.07.90 24.08.0 24.08.49.9999 9999: Simple text editor based on KDE Frameworks
+kde-apps/kwrite 24.07.90-r1 24.08.0 24.08.49.9999 9999: Simple text editor based on KDE Frameworks
 kde-apps/libgravatar 24.07.90 24.08.0 24.08.49.9999 9999: Library for gravatar integration
 kde-apps/libkcddb 24.07.90 24.08.0 24.08.49.9999 9999: KDE library for CDDB
+kde-apps/libkcddb-common 24.07.90 24.08.0 24.08.49.9999 9999: Common files for libkcddb
 kde-apps/libkcompactdisc 24.07.90 24.08.0 24.08.49.9999 9999: Library for playing & ripping CDs
 kde-apps/libkdcraw 24.07.90 24.08.0 24.08.49.9999 9999: Digital camera raw image library wrapper
 kde-apps/libkdegames 24.07.90 24.08.0 24.08.49.9999 9999: Base library common to many KDE games
@@ -244,6 +250,7 @@ kde-apps/libkleo 24.07.90 24.08.0 24.08.49.9999 9999: Library for encryption han
 kde-apps/libkmahjongg 24.07.90 24.08.0 24.08.49.9999 9999: Mahjongg library based on Qt/KDE Frameworks
 kde-apps/libkomparediff2 24.07.90 24.08.0 24.08.49.9999 9999: Library to compare files and strings
 kde-apps/libksane 24.07.90 24.08.0 24.08.49.9999 9999: SANE Library interface based on KDE Frameworks
+kde-apps/libksane-common 24.07.90 24.08.0 24.08.49.9999 9999: Common files for libksane
 kde-apps/libksieve 24.07.90 24.08.0 24.08.49.9999 9999: Common PIM libraries
 kde-apps/libktnef 24.07.90 24.08.0 24.08.49.9999 9999: Library for handling TNEF data
 kde-apps/lokalize 24.07.90 24.08.0 24.08.49.9999 9999: Localization tool for KDE software and other free and open source software
@@ -351,6 +358,7 @@ kde-frameworks/networkmanager-qt 5.239.9999 9999: NetworkManager bindings for Qt
 kde-frameworks/oxygen-icons 5.239.9999 9999: Oxygen SVG icon theme
 kde-frameworks/prison 5.239.9999 9999: QRCode and data matrix barcode library
 kde-frameworks/purpose 5.239.9999 9999: Library for providing abstractions to get the developer's purposes fulfilled
+kde-frameworks/purpose-kaccounts-services 9999: KAccounts generated service files for nextcloud and google services
 kde-frameworks/qqc2-desktop-style 5.239.9999 9999: Style for QtQuickControls 2 that uses QWidget's QStyle for painting
 kde-frameworks/solid 5.239.9999 9999: Provider for platform independent hardware discovery, abstraction and management
 kde-frameworks/sonnet 5.239.9999 9999: Framework for providing spell-checking through abstraction of popular backends
@@ -366,6 +374,7 @@ kde-misc/kdeconnect 24.07.90 24.08.0 24.08.49.9999 9999: Adds communication betw
 kde-misc/kdiff3 9999: Frontend to diff3 based on KDE Frameworks
 kde-misc/kio-fuse 9999: FUSE interface for KIO
 kde-misc/kio-gdrive 24.07.90 24.08.0 24.08.49.9999 9999: KIO worker for Google Drive service
+kde-misc/kio-gdrive-common 24.07.90 24.08.0 24.08.49.9999 9999: Common files for kio-gdrive
 kde-misc/kio-gopher 9999: Gopher KIO worker for Konqueror
 kde-misc/kio-stash 9999: KIO worker and daemon to stash discontinuous file selections
 kde-misc/kooka 9999: Scanning application by KDE
@@ -462,6 +471,7 @@ media-gfx/skanpage 24.07.90 24.08.0 24.08.49.9999 9999: Multi-page scanning appl
 media-gfx/symboleditor 9999: Application to create libraries of QPainterPath objects with rendering hints
 media-libs/kquickimageeditor 9999: QtQuick components providing basic image editing capabilities
 media-libs/ksanecore 24.07.90 24.08.0 24.08.49.9999 9999: Qt-based interface for SANE library to control scanner hardware
+media-libs/ksanecore-common 24.07.90 24.08.0 24.08.49.9999 9999: Common files for ksanecore
 media-libs/liblastfm 9999: Collection of libraries to integrate Last.fm services
 media-libs/libqaccessibilityclient 9999: Library for writing accessibility clients such as screen readers
 media-libs/mpvqt 9999: libmpv wrapper for QtQuick2 and QML
@@ -488,6 +498,7 @@ net-libs/libktorrent 24.07.90 24.08.0 24.08.49.9999 9999: BitTorrent library bas
 net-libs/libmediawiki 9999: C++ interface for MediaWiki based web service as wikipedia.org
 net-libs/libtmdbqt 9999: Qt library to query the movie database API (themoviedb.org)
 net-misc/kio-zeroconf 24.07.90 24.08.0 24.08.49.9999 9999: KIO worker to discover file systems by DNS-SD (DNS Service Discovery)
+net-misc/kio-zeroconf-common 24.07.90 24.08.0 24.08.49.9999 9999: Common files for kio-zeroconf
 net-misc/smb4k 9999: Advanced network neighborhood browser
 net-news/alligator 24.07.90 24.08.0 24.08.49.9999 9999: Convergent RSS/Atom feed reader for Plasma
 net-p2p/ktorrent 24.07.90 24.08.0 24.08.49.9999 9999: Powerful BitTorrent client based on KDE Frameworks
