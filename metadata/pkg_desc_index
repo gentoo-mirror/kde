@@ -302,7 +302,6 @@ kde-frameworks/kdav 9999: DAV protocol implemention with KJobs
 kde-frameworks/kdbusaddons 9999: Framework for registering services and applications per freedesktop standards
 kde-frameworks/kdeclarative 9999: Framework providing integration of QML and KDE work spaces
 kde-frameworks/kded 9999: Central daemon of KDE workspaces
-kde-frameworks/kdesignerplugin 5.239.9999: Framework providing plugins to use KDE frameworks widgets in QtDesigner
 kde-frameworks/kdesu 9999: Framework to handle super user actions
 kde-frameworks/kdnssd 9999: Framework for network service discovery using Zeroconf
 kde-frameworks/kdoctools 9999: Tools to generate documentation in various formats from DocBook files
@@ -319,8 +318,6 @@ kde-frameworks/kirigami 9999: Lightweight user interface framework for mobile an
 kde-frameworks/kitemmodels 9999: Framework providing data models to help with tasks such as sorting and filtering
 kde-frameworks/kitemviews 9999: Framework providing additional widgets for item models
 kde-frameworks/kjobwidgets 9999: Framework providing assorted widgets for showing the progress of jobs
-kde-frameworks/kjsembed 5.239.9999: Framework binding JavaScript objects to QObjects
-kde-frameworks/kmediaplayer 5.239.9999: Framework providing a common interface for KParts that can play media files
 kde-frameworks/knewstuff 9999: Framework for downloading and sharing additional application data
 kde-frameworks/knotifications 9999: Framework for notifying the user of an event
 kde-frameworks/knotifyconfig 9999: Framework for configuring desktop notifications
@@ -343,7 +340,6 @@ kde-frameworks/kwallet 9999: Framework providing desktop-wide storage for passwo
 kde-frameworks/kwidgetsaddons 9999: An assortment of high-level widgets for common tasks
 kde-frameworks/kwindowsystem 9999: Framework providing access to properties and features of the window manager
 kde-frameworks/kxmlgui 9999: Framework for managing menu and toolbar actions in an abstract way
-kde-frameworks/kxmlrpcclient 5.239.9999: Framework providing client-side support for the XML-RPC protocol
 kde-frameworks/modemmanager-qt 9999: ModemManager bindings for Qt
 kde-frameworks/networkmanager-qt 9999: NetworkManager bindings for Qt
 kde-frameworks/oxygen-icons 9999: Oxygen SVG icon theme
