@@ -485,7 +485,7 @@ net-libs/libktorrent 24.08.0 24.08.49.9999 9999: BitTorrent library based on KDE
 net-libs/libmediawiki 9999: C++ interface for MediaWiki based web service as wikipedia.org
 net-libs/libtmdbqt 9999: Qt library to query the movie database API (themoviedb.org)
 net-misc/kio-zeroconf 24.08.0 24.08.49.9999 9999: KIO worker to discover file systems by DNS-SD (DNS Service Discovery)
-net-misc/kio-zeroconf-common 24.07.90 24.08.0 24.08.49.9999 9999: Common files for kio-zeroconf
+net-misc/kio-zeroconf-common 24.08.0 24.08.49.9999 9999: Common files for kio-zeroconf
 net-misc/smb4k 9999: Advanced network neighborhood browser
 net-news/alligator 24.08.0 24.08.49.9999 9999: Convergent RSS/Atom feed reader for Plasma
 net-p2p/ktorrent 24.08.0 24.08.49.9999 9999: Powerful BitTorrent client based on KDE Frameworks
