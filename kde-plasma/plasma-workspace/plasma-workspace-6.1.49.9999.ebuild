@@ -5,9 +5,9 @@ EAPI=8
 
 ECM_HANDBOOK="optional"
 ECM_TEST="forceoptional"
-KFMIN=6.3.0
+KFMIN=6.5.0
 PVCUT=$(ver_cut 1-3)
-QTMIN=6.7.1
+QTMIN=6.7.2
 inherit ecm plasma.kde.org
 
 DESCRIPTION="KDE Plasma workspace"
@@ -141,7 +141,7 @@ RDEPEND="${COMMON_DEPEND}
 	>=kde-frameworks/kirigami-${KFMIN}:6
 	>=kde-frameworks/kquickcharts-${KFMIN}:6
 	>=kde-plasma/kactivitymanagerd-${PVCUT}:6
-	kde-plasma/kde-cli-tools:*
+	>=kde-plasma/kde-cli-tools-${PVCUT}:*[kdesu]
 	>=kde-plasma/milou-${PVCUT}:6
 	>=kde-plasma/plasma-integration-${PVCUT}:6
 	sys-apps/dbus
@@ -158,7 +158,6 @@ BDEPEND="
 	virtual/pkgconfig
 	test? ( >=dev-qt/qtwayland-${QTMIN}:6[compositor] )
 "
-PDEPEND=">=kde-plasma/kde-cli-tools-${PVCUT}:*[kdesu]"
 
 PATCHES=(
 	"${FILESDIR}/${PN}-5.22.5-krunner-cwd-at-home.patch" # TODO upstream: KDE-bug 432975, bug 767478

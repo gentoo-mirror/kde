@@ -4,9 +4,9 @@
 EAPI=8
 
 ECM_TEST="forceoptional"
-KFMIN=6.3.0
+KFMIN=6.5.0
 PVCUT=$(ver_cut 1-3)
-QTMIN=6.7.1
+QTMIN=6.7.2
 inherit ecm plasma.kde.org
 
 DESCRIPTION="Backend implementation for xdg-desktop-portal that is using Qt/KDE Frameworks"

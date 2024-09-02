@@ -4,10 +4,10 @@
 EAPI=8
 
 KF5MIN=5.115.0
-KFMIN=6.3.0
+KFMIN=6.5.0
 PVCUT=$(ver_cut 1-3)
 QT5MIN=5.15.12
-QTMIN=6.7.1
+QTMIN=6.7.2
 inherit ecm plasma.kde.org
 
 DESCRIPTION="Breeze visual style for the Plasma desktop"

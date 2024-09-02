@@ -4,8 +4,8 @@
 EAPI=8
 
 ECM_TEST="true"
-KFMIN=6.3.0
-QTMIN=6.7.1
+KFMIN=6.5.0
+QTMIN=6.7.2
 inherit ecm flag-o-matic plasma.kde.org
 
 DESCRIPTION="Qt-style API to interact with the wayland-client API"

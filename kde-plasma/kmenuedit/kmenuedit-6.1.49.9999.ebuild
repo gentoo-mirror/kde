@@ -4,8 +4,8 @@
 EAPI=8
 
 ECM_HANDBOOK="forceoptional"
-KFMIN=6.3.0
-QTMIN=6.7.1
+KFMIN=6.5.0
+QTMIN=6.7.2
 inherit ecm plasma.kde.org
 
 DESCRIPTION="KDE Plasma menu editor"

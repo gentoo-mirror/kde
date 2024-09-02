@@ -6,8 +6,8 @@ EAPI=8
 ECM_NONGUI="true"
 ECM_QTHELP="true"
 ECM_TEST="true"
-KFMIN=6.3.0
-QTMIN=6.7.1
+KFMIN=6.5.0
+QTMIN=6.7.2
 inherit ecm plasma.kde.org
 
 DESCRIPTION="Library for accessing usage data collected by the activities system"
