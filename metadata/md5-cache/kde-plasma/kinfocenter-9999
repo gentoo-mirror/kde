@@ -1,6 +1,6 @@
 BDEPEND=>=kde-frameworks/kcmutils-9999:6 app-alternatives/ninja >=dev-build/cmake-3.20.5 handbook? ( >=kde-frameworks/kdoctools-9999:6 ) dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-9999:* >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install nofetch postinst postrm preinst prepare setup test unpack
-DEPEND=>=dev-qt/qtbase-6.7.1:6[dbus,gles2-only=,gui,widgets] >=dev-qt/qtdeclarative-6.7.1:6 >=kde-frameworks/kauth-9999:6 >=kde-frameworks/kcmutils-9999:6 >=kde-frameworks/kconfig-9999:6 >=kde-frameworks/kcoreaddons-9999:6 >=kde-frameworks/ki18n-9999:6 >=kde-frameworks/kio-9999:6 >=kde-frameworks/kservice-9999:6 >=kde-frameworks/solid-9999:6 gles2-only? ( || ( >=media-libs/mesa-24.1.0_rc1[opengl] <media-libs/mesa-24.1.0_rc1[gles2] ) ) usb? ( virtual/libusb:1 ) dev-qt/qtbase:6
+DEPEND=>=dev-qt/qtbase-6.7.2:6[dbus,gles2-only=,gui,widgets] >=dev-qt/qtdeclarative-6.7.2:6 >=kde-frameworks/kauth-9999:6 >=kde-frameworks/kcmutils-9999:6 >=kde-frameworks/kconfig-9999:6 >=kde-frameworks/kcoreaddons-9999:6 >=kde-frameworks/ki18n-9999:6 >=kde-frameworks/kio-9999:6 >=kde-frameworks/kservice-9999:6 >=kde-frameworks/solid-9999:6 gles2-only? ( || ( >=media-libs/mesa-24.1.0_rc1[opengl] <media-libs/mesa-24.1.0_rc1[gles2] ) ) usb? ( virtual/libusb:1 ) dev-qt/qtbase:6
 DESCRIPTION=Utility providing information about the computer hardware
 EAPI=8
 HOMEPAGE=https://userbase.kde.org/KInfoCenter
@@ -9,8 +9,8 @@ INHERIT=ecm plasma.kde.org optfeature
 IUSE=gles2-only usb debug +handbook
 LICENSE=GPL-2
 PROPERTIES=live
-RDEPEND=>=dev-qt/qtbase-6.7.1:6[dbus,gles2-only=,gui,widgets] >=dev-qt/qtdeclarative-6.7.1:6 >=kde-frameworks/kauth-9999:6 >=kde-frameworks/kcmutils-9999:6 >=kde-frameworks/kconfig-9999:6 >=kde-frameworks/kcoreaddons-9999:6 >=kde-frameworks/ki18n-9999:6 >=kde-frameworks/kio-9999:6 >=kde-frameworks/kservice-9999:6 >=kde-frameworks/solid-9999:6 gles2-only? ( || ( >=media-libs/mesa-24.1.0_rc1[opengl] <media-libs/mesa-24.1.0_rc1[gles2] ) ) usb? ( virtual/libusb:1 ) || ( >=dev-qt/qttools-6.7.1:6[qdbus] dev-qt/qdbus:* ) >=kde-frameworks/kirigami-9999:6 >=kde-plasma/systemsettings-9999:6 || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-6 dev-qt/qtbase:6 !kde-plasma/kinfocenter:5
+RDEPEND=>=dev-qt/qtbase-6.7.2:6[dbus,gles2-only=,gui,widgets] >=dev-qt/qtdeclarative-6.7.2:6 >=kde-frameworks/kauth-9999:6 >=kde-frameworks/kcmutils-9999:6 >=kde-frameworks/kconfig-9999:6 >=kde-frameworks/kcoreaddons-9999:6 >=kde-frameworks/ki18n-9999:6 >=kde-frameworks/kio-9999:6 >=kde-frameworks/kservice-9999:6 >=kde-frameworks/solid-9999:6 gles2-only? ( || ( >=media-libs/mesa-24.1.0_rc1[opengl] <media-libs/mesa-24.1.0_rc1[gles2] ) ) usb? ( virtual/libusb:1 ) || ( >=dev-qt/qttools-6.7.2:6[qdbus] dev-qt/qdbus:* ) >=kde-frameworks/kirigami-9999:6 >=kde-plasma/systemsettings-9999:6 || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-6 dev-qt/qtbase:6 !kde-plasma/kinfocenter:5
 SLOT=6
 SRC_URI=https://www.gentoo.org/assets/img/logo/gentoo-3d-small.png -> glogo-small.png
 _eclasses_=toolchain-funcs	333970c740aa7b1a92e4fcdc52f612bd	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	bdff848933960d0e5d4f3097d4faa126	virtualx	0654dc258d045433af18ffe046363961	xdg	4a14c5c24f121e7da66e5aab4a168c6e	ecm	1b66ae0152dc7e2471d08fb404daa499	git-r3	875eb471682d3e1f18da124be97dcc81	kde.org	5b717883256e9841ce52e6cad2fca427	plasma.kde.org	04eb5849283348eac80db74a8749b14a	optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54
-_md5_=77321081a4bfe966d058201be7bb1b62
+_md5_=c78649c156f3d1158877b2a575fd0353
