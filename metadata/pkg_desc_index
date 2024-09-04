@@ -388,9 +388,11 @@ kde-plasma/drkonqi 6.1.49.9999 9999: Plasma crash handler, gives the user feedba
 kde-plasma/flatpak-kcm 6.1.49.9999 9999: Flatpak Permissions Management KCM
 kde-plasma/kactivitymanagerd 6.1.49.9999 9999: System service to manage user's activities, track the usage patterns etc.
 kde-plasma/kde-cli-tools 6.1.49.9999 9999: Tools based on KDE Frameworks 6 to better interact with the system
+kde-plasma/kde-cli-tools-common 6.1.49.9999 9999: Common files for kde-cli-tools
 kde-plasma/kde-gtk-config 6.1.49.9999 9999: Syncs KDE Plasma theme settings to GTK applications
 kde-plasma/kdecoration 6.1.49.9999 9999: Plugin based library to create window decorations
 kde-plasma/kdeplasma-addons 6.1.49.9999 9999: Extra Plasma applets and engines
+kde-plasma/kdesu-gui 6.1.49.9999 9999: Graphical frontend for KDE Frameworks' kdesu
 kde-plasma/kgamma 6.1.49.9999 9999: Screen gamma values kcontrol module
 kde-plasma/kglobalacceld 6.1.49.9999 9999: Daemon providing Global Keyboard Shortcut (Accelerator) functionality
 kde-plasma/kinfocenter 6.1.49.9999 9999: Utility providing information about the computer hardware
