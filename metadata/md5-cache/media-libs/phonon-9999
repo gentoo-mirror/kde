@@ -5,12 +5,12 @@ DESCRIPTION=KDE multimedia abstraction library
 EAPI=8
 HOMEPAGE=https://community.kde.org/Phonon
 INHERIT=cmake desktop flag-o-matic kde.org multibuild
-IUSE=debug designer minimal pulseaudio +qt5 qt6
+IUSE=debug designer minimal pulseaudio qt5 +qt6
 LICENSE=|| ( LGPL-2.1 LGPL-3 ) !pulseaudio? ( || ( GPL-2 GPL-3 ) )
-PDEPEND=!minimal? ( >=media-libs/phonon-vlc-0.12.0[qt5?,qt6?] )
+PDEPEND=!minimal? ( >=media-libs/phonon-vlc-0.12.0[qt5(-)?,qt6(+)?] )
 PROPERTIES=live
 RDEPEND=pulseaudio? ( dev-libs/glib:2 media-libs/libpulse[glib] ) qt5? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 designer? ( dev-qt/designer:5 ) ) qt6? ( dev-qt/qt5compat:6 dev-qt/qtbase:6[gui,widgets] designer? ( dev-qt/qttools:6[designer] ) ) || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* )
 REQUIRED_USE=|| ( qt5 qt6 )
 SLOT=0
 _eclasses_=toolchain-funcs	948855ec7ad9f11351edf9066708dfa9	multilib	7e1347c006a76bb812f3a9f663b79991	flag-o-matic	fa33e3696fe4689dda7e9affe92e2c94	multiprocessing	e644caa6eb7ce7e5ab0864383ac13ad9	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	5465aed08f1dfc2a75f14cbea4272961	cmake	bdff848933960d0e5d4f3097d4faa126	desktop	56973babb9c5f19cab0eeb53ece644c6	git-r3	875eb471682d3e1f18da124be97dcc81	kde.org	5b717883256e9841ce52e6cad2fca427	out-of-source-utils	a0eb740debe3d472355e8bc52f62e0ac	multibuild	45df57b1877333d70a9e894f6c8fdb3a
-_md5_=3212908056e37ff0e88c686d5e1ed254
+_md5_=d87315455c51a0c537ad28d53572191f

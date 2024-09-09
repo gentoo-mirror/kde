@@ -44,13 +44,9 @@ dev-libs/qcoro 9999: C++ Coroutine Library for Qt
 dev-libs/qcoro5 9999: C++ Coroutine Library for Qt5
 dev-python/parse_cmake 0.4.1-r2: Parser for CMakeLists.txt files
 dev-util/kdevelop 24.08.49.9999 9999: Integrated Development Environment, supporting KF6/Qt, C/C++ and much more
-dev-util/kdevelop-css 9999: CSS Language Support plugin for KDevelop
-dev-util/kdevelop-embedded 9999: Plugin for KDevelop to support the development of embedded systems
-dev-util/kdevelop-krazy2 9999: Plugin for KDevelop to perform Krazy2 analysis
 dev-util/kdevelop-pg-qt 9999: LL(1) parser generator used mainly by KDevelop language plugins
 dev-util/kdevelop-php 24.08.49.9999 9999: PHP plugin for KDevelop
 dev-util/kdevelop-python 24.08.49.9999 9999: Python plugin for KDevelop
-dev-util/kdevelop-upload 9999: Plugin for uploading files to a remote server
 dev-util/kdevelop-valgrind 9999: Plugin offering full integration of the valgrind suite to KDevelop
 dev-util/kio-perldoc 24.08.49.9999 9999: KIO worker interface to browse Perl documentation
 dev-util/massif-visualizer 24.08.49.9999 9999: Tool visualising massif data
@@ -373,7 +369,6 @@ kde-misc/kweather 24.08.49.9999 9999: Weather forecast application for Plasma wi
 kde-misc/latte-dock 9999: Elegant dock, based on KDE Frameworks
 kde-misc/markdownpart 24.08.49.9999 9999: Markdown viewer KParts plugin based on QTextDocument
 kde-misc/plasma-pass 9999: Plasma applet to access password from pass
-kde-misc/polkit-kde-kcmodules 9999: Set of configuration modules to change polkit settings
 kde-misc/rsibreak 9999: Small utility which bothers you at certain intervals
 kde-misc/skanlite 24.08.49.9999 9999: Simple image scanning application based on libksane and KDE Frameworks
 kde-misc/tellico 9999: Collection manager based on KDE Frameworks
