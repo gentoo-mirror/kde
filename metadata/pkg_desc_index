@@ -468,14 +468,12 @@ media-sound/krecorder 24.08.49.9999 9999: Convergent audio recording application
 media-video/kaffeine 9999: Media player with digital TV support by KDE
 media-video/plasmatube 9999: YouTube video player based on mpv, yt-dlp, and Invidious
 media-video/subtitlecomposer 9999: Text-based subtitles editor
-net-im/choqok 9999: Free/Open Source micro-blogging client by KDE
 net-im/neochat 24.08.49.9999 9999: Client for Matrix, the decentralized communication protocol
 net-im/tokodon 24.08.49.9999 9999: Mastodon client for Plasma and Plasma Mobile
 net-irc/konversation 24.08.49.9999 9999: User friendly IRC Client
 net-libs/kdsoap 9999: Qt-based client-side and server-side SOAP component
 net-libs/kdsoap-ws-discovery-client 9999: WS-Discovery client library based on KDSoap
 net-libs/libktorrent 24.08.49.9999 9999: BitTorrent library based on KDE Frameworks
-net-libs/libmediawiki 9999: C++ interface for MediaWiki based web service as wikipedia.org
 net-libs/libtmdbqt 9999: Qt library to query the movie database API (themoviedb.org)
 net-misc/kio-zeroconf 24.08.49.9999 9999: KIO worker to discover file systems by DNS-SD (DNS Service Discovery)
 net-misc/kio-zeroconf-common 24.08.49.9999 9999: Common files for kio-zeroconf
