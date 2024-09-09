@@ -226,7 +226,7 @@ kde-apps/ktuberling 24.08.49.9999 9999: Potato game for kids by KDE
 kde-apps/kturtle 24.08.49.9999 9999: Educational programming environment using the Logo programming language
 kde-apps/kubrick 24.08.49.9999 9999: Game based on the "Rubik's Cube" puzzle by KDE
 kde-apps/kwalletmanager 24.08.49.9999 9999: Tool to manage the passwords on your system using KDE Wallet
-kde-apps/kwave 24.08.49.9999 9999: Sound editor built on KDE Frameworks 5 that can edit many types of audio files
+kde-apps/kwave 24.08.49.9999 9999: Sound editor built on KDE Frameworks that can edit many types of audio files
 kde-apps/kwordquiz 24.08.49.9999 9999: Powerful flashcard and vocabulary learning program
 kde-apps/kwrite 24.08.49.9999 9999: Simple text editor based on KDE Frameworks
 kde-apps/libgravatar 24.08.49.9999 9999: Library for gravatar integration
