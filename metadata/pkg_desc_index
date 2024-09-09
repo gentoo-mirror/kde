@@ -363,7 +363,6 @@ kde-misc/krename 9999: Powerful batch file renamer
 kde-misc/krusader 9999: Advanced twin-panel (commander-style) file-manager with many extras
 kde-misc/ktrip 9999: Public transport assistant targeted towards mobile Linux and Android
 kde-misc/kweather 24.08.49.9999 9999: Weather forecast application for Plasma with flat and dynamic/animated views
-kde-misc/latte-dock 9999: Elegant dock, based on KDE Frameworks
 kde-misc/markdownpart 24.08.49.9999 9999: Markdown viewer KParts plugin based on QTextDocument
 kde-misc/plasma-pass 9999: Plasma applet to access password from pass
 kde-misc/rsibreak 9999: Small utility which bothers you at certain intervals
