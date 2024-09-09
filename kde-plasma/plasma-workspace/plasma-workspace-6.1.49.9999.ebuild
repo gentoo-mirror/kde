@@ -84,7 +84,7 @@ COMMON_DEPEND="
 	>=kde-plasma/plasma-activities-stats-${PVCUT}:6
 	>=kde-plasma/plasma5support-${PVCUT}:6
 	media-libs/libcanberra
-	>=media-libs/phonon-4.12.0[qt6]
+	>=media-libs/phonon-4.12.0[qt6(+)]
 	sci-libs/libqalculate:=
 	sys-libs/zlib
 	virtual/libudev:=
@@ -108,7 +108,7 @@ COMMON_DEPEND="
 	geolocation? ( >=kde-frameworks/networkmanager-qt-${KFMIN}:6 )
 	gps? ( sci-geosciences/gpsd )
 	policykit? (
-		>=sys-auth/polkit-qt-0.175[qt6]
+		>=sys-auth/polkit-qt-0.175[qt6(+)]
 		virtual/libcrypt:=
 	)
 	screencast? (

@@ -16,11 +16,11 @@ fi
 
 LICENSE="LGPL-2.1+ || ( LGPL-2.1 LGPL-3 )"
 SLOT="0"
-IUSE="debug +qt5 qt6"
+IUSE="debug qt5 +qt6"
 REQUIRED_USE="|| ( qt5 qt6 )"
 
 DEPEND="
-	>=media-libs/phonon-4.12.0[qt5=,qt6=]
+	>=media-libs/phonon-4.12.0[qt5=,qt6(+)=]
 	media-video/vlc:=[dbus,ogg,vorbis(+)]
 	qt5? (
 		dev-qt/qtcore:5

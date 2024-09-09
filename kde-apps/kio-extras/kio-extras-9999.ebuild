@@ -54,10 +54,10 @@ DEPEND="
 	)
 	mtp? ( >=media-libs/libmtp-1.1.16:= )
 	openexr? ( media-libs/openexr:= )
-	phonon? ( >=media-libs/phonon-4.12.0[qt6] )
+	phonon? ( >=media-libs/phonon-4.12.0[qt6(+)] )
 	samba? (
 		net-fs/samba[client]
-		>=net-libs/kdsoap-2.2.0:=[qt6]
+		>=net-libs/kdsoap-2.2.0:=[qt6(+)]
 		>=net-libs/kdsoap-ws-discovery-client-0.3.0
 	)
 	sftp? ( net-libs/libssh:=[sftp] )
