@@ -24,7 +24,6 @@ app-text/kbibtex 9999: BibTeX editor to edit bibliographies used with LaTeX
 app-text/kjots 9999: Note taking utility by KDE
 app-text/marknote 9999: Markdown editor with a wide range of formating options for everyday notes
 dev-db/futuresql 9999: Non-blocking Qt database framework
-dev-db/futuresql5 9999: Non-blocking Qt database framework
 dev-db/kdb 9999: Database connectivity and creation framework for various vendors
 dev-debug/kdbg 9999: Graphical debugger interface
 dev-libs/appstream 9999: Cross-distro effort for providing metadata for software in the Linux ecosystem
@@ -38,7 +37,6 @@ dev-libs/kpublictransport 24.08.49.9999 9999: Library for accessing public trans
 dev-libs/kreport 9999: Framework for creation and generation of reports in multiple formats
 dev-libs/ktextaddons 9999: Various text handling addons
 dev-libs/kweathercore 24.08.49.9999 9999: Library for retrieval of weather information including forecasts and alerts
-dev-libs/mauikit 9999: Templated convergent controls and multiplatform utilities for Maui applications
 dev-libs/plasma-wayland-protocols 9999: Plasma Specific Protocols for Wayland
 dev-libs/qcoro 9999: C++ Coroutine Library for Qt
 dev-libs/qcoro5 9999: C++ Coroutine Library for Qt5
@@ -467,7 +465,6 @@ media-sound/elisa 24.08.49.9999 9999: Simple music player by KDE
 media-sound/kasts 24.08.49.9999 9999: Convergent podcast application for desktop and mobile
 media-sound/kid3 9999: Simple tag editor based on Qt
 media-sound/krecorder 24.08.49.9999 9999: Convergent audio recording application for Plasma
-media-sound/vvave 9999: Tiny Qt music player by KDE
 media-video/kaffeine 9999: Media player with digital TV support by KDE
 media-video/plasmatube 9999: YouTube video player based on mpv, yt-dlp, and Invidious
 media-video/subtitlecomposer 9999: Text-based subtitles editor
