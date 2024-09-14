@@ -1,0 +1,15 @@
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5 doc? ( >=app-text/doxygen-1.8.13-r1 ) dev-qt/qttools:6[assistant] dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-6.6.0:* >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install nofetch postinst postrm preinst prepare setup test unpack
+DEPEND=>=dev-qt/qtbase-6.7.2:6[dbus,gui,sql,widgets] >=dev-qt/qtdeclarative-6.7.2:6[widgets] >=kde-frameworks/kconfig-6.6.0:6 >=kde-frameworks/kcoreaddons-6.6.0:6 dev-libs/boost test? ( >=kde-frameworks/kwindowsystem-6.6.0:6[X] ) doc? ( dev-qt/qt-docs:6 ) dev-qt/qtbase:6
+DESCRIPTION=Core components for KDE's Activities System
+EAPI=8
+HOMEPAGE=https://kde.org/plasma-desktop
+INHERIT=ecm plasma.kde.org
+IUSE=debug doc test
+LICENSE=|| ( LGPL-2.1 LGPL-3 )
+PROPERTIES=live
+RDEPEND=>=dev-qt/qtbase-6.7.2:6[dbus,gui,sql,widgets] >=dev-qt/qtdeclarative-6.7.2:6[widgets] >=kde-frameworks/kconfig-6.6.0:6 >=kde-frameworks/kcoreaddons-6.6.0:6 >=kde-frameworks/kf-env-6 doc? ( dev-qt/qt-docs:6 ) dev-qt/qtbase:6
+RESTRICT=!test? ( test )
+SLOT=6
+_eclasses_=toolchain-funcs	948855ec7ad9f11351edf9066708dfa9	multilib	7e1347c006a76bb812f3a9f663b79991	flag-o-matic	fa33e3696fe4689dda7e9affe92e2c94	multiprocessing	e644caa6eb7ce7e5ab0864383ac13ad9	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	5465aed08f1dfc2a75f14cbea4272961	cmake	bdff848933960d0e5d4f3097d4faa126	virtualx	53fb93b5555470a64f14fde25cf1ad2c	ecm	1b66ae0152dc7e2471d08fb404daa499	git-r3	875eb471682d3e1f18da124be97dcc81	kde.org	5b717883256e9841ce52e6cad2fca427	plasma.kde.org	04eb5849283348eac80db74a8749b14a
+_md5_=ec00685744aed1c344c52216a1d53777
