@@ -23,6 +23,7 @@ app-text/chmk 9999: CHM file viewer based on KDE Frameworks and QtWebEngine
 app-text/kbibtex 9999: BibTeX editor to edit bibliographies used with LaTeX
 app-text/kjots 9999: Note taking utility by KDE
 app-text/marknote 9999: Markdown editor with a wide range of formating options for everyday notes
+dev-build/dolphin-plugins-makefileactions 24.08.49.9999 9999: Dolphin plugin for Makefile targets integration
 dev-db/futuresql 9999: Non-blocking Qt database framework
 dev-db/kdb 9999: Database connectivity and creation framework for various vendors
 dev-debug/kdbg 9999: Graphical debugger interface
