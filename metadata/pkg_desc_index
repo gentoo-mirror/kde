@@ -12,7 +12,6 @@ app-misc/calindori 9999: Touch friendly calendar application
 app-misc/kookbook 9999: Simple recipe manager taking structured markdown for recipes
 app-office/calligra 9999: KDE Office Suite
 app-office/calligraplan 9999: Project management application
-app-office/kexi 9999: Visual database applications creator
 app-office/kmymoney 5.1.9999 9999: Personal finance manager based on KDE Frameworks
 app-office/ktimetracker 9999: Todo management and time tracker
 app-office/libalkimia 8.9999 9999: Library with common classes and functionality used by KDE finance applications
@@ -25,7 +24,6 @@ app-text/kjots 9999: Note taking utility by KDE
 app-text/marknote 9999: Markdown editor with a wide range of formating options for everyday notes
 dev-build/dolphin-plugins-makefileactions 24.08.49.9999 9999: Dolphin plugin for Makefile targets integration
 dev-db/futuresql 9999: Non-blocking Qt database framework
-dev-db/kdb 9999: Database connectivity and creation framework for various vendors
 dev-debug/kdbg 9999: Graphical debugger interface
 dev-libs/appstream 9999: Cross-distro effort for providing metadata for software in the Linux ecosystem
 dev-libs/atcore 9999: API to manage the serial connection between the computer and 3D Printers
@@ -33,9 +31,7 @@ dev-libs/kdiagram 9999: Powerful libraries (KChart, KGantt) for creating busines
 dev-libs/kirigami-addons 9999: Visual end user components for Kirigami-based applications
 dev-libs/kopeninghours 24.08.49.9999 9999: Library for parsing and evaluating OSM opening hours expressions
 dev-libs/kosmindoormap 24.08.49.9999 9999: Data Model and Extraction System for Travel Reservation information
-dev-libs/kproperty 9999: Property editing framework with editor widget similar to Qt Designer
 dev-libs/kpublictransport 24.08.49.9999 9999: Library for accessing public transport timetables and other information
-dev-libs/kreport 9999: Framework for creation and generation of reports in multiple formats
 dev-libs/ktextaddons 9999: Various text handling addons
 dev-libs/kweathercore 24.08.49.9999 9999: Library for retrieval of weather information including forecasts and alerts
 dev-libs/plasma-wayland-protocols 9999: Plasma Specific Protocols for Wayland
