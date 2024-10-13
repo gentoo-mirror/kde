@@ -15,7 +15,7 @@ DESCRIPTION="Support components for porting from KF5/Qt5 to KF6/Qt6"
 LICENSE="GPL-2+ LGPL-2+"
 SLOT="6"
 KEYWORDS=""
-IUSE=""
+IUSE="geolocation X"
 
 RESTRICT="test" # bug 926347
 
@@ -26,13 +26,24 @@ DEPEND="
 	>=kde-frameworks/kcoreaddons-${KFMIN}:6
 	>=kde-frameworks/kguiaddons-${KFMIN}:6
 	>=kde-frameworks/ki18n-${KFMIN}:6
+	>=kde-frameworks/kidletime-${KFMIN}:6
 	>=kde-frameworks/kio-${KFMIN}:6
 	>=kde-frameworks/knotifications-${KFMIN}:6
 	>=kde-frameworks/kservice-${KFMIN}:6
 	>=kde-frameworks/solid-${KFMIN}:6
 	>=kde-plasma/libksysguard-${PVCUT}:6
+	geolocation? ( >=kde-frameworks/networkmanager-qt-${KFMIN}:6 )
+	X? ( x11-libs/libX11 )
 "
 RDEPEND="${DEPEND}
 	!kde-plasma/plasma-workspace:5
-	!<kde-plasma/plasma-workspace-6.1.90:6
+	!<kde-plasma/plasma-workspace-6.2.90:6
 "
+
+src_configure() {
+	local mycmakeargs=(
+		$(cmake_use_find_package geolocation KF6NetworkManagerQt)
+		$(cmake_use_find_package X X11)
+	)
+	ecm_src_configure
+}
