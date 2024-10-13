@@ -1,13 +1,14 @@
-BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5 >=kde-frameworks/extra-cmake-modules-5.115.0:* || ( ( kde-frameworks/ki18n:6 handbook? ( kde-frameworks/kdoctools:6 ) ) ( kde-frameworks/ki18n:5 handbook? ( kde-frameworks/kdoctools:5 ) ) ) >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5 >=kde-frameworks/extra-cmake-modules-6.0.0:* >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install nofetch prepare setup test unpack
-DESCRIPTION=Common files for kde-cli-tools
+DESCRIPTION=KDE Plasma login sessions
 EAPI=8
 HOMEPAGE=https://kde.org/plasma-desktop
 INHERIT=ecm-common plasma.kde.org
-IUSE=+handbook
-LICENSE=GPL-2+ handbook? ( FDL-1.2 )
+IUSE=+wayland X
+LICENSE=GPL-2
 PROPERTIES=live
-RDEPEND=!<kde-plasma/kde-cli-tools-6.1.4-r2:* !kde-plasma/kde-cli-tools-common:5
-SLOT=0
+RDEPEND=!<kde-plasma/plasma-workspace-6.2.1 !kde-plasma/plasma-login-sessions:5
+REQUIRED_USE=|| ( wayland X )
+SLOT=6
 _eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	bdff848933960d0e5d4f3097d4faa126	ecm-common	6cbc47c315835cf999068b33eb68ad3f	git-r3	875eb471682d3e1f18da124be97dcc81	kde.org	5b717883256e9841ce52e6cad2fca427	plasma.kde.org	04eb5849283348eac80db74a8749b14a
-_md5_=6d16119bbbc6926990f5efff9366417f
+_md5_=95f54d1eb0de8bd180ba687d6a131021
