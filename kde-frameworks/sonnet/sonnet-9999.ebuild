@@ -36,6 +36,9 @@ src_configure() {
 		$(cmake_use_find_package hunspell HUNSPELL)
 		-DSONNET_USE_QML=$(usex qml)
 	)
+	if ! use aspell && ! use hunspell; then
+		mycmakeargs+=( -DSONNET_NO_BACKENDS=ON )
+	fi
 
 	ecm_src_configure
 }
