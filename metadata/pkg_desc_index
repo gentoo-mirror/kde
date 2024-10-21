@@ -444,7 +444,6 @@ media-gfx/kio-raw-thumbnailer 24.08.49.9999 9999: KIO thumbnail generator for RA
 media-gfx/kphotoalbum 9999: Tool for indexing, searching, and viewing images
 media-gfx/krita 9999: Free digital painting application. Digital Painting, Creative Freedom!
 media-gfx/kxstitch 9999: Program to create cross stitch patterns
-media-gfx/peruse 9999: Comic book reader
 media-gfx/skanpage 24.08.49.9999 9999: Multi-page scanning application supporting image and pdf files
 media-gfx/symboleditor 9999: Application to create libraries of QPainterPath objects with rendering hints
 media-libs/kquickimageeditor 9999: QtQuick components providing basic image editing capabilities
