@@ -5,7 +5,7 @@ EAPI=8
 
 ECM_DESIGNERPLUGIN="true"
 PVCUT=$(ver_cut 1-2)
-QTMIN=6.6.2
+QTMIN=6.7.2
 inherit ecm frameworks.kde.org
 
 DESCRIPTION="Framework for icon theming and configuration"
@@ -25,7 +25,6 @@ RDEPEND="
 	=kde-frameworks/karchive-${PVCUT}*:6
 	=kde-frameworks/kcolorscheme-${PVCUT}*:6
 	=kde-frameworks/kconfig-${PVCUT}*:6
-	=kde-frameworks/kconfigwidgets-${PVCUT}*:6
 	=kde-frameworks/ki18n-${PVCUT}*:6
 	=kde-frameworks/kwidgetsaddons-${PVCUT}*:6
 "

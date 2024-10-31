@@ -4,7 +4,7 @@
 EAPI=8
 
 PVCUT=$(ver_cut 1-2)
-QTMIN=6.6.2
+QTMIN=6.7.2
 inherit ecm frameworks.kde.org
 
 DESCRIPTION="Framework for managing bookmarks stored in XBEL format"
@@ -20,7 +20,5 @@ RDEPEND="
 	=kde-frameworks/kiconthemes-${PVCUT}*:6
 	=kde-frameworks/kwidgetsaddons-${PVCUT}*:6
 "
-DEPEND="${RDEPEND}
-	>=kde-frameworks/kconfigwidgets-${PVCUT}:6
-"
+DEPEND="${RDEPEND}"
 BDEPEND=">=dev-qt/qttools-${QTMIN}:6[linguist]"

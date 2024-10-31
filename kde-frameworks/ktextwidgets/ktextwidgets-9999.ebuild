@@ -5,7 +5,7 @@ EAPI=8
 
 ECM_DESIGNERPLUGIN="true"
 PVCUT=$(ver_cut 1-2)
-QTMIN=6.6.2
+QTMIN=6.7.2
 inherit ecm frameworks.kde.org
 
 DESCRIPTION="Framework providing an assortment of widgets for displaying and editing text"
@@ -18,7 +18,7 @@ DEPEND="
 	>=dev-qt/qtbase-${QTMIN}:6[gui,widgets]
 	=kde-frameworks/kcompletion-${PVCUT}*:6
 	=kde-frameworks/kconfig-${PVCUT}*:6
-	=kde-frameworks/kconfigwidgets-${PVCUT}*:6
+	=kde-frameworks/kcolorscheme-${PVCUT}*:6
 	=kde-frameworks/kcoreaddons-${PVCUT}*:6
 	=kde-frameworks/ki18n-${PVCUT}*:6
 	=kde-frameworks/kservice-${PVCUT}*:6
