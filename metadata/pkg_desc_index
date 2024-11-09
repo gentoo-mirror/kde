@@ -18,9 +18,7 @@ app-office/libalkimia 8.9999 9999: Library with common classes and functionality
 app-office/merkuro 9999: Calendar application using Akonadi
 app-office/skrooge 9999: Personal finances manager, aiming at being simple and intuitive
 app-text/arianna 9999: EPub Reader for mobile devices
-app-text/chmk 9999: CHM file viewer based on KDE Frameworks and QtWebEngine
 app-text/kbibtex 9999: BibTeX editor to edit bibliographies used with LaTeX
-app-text/kjots 9999: Note taking utility by KDE
 app-text/marknote 9999: Markdown editor with a wide range of formating options for everyday notes
 dev-build/dolphin-plugins-makefileactions 9999: Dolphin plugin for Makefile targets integration
 dev-db/futuresql 9999: Non-blocking Qt database framework
@@ -58,7 +56,6 @@ kde-apps/akonadi-calendar-tools-common 9999: Common files for akonadi-calendar-t
 kde-apps/akonadi-contacts 9999: Library for akonadi contact integration
 kde-apps/akonadi-import-wizard 9999: Assistant to import PIM data from other applications into Akonadi
 kde-apps/akonadi-mime 9999: Library for akonadi mime types
-kde-apps/akonadi-notes 9999: Library for akonadi notes integration
 kde-apps/akonadi-search 9999: Libraries and daemons to implement searching in Akonadi
 kde-apps/akonadiconsole 9999: Application for debugging Akonadi Resources
 kde-apps/akregator 9999: News feed aggregator
@@ -188,7 +185,6 @@ kde-apps/kmplot 9999: Mathematical function plotter
 kde-apps/knavalbattle 9999: Battleship clone by KDE
 kde-apps/knetwalk 9999: KDE version of the popular NetWalk game for system administrators
 kde-apps/knights 9999: Simple chess board based on KDE Frameworks
-kde-apps/knotes 9999: Note taking application
 kde-apps/kolf 9999: Minigolf game by KDE
 kde-apps/kollision 9999: Simple ball dodging game
 kde-apps/kolourpaint 9999: Paint Program by KDE
