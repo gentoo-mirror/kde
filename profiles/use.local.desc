@@ -20,7 +20,6 @@ app-office/libalkimia:webengine - Enable online quotes using dev-qt/qtwebengine
 app-office/skrooge:activities - Enable kactivities support
 app-text/kbibtex:webengine - Use dev-qt/qtwebengine for HTML previews
 dev-libs/appstream:apt - Enables Debians APT support
-dev-libs/atcore:gui - Build test GUI
 dev-libs/kpublictransport:networkmanager - Enable onboard status detection using kde-frameworks/networkmanager-qt
 dev-libs/ktextaddons:designer - Build plugins for dev-qt/designer
 dev-libs/qcoro:network - Build dev-qt/qtbase network support

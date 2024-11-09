@@ -24,7 +24,6 @@ dev-build/dolphin-plugins-makefileactions 9999: Dolphin plugin for Makefile targ
 dev-db/futuresql 9999: Non-blocking Qt database framework
 dev-debug/kdbg 9999: Graphical debugger interface
 dev-libs/appstream 9999: Cross-distro effort for providing metadata for software in the Linux ecosystem
-dev-libs/atcore 9999: API to manage the serial connection between the computer and 3D Printers
 dev-libs/kdiagram 9999: Powerful libraries (KChart, KGantt) for creating business diagrams
 dev-libs/kirigami-addons 9999: Visual end user components for Kirigami-based applications
 dev-libs/kopeninghours 9999: Library for parsing and evaluating OSM opening hours expressions
@@ -43,7 +42,6 @@ dev-util/kdevelop-python 9999: Python plugin for KDevelop
 dev-util/kdevelop-valgrind 9999: Plugin offering full integration of the valgrind suite to KDevelop
 dev-util/kio-perldoc 9999: KIO worker interface to browse Perl documentation
 dev-util/massif-visualizer 9999: Tool visualising massif data
-dev-vcs/kdesvn 9999: Frontend to the subversion vcs
 games-board/atlantik 9999: Atlantik board game
 games-kids/gcompris 9999: Full featured educational application for children from 2 to 10
 games-mud/kmuddy 9999: MUD client by KDE
