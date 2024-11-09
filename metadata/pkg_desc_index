@@ -51,6 +51,7 @@ gui-apps/xwaylandvideobridge 9999: Screenshare Wayland windows to XWayland apps
 kde-apps/akonadi 9999: Storage service for PIM data and libraries for PIM apps
 kde-apps/akonadi-calendar 9999: Library for akonadi calendar integration
 kde-apps/akonadi-calendar-tools-common 9999: Common files for akonadi-calendar-tools
+kde-apps/akonadi-config 0: Default Akonadi storage backend configuration
 kde-apps/akonadi-contacts 9999: Library for akonadi contact integration
 kde-apps/akonadi-import-wizard 9999: Assistant to import PIM data from other applications into Akonadi
 kde-apps/akonadi-mime 9999: Library for akonadi mime types
