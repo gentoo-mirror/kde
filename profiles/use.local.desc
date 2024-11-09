@@ -264,6 +264,7 @@ media-sound/kid3:acoustid - Build acoustic fingerprinting plugin using media-lib
 media-sound/kid3:mpris - Enable support for MPRIS2 interface using dev-qt/qtdbus
 net-im/tokodon:mpv - Use media-libs/mpvqt instead of dev-qt/qtmultimedia for video playback (default)
 net-im/tokodon:webengine - Use dev-qt/qtwebengine for built-in authentication page (default is external browser)
+net-libs/libktorrent:xfs - Enable XFS specific disk preallocation support via sys-fs/xfsprogs
 net-misc/smb4k:discovery - Build with net-libs/kdsoap-ws-discovery-client support to discover domains and workgroups
 net-p2p/ktorrent:bwscheduler - Schedule upload and download limits over a period of a week
 net-p2p/ktorrent:downloadorder - Specify the download order of a multi-file torrent
