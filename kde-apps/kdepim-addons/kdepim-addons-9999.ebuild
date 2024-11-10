@@ -15,7 +15,7 @@ HOMEPAGE="https://apps.kde.org/kontact/"
 LICENSE="GPL-2+ LGPL-2.1+"
 SLOT="6"
 KEYWORDS=""
-IUSE="importwizard markdown"
+IUSE="activities importwizard markdown"
 
 RESTRICT="test"
 
@@ -32,6 +32,7 @@ RDEPEND="
 	>=kde-apps/kidentitymanagement-${PVCUT}:6
 	>=kde-apps/kimap-${PVCUT}:6
 	>=kde-apps/kitinerary-${PVCUT}:6
+	>=kde-apps/kldap-${PVCUT}:6
 	>=kde-apps/kmailtransport-${PVCUT}:6
 	>=kde-apps/kmime-${PVCUT}:6
 	>=kde-apps/kpkpass-${PVCUT}:6
@@ -41,7 +42,8 @@ RDEPEND="
 	>=kde-apps/libktnef-${PVCUT}:6
 	>=kde-apps/mailcommon-${PVCUT}:6
 	>=kde-apps/messagelib-${PVCUT}:6
-	>=kde-apps/pimcommon-${PVCUT}:6
+	>=kde-apps/pimcommon-${PVCUT}:6[activities?]
+	>=kde-frameworks/kcolorscheme-${KFMIN}:6
 	>=kde-frameworks/kcompletion-${KFMIN}:6
 	>=kde-frameworks/kconfig-${KFMIN}:6
 	>=kde-frameworks/kconfigwidgets-${KFMIN}:6
@@ -58,6 +60,7 @@ RDEPEND="
 	>=kde-frameworks/kxmlgui-${KFMIN}:6
 	>=kde-frameworks/prison-${KFMIN}:6
 	>=kde-frameworks/syntax-highlighting-${KFMIN}:6
+	activities? ( kde-plasma/plasma-activities:6 )
 	importwizard? ( >=kde-apps/akonadi-import-wizard-${PVCUT}:6 )
 	markdown? ( app-text/discount:= )
 "
@@ -68,6 +71,7 @@ src_configure() {
 		# not packaged (bug 911819), but if present leads to rust shenanigans
 		-DCMAKE_DISABLE_FIND_PACKAGE_Corrosion=ON # for adblock support, bug 940898
 		-DCMAKE_DISABLE_FIND_PACKAGE_KLLMCore=ON # utilities/alpaka, not packaged
+		-DOPTION_USE_PLASMA_ACTIVITIES=$(usex activities)
 		$(cmake_use_find_package importwizard KPim6ImportWizard)
 		$(cmake_use_find_package markdown Discount)
 	)
