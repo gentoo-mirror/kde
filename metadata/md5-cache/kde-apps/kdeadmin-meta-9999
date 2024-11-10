@@ -4,6 +4,6 @@ EAPI=8
 HOMEPAGE=https://apps.kde.org/
 IUSE=+cron
 LICENSE=metapackage
-RDEPEND=>=kde-apps/ksystemlog-9999:* cron? ( >=kde-apps/kcron-9999:* )
+RDEPEND=>=app-admin/kio-admin-9999:* >=kde-apps/ksystemlog-9999:* cron? ( >=kde-apps/kcron-9999:* )
 SLOT=0
-_md5_=ade47df4a46abf1b57fa41a75b431011
+_md5_=c7294bf9dfd025be86f5c1a325c534dd
