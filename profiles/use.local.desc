@@ -201,6 +201,7 @@ kde-plasma/plasma-desktop:ibus - Use ibus input method via app-i18n/ibus
 kde-plasma/plasma-desktop:scim - Enable applets that use app-i18n/scim
 kde-plasma/plasma-desktop:screencast - Enable screencast portal thumbnails using kde-plasma/kpipewire
 kde-plasma/plasma-desktop:sdl - Enable gamepad support using media-libs/libsdl2
+kde-plasma/plasma-desktop:tablet - Build system settings module for tablets using dev-libs/libwacom
 kde-plasma/plasma-desktop:webengine - Build the OpenDesktop integration plugin
 kde-plasma/plasma-firewall:firewalld - Build net-firewall/firewalld backend
 kde-plasma/plasma-firewall:ufw - Build net-firewall/ufw backend
