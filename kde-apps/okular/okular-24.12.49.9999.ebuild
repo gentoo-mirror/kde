@@ -63,15 +63,14 @@ RDEPEND="${DEPEND}
 "
 
 PATCHES=(
-	"${FILESDIR}/${PN}-24.04.80-tests.patch" # bug 734138
-	"${FILESDIR}/${PN}-20.08.2-hide-mobile-app.patch" # avoid same-name entry
+	"${FILESDIR}/${PN}-20.08.2-hide-mobile-app.patch" # downstream; avoid same-name entry
 	"${FILESDIR}/${PN}-23.08.5-implicit-vasprintf.patch" # bug 922345; pending upstream
+	"${FILESDIR}/${PN}-24.11.80-tests.patch" # git master; bug 734138
 )
 
 src_configure() {
 	local mycmakeargs=(
-		-DCMAKE_DISABLE_FIND_PACKAGE_LibZip=ON
-		-DFORCE_NOT_REQUIRED_DEPENDENCIES="KF6DocTools;LibZip;KF6Wallet;DjVuLibre;EPub;Discount;QMobipocket6;Poppler;LibSpectre;KF6Purpose;Qt6TextToSpeech;TIFF;"
+		-DFORCE_NOT_REQUIRED_DEPENDENCIES="KF6DocTools;KF6Wallet;DjVuLibre;EPub;Discount;QMobipocket6;Poppler;LibSpectre;KF6Purpose;Qt6TextToSpeech;TIFF;"
 		-DOKULAR_UI=$(usex qml "both" "desktop")
 		$(cmake_use_find_package crypt KF6Wallet)
 		$(cmake_use_find_package djvu DjVuLibre)
