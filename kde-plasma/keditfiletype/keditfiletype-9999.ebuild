@@ -4,46 +4,46 @@
 EAPI=8
 
 ECM_HANDBOOK="forceoff"
-ECM_TEST="false"
+ECM_TEST="true"
+KDE_ORG_NAME="kde-cli-tools"
 KFMIN=9999
 QTMIN=6.7.2
 inherit ecm plasma.kde.org
 
-DESCRIPTION="Tools based on KDE Frameworks 6 to better interact with the system"
+DESCRIPTION="File Type Editor"
 HOMEPAGE="https://invent.kde.org/plasma/kde-cli-tools"
 
 LICENSE="GPL-2" # TODO: CHECK
-SLOT="6"
+SLOT="0"
 KEYWORDS=""
-IUSE="kdesu X"
+IUSE=""
 
-# slot op: kstart Uses Qt6::GuiPrivate for qtx11extras_p.h
+# requires running Plasma environment
+RESTRICT="test"
+
 DEPEND="
 	>=dev-qt/qtbase-${QTMIN}:6[dbus,gui,widgets]
-	>=dev-qt/qtsvg-${QTMIN}:6
+	>=kde-frameworks/kcmutils-${KFMIN}:6
+	>=kde-frameworks/kcompletion-${KFMIN}:6
+	>=kde-frameworks/kconfig-${KFMIN}:6
 	>=kde-frameworks/kcoreaddons-${KFMIN}:6
 	>=kde-frameworks/ki18n-${KFMIN}:6
+	>=kde-frameworks/kiconthemes-${KFMIN}:6
 	>=kde-frameworks/kio-${KFMIN}:6
+	>=kde-frameworks/kparts-${KFMIN}:6
 	>=kde-frameworks/kservice-${KFMIN}:6
-	X? ( >=dev-qt/qtbase-${QTMIN}:6=[gui,X] )
+	>=kde-frameworks/kwindowsystem-${KFMIN}:6
 "
 RDEPEND="${DEPEND}
-	>=${CATEGORY}/${PN}-common-${PV}
-	kdesu? ( >=${CATEGORY}/kdesu-gui-${PV} )
+	!<${CATEGORY}/${KDE_ORG_NAME}-6.2.4:*
+	>=${CATEGORY}/${KDE_ORG_NAME}-common-${PV}
 "
 BDEPEND=">=kde-frameworks/kcmutils-${KFMIN}:6"
+
+# downstream split
+PATCHES=( "${FILESDIR}/${PN}-6.2.4-build-restrict.patch" )
 
 src_prepare() {
 	ecm_src_prepare
 	ecm_punt_po_install
-	cmake_comment_add_subdirectory keditfiletype # split package
-}
-
-src_configure() {
-	local mycmakeargs=(
-		-DCMAKE_DISABLE_FIND_PACKAGE_KF6Su=ON
-		-DWITH_X11=$(usex X)
-	)
-
-	ecm_src_configure
 }
