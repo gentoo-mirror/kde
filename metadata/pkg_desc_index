@@ -377,6 +377,7 @@ kde-plasma/kde-gtk-config 6.2.49.9999 9999: Syncs KDE Plasma theme settings to G
 kde-plasma/kdecoration 6.2.49.9999 9999: Plugin based library to create window decorations
 kde-plasma/kdeplasma-addons 6.2.49.9999 9999: Extra Plasma applets and engines
 kde-plasma/kdesu-gui 6.2.49.9999 9999: Graphical frontend for KDE Frameworks' kdesu
+kde-plasma/keditfiletype 6.2.49.9999 9999: File Type Editor
 kde-plasma/kgamma 6.2.49.9999 9999: Screen gamma values kcontrol module
 kde-plasma/kglobalacceld 6.2.49.9999 9999: Daemon providing Global Keyboard Shortcut (Accelerator) functionality
 kde-plasma/kinfocenter 6.2.49.9999 9999: Utility providing information about the computer hardware
