@@ -19,10 +19,9 @@ fi
 
 LICENSE="GPL-2+ GPL-3+"
 SLOT="0"
-IUSE="+password raw wcs"
+IUSE="opencv +password raw"
 
-# IUSE wcs needed by TestPolarAlign
-REQUIRED_USE="${PYTHON_REQUIRED_USE} test? ( wcs )"
+REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 # https://wiki.gentoo.org/wiki/Project:Qt/Qt6_migration_notes#Still_unpackaged
 # >=dev-qt/qtdatavis3d-${QTMIN}:6
@@ -43,15 +42,22 @@ COMMON_DEPEND="
 	>=kde-frameworks/kplotting-${KFMIN}:6
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:6
 	>=kde-frameworks/kxmlgui-${KFMIN}:6
+	sci-astronomy/wcslib:=
 	sci-libs/cfitsio:=
 	sci-libs/gsl:=
 	>=sci-libs/indilib-2.0.2
 	sci-libs/libnova:=
 	>=sci-libs/stellarsolver-2.2
 	sys-libs/zlib
+	opencv? (
+		media-libs/opencv:=[ffmpeg]
+		|| (
+			media-libs/opencv[qt6(-)]
+			media-libs/opencv[gtk3(-)]
+		)
+	)
 	password? ( >=dev-libs/qtkeychain-0.14.2:=[qt6(+)] )
 	raw? ( media-libs/libraw:= )
-	wcs? ( sci-astronomy/wcslib:= )
 "
 # TODO: what about virtual/opengl?
 DEPEND="${COMMON_DEPEND}
@@ -74,14 +80,18 @@ CMAKE_SKIP_TESTS=(
 	TestEkos{Capture,FilterWheel,Focus,Mount,Scheduler{,Ops},Simulator}
 )
 
+PATCHES=(
+	"${FILESDIR}/${PN}-3.7.4-cmake.patch" # bug 895892
+)
+
 src_configure() {
 	local mycmakeargs=(
 		-DCMAKE_DISABLE_FIND_PACKAGE_LibXISF=ON # not packaged
 		-DBUILD_QT5=OFF # KF6 please
 		-DBUILD_DOC=$(usex handbook)
+		$(cmake_use_find_package opencv OpenCV)
 		$(cmake_use_find_package password Qt6Keychain)
 		$(cmake_use_find_package raw LibRaw)
-		$(cmake_use_find_package wcs WCSLIB)
 	)
 
 	ecm_src_configure
