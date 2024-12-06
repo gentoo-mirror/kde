@@ -4,6 +4,7 @@
 EAPI=8
 
 ECM_NONGUI="false"
+ECM_PYTHON_BINDINGS="off"
 QTMIN=6.7.2
 inherit ecm frameworks.kde.org
 
@@ -28,7 +29,7 @@ COMMON_DEPEND="
 	)
 "
 DEPEND="${COMMON_DEPEND}
-	wayland? ( >=dev-libs/plasma-wayland-protocols-1.11.1 )
+	wayland? ( >=dev-libs/plasma-wayland-protocols-1.15.0 )
 	X? (
 		x11-base/xorg-proto
 		x11-libs/libxcb
