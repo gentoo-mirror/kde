@@ -53,7 +53,6 @@ gui-apps/xwaylandvideobridge 9999: Screenshare Wayland windows to XWayland apps
 kde-apps/akonadi 24.12.49.9999 9999: Storage service for PIM data and libraries for PIM apps
 kde-apps/akonadi-calendar 24.12.49.9999 9999: Library for akonadi calendar integration
 kde-apps/akonadi-calendar-tools-common 24.12.49.9999 9999: Common files for akonadi-calendar-tools
-kde-apps/akonadi-config 0: Default Akonadi storage backend configuration
 kde-apps/akonadi-contacts 24.12.49.9999 9999: Library for akonadi contact integration
 kde-apps/akonadi-import-wizard 24.12.49.9999 9999: Assistant to import PIM data from other applications into Akonadi
 kde-apps/akonadi-mime 24.12.49.9999 9999: Library for akonadi mime types
@@ -404,7 +403,7 @@ kde-plasma/oxygen 6.2.49.9999 9999: Oxygen visual style for the Plasma desktop
 kde-plasma/oxygen-sounds 6.2.49.9999 9999: Oxygen sound theme for the Plasma desktop
 kde-plasma/plasma-activities 6.2.49.9999 9999: Core components for KDE's Activities System
 kde-plasma/plasma-activities-stats 6.2.49.9999 9999: Library for accessing usage data collected by the activities system
-kde-plasma/plasma-bigscreen 5.27.49.9999: Plasma shell for TVs
+kde-plasma/plasma-bigscreen 9999: Plasma shell for TVs
 kde-plasma/plasma-browser-integration 6.2.49.9999 9999: Integrate Chrome/Firefox better into Plasma through browser extensions
 kde-plasma/plasma-desktop 6.2.49.9999 9999: KDE Plasma desktop
 kde-plasma/plasma-disks 6.2.49.9999 9999: Monitors S.M.A.R.T. capable devices for imminent failure
