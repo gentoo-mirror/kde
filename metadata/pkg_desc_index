@@ -334,7 +334,7 @@ kde-frameworks/prison 6.9.0 9999: QRCode and data matrix barcode library
 kde-frameworks/purpose 6.9.0 9999: Library for providing abstractions to get the developer's purposes fulfilled
 kde-frameworks/purpose-kaccounts-services 6.9.0 9999: KAccounts generated service files for nextcloud and google services
 kde-frameworks/qqc2-desktop-style 6.9.0 9999: Style for QtQuickControls 2 that uses QWidget's QStyle for painting
-kde-frameworks/solid 6.9.0 9999: Provider for platform independent hardware discovery, abstraction and management
+kde-frameworks/solid 6.9.1 9999: Provider for platform independent hardware discovery, abstraction and management
 kde-frameworks/sonnet 6.9.0 9999: Framework for providing spell-checking through abstraction of popular backends
 kde-frameworks/syndication 6.9.0 9999: Library for parsing RSS and Atom feeds
 kde-frameworks/syntax-highlighting 6.9.0 9999: Framework for syntax highlighting
