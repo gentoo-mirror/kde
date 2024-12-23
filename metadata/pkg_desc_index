@@ -271,6 +271,7 @@ kde-frameworks/bluez-qt 9999: Qt wrapper for Bluez 5 DBus API
 kde-frameworks/breeze-icons 9999: Breeze SVG icon theme
 kde-frameworks/extra-cmake-modules 9999: Extra modules and scripts for CMake
 kde-frameworks/frameworkintegration 9999: Framework for integrating Qt applications with KDE Plasma workspaces
+kde-frameworks/kapidox 9999: Framework for building KDE API documentation in a standard format and style
 kde-frameworks/karchive 9999: Framework for reading, creation, and manipulation of various archive formats
 kde-frameworks/kauth 9999: Framework to let applications perform actions as a privileged user
 kde-frameworks/kbookmarks 9999: Framework for managing bookmarks stored in XBEL format
