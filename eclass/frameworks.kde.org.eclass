@@ -46,15 +46,14 @@ SLOT=6
 if ver_test ${PV} -lt 5.240; then
 	SLOT=5
 fi
-if [[ ${PN} == extra-cmake-modules ]]; then
-	SLOT=0
-else
-	if [[ ${KDE_BUILD_TYPE} == release ]]; then
+case ${PN} in
+	extra-cmake-modules|kapidox)
+		SLOT=0
+		;;
+	*)
 		SLOT=${SLOT}/${KDE_CATV}
-	else
-		SLOT=${SLOT}/9999
-	fi
-fi
+		;;
+esac
 
 # @ECLASS_VARIABLE: KDE_ORG_SCHEDULE_URI
 # @INTERNAL
@@ -67,25 +66,5 @@ KDE_ORG_SCHEDULE_URI+="/Frameworks"
 # @DESCRIPTION:
 # Helper variable to construct release group specific SRC_URI.
 _KDE_SRC_URI="mirror://kde/"
-
-# TODO: Remove after last KF5 PortingAid treecleaned; bug 755956
-if [[ ${KDE_BUILD_TYPE} != live && -z ${KDE_ORG_COMMIT} ]]; then
-	_KDE_SRC_URI+="stable/frameworks/${KDE_CATV}/"
-	case ${KDE_ORG_NAME} in
-		kdelibs4support | \
-		kdesignerplugin | \
-		kdewebkit | \
-		khtml | \
-		kjs | \
-		kjsembed | \
-		kmediaplayer | \
-		kross | \
-		kxmlrpcclient)
-			_KDE_SRC_URI+="portingAids/"
-			;;
-	esac
-
-	SRC_URI="${_KDE_SRC_URI}${KDE_ORG_TAR_PN}-${PV}.tar.xz"
-fi
 
 fi
