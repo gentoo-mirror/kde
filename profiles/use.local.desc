@@ -235,7 +235,6 @@ kde-plasma/plasma-meta:xwayland - Enable Wayland windows screensharing to XWayla
 kde-plasma/plasma-nm:openconnect - Build support for the OpenConnect VPN client
 kde-plasma/plasma-nm:teamd - Enable Teamd control support
 kde-plasma/plasma-workspace:appstream - Enable AppStream software metadata support
-kde-plasma/plasma-workspace:geolocation - Enables dataengine providing location information
 kde-plasma/plasma-workspace:policykit - Enable locale generation and Users KCM using sys-auth/polkit and sys-apps/accountsservice
 kde-plasma/plasma-workspace:screencast - Enable camera indicator applet (requires media-video/pipewire at runtime)
 kde-plasma/plasma-workspace:telemetry - Enable User Feedback control module for kde-plasma/systemsettings
