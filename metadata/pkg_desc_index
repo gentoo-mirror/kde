@@ -1,354 +1,354 @@
-app-accessibility/kontrast 24.12.49.9999 9999: Tool to check contrast for colors to verify they are correctly accessible
-app-admin/kio-admin 24.12.49.9999 9999: Manage files as administrator using the admin:// KIO protocol
+app-accessibility/kontrast 24.12.1 24.12.49.9999 9999: Tool to check contrast for colors to verify they are correctly accessible
+app-admin/kio-admin 24.12.1 24.12.49.9999 9999: Manage files as administrator using the admin:// KIO protocol
 app-admin/systemdgenie 9999: Systemd managment utility
 app-backup/kup 9999: Backup scheduler for the Plasma desktop
-app-cdr/dolphin-plugins-mountiso 24.12.49.9999 9999: Dolphin plugin for ISO loopback device mounting
-app-cdr/isoimagewriter 24.12.49.9999 9999: Write hybrid ISO files onto a USB disk
-app-crypt/keysmith 24.12.49.9999 9999: OTP client for Plasma Mobile and Desktop
-app-editors/ghostwriter 24.12.49.9999 9999: Cross-platform, aesthetic, distraction-free markdown editor
+app-cdr/dolphin-plugins-mountiso 24.12.1 24.12.49.9999 9999: Dolphin plugin for ISO loopback device mounting
+app-cdr/isoimagewriter 24.12.1 24.12.49.9999 9999: Write hybrid ISO files onto a USB disk
+app-crypt/keysmith 24.12.1 24.12.49.9999 9999: OTP client for Plasma Mobile and Desktop
+app-editors/ghostwriter 24.12.1 24.12.49.9999 9999: Cross-platform, aesthetic, distraction-free markdown editor
 app-editors/kile 9999: Latex Editor and TeX shell based on KDE Frameworks
 app-editors/okteta 9999: Hex editor by KDE
 app-i18n/pology 9999: A framework for custom processing of PO files
 app-misc/calindori 9999: Touch friendly calendar application
-app-misc/francis 24.12.49.9999 9999: Productivity application using the well-known pomodoro technique
+app-misc/francis 24.12.1 24.12.49.9999 9999: Productivity application using the well-known pomodoro technique
 app-misc/kookbook 9999: Simple recipe manager taking structured markdown for recipes
 app-office/calligra 9999: KDE Office Suite
 app-office/calligraplan 9999: Project management application
 app-office/kmymoney 5.1.9999 9999: Personal finance manager based on KDE Frameworks
 app-office/ktimetracker 9999: Todo management and time tracker
 app-office/libalkimia 8.9999 9999: Library with common classes and functionality used by KDE finance applications
-app-office/merkuro 24.12.49.9999 9999: Calendar application using Akonadi
+app-office/merkuro 24.12.1 24.12.49.9999 9999: Calendar application using Akonadi
 app-office/skrooge 9999: Personal finances manager, aiming at being simple and intuitive
 app-text/arianna 9999: EPub Reader for mobile devices
 app-text/kbibtex 9999: BibTeX editor to edit bibliographies used with LaTeX
 app-text/marknote 9999: Markdown editor with a wide range of formating options for everyday notes
-dev-build/dolphin-plugins-makefileactions 24.12.49.9999 9999: Dolphin plugin for Makefile targets integration
+dev-build/dolphin-plugins-makefileactions 24.12.1 24.12.49.9999 9999: Dolphin plugin for Makefile targets integration
 dev-db/futuresql 9999: Non-blocking Qt database framework
 dev-debug/kdbg 9999: Graphical debugger interface
 dev-libs/appstream 9999: Cross-distro effort for providing metadata for software in the Linux ecosystem
 dev-libs/kdiagram 9999: Powerful libraries (KChart, KGantt) for creating business diagrams
 dev-libs/kirigami-addons 9999: Visual end user components for Kirigami-based applications
-dev-libs/kopeninghours 24.12.49.9999 9999: Library for parsing and evaluating OSM opening hours expressions
-dev-libs/kosmindoormap 24.12.49.9999 9999: Data Model and Extraction System for Travel Reservation information
-dev-libs/kpublictransport 24.12.49.9999 9999: Library for accessing public transport timetables and other information
+dev-libs/kopeninghours 24.12.1 24.12.49.9999 9999: Library for parsing and evaluating OSM opening hours expressions
+dev-libs/kosmindoormap 24.12.1 24.12.49.9999 9999: Data Model and Extraction System for Travel Reservation information
+dev-libs/kpublictransport 24.12.1 24.12.49.9999 9999: Library for accessing public transport timetables and other information
 dev-libs/ktextaddons 9999: Various text handling addons
-dev-libs/kweathercore 24.12.49.9999 9999: Library for retrieval of weather information including forecasts and alerts
+dev-libs/kweathercore 24.12.1 24.12.49.9999 9999: Library for retrieval of weather information including forecasts and alerts
 dev-libs/plasma-wayland-protocols 9999: Plasma Specific Protocols for Wayland
 dev-libs/qcoro 9999: C++ Coroutine Library for Qt
 dev-libs/qcoro5 9999: C++ Coroutine Library for Qt5
 dev-python/parse_cmake 0.4.1-r2: Parser for CMakeLists.txt files
-dev-util/kdevelop 24.12.49.9999 9999: Integrated Development Environment, supporting KF6/Qt, C/C++ and much more
+dev-util/kdevelop 24.12.1 24.12.49.9999 9999: Integrated Development Environment, supporting KF6/Qt, C/C++ and much more
 dev-util/kdevelop-pg-qt 9999: LL(1) parser generator used mainly by KDevelop language plugins
-dev-util/kdevelop-php 24.12.49.9999 9999: PHP plugin for KDevelop
-dev-util/kdevelop-python 24.12.49.9999 9999: Python plugin for KDevelop
+dev-util/kdevelop-php 24.12.1 24.12.49.9999 9999: PHP plugin for KDevelop
+dev-util/kdevelop-python 24.12.1 24.12.49.9999 9999: Python plugin for KDevelop
 dev-util/kdevelop-valgrind 9999: Plugin offering full integration of the valgrind suite to KDevelop
-dev-util/kio-perldoc 24.12.49.9999 9999: KIO worker interface to browse Perl documentation
-dev-util/massif-visualizer 24.12.49.9999 9999: Tool visualising massif data
+dev-util/kio-perldoc 24.12.1 24.12.49.9999 9999: KIO worker interface to browse Perl documentation
+dev-util/massif-visualizer 24.12.1 24.12.49.9999 9999: Tool visualising massif data
 games-board/atlantik 9999: Atlantik board game
 games-kids/gcompris 9999: Full featured educational application for children from 2 to 10
 games-mud/kmuddy 9999: MUD client by KDE
-games-puzzle/skladnik 24.12.49.9999 9999: The Japanese warehouse keeper sokoban game
+games-puzzle/skladnik 24.12.1 24.12.49.9999 9999: The Japanese warehouse keeper sokoban game
 gui-apps/liquidshell 9999: Basic desktop shell using QtWidgets
 gui-apps/xwaylandvideobridge 9999: Screenshare Wayland windows to XWayland apps
-kde-apps/akonadi 24.12.49.9999 9999: Storage service for PIM data and libraries for PIM apps
-kde-apps/akonadi-calendar 24.12.49.9999 9999: Library for akonadi calendar integration
-kde-apps/akonadi-calendar-tools-common 24.12.49.9999 9999: Common files for akonadi-calendar-tools
-kde-apps/akonadi-contacts 24.12.49.9999 9999: Library for akonadi contact integration
-kde-apps/akonadi-import-wizard 24.12.49.9999 9999: Assistant to import PIM data from other applications into Akonadi
-kde-apps/akonadi-mime 24.12.49.9999 9999: Library for akonadi mime types
-kde-apps/akonadi-search 24.12.49.9999 9999: Libraries and daemons to implement searching in Akonadi
-kde-apps/akonadiconsole 24.12.49.9999 9999: Application for debugging Akonadi Resources
-kde-apps/akregator 24.12.49.9999 9999: News feed aggregator
-kde-apps/analitza 24.12.49.9999 9999: KDE library for mathematical features
-kde-apps/ark 24.12.49.9999 9999: File archiver by KDE
-kde-apps/artikulate 24.12.49.9999 9999: Language learning application that helps improving pronunciation skills
-kde-apps/audiocd-kio 24.12.49.9999 9999: KIO worker for accessing audio CDs
-kde-apps/baloo-widgets 24.12.49.9999 9999: Widget library for baloo
-kde-apps/blinken 24.12.49.9999 9999: Memory enhancement game based on KDE Frameworks
-kde-apps/bomber 24.12.49.9999 9999: Single player arcade bombing game
-kde-apps/bovo 24.12.49.9999 9999: Five-in-a-row Board Game
-kde-apps/calendarjanitor 24.12.49.9999 9999: Tool to scan calendar data for buggy instances
-kde-apps/calendarsupport 24.12.49.9999 9999: Calendar support library
-kde-apps/cantor 24.12.49.9999 9999: Interface for doing mathematics and scientific computing
-kde-apps/cervisia 24.12.49.9999 9999: CVS frontend by KDE
-kde-apps/dolphin 24.12.49.9999 9999: Plasma filemanager focusing on usability
-kde-apps/dolphin-plugins-common 24.12.49.9999 9999: Common files for dolphin-plugins
-kde-apps/dolphin-plugins-dropbox 24.12.49.9999 9999: Dolphin plugin for Dropbox service integration
-kde-apps/dolphin-plugins-git 24.12.49.9999 9999: Dolphin plugin for Git integration
-kde-apps/dolphin-plugins-mercurial 24.12.49.9999 9999: Dolphin plugin for Mercurial integration
-kde-apps/dolphin-plugins-subversion 24.12.49.9999 9999: Dolphin plugin for Subversion integration
-kde-apps/dragon 24.12.49.9999 9999: Simple video player
-kde-apps/eventviews 24.12.49.9999 9999: Calendar viewer for KDE PIM
-kde-apps/ffmpegthumbs 24.12.49.9999 9999: FFmpeg based thumbnail generator for video files
-kde-apps/ffmpegthumbs-common 24.12.49.9999 9999: Common files for ffmpegthumbs
-kde-apps/filelight 24.12.49.9999 9999: Visualise disk usage with interactive map of concentric, segmented rings
-kde-apps/granatier 24.12.49.9999 9999: KDE Bomberman game
-kde-apps/grantlee-editor 24.12.49.9999 9999: Utilities and tools to manage themes in KDE PIM applications
-kde-apps/grantleetheme 24.12.49.9999 9999: Library for Grantlee plugins
-kde-apps/gwenview 24.12.49.9999 9999: Image viewer by KDE
-kde-apps/incidenceeditor 24.12.49.9999 9999: Incidence editor for KOrganizer
-kde-apps/juk 24.12.49.9999 9999: Jukebox and music manager by KDE
-kde-apps/k3b 24.12.49.9999 9999: Full-featured burning and ripping application based on KDE Frameworks
-kde-apps/kaccounts-integration 24.12.49.9999 9999: Administer web accounts for the sites and services across the Plasma desktop
-kde-apps/kaccounts-providers 24.12.49.9999 9999: KDE accounts providers
-kde-apps/kaddressbook 24.12.49.9999 9999: Address book application based on KDE Frameworks
-kde-apps/kajongg 24.12.49.9999 9999: Classical Mah Jongg for four players
-kde-apps/kalarm 24.12.49.9999 9999: Application to manage alarms and other timer based alerts for the desktop
-kde-apps/kalgebra 24.12.49.9999 9999: MathML-based 2D and 3D graph calculator by KDE
-kde-apps/kalzium 24.12.49.9999 9999: Periodic table of the elements
-kde-apps/kamera 24.12.49.9999 9999: Plasma integration for gphoto2 cameras
-kde-apps/kamoso 24.12.49.9999 9999: Application to take pictures and videos from your webcam by KDE
-kde-apps/kanagram 24.12.49.9999 9999: Game based on anagrams of words
-kde-apps/kapman 24.12.49.9999 9999: Pac-Man clone by KDE
-kde-apps/kapptemplate 24.12.49.9999 9999: Shell script to create the necessary framework to develop KDE applications
-kde-apps/kate 24.12.49.9999 9999: Multi-document editor with network transparency, Plasma integration and more
-kde-apps/kate-addons 24.12.49.9999 9999: Addons used by Kate
-kde-apps/kate-common 24.12.49.9999 9999: Common files for kate
-kde-apps/kate-lib 24.12.49.9999 9999: Shared library used by Kate/Kwrite and Kate-Addons
-kde-apps/katomic 24.12.49.9999 9999: KDE Atomic Entertainment Game
-kde-apps/kbackup 24.12.49.9999 9999: Program that lets you back up any directories or files
-kde-apps/kblackbox 24.12.49.9999 9999: Game of hide and seek played on a grid of boxes
-kde-apps/kblocks 24.12.49.9999 9999: Single-player Tetris-like KDE game
-kde-apps/kbounce 24.12.49.9999 9999: KDE Bounce Ball Game
-kde-apps/kbreakout 24.12.49.9999 9999: Breakout-like game by KDE
-kde-apps/kbruch 24.12.49.9999 9999: Educational application to learn calculating with fractions
-kde-apps/kcachegrind 24.12.49.9999 9999: Frontend for Cachegrind by KDE
-kde-apps/kcalc 24.12.49.9999 9999: KDE calculator
-kde-apps/kcalutils 24.12.49.9999 9999: Library providing utility functions for the handling of calendar data
-kde-apps/kcharselect 24.12.49.9999 9999: KDE character selection utility
-kde-apps/kcolorchooser 24.12.49.9999 9999: KDE color selector/editor
-kde-apps/kcron 24.12.49.9999 9999: KDE Task Scheduler
-kde-apps/kde-apps-meta 24.12.49.9999 9999: Meta package for the KDE Release Service collection
-kde-apps/kde-dev-scripts 24.12.49.9999 9999: KDE Development Scripts
-kde-apps/kde-dev-utils 24.12.49.9999 9999: KDE Development Utilities
-kde-apps/kdeaccessibility-meta 24.12.49.9999 9999: kdeaccessibility - merge this to pull in all kdeaccessiblity-derived packages
-kde-apps/kdeadmin-meta 24.12.49.9999 9999: KDE administration tools - merge this to pull in all kdeadmin-derived packages
-kde-apps/kdebugsettings 24.12.49.9999 9999: Application to enable/disable qCDebug
-kde-apps/kdecore-meta 24.12.49.9999 9999: kdecore - merge this to pull in the most basic applications
-kde-apps/kdeedu-data 24.12.49.9999 9999: Shared icons, artwork and data files for educational applications
-kde-apps/kdeedu-meta 24.12.49.9999 9999: KDE educational apps - merge this to pull in all kdeedu-derived packages
-kde-apps/kdegames-meta 24.12.49.9999 9999: kdegames - merge this to pull in all kdegames-derived packages
-kde-apps/kdegraphics-meta 24.12.49.9999 9999: kdegraphics - merge this to pull in all kdegraphics-derived packages
-kde-apps/kdegraphics-mobipocket 24.12.49.9999 9999: Library to support mobipocket ebooks
-kde-apps/kdemultimedia-meta 24.12.49.9999 9999: kdemultimedia - merge this to pull in all kdemultimedia-derived packages
-kde-apps/kdenetwork-filesharing 24.12.49.9999 9999: Samba filesharing plugin for file properties
-kde-apps/kdenetwork-meta 24.12.49.9999 9999: kdenetwork - merge this to pull in all kdenetwork-derived packages
-kde-apps/kdenlive 24.12.49.9999 9999: Non-linear video editing suite by KDE
-kde-apps/kdepim-addons 24.12.49.9999 9999: Plugins for KDE Personal Information Management Suite
-kde-apps/kdepim-meta 24.12.49.9999 9999: KDE PIM - merge this to pull in all kdepim-derived packages
-kde-apps/kdepim-runtime 24.12.49.9999 9999: Runtime plugin collection to extend the functionality of KDE PIM
-kde-apps/kdesdk-meta 24.12.49.9999 9999: KDE SDK - merge this to pull in all kdesdk-derived packages
-kde-apps/kdesdk-thumbnailers 24.12.49.9999 9999: Thumbnail generator for PO files
-kde-apps/kdesdk-thumbnailers-common 24.12.49.9999 9999: Common files for kdesdk-thumbnailers
-kde-apps/kdeutils-meta 24.12.49.9999 9999: kdeutils - merge this to pull in all kdeutils-derived packages
-kde-apps/kdf 24.12.49.9999 9999: KDE free disk space utility
-kde-apps/kdialog 24.12.49.9999 9999: Can be used to show nice dialog boxes from shell scripts
-kde-apps/kdiamond 24.12.49.9999 9999: Single player three-in-a-row game
-kde-apps/keditbookmarks 24.12.49.9999 9999: Bookmarks editor based on KDE Frameworks
-kde-apps/kfind 24.12.49.9999 9999: File finder utility based on KDE Frameworks
+kde-apps/akonadi 24.12.1 24.12.49.9999 9999: Storage service for PIM data and libraries for PIM apps
+kde-apps/akonadi-calendar 24.12.1 24.12.49.9999 9999: Library for akonadi calendar integration
+kde-apps/akonadi-calendar-tools-common 24.12.1 24.12.49.9999 9999: Common files for akonadi-calendar-tools
+kde-apps/akonadi-contacts 24.12.1 24.12.49.9999 9999: Library for akonadi contact integration
+kde-apps/akonadi-import-wizard 24.12.1 24.12.49.9999 9999: Assistant to import PIM data from other applications into Akonadi
+kde-apps/akonadi-mime 24.12.1 24.12.49.9999 9999: Library for akonadi mime types
+kde-apps/akonadi-search 24.12.1 24.12.49.9999 9999: Libraries and daemons to implement searching in Akonadi
+kde-apps/akonadiconsole 24.12.1 24.12.49.9999 9999: Application for debugging Akonadi Resources
+kde-apps/akregator 24.12.1 24.12.49.9999 9999: News feed aggregator
+kde-apps/analitza 24.12.1 24.12.49.9999 9999: KDE library for mathematical features
+kde-apps/ark 24.12.1 24.12.49.9999 9999: File archiver by KDE
+kde-apps/artikulate 24.12.1 24.12.49.9999 9999: Language learning application that helps improving pronunciation skills
+kde-apps/audiocd-kio 24.12.1 24.12.49.9999 9999: KIO worker for accessing audio CDs
+kde-apps/baloo-widgets 24.12.1 24.12.49.9999 9999: Widget library for baloo
+kde-apps/blinken 24.12.1 24.12.49.9999 9999: Memory enhancement game based on KDE Frameworks
+kde-apps/bomber 24.12.1 24.12.49.9999 9999: Single player arcade bombing game
+kde-apps/bovo 24.12.1 24.12.49.9999 9999: Five-in-a-row Board Game
+kde-apps/calendarjanitor 24.12.1 24.12.49.9999 9999: Tool to scan calendar data for buggy instances
+kde-apps/calendarsupport 24.12.1 24.12.49.9999 9999: Calendar support library
+kde-apps/cantor 24.12.1 24.12.49.9999 9999: Interface for doing mathematics and scientific computing
+kde-apps/cervisia 24.12.1 24.12.49.9999 9999: CVS frontend by KDE
+kde-apps/dolphin 24.12.1 24.12.49.9999 9999: Plasma filemanager focusing on usability
+kde-apps/dolphin-plugins-common 24.12.1 24.12.49.9999 9999: Common files for dolphin-plugins
+kde-apps/dolphin-plugins-dropbox 24.12.1 24.12.49.9999 9999: Dolphin plugin for Dropbox service integration
+kde-apps/dolphin-plugins-git 24.12.1 24.12.49.9999 9999: Dolphin plugin for Git integration
+kde-apps/dolphin-plugins-mercurial 24.12.1 24.12.49.9999 9999: Dolphin plugin for Mercurial integration
+kde-apps/dolphin-plugins-subversion 24.12.1 24.12.49.9999 9999: Dolphin plugin for Subversion integration
+kde-apps/dragon 24.12.1 24.12.49.9999 9999: Simple video player
+kde-apps/eventviews 24.12.1 24.12.49.9999 9999: Calendar viewer for KDE PIM
+kde-apps/ffmpegthumbs 24.12.1 24.12.49.9999 9999: FFmpeg based thumbnail generator for video files
+kde-apps/ffmpegthumbs-common 24.12.1 24.12.49.9999 9999: Common files for ffmpegthumbs
+kde-apps/filelight 24.12.1 24.12.49.9999 9999: Visualise disk usage with interactive map of concentric, segmented rings
+kde-apps/granatier 24.12.1 24.12.49.9999 9999: KDE Bomberman game
+kde-apps/grantlee-editor 24.12.1 24.12.49.9999 9999: Utilities and tools to manage themes in KDE PIM applications
+kde-apps/grantleetheme 24.12.1 24.12.49.9999 9999: Library for Grantlee plugins
+kde-apps/gwenview 24.12.1 24.12.49.9999 9999: Image viewer by KDE
+kde-apps/incidenceeditor 24.12.1 24.12.49.9999 9999: Incidence editor for KOrganizer
+kde-apps/juk 24.12.1 24.12.49.9999 9999: Jukebox and music manager by KDE
+kde-apps/k3b 24.12.1 24.12.49.9999 9999: Full-featured burning and ripping application based on KDE Frameworks
+kde-apps/kaccounts-integration 24.12.1 24.12.49.9999 9999: Administer web accounts for the sites and services across the Plasma desktop
+kde-apps/kaccounts-providers 24.12.1 24.12.49.9999 9999: KDE accounts providers
+kde-apps/kaddressbook 24.12.1 24.12.49.9999 9999: Address book application based on KDE Frameworks
+kde-apps/kajongg 24.12.1 24.12.49.9999 9999: Classical Mah Jongg for four players
+kde-apps/kalarm 24.12.1 24.12.49.9999 9999: Application to manage alarms and other timer based alerts for the desktop
+kde-apps/kalgebra 24.12.1 24.12.49.9999 9999: MathML-based 2D and 3D graph calculator by KDE
+kde-apps/kalzium 24.12.1 24.12.49.9999 9999: Periodic table of the elements
+kde-apps/kamera 24.12.1 24.12.49.9999 9999: Plasma integration for gphoto2 cameras
+kde-apps/kamoso 24.12.1 24.12.49.9999 9999: Application to take pictures and videos from your webcam by KDE
+kde-apps/kanagram 24.12.1 24.12.49.9999 9999: Game based on anagrams of words
+kde-apps/kapman 24.12.1 24.12.49.9999 9999: Pac-Man clone by KDE
+kde-apps/kapptemplate 24.12.1 24.12.49.9999 9999: Shell script to create the necessary framework to develop KDE applications
+kde-apps/kate 24.12.1 24.12.49.9999 9999: Multi-document editor with network transparency, Plasma integration and more
+kde-apps/kate-addons 24.12.1 24.12.49.9999 9999: Addons used by Kate
+kde-apps/kate-common 24.12.1 24.12.49.9999 9999: Common files for kate
+kde-apps/kate-lib 24.12.1 24.12.49.9999 9999: Shared library used by Kate/Kwrite and Kate-Addons
+kde-apps/katomic 24.12.1 24.12.49.9999 9999: KDE Atomic Entertainment Game
+kde-apps/kbackup 24.12.1 24.12.49.9999 9999: Program that lets you back up any directories or files
+kde-apps/kblackbox 24.12.1 24.12.49.9999 9999: Game of hide and seek played on a grid of boxes
+kde-apps/kblocks 24.12.1 24.12.49.9999 9999: Single-player Tetris-like KDE game
+kde-apps/kbounce 24.12.1 24.12.49.9999 9999: KDE Bounce Ball Game
+kde-apps/kbreakout 24.12.1 24.12.49.9999 9999: Breakout-like game by KDE
+kde-apps/kbruch 24.12.1 24.12.49.9999 9999: Educational application to learn calculating with fractions
+kde-apps/kcachegrind 24.12.1 24.12.49.9999 9999: Frontend for Cachegrind by KDE
+kde-apps/kcalc 24.12.1 24.12.49.9999 9999: KDE calculator
+kde-apps/kcalutils 24.12.1 24.12.49.9999 9999: Library providing utility functions for the handling of calendar data
+kde-apps/kcharselect 24.12.1 24.12.49.9999 9999: KDE character selection utility
+kde-apps/kcolorchooser 24.12.1 24.12.49.9999 9999: KDE color selector/editor
+kde-apps/kcron 24.12.1 24.12.49.9999 9999: KDE Task Scheduler
+kde-apps/kde-apps-meta 24.12.1 24.12.49.9999 9999: Meta package for the KDE Release Service collection
+kde-apps/kde-dev-scripts 24.12.1 24.12.49.9999 9999: KDE Development Scripts
+kde-apps/kde-dev-utils 24.12.1 24.12.49.9999 9999: KDE Development Utilities
+kde-apps/kdeaccessibility-meta 24.12.1 24.12.49.9999 9999: kdeaccessibility - merge this to pull in all kdeaccessiblity-derived packages
+kde-apps/kdeadmin-meta 24.12.1 24.12.49.9999 9999: KDE administration tools - merge this to pull in all kdeadmin-derived packages
+kde-apps/kdebugsettings 24.12.1 24.12.49.9999 9999: Application to enable/disable qCDebug
+kde-apps/kdecore-meta 24.12.1 24.12.49.9999 9999: kdecore - merge this to pull in the most basic applications
+kde-apps/kdeedu-data 24.12.1 24.12.49.9999 9999: Shared icons, artwork and data files for educational applications
+kde-apps/kdeedu-meta 24.12.1 24.12.49.9999 9999: KDE educational apps - merge this to pull in all kdeedu-derived packages
+kde-apps/kdegames-meta 24.12.1 24.12.49.9999 9999: kdegames - merge this to pull in all kdegames-derived packages
+kde-apps/kdegraphics-meta 24.12.1 24.12.49.9999 9999: kdegraphics - merge this to pull in all kdegraphics-derived packages
+kde-apps/kdegraphics-mobipocket 24.12.1 24.12.49.9999 9999: Library to support mobipocket ebooks
+kde-apps/kdemultimedia-meta 24.12.1 24.12.49.9999 9999: kdemultimedia - merge this to pull in all kdemultimedia-derived packages
+kde-apps/kdenetwork-filesharing 24.12.1 24.12.49.9999 9999: Samba filesharing plugin for file properties
+kde-apps/kdenetwork-meta 24.12.1 24.12.49.9999 9999: kdenetwork - merge this to pull in all kdenetwork-derived packages
+kde-apps/kdenlive 24.12.1 24.12.49.9999 9999: Non-linear video editing suite by KDE
+kde-apps/kdepim-addons 24.12.1 24.12.49.9999 9999: Plugins for KDE Personal Information Management Suite
+kde-apps/kdepim-meta 24.12.1 24.12.49.9999 9999: KDE PIM - merge this to pull in all kdepim-derived packages
+kde-apps/kdepim-runtime 24.12.1 24.12.49.9999 9999: Runtime plugin collection to extend the functionality of KDE PIM
+kde-apps/kdesdk-meta 24.12.1 24.12.49.9999 9999: KDE SDK - merge this to pull in all kdesdk-derived packages
+kde-apps/kdesdk-thumbnailers 24.12.1 24.12.49.9999 9999: Thumbnail generator for PO files
+kde-apps/kdesdk-thumbnailers-common 24.12.1 24.12.49.9999 9999: Common files for kdesdk-thumbnailers
+kde-apps/kdeutils-meta 24.12.1 24.12.49.9999 9999: kdeutils - merge this to pull in all kdeutils-derived packages
+kde-apps/kdf 24.12.1 24.12.49.9999 9999: KDE free disk space utility
+kde-apps/kdialog 24.12.1 24.12.49.9999 9999: Can be used to show nice dialog boxes from shell scripts
+kde-apps/kdiamond 24.12.1 24.12.49.9999 9999: Single player three-in-a-row game
+kde-apps/keditbookmarks 24.12.1 24.12.49.9999 9999: Bookmarks editor based on KDE Frameworks
+kde-apps/kfind 24.12.1 24.12.49.9999 9999: File finder utility based on KDE Frameworks
 kde-apps/kfloppy 9999: Straightforward graphical means to format 3.5" and 5.25" floppy disks
-kde-apps/kfourinline 24.12.49.9999 9999: KDE four-in-a-row game
-kde-apps/kgeography 24.12.49.9999 9999: Geography learning tool
-kde-apps/kget 24.12.49.9999 9999: Advanced download manager by KDE
-kde-apps/kgoldrunner 24.12.49.9999 9999: Game of action and puzzle solving by KDE
-kde-apps/kgpg 24.12.49.9999 9999: Frontend for GnuPG, a powerful encryption utility by KDE
-kde-apps/khangman 24.12.49.9999 9999: Classical hangman game by KDE
-kde-apps/khelpcenter 24.12.49.9999 9999: Application to read documentation for KDE Plasma, Applications, Utilities
-kde-apps/kidentitymanagement 24.12.49.9999 9999: Library for managing identitites
-kde-apps/kig 24.12.49.9999 9999: KDE Interactive Geometry tool
-kde-apps/kigo 24.12.49.9999 9999: Go game by KDE
-kde-apps/killbots 24.12.49.9999 9999: Kill the bots or they kill you!
-kde-apps/kimagemapeditor 24.12.49.9999 9999: Generator of HTML image maps
-kde-apps/kimap 24.12.49.9999 9999: Library for interacting with IMAP servers
-kde-apps/kio-extras 24.12.49.9999 9999: KIO plugins present a filesystem-like view of arbitrary data
-kde-apps/kiriki 24.12.49.9999 9999: An addictive and fun dice game
-kde-apps/kiten 24.12.49.9999 9999: KDE Japanese dictionary and reference
-kde-apps/kitinerary 24.12.49.9999 9999: Data Model and Extraction System for Travel Reservation information
-kde-apps/kjumpingcube 24.12.49.9999 9999: Tactical one or two player game
-kde-apps/kldap 24.12.49.9999 9999: Library for interacting with LDAP servers
-kde-apps/kleopatra 24.12.49.9999 9999: Certificate manager and GUI for OpenPGP and CMS cryptography
-kde-apps/klettres 24.12.49.9999 9999: Alphabet learning application
-kde-apps/klickety 24.12.49.9999 9999: An adaptation of the Clickomania game
-kde-apps/klines 24.12.49.9999 9999: A little KDE game about balls and how to get rid of them
-kde-apps/kmag 24.12.49.9999 9999: KDE screen magnifier
-kde-apps/kmahjongg 24.12.49.9999 9999: A tile matching game for one or two players
-kde-apps/kmail 24.12.49.9999 9999: Email client, supporting POP3 and IMAP mailboxes
-kde-apps/kmail-account-wizard 24.12.49.9999 9999: Assistant for KMail accounts configuration
-kde-apps/kmailtransport 24.12.49.9999 9999: Mail transport service
-kde-apps/kmbox 24.12.49.9999 9999: Library for accessing MBox format mail storages
-kde-apps/kmime 24.12.49.9999 9999: Libary for handling mail messages and newsgroup articles
-kde-apps/kmines 24.12.49.9999 9999: Classic mine sweeper game
-kde-apps/kmix 24.12.49.9999 9999: Volume control gui based on KDE Frameworks
-kde-apps/kmousetool 24.12.49.9999 9999: KDE program that clicks the mouse for you
-kde-apps/kmouth 24.12.49.9999 9999: Text-to-speech synthesizer front end
-kde-apps/kmplot 24.12.49.9999 9999: Mathematical function plotter
-kde-apps/knavalbattle 24.12.49.9999 9999: Battleship clone by KDE
-kde-apps/knetwalk 24.12.49.9999 9999: KDE version of the popular NetWalk game for system administrators
-kde-apps/knights 24.12.49.9999 9999: Simple chess board based on KDE Frameworks
-kde-apps/kolf 24.12.49.9999 9999: Minigolf game by KDE
-kde-apps/kollision 24.12.49.9999 9999: Simple ball dodging game
-kde-apps/kolourpaint 24.12.49.9999 9999: Paint Program by KDE
-kde-apps/kompare 24.12.49.9999 9999: Graphical File Differences Tool
-kde-apps/konqueror 24.12.49.9999 9999: Web browser and file manager based on KDE Frameworks
-kde-apps/konquest 24.12.49.9999 9999: Galactic Strategy KDE Game
-kde-apps/konsole 24.12.49.9999 9999: KDE's terminal emulator
-kde-apps/konsolekalendar 24.12.49.9999 9999: Command line interface to KDE calendars
-kde-apps/kontact 24.12.49.9999 9999: Container application to unify several major PIM applications within one
-kde-apps/kontactinterface 24.12.49.9999 9999: Library for embedding KParts in a Kontact component
-kde-apps/korganizer 24.12.49.9999 9999: Organizational assistant, providing calendars and other similar functionality
-kde-apps/kpat 24.12.49.9999 9999: KDE patience game
-kde-apps/kpimtextedit 24.12.49.9999 9999: Extended text editor for PIM applications
-kde-apps/kpkpass 24.12.49.9999 9999: Library to deal with Apple Wallet pass files
-kde-apps/kqtquickcharts 24.12.49.9999 9999: Qt Quick plugin for beautiful and interactive charts
-kde-apps/krdc 24.12.49.9999 9999: Remote desktop connection (RDP and VNC) client
-kde-apps/kreversi 24.12.49.9999 9999: Board game by KDE
-kde-apps/krfb 24.12.49.9999 9999: VNC-compatible server to share Plasma desktops
-kde-apps/kruler 24.12.49.9999 9999: Screen ruler for Plasma
-kde-apps/kshisen 24.12.49.9999 9999: Solitaire-like game played using the standard set of Mahjong tiles
-kde-apps/ksirk 24.12.49.9999 9999: Port of the board game Risk
-kde-apps/ksmtp 24.12.49.9999 9999: Job-based library to send email through an SMTP server
-kde-apps/ksnakeduel 24.12.49.9999 9999: KDE Tron game
-kde-apps/kspaceduel 24.12.49.9999 9999: Space Game by KDE
-kde-apps/ksquares 24.12.49.9999 9999: KDE clone of the game squares
-kde-apps/ksudoku 24.12.49.9999 9999: Logic-based symbol placement puzzle by KDE
-kde-apps/ksystemlog 24.12.49.9999 9999: System log viewer by KDE
-kde-apps/kteatime 24.12.49.9999 9999: KDE timer for making a fine cup of tea
-kde-apps/ktimer 24.12.49.9999 9999: Little tool to execute programs after some time
-kde-apps/ktouch 24.12.49.9999 9999: Program that helps to learn and practice touch typing
-kde-apps/ktuberling 24.12.49.9999 9999: Potato game for kids by KDE
-kde-apps/kturtle 24.12.49.9999 9999: Educational programming environment using the Logo programming language
-kde-apps/kubrick 24.12.49.9999 9999: Game based on the "Rubik's Cube" puzzle by KDE
-kde-apps/kwalletmanager 24.12.49.9999 9999: Tool to manage the passwords on your system using KDE Wallet
-kde-apps/kwave 24.12.49.9999 9999: Sound editor built on KDE Frameworks that can edit many types of audio files
-kde-apps/kwordquiz 24.12.49.9999 9999: Powerful flashcard and vocabulary learning program
-kde-apps/kwrite 24.12.49.9999 9999: Simple text editor based on KDE Frameworks
-kde-apps/libgravatar 24.12.49.9999 9999: Library for gravatar integration
-kde-apps/libkcddb 24.12.49.9999 9999: KDE library for CDDB
-kde-apps/libkcddb-common 24.12.49.9999 9999: Common files for libkcddb
-kde-apps/libkcompactdisc 24.12.49.9999 9999: Library for playing & ripping CDs
-kde-apps/libkdcraw 24.12.49.9999 9999: Digital camera raw image library wrapper
-kde-apps/libkdegames 24.12.49.9999 9999: Base library common to many KDE games
-kde-apps/libkdepim 24.12.49.9999 9999: Common PIM libraries
-kde-apps/libkeduvocdocument 24.12.49.9999 9999: Library for reading/writing KVTML
-kde-apps/libkexiv2 24.12.49.9999 9999: Wrapper around exiv2 library
-kde-apps/libkgapi 24.12.49.9999 9999: Library for accessing Google calendar and contact resources
-kde-apps/libkleo 24.12.49.9999 9999: Library for encryption handling
-kde-apps/libkmahjongg 24.12.49.9999 9999: Mahjongg library based on Qt/KDE Frameworks
-kde-apps/libkomparediff2 24.12.49.9999 9999: Library to compare files and strings
-kde-apps/libksane 24.12.49.9999 9999: SANE Library interface based on KDE Frameworks
-kde-apps/libksane-common 24.12.49.9999 9999: Common files for libksane
-kde-apps/libksieve 24.12.49.9999 9999: Common PIM libraries
-kde-apps/libktnef 24.12.49.9999 9999: Library for handling TNEF data
-kde-apps/lokalize 24.12.49.9999 9999: Localization tool for KDE software and other free and open source software
-kde-apps/lskat 24.12.49.9999 9999: Skat game by KDE
-kde-apps/mailcommon 24.12.49.9999 9999: Common mail library
-kde-apps/mailimporter 24.12.49.9999 9999: Library to import mail from various sources
-kde-apps/marble 24.12.49.9999 9999: Virtual Globe and World Atlas to learn more about Earth
-kde-apps/mbox-importer 24.12.49.9999 9999: Import mbox email archives from various sources into Akonadi
-kde-apps/messagelib 24.12.49.9999 9999: Libraries for messaging functions
-kde-apps/mimetreeparser 24.12.49.9999 9999: Libraries for messaging functions
-kde-apps/minuet 24.12.49.9999 9999: Music Education software by KDE
-kde-apps/okular 24.12.49.9999 9999: Universal document viewer based on KDE Frameworks
-kde-apps/palapeli 24.12.49.9999 9999: Jigsaw puzzle game by KDE
-kde-apps/parley 24.12.49.9999 9999: Vocabulary trainer to help you memorize things
-kde-apps/picmi 24.12.49.9999 9999: Nonogram logic game by KDE
-kde-apps/pim-data-exporter 24.12.49.9999 9999: Assistant to backup and archive PIM data and configuration
-kde-apps/pim-sieve-editor 24.12.49.9999 9999: Assistant for editing IMAP Sieve filters
-kde-apps/pimcommon 24.12.49.9999 9999: Common PIM libraries
-kde-apps/poxml 24.12.49.9999 9999: KDE utility to translate DocBook XML files using gettext po files
-kde-apps/rocs 24.12.49.9999 9999: Interface to work with Graph Theory
-kde-apps/signon-kwallet-extension 24.12.49.9999 9999: KWallet extension for signond
-kde-apps/spectacle 24.12.49.9999 9999: Screenshot capture utility
-kde-apps/step 24.12.49.9999 9999: Interactive physics simulator
-kde-apps/svgpart 24.12.49.9999 9999: Kpart for viewing SVGs
-kde-apps/sweeper 24.12.49.9999 9999: Privacy settings widget to clean unwanted traces on the system
-kde-apps/thumbnailers 24.12.49.9999 9999: Metapackage for KIO thumbnail generators
-kde-apps/umbrello 24.12.49.9999 9999: KDE UML Modeller
-kde-apps/yakuake 24.12.49.9999 9999: Quake-style terminal emulator based on konsole
-kde-frameworks/attica 9999: Framework providing access to Open Collaboration Services
-kde-frameworks/baloo 9999: Framework for searching and managing metadata
-kde-frameworks/bluez-qt 9999: Qt wrapper for Bluez 5 DBus API
-kde-frameworks/breeze-icons 9999: Breeze SVG icon theme
-kde-frameworks/extra-cmake-modules 9999: Extra modules and scripts for CMake
-kde-frameworks/frameworkintegration 9999: Framework for integrating Qt applications with KDE Plasma workspaces
+kde-apps/kfourinline 24.12.1 24.12.49.9999 9999: KDE four-in-a-row game
+kde-apps/kgeography 24.12.1 24.12.49.9999 9999: Geography learning tool
+kde-apps/kget 24.12.1 24.12.49.9999 9999: Advanced download manager by KDE
+kde-apps/kgoldrunner 24.12.1 24.12.49.9999 9999: Game of action and puzzle solving by KDE
+kde-apps/kgpg 24.12.1 24.12.49.9999 9999: Frontend for GnuPG, a powerful encryption utility by KDE
+kde-apps/khangman 24.12.1 24.12.49.9999 9999: Classical hangman game by KDE
+kde-apps/khelpcenter 24.12.1 24.12.49.9999 9999: Application to read documentation for KDE Plasma, Applications, Utilities
+kde-apps/kidentitymanagement 24.12.1 24.12.49.9999 9999: Library for managing identitites
+kde-apps/kig 24.12.1 24.12.49.9999 9999: KDE Interactive Geometry tool
+kde-apps/kigo 24.12.1 24.12.49.9999 9999: Go game by KDE
+kde-apps/killbots 24.12.1 24.12.49.9999 9999: Kill the bots or they kill you!
+kde-apps/kimagemapeditor 24.12.1 24.12.49.9999 9999: Generator of HTML image maps
+kde-apps/kimap 24.12.1 24.12.49.9999 9999: Library for interacting with IMAP servers
+kde-apps/kio-extras 24.12.1 24.12.49.9999 9999: KIO plugins present a filesystem-like view of arbitrary data
+kde-apps/kiriki 24.12.1 24.12.49.9999 9999: An addictive and fun dice game
+kde-apps/kiten 24.12.1 24.12.49.9999 9999: KDE Japanese dictionary and reference
+kde-apps/kitinerary 24.12.1 24.12.49.9999 9999: Data Model and Extraction System for Travel Reservation information
+kde-apps/kjumpingcube 24.12.1 24.12.49.9999 9999: Tactical one or two player game
+kde-apps/kldap 24.12.1 24.12.49.9999 9999: Library for interacting with LDAP servers
+kde-apps/kleopatra 24.12.1 24.12.49.9999 9999: Certificate manager and GUI for OpenPGP and CMS cryptography
+kde-apps/klettres 24.12.1 24.12.49.9999 9999: Alphabet learning application
+kde-apps/klickety 24.12.1 24.12.49.9999 9999: An adaptation of the Clickomania game
+kde-apps/klines 24.12.1 24.12.49.9999 9999: A little KDE game about balls and how to get rid of them
+kde-apps/kmag 24.12.1 24.12.49.9999 9999: KDE screen magnifier
+kde-apps/kmahjongg 24.12.1 24.12.49.9999 9999: A tile matching game for one or two players
+kde-apps/kmail 24.12.1 24.12.49.9999 9999: Email client, supporting POP3 and IMAP mailboxes
+kde-apps/kmail-account-wizard 24.12.1 24.12.49.9999 9999: Assistant for KMail accounts configuration
+kde-apps/kmailtransport 24.12.1 24.12.49.9999 9999: Mail transport service
+kde-apps/kmbox 24.12.1 24.12.49.9999 9999: Library for accessing MBox format mail storages
+kde-apps/kmime 24.12.1 24.12.49.9999 9999: Libary for handling mail messages and newsgroup articles
+kde-apps/kmines 24.12.1 24.12.49.9999 9999: Classic mine sweeper game
+kde-apps/kmix 24.12.1 24.12.49.9999 9999: Volume control gui based on KDE Frameworks
+kde-apps/kmousetool 24.12.1 24.12.49.9999 9999: KDE program that clicks the mouse for you
+kde-apps/kmouth 24.12.1 24.12.49.9999 9999: Text-to-speech synthesizer front end
+kde-apps/kmplot 24.12.1 24.12.49.9999 9999: Mathematical function plotter
+kde-apps/knavalbattle 24.12.1 24.12.49.9999 9999: Battleship clone by KDE
+kde-apps/knetwalk 24.12.1 24.12.49.9999 9999: KDE version of the popular NetWalk game for system administrators
+kde-apps/knights 24.12.1 24.12.49.9999 9999: Simple chess board based on KDE Frameworks
+kde-apps/kolf 24.12.1 24.12.49.9999 9999: Minigolf game by KDE
+kde-apps/kollision 24.12.1 24.12.49.9999 9999: Simple ball dodging game
+kde-apps/kolourpaint 24.12.1 24.12.49.9999 9999: Paint Program by KDE
+kde-apps/kompare 24.12.1 24.12.49.9999 9999: Graphical File Differences Tool
+kde-apps/konqueror 24.12.1 24.12.49.9999 9999: Web browser and file manager based on KDE Frameworks
+kde-apps/konquest 24.12.1 24.12.49.9999 9999: Galactic Strategy KDE Game
+kde-apps/konsole 24.12.1 24.12.49.9999 9999: KDE's terminal emulator
+kde-apps/konsolekalendar 24.12.1 24.12.49.9999 9999: Command line interface to KDE calendars
+kde-apps/kontact 24.12.1 24.12.49.9999 9999: Container application to unify several major PIM applications within one
+kde-apps/kontactinterface 24.12.1 24.12.49.9999 9999: Library for embedding KParts in a Kontact component
+kde-apps/korganizer 24.12.1 24.12.49.9999 9999: Organizational assistant, providing calendars and other similar functionality
+kde-apps/kpat 24.12.1 24.12.49.9999 9999: KDE patience game
+kde-apps/kpimtextedit 24.12.1 24.12.49.9999 9999: Extended text editor for PIM applications
+kde-apps/kpkpass 24.12.1 24.12.49.9999 9999: Library to deal with Apple Wallet pass files
+kde-apps/kqtquickcharts 24.12.1 24.12.49.9999 9999: Qt Quick plugin for beautiful and interactive charts
+kde-apps/krdc 24.12.1 24.12.49.9999 9999: Remote desktop connection (RDP and VNC) client
+kde-apps/kreversi 24.12.1 24.12.49.9999 9999: Board game by KDE
+kde-apps/krfb 24.12.1 24.12.49.9999 9999: VNC-compatible server to share Plasma desktops
+kde-apps/kruler 24.12.1 24.12.49.9999 9999: Screen ruler for Plasma
+kde-apps/kshisen 24.12.1 24.12.49.9999 9999: Solitaire-like game played using the standard set of Mahjong tiles
+kde-apps/ksirk 24.12.1 24.12.49.9999 9999: Port of the board game Risk
+kde-apps/ksmtp 24.12.1 24.12.49.9999 9999: Job-based library to send email through an SMTP server
+kde-apps/ksnakeduel 24.12.1 24.12.49.9999 9999: KDE Tron game
+kde-apps/kspaceduel 24.12.1 24.12.49.9999 9999: Space Game by KDE
+kde-apps/ksquares 24.12.1 24.12.49.9999 9999: KDE clone of the game squares
+kde-apps/ksudoku 24.12.1 24.12.49.9999 9999: Logic-based symbol placement puzzle by KDE
+kde-apps/ksystemlog 24.12.1 24.12.49.9999 9999: System log viewer by KDE
+kde-apps/kteatime 24.12.1 24.12.49.9999 9999: KDE timer for making a fine cup of tea
+kde-apps/ktimer 24.12.1 24.12.49.9999 9999: Little tool to execute programs after some time
+kde-apps/ktouch 24.12.1 24.12.49.9999 9999: Program that helps to learn and practice touch typing
+kde-apps/ktuberling 24.12.1 24.12.49.9999 9999: Potato game for kids by KDE
+kde-apps/kturtle 24.12.1 24.12.49.9999 9999: Educational programming environment using the Logo programming language
+kde-apps/kubrick 24.12.1 24.12.49.9999 9999: Game based on the "Rubik's Cube" puzzle by KDE
+kde-apps/kwalletmanager 24.12.1 24.12.49.9999 9999: Tool to manage the passwords on your system using KDE Wallet
+kde-apps/kwave 24.12.1 24.12.49.9999 9999: Sound editor built on KDE Frameworks that can edit many types of audio files
+kde-apps/kwordquiz 24.12.1 24.12.49.9999 9999: Powerful flashcard and vocabulary learning program
+kde-apps/kwrite 24.12.1 24.12.49.9999 9999: Simple text editor based on KDE Frameworks
+kde-apps/libgravatar 24.12.1 24.12.49.9999 9999: Library for gravatar integration
+kde-apps/libkcddb 24.12.1 24.12.49.9999 9999: KDE library for CDDB
+kde-apps/libkcddb-common 24.12.1 24.12.49.9999 9999: Common files for libkcddb
+kde-apps/libkcompactdisc 24.12.1 24.12.49.9999 9999: Library for playing & ripping CDs
+kde-apps/libkdcraw 24.12.1 24.12.49.9999 9999: Digital camera raw image library wrapper
+kde-apps/libkdegames 24.12.1 24.12.49.9999 9999: Base library common to many KDE games
+kde-apps/libkdepim 24.12.1 24.12.49.9999 9999: Common PIM libraries
+kde-apps/libkeduvocdocument 24.12.1 24.12.49.9999 9999: Library for reading/writing KVTML
+kde-apps/libkexiv2 24.12.1 24.12.49.9999 9999: Wrapper around exiv2 library
+kde-apps/libkgapi 24.12.1 24.12.49.9999 9999: Library for accessing Google calendar and contact resources
+kde-apps/libkleo 24.12.1 24.12.49.9999 9999: Library for encryption handling
+kde-apps/libkmahjongg 24.12.1 24.12.49.9999 9999: Mahjongg library based on Qt/KDE Frameworks
+kde-apps/libkomparediff2 24.12.1 24.12.49.9999 9999: Library to compare files and strings
+kde-apps/libksane 24.12.1 24.12.49.9999 9999: SANE Library interface based on KDE Frameworks
+kde-apps/libksane-common 24.12.1 24.12.49.9999 9999: Common files for libksane
+kde-apps/libksieve 24.12.1 24.12.49.9999 9999: Common PIM libraries
+kde-apps/libktnef 24.12.1 24.12.49.9999 9999: Library for handling TNEF data
+kde-apps/lokalize 24.12.1 24.12.49.9999 9999: Localization tool for KDE software and other free and open source software
+kde-apps/lskat 24.12.1 24.12.49.9999 9999: Skat game by KDE
+kde-apps/mailcommon 24.12.1 24.12.49.9999 9999: Common mail library
+kde-apps/mailimporter 24.12.1 24.12.49.9999 9999: Library to import mail from various sources
+kde-apps/marble 24.12.1 24.12.49.9999 9999: Virtual Globe and World Atlas to learn more about Earth
+kde-apps/mbox-importer 24.12.1 24.12.49.9999 9999: Import mbox email archives from various sources into Akonadi
+kde-apps/messagelib 24.12.1 24.12.49.9999 9999: Libraries for messaging functions
+kde-apps/mimetreeparser 24.12.1 24.12.49.9999 9999: Libraries for messaging functions
+kde-apps/minuet 24.12.1 24.12.49.9999 9999: Music Education software by KDE
+kde-apps/okular 24.12.1 24.12.49.9999 9999: Universal document viewer based on KDE Frameworks
+kde-apps/palapeli 24.12.1 24.12.49.9999 9999: Jigsaw puzzle game by KDE
+kde-apps/parley 24.12.1 24.12.49.9999 9999: Vocabulary trainer to help you memorize things
+kde-apps/picmi 24.12.1 24.12.49.9999 9999: Nonogram logic game by KDE
+kde-apps/pim-data-exporter 24.12.1 24.12.49.9999 9999: Assistant to backup and archive PIM data and configuration
+kde-apps/pim-sieve-editor 24.12.1 24.12.49.9999 9999: Assistant for editing IMAP Sieve filters
+kde-apps/pimcommon 24.12.1 24.12.49.9999 9999: Common PIM libraries
+kde-apps/poxml 24.12.1 24.12.49.9999 9999: KDE utility to translate DocBook XML files using gettext po files
+kde-apps/rocs 24.12.1 24.12.49.9999 9999: Interface to work with Graph Theory
+kde-apps/signon-kwallet-extension 24.12.1 24.12.49.9999 9999: KWallet extension for signond
+kde-apps/spectacle 24.12.1 24.12.49.9999 9999: Screenshot capture utility
+kde-apps/step 24.12.1 24.12.49.9999 9999: Interactive physics simulator
+kde-apps/svgpart 24.12.1 24.12.49.9999 9999: Kpart for viewing SVGs
+kde-apps/sweeper 24.12.1 24.12.49.9999 9999: Privacy settings widget to clean unwanted traces on the system
+kde-apps/thumbnailers 24.12.1 24.12.49.9999 9999: Metapackage for KIO thumbnail generators
+kde-apps/umbrello 24.12.1 24.12.49.9999 9999: KDE UML Modeller
+kde-apps/yakuake 24.12.1 24.12.49.9999 9999: Quake-style terminal emulator based on konsole
+kde-frameworks/attica 6.10.0 9999: Framework providing access to Open Collaboration Services
+kde-frameworks/baloo 6.10.0 9999: Framework for searching and managing metadata
+kde-frameworks/bluez-qt 6.10.0 9999: Qt wrapper for Bluez 5 DBus API
+kde-frameworks/breeze-icons 6.10.0 9999: Breeze SVG icon theme
+kde-frameworks/extra-cmake-modules 6.10.0 9999: Extra modules and scripts for CMake
+kde-frameworks/frameworkintegration 6.10.0 9999: Framework for integrating Qt applications with KDE Plasma workspaces
 kde-frameworks/kapidox 9999: Framework for building KDE API documentation in a standard format and style
-kde-frameworks/karchive 9999: Framework for reading, creation, and manipulation of various archive formats
-kde-frameworks/kauth 9999: Framework to let applications perform actions as a privileged user
-kde-frameworks/kbookmarks 9999: Framework for managing bookmarks stored in XBEL format
-kde-frameworks/kcalendarcore 9999: Library for interfacing with calendars
-kde-frameworks/kcmutils 9999: Framework to work with KDE System Settings modules
-kde-frameworks/kcodecs 9999: Framework for manipulating strings using various encodings
-kde-frameworks/kcolorscheme 9999: Framework for downloading and sharing additional application data
-kde-frameworks/kcompletion 9999: Framework for common completion tasks such as filename or URL completion
-kde-frameworks/kconfig 9999: Framework for reading and writing configuration
-kde-frameworks/kconfigwidgets 9999: Framework providing an assortment of configuration-related widgets
-kde-frameworks/kcontacts 9999: Address book API based on KDE Frameworks
-kde-frameworks/kcoreaddons 9999: Framework for solving common problems such as caching, randomisation, and more
-kde-frameworks/kcrash 9999: Framework for intercepting and handling application crashes
-kde-frameworks/kdav 9999: DAV protocol implemention with KJobs
-kde-frameworks/kdbusaddons 9999: Framework for registering services and applications per freedesktop standards
-kde-frameworks/kdeclarative 9999: Framework providing integration of QML and KDE work spaces
-kde-frameworks/kded 9999: Central daemon of KDE workspaces
-kde-frameworks/kdesu 9999: Framework to handle super user actions
-kde-frameworks/kdnssd 9999: Framework for network service discovery using Zeroconf
-kde-frameworks/kdoctools 9999: Tools to generate documentation in various formats from DocBook files
-kde-frameworks/kfilemetadata 9999: Library for extracting file metadata
-kde-frameworks/kglobalaccel 9999: Framework to handle global shortcuts
-kde-frameworks/kguiaddons 9999: Framework providing assorted high-level user interface components
-kde-frameworks/kholidays 9999: Library to determine holidays and other special events for a geographical region
-kde-frameworks/ki18n 9999: Framework based on Gettext for internationalizing user interface text
-kde-frameworks/kiconthemes 9999: Framework for icon theming and configuration
-kde-frameworks/kidletime 9999: Framework for detection and notification of device idle time
-kde-frameworks/kimageformats 9999: Framework providing additional format plugins for Qt's image I/O system
-kde-frameworks/kio 9999: Framework providing transparent file and data management
-kde-frameworks/kirigami 9999: Lightweight user interface framework for mobile and convergent applications
-kde-frameworks/kitemmodels 9999: Framework providing data models to help with tasks such as sorting and filtering
-kde-frameworks/kitemviews 9999: Framework providing additional widgets for item models
-kde-frameworks/kjobwidgets 9999: Framework providing assorted widgets for showing the progress of jobs
-kde-frameworks/knewstuff 9999: Framework for downloading and sharing additional application data
-kde-frameworks/knotifications 9999: Framework for notifying the user of an event
-kde-frameworks/knotifyconfig 9999: Framework for configuring desktop notifications
-kde-frameworks/kpackage 9999: Framework to install and load packages of non binary content
-kde-frameworks/kparts 9999: Framework providing elaborate user-interface components
-kde-frameworks/kpeople 9999: KDE contact person abstraction library
-kde-frameworks/kplotting 9999: Framework providing easy data-plotting functions
-kde-frameworks/kpty 9999: Framework for pseudo terminal devices and running child processes
-kde-frameworks/kquickcharts 9999: QtQuick plugin providing high-performance charts
-kde-frameworks/krunner 9999: Framework for providing different actions given a string query
-kde-frameworks/kservice 9999: Advanced plugin and service introspection
-kde-frameworks/kstatusnotifieritem 9999: Implementation of Status Notifier Items
-kde-frameworks/ksvg 9999: Components for handling SVGs
-kde-frameworks/ktexteditor 9999: Framework providing a full text editor component
-kde-frameworks/ktexttemplate 9999: Library to allow separating the structure of documents from data they contain
-kde-frameworks/ktextwidgets 9999: Framework providing an assortment of widgets for displaying and editing text
-kde-frameworks/kunitconversion 9999: Framework for converting units
-kde-frameworks/kuserfeedback 9999: Framework to collect user feedback for applications via telemetry and surveys
-kde-frameworks/kwallet 9999: Framework providing desktop-wide storage for passwords
-kde-frameworks/kwidgetsaddons 9999: An assortment of high-level widgets for common tasks
-kde-frameworks/kwindowsystem 9999: Framework providing access to properties and features of the window manager
-kde-frameworks/kxmlgui 9999: Framework for managing menu and toolbar actions in an abstract way
-kde-frameworks/modemmanager-qt 9999: ModemManager bindings for Qt
-kde-frameworks/networkmanager-qt 9999: NetworkManager bindings for Qt
+kde-frameworks/karchive 6.10.0 9999: Framework for reading, creation, and manipulation of various archive formats
+kde-frameworks/kauth 6.10.0 9999: Framework to let applications perform actions as a privileged user
+kde-frameworks/kbookmarks 6.10.0 9999: Framework for managing bookmarks stored in XBEL format
+kde-frameworks/kcalendarcore 6.10.0 9999: Library for interfacing with calendars
+kde-frameworks/kcmutils 6.10.0 9999: Framework to work with KDE System Settings modules
+kde-frameworks/kcodecs 6.10.0 9999: Framework for manipulating strings using various encodings
+kde-frameworks/kcolorscheme 6.10.0 9999: Framework for downloading and sharing additional application data
+kde-frameworks/kcompletion 6.10.0 9999: Framework for common completion tasks such as filename or URL completion
+kde-frameworks/kconfig 6.10.0 9999: Framework for reading and writing configuration
+kde-frameworks/kconfigwidgets 6.10.0 9999: Framework providing an assortment of configuration-related widgets
+kde-frameworks/kcontacts 6.10.0 9999: Address book API based on KDE Frameworks
+kde-frameworks/kcoreaddons 6.10.0 9999: Framework for solving common problems such as caching, randomisation, and more
+kde-frameworks/kcrash 6.10.0 9999: Framework for intercepting and handling application crashes
+kde-frameworks/kdav 6.10.0 9999: DAV protocol implemention with KJobs
+kde-frameworks/kdbusaddons 6.10.0 9999: Framework for registering services and applications per freedesktop standards
+kde-frameworks/kdeclarative 6.10.0 9999: Framework providing integration of QML and KDE work spaces
+kde-frameworks/kded 6.10.0 9999: Central daemon of KDE workspaces
+kde-frameworks/kdesu 6.10.0 9999: Framework to handle super user actions
+kde-frameworks/kdnssd 6.10.0 9999: Framework for network service discovery using Zeroconf
+kde-frameworks/kdoctools 6.10.0 9999: Tools to generate documentation in various formats from DocBook files
+kde-frameworks/kfilemetadata 6.10.0 9999: Library for extracting file metadata
+kde-frameworks/kglobalaccel 6.10.0 9999: Framework to handle global shortcuts
+kde-frameworks/kguiaddons 6.10.0 9999: Framework providing assorted high-level user interface components
+kde-frameworks/kholidays 6.10.0 9999: Library to determine holidays and other special events for a geographical region
+kde-frameworks/ki18n 6.10.0 9999: Framework based on Gettext for internationalizing user interface text
+kde-frameworks/kiconthemes 6.10.0 9999: Framework for icon theming and configuration
+kde-frameworks/kidletime 6.10.0 9999: Framework for detection and notification of device idle time
+kde-frameworks/kimageformats 6.10.0 9999: Framework providing additional format plugins for Qt's image I/O system
+kde-frameworks/kio 6.10.0 9999: Framework providing transparent file and data management
+kde-frameworks/kirigami 6.10.0 9999: Lightweight user interface framework for mobile and convergent applications
+kde-frameworks/kitemmodels 6.10.0 9999: Framework providing data models to help with tasks such as sorting and filtering
+kde-frameworks/kitemviews 6.10.0 9999: Framework providing additional widgets for item models
+kde-frameworks/kjobwidgets 6.10.0 9999: Framework providing assorted widgets for showing the progress of jobs
+kde-frameworks/knewstuff 6.10.0 9999: Framework for downloading and sharing additional application data
+kde-frameworks/knotifications 6.10.0 9999: Framework for notifying the user of an event
+kde-frameworks/knotifyconfig 6.10.0 9999: Framework for configuring desktop notifications
+kde-frameworks/kpackage 6.10.0 9999: Framework to install and load packages of non binary content
+kde-frameworks/kparts 6.10.0 9999: Framework providing elaborate user-interface components
+kde-frameworks/kpeople 6.10.0 9999: KDE contact person abstraction library
+kde-frameworks/kplotting 6.10.0 9999: Framework providing easy data-plotting functions
+kde-frameworks/kpty 6.10.0 9999: Framework for pseudo terminal devices and running child processes
+kde-frameworks/kquickcharts 6.10.0 9999: QtQuick plugin providing high-performance charts
+kde-frameworks/krunner 6.10.0 9999: Framework for providing different actions given a string query
+kde-frameworks/kservice 6.10.0 9999: Advanced plugin and service introspection
+kde-frameworks/kstatusnotifieritem 6.10.0 9999: Implementation of Status Notifier Items
+kde-frameworks/ksvg 6.10.0 9999: Components for handling SVGs
+kde-frameworks/ktexteditor 6.10.0 9999: Framework providing a full text editor component
+kde-frameworks/ktexttemplate 6.10.0 9999: Library to allow separating the structure of documents from data they contain
+kde-frameworks/ktextwidgets 6.10.0 9999: Framework providing an assortment of widgets for displaying and editing text
+kde-frameworks/kunitconversion 6.10.0 9999: Framework for converting units
+kde-frameworks/kuserfeedback 6.10.0 9999: Framework to collect user feedback for applications via telemetry and surveys
+kde-frameworks/kwallet 6.10.0 9999: Framework providing desktop-wide storage for passwords
+kde-frameworks/kwidgetsaddons 6.10.0 9999: An assortment of high-level widgets for common tasks
+kde-frameworks/kwindowsystem 6.10.0 9999: Framework providing access to properties and features of the window manager
+kde-frameworks/kxmlgui 6.10.0 9999: Framework for managing menu and toolbar actions in an abstract way
+kde-frameworks/modemmanager-qt 6.10.0 9999: ModemManager bindings for Qt
+kde-frameworks/networkmanager-qt 6.10.0 9999: NetworkManager bindings for Qt
 kde-frameworks/oxygen-icons 9999: Oxygen SVG icon theme
-kde-frameworks/prison 9999: QRCode and data matrix barcode library
-kde-frameworks/purpose 9999: Library for providing abstractions to get the developer's purposes fulfilled
-kde-frameworks/purpose-kaccounts-services 9999: KAccounts generated service files for nextcloud and google services
-kde-frameworks/qqc2-desktop-style 9999: Style for QtQuickControls 2 that uses QWidget's QStyle for painting
-kde-frameworks/solid 9999: Provider for platform independent hardware discovery, abstraction and management
-kde-frameworks/sonnet 9999: Framework for providing spell-checking through abstraction of popular backends
-kde-frameworks/syndication 9999: Library for parsing RSS and Atom feeds
-kde-frameworks/syntax-highlighting 9999: Framework for syntax highlighting
-kde-frameworks/threadweaver 9999: Framework for managing threads using job and queue-based interfaces
+kde-frameworks/prison 6.10.0 9999: QRCode and data matrix barcode library
+kde-frameworks/purpose 6.10.0 9999: Library for providing abstractions to get the developer's purposes fulfilled
+kde-frameworks/purpose-kaccounts-services 6.10.0 9999: KAccounts generated service files for nextcloud and google services
+kde-frameworks/qqc2-desktop-style 6.10.0 9999: Style for QtQuickControls 2 that uses QWidget's QStyle for painting
+kde-frameworks/solid 6.10.0 9999: Provider for platform independent hardware discovery, abstraction and management
+kde-frameworks/sonnet 6.10.0 9999: Framework for providing spell-checking through abstraction of popular backends
+kde-frameworks/syndication 6.10.0 9999: Library for parsing RSS and Atom feeds
+kde-frameworks/syntax-highlighting 6.10.0 9999: Framework for syntax highlighting
+kde-frameworks/threadweaver 6.10.0 9999: Framework for managing threads using job and queue-based interfaces
 kde-misc/akonadiclient 9999: Commandline interface for accessing Akonadi
 kde-misc/basket 9999: Multiple information organizer - a DropDrawers clone
-kde-misc/colord-kde 24.12.49.9999 9999: Provides interfaces and session daemon to colord
+kde-misc/colord-kde 24.12.1 24.12.49.9999 9999: Provides interfaces and session daemon to colord
 kde-misc/itinerary 9999: Digital travel assistant with a priority on protecting your privacy
-kde-misc/kclock 24.12.49.9999 9999: Convergent clock application for Plasma
-kde-misc/kdeconnect 24.12.49.9999 9999: Adds communication between KDE Plasma and your smartphone
+kde-misc/kclock 24.12.1 24.12.49.9999 9999: Convergent clock application for Plasma
+kde-misc/kdeconnect 24.12.1 24.12.49.9999 9999: Adds communication between KDE Plasma and your smartphone
 kde-misc/kdiff3 9999: Frontend to diff3 based on KDE Frameworks
 kde-misc/kio-fuse 9999: FUSE interface for KIO
-kde-misc/kio-gdrive 24.12.49.9999 9999: KIO worker for Google Drive service
-kde-misc/kio-gdrive-common 24.12.49.9999 9999: Common files for kio-gdrive
+kde-misc/kio-gdrive 24.12.1 24.12.49.9999 9999: KIO worker for Google Drive service
+kde-misc/kio-gdrive-common 24.12.1 24.12.49.9999 9999: Common files for kio-gdrive
 kde-misc/kio-gopher 9999: Gopher KIO worker for Konqueror
 kde-misc/kio-stash 9999: KIO worker and daemon to stash discontinuous file selections
 kde-misc/kooka 9999: Scanning application by KDE
@@ -356,13 +356,13 @@ kde-misc/kregexpeditor 9999: GUI for creating and editing regular expressions
 kde-misc/krename 9999: Powerful batch file renamer
 kde-misc/krusader 9999: Advanced twin-panel (commander-style) file-manager with many extras
 kde-misc/ktrip 9999: Public transport assistant targeted towards mobile Linux and Android
-kde-misc/kweather 24.12.49.9999 9999: Weather forecast application for Plasma with flat and dynamic/animated views
-kde-misc/markdownpart 24.12.49.9999 9999: Markdown viewer KParts plugin based on QTextDocument
+kde-misc/kweather 24.12.1 24.12.49.9999 9999: Weather forecast application for Plasma with flat and dynamic/animated views
+kde-misc/markdownpart 24.12.1 24.12.49.9999 9999: Markdown viewer KParts plugin based on QTextDocument
 kde-misc/plasma-pass 9999: Plasma applet to access password from pass
 kde-misc/rsibreak 9999: Small utility which bothers you at certain intervals
-kde-misc/skanlite 24.12.49.9999 9999: Simple image scanning application based on libksane and KDE Frameworks
+kde-misc/skanlite 24.12.1 24.12.49.9999 9999: Simple image scanning application based on libksane and KDE Frameworks
 kde-misc/tellico 9999: Collection manager based on KDE Frameworks
-kde-misc/zanshin 24.12.49.9999 9999: Getting things done application by KDE
+kde-misc/zanshin 24.12.1 24.12.49.9999 9999: Getting things done application by KDE
 kde-plasma/bluedevil 9999: Bluetooth stack for KDE Plasma
 kde-plasma/breeze 9999: Breeze visual style for the Plasma desktop
 kde-plasma/breeze-grub 9999: Breeze theme for GRUB
@@ -434,19 +434,19 @@ kde-plasma/wacomtablet 9999: Wacom system settings module that supports differen
 kde-plasma/xdg-desktop-portal-kde 9999: Backend implementation for xdg-desktop-portal that is using Qt/KDE Frameworks
 media-gfx/digikam 9999: Digital photo management application
 media-gfx/kgeotag 9999: Photo geotagging program
-media-gfx/kgraphviewer 24.12.49.9999 9999: Graphviz dot graph file viewer
-media-gfx/kio-blender-thumbnailer 24.12.49.9999 9999: KIO thumbnail generator for Blender files
-media-gfx/kio-mobi-thumbnailer 24.12.49.9999 9999: KIO thumbnail generator for Mobipocket files
-media-gfx/kio-ps-thumbnailer 24.12.49.9999 9999: KIO thumbnail generator for DVI, EPS, PDF and PS files
-media-gfx/kio-raw-thumbnailer 24.12.49.9999 9999: KIO thumbnail generator for RAW files
+media-gfx/kgraphviewer 24.12.1 24.12.49.9999 9999: Graphviz dot graph file viewer
+media-gfx/kio-blender-thumbnailer 24.12.1 24.12.49.9999 9999: KIO thumbnail generator for Blender files
+media-gfx/kio-mobi-thumbnailer 24.12.1 24.12.49.9999 9999: KIO thumbnail generator for Mobipocket files
+media-gfx/kio-ps-thumbnailer 24.12.1 24.12.49.9999 9999: KIO thumbnail generator for DVI, EPS, PDF and PS files
+media-gfx/kio-raw-thumbnailer 24.12.1 24.12.49.9999 9999: KIO thumbnail generator for RAW files
 media-gfx/kphotoalbum 9999: Tool for indexing, searching, and viewing images
 media-gfx/krita 9999: Free digital painting application. Digital Painting, Creative Freedom!
 media-gfx/kxstitch 9999: Program to create cross stitch patterns
-media-gfx/skanpage 24.12.49.9999 9999: Multi-page scanning application supporting image and pdf files
+media-gfx/skanpage 24.12.1 24.12.49.9999 9999: Multi-page scanning application supporting image and pdf files
 media-gfx/symboleditor 9999: Application to create libraries of QPainterPath objects with rendering hints
 media-libs/kquickimageeditor 9999: QtQuick components providing basic image editing capabilities
-media-libs/ksanecore 24.12.49.9999 9999: Qt-based interface for SANE library to control scanner hardware
-media-libs/ksanecore-common 24.12.49.9999 9999: Common files for ksanecore
+media-libs/ksanecore 24.12.1 24.12.49.9999 9999: Qt-based interface for SANE library to control scanner hardware
+media-libs/ksanecore-common 24.12.1 24.12.49.9999 9999: Common files for ksanecore
 media-libs/liblastfm 9999: Collection of libraries to integrate Last.fm services
 media-libs/libqaccessibilityclient 9999: Library for writing accessibility clients such as screen readers
 media-libs/mpvqt 9999: libmpv wrapper for QtQuick2 and QML
@@ -454,31 +454,31 @@ media-libs/phonon 9999: KDE multimedia abstraction library
 media-libs/phonon-vlc 9999: VLC backend for the Phonon multimedia library
 media-libs/pulseaudio-qt 9999: Qt bindings for libpulse
 media-sound/amarok 9999: Advanced audio player based on KDE Frameworks
-media-sound/audex 24.12.49.9999 9999: Tool for ripping compact discs
-media-sound/elisa 24.12.49.9999 9999: Simple music player by KDE
-media-sound/kasts 24.12.49.9999 9999: Convergent podcast application for desktop and mobile
+media-sound/audex 24.12.1 24.12.49.9999 9999: Tool for ripping compact discs
+media-sound/elisa 24.12.1 24.12.49.9999 9999: Simple music player by KDE
+media-sound/kasts 24.12.1 24.12.49.9999 9999: Convergent podcast application for desktop and mobile
 media-sound/kid3 9999: Simple tag editor based on Qt
-media-sound/krecorder 24.12.49.9999 9999: Convergent audio recording application for Plasma
+media-sound/krecorder 24.12.1 24.12.49.9999 9999: Convergent audio recording application for Plasma
 media-video/kaffeine 9999: Media player with digital TV support by KDE
 media-video/plasmatube 9999: YouTube video player based on mpv, yt-dlp, and Invidious
 media-video/subtitlecomposer 9999: Text-based subtitles editor
-net-im/neochat 24.12.49.9999 9999: Client for Matrix, the decentralized communication protocol
-net-im/tokodon 24.12.49.9999 9999: Mastodon client for Plasma and Plasma Mobile
-net-irc/konversation 24.12.49.9999 9999: User friendly IRC Client
+net-im/neochat 24.12.1 24.12.49.9999 9999: Client for Matrix, the decentralized communication protocol
+net-im/tokodon 24.12.1 24.12.49.9999 9999: Mastodon client for Plasma and Plasma Mobile
+net-irc/konversation 24.12.1 24.12.49.9999 9999: User friendly IRC Client
 net-libs/kdsoap 9999: Qt-based client-side and server-side SOAP component
 net-libs/kdsoap-ws-discovery-client 9999: WS-Discovery client library based on KDSoap
-net-libs/libktorrent 24.12.49.9999 9999: BitTorrent library based on KDE Frameworks
+net-libs/libktorrent 24.12.1 24.12.49.9999 9999: BitTorrent library based on KDE Frameworks
 net-libs/libtmdbqt 9999: Qt library to query the movie database API (themoviedb.org)
-net-misc/kio-zeroconf 24.12.49.9999 9999: KIO worker to discover file systems by DNS-SD (DNS Service Discovery)
-net-misc/kio-zeroconf-common 24.12.49.9999 9999: Common files for kio-zeroconf
+net-misc/kio-zeroconf 24.12.1 24.12.49.9999 9999: KIO worker to discover file systems by DNS-SD (DNS Service Discovery)
+net-misc/kio-zeroconf-common 24.12.1 24.12.49.9999 9999: Common files for kio-zeroconf
 net-misc/smb4k 9999: Advanced network neighborhood browser
-net-news/alligator 24.12.49.9999 9999: Convergent RSS/Atom feed reader for Plasma
-net-p2p/ktorrent 24.12.49.9999 9999: Powerful BitTorrent client based on KDE Frameworks
+net-news/alligator 24.12.1 24.12.49.9999 9999: Convergent RSS/Atom feed reader for Plasma
+net-p2p/ktorrent 24.12.1 24.12.49.9999 9999: Powerful BitTorrent client based on KDE Frameworks
 sci-astronomy/kstars 9999: Desktop Planetarium
 sci-calculators/keurocalc 9999: Universal currency converter and calculator
 sci-electronics/ktechlab 9999: IDE for microcontrollers and electronics
 sci-mathematics/rkward 9999: IDE for the R-project
 sys-auth/polkit-qt 9999: Qt wrapper around polkit-1 client libraries
-sys-block/partitionmanager 24.12.49.9999 9999: Utility for management of disks, partitions and file systems
-sys-libs/kpmcore 24.12.49.9999 9999: Library for managing partitions
-www-client/falkon 24.12.49.9999 9999: Cross-platform web browser using QtWebEngine
+sys-block/partitionmanager 24.12.1 24.12.49.9999 9999: Utility for management of disks, partitions and file systems
+sys-libs/kpmcore 24.12.1 24.12.49.9999 9999: Library for managing partitions
+www-client/falkon 24.12.1 24.12.49.9999 9999: Cross-platform web browser using QtWebEngine
