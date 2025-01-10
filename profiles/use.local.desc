@@ -235,10 +235,12 @@ kde-plasma/plasma-meta:xwayland - Enable Wayland windows screensharing to XWayla
 kde-plasma/plasma-nm:openconnect - Build support for the OpenConnect VPN client
 kde-plasma/plasma-nm:teamd - Enable Teamd control support
 kde-plasma/plasma-workspace:appstream - Enable AppStream software metadata support
+kde-plasma/plasma-workspace:networkmanager - Enable support for location-based time zone changes
 kde-plasma/plasma-workspace:policykit - Enable locale generation and Users KCM using sys-auth/polkit and sys-apps/accountsservice
 kde-plasma/plasma-workspace:screencast - Enable camera indicator applet (requires media-video/pipewire at runtime)
 kde-plasma/plasma-workspace:telemetry - Enable User Feedback control module for kde-plasma/systemsettings
 kde-plasma/plasma-workspace:wallpaper-metadata - Show metadata for image wallpaper plugin using kde-apps/libkexiv2
+kde-plasma/plasma5support:activities - Enable kactivities support
 kde-plasma/powerdevil:brightness-control - Enable screen brightness control using app-misc/ddcutil
 media-gfx/digikam:addressbook - Enable akonadi contact integration
 media-gfx/digikam:imagemagick - Enable support for additional image formats such as XCF, FITS, HEIC etc.
