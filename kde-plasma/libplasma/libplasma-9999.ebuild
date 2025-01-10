@@ -6,7 +6,7 @@ EAPI=8
 ECM_QTHELP="true"
 ECM_TEST="true"
 KFMIN=9999
-QTMIN=6.7.2
+QTMIN=6.8.1
 inherit ecm plasma.kde.org
 
 DESCRIPTION="Plasma library and runtime components based upon KF6 and Qt6"
@@ -27,7 +27,6 @@ COMMON_DEPEND="
 	>=kde-frameworks/karchive-${KFMIN}:6
 	>=kde-frameworks/kcmutils-${KFMIN}:6
 	>=kde-frameworks/kconfig-${KFMIN}:6[qml]
-	>=kde-frameworks/kconfigwidgets-${KFMIN}:6
 	>=kde-frameworks/kcoreaddons-${KFMIN}:6
 	>=kde-frameworks/kglobalaccel-${KFMIN}:6
 	>=kde-frameworks/kguiaddons-${KFMIN}:6
@@ -47,7 +46,7 @@ COMMON_DEPEND="
 	!gles2-only? ( media-libs/libglvnd[X] )
 "
 DEPEND="${COMMON_DEPEND}
-	>=dev-libs/plasma-wayland-protocols-1.14.0
+	>=dev-libs/plasma-wayland-protocols-1.16.0
 	x11-base/xorg-proto
 "
 RDEPEND="${COMMON_DEPEND}

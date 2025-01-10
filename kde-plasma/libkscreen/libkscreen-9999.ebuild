@@ -6,7 +6,7 @@ EAPI=8
 ECM_QTHELP="true"
 ECM_TEST="forceoptional"
 KFMIN=9999
-QTMIN=6.7.2
+QTMIN=6.8.1
 inherit ecm plasma.kde.org
 
 DESCRIPTION="Plasma screen management library"
@@ -28,7 +28,7 @@ RDEPEND="
 	x11-libs/libxcb:=
 "
 DEPEND="${RDEPEND}
-	>=dev-libs/plasma-wayland-protocols-1.14.0
+	>=dev-libs/plasma-wayland-protocols-1.16.0
 "
 BDEPEND="
 	>=dev-qt/qttools-${QTMIN}:6[linguist]
