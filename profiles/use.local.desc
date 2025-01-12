@@ -16,6 +16,8 @@ app-office/kmymoney:activities - Enable kde-plasma/plasma-activities integration
 app-office/kmymoney:experimental - Build unfinished features. DANGEROUS to set - this *will* chew up data
 app-office/kmymoney:hbci - Enable HBCI support using net-libs/aqbanking
 app-office/kmymoney:holidays - Enable kde-frameworks/kholidays integration
+app-office/kmymoney:sql - Enable storage of financial data in SQL Db via dev-qt/qtsql
+app-office/kmymoney:sqlcipher - Enable SQLite3 database encryption support via dev-db/sqlcipher
 app-office/libalkimia:webengine - Enable online quotes using dev-qt/qtwebengine
 app-office/skrooge:activities - Enable kactivities support
 app-text/kbibtex:webengine - Use dev-qt/qtwebengine for HTML previews

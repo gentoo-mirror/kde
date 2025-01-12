@@ -14,9 +14,9 @@ app-misc/francis 24.12.49.9999 9999: Productivity application using the well-kno
 app-misc/kookbook 9999: Simple recipe manager taking structured markdown for recipes
 app-office/calligra 9999: KDE Office Suite
 app-office/calligraplan 9999: Project management application
-app-office/kmymoney 5.1.9999 9999: Personal finance manager based on KDE Frameworks
+app-office/kmymoney 5.2.9999 9999: Personal finance manager based on KDE Frameworks
 app-office/ktimetracker 9999: Todo management and time tracker
-app-office/libalkimia 8.9999 9999: Library with common classes and functionality used by KDE finance applications
+app-office/libalkimia 8.2.9999 9999: Library with common classes and functionality used by KDE finance applications
 app-office/merkuro 24.12.49.9999 9999: Calendar application using Akonadi
 app-office/skrooge 9999: Personal finances manager, aiming at being simple and intuitive
 app-text/arianna 9999: EPub Reader for mobile devices
