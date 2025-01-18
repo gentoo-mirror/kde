@@ -7,7 +7,7 @@ ECM_TEST="true"
 KFMIN=6.9.0
 QTMIN=6.7.2
 PYTHON_COMPAT=( python3_{10..12} )
-inherit ecm gear.kde.org python-single-r1
+inherit ecm gear.kde.org python-single-r1 xdg
 
 DESCRIPTION="Cross-platform web browser using QtWebEngine"
 HOMEPAGE="https://www.falkon.org/ https://apps.kde.org/falkon/"
@@ -62,7 +62,6 @@ BDEPEND=">=dev-qt/qttools-${QTMIN}:6[linguist]"
 
 pkg_setup() {
 	use python && python-single-r1_pkg_setup
-	ecm_pkg_setup
 }
 
 src_configure() {
