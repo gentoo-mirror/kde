@@ -406,7 +406,7 @@ kde-plasma/plasma-activities 6.2.91 6.3.49.9999 9999: Core components for KDE's 
 kde-plasma/plasma-activities-stats 6.2.91 6.3.49.9999 9999: Library for accessing usage data collected by the activities system
 kde-plasma/plasma-bigscreen 9999: Plasma shell for TVs
 kde-plasma/plasma-browser-integration 6.2.91 6.3.49.9999 9999: Integrate Chrome/Firefox better into Plasma through browser extensions
-kde-plasma/plasma-desktop 6.2.91-r1 6.3.49.9999 9999: KDE Plasma desktop
+kde-plasma/plasma-desktop 6.2.91.1 6.3.49.9999 9999: KDE Plasma desktop
 kde-plasma/plasma-disks 6.2.91 6.3.49.9999 9999: Monitors S.M.A.R.T. capable devices for imminent failure
 kde-plasma/plasma-firewall 6.2.91 6.3.49.9999 9999: Plasma frontend for Firewalld or UFW
 kde-plasma/plasma-integration 6.2.91 6.3.49.9999 9999: Qt Platform Theme integration plugins for the Plasma workspaces
