@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -40,7 +40,6 @@ CMAKE_SKIP_TESTS=(
 
 pkg_setup() {
 	use test && python-any-r1_pkg_setup
-	ecm_pkg_setup
 }
 
 src_configure() {
@@ -61,5 +60,4 @@ pkg_postinst() {
 		optfeature "Microsoft Word/Powerpoint file indexing" app-text/catdoc
 		optfeature "Microsoft Excel file indexing" dev-libs/libxls
 	fi
-	ecm_pkg_postinst
 }
