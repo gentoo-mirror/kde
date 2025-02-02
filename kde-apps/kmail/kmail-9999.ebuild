@@ -17,7 +17,7 @@ https://kontact.kde.org/components/kmail/"
 LICENSE="GPL-2+ handbook? ( FDL-1.2+ )"
 SLOT="6"
 KEYWORDS=""
-IUSE="activities pch speech telemetry"
+IUSE="activities speech telemetry"
 
 RESTRICT="test" # bug 616878
 
@@ -25,6 +25,7 @@ RESTRICT="test" # bug 616878
 COMMON_DEPEND="
 	>=app-crypt/gpgme-1.23.1-r1:=[cxx,qt6]
 	>=dev-libs/ktextaddons-1.5.4:6[speech?]
+	>=dev-libs/libgpg-error-1.36
 	>=dev-libs/qtkeychain-0.14.2:=[qt6(+)]
 	>=dev-qt/qtbase-${QTMIN}:6[dbus,gui,network,widgets]
 	>=dev-qt/qtwebengine-${QTMIN}:6[widgets]
@@ -99,7 +100,6 @@ src_prepare() {
 src_configure() {
 	local mycmakeargs=(
 		-DOPTION_USE_PLASMA_ACTIVITIES=$(usex activities)
-		-DUSE_PRECOMPILED_HEADERS=$(usex pch)
 		$(cmake_use_find_package speech KF6TextEditTextToSpeech)
 		$(cmake_use_find_package telemetry KF6UserFeedback)
 	)
