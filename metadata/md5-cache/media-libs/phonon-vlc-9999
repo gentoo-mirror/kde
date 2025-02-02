@@ -12,4 +12,4 @@ RDEPEND=>=media-libs/phonon-4.12.0[qt5(-)=,qt6(+)=] media-video/vlc:=[dbus,ogg,v
 REQUIRED_USE=|| ( qt5 qt6 )
 SLOT=0
 _eclasses_=toolchain-funcs	14648d8795f7779e11e1bc7cf08b7536	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	bdff848933960d0e5d4f3097d4faa126	git-r3	875eb471682d3e1f18da124be97dcc81	kde.org	2eea56ed41440913be4caa3d255d2db3	out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364
-_md5_=ee25d9031efb2746b5baeac70ab61e73
+_md5_=0e24f2979268d398a8a5c782fb761c21

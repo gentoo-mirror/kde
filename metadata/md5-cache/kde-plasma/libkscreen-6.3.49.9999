@@ -12,4 +12,4 @@ RDEPEND=dev-libs/wayland >=dev-qt/qtbase-6.8.1:6=[dbus,gui] >=dev-qt/qtwayland-6
 RESTRICT=test !test? ( test )
 SLOT=6/8
 _eclasses_=toolchain-funcs	14648d8795f7779e11e1bc7cf08b7536	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	bdff848933960d0e5d4f3097d4faa126	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	6a4cca81899cd905707345e879f037ff	git-r3	875eb471682d3e1f18da124be97dcc81	kde.org	2eea56ed41440913be4caa3d255d2db3	plasma.kde.org	d594941de2abbb4bba823749af5a70cb
-_md5_=43bb4a201e7c967c5f1d6f8079dc603e
+_md5_=0190862362ce04d2270ca801410f53ec

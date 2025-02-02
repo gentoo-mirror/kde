@@ -10,4 +10,4 @@ RDEPEND=!kde-plasma/plasma-meta:5 !kde-plasma/khotkeys:5 >=kde-plasma/breeze-6.2
 REQUIRED_USE=^^ ( elogind systemd )
 SLOT=6
 _eclasses_=toolchain-funcs	14648d8795f7779e11e1bc7cf08b7536	multilib	b2a329026f2e404e9e371097dda47f96
-_md5_=78a7bac2c99a60cd0e23f9c06755d0b7
+_md5_=7ef56dfe711b484cc7556c69686f4dea

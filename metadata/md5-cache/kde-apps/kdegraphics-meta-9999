@@ -6,4 +6,4 @@ IUSE=color-management scanner +screencast +webengine
 LICENSE=metapackage
 RDEPEND=>=kde-apps/gwenview-9999:* >=kde-apps/kamera-9999:* >=kde-apps/kcolorchooser-9999:* >=kde-apps/kdegraphics-mobipocket-9999:* >=kde-apps/kolourpaint-9999:* >=kde-apps/kruler-9999:* >=kde-apps/libkdcraw-9999:* >=kde-apps/libkexiv2-9999:* >=kde-apps/okular-9999:* >=kde-apps/svgpart-9999:* >=kde-apps/thumbnailers-9999:* >=media-gfx/kgraphviewer-9999:* color-management? ( >=kde-misc/colord-kde-9999:* ) scanner? ( >=kde-apps/libksane-9999:* >=kde-misc/skanlite-9999:* webengine? ( >=media-gfx/skanpage-9999:* ) ) screencast? ( >=kde-apps/spectacle-9999:* )
 SLOT=0
-_md5_=cbc4f09fcd79288588f898b205d68f31
+_md5_=f9b98b5bdfb5dc94f79be884996fd7e5

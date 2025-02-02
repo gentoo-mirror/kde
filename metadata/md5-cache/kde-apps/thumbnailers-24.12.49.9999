@@ -6,4 +6,4 @@ IUSE=blender gettext mobi pdf raw video
 LICENSE=metapackage
 RDEPEND=blender? ( >=media-gfx/kio-blender-thumbnailer-24.12.49.9999:6 ) gettext? ( >=kde-apps/kdesdk-thumbnailers-24.12.49.9999:6 ) mobi? ( >=media-gfx/kio-mobi-thumbnailer-24.12.49.9999:6 ) pdf? ( >=media-gfx/kio-ps-thumbnailer-24.12.49.9999:6 ) raw? ( >=media-gfx/kio-raw-thumbnailer-24.12.49.9999:6 ) video? ( >=kde-apps/ffmpegthumbs-24.12.49.9999:6 )
 SLOT=6
-_md5_=7c99621c0b3014a6240b5537888feb90
+_md5_=b3d7698612ff6ddb560a462b6adbafda

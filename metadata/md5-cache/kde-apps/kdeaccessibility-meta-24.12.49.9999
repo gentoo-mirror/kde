@@ -5,4 +5,4 @@ HOMEPAGE=https://apps.kde.org/
 LICENSE=metapackage
 RDEPEND=>=app-accessibility/kontrast-24.12.49.9999:* >=kde-apps/kmag-24.12.49.9999:* >=kde-apps/kmousetool-24.12.49.9999:* >=kde-apps/kmouth-24.12.49.9999:*
 SLOT=0
-_md5_=1533c0eb589c723cb8c0c5f78d7e59b6
+_md5_=4c7f036fc7bd1af53bdcadeaa90bbc60

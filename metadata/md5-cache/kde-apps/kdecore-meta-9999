@@ -6,4 +6,4 @@ IUSE=+share +webengine
 LICENSE=metapackage
 RDEPEND=>=kde-apps/dolphin-9999:* >=kde-apps/kdialog-9999:* >=kde-apps/keditbookmarks-9999:* >=kde-apps/kfind-9999:* >=kde-apps/konsole-9999:* >=kde-apps/kwrite-9999:* webengine? ( >=kde-apps/khelpcenter-9999:* || ( >=www-client/falkon-9999 >=kde-apps/konqueror-9999:* ) ) share? ( kde-frameworks/purpose:6 )
 SLOT=0
-_md5_=8e8a120ff6abf98a6488e015b467c2cc
+_md5_=5f3f4d5ddf964995bcf27c238dab637c
