@@ -80,7 +80,6 @@ kde-apps/dolphin-plugins-subversion 24.12.49.9999 9999: Dolphin plugin for Subve
 kde-apps/dragon 24.12.49.9999 9999: Simple video player
 kde-apps/eventviews 24.12.49.9999 9999: Calendar viewer for KDE PIM
 kde-apps/ffmpegthumbs 24.12.49.9999 9999: FFmpeg based thumbnail generator for video files
-kde-apps/ffmpegthumbs-common 24.12.49.9999 9999: Common files for ffmpegthumbs
 kde-apps/filelight 24.12.49.9999 9999: Visualise disk usage with interactive map of concentric, segmented rings
 kde-apps/granatier 24.12.49.9999 9999: KDE Bomberman game
 kde-apps/grantlee-editor 24.12.49.9999 9999: Utilities and tools to manage themes in KDE PIM applications
@@ -139,7 +138,6 @@ kde-apps/kdepim-meta 24.12.49.9999 9999: KDE PIM - merge this to pull in all kde
 kde-apps/kdepim-runtime 24.12.49.9999 9999: Runtime plugin collection to extend the functionality of KDE PIM
 kde-apps/kdesdk-meta 24.12.49.9999 9999: KDE SDK - merge this to pull in all kdesdk-derived packages
 kde-apps/kdesdk-thumbnailers 24.12.49.9999 9999: Thumbnail generator for PO files
-kde-apps/kdesdk-thumbnailers-common 24.12.49.9999 9999: Common files for kdesdk-thumbnailers
 kde-apps/kdeutils-meta 24.12.49.9999 9999: kdeutils - merge this to pull in all kdeutils-derived packages
 kde-apps/kdf 24.12.49.9999 9999: KDE free disk space utility
 kde-apps/kdialog 24.12.49.9999 9999: Can be used to show nice dialog boxes from shell scripts
@@ -447,7 +445,6 @@ media-gfx/skanpage 24.12.49.9999 9999: Multi-page scanning application supportin
 media-gfx/symboleditor 9999: Application to create libraries of QPainterPath objects with rendering hints
 media-libs/kquickimageeditor 9999: QtQuick components providing basic image editing capabilities
 media-libs/ksanecore 24.12.49.9999 9999: Qt-based interface for SANE library to control scanner hardware
-media-libs/ksanecore-common 24.12.49.9999 9999: Common files for ksanecore
 media-libs/liblastfm 9999: Collection of libraries to integrate Last.fm services
 media-libs/libqaccessibilityclient 9999: Library for writing accessibility clients such as screen readers
 media-libs/mpvqt 9999: libmpv wrapper for QtQuick2 and QML
@@ -471,7 +468,6 @@ net-libs/kdsoap-ws-discovery-client 9999: WS-Discovery client library based on K
 net-libs/libktorrent 24.12.49.9999 9999: BitTorrent library based on KDE Frameworks
 net-libs/libtmdbqt 9999: Qt library to query the movie database API (themoviedb.org)
 net-misc/kio-zeroconf 24.12.49.9999 9999: KIO worker to discover file systems by DNS-SD (DNS Service Discovery)
-net-misc/kio-zeroconf-common 24.12.49.9999 9999: Common files for kio-zeroconf
 net-misc/smb4k 9999: Advanced network neighborhood browser
 net-news/alligator 24.12.49.9999 9999: Convergent RSS/Atom feed reader for Plasma
 net-p2p/ktorrent 24.12.49.9999 9999: Powerful BitTorrent client based on KDE Frameworks
