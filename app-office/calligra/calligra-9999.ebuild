@@ -6,25 +6,21 @@ EAPI=8
 CHECKREQS_DISK_BUILD="4G"
 ECM_HANDBOOK="forceoptional"
 ECM_TEST="forceoptional"
-KFMIN=6.3.0
-QTMIN=6.6.2
-inherit check-reqs ecm kde.org
+KFMIN=6.9.0
+QTMIN=6.8.0
+inherit check-reqs ecm gear.kde.org xdg
 
 DESCRIPTION="KDE Office Suite"
 HOMEPAGE="https://calligra.org/"
-
-if [[ ${KDE_BUILD_TYPE} == release ]]; then
-	SRC_URI="mirror://kde/stable/${PN}/${P}.tar.xz"
-	KEYWORDS="~amd64 ~ppc64 ~x86"
-fi
-
 PATCHSET="${PN}-3.2.1-patchset-1"
 SRC_URI+=" https://dev.gentoo.org/~asturm/distfiles/${PATCHSET}.tar.xz"
 
-CAL_FTS=( karbon sheets stage words )
-
 LICENSE="GPL-2"
 SLOT="0"
+if [[ ${KDE_BUILD_TYPE} == release ]]; then
+	KEYWORDS="~amd64 ~ppc64 ~x86"
+fi
+CAL_FTS=( karbon sheets stage words )
 IUSE="+charts +fontconfig gsl +import-filter +lcms okular +pdf phonon
 	+truetype webengine X $(printf 'calligra_features_%s ' ${CAL_FTS[@]})"
 
@@ -79,7 +75,7 @@ COMMON_DEPEND="
 	lcms? ( media-libs/lcms:2 )
 	okular? ( kde-apps/okular:6 )
 	pdf? ( app-text/poppler:=[qt6] )
-	phonon? ( >=media-libs/phonon-4.12.0[qt6(-)] )
+	phonon? ( >=media-libs/phonon-4.12.0[qt6(+)] )
 	truetype? ( media-libs/freetype:2 )
 	webengine? ( >=dev-qt/qtwebengine-${QTMIN}:6[widgets] )
 	calligra_features_sheets? ( dev-cpp/eigen:3 )
@@ -100,15 +96,6 @@ BDEPEND="
 "
 
 PATCHES=( "${WORKDIR}"/${PATCHSET}/${PN}-3.1.89-no-arch-detection.patch ) # downstream
-
-pkg_pretend() {
-	check-reqs_pkg_pretend
-}
-
-pkg_setup() {
-	ecm_pkg_setup
-	check-reqs_pkg_setup
-}
 
 src_configure() {
 	local cal_ft myproducts
