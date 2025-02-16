@@ -459,6 +459,7 @@ media-sound/krecorder 24.12.49.9999 9999: Convergent audio recording application
 media-video/kaffeine 9999: Media player with digital TV support by KDE
 media-video/plasmatube 9999: YouTube video player based on mpv, yt-dlp, and Invidious
 media-video/subtitlecomposer 9999: Text-based subtitles editor
+net-im/kaidan 9999: Modern XMPP chat app for every device
 net-im/neochat 24.12.49.9999 9999: Client for Matrix, the decentralized communication protocol
 net-im/tokodon 24.12.49.9999 9999: Mastodon client for Plasma and Plasma Mobile
 net-irc/konversation 24.12.49.9999 9999: User friendly IRC Client
