@@ -408,6 +408,7 @@ kde-plasma/plasma-desktop 6.3.49.9999 9999: KDE Plasma desktop
 kde-plasma/plasma-disks 6.3.49.9999 9999: Monitors S.M.A.R.T. capable devices for imminent failure
 kde-plasma/plasma-firewall 6.3.49.9999 9999: Plasma frontend for Firewalld or UFW
 kde-plasma/plasma-integration 6.3.49.9999 9999: Qt Platform Theme integration plugins for the Plasma workspaces
+kde-plasma/plasma-keyboard 9999: Virtual keyboard based on Qt Virtual Keyboard
 kde-plasma/plasma-login-sessions 6.3.49.9999 9999: KDE Plasma login sessions
 kde-plasma/plasma-meta 6.3.49.9999 9999: Merge this to pull in all Plasma 6 packages
 kde-plasma/plasma-nm 6.3.49.9999 9999: KDE Plasma applet for NetworkManager
@@ -425,9 +426,9 @@ kde-plasma/polkit-kde-agent 6.3.49.9999 9999: PolKit agent module for KDE Plasma
 kde-plasma/powerdevil 6.3.49.9999 9999: Power management for KDE Plasma Shell
 kde-plasma/print-manager 6.3.49.9999 9999: Manage CUPS print jobs and printers in Plasma
 kde-plasma/qqc2-breeze-style 6.3.49.9999 9999: Breeze inspired QQC2 Style
-kde-plasma/qvk 9999: Virtual keyboard based on Qt Virtual Keyboard.
 kde-plasma/sddm-kcm 6.3.49.9999 9999: KDE Plasma control module for SDDM
 kde-plasma/systemsettings 6.3.49.9999 9999: Control Center to configure KDE Plasma desktop
+kde-plasma/union 9999: Style engine providing a unified style description to separate output styles
 kde-plasma/wacomtablet 6.3.49.9999 9999: Wacom system settings module that supports different button/pen layout profiles
 kde-plasma/xdg-desktop-portal-kde 6.3.49.9999 9999: Backend implementation for xdg-desktop-portal that is using Qt/KDE Frameworks
 media-gfx/digikam 9999: Digital photo management application
@@ -440,6 +441,7 @@ media-gfx/kio-raw-thumbnailer 24.12.49.9999 9999: KIO thumbnail generator for RA
 media-gfx/kphotoalbum 9999: Tool for indexing, searching, and viewing images
 media-gfx/krita 9999: Free digital painting application. Digital Painting, Creative Freedom!
 media-gfx/kxstitch 9999: Program to create cross stitch patterns
+media-gfx/qrca 9999: Simple barcode scanner and QR code generator
 media-gfx/skanpage 24.12.49.9999 9999: Multi-page scanning application supporting image and pdf files
 media-gfx/symboleditor 9999: Application to create libraries of QPainterPath objects with rendering hints
 media-libs/kquickimageeditor 9999: QtQuick components providing basic image editing capabilities
