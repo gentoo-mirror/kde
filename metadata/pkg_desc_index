@@ -458,6 +458,7 @@ media-sound/elisa 24.12.49.9999 9999: Simple music player by KDE
 media-sound/kasts 24.12.49.9999 9999: Convergent podcast application for desktop and mobile
 media-sound/kid3 9999: Simple tag editor based on Qt
 media-sound/krecorder 24.12.49.9999 9999: Convergent audio recording application for Plasma
+media-video/haruna 9999: Simple video player
 media-video/kaffeine 9999: Media player with digital TV support by KDE
 media-video/plasmatube 9999: YouTube video player based on mpv, yt-dlp, and Invidious
 media-video/subtitlecomposer 9999: Text-based subtitles editor
