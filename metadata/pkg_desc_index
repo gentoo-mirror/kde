@@ -49,7 +49,6 @@ games-kids/gcompris 9999: Full featured educational application for children fro
 games-mud/kmuddy 9999: MUD client by KDE
 games-puzzle/skladnik 24.12.49.9999 9999: The Japanese warehouse keeper sokoban game
 gui-apps/liquidshell 9999: Basic desktop shell using QtWidgets
-gui-apps/xwaylandvideobridge 9999: Screenshare Wayland windows to XWayland apps
 kde-apps/akonadi 24.12.49.9999 9999: Storage service for PIM data and libraries for PIM apps
 kde-apps/akonadi-calendar 24.12.49.9999 9999: Library for akonadi calendar integration
 kde-apps/akonadi-calendar-tools-common 24.12.49.9999 9999: Common files for akonadi-calendar-tools
