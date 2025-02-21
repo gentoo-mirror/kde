@@ -4,17 +4,17 @@
 EAPI=8
 
 ECM_HANDBOOK="forceoptional"
-KFMIN=6.5.0
+KFMIN=6.9.0
 QTMIN=6.7.2
 PYTHON_COMPAT=( python3_{10..13} )
-inherit ecm kde.org optfeature python-any-r1
+inherit ecm kde.org optfeature python-any-r1 xdg
 
 DESCRIPTION="Advanced audio player based on KDE Frameworks"
 HOMEPAGE="https://amarok.kde.org/"
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE="ipod mariadb mtp wikipedia" # lastfm podcast
+IUSE="ipod mariadb mtp wikipedia X" # lastfm podcast
 
 # ipod requires gdk enabled and also gtk compiled in libgpod
 DEPEND="
@@ -51,13 +51,12 @@ DEPEND="
 	>=kde-frameworks/ktexteditor-${KFMIN}:6
 	>=kde-frameworks/ktextwidgets-${KFMIN}:6
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:6
-	>=kde-frameworks/kwindowsystem-${KFMIN}:6
+	>=kde-frameworks/kwindowsystem-${KFMIN}:6[X?]
 	>=kde-frameworks/kxmlgui-${KFMIN}:6
 	>=kde-frameworks/solid-${KFMIN}:6
 	>=kde-frameworks/threadweaver-${KFMIN}:6
 	>=media-libs/phonon-4.12.0[qt6(+)]
 	>=media-libs/taglib-1.12:=
-	media-libs/taglib-extras
 	sci-libs/fftw:3.0
 	sys-libs/zlib
 	virtual/opengl
@@ -81,11 +80,6 @@ BDEPEND="${PYTHON_DEPS}
 	virtual/pkgconfig
 "
 
-pkg_setup() {
-	python-any-r1_pkg_setup
-	ecm_pkg_setup
-}
-
 src_configure() {
 	local mycmakeargs=(
 		-DBUILD_WITH_QT6=ON
@@ -95,12 +89,14 @@ src_configure() {
 		-DCMAKE_DISABLE_FIND_PACKAGE_Googlemock=ON
 		-DCMAKE_DISABLE_FIND_PACKAGE_LibOFA=ON
 		-DCMAKE_DISABLE_FIND_PACKAGE_MySQLe=ON
+		-DCMAKE_DISABLE_FIND_PACKAGE_Taglib-Extras=ON
 		-DWITH_IPOD=$(usex ipod)
 # 		$(cmake_use_find_package lastfm LibLastFm)
 		$(cmake_use_find_package !mariadb MySQL)
 		$(cmake_use_find_package mtp Mtp)
 # 		$(cmake_use_find_package podcast Mygpo-qt5)
 		$(cmake_use_find_package wikipedia Qt6WebEngineWidgets)
+		-DWITH_X11=$(usex X)
 	)
 	use ipod && mycmakeargs+=( -DWITH_GDKPixBuf=ON )
 
@@ -108,7 +104,7 @@ src_configure() {
 }
 
 pkg_postinst() {
-	ecm_pkg_postinst
+	xdg_pkg_postinst
 
 	pkg_is_installed() {
 		echo "${1} ($(has_version ${1} || echo "not ")installed)"
