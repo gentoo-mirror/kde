@@ -262,7 +262,7 @@ media-libs/liblastfm:fingerprint - Build the lastfm-fingerprint library
 media-libs/phonon:designer - Install plugin for dev-qt/designer
 media-sound/amarok:mariadb - Prefer dev-db/mariadb-connector-c over dev-db/mysql-connector-c
 media-sound/amarok:mtp - Enable support for libMTP (Plays4Sure) devices access through libmtp
-media-sound/amarok:wikipedia - Enable wikipedia widget using dev-qt/qtwebengine
+media-sound/amarok:webengine - Enable wikipedia widget using dev-qt/qtwebengine
 media-sound/elisa:mpris - Enable MPRIS support
 media-sound/elisa:vlc - Use media-video/vlc for output rather than dev-qt/qtmultimedia
 media-sound/kasts:vlc - Enable media-video/vlc backend
