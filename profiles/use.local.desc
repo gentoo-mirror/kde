@@ -257,7 +257,6 @@ media-gfx/krita:color-management - Enable color management via media-libs/openco
 media-gfx/krita:media - Enable sound support for animations via media-libs/mlt
 media-gfx/krita:mypaint-brush-engine - Enable MyPaint brush engine support media-libs/libmypaint
 media-gfx/krita:xsimd - Enable usage of SIMD instructions via dev-cpp/xsimd
-media-gfx/skanpage:ocr - Enable support for Optical Character Recognition via app-text/tesseract
 media-libs/liblastfm:fingerprint - Build the lastfm-fingerprint library
 media-libs/phonon:designer - Install plugin for dev-qt/designer
 media-sound/amarok:lastfm - Enable Last.fm streaming services support through media-libs/liblastfm
@@ -270,7 +269,6 @@ media-sound/elisa:vlc - Use media-video/vlc for output rather than dev-qt/qtmult
 media-sound/kasts:vlc - Enable media-video/vlc backend
 media-sound/kid3:acoustid - Build acoustic fingerprinting plugin using media-libs/chromaprint
 media-sound/kid3:mpris - Enable support for MPRIS2 interface using dev-qt/qtdbus
-net-im/tokodon:mpv - Use media-libs/mpvqt instead of dev-qt/qtmultimedia for video playback (default)
 net-im/tokodon:webengine - Use dev-qt/qtwebengine for built-in authentication page (default is external browser)
 net-libs/libktorrent:xfs - Enable XFS specific disk preallocation support via sys-fs/xfsprogs
 net-misc/smb4k:discovery - Build with net-libs/kdsoap-ws-discovery-client support to discover domains and workgroups
