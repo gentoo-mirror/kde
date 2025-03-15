@@ -9,4 +9,4 @@ RDEPEND=!kde-plasma/plasma-meta:5 !kde-plasma/khotkeys:5 >=kde-plasma/aurorae-6.
 REQUIRED_USE=^^ ( elogind systemd )
 SLOT=6
 _eclasses_=toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96
-_md5_=5b58a20bdcd40343462ba85d5ba24bf1
+_md5_=6ebb711a82e355819fc6357333b0953f
