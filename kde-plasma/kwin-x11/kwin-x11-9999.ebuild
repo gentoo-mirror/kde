@@ -9,23 +9,20 @@ KFMIN=9999
 QTMIN=6.8.1
 inherit ecm fcaps plasma.kde.org xdg
 
-DESCRIPTION="Flexible, composited Window Manager for windowing systems on Linux"
+DESCRIPTION="Flexible, composited X window manager"
 
 LICENSE="GPL-2+"
 SLOT="6"
 KEYWORDS=""
-IUSE="accessibility gles2-only lock screencast +shortcuts systemd xwayland"
+IUSE="accessibility gles2-only lock +shortcuts systemd"
 
 RESTRICT="test"
 
 # qtbase slot op: GuiPrivate use in tabbox
-# qtbase[X]: private/qtx11extras_p.h in src/helpers/killer
 COMMON_DEPEND="
-	dev-libs/libei
-	>=dev-libs/libinput-1.27:=
 	>=dev-libs/wayland-1.24.0
 	>=dev-qt/qt5compat-${QTMIN}:6[qml]
-	>=dev-qt/qtbase-${QTMIN}:6=[accessibility=,gles2-only=,gui,libinput,opengl,widgets,X]
+	>=dev-qt/qtbase-${QTMIN}:6=[accessibility=,gles2-only=,gui,opengl,widgets,X]
 	>=dev-qt/qtdeclarative-${QTMIN}:6
 	>=dev-qt/qtsensors-${QTMIN}:6
 	>=dev-qt/qtshadertools-${QTMIN}:6
@@ -49,7 +46,7 @@ COMMON_DEPEND="
 	>=kde-frameworks/kservice-${KFMIN}:6
 	>=kde-frameworks/ksvg-${KFMIN}:6
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:6
-	>=kde-frameworks/kwindowsystem-${KFMIN}:6=[wayland]
+	>=kde-frameworks/kwindowsystem-${KFMIN}:6=[wayland,X]
 	>=kde-frameworks/kxmlgui-${KFMIN}:6
 	>=kde-plasma/breeze-${KDE_CATV}:6
 	>=kde-plasma/kdecoration-${KDE_CATV}:6
@@ -62,27 +59,24 @@ COMMON_DEPEND="
 	>=media-libs/libdisplay-info-0.2.0:=
 	media-libs/libepoxy
 	media-libs/libglvnd
-	>=media-libs/mesa-24.1.0_rc1[opengl,wayland]
+	>=media-libs/mesa-24.1.0_rc1[opengl,X]
 	virtual/libudev:=
+	x11-libs/libX11
+	x11-libs/libXi
 	>=x11-libs/libdrm-2.4.116
 	>=x11-libs/libxcb-1.10:=
 	>=x11-libs/libxcvt-0.1.1
 	>=x11-libs/libxkbcommon-1.5.0
 	x11-libs/xcb-util-cursor
+	x11-libs/xcb-util-keysyms
 	x11-libs/xcb-util-wm
 	accessibility? ( media-libs/libqaccessibilityclient:6 )
 	lock? ( >=kde-plasma/kscreenlocker-${KDE_CATV}:6 )
-	screencast? ( >=media-video/pipewire-1.2.0:= )
 	shortcuts? ( >=kde-plasma/kglobalacceld-${KDE_CATV}:6 )
-	xwayland? (
-		x11-libs/libX11
-		x11-libs/libXi
-		x11-libs/libXres
-		x11-libs/xcb-util-keysyms
-	)
 "
 RDEPEND="${COMMON_DEPEND}
 	!kde-plasma/kdeplasma-addons:5
+	!<kde-plasma/kwin-6.3.80
 	>=dev-qt/qtmultimedia-${QTMIN}:6[qml]
 	|| (
 		dev-qt/qtmultimedia:6[ffmpeg]
@@ -96,16 +90,16 @@ RDEPEND="${COMMON_DEPEND}
 	>=kde-plasma/aurorae-${KDE_CATV}:6
 	>=kde-plasma/libplasma-${KDE_CATV}:6
 	sys-apps/hwdata
-	xwayland? ( >=x11-base/xwayland-23.1.0[libei] )
+	>=x11-base/xwayland-23.1.0
 "
 DEPEND="${COMMON_DEPEND}
 	>=dev-libs/plasma-wayland-protocols-1.16.0
-	>=dev-libs/wayland-protocols-1.41
+	>=dev-libs/wayland-protocols-1.38
 	>=dev-qt/qttools-${QTMIN}:6[widgets]
 	>=dev-qt/qtbase-${QTMIN}:6[concurrent]
 	>=dev-qt/qtwayland-${QTMIN}:6
-	test? ( screencast? ( >=kde-plasma/kpipewire-${KDE_CATV}:6 ) )
-	xwayland? ( x11-base/xorg-proto )
+	x11-base/xorg-proto
+	x11-libs/xcb-util-image
 "
 BDEPEND="
 	>=dev-qt/qtwayland-${QTMIN}:6
@@ -121,11 +115,6 @@ src_prepare() {
 	ecm_src_prepare
 
 	# TODO: try to get a build switch upstreamed
-	if ! use screencast; then
-		sed -e "s/^pkg_check_modules.*PipeWire/#&/" -i CMakeLists.txt || die
-	fi
-
-	# TODO: try to get a build switch upstreamed
 	if ! use systemd; then
 		sed -e "s/^pkg_check_modules.*libsystemd/#&/" -i CMakeLists.txt || die
 	fi
@@ -138,7 +127,6 @@ src_configure() {
 		-DCMAKE_DISABLE_FIND_PACKAGE_Libcap=ON
 		-DKWIN_BUILD_SCREENLOCKER=$(usex lock)
 		-DKWIN_BUILD_GLOBALSHORTCUTS=$(usex shortcuts)
-		-DKWIN_BUILD_X11=$(usex xwayland)
 	)
 
 	ecm_src_configure
