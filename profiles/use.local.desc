@@ -9,9 +9,6 @@ app-office/calligra:lcms - Build colorengine plugins using media-libs/lcms
 app-office/calligra:okular - Enable bindings for kde-apps/okular
 app-office/calligra:phonon - Build stage/eventplugins and videoshape plugin using media-libs/phonon
 app-office/calligra:webengine - Enable Braindump support using dev-qt/qtwebengine
-app-office/calligraplan:activities - Enable kactivities support
-app-office/calligraplan:holidays - Enable kde-frameworks/kholidays integration
-app-office/calligraplan:kwallet - Enable access to encrypted OpenDocument files with kde-frameworks/kwallet storage
 app-office/kmymoney:activities - Enable kde-plasma/plasma-activities integration
 app-office/kmymoney:experimental - Build unfinished features. DANGEROUS to set - this *will* chew up data
 app-office/kmymoney:hbci - Enable HBCI support using net-libs/aqbanking

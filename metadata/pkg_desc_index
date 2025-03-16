@@ -13,7 +13,6 @@ app-misc/calindori 9999: Touch friendly calendar application
 app-misc/francis 25.03.80 25.04.49.9999 9999: Productivity application using the well-known pomodoro technique
 app-misc/kookbook 9999: Simple recipe manager taking structured markdown for recipes
 app-office/calligra 9999: KDE Office Suite
-app-office/calligraplan 9999: Project management application
 app-office/kmymoney 5.2.9999 9999: Personal finance manager based on KDE Frameworks
 app-office/ktimetracker 9999: Todo management and time tracker
 app-office/libalkimia 8.2.9999 9999: Library with common classes and functionality used by KDE finance applications
@@ -255,7 +254,7 @@ kde-apps/pimcommon 25.03.80 25.04.49.9999 9999: Common PIM libraries
 kde-apps/poxml 25.03.80 25.04.49.9999 9999: KDE utility to translate DocBook XML files using gettext po files
 kde-apps/rocs 25.03.80 25.04.49.9999 9999: Interface to work with Graph Theory
 kde-apps/signon-kwallet-extension 25.03.80 25.04.49.9999 9999: KWallet extension for signond
-kde-apps/spectacle 9999: Screenshot capture utility
+kde-apps/spectacle 6.3.49.9999 9999: Screenshot capture utility
 kde-apps/step 25.03.80 25.04.49.9999 9999: Interactive physics simulator
 kde-apps/svgpart 25.03.80 25.04.49.9999 9999: Kpart for viewing SVGs
 kde-apps/sweeper 25.03.80 25.04.49.9999 9999: Privacy settings widget to clean unwanted traces on the system
