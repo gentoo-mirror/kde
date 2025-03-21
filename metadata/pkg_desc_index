@@ -470,6 +470,7 @@ net-libs/kdsoap 9999: Qt-based client-side and server-side SOAP component
 net-libs/kdsoap-ws-discovery-client 9999: WS-Discovery client library based on KDSoap
 net-libs/libktorrent 25.03.80 25.04.49.9999 9999: BitTorrent library based on KDE Frameworks
 net-libs/libtmdbqt 9999: Qt library to query the movie database API (themoviedb.org)
+net-libs/qxmpp 9999: Cross-platform C++ XMPP client and server library
 net-misc/kio-zeroconf 25.03.80 25.04.49.9999 9999: KIO worker to discover file systems by DNS-SD (DNS Service Discovery)
 net-misc/smb4k 9999: Advanced network neighborhood browser
 net-news/alligator 25.03.80 25.04.49.9999 9999: Convergent RSS/Atom feed reader for Plasma
