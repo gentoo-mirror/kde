@@ -254,7 +254,6 @@ kde-apps/pimcommon 25.03.90 25.04.49.9999 9999: Common PIM libraries
 kde-apps/poxml 25.03.90 25.04.49.9999 9999: KDE utility to translate DocBook XML files using gettext po files
 kde-apps/rocs 25.03.90 25.04.49.9999 9999: Interface to work with Graph Theory
 kde-apps/signon-kwallet-extension 25.03.90 25.04.49.9999 9999: KWallet extension for signond
-kde-apps/spectacle 6.3.49.9999 9999: Screenshot capture utility
 kde-apps/step 25.03.90 25.04.49.9999 9999: Interactive physics simulator
 kde-apps/svgpart 25.03.90 25.04.49.9999 9999: Kpart for viewing SVGs
 kde-apps/sweeper 25.03.90 25.04.49.9999 9999: Privacy settings widget to clean unwanted traces on the system
@@ -427,6 +426,7 @@ kde-plasma/powerdevil 6.3.49.9999 9999: Power management for KDE Plasma Shell
 kde-plasma/print-manager 6.3.49.9999 9999: Manage CUPS print jobs and printers in Plasma
 kde-plasma/qqc2-breeze-style 6.3.49.9999 9999: Breeze inspired QQC2 Style
 kde-plasma/sddm-kcm 6.3.49.9999 9999: KDE Plasma control module for SDDM
+kde-plasma/spectacle 6.3.49.9999 9999: Screenshot capture utility
 kde-plasma/systemsettings 6.3.49.9999 9999: Control Center to configure KDE Plasma desktop
 kde-plasma/union 9999: Style engine providing a unified style description to separate output styles
 kde-plasma/wacomtablet 6.3.49.9999 9999: Wacom system settings module that supports different button/pen layout profiles
