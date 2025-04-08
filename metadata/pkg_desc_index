@@ -36,6 +36,7 @@ dev-libs/plasma-wayland-protocols 9999: Plasma Specific Protocols for Wayland
 dev-libs/qcoro 9999: C++ Coroutine Library for Qt
 dev-libs/qcoro5 9999: C++ Coroutine Library for Qt5
 dev-python/parse_cmake 0.4.1-r2: Parser for CMakeLists.txt files
+dev-python/pyaaf2 1.7.1: Read and write Advanced Authoring Format (AAF) files.
 dev-util/kdevelop 25.03.90 25.04.49.9999 9999: Integrated Development Environment, supporting KF6/Qt, C/C++ and much more
 dev-util/kdevelop-pg-qt 9999: LL(1) parser generator used mainly by KDevelop language plugins
 dev-util/kdevelop-php 25.03.90 25.04.49.9999 9999: PHP plugin for KDevelop
@@ -460,6 +461,7 @@ media-sound/kid3 9999: Simple tag editor based on Qt
 media-sound/krecorder 25.03.90 25.04.49.9999 9999: Convergent audio recording application for Plasma
 media-video/haruna 9999: Video player built with Qt/QML and libmpv
 media-video/kaffeine 9999: Media player with digital TV support by KDE
+media-video/opentimelineio 0.17.0: Editorial interchange format and API (for use with Kdenlive).
 media-video/plasmatube 9999: YouTube video player based on mpv, yt-dlp, and Invidious
 media-video/subtitlecomposer 9999: Text-based subtitles editor
 net-im/kaidan 9999: Modern XMPP chat app for every device
