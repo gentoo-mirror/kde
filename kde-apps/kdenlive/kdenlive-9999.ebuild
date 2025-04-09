@@ -53,7 +53,6 @@ DEPEND="
 	>=kde-frameworks/purpose-${KFMIN}:6
 	>=kde-frameworks/solid-${KFMIN}:6
 	>=media-libs/mlt-7.28.0[ffmpeg,frei0r,qt6,sdl,xml]
-	media-video/opentimelineio
 	v4l? ( media-libs/libv4l )
 "
 RDEPEND="${DEPEND}
@@ -67,8 +66,6 @@ DEPEND+=" virtual/os-headers"
 src_configure() {
 	local mycmakeargs=(
 		$(cmake_use_find_package v4l LibV4L2)
-		# disable fetching of opentimeio
-		-DFETCH_OTIO=OFF
 	)
 	ecm_src_configure
 }
