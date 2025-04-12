@@ -14,5 +14,5 @@ REQUIRED_USE=flac? ( taglib ) lame? ( taglib ) sox? ( taglib )
 RESTRICT=!test? ( test ) fetch fetch
 SLOT=6
 SRC_URI=mirror://kde/stable/release-service/25.04.0/src/k3b-25.04.0.tar.xz
-_eclasses_=toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	e8de74bac929ba17427e740e95707d00	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	e5e0575f76b3e0ae42329a54caaeff71	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	4970a5e93420fa47baeb05869776bc88	kde.org	80b28d5fdf328cc9f15789c5b346bdec	gear.kde.org	0a07f3663c075823f66a6be6e91a5f7d	xdg	3ef49a87c52c8b77c476351195dfe575
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	e8de74bac929ba17427e740e95707d00	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	e5e0575f76b3e0ae42329a54caaeff71	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	4970a5e93420fa47baeb05869776bc88	kde.org	80b28d5fdf328cc9f15789c5b346bdec	gear.kde.org	0a07f3663c075823f66a6be6e91a5f7d	xdg	3ef49a87c52c8b77c476351195dfe575
 _md5_=8318c1047ab203e7f55d5c75a5694b92
