@@ -59,7 +59,7 @@ kde-apps/akonadiconsole 25.04.49.9999 9999: Application for debugging Akonadi Re
 kde-apps/akregator 25.04.49.9999 9999: News feed aggregator
 kde-apps/analitza 25.04.49.9999 9999: KDE library for mathematical features
 kde-apps/ark 25.04.49.9999 9999: File archiver by KDE
-kde-apps/artikulate 25.04.49.9999 9999: Language learning application that helps improving pronunciation skills
+kde-apps/artikulate 9999: Language learning application that helps improving pronunciation skills
 kde-apps/audiocd-kio 25.04.49.9999 9999: KIO worker for accessing audio CDs
 kde-apps/baloo-widgets 25.04.49.9999 9999: Widget library for baloo
 kde-apps/blinken 25.04.49.9999 9999: Memory enhancement game based on KDE Frameworks
@@ -68,7 +68,7 @@ kde-apps/bovo 25.04.49.9999 9999: Five-in-a-row Board Game
 kde-apps/calendarjanitor 25.04.49.9999 9999: Tool to scan calendar data for buggy instances
 kde-apps/calendarsupport 25.04.49.9999 9999: Calendar support library
 kde-apps/cantor 25.04.49.9999 9999: Interface for doing mathematics and scientific computing
-kde-apps/cervisia 25.04.49.9999 9999: CVS frontend by KDE
+kde-apps/cervisia 9999: CVS frontend by KDE
 kde-apps/dolphin 25.04.49.9999 9999: Plasma filemanager focusing on usability
 kde-apps/dolphin-plugins-common 25.04.49.9999 9999: Common files for dolphin-plugins
 kde-apps/dolphin-plugins-dropbox 25.04.49.9999 9999: Dolphin plugin for Dropbox service integration
@@ -94,7 +94,7 @@ kde-apps/kalarm 25.04.49.9999 9999: Application to manage alarms and other timer
 kde-apps/kalgebra 25.04.49.9999 9999: MathML-based 2D and 3D graph calculator by KDE
 kde-apps/kalzium 25.04.49.9999 9999: Periodic table of the elements
 kde-apps/kamera 25.04.49.9999 9999: Plasma integration for gphoto2 cameras
-kde-apps/kamoso 25.04.49.9999 9999: Application to take pictures and videos from your webcam by KDE
+kde-apps/kamoso 9999: Application to take pictures and videos from your webcam by KDE
 kde-apps/kanagram 25.04.49.9999 9999: Game based on anagrams of words
 kde-apps/kapman 25.04.49.9999 9999: Pac-Man clone by KDE
 kde-apps/kapptemplate 25.04.49.9999 9999: Shell script to create the necessary framework to develop KDE applications
@@ -151,7 +151,7 @@ kde-apps/kgpg 25.04.49.9999 9999: Frontend for GnuPG, a powerful encryption util
 kde-apps/khangman 25.04.49.9999 9999: Classical hangman game by KDE
 kde-apps/khelpcenter 25.04.49.9999 9999: Application to read documentation for KDE Plasma, Applications, Utilities
 kde-apps/kidentitymanagement 25.04.49.9999 9999: Library for managing identitites
-kde-apps/kig 25.04.49.9999 9999: KDE Interactive Geometry tool
+kde-apps/kig 9999: KDE Interactive Geometry tool
 kde-apps/kigo 25.04.49.9999 9999: Go game by KDE
 kde-apps/killbots 25.04.49.9999 9999: Kill the bots or they kill you!
 kde-apps/kimagemapeditor 25.04.49.9999 9999: Generator of HTML image maps
@@ -195,7 +195,7 @@ kde-apps/korganizer 25.04.49.9999 9999: Organizational assistant, providing cale
 kde-apps/kpat 25.04.49.9999 9999: KDE patience game
 kde-apps/kpimtextedit 25.04.49.9999 9999: Extended text editor for PIM applications
 kde-apps/kpkpass 25.04.49.9999 9999: Library to deal with Apple Wallet pass files
-kde-apps/kqtquickcharts 25.04.49.9999 9999: Qt Quick plugin for beautiful and interactive charts
+kde-apps/kqtquickcharts 9999: Qt Quick plugin for beautiful and interactive charts
 kde-apps/krdc 25.04.49.9999 9999: Remote desktop connection (RDP and VNC) client
 kde-apps/kreversi 25.04.49.9999 9999: Board game by KDE
 kde-apps/krfb 25.04.49.9999 9999: VNC-compatible server to share Plasma desktops
@@ -210,7 +210,7 @@ kde-apps/ksudoku 25.04.49.9999 9999: Logic-based symbol placement puzzle by KDE
 kde-apps/ksystemlog 25.04.49.9999 9999: System log viewer by KDE
 kde-apps/kteatime 25.04.49.9999 9999: KDE timer for making a fine cup of tea
 kde-apps/ktimer 25.04.49.9999 9999: Little tool to execute programs after some time
-kde-apps/ktouch 25.04.49.9999 9999: Program that helps to learn and practice touch typing
+kde-apps/ktouch 9999: Program that helps to learn and practice touch typing
 kde-apps/ktuberling 25.04.49.9999 9999: Potato game for kids by KDE
 kde-apps/kturtle 25.04.49.9999 9999: Educational programming environment using the Logo programming language
 kde-apps/kubrick 25.04.49.9999 9999: Game based on the "Rubik's Cube" puzzle by KDE
@@ -252,7 +252,7 @@ kde-apps/pim-data-exporter 25.04.49.9999 9999: Assistant to backup and archive P
 kde-apps/pim-sieve-editor 25.04.49.9999 9999: Assistant for editing IMAP Sieve filters
 kde-apps/pimcommon 25.04.49.9999 9999: Common PIM libraries
 kde-apps/poxml 25.04.49.9999 9999: KDE utility to translate DocBook XML files using gettext po files
-kde-apps/rocs 25.04.49.9999 9999: Interface to work with Graph Theory
+kde-apps/rocs 9999: Interface to work with Graph Theory
 kde-apps/signon-kwallet-extension 25.04.49.9999 9999: KWallet extension for signond
 kde-apps/step 25.04.49.9999 9999: Interactive physics simulator
 kde-apps/svgpart 25.04.49.9999 9999: Kpart for viewing SVGs
