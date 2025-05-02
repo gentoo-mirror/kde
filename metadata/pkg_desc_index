@@ -23,7 +23,6 @@ app-text/kbibtex 9999: BibTeX editor to edit bibliographies used with LaTeX
 app-text/marknote 9999: Markdown editor with a wide range of formating options for everyday notes
 dev-build/dolphin-plugins-makefileactions 25.04.49.9999 9999: Dolphin plugin for Makefile targets integration
 dev-db/futuresql 9999: Non-blocking Qt database framework
-dev-debug/kdbg 9999: Graphical debugger interface
 dev-libs/appstream 9999: Cross-distro effort for providing metadata for software in the Linux ecosystem
 dev-libs/kdiagram 9999: Powerful libraries (KChart, KGantt) for creating business diagrams
 dev-libs/kirigami-addons 9999: Visual end user components for Kirigami-based applications
