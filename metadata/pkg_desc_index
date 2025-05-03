@@ -317,7 +317,8 @@ kde-frameworks/ktexttemplate 9999: Library to allow separating the structure of 
 kde-frameworks/ktextwidgets 9999: Framework providing an assortment of widgets for displaying and editing text
 kde-frameworks/kunitconversion 9999: Framework for converting units
 kde-frameworks/kuserfeedback 9999: Framework to collect user feedback for applications via telemetry and surveys
-kde-frameworks/kwallet 9999: Framework providing desktop-wide storage for passwords
+kde-frameworks/kwallet 9999: Interface to KWallet Framework providing desktop-wide storage for passwords
+kde-frameworks/kwallet-runtime 9999: Framework providing desktop-wide storage for passwords
 kde-frameworks/kwidgetsaddons 9999: An assortment of high-level widgets for common tasks
 kde-frameworks/kwindowsystem 9999: Framework providing access to properties and features of the window manager
 kde-frameworks/kxmlgui 9999: Framework for managing menu and toolbar actions in an abstract way
