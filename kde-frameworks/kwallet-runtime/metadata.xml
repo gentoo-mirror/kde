@@ -9,6 +9,10 @@
 		<bugs-to>https://bugs.kde.org/enter_bug.cgi?product=frameworks-kwallet</bugs-to>
 		<remote-id type="kde-invent">frameworks/kwallet</remote-id>
 	</upstream>
+	<use>
+		<flag name="gpg">Support wallets with GnuPG encryption in addition to the default blowfish-encrypted file</flag>
+		<flag name="legacy-kwallet">Support KWallet D-Bus API for applications still using it</flag>
+	</use>
 	<slots>
 		<subslots>
 			Must only be used by packages that are known to use private parts of the Frameworks API.
