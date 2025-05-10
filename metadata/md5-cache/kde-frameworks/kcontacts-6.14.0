@@ -9,8 +9,8 @@ IUSE=debug doc test
 KEYWORDS=~amd64 ~arm64 ~ppc64 ~riscv ~x86
 LICENSE=GPL-2+
 RDEPEND=>=dev-qt/qtbase-6.7.2:6[gui] >=dev-qt/qtdeclarative-6.7.2:6 =kde-frameworks/kcodecs-6.14*:6 =kde-frameworks/kconfig-6.14*:6 =kde-frameworks/kcoreaddons-6.14*:6 =kde-frameworks/ki18n-6.14*:6 >=kde-frameworks/kf-env-6 doc? ( dev-qt/qt-docs:6 ) dev-qt/qtbase:6
-RESTRICT=!test? ( test ) fetch fetch
+RESTRICT=!test? ( test )
 SLOT=6/6.14
 SRC_URI=mirror://kde/stable/frameworks/6.14/kcontacts-6.14.0.tar.xz
-_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	f84b51eb1356233159ce72d6aca37720	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	c5c241b6175e513b806ec9ea7400ad50	kde.org	80b28d5fdf328cc9f15789c5b346bdec	frameworks.kde.org	c2583ee8c2286fd67e49ae0c894ca013
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	f84b51eb1356233159ce72d6aca37720	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	c5c241b6175e513b806ec9ea7400ad50	kde.org	80b28d5fdf328cc9f15789c5b346bdec	frameworks.kde.org	d6e84f795582f08d97a7dc69b02e401f
 _md5_=f629ca434a06ebbba5b22fddc40a9a4e
