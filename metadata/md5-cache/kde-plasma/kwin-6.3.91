@@ -13,5 +13,5 @@ RDEPEND=dev-libs/libei >=dev-libs/libinput-1.27:= >=dev-libs/wayland-1.23.0 >=de
 RESTRICT=test !test? ( test ) mirror
 SLOT=6
 SRC_URI=mirror://kde/unstable/plasma/6.3.91/kwin-6.3.91.tar.xz
-_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	f00622419b72488875105beeb13e357f	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	fc6da48677b9346c87bc0dbe310a8fe9	fcaps	27152c9e4da035accb14a2d7879744ef	kde.org	80b28d5fdf328cc9f15789c5b346bdec	plasma.kde.org	364f54440bfbf28045070c74e0722379	xdg	3ef49a87c52c8b77c476351195dfe575
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	5e2beae851ee9c0904b9533764db25f2	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	fc6da48677b9346c87bc0dbe310a8fe9	fcaps	27152c9e4da035accb14a2d7879744ef	kde.org	80b28d5fdf328cc9f15789c5b346bdec	plasma.kde.org	364f54440bfbf28045070c74e0722379	xdg	3ef49a87c52c8b77c476351195dfe575
 _md5_=c0e307fcb1e3bd4995845356595ec6a4
