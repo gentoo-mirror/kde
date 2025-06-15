@@ -12,5 +12,5 @@ RDEPEND=>=dev-qt/qtbase-6.7.2:6[dbus?,gui,xml] qml? ( >=dev-qt/qtdeclarative-6.7
 REQUIRED_USE=test? ( qml )
 RESTRICT=test !test? ( test )
 SLOT=6/9999
-_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	5e2beae851ee9c0904b9533764db25f2	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	fc6da48677b9346c87bc0dbe310a8fe9	git-r3	875eb471682d3e1f18da124be97dcc81	kde.org	80b28d5fdf328cc9f15789c5b346bdec	frameworks.kde.org	cf58971fc928f21d1a93be2d510c542a
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	5e2beae851ee9c0904b9533764db25f2	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	fc6da48677b9346c87bc0dbe310a8fe9	git-r3	875eb471682d3e1f18da124be97dcc81	kde.org	80b28d5fdf328cc9f15789c5b346bdec	frameworks.kde.org	d6e84f795582f08d97a7dc69b02e401f
 _md5_=a594fc0c89160ac2494bb610fa9da8c6
