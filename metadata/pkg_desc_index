@@ -445,7 +445,6 @@ media-gfx/skanpage 25.04.49.9999 9999: Multi-page scanning application supportin
 media-gfx/symboleditor 9999: Application to create libraries of QPainterPath objects with rendering hints
 media-libs/kquickimageeditor 9999: QtQuick components providing basic image editing capabilities
 media-libs/ksanecore 25.04.49.9999 9999: Qt-based interface for SANE library to control scanner hardware
-media-libs/liblastfm 9999: Collection of libraries to integrate Last.fm services
 media-libs/libqaccessibilityclient 9999: Library for writing accessibility clients such as screen readers
 media-libs/mpvqt 9999: libmpv wrapper for QtQuick2 and QML
 media-libs/phonon 9999: KDE multimedia abstraction library
