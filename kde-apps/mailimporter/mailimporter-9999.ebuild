@@ -13,16 +13,16 @@ inherit ecm gear.kde.org
 DESCRIPTION="Library to import mail from various sources"
 
 LICENSE="GPL-2+ LGPL-2.1+"
-SLOT="6"
+SLOT="6/$(ver_cut 1-2)"
 KEYWORDS=""
 IUSE=""
 
 DEPEND="
 	>=dev-qt/qtbase-${QTMIN}:6[gui,widgets,xml]
-	>=kde-apps/akonadi-${PVCUT}:6
-	>=kde-apps/akonadi-mime-${PVCUT}:6
-	>=kde-apps/kmime-${PVCUT}:6
-	>=kde-apps/pimcommon-${PVCUT}:6
+	>=kde-apps/akonadi-${PVCUT}:6=
+	>=kde-apps/akonadi-mime-${PVCUT}:6=
+	>=kde-apps/kmime-${PVCUT}:6=
+	>=kde-apps/pimcommon-${PVCUT}:6=
 	>=kde-frameworks/karchive-${KFMIN}:6
 	>=kde-frameworks/kconfig-${KFMIN}:6
 	>=kde-frameworks/kcoreaddons-${KFMIN}:6

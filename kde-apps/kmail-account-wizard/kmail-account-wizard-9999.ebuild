@@ -14,7 +14,7 @@ DESCRIPTION="Assistant for KMail accounts configuration"
 HOMEPAGE+=" https://userbase.kde.org/KMail/Account_Wizard"
 
 LICENSE="GPL-2+ handbook? ( FDL-1.2+ )"
-SLOT="6"
+SLOT="6/$(ver_cut 1-2)"
 KEYWORDS=""
 IUSE=""
 
@@ -24,12 +24,12 @@ DEPEND="
 	>=app-crypt/gpgme-1.23.1-r1:=[cxx,qt6]
 	>=dev-libs/qtkeychain-0.14.2:=[qt6(+)]
 	>=dev-qt/qtbase-${QTMIN}:6[dbus,gui,widgets,xml]
-	>=kde-apps/akonadi-${PVCUT}:6
-	>=kde-apps/kidentitymanagement-${PVCUT}:6
-	>=kde-apps/kmailtransport-${PVCUT}:6
-	>=kde-apps/kmime-${PVCUT}:6
-	>=kde-apps/libkdepim-${PVCUT}:6
-	>=kde-apps/pimcommon-${PVCUT}:6
+	>=kde-apps/akonadi-${PVCUT}:6=
+	>=kde-apps/kidentitymanagement-${PVCUT}:6=
+	>=kde-apps/kmailtransport-${PVCUT}:6=
+	>=kde-apps/kmime-${PVCUT}:6=
+	>=kde-apps/libkdepim-${PVCUT}:6=
+	>=kde-apps/pimcommon-${PVCUT}:6=
 	>=kde-frameworks/kcmutils-${KFMIN}:6
 	>=kde-frameworks/kcodecs-${KFMIN}:6
 	>=kde-frameworks/kconfig-${KFMIN}:6

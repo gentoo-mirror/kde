@@ -12,16 +12,16 @@ inherit ecm gear.kde.org xdg
 DESCRIPTION="Import mbox email archives from various sources into Akonadi"
 
 LICENSE="GPL-2+ handbook? ( FDL-1.2+ )"
-SLOT="6"
+SLOT="6/$(ver_cut 1-2)"
 KEYWORDS=""
 IUSE=""
 
 DEPEND="
 	>=dev-qt/qtbase-${QTMIN}:6[gui,widgets]
-	>=kde-apps/akonadi-${PVCUT}:6
-	>=kde-apps/kidentitymanagement-${PVCUT}:6
-	>=kde-apps/mailcommon-${PVCUT}:6
-	>=kde-apps/mailimporter-${PVCUT}:6
+	>=kde-apps/akonadi-${PVCUT}:6=
+	>=kde-apps/kidentitymanagement-${PVCUT}:6=
+	>=kde-apps/mailcommon-${PVCUT}:6=
+	>=kde-apps/mailimporter-${PVCUT}:6=
 	>=kde-frameworks/kconfig-${KFMIN}:6
 	>=kde-frameworks/kcoreaddons-${KFMIN}:6
 	>=kde-frameworks/kcrash-${KFMIN}:6

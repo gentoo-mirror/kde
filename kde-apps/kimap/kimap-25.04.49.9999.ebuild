@@ -14,14 +14,14 @@ DESCRIPTION="Library for interacting with IMAP servers"
 HOMEPAGE="https://api.kde.org/kdepim/kimap/html/index.html"
 
 LICENSE="GPL-2+"
-SLOT="6"
+SLOT="6/$(ver_cut 1-2)"
 KEYWORDS=""
 IUSE=""
 
 RDEPEND="
 	dev-libs/cyrus-sasl
 	>=dev-qt/qtbase-${QTMIN}:6[gui]
-	>=kde-apps/kmime-${PVCUT}:6
+	>=kde-apps/kmime-${PVCUT}:6=
 	>=kde-frameworks/kcodecs-${KFMIN}:6
 	>=kde-frameworks/kcoreaddons-${KFMIN}:6
 	>=kde-frameworks/ki18n-${KFMIN}:6

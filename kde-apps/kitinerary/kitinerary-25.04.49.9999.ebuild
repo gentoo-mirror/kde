@@ -14,7 +14,7 @@ DESCRIPTION="Data Model and Extraction System for Travel Reservation information
 HOMEPAGE="https://apps.kde.org/kontact/"
 
 LICENSE="LGPL-2.1+"
-SLOT="6"
+SLOT="6/$(ver_cut 1-2)"
 KEYWORDS=""
 IUSE=""
 
@@ -27,8 +27,8 @@ DEPEND="
 	dev-libs/openssl:=
 	>=dev-qt/qtbase-${QTMIN}:6[gui]
 	>=dev-qt/qtdeclarative-${QTMIN}:6
-	>=kde-apps/kmime-${PVCUT}:6
-	>=kde-apps/kpkpass-${PVCUT}:6
+	>=kde-apps/kmime-${PVCUT}:6=
+	>=kde-apps/kpkpass-${PVCUT}:6=
 	>=kde-frameworks/karchive-${KFMIN}:6
 	>=kde-frameworks/kcalendarcore-${KFMIN}:6
 	>=kde-frameworks/kcontacts-${KFMIN}:6

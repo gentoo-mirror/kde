@@ -13,7 +13,7 @@ inherit ecm gear.kde.org
 DESCRIPTION="Mail transport service"
 
 LICENSE="LGPL-2.1+"
-SLOT="6"
+SLOT="6/$(ver_cut 1-2)"
 KEYWORDS=""
 IUSE=""
 
@@ -22,8 +22,8 @@ RESTRICT="test"
 RDEPEND="
 	>=dev-libs/qtkeychain-0.14.2:=[qt6(+)]
 	>=dev-qt/qtbase-${QTMIN}:6[dbus,gui,network,widgets]
-	>=kde-apps/ksmtp-${PVCUT}:6
-	>=kde-apps/libkgapi-${PVCUT}:6
+	>=kde-apps/ksmtp-${PVCUT}:6=
+	>=kde-apps/libkgapi-${PVCUT}:6=
 	>=kde-frameworks/kcompletion-${KFMIN}:6
 	>=kde-frameworks/kconfig-${KFMIN}:6
 	>=kde-frameworks/kconfigwidgets-${KFMIN}:6

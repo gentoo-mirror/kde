@@ -12,7 +12,7 @@ inherit ecm gear.kde.org
 DESCRIPTION="Utilities and tools to manage themes in KDE PIM applications"
 
 LICENSE="GPL-2+ handbook? ( FDL-1.2+ )"
-SLOT="6"
+SLOT="6/$(ver_cut 1-2)"
 KEYWORDS=""
 IUSE=""
 
@@ -20,10 +20,10 @@ DEPEND="
 	>=dev-libs/ktextaddons-1.5.4:6
 	>=dev-qt/qtbase-${QTMIN}:6[gui,widgets]
 	>=dev-qt/qtwebengine-${QTMIN}:6[widgets]
-	>=kde-apps/akonadi-contacts-${PVCUT}:6
-	>=kde-apps/kmime-${PVCUT}:6
-	>=kde-apps/messagelib-${PVCUT}:6
-	>=kde-apps/pimcommon-${PVCUT}:6
+	>=kde-apps/akonadi-contacts-${PVCUT}:6=
+	>=kde-apps/kmime-${PVCUT}:6=
+	>=kde-apps/messagelib-${PVCUT}:6=
+	>=kde-apps/pimcommon-${PVCUT}:6=
 	>=kde-frameworks/karchive-${KFMIN}:6
 	>=kde-frameworks/kcompletion-${KFMIN}:6
 	>=kde-frameworks/kconfig-${KFMIN}:6

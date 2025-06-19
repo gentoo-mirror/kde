@@ -14,13 +14,13 @@ inherit ecm gear.kde.org
 DESCRIPTION="Library for handling TNEF data"
 
 LICENSE="GPL-2+"
-SLOT="6"
+SLOT="6/$(ver_cut 1-2)"
 KEYWORDS=""
 IUSE=""
 
 DEPEND="
 	>=dev-qt/qtbase-${QTMIN}:6[widgets]
-	>=kde-apps/kcalutils-${PVCUT}:6
+	>=kde-apps/kcalutils-${PVCUT}:6=
 	>=kde-frameworks/kcalendarcore-${KFMIN}:6
 	>=kde-frameworks/kcontacts-${KFMIN}:6
 	>=kde-frameworks/ki18n-${KFMIN}:6
