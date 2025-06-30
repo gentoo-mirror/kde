@@ -1,6 +1,6 @@
-BDEPEND=>=dev-qt/qttools-6.8.1:6[linguist] >=dev-qt/qtwayland-6.8.1:6 dev-util/wayland-scanner app-alternatives/ninja >=dev-build/cmake-3.20.5 doc? ( >=app-text/doxygen-1.8.13-r1 ) dev-qt/qttools:6[assistant] dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-6.10.0:* >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=>=dev-qt/qttools-6.8.1:6[linguist] >=dev-qt/qtbase-6.8.1:6[wayland] dev-util/wayland-scanner || ( >=dev-qt/qtbase-6.10:6[wayland] <dev-qt/qtwayland-6.10:6 ) app-alternatives/ninja >=dev-build/cmake-3.20.5 doc? ( >=app-text/doxygen-1.8.13-r1 ) dev-qt/qttools:6[assistant] dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-6.10.0:* >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure info install nofetch prepare test unpack
-DEPEND=dev-libs/wayland >=dev-qt/qtbase-6.8.1:6=[dbus,gui] >=dev-qt/qtwayland-6.8.1:6 >=kde-frameworks/kconfig-6.10.0:6 x11-libs/libxcb:= >=dev-libs/plasma-wayland-protocols-1.16.0 doc? ( dev-qt/qt-docs:6 ) dev-qt/qtbase:6
+DEPEND=dev-libs/wayland >=dev-qt/qtbase-6.8.1:6=[dbus,gui,wayland] >=kde-frameworks/kconfig-6.10.0:6 x11-libs/libxcb:= >=dev-libs/plasma-wayland-protocols-1.16.0 doc? ( dev-qt/qt-docs:6 ) dev-qt/qtbase:6
 DESCRIPTION=Plasma screen management library
 EAPI=8
 HOMEPAGE=https://kde.org/plasma-desktop
@@ -8,8 +8,8 @@ INHERIT=ecm plasma.kde.org
 IUSE=debug doc test
 LICENSE=GPL-2
 PROPERTIES=live
-RDEPEND=dev-libs/wayland >=dev-qt/qtbase-6.8.1:6=[dbus,gui] >=dev-qt/qtwayland-6.8.1:6 >=kde-frameworks/kconfig-6.10.0:6 x11-libs/libxcb:= || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-6 doc? ( dev-qt/qt-docs:6 ) dev-qt/qtbase:6 !kde-plasma/libkscreen:5
+RDEPEND=dev-libs/wayland >=dev-qt/qtbase-6.8.1:6=[dbus,gui,wayland] >=kde-frameworks/kconfig-6.10.0:6 x11-libs/libxcb:= || ( >=dev-qt/qtbase-6.10:6[wayland] <dev-qt/qtwayland-6.10:6 ) || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-6 doc? ( dev-qt/qt-docs:6 ) dev-qt/qtbase:6 !kde-plasma/libkscreen:5
 RESTRICT=test !test? ( test )
 SLOT=6/8
 _eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	d2518fae57f473669111338ada89eda6	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	fc6da48677b9346c87bc0dbe310a8fe9	git-r3	875eb471682d3e1f18da124be97dcc81	kde.org	80b28d5fdf328cc9f15789c5b346bdec	plasma.kde.org	7dce7e123b845b50045d250ddb278647
-_md5_=0190862362ce04d2270ca801410f53ec
+_md5_=84f98708232258f22299b05ea88485df
