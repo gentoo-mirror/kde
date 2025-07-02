@@ -1,16 +1,15 @@
-BDEPEND=dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-5.115.0:* virtual/pkgconfig qt5? ( dev-qt/linguist-tools:5 ) qt6? ( dev-qt/qttools:6[linguist] ) app-alternatives/ninja >=dev-build/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile configure info install nofetch prepare setup test unpack
-DEPEND=pulseaudio? ( dev-libs/glib:2 media-libs/libpulse[glib] ) qt5? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 designer? ( dev-qt/designer:5 ) ) qt6? ( dev-qt/qt5compat:6 dev-qt/qtbase:6[gui,widgets] designer? ( dev-qt/qttools:6[designer] ) )
+BDEPEND=dev-libs/libpcre2:* dev-qt/qttools:6[linguist] >=kde-frameworks/extra-cmake-modules-5.115.0:* virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure info install nofetch prepare test unpack
+DEPEND=dev-qt/qt5compat:6 dev-qt/qtbase:6[gui,widgets] designer? ( dev-qt/qttools:6[designer] ) pulseaudio? ( dev-libs/glib:2 media-libs/libpulse[glib] )
 DESCRIPTION=KDE multimedia abstraction library
 EAPI=8
 HOMEPAGE=https://community.kde.org/Phonon
-INHERIT=cmake desktop flag-o-matic kde.org multibuild
-IUSE=debug designer minimal pulseaudio qt5 +qt6
+INHERIT=cmake desktop flag-o-matic kde.org
+IUSE=debug designer minimal pulseaudio
 LICENSE=|| ( LGPL-2.1 LGPL-3 ) !pulseaudio? ( || ( GPL-2 GPL-3 ) )
-PDEPEND=!minimal? ( >=media-libs/phonon-vlc-0.12.0[qt5(-)?,qt6(+)?] )
+PDEPEND=!minimal? ( >=media-libs/phonon-vlc-0.12.0-r2 )
 PROPERTIES=live
-RDEPEND=pulseaudio? ( dev-libs/glib:2 media-libs/libpulse[glib] ) qt5? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 designer? ( dev-qt/designer:5 ) ) qt6? ( dev-qt/qt5compat:6 dev-qt/qtbase:6[gui,widgets] designer? ( dev-qt/qttools:6[designer] ) ) || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* )
-REQUIRED_USE=|| ( qt5 qt6 )
+RDEPEND=dev-qt/qt5compat:6 dev-qt/qtbase:6[gui,widgets] designer? ( dev-qt/qttools:6[designer] ) pulseaudio? ( dev-libs/glib:2 media-libs/libpulse[glib] ) !media-libs/phonon-gstreamer || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* )
 SLOT=0
-_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	d2518fae57f473669111338ada89eda6	desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	git-r3	875eb471682d3e1f18da124be97dcc81	kde.org	80b28d5fdf328cc9f15789c5b346bdec	out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364
-_md5_=aa9f0cae22cb54fd1d5fa03451fe888e
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	d2518fae57f473669111338ada89eda6	desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	git-r3	875eb471682d3e1f18da124be97dcc81	kde.org	80b28d5fdf328cc9f15789c5b346bdec
+_md5_=82f3bd7a4ce481b3a556a3ff92ad469d

@@ -23,10 +23,6 @@ dev-libs/ktextaddons:designer - Build plugins for dev-qt/designer
 dev-libs/qcoro:network - Build dev-qt/qtbase network support
 dev-libs/qcoro:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
 dev-libs/qcoro:websockets - Build dev-qt/qtwebsockets support
-dev-libs/qcoro5:network - Build dev-qt/qtnetwork support
-dev-libs/qcoro5:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
-dev-libs/qcoro5:testlib - Install coroutine-friendly versions of dev-qt/qttest macros
-dev-libs/qcoro5:websockets - Build dev-qt/qtwebsockets support
 dev-util/kdevelop:gdbui - Enable GUI for attaching GDB to a running process
 dev-util/kdevelop:qmake - Enable support for QMake build system
 dev-util/kdevelop:share - Enable support for patch sharing using kde-frameworks/purpose

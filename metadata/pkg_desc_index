@@ -33,7 +33,6 @@ dev-libs/ktextaddons 9999: Various text handling addons
 dev-libs/kweathercore 25.04.3 25.04.49.9999 9999: Library for retrieval of weather information including forecasts and alerts
 dev-libs/plasma-wayland-protocols 9999: Plasma Specific Protocols for Wayland
 dev-libs/qcoro 9999: C++ Coroutine Library for Qt
-dev-libs/qcoro5 9999: C++ Coroutine Library for Qt5
 dev-python/parse_cmake 0.4.1-r2: Parser for CMakeLists.txt files
 dev-util/kdevelop 25.04.3 25.04.49.9999 9999: Integrated Development Environment, supporting KF6/Qt, C/C++ and much more
 dev-util/kdevelop-pg-qt 9999: LL(1) parser generator used mainly by KDevelop language plugins
