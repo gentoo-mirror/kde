@@ -377,6 +377,7 @@ kde-plasma/kgamma 6.4.49.9999 9999: Screen gamma values kcontrol module
 kde-plasma/kglobalacceld 6.4.49.9999 9999: Daemon providing Global Keyboard Shortcut (Accelerator) functionality
 kde-plasma/kinfocenter 6.4.49.9999 9999: Utility providing information about the computer hardware
 kde-plasma/kmenuedit 6.4.49.9999 9999: KDE Plasma menu editor
+kde-plasma/knighttime 9999: Helpers for scheduling the dark-light cycle
 kde-plasma/kpipewire 6.4.49.9999 9999: Components relating to Flatpak pipewire use in Plasma
 kde-plasma/krdp 6.4.49.9999 9999: Library and examples for creating an RDP server
 kde-plasma/kscreen 6.4.49.9999 9999: KDE Plasma screen management
