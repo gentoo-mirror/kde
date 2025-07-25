@@ -1,0 +1,10 @@
+DEFINED_PHASES=-
+DESCRIPTION=KDE educational apps - merge this to pull in all kdeedu-derived packages
+EAPI=8
+HOMEPAGE=https://apps.kde.org/categories/education/
+IUSE=qt5 +webengine
+KEYWORDS=~amd64 ~arm64
+LICENSE=metapackage
+RDEPEND=>=kde-apps/analitza-25.07.90:* >=kde-apps/artikulate-25.07.90:* >=kde-apps/blinken-25.07.90:* >=kde-apps/cantor-25.07.90:* >=kde-apps/kalzium-25.07.90:* >=kde-apps/kanagram-25.07.90:* >=kde-apps/kbruch-25.07.90:* >=kde-apps/kdeedu-data-25.07.90:* >=kde-apps/kgeography-25.07.90:* >=kde-apps/khangman-25.07.90:* >=kde-apps/kig-25.07.90:* >=kde-apps/kiten-25.07.90:* >=kde-apps/klettres-25.07.90:* >=kde-apps/kmplot-25.07.90:* >=kde-apps/kqtquickcharts-25.07.90:* >=kde-apps/ktouch-25.07.90:* >=kde-apps/kturtle-25.07.90:* >=kde-apps/kwordquiz-25.07.90:* >=kde-apps/libkeduvocdocument-25.07.90:* >=kde-apps/marble-25.07.90:* >=kde-apps/minuet-25.07.90:* qt5? ( >=kde-apps/rocs-25.04.0:* ) >=kde-apps/step-25.07.90:* webengine? ( >=kde-apps/kalgebra-25.07.90:* >=kde-apps/parley-25.07.90:* )
+SLOT=0
+_md5_=d1fd78b941d26ff55c4a1f6911d9998e
