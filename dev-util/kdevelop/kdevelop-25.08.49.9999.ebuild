@@ -68,7 +68,7 @@ COMMON_DEPEND="
 		>=kde-frameworks/krunner-${KFMIN}:6
 		kde-plasma/libplasma:6
 	)
-	qmake? ( >=dev-util/kdevelop-pg-qt-2.3.0:0 )
+	qmake? ( >=dev-util/kdevelop-pg-qt-2.4.0:0 )
 	share? ( >=kde-frameworks/purpose-${KFMIN}:6 )
 	subversion? (
 		dev-libs/apr:1
@@ -88,13 +88,18 @@ RDEPEND="${COMMON_DEPEND}
 	kde-apps/kio-extras:6
 "
 
+src_prepare() {
+	rm -r plugins/qmljs # bug 960669, unused upstream
+	ecm_src_prepare
+}
+
 src_configure() {
 	local mycmakeargs=(
 		-DLLVM_ROOT="$(get_llvm_prefix)"
 		$(cmake_use_find_package gdbui KSysGuard)
 		-DBUILD_executeplasmoid=$(usex plasma)
 		$(cmake_use_find_package plasma Plasma)
-		$(cmake_use_find_package qmake KDevelop-PG-Qt)
+		$(cmake_use_find_package qmake KDevelopPGQt)
 		$(cmake_use_find_package share KF6Purpose)
 		$(cmake_use_find_package subversion SubversionLibrary)
 	)
