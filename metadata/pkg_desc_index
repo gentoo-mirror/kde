@@ -57,7 +57,7 @@ kde-apps/akonadiconsole 25.07.90 25.08.49.9999 9999: Application for debugging A
 kde-apps/akregator 25.07.90 25.08.49.9999 9999: News feed aggregator
 kde-apps/analitza 25.07.90 25.08.49.9999 9999: KDE library for mathematical features
 kde-apps/ark 25.07.90 25.08.49.9999 9999: File archiver by KDE
-kde-apps/artikulate 25.07.90 25.08.49.9999 9999: Language learning application that helps improving pronunciation skills
+kde-apps/artikulate 25.08.49.9999 9999: Language learning application that helps improving pronunciation skills
 kde-apps/audiocd-kio 25.07.90 25.08.49.9999 9999: KIO worker for accessing audio CDs
 kde-apps/baloo-widgets 25.07.90 25.08.49.9999 9999: Widget library for baloo
 kde-apps/blinken 25.07.90 25.08.49.9999 9999: Memory enhancement game based on KDE Frameworks
@@ -148,7 +148,7 @@ kde-apps/kgpg 25.07.90 25.08.49.9999 9999: Frontend for GnuPG, a powerful encryp
 kde-apps/khangman 25.07.90 25.08.49.9999 9999: Classical hangman game by KDE
 kde-apps/khelpcenter 25.07.90 25.08.49.9999 9999: Application to read documentation for KDE Plasma, Applications, Utilities
 kde-apps/kidentitymanagement 25.07.90 25.08.49.9999 9999: Library for managing identitites
-kde-apps/kig 25.07.90 25.08.49.9999 9999: KDE Interactive Geometry tool
+kde-apps/kig 25.08.49.9999 9999: KDE Interactive Geometry tool
 kde-apps/kigo 25.07.90 25.08.49.9999 9999: Go game by KDE
 kde-apps/killbots 25.07.90 25.08.49.9999 9999: Kill the bots or they kill you!
 kde-apps/kimagemapeditor 25.07.90 25.08.49.9999 9999: Generator of HTML image maps
@@ -192,7 +192,7 @@ kde-apps/korganizer 25.07.90 25.08.49.9999 9999: Organizational assistant, provi
 kde-apps/kpat 25.07.90 25.08.49.9999 9999: KDE patience game
 kde-apps/kpimtextedit 25.07.90 25.08.49.9999 9999: Extended text editor for PIM applications
 kde-apps/kpkpass 25.07.90 25.08.49.9999 9999: Library to deal with Apple Wallet pass files
-kde-apps/kqtquickcharts 25.07.90 25.08.49.9999 9999: Qt Quick plugin for beautiful and interactive charts
+kde-apps/kqtquickcharts 25.08.49.9999 9999: Qt Quick plugin for beautiful and interactive charts
 kde-apps/krdc 25.07.90 25.08.49.9999 9999: Remote desktop connection (RDP and VNC) client
 kde-apps/kreversi 25.07.90 25.08.49.9999 9999: Board game by KDE
 kde-apps/krfb 25.07.90 25.08.49.9999 9999: VNC-compatible server to share Plasma desktops
@@ -207,7 +207,7 @@ kde-apps/ksudoku 25.07.90 25.08.49.9999 9999: Logic-based symbol placement puzzl
 kde-apps/ksystemlog 25.07.90 25.08.49.9999 9999: System log viewer by KDE
 kde-apps/kteatime 25.07.90 25.08.49.9999 9999: KDE timer for making a fine cup of tea
 kde-apps/ktimer 25.07.90 25.08.49.9999 9999: Little tool to execute programs after some time
-kde-apps/ktouch 25.07.90 25.08.49.9999 9999: Program that helps to learn and practice touch typing
+kde-apps/ktouch 25.08.49.9999 9999: Program that helps to learn and practice touch typing
 kde-apps/ktuberling 25.07.90 25.08.49.9999 9999: Potato game for kids by KDE
 kde-apps/kturtle 25.07.90 25.08.49.9999 9999: Educational programming environment using the Logo programming language
 kde-apps/kubrick 25.07.90 25.08.49.9999 9999: Game based on the "Rubik's Cube" puzzle by KDE
