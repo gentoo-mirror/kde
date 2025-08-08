@@ -11,5 +11,5 @@ RDEPEND=!<kde-misc/kio-gdrive-23.08.5-r2:5 !<kde-misc/kio-gdrive-24.05.2-r1:6
 RESTRICT=mirror
 SLOT=0
 SRC_URI=mirror://kde/unstable/release-service/25.07.90/src/kio-gdrive-25.07.90.tar.xz
-_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	d2518fae57f473669111338ada89eda6	ecm-common	ede7d1ca64ead7ea0c719af12d8633a8	kde.org	80b28d5fdf328cc9f15789c5b346bdec	gear.kde.org	82ffe34462966333d61881de9375bc87
+_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	d2518fae57f473669111338ada89eda6	ecm-common	ede7d1ca64ead7ea0c719af12d8633a8	kde.org	80b28d5fdf328cc9f15789c5b346bdec	gear.kde.org	3758993b390b2a1b7e3950bbc4646860
 _md5_=301de430921a1d2b96104d73c4262cd4
