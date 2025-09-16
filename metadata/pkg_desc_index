@@ -364,6 +364,7 @@ kde-plasma/breeze-gtk 6.4.49.9999 9999: Official GTK+ port of Plasma's Breeze wi
 kde-plasma/breeze-plymouth 6.4.49.9999 9999: Breeze theme for Plymouth
 kde-plasma/discover 6.4.49.9999 9999: KDE Plasma resources management GUI
 kde-plasma/drkonqi 6.4.49.9999 9999: Plasma crash handler, gives the user feedback if a program crashed
+kde-plasma/drkonqi-legacy 9999: Plasma crash handler, gives the user feedback if a program crashed
 kde-plasma/flatpak-kcm 6.4.49.9999 9999: Flatpak Permissions Management KCM
 kde-plasma/kactivitymanagerd 6.4.49.9999 9999: System service to manage user's activities, track the usage patterns etc.
 kde-plasma/kde-cli-tools 6.4.49.9999 9999: Tools based on KDE Frameworks 6 to better interact with the system
