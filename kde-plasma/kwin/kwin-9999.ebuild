@@ -4,6 +4,7 @@
 EAPI=8
 
 ECM_HANDBOOK="optional"
+# TODO: ECMGenerateQDoc
 ECM_TEST="true"
 KFMIN=9999
 QTMIN=6.9.1
@@ -18,7 +19,7 @@ IUSE="accessibility gles2-only lock screencast +shortcuts systemd X"
 
 RESTRICT="test"
 
-# qtbase slot op: GuiPrivate use in tabbox
+# qtbase slot op: GuiPrivate use in tabbox, Qt6WaylandClientPrivate for xx-pip-v1
 # qtbase[X]: private/qtx11extras_p.h in src/helpers/killer
 COMMON_DEPEND="
 	dev-libs/libei
@@ -93,7 +94,7 @@ RDEPEND="${COMMON_DEPEND}
 "
 RDEPEND+=" || ( >=dev-qt/qtbase-6.10:6[wayland] <dev-qt/qtwayland-6.10:6 )"
 DEPEND="${COMMON_DEPEND}
-	>=dev-libs/plasma-wayland-protocols-1.18.0
+	>=dev-libs/plasma-wayland-protocols-1.19.0
 	>=dev-libs/wayland-protocols-1.45
 	>=dev-qt/qtbase-${QTMIN}:6[concurrent]
 	test? ( screencast? ( >=kde-plasma/kpipewire-${KDE_CATV}:6 ) )
@@ -126,7 +127,7 @@ src_prepare() {
 
 src_configure() {
 	local mycmakeargs=(
-		# KWIN_BUILD_DECORATIONS exists
+		# KWIN_BUILD_DECORATIONS exists, drops aurorae, breeze
 		# KWIN_BUILD_NOTIFICATIONS exists, but kdeclarative still hard-depends on it
 		$(cmake_use_find_package accessibility QAccessibilityClient6)
 		-DKWIN_BUILD_SCREENLOCKER=$(usex lock)

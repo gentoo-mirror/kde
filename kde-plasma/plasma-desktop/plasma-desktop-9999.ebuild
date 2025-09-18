@@ -27,6 +27,7 @@ COMMON_DEPEND="
 	>=dev-qt/qt5compat-${QTMIN}:6[qml]
 	>=dev-qt/qtbase-${QTMIN}:6=[concurrent,dbus,gui,network,sql,wayland,widgets,xml]
 	>=dev-qt/qtdeclarative-${QTMIN}:6
+	>=dev-qt/qtshadertools-${QTMIN}:6
 	>=dev-qt/qtsvg-${QTMIN}:6
 	>=kde-frameworks/attica-${KFMIN}:6
 	>=kde-frameworks/karchive-${KFMIN}:6
@@ -70,6 +71,7 @@ COMMON_DEPEND="
 	>=kde-plasma/plasma-workspace-${KDE_CATV}:6[screencast?,X]
 	>=kde-plasma/plasma5support-${KDE_CATV}:6
 	media-libs/libcanberra
+	virtual/libudev:=
 	x11-libs/libX11
 	x11-libs/libxcb
 	x11-libs/libXcursor
