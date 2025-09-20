@@ -44,16 +44,17 @@ DEPEND="
 	>=kde-frameworks/kxmlgui-${KFMIN}:6
 	>=kde-frameworks/sonnet-${KFMIN}:6
 	>=kde-plasma/libplasma-${KDE_CATV}:6
-	>=kde-plasma/plasma5support-${KDE_CATV}:6
 	alternate-calendar? ( dev-libs/icu:= )
 	share? ( >=kde-frameworks/purpose-${KFMIN}:6 )
 	webengine? ( >=dev-qt/qtwebengine-${QTMIN}:6 )
 "
 RDEPEND="${DEPEND}
+	!<kde-plasma/plasma-workspace-6.4.80
 	dev-libs/kirigami-addons:6
 	>=dev-qt/qtquick3d-${QTMIN}:6
 	>=kde-frameworks/kirigami-${KFMIN}:6
 	>=kde-frameworks/kitemmodels-${KFMIN}:6
+	>=kde-plasma/plasma5support-${KDE_CATV}:6
 "
 
 src_configure() {
