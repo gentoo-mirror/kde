@@ -1,15 +1,15 @@
-BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5 doc? ( >=app-text/doxygen-1.8.13-r1 ) doc? ( dev-qt/qttools:6[assistant] ) dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-6.9.0:* >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5 dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-6.16.0:* >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure info install nofetch prepare test unpack
-DEPEND=>=dev-qt/qtbase-6.8.1:6[gui] >=dev-qt/qtdeclarative-6.8.1:6 >=kde-frameworks/kcoreaddons-6.9.0:6 >=kde-frameworks/kconfig-6.9.0:6 >=kde-frameworks/kglobalaccel-6.9.0:6 >=kde-frameworks/kguiaddons-6.9.0:6 >=kde-frameworks/ki18n-6.9.0:6 >=kde-frameworks/kirigami-6.9.0:6 test? ( >=dev-qt/qtmultimedia-6.8.1:6[qml] x11-themes/sound-theme-freedesktop ) doc? ( dev-qt/qt-docs:6 ) dev-qt/qtbase:6
+DEPEND=>=dev-qt/qtbase-6.8.1:6[gui] >=dev-qt/qtdeclarative-6.8.1:6 >=kde-frameworks/kcoreaddons-6.16.0:6 >=kde-frameworks/kconfig-6.16.0:6 >=kde-frameworks/kglobalaccel-6.16.0:6 >=kde-frameworks/kguiaddons-6.16.0:6 >=kde-frameworks/ki18n-6.16.0:6 >=kde-frameworks/kirigami-6.16.0:6 test? ( >=dev-qt/qtmultimedia-6.8.1:6[qml] x11-themes/sound-theme-freedesktop ) dev-qt/qtbase:6
 DESCRIPTION=Visual end user components for Kirigami-based applications
 EAPI=8
 HOMEPAGE=https://invent.kde.org/libraries/kirigami-addons
 INHERIT=ecm kde.org
-IUSE=debug doc test
+IUSE=debug test
 LICENSE=|| ( GPL-2 GPL-3 LGPL-3 ) LGPL-2.1+
 PROPERTIES=live
-RDEPEND=>=dev-qt/qtbase-6.8.1:6[gui] >=dev-qt/qtdeclarative-6.8.1:6 >=kde-frameworks/kcoreaddons-6.9.0:6 >=kde-frameworks/kconfig-6.9.0:6 >=kde-frameworks/kglobalaccel-6.9.0:6 >=kde-frameworks/kguiaddons-6.9.0:6 >=kde-frameworks/ki18n-6.9.0:6 >=kde-frameworks/kirigami-6.9.0:6 >=dev-qt/qtmultimedia-6.8.1:6[qml] >=kde-frameworks/qqc2-desktop-style-6.9.0:6 kde-plasma/libplasma:6 || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-6 doc? ( dev-qt/qt-docs:6 ) dev-qt/qtbase:6
+RDEPEND=>=dev-qt/qtbase-6.8.1:6[gui] >=dev-qt/qtdeclarative-6.8.1:6 >=kde-frameworks/kcoreaddons-6.16.0:6 >=kde-frameworks/kconfig-6.16.0:6 >=kde-frameworks/kglobalaccel-6.16.0:6 >=kde-frameworks/kguiaddons-6.16.0:6 >=kde-frameworks/ki18n-6.16.0:6 >=kde-frameworks/kirigami-6.16.0:6 >=dev-qt/qtmultimedia-6.8.1:6[qml] >=kde-frameworks/qqc2-desktop-style-6.16.0:6 kde-plasma/libplasma:6 || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-6 dev-qt/qtbase:6
 RESTRICT=test !test? ( test )
 SLOT=6
 _eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	d2518fae57f473669111338ada89eda6	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	32d15cfcdfffe02f7f376920dd701da4	git-r3	875eb471682d3e1f18da124be97dcc81	kde.org	80b28d5fdf328cc9f15789c5b346bdec
-_md5_=644883e5a0e7ecd81678bfbd82958a7c
+_md5_=9b90a1458a19a984cb2a6399c15c6c14
