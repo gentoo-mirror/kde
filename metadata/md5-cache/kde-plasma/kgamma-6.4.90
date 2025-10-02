@@ -13,5 +13,5 @@ RDEPEND=>=dev-qt/qtbase-6.9.1:6[gui,widgets] >=kde-frameworks/kcmutils-6.18.0:6 
 RESTRICT=mirror
 SLOT=6
 SRC_URI=mirror://kde/unstable/plasma/6.4.90/kgamma-6.4.90.tar.xz
-_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	d8753734dbf72af5a90aca0a0e9ffa62	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	32d15cfcdfffe02f7f376920dd701da4	kde.org	80b28d5fdf328cc9f15789c5b346bdec	plasma.kde.org	7dce7e123b845b50045d250ddb278647	xdg	3ef49a87c52c8b77c476351195dfe575
+_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	97a973545e2ce1c232d76cadc5831e82	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	32d15cfcdfffe02f7f376920dd701da4	kde.org	80b28d5fdf328cc9f15789c5b346bdec	plasma.kde.org	7dce7e123b845b50045d250ddb278647	xdg	3ef49a87c52c8b77c476351195dfe575
 _md5_=3e79ea6b140f7c7ce5cb76cf30f42295
