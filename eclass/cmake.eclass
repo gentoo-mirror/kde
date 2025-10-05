@@ -106,7 +106,8 @@ fi
 # @DESCRIPTION:
 # Warn about variables that are declared on the command line
 # but not used. Might give false-positives.
-# "no" to disable (default) or anything else to enable.
+# "no" to disable or anything else to enable.
+# The default is set to "yes" (enabled).
 : "${CMAKE_WARN_UNUSED_CLI:=yes}"
 
 # @ECLASS_VARIABLE: CMAKE_EXTRA_CACHE_FILE
@@ -156,7 +157,7 @@ case ${CMAKE_MAKEFILE_GENERATOR} in
 esac
 
 if [[ ${PN} != cmake ]]; then
-	BDEPEND+=" >=dev-build/cmake-3.20.5"
+	BDEPEND+=" >=dev-build/cmake-3.28.5"
 fi
 
 # @FUNCTION: cmake_run_in
