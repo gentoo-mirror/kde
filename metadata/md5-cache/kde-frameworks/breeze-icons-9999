@@ -1,4 +1,4 @@
-BDEPEND=|| ( dev-lang/python:3.13 dev-lang/python:3.12 dev-lang/python:3.11 ) || ( ( dev-lang/python:3.13 dev-python/lxml[python_targets_python3_13(-)] ) ( dev-lang/python:3.12 dev-python/lxml[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/lxml[python_targets_python3_11(-)] ) ) dev-qt/qtbase:6[gui] >=kde-frameworks/extra-cmake-modules-9999:* test? ( app-misc/fdupes ) app-alternatives/ninja >=dev-build/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=|| ( dev-lang/python:3.13 dev-lang/python:3.12 dev-lang/python:3.11 ) || ( ( dev-lang/python:3.13 dev-python/lxml[python_targets_python3_13(-)] ) ( dev-lang/python:3.12 dev-python/lxml[python_targets_python3_12(-)] ) ( dev-lang/python:3.11 dev-python/lxml[python_targets_python3_11(-)] ) ) dev-qt/qtbase:6[gui] >=kde-frameworks/extra-cmake-modules-9999:* test? ( app-misc/fdupes ) app-alternatives/ninja >=dev-build/cmake-3.28.5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure info install nofetch postinst postrm preinst prepare setup test unpack
 DESCRIPTION=Breeze SVG icon theme
 EAPI=8
@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=!kde-frameworks/breeze-icons:5 !kde-frameworks/breeze-icons-rcc:5 !kde-frameworks/breeze-icons-rcc:6
 RESTRICT=!test? ( test )
 SLOT=6/9999
-_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	56c905eb71959b7922049ebef9045450	git-r3	875eb471682d3e1f18da124be97dcc81	kde.org	80b28d5fdf328cc9f15789c5b346bdec	frameworks.kde.org	d6e84f795582f08d97a7dc69b02e401f	python-utils-r1	0b620dd604ab8af0bc9cd1bcc66d4f7c	python-any-r1	891415dfe39ad9b41b461f2b86354af0	xdg	3ef49a87c52c8b77c476351195dfe575
+_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	57d8d61fe679eeb19e62b5b77c89539f	git-r3	875eb471682d3e1f18da124be97dcc81	kde.org	80b28d5fdf328cc9f15789c5b346bdec	frameworks.kde.org	d6e84f795582f08d97a7dc69b02e401f	python-utils-r1	0b620dd604ab8af0bc9cd1bcc66d4f7c	python-any-r1	891415dfe39ad9b41b461f2b86354af0	xdg	3ef49a87c52c8b77c476351195dfe575
 _md5_=e5b353aee194012127d83dc67df67acb
