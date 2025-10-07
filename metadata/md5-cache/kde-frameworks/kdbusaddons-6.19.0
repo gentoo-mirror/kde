@@ -1,4 +1,4 @@
-BDEPEND=>=dev-qt/qttools-6.7.2:6[linguist] app-alternatives/ninja >=dev-build/cmake-3.28.5 dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-6.19:*
+BDEPEND=>=dev-qt/qttools-6.7.2:6[linguist] app-alternatives/ninja >=dev-build/cmake-3.31.9-r1 dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-6.19:*
 DEFINED_PHASES=compile configure info install nofetch prepare test unpack
 DEPEND=>=dev-qt/qtbase-6.7.2:6[dbus] X? ( >=dev-qt/qtbase-6.7.2:6=[gui,X] ) dev-qt/qtbase:6
 DESCRIPTION=Framework for registering services and applications per freedesktop standards
@@ -12,5 +12,5 @@ RDEPEND=>=dev-qt/qtbase-6.7.2:6[dbus] X? ( >=dev-qt/qtbase-6.7.2:6=[gui,X] ) >=k
 RESTRICT=!test? ( test ) fetch fetch
 SLOT=6/6.19
 SRC_URI=mirror://kde/stable/frameworks/6.19/kdbusaddons-6.19.0.tar.xz
-_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	57d8d61fe679eeb19e62b5b77c89539f	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	32d15cfcdfffe02f7f376920dd701da4	kde.org	80b28d5fdf328cc9f15789c5b346bdec	frameworks.kde.org	b8a3396640048b65389e4ae8dd743e71
+_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3bf0b10b545696b633aa1300113904f9	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	32d15cfcdfffe02f7f376920dd701da4	kde.org	80b28d5fdf328cc9f15789c5b346bdec	frameworks.kde.org	b8a3396640048b65389e4ae8dd743e71
 _md5_=12135f60b116339a3958753bd4f56074
