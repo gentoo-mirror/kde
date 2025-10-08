@@ -307,6 +307,7 @@ kde-frameworks/kplotting 6.19.0 9999: Framework providing easy data-plotting fun
 kde-frameworks/kpty 6.19.0 9999: Framework for pseudo terminal devices and running child processes
 kde-frameworks/kquickcharts 6.19.0 9999: QtQuick plugin providing high-performance charts
 kde-frameworks/krunner 6.19.0 9999: Framework for providing different actions given a string query
+kde-frameworks/ksecretd-services 6.19.0 9999: D-Bus service files for ksecretd kwallet runtime component
 kde-frameworks/kservice 6.19.0 9999: Advanced plugin and service introspection
 kde-frameworks/kstatusnotifieritem 6.19.0 9999: Implementation of Status Notifier Items
 kde-frameworks/ksvg 6.19.0 9999: Components for handling SVGs
