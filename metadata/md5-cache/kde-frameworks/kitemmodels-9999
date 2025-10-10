@@ -1,6 +1,6 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.31.9-r1 dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-9999:* >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure info install nofetch prepare test unpack
-DEPEND=>=dev-qt/qtdeclarative-6.7.2:6 test? ( >=dev-qt/qtbase-6.7.2:6[widgets] ) dev-qt/qtbase:6
+DEPEND=>=dev-qt/qtdeclarative-6.8.1:6 test? ( >=dev-qt/qtbase-6.8.1:6[widgets] ) dev-qt/qtbase:6
 DESCRIPTION=Framework providing data models to help with tasks such as sorting and filtering
 EAPI=8
 HOMEPAGE=https://develop.kde.org/products/frameworks/
@@ -8,8 +8,8 @@ INHERIT=ecm frameworks.kde.org
 IUSE=debug test
 LICENSE=LGPL-2+
 PROPERTIES=live
-RDEPEND=>=dev-qt/qtdeclarative-6.7.2:6 >=kde-frameworks/kf-env-6 dev-qt/qtbase:6
+RDEPEND=>=dev-qt/qtdeclarative-6.8.1:6 >=kde-frameworks/kf-env-6 dev-qt/qtbase:6
 RESTRICT=!test? ( test )
 SLOT=6/9999
 _eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	94b7f23cdd214586603bea1f4c035d0f	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	32d15cfcdfffe02f7f376920dd701da4	git-r3	875eb471682d3e1f18da124be97dcc81	kde.org	80b28d5fdf328cc9f15789c5b346bdec	frameworks.kde.org	b8a3396640048b65389e4ae8dd743e71
-_md5_=7df6ebcbc165e22118e80737c6e05b21
+_md5_=9304b32e6c3420c5cbf298b83d5d4aa2
