@@ -10,5 +10,5 @@ RDEPEND=!kde-plasma/plasma-workspace-wallpapers:5
 RESTRICT=mirror
 SLOT=6
 SRC_URI=mirror://kde/unstable/plasma/6.4.91/plasma-workspace-wallpapers-6.4.91.tar.xz
-_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	94b7f23cdd214586603bea1f4c035d0f	kde.org	80b28d5fdf328cc9f15789c5b346bdec	plasma.kde.org	7dce7e123b845b50045d250ddb278647
+_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	94b7f23cdd214586603bea1f4c035d0f	kde.org	80b28d5fdf328cc9f15789c5b346bdec	plasma.kde.org	7dce7e123b845b50045d250ddb278647
 _md5_=5cd0b5829816d94b4d49f0e190f4eb0f
