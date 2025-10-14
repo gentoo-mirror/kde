@@ -12,5 +12,5 @@ RDEPEND=>=dev-qt/qtbase-6.9.1:6[dbus,gui,sql,widgets] >=dev-qt/qtdeclarative-6.9
 RESTRICT=test !test? ( test ) mirror
 SLOT=6
 SRC_URI=mirror://kde/unstable/plasma/6.4.91/plasma5support-6.4.91.tar.xz
-_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	ceb2cc8817ed5b3225c89c6abe3797d0	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	32d15cfcdfffe02f7f376920dd701da4	kde.org	80b28d5fdf328cc9f15789c5b346bdec	plasma.kde.org	7dce7e123b845b50045d250ddb278647
+_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	75b6feefca8435d02ba8161bafa6c8e5	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	30593f9776ac9d483447dfaa75ef672f	kde.org	80b28d5fdf328cc9f15789c5b346bdec	plasma.kde.org	7dce7e123b845b50045d250ddb278647
 _md5_=f0ec53e24a2ed034f67753c559caeba0
