@@ -10,5 +10,5 @@ LICENSE=GPL-2+
 PROPERTIES=live
 RDEPEND=|| ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-6 dev-qt/qtbase:6 !kde-plasma/oxygen-sounds:5
 SLOT=6
-_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	02309084a331e82c9f2f3511e60d319b	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	30593f9776ac9d483447dfaa75ef672f	git-r3	875eb471682d3e1f18da124be97dcc81	kde.org	80b28d5fdf328cc9f15789c5b346bdec	plasma.kde.org	1da156f3b317977a45ecb6807f0fc485
+_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	2a92eddaaa720674532a5f79fa2262e0	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	30593f9776ac9d483447dfaa75ef672f	git-r3	875eb471682d3e1f18da124be97dcc81	kde.org	80b28d5fdf328cc9f15789c5b346bdec	plasma.kde.org	1da156f3b317977a45ecb6807f0fc485
 _md5_=d3f9ad8d5e27215e6a7d4e5c0d364f1e
