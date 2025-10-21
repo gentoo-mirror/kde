@@ -9,8 +9,7 @@ IUSE=debug
 KEYWORDS=~amd64
 LICENSE=CC-BY-SA-4.0
 RDEPEND=|| ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-6 dev-qt/qtbase:6
-RESTRICT=fetch fetch
 SLOT=6
 SRC_URI=mirror://kde/stable/plasma/6.5.0/ocean-sound-theme-6.5.0.tar.xz
-_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	b5201bfbea1ba50e51da767dfad9e254	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	30593f9776ac9d483447dfaa75ef672f	kde.org	80b28d5fdf328cc9f15789c5b346bdec	plasma.kde.org	1da156f3b317977a45ecb6807f0fc485
+_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	b5201bfbea1ba50e51da767dfad9e254	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	30593f9776ac9d483447dfaa75ef672f	kde.org	80b28d5fdf328cc9f15789c5b346bdec	plasma.kde.org	7dce7e123b845b50045d250ddb278647
 _md5_=25207bc778aad5650ed29e3870145991
