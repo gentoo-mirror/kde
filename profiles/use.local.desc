@@ -254,7 +254,6 @@ media-gfx/kphotoalbum:vlc - Enable media-video/vlc video backend (recommended fo
 media-gfx/krita:color-management - Enable color management via media-libs/opencolorio
 media-gfx/krita:media - Enable sound support for animations via media-libs/mlt
 media-gfx/krita:mypaint-brush-engine - Enable MyPaint brush engine support media-libs/libmypaint
-media-libs/phonon:designer - Install plugin for dev-qt/designer
 media-sound/amarok:lastfm - Enable Last.fm streaming services support through media-libs/liblastfm
 media-sound/amarok:mariadb - Prefer dev-db/mariadb-connector-c over dev-db/mysql-connector-c
 media-sound/amarok:mtp - Enable support for libMTP (Plays4Sure) devices access through libmtp

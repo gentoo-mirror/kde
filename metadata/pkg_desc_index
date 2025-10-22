@@ -449,8 +449,6 @@ media-libs/kquickimageeditor 9999: QtQuick components providing basic image edit
 media-libs/ksanecore 25.08.49.9999 9999: Qt-based interface for SANE library to control scanner hardware
 media-libs/libqaccessibilityclient 9999: Library for writing accessibility clients such as screen readers
 media-libs/mpvqt 9999: libmpv wrapper for QtQuick2 and QML
-media-libs/phonon 9999: KDE multimedia abstraction library
-media-libs/phonon-vlc 9999: VLC backend for the Phonon multimedia library
 media-libs/pulseaudio-qt 9999: Qt bindings for libpulse
 media-sound/amarok 9999: Advanced audio player based on KDE Frameworks
 media-sound/audex 25.08.49.9999 9999: Tool for ripping compact discs
