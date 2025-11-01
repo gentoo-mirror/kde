@@ -17,7 +17,7 @@ HOMEPAGE="https://kdenlive.org/en/"
 LICENSE="GPL-3"
 SLOT="6"
 KEYWORDS=""
-IUSE="gles2-only semantic-desktop v4l"
+IUSE="gles2-only semantic-desktop"
 
 RESTRICT="test" # segfaults, bug 684132
 
@@ -27,6 +27,7 @@ DEPEND="
 	>=dev-qt/qtmultimedia-${QTMIN}:6
 	>=dev-qt/qtnetworkauth-${QTMIN}:6
 	>=dev-qt/qtsvg-${QTMIN}:6
+	>=gui-libs/kddockwidgets-2.2.5:=
 	>=kde-frameworks/karchive-${KFMIN}:6
 	>=kde-frameworks/kbookmarks-${KFMIN}:6
 	>=kde-frameworks/kcodecs-${KFMIN}:6
@@ -53,9 +54,8 @@ DEPEND="
 	>=kde-frameworks/purpose-${KFMIN}:6
 	>=kde-frameworks/solid-${KFMIN}:6
 	media-video/ffmpeg:=[encode(+),libass,sdl,X]
-	>=media-libs/mlt-7.28.0[ffmpeg,frei0r,qt6,sdl,xml]
+	>=media-libs/mlt-7.28.0:=[ffmpeg,frei0r,qt6,sdl,xml]
 	media-libs/opentimelineio:=
-	v4l? ( media-libs/libv4l )
 "
 RDEPEND="${DEPEND}
 	>=kde-frameworks/qqc2-desktop-style-${KFMIN}:6
@@ -66,7 +66,6 @@ DEPEND+=" virtual/os-headers"
 
 src_configure() {
 	local mycmakeargs=(
-		$(cmake_use_find_package v4l LibV4L2)
 		# disable fetching of opentimelineio
 		-DFETCH_OTIO=OFF
 	)
