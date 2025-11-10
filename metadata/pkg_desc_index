@@ -218,7 +218,6 @@ kde-apps/kwrite 9999: Simple text editor based on KDE Frameworks
 kde-apps/libgravatar 9999: Library for gravatar integration
 kde-apps/libkcddb 9999: KDE library for CDDB
 kde-apps/libkcddb-common 9999: Common files for libkcddb
-kde-apps/libkcompactdisc 9999: Library for playing & ripping CDs
 kde-apps/libkdcraw 9999: Digital camera raw image library wrapper
 kde-apps/libkdegames 9999: Base library common to many KDE games
 kde-apps/libkdepim 9999: Common PIM libraries
