@@ -238,6 +238,7 @@ kde-plasma/plasma-workspace:wallpaper-metadata - Show metadata for image wallpap
 kde-plasma/plasma5support:activities - Enable kactivities support
 kde-plasma/plasma5support:ksysguard - Enable device notifications dataengine using kde-plasma/libksysguard
 kde-plasma/powerdevil:brightness-control - Enable screen brightness control using app-misc/ddcutil
+kde-plasma/spectacle:ocr - Enable Optical Character Recognition support via app-text/tesseract
 kde-plasma/spectacle:share - Enable support for a share menu using kde-frameworks/purpose
 kde-plasma/union:tools - Build tools that are useful for development
 media-gfx/digikam:addressbook - Enable akonadi contact integration
