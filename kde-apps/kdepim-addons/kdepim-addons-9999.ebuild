@@ -16,14 +16,14 @@ HOMEPAGE="https://apps.kde.org/kontact/"
 LICENSE="GPL-2+ LGPL-2.1+"
 SLOT="6"
 KEYWORDS=""
-IUSE="activities importwizard markdown test"
+IUSE="activities importwizard itinerary markdown test"
 
 RESTRICT="!test? ( test )"
 
 RDEPEND="
 	dev-cpp/gpgmepp:=
 	dev-libs/qgpgme:=
-	>=dev-libs/ktextaddons-1.6.0:6
+	>=dev-libs/ktextaddons-1.8.82:6
 	>=dev-qt/qtbase-${QTMIN}:6[gui,network,widgets,xml]
 	>=dev-qt/qtwebengine-${QTMIN}:6[widgets]
 	>=kde-apps/akonadi-${PVCUT}:6=
@@ -36,7 +36,6 @@ RDEPEND="
 	>=kde-apps/kcalutils-${PVCUT}:6=
 	>=kde-apps/kidentitymanagement-${PVCUT}:6=
 	>=kde-apps/kimap-${PVCUT}:6=
-	>=kde-apps/kitinerary-${PVCUT}:6=
 	>=kde-apps/kldap-${PVCUT}:6=
 	>=kde-apps/kmailtransport-${PVCUT}:6=
 	>=kde-apps/kmime-${PVCUT}:6=
@@ -74,10 +73,13 @@ RDEPEND="
 	>=kde-frameworks/syntax-highlighting-${KFMIN}:6
 	activities? ( >=kde-plasma/plasma-activities-6.3.0:6= )
 	importwizard? ( >=kde-apps/akonadi-import-wizard-${PVCUT}:6= )
+	itinerary? ( >=kde-apps/kitinerary-${PVCUT}:6= )
 	markdown? ( app-text/discount:= )
 "
 DEPEND="${RDEPEND}"
 BDEPEND="test? ( sys-apps/dbus )"
+
+PATCHES=( "${FILESDIR}/${PN}-25.12.0-no-autogeneratetext.patch" )
 
 src_configure() {
 	local mycmakeargs=(
@@ -87,6 +89,7 @@ src_configure() {
 		-DCMAKE_DISABLE_FIND_PACKAGE_Corrosion=ON # for adblock support, bug 940898
 		-DOPTION_USE_PLASMA_ACTIVITIES=$(usex activities)
 		$(cmake_use_find_package importwizard KPim6ImportWizard)
+		$(cmake_use_find_package itinerary KPim6Itinerary)
 		$(cmake_use_find_package markdown Discount)
 	)
 

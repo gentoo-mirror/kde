@@ -22,7 +22,7 @@ IUSE="activities telemetry"
 RESTRICT="test"
 
 COMMON_DEPEND="
-	>=dev-libs/ktextaddons-1.8.0:6
+	>=dev-libs/ktextaddons-1.8.82:6
 	>=dev-qt/qtbase-${QTMIN}:6[dbus,gui,widgets]
 	>=dev-qt/qttools-${QTMIN}:6[widgets]
 	>=kde-apps/akonadi-${PVCUT}:6=
@@ -32,7 +32,6 @@ COMMON_DEPEND="
 	>=kde-apps/eventviews-${PVCUT}:6=
 	>=kde-apps/incidenceeditor-${PVCUT}:6=
 	>=kde-apps/kcalutils-${PVCUT}:6=
-	>=kde-apps/kidentitymanagement-${PVCUT}:6=
 	>=kde-apps/kmailtransport-${PVCUT}:6=
 	>=kde-apps/kmime-${PVCUT}:6=
 	>=kde-apps/kontactinterface-${PVCUT}:6=

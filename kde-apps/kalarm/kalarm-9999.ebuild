@@ -57,16 +57,13 @@ COMMON_DEPEND="
 		>=kde-apps/akonadi-mime-${PVCUT}:6=
 		>=kde-apps/kmailtransport-${PVCUT}:6=
 	)
-	speech? ( >=dev-libs/ktextaddons-1.6.0:6[speech] )
+	speech? ( >=dev-libs/ktextaddons-1.8.82:6[speech] )
 	X? ( x11-libs/libX11 )
 "
 RDEPEND="${COMMON_DEPEND}
 	pim? ( =kde-apps/kdepim-runtime-${PVCUT}*:6 )
 "
-# kde-apps/kidentitymanagement through its cmake module forces
-# kpimtextedit[speech=] in order not to break w/ kalarm[-speech]
 DEPEND="${COMMON_DEPEND}
-	>=kde-apps/kpimtextedit-${PVCUT}:6[speech=]
 	X? ( x11-base/xorg-proto )
 "
 
