@@ -4,7 +4,7 @@
 # @ECLASS: gear.kde.org.eclass
 # @MAINTAINER:
 # kde@gentoo.org
-# @SUPPORTED_EAPIS: 8
+# @SUPPORTED_EAPIS: 8 9
 # @PROVIDES: kde.org
 # @BLURB: Support eclass for KDE Gear packages.
 # @DESCRIPTION:
@@ -17,13 +17,13 @@
 # variables and helper functions (not phase functions) may be considered as
 # part of this eclass's API.
 
-case ${EAPI} in
-	8) ;;
-	*) die "${ECLASS}: EAPI ${EAPI:-0} not supported" ;;
-esac
-
 if [[ -z ${_GEAR_KDE_ORG_ECLASS} ]]; then
 _GEAR_KDE_ORG_ECLASS=1
+
+case ${EAPI} in
+	8|9) ;;
+	*) die "${ECLASS}: EAPI ${EAPI:-0} not supported" ;;
+esac
 
 # @ECLASS_VARIABLE: KDE_PV_UNRELEASED
 # @INTERNAL
@@ -71,7 +71,6 @@ if $(ver_test -gt 24.01.75); then
 		akonadi-contacts | \
 		akonadi-import-wizard | \
 		akonadi-mime | \
-		akonadi-notes | \
 		akonadi-search | \
 		akonadiconsole | \
 		akregator | \
@@ -173,7 +172,6 @@ if $(ver_test -gt 24.01.75); then
 		knavalbattle | \
 		knetwalk | \
 		knights | \
-		knotes | \
 		kolf | \
 		kollision | \
 		konqueror | \
@@ -255,7 +253,6 @@ if $(ver_test -gt 24.04.75); then
 		itinerary | \
 		kio-perldoc | \
 		kolourpaint | \
-		libkcompactdisc | \
 		signon-kwallet-extension)
 			RDEPEND+=" !${CATEGORY}/${PN}:5" ;;
 		*) ;;
