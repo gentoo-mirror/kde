@@ -9,4 +9,4 @@ RDEPEND=!kde-plasma/plasma-meta:5 !kde-plasma/khotkeys:5 >=kde-plasma/aurorae-99
 REQUIRED_USE=^^ ( elogind systemd ) firewall? ( systemd )
 SLOT=6
 _eclasses_=toolchain-funcs	30214924c0c3b92ec7dbf24fc70d60d3
-_md5_=b6ef21aec0d60b7f67acd3a0eb305895
+_md5_=130c7cf8ecb8d50868ef37e925ee0a96

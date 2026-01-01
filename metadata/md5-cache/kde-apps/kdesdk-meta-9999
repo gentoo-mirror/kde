@@ -6,4 +6,4 @@ IUSE=+git mercurial perl php python subversion webengine
 LICENSE=metapackage
 RDEPEND=>=dev-build/dolphin-plugins-makefileactions-9999:* >=dev-util/massif-visualizer-9999:* >=kde-apps/kapptemplate-9999:* >=kde-apps/kcachegrind-9999:* >=kde-apps/kde-dev-scripts-9999:* >=kde-apps/kde-dev-utils-9999:* >=kde-apps/kdesdk-thumbnailers-9999:* >=kde-apps/kompare-9999:* >=kde-apps/libkomparediff2-9999:* >=kde-apps/lokalize-9999:* >=kde-apps/poxml-9999:* >=kde-apps/umbrello-9999:* git? ( >=kde-apps/dolphin-plugins-git-9999:* ) mercurial? ( >=kde-apps/dolphin-plugins-mercurial-9999:* ) perl? ( >=dev-util/kio-perldoc-9999:* ) subversion? ( >=kde-apps/dolphin-plugins-subversion-9999:* ) webengine? ( >=dev-util/kdevelop-9999:* php? ( >=dev-util/kdevelop-php-9999:* ) python? ( >=dev-util/kdevelop-python-9999:* ) )
 SLOT=0
-_md5_=6b5850c0811a2e586ba6e7e6acbb7094
+_md5_=ce5e898803d5ce81f240d248a9eb5bae
