@@ -12,5 +12,5 @@ RDEPEND=>=dev-qt/qtbase-6.8.1:6[dbus,gui] >=dev-qt/qtdeclarative-6.8.1:6 =kde-fr
 RESTRICT=fetch fetch
 SLOT=6/6.22
 SRC_URI=mirror://kde/stable/frameworks/6.22/knotifications-6.22.0.tar.xz
-_eclasses_=toolchain-funcs	30214924c0c3b92ec7dbf24fc70d60d3	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	45922b8c337a13a1fb382d70a1717707	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	7a704a22f807392de3c13bf127f3dfea	kde.org	a9e45139c9ddc9cb3e73d04a1a66d544	frameworks.kde.org	16cd3157d086992ef9c59ad1c9bca02e
+_eclasses_=toolchain-funcs	30214924c0c3b92ec7dbf24fc70d60d3	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	f84613f11edec8d8123c54d540b03aa7	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	7a704a22f807392de3c13bf127f3dfea	kde.org	a9e45139c9ddc9cb3e73d04a1a66d544	frameworks.kde.org	16cd3157d086992ef9c59ad1c9bca02e
 _md5_=f56c372820d2b024b6d5b20c2372792d

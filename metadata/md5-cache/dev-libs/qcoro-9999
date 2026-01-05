@@ -12,5 +12,5 @@ RDEPEND=dev-qt/qtbase:6[dbus?,network?] qml? ( dev-qt/qtbase:6[gui] dev-qt/qtdec
 REQUIRED_USE=examples? ( network )
 RESTRICT=!test? ( test )
 SLOT=0
-_eclasses_=toolchain-funcs	30214924c0c3b92ec7dbf24fc70d60d3	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	45922b8c337a13a1fb382d70a1717707	git-r3	875eb471682d3e1f18da124be97dcc81
+_eclasses_=toolchain-funcs	30214924c0c3b92ec7dbf24fc70d60d3	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	f84613f11edec8d8123c54d540b03aa7	git-r3	875eb471682d3e1f18da124be97dcc81
 _md5_=704d322095ac91b707a2a9d218d66c35
