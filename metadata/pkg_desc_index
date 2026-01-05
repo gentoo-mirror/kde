@@ -407,7 +407,7 @@ kde-plasma/plasma-desktop 6.5.49.9999 9999: KDE Plasma desktop
 kde-plasma/plasma-disks 6.5.49.9999 9999: Monitors S.M.A.R.T. capable devices for imminent failure
 kde-plasma/plasma-firewall 6.5.49.9999 9999: Plasma frontend for Firewalld or UFW
 kde-plasma/plasma-integration 6.5.49.9999 9999: Qt Platform Theme integration plugins for the Plasma workspaces
-kde-plasma/plasma-keyboard 9999: Virtual keyboard based on Qt Virtual Keyboard
+kde-plasma/plasma-keyboard 0.1.0 9999: Virtual keyboard based on Qt Virtual Keyboard
 kde-plasma/plasma-login-sessions 6.5.49.9999 9999: KDE Plasma login sessions
 kde-plasma/plasma-meta 6.5.49.9999 9999: Merge this to pull in all Plasma 6 packages
 kde-plasma/plasma-nm 6.5.49.9999 9999: KDE Plasma applet for NetworkManager
