@@ -1,6 +1,6 @@
-BDEPEND=>=dev-qt/qttools-6.8.1:6[linguist] app-alternatives/ninja >=dev-build/cmake-3.31.9-r1 dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-9999:* >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=>=dev-qt/qttools-6.10.1:6[linguist] app-alternatives/ninja >=dev-build/cmake-3.31.9-r1 dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-9999:* >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure info install nofetch prepare test unpack
-DEPEND=>=dev-qt/qtbase-6.8.1:6[dbus] X? ( >=dev-qt/qtbase-6.8.1:6=[gui,X] ) dev-qt/qtbase:6
+DEPEND=>=dev-qt/qtbase-6.10.1:6[dbus] X? ( >=dev-qt/qtbase-6.10.1:6=[gui,X] ) dev-qt/qtbase:6
 DESCRIPTION=Framework for registering services and applications per freedesktop standards
 EAPI=8
 HOMEPAGE=https://develop.kde.org/products/frameworks/
@@ -8,8 +8,8 @@ INHERIT=ecm frameworks.kde.org
 IUSE=X debug test
 LICENSE=LGPL-2+
 PROPERTIES=live
-RDEPEND=>=dev-qt/qtbase-6.8.1:6[dbus] X? ( >=dev-qt/qtbase-6.8.1:6=[gui,X] ) >=kde-frameworks/kf-env-6 dev-qt/qtbase:6
+RDEPEND=>=dev-qt/qtbase-6.10.1:6[dbus] X? ( >=dev-qt/qtbase-6.10.1:6=[gui,X] ) >=kde-frameworks/kf-env-6 dev-qt/qtbase:6
 RESTRICT=!test? ( test )
 SLOT=6/9999
 _eclasses_=toolchain-funcs	30214924c0c3b92ec7dbf24fc70d60d3	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	f84613f11edec8d8123c54d540b03aa7	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	7a704a22f807392de3c13bf127f3dfea	git-r3	875eb471682d3e1f18da124be97dcc81	kde.org	a9e45139c9ddc9cb3e73d04a1a66d544	frameworks.kde.org	16cd3157d086992ef9c59ad1c9bca02e
-_md5_=acc0d8a909cff2f2ca4f3b86d64e1c6d
+_md5_=fbdd73a6a623a8854a14b96fffe76d4b

@@ -1,6 +1,6 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.31.9-r1 handbook? ( >=kde-frameworks/kdoctools-6.19.0:6 ) dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-6.19.0:* >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure info install nofetch postinst postrm preinst prepare test unpack
-DEPEND=>=dev-qt/qtbase-6.9.1:6[gui,opengl,widgets] >=dev-qt/qt5compat-6.9.1:6 >=dev-qt/qtdeclarative-6.9.1:6 >=dev-qt/qtsvg-6.9.1:6 >=dev-qt/qtwebengine-6.9.1:6[widgets] >=kde-apps/analitza-9999:6 >=kde-frameworks/kconfig-6.19.0:6 >=kde-frameworks/kconfigwidgets-6.19.0:6 >=kde-frameworks/kcoreaddons-6.19.0:6 >=kde-frameworks/ki18n-6.19.0:6 >=kde-frameworks/kio-6.19.0:6 >=kde-frameworks/kwidgetsaddons-6.19.0:6 >=kde-frameworks/kxmlgui-6.19.0:6 kde-plasma/libplasma:6 readline? ( sys-libs/readline:0= ) dev-qt/qtbase:6
+DEPEND=>=dev-qt/qtbase-6.10.1:6[gui,opengl,widgets] >=dev-qt/qt5compat-6.10.1:6 >=dev-qt/qtdeclarative-6.10.1:6 >=dev-qt/qtsvg-6.10.1:6 >=dev-qt/qtwebengine-6.10.1:6[widgets] >=kde-apps/analitza-9999:6 >=kde-frameworks/kconfig-6.19.0:6 >=kde-frameworks/kconfigwidgets-6.19.0:6 >=kde-frameworks/kcoreaddons-6.19.0:6 >=kde-frameworks/ki18n-6.19.0:6 >=kde-frameworks/kio-6.19.0:6 >=kde-frameworks/kwidgetsaddons-6.19.0:6 >=kde-frameworks/kxmlgui-6.19.0:6 kde-plasma/libplasma:6 readline? ( sys-libs/readline:0= ) dev-qt/qtbase:6
 DESCRIPTION=MathML-based 2D and 3D graph calculator by KDE
 EAPI=8
 HOMEPAGE=https://apps.kde.org/kalgebra/
@@ -9,7 +9,7 @@ INHERIT=ecm flag-o-matic gear.kde.org xdg
 IUSE=readline debug +handbook
 LICENSE=GPL-2+
 PROPERTIES=live
-RDEPEND=>=dev-qt/qtbase-6.9.1:6[gui,opengl,widgets] >=dev-qt/qt5compat-6.9.1:6 >=dev-qt/qtdeclarative-6.9.1:6 >=dev-qt/qtsvg-6.9.1:6 >=dev-qt/qtwebengine-6.9.1:6[widgets] >=kde-apps/analitza-9999:6 >=kde-frameworks/kconfig-6.19.0:6 >=kde-frameworks/kconfigwidgets-6.19.0:6 >=kde-frameworks/kcoreaddons-6.19.0:6 >=kde-frameworks/ki18n-6.19.0:6 >=kde-frameworks/kio-6.19.0:6 >=kde-frameworks/kwidgetsaddons-6.19.0:6 >=kde-frameworks/kxmlgui-6.19.0:6 kde-plasma/libplasma:6 readline? ( sys-libs/readline:0= ) >=kde-frameworks/kirigami-6.19.0:6 || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-6 dev-qt/qtbase:6 !kde-apps/kalgebra:5
+RDEPEND=>=dev-qt/qtbase-6.10.1:6[gui,opengl,widgets] >=dev-qt/qt5compat-6.10.1:6 >=dev-qt/qtdeclarative-6.10.1:6 >=dev-qt/qtsvg-6.10.1:6 >=dev-qt/qtwebengine-6.10.1:6[widgets] >=kde-apps/analitza-9999:6 >=kde-frameworks/kconfig-6.19.0:6 >=kde-frameworks/kconfigwidgets-6.19.0:6 >=kde-frameworks/kcoreaddons-6.19.0:6 >=kde-frameworks/ki18n-6.19.0:6 >=kde-frameworks/kio-6.19.0:6 >=kde-frameworks/kwidgetsaddons-6.19.0:6 >=kde-frameworks/kxmlgui-6.19.0:6 kde-plasma/libplasma:6 readline? ( sys-libs/readline:0= ) >=kde-frameworks/kirigami-6.19.0:6 || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-6 dev-qt/qtbase:6 !kde-apps/kalgebra:5
 SLOT=6
 _eclasses_=toolchain-funcs	30214924c0c3b92ec7dbf24fc70d60d3	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	f84613f11edec8d8123c54d540b03aa7	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	7a704a22f807392de3c13bf127f3dfea	git-r3	875eb471682d3e1f18da124be97dcc81	kde.org	a9e45139c9ddc9cb3e73d04a1a66d544	gear.kde.org	cbbdb7b479e667c134053462b0ba5eb1	xdg	3ef49a87c52c8b77c476351195dfe575
-_md5_=d786bb468bda0f05e605b4a36589d557
+_md5_=7269bf54919858ca10f7f3afba9e2130
