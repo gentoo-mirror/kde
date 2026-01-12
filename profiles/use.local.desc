@@ -215,6 +215,7 @@ kde-plasma/plasma-meta:flatpak - Pull in kde-plasma/flatpak-kcm for flatpak perm
 kde-plasma/plasma-meta:grub - Pull in Breeze theme for sys-boot/grub
 kde-plasma/plasma-meta:gtk - Enable Breeze widget style and system settings module for GTK+
 kde-plasma/plasma-meta:kwallet - Enable support for KWallet auto-unlocking via kde-plasma/kwallet-pam
+kde-plasma/plasma-meta:ocr - Enable Optical Character Recognition support via app-text/tesseract
 kde-plasma/plasma-meta:oxygen-theme - Pull in Oxygen icons, sound theme and visual style for KDE Plasma
 kde-plasma/plasma-meta:plymouth - Pull in Breeze theme for sys-boot/plymouth
 kde-plasma/plasma-meta:pulseaudio - Install Plasma applet for PulseAudio volume management
@@ -239,7 +240,6 @@ kde-plasma/plasma-workspace:wallpaper-metadata - Show metadata for image wallpap
 kde-plasma/plasma5support:activities - Enable kactivities support
 kde-plasma/plasma5support:ksysguard - Enable device notifications dataengine using kde-plasma/libksysguard
 kde-plasma/powerdevil:brightness-control - Enable screen brightness control using app-misc/ddcutil
-kde-plasma/spectacle:ocr - Enable Optical Character Recognition support via app-text/tesseract
 kde-plasma/spectacle:share - Enable support for a share menu using kde-frameworks/purpose
 kde-plasma/union:tools - Build tools that are useful for development
 media-gfx/digikam:addressbook - Enable akonadi contact integration
