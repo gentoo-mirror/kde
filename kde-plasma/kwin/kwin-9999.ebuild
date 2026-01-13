@@ -55,8 +55,6 @@ COMMON_DEPEND="
 	>=kde-plasma/knighttime-${KDE_CATV}:6
 	>=kde-plasma/kwayland-${KDE_CATV}:6
 	>=kde-plasma/plasma-activities-${KDE_CATV}:6=
-	media-libs/fontconfig
-	media-libs/freetype
 	media-libs/lcms:2
 	media-libs/libcanberra
 	>=media-libs/libdisplay-info-0.2.0:=
@@ -94,7 +92,7 @@ RDEPEND="${COMMON_DEPEND}
 	X? ( >=x11-base/xwayland-23.1.0[libei] )
 "
 DEPEND="${COMMON_DEPEND}
-	>=dev-libs/plasma-wayland-protocols-1.19.0
+	>=dev-libs/plasma-wayland-protocols-1.20.0
 	>=dev-libs/wayland-protocols-1.47
 	>=dev-qt/qtbase-${QTMIN}:6[concurrent]
 	test? ( screencast? ( >=kde-plasma/kpipewire-${KDE_CATV}:6 ) )
