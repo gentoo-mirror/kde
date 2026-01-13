@@ -3,20 +3,15 @@
 
 EAPI=8
 
-KFMIN=6.16.0
-QTMIN=6.9.3
-inherit ecm kde.org xdg
+KFMIN=6.22.0
+QTMIN=6.10.1
+inherit ecm plasma.kde.org xdg
 
 DESCRIPTION="Virtual keyboard based on Qt Virtual Keyboard"
-HOMEPAGE="https://invent.kde.org/plasma/plasma-keyboard"
-
-if [[ ${KDE_BUILD_TYPE} != live ]]; then
-	SRC_URI="mirror://kde/unstable/${PN}/${P}.tar.xz"
-	KEYWORDS="~amd64"
-fi
 
 LICENSE="|| ( GPL-2 GPL-3 ) LGPL-2.1 LGPL-3"
 SLOT="6"
+KEYWORDS="~amd64"
 
 # slot op: Uses Qt6::GuiPrivate for qxkbcommon_p.h
 COMMON_DEPEND="
