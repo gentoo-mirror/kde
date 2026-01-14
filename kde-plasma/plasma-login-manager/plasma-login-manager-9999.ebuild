@@ -26,7 +26,7 @@ DEPEND="
 	>=kde-frameworks/kio-${KFMIN}:6
 	>=kde-frameworks/kpackage-${KFMIN}:6
 	>=kde-frameworks/kwindowsystem-${KFMIN}:6
-	>=kde-plasma/plasma-workspace-${KFMIN}:6
+	>=kde-plasma/plasma-workspace-${KDE_CATV}:6
 	>=kde-plasma/layer-shell-qt-${KFMIN}:6
 	>=kde-plasma/libplasma-${KFMIN}:6
 	sys-apps/systemd:=[pam]
@@ -35,6 +35,7 @@ DEPEND="
 "
 RDEPEND="
 	${DEPEND}
+	acct-user/plasmalogin
 "
 BDEPEND="
 	dev-python/docutils
@@ -87,7 +88,11 @@ src_install() {
 	insinto /etc/plasmalogin.conf.d/
 	doins "${S}"/01gentoo.conf
 
-	newpamd "${FILESDIR}"/${PN}.pam ${PN}
-	newpamd "${FILESDIR}"/${PN}-autologin.pam ${PN}-autologin
-	newpamd "${FILESDIR}"/${PN}-greeter.pam ${PN}-greeter
+	newpamd "${FILESDIR}"/plasmalogin.pam plasmalogin
+	newpamd "${FILESDIR}"/plasmalogin-autologin.pam plasmalogin-autologin
+	newpamd "${FILESDIR}"/plasmalogin-greeter.pam plasmalogin-greeter
+}
+
+pkg_postinst() {
+	tmpfiles_process plasmalogin.conf
 }
