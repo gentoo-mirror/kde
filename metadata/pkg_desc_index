@@ -1,3 +1,5 @@
+acct-group/plasmalogin 0: A group for kde-plasma/plasma-login-manager
+acct-user/plasmalogin 0: A user for kde-plasma/plasma-login-manager
 app-accessibility/kontrast 25.12.49.9999 9999: Tool to check contrast for colors to verify they are correctly accessible
 app-admin/kio-admin 25.12.49.9999 9999: Manage files as administrator using the admin:// KIO protocol
 app-admin/systemdgenie 9999: Systemd managment utility
