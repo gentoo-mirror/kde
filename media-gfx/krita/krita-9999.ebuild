@@ -4,14 +4,27 @@
 EAPI=8
 
 ECM_TEST="forceoptional"
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{11..14} )
 KFMIN=6.16.0
 QTMIN=6.10.1
 inherit ecm kde.org python-single-r1 xdg
 
-if [[ ${KDE_BUILD_TYPE} = release ]]; then
-	SRC_URI="mirror://kde/stable/${PN}/${PV}/${P}.tar.xz"
-	KEYWORDS="~amd64"
+if [[ ${KDE_BUILD_TYPE} == release ]]; then
+	COMMIT=
+	MY_PV="${PV/_/-}"
+	MY_P="${PN}-${MY_PV}"
+	if [[ -n ${COMMIT} ]] ; then
+		SRC_URI="https://dev.gentoo.org/~asturm/distfiles/kde/${P}-${COMMIT:0:8}.tar.xz"
+		S="${WORKDIR}/${PN}"
+	else
+		if [[ ${MY_P} == ${P} ]] ; then
+			SRC_URI="mirror://kde/stable/${PN}/${PV}/${P}.tar.xz"
+		else
+			SRC_URI="mirror://kde/unstable/${PN}/${MY_PV}/${MY_P}.tar.xz"
+		fi
+		S="${WORKDIR}/${MY_P}"
+	fi
+	KEYWORDS="~amd64 ~arm64 ~ppc64 ~riscv ~x86"
 fi
 
 DESCRIPTION="Free digital painting application. Digital Painting, Creative Freedom!"
@@ -93,6 +106,11 @@ PATCHES=(
 	"${FILESDIR}"/${PN}-5.3.0-tests-optional.patch
 	"${FILESDIR}"/${PN}-5.2.2-fftw.patch # bug 913518
 )
+
+src_prepare() {
+	rm -r packaging || die # unused and too low CMake minimum
+	ecm_src_prepare
+}
 
 src_configure() {
 	# Prevent sandbox violation from FindPyQt5.py module
