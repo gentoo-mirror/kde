@@ -54,6 +54,7 @@ DOCS=( CHANGELOG.{md,old} README.md )
 src_configure() {
 	local mycmakeargs=(
 		-DCMAKE_DISABLE_FIND_PACKAGE_LIBVLC=ON
+		-DCMAKE_DISABLE_FIND_PACKAGE_Phonon4Qt6=ON
 		$(cmake_use_find_package map Marble)
 		$(cmake_use_find_package raw KDcrawQt6)
 		$(cmake_use_find_package share KF6Purpose)
