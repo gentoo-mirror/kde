@@ -3,6 +3,7 @@
 
 EAPI=8
 
+PATCHSET=${PN}-25.12.2-qtmultimedia
 ECM_HANDBOOK="optional"
 ECM_TEST="true"
 KFMIN=6.19.0
@@ -12,12 +13,13 @@ inherit ecm gear.kde.org xdg
 
 DESCRIPTION="Powerful BitTorrent client based on KDE Frameworks"
 HOMEPAGE="https://apps.kde.org/ktorrent/"
+SRC_URI+=" https://dev.gentoo.org/~asturm/distfiles/${PATCHSET}.tar.xz"
 
 LICENSE="GPL-2"
 SLOT="6"
 KEYWORDS=""
 IUSE="+bwscheduler +downloadorder +infowidget +ipfilter +logviewer +magnetgenerator
-phonon rss +scanfolder +shutdown +stats +upnp +webengine +zeroconf"
++mediaplayer rss +scanfolder +shutdown +stats +upnp +webengine +zeroconf"
 
 COMMON_DEPEND="
 	>=dev-qt/qtbase-${QTMIN}:6[dbus,gui,network,widgets,xml]
@@ -41,8 +43,8 @@ COMMON_DEPEND="
 	>=net-libs/libktorrent-${PVCUT}:6
 	infowidget? ( dev-libs/geoip )
 	ipfilter? ( >=kde-frameworks/karchive-${KFMIN}:6 )
-	phonon? (
-		>=media-libs/phonon-4.12.0[qt6(+)]
+	mediaplayer? (
+		>=dev-qt/qtmultimedia-${QTMIN}:6
 		>=media-libs/taglib-1.5:=
 	)
 	rss? (
@@ -67,6 +69,8 @@ RDEPEND="${COMMON_DEPEND}
 "
 BDEPEND="sys-devel/gettext"
 
+PATCHES=( "${WORKDIR}"/${PATCHSET} )
+
 src_configure() {
 	local mycmakeargs=(
 		-DENABLE_BWSCHEDULER_PLUGIN=$(usex bwscheduler)
@@ -75,8 +79,8 @@ src_configure() {
 		-DENABLE_IPFILTER_PLUGIN=$(usex ipfilter)
 		-DENABLE_LOGVIEWER_PLUGIN=$(usex logviewer)
 		-DENABLE_MAGNETGENERATOR_PLUGIN=$(usex magnetgenerator)
-		$(cmake_use_find_package phonon Taglib)
-		$(cmake_use_find_package phonon Phonon4Qt6)
+		$(cmake_use_find_package mediaplayer Taglib)
+		$(cmake_use_find_package mediaplayer Qt6Multimedia)
 		$(cmake_use_find_package rss KF6Syndication)
 		-DENABLE_SCANFOLDER_PLUGIN=$(usex scanfolder)
 		-DENABLE_SHUTDOWN_PLUGIN=$(usex shutdown)
