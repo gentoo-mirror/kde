@@ -17,6 +17,6 @@ DEPEND="
 	net-dns/avahi[mdnsresponder-compat]
 "
 RDEPEND="${DEPEND}
-	sys-auth/nss-mdns
+	elibc_glibc? ( sys-auth/nss-mdns )
 "
 BDEPEND=">=dev-qt/qttools-${QTMIN}:6[linguist]"
