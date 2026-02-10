@@ -20,7 +20,7 @@ LICENSE="GPL-2+ handbook? ( FDL-1.3 )"
 SLOT="0"
 IUSE="dvb"
 
-COMMON_DEPEND="
+DEPEND="
 	>=dev-qt/qtbase-${QTMIN}:6[dbus,gui,network,sql,widgets,xml]
 	>=kde-frameworks/kconfig-${KFMIN}:6
 	>=kde-frameworks/kconfigwidgets-${KFMIN}:6
@@ -35,11 +35,8 @@ COMMON_DEPEND="
 	media-video/vlc[X]
 	dvb? ( media-libs/libv4l[dvb] )
 "
-RDEPEND="${COMMON_DEPEND}
+RDEPEND="${DEPEND}
 	!${CATEGORY}/${PN}:5
-"
-DEPEND="${COMMON_DEPEND}
-	x11-libs/libXScrnSaver
 "
 BDEPEND="
 	sys-devel/gettext
