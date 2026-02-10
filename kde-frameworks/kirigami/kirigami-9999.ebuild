@@ -23,6 +23,7 @@ RESTRICT="test"
 DEPEND="
 	>=dev-qt/qtbase-${QTMIN}:6=[concurrent,dbus,gui,network]
 	>=dev-qt/qtdeclarative-${QTMIN}:6
+	>=dev-qt/qtshadertools-${QTMIN}:6
 	>=dev-qt/qtsvg-${QTMIN}:6
 "
 RDEPEND="${DEPEND}
