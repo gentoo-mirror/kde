@@ -10,23 +10,13 @@ DESCRIPTION="Framework for network service discovery using Zeroconf"
 
 LICENSE="LGPL-2+"
 KEYWORDS="~amd64 ~arm64 ~loong ~ppc64 ~riscv ~x86"
-IUSE="zeroconf"
+IUSE=""
 
 DEPEND="
-	>=dev-qt/qtbase-${QTMIN}:6[network]
-	zeroconf? (
-		>=dev-qt/qtbase-${QTMIN}:6[dbus]
-		net-dns/avahi[mdnsresponder-compat]
-	)
+	>=dev-qt/qtbase-${QTMIN}:6[dbus,network]
+	net-dns/avahi[mdnsresponder-compat]
 "
-RDEPEND="${DEPEND}"
+RDEPEND="${DEPEND}
+	sys-auth/nss-mdns
+"
 BDEPEND=">=dev-qt/qttools-${QTMIN}:6[linguist]"
-
-src_configure() {
-	local mycmakeargs=(
-		$(cmake_use_find_package zeroconf Avahi)
-	)
-	use zeroconf || mycmakeargs+=( -DCMAKE_DISABLE_FIND_PACKAGE_DNSSD=ON )
-
-	ecm_src_configure
-}

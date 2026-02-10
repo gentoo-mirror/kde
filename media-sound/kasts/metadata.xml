@@ -6,10 +6,7 @@
 		<name>Gentoo KDE Project</name>
 	</maintainer>
 	<upstream>
-		<bugs-to>https://bugs.kde.org/</bugs-to>
+		<bugs-to>https://bugs.kde.org/enter_bug.cgi?product=kasts</bugs-to>
 		<remote-id type="kde-invent">multimedia/kasts</remote-id>
 	</upstream>
-	<use>
-		<flag name="vlc">Enable <pkg>media-video/vlc</pkg> backend</flag>
-	</use>
 </pkgmetadata>
