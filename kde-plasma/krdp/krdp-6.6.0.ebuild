@@ -15,7 +15,7 @@ HOMEPAGE+=" https://quantumproductions.info/articles/2023-08/remote-desktop-usin
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="6"
 KEYWORDS="~amd64 ~arm64 ~loong ~ppc64 ~riscv ~x86"
-IUSE=""
+IUSE="systemd"
 
 COMMON_DEPEND="
 	>=dev-libs/qtkeychain-0.14.2:=[qt6(+)]
@@ -31,9 +31,9 @@ COMMON_DEPEND="
 	>=kde-frameworks/kstatusnotifieritem-${KFMIN}:6
 	>=kde-plasma/kpipewire-${KDE_CATV}:6
 	>=net-misc/freerdp-3.1:3[server]
-	>=sys-apps/systemd-254:=
 	sys-libs/pam
 	x11-libs/libxkbcommon
+	systemd? ( >=sys-apps/systemd-254:= )
 "
 DEPEND="${COMMON_DEPEND}
 	dev-libs/plasma-wayland-protocols
@@ -48,5 +48,10 @@ src_configure() {
 	# enable these experimental libraries on clang systems
 	# https://libcxx.llvm.org/Status/Cxx20.html#note-p0660
 	[[ $(tc-get-cxx-stdlib) == 'libc++' ]] && append-cxxflags -fexperimental-library
+
+	local mycmakeargs=(
+		$(cmake_use_find_package systemd Systemd)
+	)
+
 	ecm_src_configure
 }
