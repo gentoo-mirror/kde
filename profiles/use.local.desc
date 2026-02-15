@@ -256,6 +256,7 @@ media-sound/amarok:mariadb - Prefer dev-db/mariadb-connector-c over dev-db/mysql
 media-sound/amarok:mtp - Enable support for libMTP (Plays4Sure) devices access through libmtp
 media-sound/amarok:podcast - Enable gpodder.net podcast support via media-libs/libmygpo-qt
 media-sound/amarok:webengine - Enable wikipedia widget using dev-qt/qtwebengine
+media-sound/amarok:zeroconf - Enable DAAP collections support using kde-frameworks/kdnssd
 media-sound/elisa:mpris - Enable MPRIS support
 media-sound/kid3:acoustid - Build acoustic fingerprinting plugin using media-libs/chromaprint
 media-sound/kid3:mpris - Enable support for MPRIS2 interface using dev-qt/qtdbus
