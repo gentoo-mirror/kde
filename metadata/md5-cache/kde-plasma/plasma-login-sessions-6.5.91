@@ -5,7 +5,7 @@ EAPI=8
 HOMEPAGE=https://kde.org/plasma-desktop
 INHERIT=ecm-common plasma.kde.org
 IUSE=+wayland X
-KEYWORDS=~amd64 ~arm64 ~loong ~ppc64 ~riscv ~x86
+KEYWORDS=~amd64 ~loong ~riscv ~x86
 LICENSE=GPL-2
 RDEPEND=!<kde-plasma/plasma-workspace-6.2.1 >=kde-plasma/plasma-workspace-6.5.91:6[X?] wayland? ( kde-plasma/kwin:6 ) X? ( kde-plasma/kwin-x11:6 ) !kde-plasma/plasma-login-sessions:5
 REQUIRED_USE=|| ( wayland X )
@@ -13,4 +13,4 @@ RESTRICT=mirror
 SLOT=6
 SRC_URI=mirror://kde/unstable/plasma/6.5.91/plasma-workspace-6.5.91.tar.xz
 _eclasses_=toolchain-funcs	7e440a20ac11dece04e3334622e6e5da	flag-o-matic	ed1eda86c8f746a2a75f7f9f7478f5f4	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	3a59a39e97af0f7c03f49cf3c22f262b	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	1f799bc9e9f6868d0884be147510a566	ecm-common	502b9f76ff63d8766216a7dda89b5d9c	kde.org	a9e45139c9ddc9cb3e73d04a1a66d544	plasma.kde.org	13550586f83f72b7bf365ee5f3139b3a
-_md5_=dfc27b9c38b85b461a29743133f24401
+_md5_=0f3abf144555028e35d72485e5a868f3
