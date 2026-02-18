@@ -13,7 +13,7 @@ HOMEPAGE="https://userbase.kde.org/Discover"
 
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="6"
-KEYWORDS="~amd64 ~loong ~riscv ~x86"
+KEYWORDS="~amd64 ~loong ~x86"
 IUSE="+firmware flatpak snap telemetry webengine"
 
 # libmarkdown (app-text/discount) only used in PackageKitBackend
