@@ -10,7 +10,7 @@ app-crypt/keepsecret 9999: Password manager GUI for SecretService providers
 app-crypt/keysmith 25.12.49.9999 9999: OTP client for Plasma Mobile and Desktop
 app-editors/ghostwriter 25.12.49.9999 9999: Cross-platform, aesthetic, distraction-free markdown editor
 app-editors/kile 9999: Latex Editor and TeX shell based on KDE Frameworks
-app-editors/okteta 5.9999 9999: Hex editor by KDE
+app-editors/okteta 9999: Hex editor by KDE
 app-i18n/pology 9999: Framework for custom processing of PO files
 app-misc/calindori 9999: Touch friendly calendar application
 app-misc/francis 25.12.49.9999 9999: Productivity application using the well-known pomodoro technique
