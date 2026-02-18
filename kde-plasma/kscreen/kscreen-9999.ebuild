@@ -41,7 +41,7 @@ COMMON_DEPEND="
 "
 RDEPEND="${COMMON_DEPEND}
 	>=dev-qt/qt5compat-${QTMIN}:6[qml]
-	>=kde-frameworks/kimageformats-${KFMIN}:6[avif]
+	!ppc64? ( >=kde-frameworks/kimageformats-${KFMIN}:6[avif] )
 	>=kde-plasma/kglobalacceld-${KDE_CATV}:6
 "
 DEPEND="${COMMON_DEPEND}
@@ -59,6 +59,11 @@ CMAKE_SKIP_TESTS=(
 	# FAIL!  : TestConfig::testDisabledScreenConfig() Compared values are not the same
 	kscreen-kded-configtest
 )
+
+src_prepare() {
+	ecm_src_prepare
+	use ppc64 && cmake_comment_add_subdirectory hdrcalibrator # avif masked on big-endian
+}
 
 src_configure() {
 	local mycmakeargs=(
