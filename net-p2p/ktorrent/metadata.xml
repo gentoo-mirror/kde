@@ -8,6 +8,7 @@
 	<upstream>
 		<bugs-to>https://bugs.kde.org/enter_bug.cgi?product=ktorrent</bugs-to>
 		<remote-id type="cpe">cpe:/a:ktorrent:ktorrent</remote-id>
+		<remote-id type="kde-invent">network/ktorrent</remote-id>
 	</upstream>
 	<use>
 		<flag name="bwscheduler">Schedule upload and download limits over a period of a week</flag>
@@ -17,7 +18,6 @@
 		<flag name="logviewer">Displays the logging output</flag>
 		<flag name="magnetgenerator">Generates magnet URI's</flag>
 		<flag name="mediaplayer">Enable <pkg>dev-qt/qtmultimedia</pkg> based media player</flag>
-		<flag name="phonon">Enable <pkg>media-libs/phonon</pkg> based media player</flag>
 		<flag name="rss">Syndication plugin for KTorrent, supporting RSS and Atom feeds</flag>
 		<flag name="scanfolder">Scan folders for torrent files and load them</flag>
 		<flag name="shutdown">Shutdown when done</flag>
