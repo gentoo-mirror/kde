@@ -9,7 +9,7 @@ DESCRIPTION="Breeze theme for GRUB"
 
 LICENSE="GPL-3+"
 SLOT="6"
-KEYWORDS="~amd64 ~loong ~riscv ~x86"
+KEYWORDS="~amd64 ~loong ~x86"
 IUSE=""
 
 src_prepare() { default; }

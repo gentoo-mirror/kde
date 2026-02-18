@@ -13,7 +13,7 @@ DESCRIPTION="Useful applications for Plasma development"
 
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="6"
-KEYWORDS="~amd64 ~loong ~riscv ~x86"
+KEYWORDS="~amd64 ~loong ~x86"
 IUSE=""
 
 DEPEND="
