@@ -9,5 +9,5 @@ RDEPEND=!kde-plasma/breeze-grub:5
 RESTRICT=mirror
 SLOT=6
 SRC_URI=mirror://kde/unstable/plasma/6.5.91/breeze-grub-6.5.91.tar.xz
-_eclasses_=kde.org	a9e45139c9ddc9cb3e73d04a1a66d544	plasma.kde.org	10b6662736038635cd9fdb353a4f36ed
+_eclasses_=kde.org	a9e45139c9ddc9cb3e73d04a1a66d544	plasma.kde.org	13550586f83f72b7bf365ee5f3139b3a
 _md5_=de97ef77fd0fab6d9c1a784b6a67f34c
