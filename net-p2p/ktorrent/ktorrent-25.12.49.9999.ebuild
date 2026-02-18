@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PATCHSET=${PN}-25.12.2-qtmultimedia
+PATCHSET=${PN}-25.12.2-qtmultimedia-1
 ECM_HANDBOOK="optional"
 ECM_TEST="true"
 KFMIN=6.19.0
