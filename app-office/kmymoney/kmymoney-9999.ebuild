@@ -20,7 +20,7 @@ fi
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE="activities calendar hbci holidays sql sqlcipher"
+IUSE="activities addressbook calendar hbci holidays sql sqlcipher"
 [[ ${KDE_BUILD_TYPE} = live ]] && IUSE+=" experimental"
 
 REQUIRED_USE="sqlcipher? ( sql )"
@@ -56,11 +56,16 @@ COMMON_DEPEND="
 	>=kde-frameworks/kxmlgui-${KFMIN}:6
 	>=kde-frameworks/sonnet-${KFMIN}:6
 	activities? ( kde-plasma/plasma-activities:6= )
+	addressbook? (
+		kde-apps/akonadi:6
+		kde-apps/kidentitymanagement:6
+		>=kde-frameworks/kcontacts-${KFMIN}:6
+	)
 	calendar? ( dev-libs/libical:= )
 	hbci? (
 		>=dev-qt/qtdeclarative-${QTMIN}:6
-		>=net-libs/aqbanking-6.5.0
-		>=sys-libs/gwenhywfar-5.12.1:=[qt6]
+		>=net-libs/aqbanking-6.8.4
+		>=sys-libs/gwenhywfar-5.14.1:=[qt6]
 	)
 	holidays? ( >=kde-frameworks/kholidays-${KFMIN}:6 )
 	sql? ( >=dev-qt/qtbase-${QTMIN}:6[sqlite] )
@@ -86,7 +91,7 @@ src_prepare() {
 
 	sed -e "/find_program.*CCACHE_PROGRAM/s/^/# /" \
 		-e "/if.*CCACHE_PROGRAM/s/CCACHE_PROGRAM/0/" \
-		-i CMakeLists.txt || die  # no, no no.
+		-i CMakeLists.txt || die # no, no no.
 }
 
 src_configure() {
@@ -95,6 +100,8 @@ src_configure() {
 		-DENABLE_WOOB=OFF # ported to Py3; not yet re-added in Gentoo
 		-DUSE_QT_DESIGNER=OFF
 		$(cmake_use_find_package activities PlasmaActivities)
+		$(cmake_use_find_package addressbook KF6Contacts)
+		$(cmake_use_find_package addressbook KPim6Akonadi)
 		-DENABLE_LIBICAL=$(usex calendar)
 		-DENABLE_KBANKING=$(usex hbci)
 		$(cmake_use_find_package holidays KF6Holidays)
