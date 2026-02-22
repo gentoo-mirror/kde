@@ -3,7 +3,7 @@
 
 EAPI=8
 
-ECM_HANDBOOK="forceoff"
+ECM_HANDBOOK="forceoptional"
 ECM_TEST="true"
 KDE_ORG_CATEGORY="network"
 KFMIN=6.22.0
@@ -33,24 +33,14 @@ DEPEND="${COMMON_DEPEND}
 	>=dev-qt/qtbase-${QTMIN}:6[network]
 "
 RDEPEND="${COMMON_DEPEND}
+	!kde-misc/kio-gdrive:5
+	!kde-misc/kio-gdrive-common
 	kde-apps/kaccounts-providers:6
-	>=kde-misc/${PN}-common-${PV}
-	share? ( !${CATEGORY}/${PN}:5[share,-kf6compat(-)] )
 "
-BDEPEND="dev-util/intltool"
-
-DOCS=( README.md )
-
-ECM_REMOVE_FROM_INSTALL=(
-	/usr/share/accounts/services/kde/google-drive.service
-	/usr/share/metainfo/org.kde.kio_gdrive.metainfo.xml
-	/usr/share/remoteview/gdrive-network.desktop
-)
-
-src_prepare() {
-	ecm_src_prepare
-	ecm_punt_po_install
-}
+BDEPEND="
+	dev-util/intltool
+	kde-apps/kaccounts-integration:6
+"
 
 src_configure() {
 	local mycmakeargs=(
