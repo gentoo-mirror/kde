@@ -95,7 +95,6 @@
 ~kde-apps/libkdcraw-9999
 ~kde-apps/libkexiv2-9999
 ~kde-apps/libksane-9999
-~kde-apps/libksane-common-9999
 ~kde-apps/okular-9999
 ~kde-apps/svgpart-9999
 ~kde-apps/thumbnailers-9999
@@ -120,7 +119,6 @@
 ~kde-apps/kmix-9999
 ~kde-apps/kwave-9999
 ~kde-apps/libkcddb-9999
-~kde-apps/libkcddb-common-9999
 ~media-sound/audex-9999
 ~media-sound/elisa-9999
 ~media-sound/kasts-9999
@@ -137,7 +135,6 @@
 ~kde-apps/signon-kwallet-extension-9999
 ~kde-misc/kdeconnect-9999
 ~kde-misc/kio-gdrive-9999
-~kde-misc/kio-gdrive-common-9999
 ~net-im/neochat-9999
 ~net-im/tokodon-9999
 ~net-irc/konversation-9999

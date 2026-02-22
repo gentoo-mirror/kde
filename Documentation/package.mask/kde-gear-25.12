@@ -106,7 +106,6 @@
 <kde-apps/libkdcraw-25.12.50
 <kde-apps/libkexiv2-25.12.50
 <kde-apps/libksane-25.12.50
-<kde-apps/libksane-common-25.12.50
 <kde-apps/okular-25.12.50
 <kde-apps/svgpart-25.12.50
 <kde-apps/thumbnailers-25.12.50
@@ -131,7 +130,6 @@
 <kde-apps/kmix-25.12.50
 <kde-apps/kwave-25.12.50
 <kde-apps/libkcddb-25.12.50
-<kde-apps/libkcddb-common-25.12.50
 <media-sound/audex-25.12.50
 <media-sound/elisa-25.12.50
 <media-sound/kasts-25.12.50
@@ -148,7 +146,6 @@
 <kde-apps/signon-kwallet-extension-25.12.50
 <kde-misc/kdeconnect-25.12.50
 <kde-misc/kio-gdrive-25.12.50
-<kde-misc/kio-gdrive-common-25.12.50
 <net-im/neochat-25.12.50
 <net-im/tokodon-25.12.50
 <net-irc/konversation-25.12.50
