@@ -3,7 +3,7 @@
 
 EAPI=8
 
-ECM_HANDBOOK="forceoff"
+ECM_HANDBOOK="optional"
 ECM_TEST="true"
 KFMIN=6.19.0
 QTMIN=6.10.1
@@ -31,21 +31,10 @@ DEPEND="
 	musicbrainz? ( media-libs/musicbrainz:5 )
 "
 RDEPEND="${DEPEND}
-	>=kde-apps/libkcddb-common-${PV}
+	!kde-apps/libkcddb:5
+	!kde-apps/libkcddb-common
 "
 BDEPEND=">=kde-frameworks/kcmutils-${KFMIN}:6"
-
-# Shipped by kde-apps/libkcddb-common package for shared use w/ SLOT 5
-ECM_REMOVE_FROM_INSTALL=(
-	/usr/share/applications/kcm_cddb.desktop
-	/usr/share/config.kcfg/libkcddb5.kcfg
-)
-
-src_prepare() {
-	ecm_src_prepare
-	ecm_punt_po_install
-	cmake_comment_add_subdirectory -f kcmcddb doc
-}
 
 src_configure() {
 	local mycmakeargs=(

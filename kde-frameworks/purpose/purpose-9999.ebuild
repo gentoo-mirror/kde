@@ -39,7 +39,7 @@ RDEPEND="${DEPEND}
 	=kde-frameworks/prison-${KDE_CATV}*:6[qml]
 	bluetooth? ( =kde-frameworks/bluez-qt-${KDE_CATV}*:6 )
 	webengine? (
-		>=kde-frameworks/purpose-kaccounts-services-${KDE_CATV}
+		!kde-frameworks/purpose-kaccounts-services
 		>=net-libs/accounts-qml-0.7_p20231028[qt6(+)]
 	)
 "
@@ -58,14 +58,6 @@ src_configure() {
 	)
 
 	ecm_src_configure
-}
-
-src_install() {
-	# Shipped by kde-frameworks/purpose-kaccounts-services package for shared use w/ SLOT 5
-	use webengine && ECM_REMOVE_FROM_INSTALL=(
-		/usr/share/accounts/services/kde/{google-youtube,nextcloud-upload}.service
-	)
-	ecm_src_install
 }
 
 pkg_postinst() {
