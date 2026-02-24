@@ -14,13 +14,13 @@ HOMEPAGE="https://apps.kde.org/krdc/"
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="6"
 KEYWORDS=""
-IUSE="+rdp +ssh +vnc"
+IUSE="+rdp +ssh +vnc wayland"
 
 REQUIRED_USE="ssh? ( || ( rdp vnc ) )"
 
 #nx? ( >=net-misc/nxcl-0.9-r1 ) disabled upstream, last checked 2016-01-24
 DEPEND="
-	>=dev-qt/qtbase-${QTMIN}:6[gui,wayland,widgets,xml]
+	>=dev-qt/qtbase-${QTMIN}:6[gui,wayland?,widgets,xml]
 	>=kde-frameworks/kbookmarks-${KFMIN}:6
 	>=kde-frameworks/kcmutils-${KFMIN}:6
 	>=kde-frameworks/kcompletion-${KFMIN}:6
@@ -55,6 +55,7 @@ src_configure() {
 		-DWITH_RDP=$(usex rdp)
 		$(cmake_use_find_package ssh LibSSH)
 		-DWITH_VNC=$(usex vnc)
+		$(cmake_use_find_package wayland Qt6WaylandClient)
 	)
 
 	ecm_src_configure
