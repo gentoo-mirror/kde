@@ -55,6 +55,7 @@ src_configure() {
 		-DWITH_RDP=$(usex rdp)
 		$(cmake_use_find_package ssh LibSSH)
 		-DWITH_VNC=$(usex vnc)
+		$(cmake_use_find_package wayland Qt6WaylandClient)
 	)
 
 	ecm_src_configure
