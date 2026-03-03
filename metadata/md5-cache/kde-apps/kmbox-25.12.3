@@ -1,0 +1,16 @@
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.31.9-r1 doc? ( >=app-text/doxygen-1.8.13-r1 dev-qt/qttools:6[assistant] ) dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-6.22.0:*
+DEFINED_PHASES=compile configure info install nofetch prepare test unpack
+DEPEND=>=kde-apps/kmime-25.12.3:6= doc? ( dev-qt/qt-docs:6 ) dev-qt/qtbase:6
+DESCRIPTION=Library for accessing MBox format mail storages
+EAPI=8
+HOMEPAGE=https://apps.kde.org/
+INHERIT=ecm gear.kde.org
+IUSE=debug doc test
+KEYWORDS=~amd64 ~arm64
+LICENSE=GPL-2+
+RDEPEND=>=kde-apps/kmime-25.12.3:6= || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-6 doc? ( dev-qt/qt-docs:6 ) dev-qt/qtbase:6 !kde-apps/kmbox:5
+RESTRICT=!test? ( test ) fetch
+SLOT=6/25.12
+SRC_URI=mirror://kde/stable/release-service/25.12.3/src/kmbox-25.12.3.tar.xz
+_eclasses_=toolchain-funcs	8a2c298bde71ecf3f452dd9e67c94369	flag-o-matic	ed1eda86c8f746a2a75f7f9f7478f5f4	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	1f799bc9e9f6868d0884be147510a566	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	90dfd0b2f431c0ac53775229ac9a1b37	kde.org	9785f23f5d37cead258649e88dbe359c	gear.kde.org	e739b4c4f8b3e2a8949bb60473c9250e
+_md5_=36130ead9a5c19ecfab3d0eb5ba98230
