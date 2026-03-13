@@ -1,0 +1,17 @@
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.31.9-r1 dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-6.24:*
+DEFINED_PHASES=compile configure info install nofetch prepare setup test unpack
+DEPEND=python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) >=dev-qt/qtbase-6.10.1:6[widgets] >=dev-qt/qtdeclarative-6.10.1:6 sys-devel/gettext virtual/libintl test? ( >=dev-qt/qtbase-6.10.1:6[concurrent] ) dev-qt/qtbase:6
+DESCRIPTION=Framework based on Gettext for internationalizing user interface text
+EAPI=8
+HOMEPAGE=https://develop.kde.org/products/frameworks/
+INHERIT=ecm frameworks.kde.org python-single-r1
+IUSE=debug test python_single_target_python3_11 python_single_target_python3_12 python_single_target_python3_13 python_single_target_python3_14
+KEYWORDS=~amd64 ~arm64 ~loong ~ppc64 ~riscv ~x86
+LICENSE=LGPL-2+
+RDEPEND=python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_14? ( dev-lang/python:3.14 ) >=dev-qt/qtbase-6.10.1:6[widgets] >=dev-qt/qtdeclarative-6.10.1:6 sys-devel/gettext virtual/libintl app-text/iso-codes >=kde-frameworks/kf-env-6 dev-qt/qtbase:6
+REQUIRED_USE=^^ ( python_single_target_python3_11 python_single_target_python3_12 python_single_target_python3_13 python_single_target_python3_14 )
+RESTRICT=!test? ( test ) fetch
+SLOT=6/6.24
+SRC_URI=mirror://kde/stable/frameworks/6.24/ki18n-6.24.0.tar.xz
+_eclasses_=toolchain-funcs	da0a71e3a72194ca0b88d5b045d721ac	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	1f799bc9e9f6868d0884be147510a566	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	90dfd0b2f431c0ac53775229ac9a1b37	kde.org	9785f23f5d37cead258649e88dbe359c	frameworks.kde.org	c5943aa8c7ccd9d8156a35ee5b7a9316	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	python-utils-r1	9c4180f103a0e8340bc993fc85dbdadd	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57
+_md5_=887c7696d1edc362fae3c805a10f18f4
