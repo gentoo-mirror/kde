@@ -9,9 +9,9 @@ INHERIT=ecm frameworks.kde.org optfeature xdg
 IUSE=bluetooth webengine debug test
 KEYWORDS=~amd64 ~arm64 ~loong ~ppc64 ~riscv ~x86
 LICENSE=LGPL-2.1+
-RDEPEND=>=dev-qt/qtbase-6.10.1:6[dbus,gui,network,widgets] >=dev-qt/qtdeclarative-6.10.1:6 =kde-frameworks/kconfig-6.24*:6 =kde-frameworks/kcoreaddons-6.24*:6 =kde-frameworks/ki18n-6.24*:6 =kde-frameworks/kio-6.24*:6 =kde-frameworks/kirigami-6.24*:6 =kde-frameworks/knotifications-6.24*:6 =kde-frameworks/kservice-6.24*:6 =kde-frameworks/prison-6.24*:6 webengine? ( kde-apps/kaccounts-integration:6 >=net-libs/accounts-qt-1.17[qt6(+)] ) >=kde-frameworks/kdeclarative-6.24:6 =kde-frameworks/kitemmodels-6.24*:6 =kde-frameworks/prison-6.24*:6[qml] bluetooth? ( =kde-frameworks/bluez-qt-6.24*:6 ) webengine? ( !kde-frameworks/purpose-kaccounts-services >=net-libs/accounts-qml-0.7_p20231028[qt6(+)] ) >=kde-frameworks/kf-env-6 dev-qt/qtbase:6
+RDEPEND=>=dev-qt/qtbase-6.10.1:6[dbus,gui,network,widgets] >=dev-qt/qtdeclarative-6.10.1:6 =kde-frameworks/kconfig-6.24*:6 =kde-frameworks/kcoreaddons-6.24*:6 =kde-frameworks/ki18n-6.24*:6 =kde-frameworks/kio-6.24*:6 =kde-frameworks/kirigami-6.24*:6 =kde-frameworks/knotifications-6.24*:6 =kde-frameworks/kservice-6.24*:6 =kde-frameworks/prison-6.24*:6 webengine? ( kde-apps/kaccounts-integration:6 >=net-libs/accounts-qt-1.17[qt6(+)] ) =kde-frameworks/kcmutils-6.24*:6 =kde-frameworks/kitemmodels-6.24*:6 =kde-frameworks/prison-6.24*:6[qml] bluetooth? ( =kde-frameworks/bluez-qt-6.24*:6 ) webengine? ( !kde-frameworks/purpose-kaccounts-services >=net-libs/accounts-qml-0.7_p20231028[qt6(+)] ) >=kde-frameworks/kf-env-6 dev-qt/qtbase:6
 RESTRICT=test !test? ( test ) fetch
 SLOT=6/6.24
 SRC_URI=mirror://kde/stable/frameworks/6.24/purpose-6.24.0.tar.xz
 _eclasses_=toolchain-funcs	da0a71e3a72194ca0b88d5b045d721ac	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	1f799bc9e9f6868d0884be147510a566	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	90dfd0b2f431c0ac53775229ac9a1b37	kde.org	9785f23f5d37cead258649e88dbe359c	frameworks.kde.org	c5943aa8c7ccd9d8156a35ee5b7a9316	optfeature	538bce96e5589935b57e178e8635f301	xdg	3ef49a87c52c8b77c476351195dfe575
-_md5_=f725ee63c8d94f7d9ace5facfff57f07
+_md5_=03d94f8eb1c6efa041bb9990ebbec4fe
