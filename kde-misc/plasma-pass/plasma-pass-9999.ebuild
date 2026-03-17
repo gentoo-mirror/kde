@@ -3,7 +3,7 @@
 
 EAPI=8
 
-KFMIN=6.9.0
+KFMIN=6.18.0
 QTMIN=6.8.1
 inherit ecm kde.org
 
@@ -12,7 +12,7 @@ HOMEPAGE="https://www.dvratil.cz/2018/05/plasma-pass/ https://invent.kde.org/pla
 
 if [[ ${KDE_BUILD_TYPE} != live ]] ; then
 	SRC_URI="mirror://kde/stable/${PN}/${P}.tar.xz"
-	KEYWORDS="~amd64 ~ppc64 ~riscv"
+	KEYWORDS="~amd64 ~arm64 ~ppc64 ~riscv"
 fi
 
 LICENSE="LGPL-2.1+"
@@ -37,3 +37,4 @@ RDEPEND="${DEPEND}
 	!${CATEGORY}/${PN}:5
 	>=kde-frameworks/kirigami-${KFMIN}:6
 "
+BDEPEND="kde-frameworks/kpackage:6"
