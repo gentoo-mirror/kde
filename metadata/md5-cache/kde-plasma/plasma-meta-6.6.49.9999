@@ -1,6 +1,6 @@
 DEFINED_PHASES=postinst
 DESCRIPTION=Merge this to pull in all Plasma 6 packages
-EAPI=8
+EAPI=9
 HOMEPAGE=https://kde.org/plasma-desktop/
 INHERIT=toolchain-funcs
 IUSE=accessibility bluetooth +browser-integration +crash-handler crypt cups discover +display-manager +elogind +firewall flatpak grub gtk +kwallet +networkmanager ocr oxygen-theme plymouth pulseaudio rdp +sddm sdk +smart systemd thunderbolt unsupported virtualkeyboard wacom +wallpapers webengine X
@@ -9,4 +9,4 @@ RDEPEND=!kde-plasma/plasma-meta:5 !kde-plasma/khotkeys:5 >=kde-plasma/aurorae-6.
 REQUIRED_USE=^^ ( elogind systemd ) firewall? ( systemd )
 SLOT=6
 _eclasses_=toolchain-funcs	da0a71e3a72194ca0b88d5b045d721ac
-_md5_=1937acb62e4610e8358b0f40bf2d94dd
+_md5_=7f406e90e802188775e69a5e586af256
