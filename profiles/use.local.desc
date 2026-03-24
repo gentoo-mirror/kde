@@ -2,7 +2,7 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
-app-editors/okteta:designer - Build plugins for dev-qt/designer
+app-editors/okteta:designer - Build plugins for dev-qt/qttools[designer]
 app-office/calligra:charts - Build chartshape plugin for creating business charts with dev-libs/kdiagram
 app-office/calligra:import-filter - Enable support for various import filter file formats like WordPerfect, Visio and Apple Keynote
 app-office/calligra:lcms - Build colorengine plugins using media-libs/lcms
@@ -20,7 +20,7 @@ app-office/skrooge:activities - Enable kactivities support
 app-text/kbibtex:webengine - Use dev-qt/qtwebengine for HTML previews
 dev-libs/appstream:apt - Enables Debians APT support
 dev-libs/kpublictransport:networkmanager - Enable onboard status detection using kde-frameworks/networkmanager-qt
-dev-libs/ktextaddons:designer - Build plugins for dev-qt/designer
+dev-libs/ktextaddons:designer - Build plugins for dev-qt/qttools[designer]
 dev-libs/qcoro:network - Build dev-qt/qtbase network support
 dev-libs/qcoro:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
 dev-libs/qcoro:websockets - Build dev-qt/qtwebsockets support
@@ -29,7 +29,7 @@ dev-util/kdevelop:qmake - Enable support for QMake build system
 dev-util/kdevelop:share - Enable support for patch sharing using kde-frameworks/purpose
 dev-util/massif-visualizer:callgraph - Enable detailed snapshot analysis using media-gfx/kgraphviewer
 games-kids/gcompris:kiosk - Enable kiosk mode by default (for use by small children or on a self-service host machine)
-kde-apps/akonadi:designer - Install plugin for dev-qt/designer
+kde-apps/akonadi:designer - Install plugin for dev-qt/qttools[designer]
 kde-apps/akonadi:tools - Install tools for developers and testing
 kde-apps/akonadi:webengine - Enable support for system-wide defined KAccounts
 kde-apps/akregator:activities - Enable Plasma Activities support via kde-plasma/plasma-activities
@@ -76,7 +76,7 @@ kde-apps/kdenetwork-meta:dropbox - Enable support for Dropbox in kde-apps/dolphi
 kde-apps/kdenetwork-meta:samba - Enable support for net-fs/samba file sharing plugin from within file properties
 kde-apps/kdenetwork-meta:webengine - Enable support for Google Drive integration via kde-misc/kio-gdrive
 kde-apps/kdenetwork-meta:zeroconf - Pull in packages using kde-frameworks/kdnssd
-kde-apps/kdenlive:designer - Build plugins for dev-qt/designer
+kde-apps/kdenlive:designer - Build plugins for dev-qt/qttools[designer]
 kde-apps/kdepim-addons:activities - Enable Plasma Activities support via kde-plasma/plasma-activities
 kde-apps/kdepim-addons:importwizard - Enable additional import plugins for kde-apps/akonadi-import-wizard
 kde-apps/kdepim-addons:itinerary - Enable plugins for kde-misc/itinerary
@@ -115,12 +115,12 @@ kde-apps/krdc:ssh - Enable VNC/RDP SSH tunnel support via net-libs/libssh
 kde-apps/ksystemlog:kdesu - Run as root using kdesu from kde-plasma/kde-cli-tools
 kde-apps/ktouch:X - Enable support for X11 Keyboard Layout Detection
 kde-apps/kwave:qtmedia - Enable playback via dev-qt/qtmultimedia
-kde-apps/libkdepim:designer - Build plugins for dev-qt/designer
+kde-apps/libkdepim:designer - Build plugins for dev-qt/qttools[designer]
 kde-apps/libksane:kwallet - Enable encrypted storage of passwords with kde-frameworks/kwallet
 kde-apps/mailcommon:activities - Enable Plasma Activities support via kde-plasma/plasma-activities
-kde-apps/mailcommon:designer - Build plugins for dev-qt/designer
+kde-apps/mailcommon:designer - Build plugins for dev-qt/qttools[designer]
 kde-apps/marble:aprs - Enable support for APRS data sources
-kde-apps/marble:designer - Install plugin for dev-qt/designer
+kde-apps/marble:designer - Install plugin for dev-qt/qttools[designer]
 kde-apps/marble:geolocation - Enable position information via dev-qt/qtpositioning
 kde-apps/marble:pbf - Enable OpenStreetMap PBF file support via dev-libs/protobuf
 kde-apps/marble:shapefile - Enable support for ESRI shapefiles
@@ -133,38 +133,38 @@ kde-apps/okular:qml - Install Okular Qml components
 kde-apps/okular:share - Enable support for a share menu using kde-frameworks/purpose
 kde-apps/parley:webengine - Build browser integration for the editor, requires dev-qt/qtwebengine
 kde-apps/pimcommon:activities - Enable Plasma Activities support via kde-plasma/plasma-activities
-kde-apps/pimcommon:designer - Build plugins for dev-qt/designer
+kde-apps/pimcommon:designer - Build plugins for dev-qt/qttools[designer]
 kde-apps/step:qalculate - Enable the libqalculate library for unit conversion
 kde-apps/thumbnailers:blender - Enable blender thumbnail generation using kde-frameworks/karchive
 kde-apps/thumbnailers:gettext - Enable PO file thumbnail generation using kde-apps/kdesdk-thumbnailers
 kde-apps/thumbnailers:mobi - Enable mobipocket thumbnail generation using kde-apps/kdegraphics-mobipocket
 kde-apps/thumbnailers:video - Enable video thumbnail generation using kde-apps/ffmpegthumbs
 kde-apps/yakuake:absolute-position - Use kde-plasma/kwayland for absolute window positioning in KWin
-kde-frameworks/kcompletion:designer - Build plugins for dev-qt/designer
+kde-frameworks/kcompletion:designer - Build plugins for dev-qt/qttools[designer]
 kde-frameworks/kconfig:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
-kde-frameworks/kconfigwidgets:designer - Build plugins for dev-qt/designer
+kde-frameworks/kconfigwidgets:designer - Build plugins for dev-qt/qttools[designer]
 kde-frameworks/kfilemetadata:epub - Enable support for reading EPUB ebook metadata
 kde-frameworks/kfilemetadata:mobi - Enable mobipocket support via kde-apps/kdegraphics-mobipocket
-kde-frameworks/kiconthemes:designer - Build plugins for dev-qt/designer
+kde-frameworks/kiconthemes:designer - Build plugins for dev-qt/qttools[designer]
 kde-frameworks/kimageformats:eps - Support the EPS graphics file format
-kde-frameworks/kio:designer - Build plugins for dev-qt/designer
+kde-frameworks/kio:designer - Build plugins for dev-qt/qttools[designer]
 kde-frameworks/kio:kwallet - Enable permanent storage of passwords for kpasswdserver with kde-frameworks/kwallet
-kde-frameworks/kitemviews:designer - Build plugins for dev-qt/designer
-kde-frameworks/knewstuff:designer - Build plugins for dev-qt/designer
+kde-frameworks/kitemviews:designer - Build plugins for dev-qt/qttools[designer]
+kde-frameworks/knewstuff:designer - Build plugins for dev-qt/qttools[designer]
 kde-frameworks/knewstuff:opds - Enable support for the Open Publication Distribution System via kde-frameworks/syndication
-kde-frameworks/kplotting:designer - Build plugins for dev-qt/designer
+kde-frameworks/kplotting:designer - Build plugins for dev-qt/qttools[designer]
 kde-frameworks/ktexteditor:editorconfig - Enable support for EditorConfig configuration files
-kde-frameworks/ktextwidgets:designer - Build plugins for dev-qt/designer
+kde-frameworks/ktextwidgets:designer - Build plugins for dev-qt/qttools[designer]
 kde-frameworks/kuserfeedback:tools - Build application console and CLI binary
 kde-frameworks/kwallet-runtime:gpg - Support wallets with GnuPG encryption in addition to the default blowfish-encrypted file
 kde-frameworks/kwallet-runtime:legacy-kwallet - Support KWallet D-Bus API for applications still using it
-kde-frameworks/kwidgetsaddons:designer - Build plugins for dev-qt/designer
-kde-frameworks/kxmlgui:designer - Build plugins for dev-qt/designer
+kde-frameworks/kwidgetsaddons:designer - Build plugins for dev-qt/qttools[designer]
+kde-frameworks/kxmlgui:designer - Build plugins for dev-qt/qttools[designer]
 kde-frameworks/networkmanager-qt:teamd - Enable Teamd control support
 kde-frameworks/prison:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
 kde-frameworks/purpose:webengine - Enable support for system-wide defined KAccounts
 kde-frameworks/sonnet:aspell - Enable the app-text/aspell spell-checking backend
-kde-frameworks/sonnet:designer - Build plugins for dev-qt/designer
+kde-frameworks/sonnet:designer - Build plugins for dev-qt/qttools[designer]
 kde-frameworks/sonnet:hunspell - Enable the app-text/hunspell spell-checking backend
 kde-frameworks/sonnet:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
 kde-misc/itinerary:matrix - Enable Matrix decentraliced protocol support via net-libs/libquotient
