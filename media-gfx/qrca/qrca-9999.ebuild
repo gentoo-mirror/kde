@@ -38,7 +38,11 @@ DEPEND="
 	>=kde-frameworks/prison-${KFMIN}:6
 	networkmanager? ( >=kde-frameworks/networkmanager-qt-${KFMIN}:6 )
 "
-RDEPEND="${DEPEND}"
+RDEPEND="${DEPEND}
+	>=dev-qt/qtmultimedia-${QTMIN}:6[qml]
+	>=kde-frameworks/kconfig-${KFMIN}:6[qml]
+	>=kde-frameworks/prison-${KFMIN}:6[qml]
+"
 
 src_configure() {
 	local mycmakeargs=(
