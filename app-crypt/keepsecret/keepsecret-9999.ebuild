@@ -12,9 +12,13 @@ DESCRIPTION="Password manager GUI for SecretService providers"
 HOMEPAGE="https://apps.kde.org/keepsecret/
 https://invent.kde.org/utilities/keepsecret"
 
+if [[ ${KDE_BUILD_TYPE} = release ]]; then
+	SRC_URI="mirror://kde/stable/${PN}/${PV}/${P}.tar.xz"
+	KEYWORDS="~amd64"
+fi
+
 LICENSE="GPL-2+"
 SLOT="0"
-KEYWORDS=""
 
 DEPEND="
 	app-crypt/libsecret
@@ -23,6 +27,7 @@ DEPEND="
 	>=dev-qt/qtsvg-${QTMIN}:6
 	>=kde-frameworks/kconfig-${KFMIN}:6[qml]
 	>=kde-frameworks/kcoreaddons-${KFMIN}:6
+	>=kde-frameworks/kcrash-${KFMIN}:6
 	>=kde-frameworks/kdbusaddons-${KFMIN}:6
 	>=kde-frameworks/ki18n-${KFMIN}:6
 	>=kde-frameworks/kirigami-${KFMIN}:6
