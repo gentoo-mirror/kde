@@ -61,7 +61,7 @@ DEPEND="
 	)
 	sftp? (
 		dev-libs/qcoro
-		net-libs/libssh:=[sftp]
+		>=net-libs/libssh-0.9.8:=[sftp]
 	)
 	taglib? ( >=media-libs/taglib-1.11.1:= )
 	X? (

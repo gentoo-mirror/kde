@@ -18,7 +18,7 @@ KEYWORDS=""
 
 COMMON_DEPEND="
 	app-text/cmark:=
-	>=dev-libs/kirigami-addons-1.10.0:6
+	>=dev-libs/kirigami-addons-1.12.0:6
 	>=dev-libs/icu-61.0:=
 	dev-libs/qcoro[network]
 	>=dev-libs/qtkeychain-0.14.2:=[qt6(+)]
@@ -32,20 +32,21 @@ COMMON_DEPEND="
 	>=kde-frameworks/kconfig-${KFMIN}:6[qml]
 	>=kde-frameworks/kconfigwidgets-${KFMIN}:6
 	>=kde-frameworks/kcoreaddons-${KFMIN}:6
+	>=kde-frameworks/kcrash-${KFMIN}:6
 	>=kde-frameworks/kdbusaddons-${KFMIN}:6
 	>=kde-frameworks/ki18n-${KFMIN}:6
+	>=kde-frameworks/kiconthemes-${KFMIN}:6
 	>=kde-frameworks/kio-${KFMIN}:6
 	>=kde-frameworks/kirigami-${KFMIN}:6
 	>=kde-frameworks/kitemmodels-${KFMIN}:6
 	>=kde-frameworks/knotifications-${KFMIN}:6
-	>=kde-frameworks/kstatusnotifieritem-${KFMIN}:6
 	>=kde-frameworks/kwindowsystem-${KFMIN}:6
 	>=kde-frameworks/purpose-${KFMIN}:6
 	>=kde-frameworks/qqc2-desktop-style-${KFMIN}:6
 	>=kde-frameworks/sonnet-${KFMIN}:6[qml]
 	>=kde-frameworks/syntax-highlighting-${KFMIN}:6
 	media-libs/kquickimageeditor:6
-	>=net-libs/libquotient-0.9.3:=
+	>=net-libs/libquotient-0.9.5:=
 "
 DEPEND="${COMMON_DEPEND}
 	test? ( >=dev-qt/qthttpserver-${QTMIN}:6 )
