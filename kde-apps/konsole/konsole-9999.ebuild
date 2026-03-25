@@ -48,6 +48,8 @@ RDEPEND="${DEPEND}"
 
 src_configure() {
 	local mycmakeargs=(
+		# kapsule is not yet packaged
+		-DWITH_KAPSULE=OFF
 		-DWITH_X11=$(usex X)
 	)
 	ecm_src_configure
