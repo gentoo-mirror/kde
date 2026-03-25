@@ -22,6 +22,7 @@ DEPEND="
 	>=dev-qt/qtmultimedia-${QTMIN}:6[qml]
 	>=kde-frameworks/kconfig-${KFMIN}:6
 	>=kde-frameworks/kcoreaddons-${KFMIN}:6
+	>=kde-frameworks/kio-${KFMIN}:6
 	>=kde-frameworks/ki18n-${KFMIN}:6
 "
 RDEPEND="${DEPEND}

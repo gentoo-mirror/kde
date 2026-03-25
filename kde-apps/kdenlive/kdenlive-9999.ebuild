@@ -55,7 +55,7 @@ DEPEND="
 	>=kde-frameworks/solid-${KFMIN}:6
 	media-video/ffmpeg:=[encode(+),libass,sdl,X]
 	>=media-libs/mlt-7.32.0:=[ffmpeg,frei0r,qt6,sdl,xml]
-	media-libs/opentimelineio:=
+	>=media-libs/opentimelineio-0.18.0:=
 "
 RDEPEND="${DEPEND}
 	>=kde-frameworks/qqc2-desktop-style-${KFMIN}:6
@@ -63,14 +63,6 @@ RDEPEND="${DEPEND}
 "
 BDEPEND="sys-devel/gettext"
 DEPEND+=" virtual/os-headers"
-
-src_configure() {
-	local mycmakeargs=(
-		# disable fetching of opentimelineio
-		-DFETCH_OTIO=OFF
-	)
-	ecm_src_configure
-}
 
 pkg_postinst() {
 	xdg_pkg_postinst
