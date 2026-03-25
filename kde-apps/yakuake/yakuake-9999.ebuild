@@ -19,7 +19,7 @@ IUSE="absolute-position"
 # slot op: Uses Qt6::GuiPrivate for qtx11extras_p.h
 # kde-frameworks/kwindowsystem[X]: Unconditional use of KX11Extras
 RDEPEND="
-	>=dev-qt/qtbase-${QTMIN}:6=[dbus,gui,widgets]
+	>=dev-qt/qtbase-${QTMIN}:6=[dbus,gui,wayland,widgets]
 	>=dev-qt/qtsvg-${QTMIN}:6
 	>=kde-apps/konsole-${PVCUT}:6
 	>=kde-frameworks/karchive-${KFMIN}:6
@@ -43,9 +43,12 @@ RDEPEND="
 	>=kde-frameworks/kwindowsystem-${KFMIN}:6[X]
 	>=kde-frameworks/kxmlgui-${KFMIN}:6
 	x11-libs/libX11
+	x11-libs/libxcb
+	x11-libs/xcb-util
 	absolute-position? ( kde-plasma/kwayland:6 )
 "
 DEPEND="${RDEPEND}
+	dev-libs/plasma-wayland-protocols
 	x11-base/xorg-proto
 "
 

@@ -14,6 +14,7 @@ HOMEPAGE="https://apps.kde.org/kclock/"
 LICENSE="CC0-1.0 CC-BY-4.0 GPL-2+ GPL-3+ LGPL-2.1+"
 SLOT="0"
 KEYWORDS=""
+IUSE="lock"
 
 # slot op: Uses Qt6WaylandClientPrivate
 COMMON_DEPEND="
@@ -33,9 +34,14 @@ COMMON_DEPEND="
 	>=kde-frameworks/kstatusnotifieritem-${KFMIN}:6
 	>=kde-frameworks/ksvg-${KFMIN}:6
 	kde-plasma/libplasma:6=
+	lock? (
+		dev-libs/wayland
+		>=kde-frameworks/kwindowsystem-${KFMIN}:6
+	)
 "
 DEPEND="${COMMON_DEPEND}
 	>=dev-libs/wayland-protocols-1.21
+	lock? ( >=dev-libs/plasma-wayland-protocols-1.8 )
 "
 RDEPEND="${COMMON_DEPEND}
 	>=dev-qt/qt5compat-${QTMIN}:6[qml]
@@ -44,3 +50,11 @@ BDEPEND="
 	>=dev-qt/qtbase-${QTMIN}:6[wayland]
 	dev-util/wayland-scanner
 "
+
+src_configure() {
+	local mycmakeargs=(
+		-DKCLOCK_BUILD_SHELL_OVERLAY=$(usex lock)
+	)
+
+	ecm_src_configure
+}
