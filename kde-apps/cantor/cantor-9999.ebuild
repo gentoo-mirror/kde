@@ -55,7 +55,6 @@ DEPEND="
 		sci-libs/cln
 		sci-libs/libqalculate:=
 	)
-	postscript? ( app-text/libspectre )
 	python? (
 		${PYTHON_DEPS}
 		>=dev-qt/qtbase-${QTMIN}:6[dbus]
@@ -89,7 +88,6 @@ src_configure() {
 		$(cmake_use_find_package analitza Analitza6)
 		$(cmake_use_find_package julia Julia)
 		$(cmake_use_find_package lua LuaJIT)
-		-DUSE_LIBSPECTRE=$(usex postscript)
 		$(cmake_use_find_package python Python3)
 		$(cmake_use_find_package qalculate Qalculate)
 		$(cmake_use_find_package R R)

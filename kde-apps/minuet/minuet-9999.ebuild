@@ -22,8 +22,9 @@ DEPEND="
 	>=dev-qt/qtsvg-${QTMIN}:6
 	>=kde-frameworks/kcoreaddons-${KFMIN}:6
 	>=kde-frameworks/kcrash-${KFMIN}:6
+	>=kde-frameworks/kirigami-${KFMIN}:6
 	>=kde-frameworks/ki18n-${KFMIN}:6
-	media-sound/fluidsynth:=
+	>=media-sound/fluidsynth-2.5.1:=
 "
 RDEPEND="${DEPEND}"
 BDEPEND="virtual/pkgconfig"
