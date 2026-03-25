@@ -3,7 +3,6 @@
 
 EAPI=8
 
-PATCHSET=${PN}-25.12.2-qtmultimedia
 ECM_HANDBOOK="optional"
 ECM_TEST="true"
 KFMIN=6.22.0
@@ -13,7 +12,6 @@ inherit ecm gear.kde.org xdg
 
 DESCRIPTION="Powerful BitTorrent client based on KDE Frameworks"
 HOMEPAGE="https://apps.kde.org/ktorrent/"
-SRC_URI+=" https://dev.gentoo.org/~asturm/distfiles/${PATCHSET}.tar.xz"
 
 LICENSE="GPL-2"
 SLOT="6"
@@ -68,8 +66,6 @@ RDEPEND="${COMMON_DEPEND}
 	)
 "
 BDEPEND="sys-devel/gettext"
-
-PATCHES=( "${WORKDIR}"/${PATCHSET} )
 
 src_configure() {
 	local mycmakeargs=(

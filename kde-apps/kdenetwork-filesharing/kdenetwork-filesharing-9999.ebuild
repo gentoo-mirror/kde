@@ -16,7 +16,7 @@ KEYWORDS=""
 IUSE="systemd"
 
 DEPEND="
-	dev-libs/qcoro[dbus.qml]
+	dev-libs/qcoro[dbus,qml]
 	>=dev-qt/qtbase-${QTMIN}:6[dbus,gui,network,widgets]
 	>=dev-qt/qtdeclarative-${QTMIN}:6
 	>=kde-frameworks/kauth-${KFMIN}:6
