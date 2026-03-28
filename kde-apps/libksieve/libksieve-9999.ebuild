@@ -4,7 +4,7 @@
 EAPI=8
 
 ECM_HANDBOOK="forceoptional"
-ECM_QTHELP="true"
+ECM_QTHELP="false" # TODO: Port to ECMGenerateQDoc
 ECM_TEST="true"
 PVCUT=$(ver_cut 1-3)
 KFMIN=6.22.0

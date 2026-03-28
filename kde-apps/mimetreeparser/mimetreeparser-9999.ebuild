@@ -3,7 +3,7 @@
 
 EAPI=8
 
-ECM_QTHELP="true"
+ECM_QTHELP="false" # TODO: Port to ECMGenerateQDoc
 ECM_TEST="true"
 KDE_ORG_CATEGORY="pim"
 PVCUT=$(ver_cut 1-3)

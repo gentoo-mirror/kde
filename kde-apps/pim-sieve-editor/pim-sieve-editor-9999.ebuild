@@ -19,7 +19,7 @@ IUSE="telemetry"
 
 DEPEND="
 	>=dev-libs/ktextaddons-1.8.82:6
-	>=dev-libs/qtkeychain-0.14.2:=[qt6(+)]
+	>=dev-libs/qtkeychain-0.15.0:=
 	>=dev-qt/qtbase-${QTMIN}:6[gui,network,widgets]
 	>=kde-apps/akonadi-${PVCUT}:6=
 	>=kde-apps/akonadi-contacts-${PVCUT}:6=

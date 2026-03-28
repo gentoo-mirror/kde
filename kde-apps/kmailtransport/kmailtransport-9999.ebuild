@@ -3,7 +3,7 @@
 
 EAPI=8
 
-ECM_QTHELP="true"
+ECM_QTHELP="false" # TODO: Port to ECMGenerateQDoc
 ECM_TEST="true"
 PVCUT=$(ver_cut 1-3)
 KFMIN=6.22.0
@@ -20,7 +20,7 @@ IUSE=""
 RESTRICT="test"
 
 RDEPEND="
-	>=dev-libs/qtkeychain-0.14.2:=[qt6(+)]
+	>=dev-libs/qtkeychain-0.15.0:=
 	>=dev-qt/qtbase-${QTMIN}:6[dbus,gui,network,widgets]
 	>=kde-apps/ksmtp-${PVCUT}:6=
 	>=kde-apps/libkgapi-${PVCUT}:6=

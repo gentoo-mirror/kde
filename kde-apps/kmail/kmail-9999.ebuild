@@ -27,7 +27,7 @@ COMMON_DEPEND="
 	dev-libs/qgpgme:=
 	>=dev-libs/ktextaddons-1.8.82:6[speech?]
 	>=dev-libs/libgpg-error-1.36
-	>=dev-libs/qtkeychain-0.14.2:=[qt6(+)]
+	>=dev-libs/qtkeychain-0.15.0:=
 	>=dev-qt/qtbase-${QTMIN}:6[dbus,gui,network,widgets]
 	>=dev-qt/qtwebengine-${QTMIN}:6[widgets]
 	>=kde-apps/akonadi-${PVCUT}:6=
