@@ -25,7 +25,7 @@ RESTRICT="test" # bug 616878
 COMMON_DEPEND="
 	dev-cpp/gpgmepp:=
 	dev-libs/qgpgme:=
-	>=dev-libs/ktextaddons-1.8.82:6[speech?]
+	>=dev-libs/ktextaddons-2.0.1:6[speech?]
 	>=dev-libs/libgpg-error-1.36
 	>=dev-libs/qtkeychain-0.15.0:=
 	>=dev-qt/qtbase-${QTMIN}:6[dbus,gui,network,widgets]
