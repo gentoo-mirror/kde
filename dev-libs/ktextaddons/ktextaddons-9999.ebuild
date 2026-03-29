@@ -4,10 +4,10 @@
 EAPI=8
 
 ECM_DESIGNERPLUGIN="true"
-ECM_QTHELP="true"
+ECM_QTHELP="false" # TODO: Port to ECMGenerateQDoc
 ECM_TEST="true"
-KFMIN=6.14.0
-QTMIN=6.8.1
+KFMIN=6.19.0
+QTMIN=6.9.0
 inherit ecm kde.org
 
 DESCRIPTION="Various text handling addons"
@@ -25,7 +25,7 @@ IUSE="speech"
 RESTRICT="test"
 
 DEPEND="
-	>=dev-libs/qtkeychain-0.14.2:=[qt6(+)]
+	>=dev-libs/qtkeychain-0.15.0:=[qt6(+)]
 	>=dev-qt/qtbase-${QTMIN}:6[dbus,gui,network,widgets]
 	>=dev-qt/qtmultimedia-${QTMIN}:6
 	>=kde-frameworks/karchive-${KFMIN}:6
@@ -36,6 +36,7 @@ DEPEND="
 	>=kde-frameworks/kiconthemes-${KFMIN}:6
 	>=kde-frameworks/kio-${KFMIN}:6
 	>=kde-frameworks/kitemviews-${KFMIN}:6
+	>=kde-frameworks/kservice-${KFMIN}:6
 	>=kde-frameworks/ktextwidgets-${KFMIN}:6
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:6
 	>=kde-frameworks/sonnet-${KFMIN}:6
@@ -48,6 +49,10 @@ RDEPEND="${DEPEND}
 
 src_configure() {
 	local mycmakeargs=(
+		# We don't do PCH in Gentoo, too unreliable
+		-DENABLE_PCH=OFF
+		-DENABLE_WARN_OUTDATED=OFF
+		-DWARNINGS_AS_ERRORS=OFF
 		$(cmake_use_find_package speech Qt6TextToSpeech)
 		# TODO: unpackaged vosk, kaldi (bugs #919236, 919234)
 		-DSPEAK_TO_TEXT_VOSK_PLUGIN=OFF
