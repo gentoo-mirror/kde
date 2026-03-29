@@ -22,8 +22,8 @@ IUSE="pim"
 RESTRICT="test"
 
 DEPEND="
-	dev-cpp/gpgmepp:=
-	dev-libs/qgpgme:=
+	>=dev-cpp/gpgmepp-2:=
+	>=dev-libs/qgpgme-2:=
 	dev-libs/libassuan:=
 	dev-libs/libgpg-error
 	>=dev-qt/qtbase-${QTMIN}:6[dbus,gui,network,widgets]
