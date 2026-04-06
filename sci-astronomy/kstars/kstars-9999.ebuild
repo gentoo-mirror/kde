@@ -18,9 +18,11 @@ fi
 
 LICENSE="GPL-2+ GPL-3+"
 SLOT="0"
-IUSE="opencv +password raw"
+IUSE="+password raw"
 
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
+# currently broken w/ KF6, https://invent.kde.org/education/kstars/-/issues/294
+RESTRICT="test"
 
 # https://wiki.gentoo.org/wiki/Project:Qt/Qt6_migration_notes#Still_unpackaged
 # >=dev-qt/qtdatavis3d-${QTMIN}:6
@@ -42,6 +44,7 @@ COMMON_DEPEND="
 	>=kde-frameworks/kplotting-${KFMIN}:6
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:6
 	>=kde-frameworks/kxmlgui-${KFMIN}:6
+	media-libs/opencv:=[ffmpeg]
 	sci-astronomy/wcslib:=
 	sci-libs/cfitsio:=
 	sci-libs/gsl:=
@@ -49,7 +52,6 @@ COMMON_DEPEND="
 	sci-libs/libnova:=
 	>=sci-libs/stellarsolver-2.7
 	virtual/zlib:=
-	opencv? ( media-libs/opencv:=[ffmpeg] )
 	password? ( >=dev-libs/qtkeychain-0.14.2:=[qt6(+)] )
 	raw? ( media-libs/libraw:= )
 "
@@ -83,7 +85,6 @@ src_configure() {
 		-DCMAKE_DISABLE_FIND_PACKAGE_LibXISF=ON # not packaged
 		-DBUILD_WITH_QT6=ON # KF6 please
 		-DENABLE_SENTRY=OFF
-		$(cmake_use_find_package opencv OpenCV)
 		$(cmake_use_find_package password Qt6Keychain)
 		$(cmake_use_find_package raw LibRaw)
 	)
