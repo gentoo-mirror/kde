@@ -13,5 +13,5 @@ RDEPEND=>=dev-qt/qtbase-6.10.1:6[gui,widgets,xml] >=dev-qt/qtdeclarative-6.10.1:
 RESTRICT=mirror
 SLOT=6
 SRC_URI=mirror://kde/unstable/release-service/26.03.90/src/khangman-26.03.90.tar.xz
-_eclasses_=toolchain-funcs	5195689ff6a73b0e789acfa09d4fbcb9	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	1f799bc9e9f6868d0884be147510a566	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	62099654bb41828150350f7627f11ff7	kde.org	9785f23f5d37cead258649e88dbe359c	gear.kde.org	cbbdb7b479e667c134053462b0ba5eb1	xdg	3ef49a87c52c8b77c476351195dfe575
+_eclasses_=toolchain-funcs	5195689ff6a73b0e789acfa09d4fbcb9	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	1f799bc9e9f6868d0884be147510a566	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	62099654bb41828150350f7627f11ff7	kde.org	9785f23f5d37cead258649e88dbe359c	gear.kde.org	634354c2defcd6e08c60181c05851d44	xdg	3ef49a87c52c8b77c476351195dfe575
 _md5_=4e51d2bb50acc883c5d3d676cd5f3eca
