@@ -14,11 +14,12 @@ HOMEPAGE="https://apps.kde.org/kclock/"
 LICENSE="CC0-1.0 CC-BY-4.0 GPL-2+ GPL-3+ LGPL-2.1+"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~loong ~ppc64 ~x86"
-IUSE="lock"
+IUSE=""
 
 # slot op: Uses Qt6WaylandClientPrivate
-COMMON_DEPEND="
+RDEPEND="
 	dev-libs/kirigami-addons:6
+	dev-libs/wayland
 	>=dev-qt/qtbase-${QTMIN}:6=[gui,network,wayland,widgets]
 	>=dev-qt/qtdeclarative-${QTMIN}:6
 	>=dev-qt/qtmultimedia-${QTMIN}:6[qml]
@@ -33,18 +34,12 @@ COMMON_DEPEND="
 	>=kde-frameworks/knotifications-${KFMIN}:6
 	>=kde-frameworks/kstatusnotifieritem-${KFMIN}:6
 	>=kde-frameworks/ksvg-${KFMIN}:6
+	>=kde-frameworks/kwindowsystem-${KFMIN}:6[wayland]
 	kde-plasma/libplasma:6=
-	lock? (
-		dev-libs/wayland
-		>=kde-frameworks/kwindowsystem-${KFMIN}:6
-	)
 "
-DEPEND="${COMMON_DEPEND}
+DEPEND="${RDEPEND}
+	>=dev-libs/plasma-wayland-protocols-1.8
 	>=dev-libs/wayland-protocols-1.21
-	lock? ( >=dev-libs/plasma-wayland-protocols-1.8 )
-"
-RDEPEND="${COMMON_DEPEND}
-	>=dev-qt/qt5compat-${QTMIN}:6[qml]
 "
 BDEPEND="
 	>=dev-qt/qtbase-${QTMIN}:6[wayland]
@@ -53,7 +48,8 @@ BDEPEND="
 
 src_configure() {
 	local mycmakeargs=(
-		-DKCLOCK_BUILD_SHELL_OVERLAY=$(usex lock)
+		# switching off breaks build, does not save enough deps to be worth it
+		-DKCLOCK_BUILD_SHELL_OVERLAY=ON # $(usex lock)
 	)
 
 	ecm_src_configure

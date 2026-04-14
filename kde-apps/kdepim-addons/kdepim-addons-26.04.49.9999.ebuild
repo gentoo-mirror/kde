@@ -79,7 +79,7 @@ RDEPEND="
 DEPEND="${RDEPEND}"
 BDEPEND="test? ( sys-apps/dbus )"
 
-PATCHES=( "${FILESDIR}/${PN}-25.12.0-no-autogeneratetext.patch" )
+PATCHES=( "${FILESDIR}/${PN}-26.04.0-no-autogeneratetext.patch" )
 
 src_configure() {
 	local mycmakeargs=(
