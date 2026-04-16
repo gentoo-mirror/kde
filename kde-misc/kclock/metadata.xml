@@ -5,11 +5,6 @@
 		<email>kde@gentoo.org</email>
 		<name>Gentoo KDE Project</name>
 	</maintainer>
-	<use>
-		<flag name="lock">
-		Provide lockscreen overlay for Wayland systems.
-		</flag>
-	</use>
 	<upstream>
 		<remote-id type="kde-invent">utilities/kclock</remote-id>
 		<bugs-to>https://bugs.kde.org/enter_bug.cgi?product=KClock</bugs-to>
