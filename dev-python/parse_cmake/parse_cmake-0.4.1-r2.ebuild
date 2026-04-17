@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..14} )
 inherit distutils-r1 pypi
 
 DESCRIPTION="Parser for CMakeLists.txt files"
@@ -27,4 +27,7 @@ distutils_enable_tests unittest
 src_prepare() {
 	distutils-r1_src_prepare
 	sed -i setup.py -e "s/'pyPEG2'//" || die
+
+	# code formatting test doesnt make sense downstream. avoid flake8 dependency
+	rm tests/test_code_format.py || die
 }
