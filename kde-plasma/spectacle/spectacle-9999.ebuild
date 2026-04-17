@@ -7,7 +7,7 @@ ECM_HANDBOOK="optional"
 ECM_TEST="forceoptional"
 KFMIN=9999
 QTMIN=6.10.1
-inherit ecm optfeature plasma.kde.org xdg
+inherit ecm plasma.kde.org xdg
 
 DESCRIPTION="Screenshot capture utility"
 HOMEPAGE="https://apps.kde.org/spectacle/"
@@ -19,6 +19,7 @@ IUSE="share"
 
 # slot op: Uses Qt::GuiPrivate for qtx11extras_p.h
 COMMON_DEPEND="
+	app-text/tesseract:=
 	dev-libs/wayland
 	>=dev-qt/qtbase-${QTMIN}:6=[concurrent,dbus,gui,wayland,widgets,X]
 	>=dev-qt/qtdeclarative-${QTMIN}:6
@@ -70,9 +71,4 @@ src_configure() {
 		$(cmake_use_find_package share KF6Purpose)
 	)
 	ecm_src_configure
-}
-
-pkg_postinst() {
-	optfeature "text recognition in screenshots" "app-text/tesseract"
-	xdg_pkg_postinst
 }
