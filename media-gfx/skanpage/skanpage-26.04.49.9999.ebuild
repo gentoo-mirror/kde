@@ -36,4 +36,6 @@ DEPEND="
 	>=media-libs/ksanecore-${PVCUT}:6
 	media-libs/leptonica:=
 "
-RDEPEND="${DEPEND}"
+RDEPEND="${DEPEND}
+	 >=kde-frameworks/kconfig-${KFMIN}:6[qml]
+"
