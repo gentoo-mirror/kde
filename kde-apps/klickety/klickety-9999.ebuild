@@ -37,5 +37,3 @@ DEPEND="
 RDEPEND="${DEPEND}"
 # TODO: || ( 7zip gzip )
 BDEPEND="app-alternatives/gzip"
-
-DOCS=()
