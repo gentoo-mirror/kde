@@ -3,6 +3,7 @@
 
 EAPI=8
 
+ECM_PYTHON_BINDINGS="off"
 ECM_TEST="true"
 QTMIN=6.10.1
 inherit ecm frameworks.kde.org
