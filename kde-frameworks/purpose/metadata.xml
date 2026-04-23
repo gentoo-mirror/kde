@@ -10,7 +10,7 @@
 		<remote-id type="kde-invent">frameworks/purpose</remote-id>
 	</upstream>
 	<use>
-		<flag name="webengine">Enable support for system-wide defined KAccounts</flag>
+		<flag name="webengine">Enable support for system-wide defined KOnlineAccounts</flag>
 	</use>
 	<slots>
 		<subslots>

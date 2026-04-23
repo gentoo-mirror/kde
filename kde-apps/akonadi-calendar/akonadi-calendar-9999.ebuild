@@ -3,6 +3,7 @@
 
 EAPI=8
 
+ECM_PYTHON_BINDINGS="off"
 ECM_QTHELP="false" # TODO: Port to ECMGenerateQDoc
 ECM_TEST="true"
 PVCUT=$(ver_cut 1-3)
