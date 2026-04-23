@@ -161,7 +161,7 @@ kde-frameworks/kwidgetsaddons:designer - Build plugins for dev-qt/qttools[design
 kde-frameworks/kxmlgui:designer - Build plugins for dev-qt/qttools[designer]
 kde-frameworks/networkmanager-qt:teamd - Enable Teamd control support
 kde-frameworks/prison:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
-kde-frameworks/purpose:webengine - Enable support for system-wide defined KAccounts
+kde-frameworks/purpose:webengine - Enable support for system-wide defined KOnlineAccounts
 kde-frameworks/sonnet:aspell - Enable the app-text/aspell spell-checking backend
 kde-frameworks/sonnet:designer - Build plugins for dev-qt/qttools[designer]
 kde-frameworks/sonnet:hunspell - Enable the app-text/hunspell spell-checking backend
