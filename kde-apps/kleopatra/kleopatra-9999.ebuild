@@ -23,6 +23,7 @@ RESTRICT="test"
 
 DEPEND="
 	>=dev-cpp/gpgmepp-2:=
+	dev-libs/kdsingleapplication:=
 	>=dev-libs/qgpgme-2:=
 	dev-libs/libassuan:=
 	dev-libs/libgpg-error
@@ -36,7 +37,6 @@ DEPEND="
 	>=kde-frameworks/kconfigwidgets-${KFMIN}:6
 	>=kde-frameworks/kcoreaddons-${KFMIN}:6
 	>=kde-frameworks/kcrash-${KFMIN}:6
-	>=kde-frameworks/kdbusaddons-${KFMIN}:6
 	>=kde-frameworks/ki18n-${KFMIN}:6
 	>=kde-frameworks/kiconthemes-${KFMIN}:6
 	>=kde-frameworks/kio-${KFMIN}:6
