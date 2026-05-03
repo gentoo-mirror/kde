@@ -2,8 +2,8 @@ DEFINED_PHASES=-
 DESCRIPTION=kdeutils - merge this to pull in all kdeutils-derived packages
 EAPI=9
 HOMEPAGE=https://apps.kde.org/categories/utilities/
-IUSE=7zip gpg lrz plasma rar +webengine
+IUSE=7zip gpg kwallet lrz plasma rar +webengine
 LICENSE=metapackage
-RDEPEND=>=app-cdr/dolphin-plugins-mountiso-9999:* >=app-cdr/isoimagewriter-9999:* >=app-crypt/keysmith-9999 >=app-misc/francis-9999 >=dev-libs/kweathercore-9999:* >=kde-apps/ark-9999:* >=kde-apps/filelight-9999:* >=kde-apps/kate-9999:* >=kde-apps/kbackup-9999:* >=kde-apps/kcalc-9999:* >=kde-apps/kcharselect-9999:* >=kde-apps/kdebugsettings-9999:* >=kde-apps/kdf-9999:* >=kde-apps/kteatime-9999:* >=kde-apps/ktimer-9999:* >=kde-apps/kwalletmanager-9999:* >=kde-apps/sweeper-9999:* >=kde-apps/yakuake-9999:* >=kde-misc/kweather-9999:* >=kde-misc/markdownpart-9999:* >=sys-block/partitionmanager-9999:* >=sys-libs/kpmcore-9999:* gpg? ( >=kde-apps/kgpg-9999:* ) plasma? ( >=kde-misc/kclock-9999 ) webengine? ( >=app-editors/ghostwriter-9999 >=kde-apps/kimagemapeditor-9999:* ) 7zip? ( || ( >=app-arch/7zip-24.09[symlink(+)] app-arch/p7zip ) ) lrz? ( app-arch/lrzip ) rar? ( || ( app-arch/rar app-arch/unrar app-arch/unar ) )
+RDEPEND=>=app-cdr/dolphin-plugins-mountiso-9999:* >=app-cdr/isoimagewriter-9999:* >=app-crypt/keepsecret-9999:* >=app-crypt/keysmith-9999 >=app-misc/francis-9999 >=dev-libs/kweathercore-9999:* >=kde-apps/ark-9999:* >=kde-apps/filelight-9999:* >=kde-apps/kate-9999:* >=kde-apps/kbackup-9999:* >=kde-apps/kcalc-9999:* >=kde-apps/kcharselect-9999:* >=kde-apps/kdebugsettings-9999:* >=kde-apps/kdf-9999:* >=kde-apps/kteatime-9999:* >=kde-apps/ktimer-9999:* >=kde-apps/sweeper-9999:* >=kde-apps/yakuake-9999:* >=kde-misc/kweather-9999:* >=kde-misc/markdownpart-9999:* >=sys-block/partitionmanager-9999:* >=sys-libs/kpmcore-9999:* gpg? ( >=kde-apps/kgpg-9999:* ) kwallet? ( >=kde-apps/kwalletmanager-9999:* ) plasma? ( >=kde-misc/kclock-9999 ) webengine? ( >=app-editors/ghostwriter-9999 >=kde-apps/kimagemapeditor-9999:* ) 7zip? ( || ( >=app-arch/7zip-24.09[symlink(+)] app-arch/p7zip ) ) lrz? ( app-arch/lrzip ) rar? ( || ( app-arch/rar app-arch/unrar app-arch/unar ) )
 SLOT=0
-_md5_=6235068245ccb1ea823724f1405bd35b
+_md5_=9ec0e5b7d148c36f70d006780f6101f2
