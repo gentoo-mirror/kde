@@ -239,6 +239,7 @@ kde-plasma/plasma5support:ksysguard - Enable device notifications dataengine usi
 kde-plasma/powerdevil:brightness-control - Enable screen brightness control using app-misc/ddcutil
 kde-plasma/spectacle:share - Enable support for a share menu using kde-frameworks/purpose
 kde-plasma/union:tools - Build tools that are useful for development
+kde-plasma/union:widgets - Build QtWidgets output that uses kde-plasma/breeze as the base by default
 media-gfx/digikam:addressbook - Enable akonadi contact integration
 media-gfx/digikam:imagemagick - Enable support for additional image formats such as XCF, FITS, HEIC etc.
 media-gfx/digikam:lensfun - Enable support for media-libs/lensfun
