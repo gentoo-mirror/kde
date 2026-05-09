@@ -1,6 +1,6 @@
 BDEPEND=virtual/pkgconfig doc? ( app-text/doxygen ) app-alternatives/ninja >=dev-build/cmake-3.31.9-r1 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure info install nofetch prepare test unpack
-DEPEND=dev-qt/qtbase:6[network,ssl,xml] gstreamer? ( media-libs/gstreamer ) omemo? ( >=dev-libs/openssl-3:0/3 net-libs/libomemo-c )
+DEPEND=dev-qt/qtbase:6[network,ssl,xml] gstreamer? ( media-libs/gstreamer ) omemo? ( >=dev-libs/openssl-3:= net-libs/libomemo-c )
 DESCRIPTION=Cross-platform C++ XMPP client and server library
 EAPI=8
 HOMEPAGE=https://invent.kde.org/libraries/qxmpp
@@ -8,8 +8,8 @@ INHERIT=cmake kde.org
 IUSE=doc gstreamer omemo test
 LICENSE=LGPL-2.1 CC0-1.0
 PROPERTIES=live
-RDEPEND=dev-qt/qtbase:6[network,ssl,xml] gstreamer? ( media-libs/gstreamer ) omemo? ( >=dev-libs/openssl-3:0/3 net-libs/libomemo-c )
+RDEPEND=dev-qt/qtbase:6[network,ssl,xml] gstreamer? ( media-libs/gstreamer ) omemo? ( >=dev-libs/openssl-3:= net-libs/libomemo-c )
 RESTRICT=!test? ( test )
 SLOT=0/9
 _eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	1f799bc9e9f6868d0884be147510a566	git-r3	7b584b5dc33e3bc66ff5b9271bf41764	kde.org	9785f23f5d37cead258649e88dbe359c
-_md5_=8fd54f190cca6c75d2b5e7be1a7817fb
+_md5_=eda5da5219b2a703885f7528af43c3b0
