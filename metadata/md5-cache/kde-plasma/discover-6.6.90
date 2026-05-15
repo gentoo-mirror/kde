@@ -13,5 +13,5 @@ RDEPEND=>=dev-libs/appstream-1.0.4:=[qt6] >=dev-libs/kirigami-addons-1.10.0:6 de
 RESTRICT=!test? ( test ) mirror
 SLOT=6
 SRC_URI=mirror://kde/unstable/plasma/6.6.90/discover-6.6.90.tar.xz
-_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	1f799bc9e9f6868d0884be147510a566	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	aeda9ab081f7126cb0dd7661341192c4	kde.org	9785f23f5d37cead258649e88dbe359c	plasma.kde.org	13550586f83f72b7bf365ee5f3139b3a	xdg	3ef49a87c52c8b77c476351195dfe575
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	1f799bc9e9f6868d0884be147510a566	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	aeda9ab081f7126cb0dd7661341192c4	kde.org	7180f7f0f5d4701f04a67cc672f4b33e	plasma.kde.org	13550586f83f72b7bf365ee5f3139b3a	xdg	3ef49a87c52c8b77c476351195dfe575
 _md5_=5f1e98119167f2c2c70fa7b9b9e2ec8f
