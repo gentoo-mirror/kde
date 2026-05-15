@@ -34,7 +34,7 @@ fi
 export KDE_BUILD_TYPE
 
 if [[ ${KDE_BUILD_TYPE} == live ]]; then
-	inherit git-r3
+	inherit eapi9-pipestatus git-r3
 fi
 
 # @ECLASS_VARIABLE: KDE_ORG_CATEGORIES
@@ -209,15 +209,44 @@ kde.org_pkg_nofetch() {
 	eerror "${KDE_ORG_SCHEDULE_URI}"
 }
 
+# @FUNCTION: _kde.org_live_corrosion_unpack
+# @DESCRIPTION:
+# Handle rust crates for live packages. Iterates S directory with
+# corrosion_import_crate to fetch with cargo_live_src_unpack.
+_kde.org_live_corrosion_unpack() {
+	debug-print-function ${FUNCNAME} "$@"
+
+	# Need to handle every corrosion "project" individually.
+	local path
+	while IFS= read -r -d '' path ; do
+		S="${path%/*}" cargo_live_src_unpack
+	done < <(find "${S}" -type f -iname CMakeLists.txt -print0 | xargs -0 grep -z -Z -l -i corrosion_import_crate; pipestatus || die)
+}
+
 # @FUNCTION: kde.org_src_unpack
 # @DESCRIPTION:
 # Unpack the sources, automatically handling both release and live ebuilds.
+# For releases, if cargo.eclass is inherited, call cargo_src_unpack instead of
+# default.  For live ebuilds, if both cmake.eclass and cargo.eclass are
+# inherited, deal with potential Corrosion.
 kde.org_src_unpack() {
 	debug-print-function ${FUNCNAME} "$@"
 
 	case ${KDE_BUILD_TYPE} in
-		live) git-r3_src_unpack ;&
-		*) default ;;
+		live)
+			git-r3_src_unpack
+			default
+			if has cmake ${INHERITED} && has cargo ${INHERITED}; then
+				_kde.org_live_corrosion_unpack
+			fi
+			;;
+		*)
+			if has cargo ${INHERITED}; then
+				cargo_src_unpack
+			else
+				default
+			fi
+			;;
 	esac
 }
 
