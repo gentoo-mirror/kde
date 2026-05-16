@@ -3,7 +3,7 @@
 
 EAPI=8
 
-KFMIN=9999
+KFMIN=6.24.0
 QTMIN=6.10.1
 inherit ecm plasma.kde.org xdg
 

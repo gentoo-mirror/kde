@@ -3,7 +3,7 @@
 
 EAPI=8
 
-KFMIN=9999
+KFMIN=6.24.0
 QTMIN=6.10.1
 inherit ecm plasma.kde.org xdg
 
@@ -12,7 +12,7 @@ HOMEPAGE="https://plasma-bigscreen.org/"
 
 LICENSE="Apache-2.0 GPL-2"
 SLOT="6"
-KEYWORDS=""
+KEYWORDS="~amd64"
 IUSE=""
 
 # TODO: libcec automagic
