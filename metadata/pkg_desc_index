@@ -399,7 +399,7 @@ kde-plasma/oxygen 6.6.49.9999 6.6.90 6.7.49.9999 9999: Oxygen visual style for t
 kde-plasma/oxygen-sounds 6.6.49.9999 6.6.90 6.7.49.9999 9999: Oxygen sound theme for the Plasma desktop
 kde-plasma/plasma-activities 6.6.49.9999 6.6.90 6.7.49.9999 9999: Core components for KDE's Activities System
 kde-plasma/plasma-activities-stats 6.6.49.9999 6.6.90 6.7.49.9999 9999: Library for accessing usage data collected by the activities system
-kde-plasma/plasma-bigscreen 9999: Plasma shell for TVs
+kde-plasma/plasma-bigscreen 6.6.90 6.7.49.9999 9999: Plasma shell for TVs
 kde-plasma/plasma-browser-integration 6.6.49.9999 6.6.90 6.7.49.9999 9999: Integrate Chrome/Firefox better into Plasma through browser extensions
 kde-plasma/plasma-desktop 6.6.49.9999 6.6.90 6.7.49.9999 9999: KDE Plasma desktop
 kde-plasma/plasma-disks 6.6.49.9999 6.6.90 6.7.49.9999 9999: Monitors S.M.A.R.T. capable devices for imminent failure
@@ -409,6 +409,7 @@ kde-plasma/plasma-keyboard 6.6.49.9999 6.6.90 6.7.49.9999 9999: Virtual keyboard
 kde-plasma/plasma-login-manager 6.6.49.9999 6.6.90 6.7.49.9999 9999: Plasma Login Manager
 kde-plasma/plasma-login-sessions 6.6.49.9999 6.6.90 6.7.49.9999 9999: KDE Plasma login sessions
 kde-plasma/plasma-meta 6.6.49.9999 6.6.90 6.7.49.9999 9999: Merge this to pull in all Plasma 6 packages
+kde-plasma/plasma-nano 6.6.90 6.7.49.9999 9999: Minimal Plasma shell package
 kde-plasma/plasma-nm 6.6.49.9999 6.6.90 6.7.49.9999 9999: KDE Plasma applet for NetworkManager
 kde-plasma/plasma-pa 6.6.49.9999 6.6.90 6.7.49.9999 9999: Plasma applet for audio volume management using PulseAudio
 kde-plasma/plasma-sdk 6.6.49.9999 6.6.90 6.7.49.9999 9999: Useful applications for Plasma development
