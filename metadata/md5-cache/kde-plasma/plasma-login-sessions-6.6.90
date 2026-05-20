@@ -12,5 +12,5 @@ REQUIRED_USE=|| ( wayland X )
 RESTRICT=mirror
 SLOT=6
 SRC_URI=mirror://kde/unstable/plasma/6.6.90/plasma-workspace-6.6.90.tar.xz
-_eclasses_=cmake-utils	2f2c1f4656e935823f34077269b42a3e	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	690f35cc046585d902ee126b3cab4ed1	ecm-common	2db57bffbd255751dab43a28fc6d734b	kde.org	7180f7f0f5d4701f04a67cc672f4b33e	plasma.kde.org	13550586f83f72b7bf365ee5f3139b3a
+_eclasses_=cmake-utils	2f2c1f4656e935823f34077269b42a3e	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	f60fcf13024e96a0c547e44e5932bcdf	ecm-common	2db57bffbd255751dab43a28fc6d734b	kde.org	7180f7f0f5d4701f04a67cc672f4b33e	plasma.kde.org	13550586f83f72b7bf365ee5f3139b3a
 _md5_=dfc27b9c38b85b461a29743133f24401
