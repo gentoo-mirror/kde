@@ -1,6 +1,6 @@
-BDEPEND=>=dev-qt/qttools-6.10.1:6[linguist] app-alternatives/ninja >=dev-build/cmake-3.31.9-r1 dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-6.24.0:* >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=>=dev-qt/qttools-6.10.1:6[linguist] app-alternatives/ninja >=dev-build/cmake-3.31.9-r1 dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-6.26.0:* >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure info install nofetch prepare test unpack
-DEPEND=>=dev-qt/qtbase-6.10.1:6[dbus,gui,widgets] >=kde-frameworks/kconfig-6.24.0:6 >=kde-frameworks/kcoreaddons-6.24.0:6 >=kde-frameworks/kcrash-6.24.0:6 >=kde-frameworks/kdbusaddons-6.24.0:6 >=kde-frameworks/kio-6.24.0:6 >=kde-frameworks/kjobwidgets-6.24.0:6 >=kde-frameworks/knotifications-6.24.0:6 >=kde-frameworks/kservice-6.24.0:6 >=kde-frameworks/kwindowsystem-6.24.0:6[X?] X? ( >=dev-qt/qtbase-6.10.1:6=[gui] x11-libs/libxcb x11-libs/xcb-util-keysyms ) dev-qt/qtbase:6
+DEPEND=>=dev-qt/qtbase-6.10.1:6[dbus,gui,widgets] >=kde-frameworks/kconfig-6.26.0:6 >=kde-frameworks/kcoreaddons-6.26.0:6 >=kde-frameworks/kcrash-6.26.0:6 >=kde-frameworks/kdbusaddons-6.26.0:6 >=kde-frameworks/kio-6.26.0:6 >=kde-frameworks/kjobwidgets-6.26.0:6 >=kde-frameworks/knotifications-6.26.0:6 >=kde-frameworks/kservice-6.26.0:6 >=kde-frameworks/kwindowsystem-6.26.0:6[X?] X? ( >=dev-qt/qtbase-6.10.1:6=[gui] x11-libs/libxcb x11-libs/xcb-util-keysyms ) dev-qt/qtbase:6
 DESCRIPTION=Daemon providing Global Keyboard Shortcut (Accelerator) functionality
 EAPI=8
 HOMEPAGE=https://kde.org/plasma-desktop
@@ -8,9 +8,9 @@ INHERIT=ecm plasma.kde.org
 IUSE=X debug test
 LICENSE=LGPL-2+
 PROPERTIES=live
-RDEPEND=>=dev-qt/qtbase-6.10.1:6[dbus,gui,widgets] >=kde-frameworks/kconfig-6.24.0:6 >=kde-frameworks/kcoreaddons-6.24.0:6 >=kde-frameworks/kcrash-6.24.0:6 >=kde-frameworks/kdbusaddons-6.24.0:6 >=kde-frameworks/kio-6.24.0:6 >=kde-frameworks/kjobwidgets-6.24.0:6 >=kde-frameworks/knotifications-6.24.0:6 >=kde-frameworks/kservice-6.24.0:6 >=kde-frameworks/kwindowsystem-6.24.0:6[X?] X? ( >=dev-qt/qtbase-6.10.1:6=[gui] x11-libs/libxcb x11-libs/xcb-util-keysyms ) !<kde-frameworks/kglobalaccel-5.116.0-r2:5[-kf6compat(-)] || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-6 dev-qt/qtbase:6
+RDEPEND=>=dev-qt/qtbase-6.10.1:6[dbus,gui,widgets] >=kde-frameworks/kconfig-6.26.0:6 >=kde-frameworks/kcoreaddons-6.26.0:6 >=kde-frameworks/kcrash-6.26.0:6 >=kde-frameworks/kdbusaddons-6.26.0:6 >=kde-frameworks/kio-6.26.0:6 >=kde-frameworks/kjobwidgets-6.26.0:6 >=kde-frameworks/knotifications-6.26.0:6 >=kde-frameworks/kservice-6.26.0:6 >=kde-frameworks/kwindowsystem-6.26.0:6[X?] X? ( >=dev-qt/qtbase-6.10.1:6=[gui] x11-libs/libxcb x11-libs/xcb-util-keysyms ) !<kde-frameworks/kglobalaccel-5.116.0-r2:5[-kf6compat(-)] || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-6 dev-qt/qtbase:6
 REQUIRED_USE=test? ( X )
 RESTRICT=test !test? ( test )
 SLOT=6
 _eclasses_=cmake-utils	2f2c1f4656e935823f34077269b42a3e	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	690f35cc046585d902ee126b3cab4ed1	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	7dbf0caddfb43854f1d371499a6b2da7	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	git-r3	2f8cdb10b033f92c3136aa6488a31c98	kde.org	7180f7f0f5d4701f04a67cc672f4b33e	plasma.kde.org	13550586f83f72b7bf365ee5f3139b3a
-_md5_=774d9671e9e22ea3f73fa619c0ee25b0
+_md5_=b7bd66704831e58bf851280a03597426
