@@ -1,0 +1,15 @@
+BDEPEND=app-alternatives/gpg test? ( app-crypt/pgpdump )
+DEFINED_PHASES=compile install test
+DESCRIPTION=OpenPGP keys used by Nicolas Fella
+EAPI=8
+HOMEPAGE=https://nicolasfella.de
+INHERIT=sec-keys
+IUSE=test
+KEYWORDS=~amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv ~x86
+LICENSE=public-domain
+PROPERTIES=test_network
+RESTRICT=!test? ( test ) test
+SLOT=0
+SRC_URI=https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x90A968ACA84537CC27B99EAF2C8DF587A6D4AAC1 -> openpgp-keys-nicolasfella-ubuntu-20260518.asc
+_eclasses_=eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	edo	a5e294016aa84979fcb2459749eb80b2	sec-keys	ceb4d3181e42bf20ca66d74129d9e848
+_md5_=8ac9e39abcdea14dac16c6637252d0ff
