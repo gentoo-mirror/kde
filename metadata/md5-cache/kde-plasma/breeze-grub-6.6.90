@@ -1,7 +1,7 @@
 BDEPEND=verify-sig? ( || ( app-alternatives/gpg app-crypt/gnupg[-alternatives(-)] ) >=app-portage/gemato-20 ) verify-sig? ( sec-keys/openpgp-keys-bshah )
 DEFINED_PHASES=compile configure info install nofetch prepare unpack
 DESCRIPTION=Breeze theme for GRUB
-EAPI=8
+EAPI=9
 HOMEPAGE=https://kde.org/plasma-desktop
 INHERIT=plasma.kde.org
 IUSE=verify-sig
@@ -11,5 +11,5 @@ RDEPEND=!kde-plasma/breeze-grub:5
 RESTRICT=mirror
 SLOT=6
 SRC_URI=mirror://kde/unstable/plasma/6.6.90/breeze-grub-6.6.90.tar.xz verify-sig? ( mirror://kde/unstable/plasma/6.6.90/breeze-grub-6.6.90.tar.xz.sig )
-_eclasses_=eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	ece4c893b6bd62eacbc4d25958e857f8	kde.org	fd8d1ce3c5a80f4b60fb3125770689a3	plasma.kde.org	6e6842f3a2ea55e85fcada75f19d73a5
-_md5_=de97ef77fd0fab6d9c1a784b6a67f34c
+_eclasses_=verify-sig	ece4c893b6bd62eacbc4d25958e857f8	kde.org	b1dab6ae2b439438612c7592214ce5fd	plasma.kde.org	6e6842f3a2ea55e85fcada75f19d73a5
+_md5_=d9292bd8908979810aeb5674267d984f
