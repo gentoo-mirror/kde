@@ -42,10 +42,14 @@ KDE_PV_UNRELEASED=( )
 case ${PV} in
 	*_p*) ;;
 	# avoid retroactively enabling verify-sig for eclass-overrides users
-	6.6.*) ;;
+	6.6.4|6.6.5) ;;
 	*) _KDE_RELEASE_MANAGER="bshah" ;;
 esac
-# Allow overriding in ebuild if necessary
+
+# @ECLASS_VARIABLE: KDE_RELEASE_MANAGER
+# @PRE_INHERIT
+# @DESCRIPTION:
+# Identity of a release manager used to verify distfile signature.
 : ${KDE_RELEASE_MANAGER:=${_KDE_RELEASE_MANAGER}}
 unset _KDE_RELEASE_MANAGER
 
