@@ -372,7 +372,7 @@ kde-plasma/kdecoration 6.6.49.9999 6.6.91 6.7.49.9999 9999: Plugin based library
 kde-plasma/kdeplasma-addons 6.6.49.9999 6.6.91 6.7.49.9999 9999: Extra Plasma applets and engines
 kde-plasma/kdesu-gui 6.6.49.9999 6.6.91 6.7.49.9999 9999: Graphical frontend for KDE Frameworks' kdesu
 kde-plasma/keditfiletype 6.6.49.9999 6.6.91 6.7.49.9999 9999: File Type Editor
-kde-plasma/kgamma 6.6.49.9999 6.6.91 6.7.49.9999 9999: Screen gamma values kcontrol module
+kde-plasma/kgamma 6.6.49.9999 6.6.91 6.7.49.9999: Screen gamma values kcontrol module
 kde-plasma/kglobalacceld 6.6.49.9999 6.6.91 6.7.49.9999 9999: Daemon providing Global Keyboard Shortcut (Accelerator) functionality
 kde-plasma/kinfocenter 6.6.49.9999 6.6.91 6.7.49.9999 9999: Utility providing information about the computer hardware
 kde-plasma/kmenuedit 6.6.49.9999 6.6.91 6.7.49.9999 9999: KDE Plasma menu editor
@@ -386,7 +386,7 @@ kde-plasma/ksystemstats 6.6.49.9999 6.6.91 6.7.49.9999 9999: Plugin-based system
 kde-plasma/kwallet-pam 6.6.49.9999 6.6.91 6.7.49.9999 9999: PAM module to not enter KWallet password again after login
 kde-plasma/kwayland 6.6.49.9999 6.6.91 6.7.49.9999 9999: Qt-style API to interact with the wayland-client API
 kde-plasma/kwin 6.6.49.9999 6.6.91 6.7.49.9999 9999: Flexible, composited Window Manager for windowing systems on Linux
-kde-plasma/kwin-x11 6.6.49.9999 6.6.91 6.7.49.9999 9999: Flexible, composited X window manager
+kde-plasma/kwin-x11 6.6.49.9999 6.6.91 6.7.49.9999: Flexible, composited X window manager
 kde-plasma/kwrited 6.6.49.9999 6.6.91 6.7.49.9999 9999: KDE Plasma daemon listening for wall and write messages
 kde-plasma/layer-shell-qt 6.6.49.9999 6.6.91 6.7.49.9999 9999: Qt component to allow applications make use of Wayland wl-layer-shell protocol
 kde-plasma/libkscreen 6.6.49.9999 6.6.91 6.7.49.9999 9999: Plasma screen management library
@@ -428,7 +428,7 @@ kde-plasma/sddm-kcm 6.6.49.9999 6.6.91 6.7.49.9999 9999: KDE Plasma control modu
 kde-plasma/spectacle 6.6.49.9999 6.6.91 6.7.49.9999 9999: Screenshot capture utility
 kde-plasma/systemsettings 6.6.49.9999 6.6.91 6.7.49.9999 9999: Control Center to configure KDE Plasma desktop
 kde-plasma/union 6.6.91 6.7.49.9999 9999: Style engine providing a unified style description to separate output styles
-kde-plasma/wacomtablet 6.6.49.9999 6.6.91 6.7.49.9999 9999: Wacom system settings module that supports different button/pen layout profiles
+kde-plasma/wacomtablet 6.6.49.9999 6.6.91 6.7.49.9999: Wacom system settings module that supports different button/pen layout profiles
 kde-plasma/xdg-desktop-portal-kde 6.6.49.9999 6.6.91 6.7.49.9999 9999: Backend implementation for xdg-desktop-portal that is using Qt/KDE Frameworks
 media-gfx/digikam 9999: Digital photo management application
 media-gfx/kgeotag 9999: Photo geotagging program
