@@ -25,7 +25,7 @@ app-text/marknote 9999: Markdown editor with a wide range of formating options f
 dev-build/dolphin-plugins-makefileactions 26.04.49.9999 9999: Dolphin plugin for Makefile targets integration
 dev-db/futuresql 9999: Non-blocking Qt database framework
 dev-libs/appstream 9999: Cross-distro effort for providing metadata for software in the Linux ecosystem
-dev-libs/cxx-rust-cssparser 1.0.0 9999: C++ library for parsing CSS that uses the Rust cssparser crate internally
+dev-libs/cxx-rust-cssparser 9999: C++ library for parsing CSS that uses the Rust cssparser crate internally
 dev-libs/kdiagram 9999: Powerful libraries (KChart, KGantt) for creating business diagrams
 dev-libs/kirigami-addons 9999: Visual end user components for Kirigami-based applications
 dev-libs/kopeninghours 26.04.49.9999 9999: Library for parsing and evaluating OSM opening hours expressions
