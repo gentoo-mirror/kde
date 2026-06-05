@@ -6,15 +6,17 @@ EAPI=8
 ECM_TEST="true"
 inherit ecm frameworks.kde.org
 
-DESCRIPTION="Libary for handling mail messages and newsgroup articles"
+DESCRIPTION="Library for handling mail messages and newsgroup articles"
 
 LICENSE="LGPL-2 LGPL-2+"
-KEYWORDS=""
+KEYWORDS="~amd64"
 IUSE=""
 
 DEPEND="=kde-frameworks/kcodecs-${KDE_CATV}*:6"
 RDEPEND="${DEPEND}
-	!kde-apps/kmime:5
+	!<kde-apps/kmime-26.04.1-r1:*
+	!=kde-apps/kmime-26.04.2-r0
+	!kde-apps/kmime-common
 "
 
 CMAKE_SKIP_TESTS=(
