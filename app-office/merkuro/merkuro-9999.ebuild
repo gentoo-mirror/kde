@@ -6,7 +6,7 @@ EAPI=8
 KDE_ORG_CATEGORY="pim"
 ECM_TEST="forceoptional"
 PVCUT=$(ver_cut 1-3)
-KFMIN=6.22.0
+KFMIN=6.27.0
 QTMIN=6.10.1
 inherit ecm gear.kde.org xdg
 
@@ -36,7 +36,6 @@ DEPEND="
 	>=kde-apps/kidentitymanagement-${PVCUT}:6=
 	>=kde-apps/kmailtransport-${PVCUT}:6=
 	>=kde-apps/kmbox-${PVCUT}:6=
-	>=kde-apps/kmime-${PVCUT}:6=
 	>=kde-apps/libkdepim-${PVCUT}:6=
 	>=kde-apps/libkleo-${PVCUT}:6=
 	>=kde-apps/mailcommon-${PVCUT}:6=
@@ -55,6 +54,7 @@ DEPEND="
 	>=kde-frameworks/kio-${KFMIN}:6
 	>=kde-frameworks/kirigami-${KFMIN}:6
 	>=kde-frameworks/kitemmodels-${KFMIN}:6
+	>=kde-frameworks/kmime-${KFMIN}:6
 	>=kde-frameworks/knotifications-${KFMIN}:6
 	>=kde-frameworks/kwindowsystem-${KFMIN}:6
 	>=kde-frameworks/kxmlgui-${KFMIN}:6
@@ -64,6 +64,7 @@ DEPEND="
 RDEPEND="${DEPEND}
 	>=dev-qt/qt5compat-${QTMIN}:6[qml]
 	>=dev-qt/qtlocation-${QTMIN}:6
+	>=dev-qt/qttools-${QTMIN}:6[linguist]
 	>=dev-qt/qtwebengine-${QTMIN}:6
 	=kde-apps/kdepim-runtime-${PVCUT}*:6
 	>=kde-frameworks/qqc2-desktop-style-${KFMIN}:6
