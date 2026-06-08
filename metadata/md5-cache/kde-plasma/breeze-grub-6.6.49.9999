@@ -8,5 +8,5 @@ LICENSE=GPL-3+
 PROPERTIES=live
 RDEPEND=!kde-plasma/breeze-grub:5
 SLOT=6
-_eclasses_=git-r3	2f8cdb10b033f92c3136aa6488a31c98	kde.org	d3470d7024577ed6885b250877fb6bb5	plasma.kde.org	5131113598dec7d0eb43bf091812709f
+_eclasses_=git-r3	2f8cdb10b033f92c3136aa6488a31c98	kde.org	4e46ddafa51640d987f9375a65670053	plasma.kde.org	5131113598dec7d0eb43bf091812709f
 _md5_=31b9e0ad17598ac3a50bf4834ea292c7
