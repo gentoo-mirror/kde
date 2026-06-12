@@ -28,6 +28,7 @@ dev-libs/appstream 9999: Cross-distro effort for providing metadata for software
 dev-libs/cxx-rust-cssparser 9999: C++ library for parsing CSS that uses the Rust cssparser crate internally
 dev-libs/kdiagram 9999: Powerful libraries (KChart, KGantt) for creating business diagrams
 dev-libs/kirigami-addons 9999: Visual end user components for Kirigami-based applications
+dev-libs/kirigami-app-components 1.0.0 9999: Kirigami addons and modules necessary to do a full featured KDE application
 dev-libs/kopeninghours 26.04.49.9999 9999: Library for parsing and evaluating OSM opening hours expressions
 dev-libs/kosmindoormap 26.04.49.9999 9999: Data Model and Extraction System for Travel Reservation information
 dev-libs/kpublictransport 26.04.49.9999 9999: Library for accessing public transport timetables and other information
