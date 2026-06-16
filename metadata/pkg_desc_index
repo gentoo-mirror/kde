@@ -172,7 +172,7 @@ kde-apps/kmail 26.04.49.9999 9999: Email client, supporting POP3 and IMAP mailbo
 kde-apps/kmail-account-wizard 26.04.49.9999 9999: Assistant for KMail accounts configuration
 kde-apps/kmailtransport 26.04.49.9999 9999: Mail transport service
 kde-apps/kmbox 26.04.49.9999 9999: Library for accessing MBox format mail storages
-kde-apps/kmime 26.04.49.9999: Libary for handling mail messages and newsgroup articles
+kde-apps/kmime 26.04.49.9999: Library for handling mail messages and newsgroup articles
 kde-apps/kmime-common 26.04.49.9999: Common files for kmime
 kde-apps/kmines 26.04.49.9999 9999: Classic mine sweeper game
 kde-apps/kmix 26.04.49.9999 9999: Volume control gui based on KDE Frameworks
