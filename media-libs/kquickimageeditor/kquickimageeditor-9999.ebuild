@@ -15,7 +15,7 @@ https://api.kde.org/kquickimageeditor/html/index.html"
 
 if [[ ${KDE_BUILD_TYPE} = release ]]; then
 	SRC_URI="mirror://kde/stable/${PN}/${P}.tar.xz"
-	KEYWORDS="~amd64 ~arm64 ~ppc64 ~riscv ~x86"
+	KEYWORDS="~amd64 ~arm64 ~loong ~ppc64 ~riscv ~x86"
 fi
 
 LICENSE="LGPL-2.1+"
@@ -35,7 +35,7 @@ RDEPEND="${DEPEND}
 
 src_configure() {
 	local mycmakeargs=(
-		$(cmake_use_find_package opencv OpenCV)
+		-DWITH_OPENCV=$(usex opencv)
 	)
 	ecm_src_configure
 }
