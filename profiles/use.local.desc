@@ -13,7 +13,7 @@ app-office/kmymoney:addressbook - Enable kde-apps/akonadi contact integration
 app-office/kmymoney:experimental - Build unfinished features. DANGEROUS to set - this *will* chew up data
 app-office/kmymoney:hbci - Enable HBCI support using net-libs/aqbanking
 app-office/kmymoney:holidays - Enable kde-frameworks/kholidays integration
-app-office/kmymoney:sql - Enable storage of financial data in SQL Db via dev-qt/qtsql
+app-office/kmymoney:sql - Enable storage of financial data in SQL Db via dev-qt/qtbase[sql]
 app-office/kmymoney:sqlcipher - Enable SQLite3 database encryption support via dev-db/sqlcipher
 app-office/libalkimia:webengine - Enable online quotes using dev-qt/qtwebengine
 app-office/skrooge:activities - Enable kactivities support
@@ -42,7 +42,7 @@ kde-apps/cantor:webengine - Use dev-qt/qtwebengine as embedded QtHelp documentat
 kde-apps/gwenview:activities - Enable kactivities support
 kde-apps/gwenview:annotate - Enable support for image annotations using media-libs/kimageannotator
 kde-apps/gwenview:fits - Enable support for NASA's sci-libs/cfitsio library
-kde-apps/gwenview:mpris - Enable support for MPRIS2 interface, requiring dev-qt/qtdbus as dependency.
+kde-apps/gwenview:mpris - Enable support for MPRIS2 interface, requiring dev-qt/qtbase[dbus] as dependency
 kde-apps/gwenview:share - Enable support for a share menu using kde-frameworks/purpose
 kde-apps/k3b:webengine - Use dev-qt/qtwebengine for fancy k3bdiskinfoview
 kde-apps/kaddressbook:activities - Enable Plasma Activities support via kde-plasma/plasma-activities
@@ -269,7 +269,7 @@ media-sound/amarok:webengine - Enable wikipedia widget using dev-qt/qtwebengine
 media-sound/amarok:zeroconf - Enable DAAP collections support using kde-frameworks/kdnssd
 media-sound/elisa:mpris - Enable MPRIS support
 media-sound/kid3:acoustid - Build acoustic fingerprinting plugin using media-libs/chromaprint
-media-sound/kid3:mpris - Enable support for MPRIS2 interface using dev-qt/qtdbus
+media-sound/kid3:mpris - Enable support for MPRIS2 interface using dev-qt/qtbase[dbus]
 net-im/tokodon:webengine - Use dev-qt/qtwebengine for built-in authentication page (default is external browser)
 net-libs/libktorrent:xfs - Enable XFS specific disk preallocation support via sys-fs/xfsprogs
 net-libs/qxmpp:omemo - Enable OMEMO encryption
