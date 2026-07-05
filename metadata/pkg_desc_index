@@ -318,7 +318,7 @@ kde-frameworks/kunitconversion 6.28.0 9999: Framework for converting units
 kde-frameworks/kuserfeedback 6.28.0 9999: Framework to collect user feedback for applications via telemetry and surveys
 kde-frameworks/kwallet 6.28.0 9999: Interface to KWallet Framework providing desktop-wide storage for passwords
 kde-frameworks/kwallet-runtime 6.28.0 9999: Framework providing desktop-wide storage for passwords
-kde-frameworks/kwidgetsaddons 6.28.0 9999: An assortment of high-level widgets for common tasks
+kde-frameworks/kwidgetsaddons 6.28.0 9999: Assortment of high-level widgets for common tasks
 kde-frameworks/kwindowsystem 6.28.0 9999: Framework providing access to properties and features of the window manager
 kde-frameworks/kxmlgui 6.28.0 9999: Framework for managing menu and toolbar actions in an abstract way
 kde-frameworks/modemmanager-qt 6.28.0 9999: ModemManager bindings for Qt
