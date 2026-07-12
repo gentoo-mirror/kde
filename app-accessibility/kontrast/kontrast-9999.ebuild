@@ -4,7 +4,7 @@
 EAPI=8
 
 ECM_HANDBOOK="forceoptional"
-KFMIN=6.22.0
+KFMIN=6.27.0
 QTMIN=6.10.1
 inherit ecm gear.kde.org xdg
 
@@ -28,6 +28,7 @@ DEPEND="
 	>=kde-frameworks/kirigami-${KFMIN}:6
 "
 RDEPEND="${DEPEND}
+	dev-libs/kirigami-addons:6
 	kde-plasma/xdg-desktop-portal-kde:*
 "
 BDEPEND=">=dev-qt/qttools-${QTMIN}:6[linguist]"
