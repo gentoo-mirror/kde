@@ -5,7 +5,7 @@ EAPI=8
 
 ECM_HANDBOOK="optional"
 ECM_TEST="true"
-PYTHON_COMPAT=( python3_{11..14} )
+PYTHON_COMPAT=( python3_{12..15} )
 KFMIN=6.16.0
 QTMIN=6.8.1
 inherit ecm kde.org optfeature python-any-r1 xdg
@@ -22,8 +22,6 @@ fi
 LICENSE="GPL-2"
 SLOT="0"
 IUSE="webengine"
-
-RESTRICT="test"
 
 COMMON_DEPEND="
 	app-text/poppler[qt6]
