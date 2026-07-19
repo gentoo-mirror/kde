@@ -1,4 +1,4 @@
-BDEPEND=|| ( dev-lang/python:3.14 dev-lang/python:3.13 dev-lang/python:3.12 ) dev-lang/sassc || ( ( dev-lang/python:3.14 dev-python/pycairo[python_targets_python3_14(-)] ) ( dev-lang/python:3.13 dev-python/pycairo[python_targets_python3_13(-)] ) ( dev-lang/python:3.12 dev-python/pycairo[python_targets_python3_12(-)] ) ) >=kde-plasma/breeze-6.7.49:6 app-alternatives/ninja >=dev-build/cmake-3.31.9-r1 dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-6.26.0:* >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=|| ( dev-lang/python:3.15 dev-lang/python:3.14 dev-lang/python:3.13 dev-lang/python:3.12 ) dev-lang/sassc || ( ( dev-lang/python:3.15 dev-python/pycairo[python_targets_python3_15(-)] ) ( dev-lang/python:3.14 dev-python/pycairo[python_targets_python3_14(-)] ) ( dev-lang/python:3.13 dev-python/pycairo[python_targets_python3_13(-)] ) ( dev-lang/python:3.12 dev-python/pycairo[python_targets_python3_12(-)] ) ) >=kde-plasma/breeze-6.7.49:6 app-alternatives/ninja >=dev-build/cmake-3.31.9-r1 dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-6.26.0:* >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure info install nofetch prepare setup test unpack
 DEPEND=dev-qt/qtbase:6
 DESCRIPTION=Official GTK+ port of Plasma's Breeze widget style
@@ -11,4 +11,4 @@ PROPERTIES=live
 RDEPEND=|| ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-6 dev-qt/qtbase:6 !kde-plasma/breeze-gtk:5
 SLOT=6
 _eclasses_=cmake-utils	2f2c1f4656e935823f34077269b42a3e	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	f60fcf13024e96a0c547e44e5932bcdf	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	9bccefc7b2f2facf3c77654f336534fc	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	git-r3	2f8cdb10b033f92c3136aa6488a31c98	kde.org	25905a4e8a1e8a64c835baf7c85183a2	plasma.kde.org	5131113598dec7d0eb43bf091812709f	python-utils-r1	5fd9a75ca55021d3276ce969f8e28391	python-any-r1	891415dfe39ad9b41b461f2b86354af0
-_md5_=8e76c1a9952fb84fddeba70208f9260a
+_md5_=7c00bf0fc846ffa24cae282db4dafa08
