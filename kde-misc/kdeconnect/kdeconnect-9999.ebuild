@@ -16,12 +16,11 @@ HOMEPAGE="https://kdeconnect.kde.org/ https://apps.kde.org/kdeconnect/"
 LICENSE="GPL-2+"
 SLOT="6"
 KEYWORDS=""
-IUSE="bluetooth pulseaudio telephony zeroconf X"
+IUSE="bluetooth pulseaudio telephony X"
 
 RESTRICT="test"
 
-# slot op: Uses Qt6::GuiPrivate for qtx11extras_p.h
-# TODO: make conditional on X upstream
+# slot op: Uses Qt6::GuiPrivate for qpa/qplatformnativeinterface.h, qtx11extras_p.h
 COMMON_DEPEND="
 	dev-libs/libei
 	dev-libs/openssl:=
@@ -49,15 +48,14 @@ COMMON_DEPEND="
 	>=kde-frameworks/qqc2-desktop-style-${KFMIN}:6
 	>=kde-frameworks/solid-${KFMIN}:6
 	sys-apps/dbus
-	x11-libs/libxkbcommon
 	bluetooth? ( >=dev-qt/qtconnectivity-${QTMIN}:6[bluetooth] )
 	pulseaudio? ( >=media-libs/pulseaudio-qt-1.4:= )
 	telephony? ( >=kde-frameworks/modemmanager-qt-${KFMIN}:6 )
-	zeroconf? ( >=kde-frameworks/kdnssd-${KFMIN}:6 )
 	X? (
 		x11-libs/libfakekey
 		x11-libs/libX11
 		x11-libs/libXtst
+		x11-libs/libxkbcommon
 	)
 "
 DEPEND="${COMMON_DEPEND}
@@ -69,6 +67,7 @@ RDEPEND="${COMMON_DEPEND}
 	>=dev-qt/qtmultimedia-${QTMIN}:6[qml]
 	>=dev-qt/qttools-${QTMIN}:6[qdbus]
 	>=kde-frameworks/kdeclarative-${KFMIN}:6
+	>=kde-frameworks/kdnssd-${KFMIN}:6
 	kde-plasma/libplasma:6
 	net-fs/sshfs
 "
@@ -81,7 +80,7 @@ BDEPEND="
 src_prepare() {
 	ecm_src_prepare
 
-	# uses private/qxkbcommon_p.h:
+	# TODO: make conditional on X upstream (uses private/qxkbcommon_p.h):
 	use X || cmake_comment_add_subdirectory -f plugins shareinputdevices
 }
 
@@ -96,7 +95,6 @@ src_configure() {
 		-DWITH_PULSEAUDIO=$(usex pulseaudio)
 		$(cmake_use_find_package telephony KF6ModemManagerQt)
 		-DWITH_X11=$(usex X)
-		-DMDNS_ENABLED=$(usex zeroconf)
 	)
 	ecm_src_configure
 }
