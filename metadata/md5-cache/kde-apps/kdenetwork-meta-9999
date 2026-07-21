@@ -4,6 +4,6 @@ EAPI=9
 HOMEPAGE=https://apps.kde.org/
 IUSE=+bittorrent dropbox samba +webengine +zeroconf
 LICENSE=metapackage
-RDEPEND=>=kde-apps/kget-9999:* >=kde-misc/kdeconnect-9999:* >=net-im/tokodon-9999 >=net-irc/konversation-9999:* >=net-news/alligator-9999 bittorrent? ( >=net-libs/libktorrent-9999:* >=net-p2p/ktorrent-9999:* ) dropbox? ( >=kde-apps/dolphin-plugins-dropbox-9999:* ) samba? ( >=kde-apps/kdenetwork-filesharing-9999:* ) webengine? ( >=kde-apps/kaccounts-integration-9999:* >=kde-apps/kaccounts-providers-9999:* >=kde-apps/signon-kwallet-extension-9999:* >=kde-misc/kio-gdrive-9999:* >=net-im/neochat-9999 ) zeroconf? ( >=kde-apps/krdc-9999:* >=kde-apps/krfb-9999:* >=net-misc/kio-zeroconf-9999:* )
+RDEPEND=>=kde-apps/kget-9999:* >=net-im/tokodon-9999 >=net-irc/konversation-9999:* >=net-news/alligator-9999 bittorrent? ( >=net-libs/libktorrent-9999:* >=net-p2p/ktorrent-9999:* ) dropbox? ( >=kde-apps/dolphin-plugins-dropbox-9999:* ) samba? ( >=kde-apps/kdenetwork-filesharing-9999:* ) webengine? ( >=kde-apps/kaccounts-integration-9999:* >=kde-apps/kaccounts-providers-9999:* >=kde-apps/signon-kwallet-extension-9999:* >=kde-misc/kio-gdrive-9999:* >=net-im/neochat-9999 ) zeroconf? ( >=kde-apps/krdc-9999:* >=kde-apps/krfb-9999:* >=kde-misc/kdeconnect-9999:* >=net-misc/kio-zeroconf-9999:* )
 SLOT=0
-_md5_=d523853b8b87525c9114369d468f64fa
+_md5_=52e88c17c66f13e048f319c748aaaae0
