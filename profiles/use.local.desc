@@ -111,6 +111,7 @@ kde-apps/kleopatra:pim - Enable WKS publishing support using kde-apps/kmail
 kde-apps/kmag:keyboardfocus - Enable keyboard focus tracking
 kde-apps/kmail:activities - Enable Plasma Activities support via kde-plasma/plasma-activities
 kde-apps/konqueror:activities - Enable kactivities support
+kde-apps/konsole:ssh - Enable net-libs/libsshsupport for resolving user SSH configuration
 kde-apps/korganizer:activities - Enable Plasma Activities support via kde-plasma/plasma-activities
 kde-apps/krdc:ssh - Enable VNC/RDP SSH tunnel support via net-libs/libssh
 kde-apps/ksystemlog:kdesu - Run as root using kdesu from kde-plasma/kde-cli-tools
