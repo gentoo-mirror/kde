@@ -42,7 +42,7 @@ COMMON_DEPEND="
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:6
 	>=kde-frameworks/kxmlgui-${KFMIN}:6
 	>=kde-frameworks/purpose-${KFMIN}:6
-	firmware? ( >=sys-apps/fwupd-1.9.4 )
+	firmware? ( >=sys-apps/fwupd-2.1.1 )
 	flatpak? ( sys-apps/flatpak )
 	snap? (
 		>=kde-frameworks/kauth-${KFMIN}:6
@@ -83,7 +83,7 @@ src_configure() {
 		-DBUILD_PackageKitBackend=OFF
 		-DBUILD_RpmOstreeBackend=OFF
 		-DBUILD_SnapBackend=$(usex snap)
-		-DBUILD_SteamOSBackend=OFF
+		-DBUILD_HoloBackend=OFF
 		-DBUILD_SystemdSysupdateBackend=OFF
 		$(cmake_use_find_package telemetry KF6UserFeedback)
 		$(cmake_use_find_package webengine Qt6WebView)
