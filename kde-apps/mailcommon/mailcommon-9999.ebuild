@@ -23,7 +23,7 @@ RESTRICT="test"
 DEPEND="
 	dev-cpp/gpgmepp:=
 	dev-libs/qgpgme:=
-	>=dev-libs/ktextaddons-2.0.1:6
+	>=dev-libs/ktextaddons-2.1.2:6
 	>=dev-qt/qtbase-${QTMIN}:6[dbus,gui,widgets,xml]
 	>=dev-qt/qtmultimedia-${QTMIN}:6
 	>=kde-apps/akonadi-${PVCUT}:6=
@@ -54,7 +54,7 @@ DEPEND="
 	>=kde-frameworks/kwindowsystem-${KFMIN}:6
 	>=kde-frameworks/kxmlgui-${KFMIN}:6
 	>=kde-frameworks/syntax-highlighting-${KFMIN}:6
-	activities? ( kde-plasma/plasma-activities:6= )
+	activities? ( >=kde-plasma/plasma-activities-6.5.0:6= )
 "
 RDEPEND="${DEPEND}"
 
