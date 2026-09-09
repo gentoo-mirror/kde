@@ -126,10 +126,8 @@ DEPEND="${COMMON_DEPEND}
 	)
 "
 RDEPEND="${COMMON_DEPEND}
-	!kde-plasma/libkworkspace:5
 	!<kde-plasma/plasma-desktop-6.6.90
 	!<kde-plasma/xdg-desktop-portal-kde-6.1.90
-	!kde-plasma/xembed-sni-proxy:*
 	app-text/iso-codes
 	dev-libs/kirigami-addons:6
 	>=dev-qt/qttools-${QTMIN}:*[qdbus]
@@ -163,7 +161,8 @@ PDEPEND="
 
 PATCHES=(
 	"${FILESDIR}/${PN}-5.22.5-krunner-cwd-at-home.patch" # TODO upstream: KDE-bug 432975, bug 767478
-	"${FILESDIR}/${PN}-6.7.3-optional-nm.patch" # in git master
+	"${FILESDIR}/${PN}-6.7.3-optional-nm.patch" # in 6.8
+	"${FILESDIR}/${PN}-6.7.5-libcxx23-missing-header.patch" # in 6.8
 )
 
 src_prepare() {
