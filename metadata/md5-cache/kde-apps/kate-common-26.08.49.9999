@@ -9,5 +9,5 @@ LICENSE=GPL-2
 PROPERTIES=live
 RDEPEND=!<kde-apps/kate-24.07.90-r1 !<kde-apps/kate-addons-24.07.90-r1 !<kde-apps/kate-lib-24.07.90-r1 !<kde-apps/kwrite-24.07.90-r1
 SLOT=0
-_eclasses_=cmake-utils	2f2c1f4656e935823f34077269b42a3e	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	8c576dc714b640a6ec36bab2e6d5a7e5	ecm-common	2db57bffbd255751dab43a28fc6d734b	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	git-r3	e6c2f983e006e805160436c75a0c1562	kde.org	25905a4e8a1e8a64c835baf7c85183a2	gear.kde.org	2a5359fc9f45ae0bbc0fba8a3a499363
+_eclasses_=cmake-utils	2f2c1f4656e935823f34077269b42a3e	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	8c576dc714b640a6ec36bab2e6d5a7e5	ecm-common	2db57bffbd255751dab43a28fc6d734b	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	git-r3	e6c2f983e006e805160436c75a0c1562	kde.org	25905a4e8a1e8a64c835baf7c85183a2	gear.kde.org	de0c998b2fba8fb4966034958b9f4ccd
 _md5_=009f131c7bd93985237573c5fa175e80
