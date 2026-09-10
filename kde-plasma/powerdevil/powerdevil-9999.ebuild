@@ -4,7 +4,7 @@
 EAPI=8
 
 ECM_HANDBOOK="optional"
-ECM_TEST="forceoptional"
+ECM_TEST="true"
 KFMIN=9999
 QTMIN=6.11.2
 inherit ecm fcaps plasma.kde.org xdg
@@ -54,6 +54,7 @@ DEPEND="${COMMON_DEPEND}
 RDEPEND="${COMMON_DEPEND}
 	!<kde-plasma/plasma-workspace-6.1.90:*
 	>=dev-qt/qtdeclarative-${QTMIN}:6
+	>=kde-frameworks/kdeclarative-${KFMIN}:6
 	>=kde-frameworks/kwindowsystem-${KFMIN}:6
 	|| (
 		sys-apps/tuned[ppd]
