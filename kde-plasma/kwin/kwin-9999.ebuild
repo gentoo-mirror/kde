@@ -25,7 +25,7 @@ RESTRICT="test"
 COMMON_DEPEND="
 	>=dev-libs/libei-1.4
 	>=dev-libs/libinput-1.30:=
-	>=dev-libs/wayland-1.24.0
+	>=dev-libs/wayland-1.26.0
 	>=dev-qt/qt5compat-${QTMIN}:6[qml]
 	>=dev-qt/qtbase-${QTMIN}:6=[accessibility=,gles2-only=,gui,libinput,opengl,wayland,widgets,X]
 	>=dev-qt/qtdeclarative-${QTMIN}:6
@@ -102,11 +102,11 @@ DEPEND="${COMMON_DEPEND}
 	test? ( screencast? ( >=kde-plasma/kpipewire-${KDE_CATV}:6 ) )
 	X? ( x11-base/xorg-proto )
 "
-BDEPEND="
-	${PYTHON_DEPS}
+BDEPEND="${PYTHON_DEPS}
 	>=dev-qt/qtbase-${QTMIN}:6[wayland]
 	dev-util/wayland-scanner
 	>=kde-frameworks/kcmutils-${KFMIN}:6
+	virtual/pkgconfig
 "
 
 case ${PV} in

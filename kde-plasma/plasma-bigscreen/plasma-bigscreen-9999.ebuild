@@ -13,7 +13,7 @@ HOMEPAGE="https://plasma-bigscreen.org/"
 LICENSE="Apache-2.0 GPL-2"
 SLOT="6"
 KEYWORDS=""
-IUSE=""
+IUSE="systemd"
 
 # TODO: libcec automagic
 COMMON_DEPEND="
@@ -26,6 +26,7 @@ COMMON_DEPEND="
 	>=dev-qt/qtwebengine-${QTMIN}:6[qml]
 	>=kde-frameworks/bluez-qt-${KFMIN}:6
 	>=kde-frameworks/kcmutils-${KFMIN}:6
+	>=kde-frameworks/kcolorscheme-${KFMIN}:6
 	>=kde-frameworks/kconfig-${KFMIN}:6
 	>=kde-frameworks/kcoreaddons-${KFMIN}:6
 	>=kde-frameworks/kdbusaddons-${KFMIN}:6
@@ -59,8 +60,18 @@ RDEPEND="${COMMON_DEPEND}
 	>=kde-plasma/plasma-nano-${KDE_CATV}:6
 	>=kde-plasma/plasma-nm-${KDE_CATV}:6
 	>=kde-plasma/plasma-pa-${KDE_CATV}:6
+	systemd? ( sys-apps/systemd )
 "
 BDEPEND="
 	>=dev-qt/qtbase-${QTMIN}:6[wayland]
 	dev-util/wayland-scanner
 "
+
+src_prepare() {
+	ecm_src_prepare
+
+	# TODO: outsource to separate package?
+	if ! use systemd; then
+		sed -e "s/^pkg_check_modules.*systemd/#&/" -i CMakeLists.txt || die
+	fi
+}
