@@ -1,0 +1,12 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure info install nofetch prepare unpack
+DESCRIPTION=Breeze theme for GRUB
+EAPI=9
+HOMEPAGE=https://kde.org/plasma-desktop
+INHERIT=plasma.kde.org
+LICENSE=GPL-3+
+PROPERTIES=live
+RDEPEND=!kde-plasma/breeze-grub:5
+SLOT=6
+_eclasses_=git-r3	e6c2f983e006e805160436c75a0c1562	kde.org	25905a4e8a1e8a64c835baf7c85183a2	plasma.kde.org	f13f6a173f07b977f8e55175555ec31d
+_md5_=31b9e0ad17598ac3a50bf4834ea292c7
