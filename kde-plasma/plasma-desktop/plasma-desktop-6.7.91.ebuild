@@ -118,10 +118,6 @@ BDEPEND="
 	input_devices_wacom? ( dev-util/wayland-scanner )
 "
 
-PATCHES=(
-	"${FILESDIR}/${P}-sddm-fix.patch" # KDE-bug #525035
-)
-
 src_prepare() {
 	ecm_src_prepare
 
