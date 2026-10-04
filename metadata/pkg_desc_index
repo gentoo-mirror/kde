@@ -477,7 +477,7 @@ sci-astronomy/kstars 9999: Desktop Planetarium
 sci-calculators/keurocalc 9999: Universal currency converter and calculator
 sci-electronics/ktechlab 9999: IDE for microcontrollers and electronics
 sci-mathematics/rkward 9999: IDE for the R-project
-sec-keys/openpgp-keys-kde 20260523 99999999: OpenPGP keys used for KDE releases
+sec-keys/openpgp-keys-kde 20260822 99999999: OpenPGP keys used for KDE releases
 sys-auth/polkit-qt 9999: Qt wrapper around polkit-1 client libraries
 sys-block/partitionmanager 26.08.49.9999 9999: Utility for management of disks, partitions and file systems
 sys-libs/kpmcore 26.08.49.9999 9999: Library for managing partitions
