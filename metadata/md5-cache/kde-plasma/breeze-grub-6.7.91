@@ -11,5 +11,5 @@ RDEPEND=!kde-plasma/breeze-grub:5
 RESTRICT=mirror
 SLOT=6
 SRC_URI=mirror://kde/unstable/plasma/6.7.91/breeze-grub-6.7.91.tar.xz verify-sig? ( mirror://kde/unstable/plasma/6.7.91/breeze-grub-6.7.91.tar.xz.sig )
-_eclasses_=verify-sig	f0b3a8c93ad67e5137bbf53281fed014	kde.org	25905a4e8a1e8a64c835baf7c85183a2	plasma.kde.org	f13f6a173f07b977f8e55175555ec31d
+_eclasses_=verify-sig	f0b3a8c93ad67e5137bbf53281fed014	kde.org	25905a4e8a1e8a64c835baf7c85183a2	plasma.kde.org	fade08f9eea4e6ad2f337935c2a4991f
 _md5_=4e61496307eea972dcca0cc1fcf7b18c
