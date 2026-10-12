@@ -1,7 +1,6 @@
 app-accessibility/kontrast 26.08.49.9999 9999: Tool to check contrast for colors to verify they are correctly accessible
 app-admin/kio-admin 26.08.49.9999 9999: Manage files as administrator using the admin:// KIO protocol
 app-admin/systemdgenie 9999: Systemd managment utility
-app-backup/kup 6.7.91 6.8.0 6.8.49.9999 9999: Backup scheduler for the Plasma desktop
 app-cdr/dolphin-plugins-mountiso 26.08.49.9999 9999: Dolphin plugin for ISO loopback device mounting
 app-cdr/isoimagewriter 26.08.49.9999 9999: Write hybrid ISO files onto a USB disk
 app-crypt/keepsecret 26.08.49.9999 9999: Password manager GUI for SecretService providers
@@ -384,6 +383,7 @@ kde-plasma/kscreen 6.7.49.9999 6.7.91 6.8.0 6.8.49.9999 9999: KDE Plasma screen 
 kde-plasma/kscreenlocker 6.7.49.9999 6.7.91 6.8.0 6.8.49.9999 9999: Library and components for secure lock screen architecture
 kde-plasma/ksshaskpass 6.7.49.9999 6.7.91 6.8.0 6.8.49.9999 9999: Implementation of ssh-askpass with KDE Wallet integration
 kde-plasma/ksystemstats 6.7.49.9999 6.7.91 6.8.0 6.8.49.9999 9999: Plugin-based system monitoring daemon
+kde-plasma/kup 6.7.91 6.8.0 6.8.49.9999 9999: Backup scheduler for the Plasma desktop
 kde-plasma/kwallet-pam 6.7.49.9999 6.7.91 6.8.0 6.8.49.9999 9999: PAM module to not enter KWallet password again after login
 kde-plasma/kwayland 6.7.49.9999 6.7.91 6.8.0 6.8.49.9999 9999: Qt-style API to interact with the wayland-client API
 kde-plasma/kwin 6.7.49.9999 6.7.91 6.8.0 6.8.49.9999 9999: Flexible, composited Window Manager for windowing systems on Linux
