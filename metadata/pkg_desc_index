@@ -428,7 +428,7 @@ kde-plasma/qqc2-breeze-style 6.7.49.9999 6.7.91 6.8.0 6.8.49.9999 9999: Breeze i
 kde-plasma/sddm-kcm 6.7.49.9999 6.7.91 6.8.0 6.8.49.9999 9999: KDE Plasma control module for SDDM
 kde-plasma/spectacle 6.7.49.9999 6.7.91 6.8.0 6.8.49.9999 9999: Screenshot capture utility
 kde-plasma/systemsettings 6.7.49.9999 6.7.91 6.8.0 6.8.49.9999 9999: Control Center to configure KDE Plasma desktop
-kde-plasma/union 6.7.49.9999 6.7.91 6.8.0 6.8.49.9999 9999: Style engine providing a unified style description to separate output styles
+kde-plasma/union 6.7.91 6.8.0 6.8.49.9999 9999: Style engine providing a unified style description to separate output styles
 kde-plasma/wacomtablet 6.7.49.9999: Wacom system settings module that supports different button/pen layout profiles
 kde-plasma/xdg-desktop-portal-kde 6.7.49.9999 6.7.91 6.8.0 6.8.49.9999 9999: Backend implementation for xdg-desktop-portal that is using Qt/KDE Frameworks
 media-gfx/digikam 9999: Digital photo management application
