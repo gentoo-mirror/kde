@@ -1,6 +1,7 @@
 app-accessibility/kontrast 26.08.49.9999 9999: Tool to check contrast for colors to verify they are correctly accessible
 app-admin/kio-admin 26.08.49.9999 9999: Manage files as administrator using the admin:// KIO protocol
 app-admin/systemdgenie 9999: Systemd managment utility
+app-backup/kio-snapshot 1.1.0 9999: Btrfs Filesystem snapshot integration for KDE applications
 app-cdr/dolphin-plugins-mountiso 26.08.49.9999 9999: Dolphin plugin for ISO loopback device mounting
 app-cdr/isoimagewriter 26.08.49.9999 9999: Write hybrid ISO files onto a USB disk
 app-crypt/keepsecret 26.08.49.9999 9999: Password manager GUI for SecretService providers
