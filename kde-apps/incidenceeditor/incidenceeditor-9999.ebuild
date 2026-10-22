@@ -6,7 +6,7 @@ EAPI=8
 ECM_QTHELP="false" # TODO: Port to ECMGenerateQDoc
 ECM_TEST="true"
 PVCUT=$(ver_cut 1-3)
-KFMIN=6.29.0
+KFMIN=6.31.0
 QTMIN=6.11.2
 inherit ecm gear.kde.org
 
@@ -26,7 +26,6 @@ RDEPEND="
 	>=kde-apps/akonadi-mime-${PVCUT}:6=
 	>=kde-apps/calendarsupport-${PVCUT}:6=
 	>=kde-apps/eventviews-${PVCUT}:6=
-	>=kde-apps/kcalutils-${PVCUT}:6=
 	>=kde-apps/kidentitymanagement-${PVCUT}:6=
 	>=kde-apps/kldap-${PVCUT}:6=
 	>=kde-apps/kpimtextedit-${PVCUT}:6=

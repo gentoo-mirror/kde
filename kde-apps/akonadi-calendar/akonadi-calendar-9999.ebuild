@@ -7,7 +7,7 @@ ECM_PYTHON_BINDINGS="off"
 ECM_QTHELP="false" # TODO: Port to ECMGenerateQDoc
 ECM_TEST="true"
 PVCUT=$(ver_cut 1-3)
-KFMIN=6.29.0
+KFMIN=6.31.0
 QTMIN=6.11.2
 inherit ecm gear.kde.org
 
@@ -27,7 +27,6 @@ DEPEND="
 	>=kde-apps/akonadi-${PVCUT}:6=
 	>=kde-apps/akonadi-contacts-${PVCUT}:6=
 	>=kde-apps/akonadi-mime-${PVCUT}:6=
-	>=kde-apps/kcalutils-${PVCUT}:6=
 	>=kde-apps/kidentitymanagement-${PVCUT}:6=
 	>=kde-apps/kmailtransport-${PVCUT}:6=
 	>=kde-apps/libkleo-${PVCUT}:6=
