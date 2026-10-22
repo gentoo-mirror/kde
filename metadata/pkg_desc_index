@@ -111,7 +111,7 @@ kde-apps/kbreakout 26.08.49.9999 9999: Breakout-like game by KDE
 kde-apps/kbruch 26.08.49.9999 9999: Educational application to learn calculating with fractions
 kde-apps/kcachegrind 26.08.49.9999 9999: Frontend for Cachegrind by KDE
 kde-apps/kcalc 26.08.49.9999 9999: KDE calculator
-kde-apps/kcalutils 26.08.49.9999 9999: Library providing utility functions for the handling of calendar data
+kde-apps/kcalutils 26.08.49.9999: Library providing utility functions for the handling of calendar data
 kde-apps/kcharselect 26.08.49.9999 9999: KDE character selection utility
 kde-apps/kcolorchooser 26.08.49.9999 9999: KDE color selector/editor
 kde-apps/kcron 26.08.49.9999 9999: KDE Task Scheduler
