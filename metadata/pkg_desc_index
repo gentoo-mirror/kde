@@ -407,7 +407,7 @@ kde-plasma/plasma-disks 6.7.49.9999 6.8.49.9999 9999: Monitors S.M.A.R.T. capabl
 kde-plasma/plasma-firewall 6.7.49.9999 6.8.49.9999 9999: Plasma frontend for Firewalld or UFW
 kde-plasma/plasma-integration 6.7.49.9999 6.8.49.9999 9999: Qt Platform Theme integration plugins for the Plasma workspaces
 kde-plasma/plasma-keyboard 6.7.49.9999 6.8.49.9999 9999: Virtual keyboard based on Qt Virtual Keyboard
-kde-plasma/plasma-login-manager 6.7.49.9999 6.8.49.9999 9999: Plasma Login Manager
+kde-plasma/plasma-login-manager 6.8.49.9999 9999: Plasma Login Manager
 kde-plasma/plasma-login-sessions 6.7.49.9999: KDE Plasma login sessions
 kde-plasma/plasma-meta 6.7.49.9999 6.8.49.9999 9999: Merge this to pull in all Plasma 6 packages
 kde-plasma/plasma-nano 6.7.49.9999 6.8.49.9999 9999: Minimal Plasma shell package
