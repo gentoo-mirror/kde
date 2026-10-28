@@ -3,7 +3,7 @@
 
 EAPI=8
 
-KFMIN=6.22.0
+KFMIN=9999
 QTMIN=6.11.2
 inherit ecm plasma.kde.org linux-info pam tmpfiles
 
@@ -25,7 +25,7 @@ DEPEND="
 	>=kde-frameworks/kcoreaddons-${KFMIN}:6
 	>=kde-frameworks/kdbusaddons-${KFMIN}:6
 	>=kde-frameworks/ki18n-${KFMIN}:6
-	>=kde-frameworks/kio-6.22.1:6
+	>=kde-frameworks/kio-${KFMIN}:6
 	>=kde-frameworks/kpackage-${KFMIN}:6
 	>=kde-frameworks/kwindowsystem-${KFMIN}:6
 	>=kde-plasma/kscreen-${KDE_CATV}:6
@@ -39,13 +39,11 @@ DEPEND="
 RDEPEND="
 	${DEPEND}
 	acct-user/plasmalogin
-	kde-plasma/kwin[lock]
+	kde-plasma/kwin[activities(+),lock]
 "
 BDEPEND="
 	dev-python/docutils
-	>=dev-build/cmake-3.25.0
 	>=dev-qt/qttools-${QTMIN}[linguist]
-	kde-frameworks/extra-cmake-modules:0
 	virtual/pkgconfig
 "
 
@@ -63,7 +61,7 @@ src_prepare() {
 	InputMethod=
 	EOF
 
-	cmake_src_prepare
+	ecm_src_prepare
 
 	if ! use test; then
 		sed -e "/^find_package/s/ Test//" -i CMakeLists.txt || die
@@ -83,11 +81,11 @@ src_configure() {
 		#-DPLASMALOGIN_INITIAL_VT=7
 	)
 
-	cmake_src_configure
+	ecm_src_configure
 }
 
 src_install() {
-	cmake_src_install
+	ecm_src_install
 
 	insinto /etc/plasmalogin.conf.d/
 	doins "${S}"/01gentoo.conf
