@@ -22,6 +22,7 @@ bump_packages_from_set() {
 	local setname="${1}"
 	local sourceversion="${2}"
 	local targetversion="${3}"
+	local mainversion="$(main_version ${targetversion})"
 
 	local packages=$(get_package_list_from_set ${setname})
 
@@ -37,7 +38,7 @@ bump_packages_from_set() {
 		ekeyword ^all ${destination} > /dev/null
 
 		if [[ ${destination} != *9999* ]] ; then
-			ekeyword $(get_main_tree_keyword ${cp}) ${destination} > /dev/null
+			ekeyword $(get_main_tree_keyword ${cp} ${mainversion}) ${destination} > /dev/null
 			ekeyword ~all ${destination} > /dev/null
 		fi
 
@@ -146,14 +147,20 @@ create_keywords_files() {
 }
 
 # @FUNCTION: get_main_tree_keyword
-# @USAGE: <cp>
+# @USAGE: <cp> [<main version>]
 # @DESCRIPTION:
 # Given a <cp>, get the keywords from the highest ebuild version in the gentoo repo.
+# If given also <main version>, prefer the keywords from existing main version branch.
 get_main_tree_keyword() {
 	local portdir="$(portageq get_repo_path / gentoo)"
 	local cp="${1}"
+	local mv="${2}"
+	local checkpath="${portdir}/${cp}/${cp##*/}"
 
-	echo $(sed -ne 's/^\s*KEYWORDS="\(.*\)"/\1/p' "$(ls ${portdir}/${cp}/*.ebuild | sort | tail -n 1)")
+	if [[ -n ${mv} ]] && compgen -G "${checkpath}-${mv}*.ebuild" >/dev/null 2>&1; then
+		checkpath+="-${mv}"
+	fi
+	echo $(sed -ne 's/^\s*KEYWORDS="\(.*\)"/\1/p' "$(ls ${checkpath}*.ebuild | sort | tail -n 1)")
 }
 
 # @FUNCTION: get_package_list_from_set
@@ -170,6 +177,21 @@ get_package_list_from_set() {
 	for entry in $(grep ^@ "${SOURCE_REPO}/sets/${set}") ; do
 		get_package_list_from_set ${entry/@/}
 	done
+}
+
+# @FUNCTION: main_version
+# @USAGE: <pv>
+# @DESCRIPTION:
+# Given a <pv> version string, get the first and second part (x.y.z -> x.y).
+main_version() {
+	local pv="${1}"
+
+	if [[ $# -gt 1 ]]; then
+		echo "${FUNCNAME[0]}: error: must be passed exactly one argument!"
+		return
+	fi
+
+	echo ${pv} | cut -d "." -f 1-2
 }
 
 # @FUNCTION: mark_unreleased
