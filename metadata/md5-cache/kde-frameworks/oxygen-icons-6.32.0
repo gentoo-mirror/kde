@@ -12,5 +12,5 @@ RDEPEND=!kde-frameworks/oxygen-icons:5
 RESTRICT=!test? ( test ) fetch
 SLOT=6
 SRC_URI=mirror://kde/stable/frameworks/6.32/oxygen-icons-6.32.0.tar.xz verify-sig? ( mirror://kde/stable/frameworks/6.32/oxygen-icons-6.32.0.tar.xz.sig )
-_eclasses_=cmake-utils	2f2c1f4656e935823f34077269b42a3e	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	8c576dc714b640a6ec36bab2e6d5a7e5	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	f0b3a8c93ad67e5137bbf53281fed014	kde.org	25905a4e8a1e8a64c835baf7c85183a2	frameworks.kde.org	d4b79b82584190b9a7a5071f96823f0c
+_eclasses_=cmake-utils	2f2c1f4656e935823f34077269b42a3e	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	8c576dc714b640a6ec36bab2e6d5a7e5	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	f0b3a8c93ad67e5137bbf53281fed014	kde.org	87399d085fb96bca1ce2041dad8cf834	frameworks.kde.org	d4b79b82584190b9a7a5071f96823f0c
 _md5_=764839b91743f0b486a8a244c3dde597
