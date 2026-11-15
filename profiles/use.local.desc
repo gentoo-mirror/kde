@@ -17,6 +17,7 @@ app-office/kmymoney:sql - Enable storage of financial data in SQL Db via dev-qt/
 app-office/kmymoney:sqlcipher - Enable SQLite3 database encryption support via dev-db/sqlcipher
 app-office/libalkimia:webengine - Enable online quotes using dev-qt/qtwebengine
 app-office/skrooge:activities - Enable kactivities support
+app-text/ebook-tools:lit2epub - Install lit2epub script
 app-text/kbibtex:webengine - Use dev-qt/qtwebengine for HTML previews
 dev-libs/appstream:apt - Enables Debians APT support
 dev-libs/kpublictransport:networkmanager - Enable onboard status detection using kde-frameworks/networkmanager-qt
@@ -134,6 +135,7 @@ kde-apps/okular:crypt - Enable support for password-encrypted documents via kde-
 kde-apps/okular:epub - Enable E-Book support via app-text/ebook-tools
 kde-apps/okular:markdown - Enable Markdown support via app-text/discount
 kde-apps/okular:mobi - Enable mobipocket support via kde-apps/kdegraphics-mobipocket
+kde-apps/okular:multimedia - Enable multimedia support via dev-qt/qtmultimedia
 kde-apps/okular:share - Enable support for a share menu using kde-frameworks/purpose
 kde-apps/parley:webengine - Build browser integration for the editor, requires dev-qt/qtwebengine
 kde-apps/pimcommon:activities - Enable Plasma Activities support via kde-plasma/plasma-activities
@@ -175,7 +177,6 @@ kde-misc/itinerary:matrix - Enable Matrix decentraliced protocol support via net
 kde-misc/kdeconnect:X - Enable remote input mousepad/shareinputdevices plugins relying on X11 libs
 kde-misc/kdeconnect:pulseaudio - Enable system volume control plugin using media-libs/libpulse
 kde-misc/kdeconnect:telephony - Enable telephony plugin using kde-frameworks/modemmanager-qt
-kde-misc/kio-gdrive:share - Enable support for a share menu using kde-frameworks/purpose
 kde-misc/krename:office - Enable support for file naming based on ODF metadata
 kde-misc/tellico:bibtex - Add support for bibtex importing using btparse from dev-perl/Text-BibTeX
 kde-misc/tellico:csv - Enable csv read support via dev-libs/libcsv

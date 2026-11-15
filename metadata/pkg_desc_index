@@ -20,6 +20,7 @@ app-office/libalkimia 9999: Library with common classes and functionality used b
 app-office/merkuro 9999: Calendar application using Akonadi
 app-office/skrooge 9999: Personal finances manager, aiming at being simple and intuitive
 app-text/arianna 9999: EPub Reader for mobile devices
+app-text/ebook-tools 9999: Tools for accessing and converting various ebook file formats
 app-text/kbibtex 9999: BibTeX editor to edit bibliographies used with LaTeX
 app-text/marknote 9999: Markdown editor with a wide range of formating options for everyday notes
 dev-build/dolphin-plugins-makefileactions 9999: Dolphin plugin for Makefile targets integration
@@ -340,7 +341,6 @@ kde-misc/kclock 9999: Convergent clock application for Plasma
 kde-misc/kdeconnect 9999: Adds communication between KDE Plasma and your smartphone
 kde-misc/kdiff3 9999: Frontend to diff3 based on KDE Frameworks
 kde-misc/kio-fuse 9999: FUSE interface for KIO
-kde-misc/kio-gdrive 9999: KIO worker for Google Drive service
 kde-misc/kio-gopher 9999: Gopher KIO worker for Konqueror
 kde-misc/kio-stash 9999: KIO worker and daemon to stash discontinuous file selections
 kde-misc/kooka 9999: Scanning application by KDE
