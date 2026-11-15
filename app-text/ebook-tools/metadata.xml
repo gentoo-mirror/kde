@@ -6,10 +6,10 @@
 		<name>Gentoo KDE Project</name>
 	</maintainer>
 	<upstream>
-		<bugs-to>https://bugs.kde.org/enter_bug.cgi?product=kio-gdrive</bugs-to>
-		<remote-id type="kde-invent">network/kio-gdrive</remote-id>
+		<remote-id type="sourceforge">ebook-tools</remote-id>
+		<remote-id type="kde-invent">libraries/ebook-tools</remote-id>
 	</upstream>
 	<use>
-		<flag name="share">Enable support for a share menu using <pkg>kde-frameworks/purpose</pkg></flag>
+		<flag name="lit2epub">Install lit2epub script</flag>
 	</use>
 </pkgmetadata>
