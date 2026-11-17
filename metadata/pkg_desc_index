@@ -172,7 +172,7 @@ kde-apps/kmahjongg 26.11.80 26.12.49.9999 9999: A tile matching game for one or 
 kde-apps/kmail 9999: Email client, supporting POP3 and IMAP mailboxes
 kde-apps/kmail-account-wizard 9999: Assistant for KMail accounts configuration
 kde-apps/kmailtransport 9999: Mail transport service
-kde-apps/kmbox 9999: Library for accessing MBox format mail storages
+kde-apps/kmbox 26.11.80 26.12.49.9999 9999: Library for accessing MBox format mail storages
 kde-apps/kmines 26.11.80 26.12.49.9999 9999: Classic mine sweeper game
 kde-apps/kmix 26.11.80 26.12.49.9999 9999: Volume control gui based on KDE Frameworks
 kde-apps/kmousetool 26.11.80 26.12.49.9999 9999: KDE program that clicks the mouse for you
@@ -239,7 +239,7 @@ kde-apps/mailimporter 9999: Library to import mail from various sources
 kde-apps/marble 26.11.80 26.12.49.9999 9999: Virtual Globe and World Atlas to learn more about Earth
 kde-apps/mbox-importer 9999: Import mbox email archives from various sources into Akonadi
 kde-apps/messagelib 9999: Libraries for messaging functions
-kde-apps/mimetreeparser 9999: Libraries for messaging functions
+kde-apps/mimetreeparser 26.11.80 26.12.49.9999 9999: Libraries for messaging functions
 kde-apps/minuet 26.11.80 26.12.49.9999 9999: Music Education software by KDE
 kde-apps/okular 26.11.80 26.12.49.9999 9999: Universal document viewer based on KDE Frameworks
 kde-apps/palapeli 26.11.80 26.12.49.9999 9999: Jigsaw puzzle game by KDE
