@@ -212,6 +212,11 @@ kde-plasma/plasma-desktop:webengine - Build the OpenDesktop integration plugin
 kde-plasma/plasma-firewall:firewalld - Build net-firewall/firewalld backend
 kde-plasma/plasma-firewall:ufw - Build net-firewall/ufw backend
 kde-plasma/plasma-integration:X - Enable support for X11 applications (XWayland)
+kde-plasma/plasma-keyboard:anthy - Enable Japanese input with app-i18n/anthy
+kde-plasma/plasma-keyboard:gpl3 - Enable features requiring GPL-3 compliance such as sound and vibration support
+kde-plasma/plasma-keyboard:libchewing - Enable Chinese zhuyin input with app-i18n/libchewing
+kde-plasma/plasma-keyboard:libhangul - Enable Korean input with app-i18n/libhangul
+kde-plasma/plasma-keyboard:libpinyin - Enable Chinese pinyin input with app-i18n/libpinyin
 kde-plasma/plasma-login-sessions:X - Install X11 session file for Display Managers (default is Wayland if both enabled)
 kde-plasma/plasma-login-sessions:wayland - Install Wayland session file for Display Managers
 kde-plasma/plasma-meta:X - Enable X window manager support via kde-plasma/kwin-x11 (only until and including Plasma 6.7)
