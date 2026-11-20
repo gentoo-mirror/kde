@@ -27,11 +27,13 @@ SEC_KEYS_VALIDPGPKEYS=(
 	"4E421C6554B89766DF9B7A37E12AB207C8755905:georgefb:manual,ubuntu"
 	"8C13BC14185A65215B592A2F1243132CD9321771:habacker:manual,openpgp,ubuntu"
 	"5E43012825E22EE30C1071B085CDA2E3109C8EC1:hamedmasafi:manual"
+	"B3DDDB9F432544A89CF89C573E7B50C5FC57EE47:hein:manual"
 	"D81C0CB38EB725EF6691C385BB463350D6EF31EF:heikobecker:manual,openpgp,ubuntu"
 	"C0408180825AB4C023B865A2E50DF1C6976AF656:ianmonroe:manual"
 	"C4121E61D794248B46B0B7DEB4C634B3B5921762:imironchik:manual,openpgp"
 	"C3D7CAFBF442353F95F69F4AA81E075ABEC80A7E:jbbgameich:manual,openpgp,ubuntu"
 	"97B71AA02D63EA6C5C44C23B962AC48EF0501F0B:jlskuz:manual,openpgp"
+	"E99F69A60D33F6D388454CCC963199D3A2B6F987:jpwhiting:manual,ubuntu"
 	"E0A3EB202F8E57528E13E72FD7574483BB57B18D:jriddell:manual,openpgp,ubuntu"
 	"E6EBD6EB0518FE5BCCA5F6A76AACDD263C2CEFD4:kossebau:manual,ubuntu"
 	"03C2D10DC97E5B0BEBB8F3B44663231A91A1E27B:lnj:manual,openpgp,ubuntu"
@@ -89,7 +91,7 @@ if [[ ${PV} == 99999999 ]]; then
 	SRC_URI="" # override SRC_URI to avoid versioned keys
 	S="${WORKDIR}/${P}" # override sec-keys
 else
-	COMMIT="78325a8aa54c7b2219f5aeb0c9a28cbdfe06b5ce"
+	COMMIT="5c4e44fa98e7b931bf1c1aeeb4153c05a839d0c7"
 	SRC_URI+="
 		https://invent.kde.org/sysadmin/release-keyring/-/archive/${COMMIT}/release-keyring-${COMMIT}.tar.bz2
 			-> kde-release-keyring-${COMMIT}.tar.bz2
