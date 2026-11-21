@@ -1,0 +1,17 @@
+BDEPEND=>=dev-qt/qtshadertools-6.11.2:6 virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.31.9-r1 dev-libs/libpcre2:* >=kde-frameworks/extra-cmake-modules-6.29.0:* verify-sig? ( || ( app-alternatives/gpg app-crypt/gnupg[-alternatives(-)] ) >=app-portage/gemato-20.15 ) verify-sig? ( sec-keys/openpgp-keys-kde )
+DEFINED_PHASES=compile configure info install nofetch prepare test unpack
+DEPEND=>=dev-libs/kirigami-addons-1.11:6 >=dev-libs/libghostty-vt-1.0.1:= >=dev-qt/qtbase-6.11.2:6=[concurrent,dbus,gui,network,widgets] >=dev-qt/qtdeclarative-6.11.2:6 >=dev-qt/qtsvg-6.11.2:6 >=kde-frameworks/kconfig-6.29.0:6 >=kde-frameworks/kcolorscheme-6.29.0:6 >=kde-frameworks/kconfigwidgets-6.29.0:6 >=kde-frameworks/kcoreaddons-6.29.0:6 >=kde-frameworks/kguiaddons-6.29.0:6 >=kde-frameworks/ki18n-6.29.0:6 >=kde-frameworks/kio-6.29.0:6 >=kde-frameworks/kirigami-6.29.0:6 >=kde-frameworks/knotifications-6.29.0:6 >=kde-frameworks/kpty-6.29.0:6 >=kde-frameworks/kwindowsystem-6.29.0:6 app? ( >=dev-libs/kirigami-app-components-1.1:6 >=kde-frameworks/kdbusaddons-6.29.0:6 ) kpart? ( >=dev-qt/qtdeclarative-6.11.2:6[widgets] >=kde-frameworks/kiconthemes-6.29.0:6 >=kde-frameworks/kparts-6.29.0:6 >=kde-frameworks/kwidgetsaddons-6.29.0:6 >=kde-frameworks/kxmlgui-6.29.0:6 ) dev-qt/qtbase:6
+DESCRIPTION=Modern and fast terminal for KDE Plasma and other desktops
+EAPI=8
+HOMEPAGE=https://invent.kde.org/utilities/kwi
+INHERIT=ecm kde.org
+IUSE=+app +kpart debug test verify-sig
+KEYWORDS=~amd64
+LICENSE=|| ( GPL-2 GPL-3 ) GPL-2+ || ( LGPL-2.1 LGPL-3 ) LGPL-2+ BSD-2 CC-BY-SA-4.0 CC0-1.0
+RDEPEND=>=dev-libs/kirigami-addons-1.11:6 >=dev-libs/libghostty-vt-1.0.1:= >=dev-qt/qtbase-6.11.2:6=[concurrent,dbus,gui,network,widgets] >=dev-qt/qtdeclarative-6.11.2:6 >=dev-qt/qtsvg-6.11.2:6 >=kde-frameworks/kconfig-6.29.0:6 >=kde-frameworks/kcolorscheme-6.29.0:6 >=kde-frameworks/kconfigwidgets-6.29.0:6 >=kde-frameworks/kcoreaddons-6.29.0:6 >=kde-frameworks/kguiaddons-6.29.0:6 >=kde-frameworks/ki18n-6.29.0:6 >=kde-frameworks/kio-6.29.0:6 >=kde-frameworks/kirigami-6.29.0:6 >=kde-frameworks/knotifications-6.29.0:6 >=kde-frameworks/kpty-6.29.0:6 >=kde-frameworks/kwindowsystem-6.29.0:6 app? ( >=dev-libs/kirigami-app-components-1.1:6 >=kde-frameworks/kdbusaddons-6.29.0:6 ) kpart? ( >=dev-qt/qtdeclarative-6.11.2:6[widgets] >=kde-frameworks/kiconthemes-6.29.0:6 >=kde-frameworks/kparts-6.29.0:6 >=kde-frameworks/kwidgetsaddons-6.29.0:6 >=kde-frameworks/kxmlgui-6.29.0:6 ) >=kde-frameworks/qqc2-desktop-style-6.29.0:6 app? ( >=kde-frameworks/kitemmodels-6.29.0:6 ) || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-6 dev-qt/qtbase:6
+REQUIRED_USE=|| ( app kpart )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=mirror://kde/stable/kwi/0.1.0/kwi-0.1.0.tar.xz verify-sig? ( mirror://kde/stable/kwi/0.1.0/kwi-0.1.0.tar.xz.sig )
+_eclasses_=cmake-utils	2f2c1f4656e935823f34077269b42a3e	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	45d0620f25c2f063ad6276ecd9ed9399	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	8c576dc714b640a6ec36bab2e6d5a7e5	virtualx	9741d451eb64ea8bb9faee90d68a9b68	ecm	6068d5dd84948117b9050b838c2a827b	eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	verify-sig	f0b3a8c93ad67e5137bbf53281fed014	kde.org	87399d085fb96bca1ce2041dad8cf834
+_md5_=844619b45029f26926f9a20edaf2f76a
