@@ -92,7 +92,7 @@ kde-apps/kaccounts-integration 26.11.80 26.12.49.9999 9999: Administer web accou
 kde-apps/kaccounts-providers 26.11.80 26.12.49.9999 9999: KDE accounts providers
 kde-apps/kaddressbook 9999: Address book application based on KDE Frameworks
 kde-apps/kajongg 26.11.80 26.12.49.9999 9999: Classical Mah Jongg for four players
-kde-apps/kalarm 9999: Application to manage alarms and other timer based alerts for the desktop
+kde-apps/kalarm 26.11.80 26.12.49.9999 9999: Application to manage alarms and other timer based alerts for the desktop
 kde-apps/kalgebra 26.11.80 26.12.49.9999 9999: MathML-based 2D and 3D graph calculator by KDE
 kde-apps/kalzium 26.11.80 26.12.49.9999 9999: Periodic table of the elements
 kde-apps/kamera 26.11.80 26.12.49.9999 9999: Plasma integration for gphoto2 cameras
