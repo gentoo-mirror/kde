@@ -1,0 +1,10 @@
+DEFINED_PHASES=-
+DESCRIPTION=kdeutils - merge this to pull in all kdeutils-derived packages
+EAPI=9
+HOMEPAGE=https://apps.kde.org/categories/utilities/
+IUSE=7zip gpg kwallet lrz plasma rar +webengine
+KEYWORDS=~amd64 ~arm64 ~ppc64 ~x86
+LICENSE=metapackage
+RDEPEND=>=app-cdr/dolphin-plugins-mountiso-26.11.90:* >=app-cdr/isoimagewriter-26.11.90:* >=app-crypt/keepsecret-26.11.90:* >=app-crypt/keysmith-26.11.90 >=app-misc/francis-26.11.90 >=dev-libs/kweathercore-26.11.90:* >=kde-apps/ark-26.11.90:* >=kde-apps/filelight-26.11.90:* >=kde-apps/kate-26.11.90:* >=kde-apps/kbackup-26.11.90:* >=kde-apps/kcalc-26.11.90:* >=kde-apps/kcharselect-26.11.90:* >=kde-apps/kdebugsettings-26.11.90:* >=kde-apps/kdf-26.11.90:* >=kde-apps/kteatime-26.11.90:* >=kde-apps/ktimer-26.11.90:* >=kde-apps/sweeper-26.11.90:* >=kde-apps/yakuake-26.11.90:* >=kde-misc/kweather-26.11.90:* >=kde-misc/markdownpart-26.11.90:* >=sys-block/partitionmanager-26.11.90:* >=sys-libs/kpmcore-26.11.90:* gpg? ( >=kde-apps/kgpg-26.11.90:* ) kwallet? ( >=kde-apps/kwalletmanager-26.11.90:* ) plasma? ( >=kde-misc/kclock-26.11.90 ) webengine? ( >=app-editors/ghostwriter-26.11.90 >=kde-apps/kimagemapeditor-26.11.90:* ) 7zip? ( >=app-arch/7zip-24.09[symlink(+)] ) lrz? ( app-arch/lrzip ) rar? ( || ( app-arch/rar app-arch/unrar app-arch/unar ) )
+SLOT=0
+_md5_=7b7ca92e82f96483aacb03968270108f
