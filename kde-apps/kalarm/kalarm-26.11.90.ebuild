@@ -15,10 +15,10 @@ HOMEPAGE="https://apps.kde.org/kalarm/ https://userbase.kde.org/KAlarm"
 LICENSE="GPL-2+ handbook? ( FDL-1.2+ )"
 SLOT="6"
 KEYWORDS="~amd64 ~arm64"
-IUSE="+pim speech X"
+IUSE="+pim speech vlc X"
 
-COMMON_DEPEND="
-	>=dev-qt/qtbase-${QTMIN}:6[dbus,gui,network,widgets]
+DEPEND="
+	>=dev-qt/qtbase-${QTMIN}:6[dbus,gui,network,widgets,X?]
 	>=kde-apps/kidentitymanagement-${PIMMIN}:6=
 	>=kde-frameworks/kauth-${KFMIN}:6
 	>=kde-frameworks/kcalendarcore-${KFMIN}:6
@@ -48,30 +48,27 @@ COMMON_DEPEND="
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:6
 	>=kde-frameworks/kwindowsystem-${KFMIN}:6[X?]
 	>=kde-frameworks/kxmlgui-${KFMIN}:6
-	>=media-video/mpv-0.37.0:=[libmpv]
 	pim? (
 		>=kde-apps/akonadi-${PIMMIN}:6=
 		>=kde-apps/akonadi-contacts-${PIMMIN}:6=
 		>=kde-apps/akonadi-mime-${PIMMIN}:6=
 		>=kde-apps/kmailtransport-${PIMMIN}:6=
 	)
-	speech? ( >=dev-libs/ktextaddons-2.0.0:6=[speech] )
-	X? ( x11-libs/libX11 )
+	speech? ( >=dev-libs/ktextaddons-2.0.2:6=[speech] )
+	vlc? ( =media-video/vlc-3*:= )
+	!vlc? ( >=media-video/mpv-0.37.0:=[libmpv] )
 "
-RDEPEND="${COMMON_DEPEND}
+RDEPEND="${DEPEND}
 	pim? ( >=kde-apps/kdepim-runtime-${PIMMIN}:6 )
-"
-DEPEND="${COMMON_DEPEND}
-	X? ( x11-base/xorg-proto )
 "
 
 src_configure() {
 	local mycmakeargs=(
-		-DENABLE_LIBMPV=ON # default upstream
-		-DENABLE_LIBVLC=OFF # OFF as long as it is Qt5-based
+		-DENABLE_LIBMPV=$(usex !vlc)
+		-DENABLE_LIBVLC=$(usex vlc)
 		-DENABLE_AKONADI_PLUGIN=$(usex pim)
 		$(cmake_use_find_package speech KF6TextEditTextToSpeech)
-		-DWITHOUT_X11=$(usex !X)
+		-DWITH_X11=$(usex X)
 	)
 
 	ecm_src_configure
